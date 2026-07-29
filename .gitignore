@@ -42,3 +42,7 @@ next-env.d.ts
 .DS_Store
 .open-next/
 .dev.vars
+
+# cloudflare/opennext artifacts
+.wrangler/
+cloudflare-env.d.ts
