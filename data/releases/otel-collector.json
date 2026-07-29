@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-07-29T16:11:53.975Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 357918883,
+      "name": "v0.157.0",
+      "notes": "Check the [v0.157.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.157.0) and the [v0.157.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.157.0) for changelogs on specific components.\n\n\n## Changelog\n* 145e73e8663aff5ce978ea38cf0cbd4a97017141 Update version to 0.157.0 (#1568)\n* 2fb4059cb5deb51c869df3ea2d132ed4be14e4a8 chore(deps): update opentelemetry collector components (#1566)\n* 8999a8972669d6d53285bc48e06be7cab5320a8f chore(contrib): pin ebpf version to v0.21.0 (#1567)",
+      "prerelease": false,
+      "publishedAt": "2026-07-22T09:59:16Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.157.0",
+      "version": "v0.157.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 350375702,
+      "name": "v0.156.0",
+      "notes": "Check the [v0.156.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.156.0) and the [v0.156.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.156.0) for changelogs on specific components.\r\n\n\n## Changelog\n* aa158b23c8f89d795b21a05a49b3978565dfebd4 Update version to 0.156.0 (#1548)\n* c4a48cb585616c4c4a5cfc20abcff21ae6ecc0f2 chore(deps): update opentelemetry collector components (#1547)",
+      "prerelease": false,
+      "publishedAt": "2026-07-07T14:25:15Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.156.0",
+      "version": "v0.156.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 344364261,
+      "name": "v0.155.0",
+      "notes": "Check the [v0.155.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.155.0) and the [v0.155.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.155.0) for changelogs on specific components.\r\n\n\n## Changelog\n* 0c0862ebf38401e5355c8c946b7a2d4231f7946e Update version to 0.155.0 (#1536)\n* 9410f51a2123441c0f791bb47970278ea1bf95ea chore(deps): update opentelemetry collector components (#1531)\n* a04e0aabd92c96d5006f59dd808895e4e5308ade chore(deps): update dockerfile deps (#1534)\n* 8b7182c9d82cca6e4866a226e9729dab61709d79 chore(deps): update github-actions deps (#1535)",
+      "prerelease": false,
+      "publishedAt": "2026-06-24T20:55:25Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.155.0",
+      "version": "v0.155.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 336928635,
+      "name": "v0.154.0",
+      "notes": "Check the [v0.154.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.154.0) and the [v0.154.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.154.0) for changelogs on specific components.\r\n\r\n## v0.154.0\r\n\r\n### 🚩 Deprecations 🚩\r\n\r\n- `jmxreceiver`: Remove deprecated JMX receiver from contrib distribution (#1519)\r\n\r\n## Changelog\r\n* 4ae7f285f3df635cb3c456f8dfba045973bb4d91 Update version to 0.154.0 (#1525)\r\n* a25341e2c9ee249513d647e5d83e314e4fee3fac chore(deps): update opentelemetry collector components (#1523)\r\n* 6359fa04052f0e31e987dda2cdeefb3879cc02cf chore(deps): update dockerfile deps (#1520)\r\n* b17d62576dcb1d86e94a7f394eefe50528e6037d chore(deps): update github-actions deps to v4.36.2 (#1521)\r\n* 2b67e1f3523334aee7f2fe5ed167805ef70943b3 chore(deps): update module go.opentelemetry.io/ebpf-profiler to v0.0.202623 (#1522)",
+      "prerelease": false,
+      "publishedAt": "2026-06-09T23:18:03Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.154.0",
+      "version": "v0.154.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "otel-collector",
+    "name": "OpenTelemetry Collector",
+    "repository": "open-telemetry/opentelemetry-collector-releases"
+  }
+}

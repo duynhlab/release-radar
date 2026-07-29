@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-29T16:11:44.035Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355752729,
+      "name": "v1.11.3",
+      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.11.2 [#9392](https://github.com/aws/karpenter-provider-aws/pull/9392) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/0c4e1cfeb0757c2dca913e607d825dde8f7a06d3))",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T15:03:05Z",
+      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.11.3",
+      "version": "v1.11.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355752621,
+      "name": "v1.10.2",
+      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.10.1 [#9393](https://github.com/aws/karpenter-provider-aws/pull/9393) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/75bcc27679046cf9ae3c2485ee05e8d3f425a9c7))",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T15:02:53Z",
+      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.10.2",
+      "version": "v1.10.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355752545,
+      "name": "v1.9.2",
+      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.9.1 [#9394](https://github.com/aws/karpenter-provider-aws/pull/9394) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/310b3568f736566ae1005b09b9482082f2fc61ed))",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T15:02:44Z",
+      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.9.2",
+      "version": "v1.9.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355752407,
+      "name": "v1.8.8",
+      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.8.3 (#9399) [#9399](https://github.com/aws/karpenter-provider-aws/pull/9399) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/5b5bf22ecf397d0b8a0b5ec4ea3cea2473372a91))",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T15:02:29Z",
+      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.8.8",
+      "version": "v1.8.8"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355752264,
+      "name": "v1.7.6",
+      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.7.2 [#9407](https://github.com/aws/karpenter-provider-aws/pull/9407) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/87b7ff2202dbe13f510026c5e9c22f7963f8753c))",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T15:02:15Z",
+      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.7.6",
+      "version": "v1.7.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355752100,
+      "name": "v1.6.8",
+      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.6.4 [#9400](https://github.com/aws/karpenter-provider-aws/pull/9400) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/7a8109fbc814a312069b0c7c67a9ee0810073fba))",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T15:01:58Z",
+      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.6.8",
+      "version": "v1.6.8"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355751994,
+      "name": "v1.5.8",
+      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.5.5 (#9401) [#9401](https://github.com/aws/karpenter-provider-aws/pull/9401) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/02cad97b9fc5973c4efa5ea6a352b5d3646ee839))",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T15:01:45Z",
+      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.5.8",
+      "version": "v1.5.8"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355751809,
+      "name": "v1.4.4",
+      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.4.2 (#9402) [#9402](https://github.com/aws/karpenter-provider-aws/pull/9402) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/5bba96f3c0f41db4b72e97b54e94c9275ffa8289))",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T15:01:27Z",
+      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.4.4",
+      "version": "v1.4.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355751671,
+      "name": "v1.3.8",
+      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.3.5 (#9403) [#9403](https://github.com/aws/karpenter-provider-aws/pull/9403) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/33b235cb0020ffdbe19f764e7cf62369057189aa))",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T15:01:14Z",
+      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.3.8",
+      "version": "v1.3.8"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355430277,
+      "name": "v1.2.8",
+      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.2.5 (#9404) [#9404](https://github.com/aws/karpenter-provider-aws/pull/9404) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/3a570db4a26ef1532d5bd16a5027cfe45cd3789e))",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T01:39:50Z",
+      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.2.8",
+      "version": "v1.2.8"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "karpenter",
+    "name": "Karpenter",
+    "repository": "aws/karpenter-provider-aws"
+  }
+}

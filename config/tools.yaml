@@ -1,0 +1,186 @@
+# yaml-language-server: $schema=../schemas/tool.schema.json
+schemaVersion: 1
+
+tools:
+  - id: kubernetes
+    name: Kubernetes
+    category: platform
+    repository: kubernetes/kubernetes
+    description: Production-grade container orchestration
+    homepage: https://kubernetes.io
+    documentation: https://kubernetes.io/docs/
+    tags:
+      - containers
+      - orchestration
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: karpenter
+    name: Karpenter
+    category: platform
+    repository: aws/karpenter-provider-aws
+    description: Just-in-time node autoscaling for Kubernetes on AWS
+    homepage: https://karpenter.sh
+    documentation: https://karpenter.sh/docs/
+    tags:
+      - kubernetes
+      - autoscaling
+      - aws
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: cert-manager
+    name: cert-manager
+    category: platform
+    repository: cert-manager/cert-manager
+    description: X.509 certificate management for Kubernetes
+    homepage: https://cert-manager.io
+    documentation: https://cert-manager.io/docs/
+    tags:
+      - kubernetes
+      - tls
+      - certificates
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: terraform
+    name: Terraform
+    category: provisioning
+    repository: hashicorp/terraform
+    description: Infrastructure as code for any cloud
+    homepage: https://developer.hashicorp.com/terraform
+    documentation: https://developer.hashicorp.com/terraform/docs
+    tags:
+      - iac
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: opentofu
+    name: OpenTofu
+    category: provisioning
+    repository: opentofu/opentofu
+    description: Open-source infrastructure as code, Terraform-compatible
+    homepage: https://opentofu.org
+    documentation: https://opentofu.org/docs/
+    tags:
+      - iac
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: flux
+    name: Flux
+    category: delivery
+    repository: fluxcd/flux2
+    description: GitOps toolkit for Kubernetes
+    homepage: https://fluxcd.io
+    documentation: https://fluxcd.io/flux/
+    tags:
+      - gitops
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: argo-cd
+    name: Argo CD
+    category: delivery
+    repository: argoproj/argo-cd
+    description: Declarative GitOps continuous delivery for Kubernetes
+    homepage: https://argoproj.github.io/cd/
+    documentation: https://argo-cd.readthedocs.io
+    tags:
+      - gitops
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: helm
+    name: Helm
+    category: delivery
+    repository: helm/helm
+    description: The package manager for Kubernetes
+    homepage: https://helm.sh
+    documentation: https://helm.sh/docs/
+    tags:
+      - kubernetes
+      - packaging
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: prometheus
+    name: Prometheus
+    category: observability
+    repository: prometheus/prometheus
+    description: Monitoring system and time series database
+    homepage: https://prometheus.io
+    documentation: https://prometheus.io/docs/
+    tags:
+      - metrics
+      - monitoring
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: grafana
+    name: Grafana
+    category: observability
+    repository: grafana/grafana
+    description: Open observability and dashboarding platform
+    homepage: https://grafana.com
+    documentation: https://grafana.com/docs/
+    tags:
+      - dashboards
+      - metrics
+      - logs
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+(\\+security-\\d+)?$"
+
+  - id: otel-collector
+    name: OpenTelemetry Collector
+    category: observability
+    repository: open-telemetry/opentelemetry-collector-releases
+    description: Vendor-neutral telemetry collector
+    homepage: https://opentelemetry.io
+    documentation: https://opentelemetry.io/docs/collector/
+    tags:
+      - metrics
+      - logs
+      - traces
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: trivy
+    name: Trivy
+    category: security
+    repository: aquasecurity/trivy
+    description: Comprehensive vulnerability scanner for containers and IaC
+    homepage: https://trivy.dev
+    documentation: https://trivy.dev/latest/docs/
+    tags:
+      - scanning
+      - vulnerabilities
+      - containers
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"

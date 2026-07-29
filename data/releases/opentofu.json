@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-29T16:11:47.299Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 357295972,
+      "name": "v1.12.5",
+      "notes": "SECURITY ADVISORIES:\r\n\r\n* Previous releases in the v1.12 series could be affected by several vulnerabilities:\r\n  * The Encrypted Client Hello implementation (which is used by OpenTofu through the go stdlib) would leak the pre-shared key identities during the handshake, \r\n    allowing a passive network observer who can collect handshakes to de-anonymize the hostname of the server, even when ECH was being used.\r\n\r\n  This is fixed now by ([#4363](https://github.com/opentofu/opentofu/pull/4363))\r\n\r\nBUG FIXES:\r\n- Fixed bug where implicit moves and provider address changes would incorrectly cause providers.MovedResourceState to be used in place of providers.UpgradeResourceState ([#4375](https://github.com/opentofu/opentofu/pull/4375))\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.12.4...v1.12.5",
+      "prerelease": false,
+      "publishedAt": "2026-07-21T11:39:19Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.5",
+      "version": "v1.12.5"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 357286756,
+      "name": "v1.11.13",
+      "notes": "SECURITY ADVISORIES:\r\n\r\n* Previous releases in the v1.11 series could be affected by several vulnerabilities:\r\n  * The Encrypted Client Hello implementation (which is used by OpenTofu through the go stdlib) would leak the pre-shared key identities during the handshake, \r\n    allowing a passive network observer who can collect handshakes to de-anonymize the hostname of the server, even when ECH was being used.\r\n\r\n  This is fixed now by ([#4363](https://github.com/opentofu/opentofu/pull/4363))\r\n\r\nBUG FIXES:\r\n- Fixed bug where implicit moves and provider address changes would incorrectly cause providers.MovedResourceState to be used in place of providers.UpgradeResourceState ([#4375](https://github.com/opentofu/opentofu/pull/4375))\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.11.12...v1.11.13",
+      "prerelease": false,
+      "publishedAt": "2026-07-21T11:39:02Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.13",
+      "version": "v1.11.13"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 353272309,
+      "name": "v1.12.4",
+      "notes": "BUG FIXES:\r\n\r\n- `tofu plan -out` no longer fails when the plan includes a resource with `lifecycle { destroy = false }` that needs replacement, which previously errored with `invalid change action ForgetThenCreate`. ([#4324](https://github.com/opentofu/opentofu/issues/4324))\r\n- Moved block now correctly compares provider source addresses. (#4280)[https://github.com/opentofu/opentofu/pull/4280]\r\n- Correct Source Provider Address now passed into Provider MoveResource requests. (#4355)[https://github.com/opentofu/opentofu/pull/4355]\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.12.3...v1.12.4",
+      "prerelease": false,
+      "publishedAt": "2026-07-13T16:07:42Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.4",
+      "version": "v1.12.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 353267161,
+      "name": "v1.11.12",
+      "notes": "BUG FIXES:\r\n\r\n- Moved block now correctly compares provider source addresses. (#4280)[https://github.com/opentofu/opentofu/pull/4280]\r\n- Correct Source Provider Address now passed into Provider MoveResource requests. (#4355)[https://github.com/opentofu/opentofu/pull/4355]\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.11.11...v1.11.12",
+      "prerelease": false,
+      "publishedAt": "2026-07-13T16:07:11Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.12",
+      "version": "v1.11.12"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 343511363,
+      "name": "v1.11.11",
+      "notes": "### BUG FIXES:\r\n\r\n* Fixes an incomplete OTEL dependencies upgrade from the previous patch release. ([#4303](https://github.com/opentofu/opentofu/pull/4303))\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.11.10...v1.11.11",
+      "prerelease": false,
+      "publishedAt": "2026-06-23T13:24:06Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.11",
+      "version": "v1.11.11"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 341442100,
+      "name": "v1.12.3",
+      "notes": "### BUG FIXES:\r\n\r\n- Properly handle `TF_ENCRYPTION` with only blank spaces. ([#4265](https://github.com/opentofu/opentofu/pull/4265))\r\n- The value resulted from the `lifecycle.enabled` evaluation now has its deprecation marks processed correctly ([#4162](https://github.com/opentofu/opentofu/pull/4162))\r\n- Update documentation to clarify the usage restriction of ephemeral values in `lifecycle.enabled`. ([#4220](https://github.com/opentofu/opentofu/pull/4220))\r\n- `tofu console -lock=false` now works as intended. ([#4291](https://github.com/opentofu/opentofu/pull/4291))\r\n\r\n### SECURITY ADVISORIES:\r\n* Previous releases in the v1.12 series could read an arbitrary file during certain git operations via a maliciously crafted URL ([#4293](https://github.com/opentofu/opentofu/pull/4293))\r\n  * Advisory: https://github.com/opentofu/opentofu/security/advisories/GHSA-q7j3-v8qv-22vq\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.12.2...v1.12.3",
+      "prerelease": false,
+      "publishedAt": "2026-06-18T15:03:59Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.3",
+      "version": "v1.12.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 341471735,
+      "name": "v1.11.10",
+      "notes": "### BUG FIXES:\r\n\r\n* Update documentation to clarify the usage restriction of ephemeral values in `lifecycle.enabled`. ([#4220](https://github.com/opentofu/opentofu/pull/4220))\r\n\r\n### SECURITY ADVISORIES:\r\n* Previous releases in the v1.11 series could read an arbitrary file during certain git operations via a maliciously crafted URL ([#4292](https://github.com/opentofu/opentofu/pull/4292)).\r\n  * Advisory: https://github.com/opentofu/opentofu/security/advisories/GHSA-q7j3-v8qv-22vq\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.11.9...v1.11.10",
+      "prerelease": false,
+      "publishedAt": "2026-06-18T15:03:51Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.10",
+      "version": "v1.11.10"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 338677391,
+      "name": "v1.11.9",
+      "notes": "## 1.11.9\r\n\r\nSECURITY ADVISORIES:\r\n\r\n* Previous releases in the v1.11 series could be affected by several vulnerabilities:\r\n  * ssh usage through OpenTofu generate hangs or panics.\r\n  * Previously, a revoked 'SignatureKey' belonging to a CA was not correctly checked for revocation. Now, both the 'key' and 'key.SignatureKey' are checked for @revoked.\r\n\r\n  This is fixed now by ([#4145](https://github.com/opentofu/opentofu/pull/4145))\r\n\r\n* If for state encryption, OpenBao key provider is used with wrapping algorithms, it could generate panics or hangs on compromised systems where the JWE is specifically crafted. ([#4177](https://github.com/opentofu/opentofu/pull/4177))\r\n\r\n* Previous releases in the v1.11 series could be affected by several vulnerabilities:\r\n  * When using SSH connections through OpenTofu, the errors that were returned from attempting a connection could include unescaped input bytes.\r\n  * If using an attacker-controlled server to run `tofu` against, it might end up in high CPU consumption.\r\n  \r\n  These are now fixed by ([#4248](https://github.com/opentofu/opentofu/pull/4248))\r\n\r\nBUG FIXES:\r\n\r\n- Fix race condition while handling closing signals during `tofu login`, both when the signal is sent by the user and when the browser fails to successfully connect. ([4016](https://github.com/opentofu/opentofu/pull/4016))\r\n- Prevent panic when using ephemeral resources during tofu test`. ([#4254](https://github.com/opentofu/opentofu/pull/4253))\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.11.8...v1.11.9",
+      "prerelease": false,
+      "publishedAt": "2026-06-12T16:11:30Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.9",
+      "version": "v1.11.9"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 338654738,
+      "name": "v1.12.2",
+      "notes": "## 1.12.2\r\n\r\nSECURITY ADVISORIES:\r\n\r\n* Previous releases in the v1.12 series could be affected by several vulnerabilities:\r\n  * If for state encryption, OpenBao key provider is used with wrapping algorithms, it could generate panics or hangs on compromised systems where the JWE is specifically crafted.\r\n\r\n  This is fixed now by ([#4177](https://github.com/opentofu/opentofu/pull/4177))\r\n\r\n* Previous releases in the v1.12 series could be affected by several vulnerabilities:\r\n  * When using SSH connections through OpenTofu, the errors that were returned from attempting a connection could include unescaped input bytes.\r\n  * If using an attacker-controlled server to run `tofu` against, it might end up in high CPU consumption.\r\n  \r\n  These are now fixed by ([#4247](https://github.com/opentofu/opentofu/pull/4247))\r\n\r\nBUG FIXES:\r\n\r\n- Properly handle EDEADLK during provider installation. On Unix systems, the kernel may erroneously detect a deadlock between tofu processes using the global plugin cache. ([#4166](https://github.com/opentofu/opentofu/pull/4166))\r\n- Fix race condition while handling closing signals during `tofu login`, both when the signal is sent by the user and when the browser fails to successfully connect. ([4016](https://github.com/opentofu/opentofu/pull/4016))\r\n- Prevent panic when using ephemeral resources during tofu test`. ([#4254](https://github.com/opentofu/opentofu/pull/4253))\r\n\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.12.1...v1.12.2",
+      "prerelease": false,
+      "publishedAt": "2026-06-12T15:26:49Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.2",
+      "version": "v1.12.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 330073310,
+      "name": "v1.12.1",
+      "notes": "## SECURITY ADVISORIES:\r\n\r\n* Previous releases in the v1.12 series could be affected by several vulnerabilities:\r\n  * ssh usage through OpenTofu generate hangs or panics.\r\n  * Previously, a revoked 'SignatureKey' belonging to a CA was not correctly checked for revocation. Now, both the 'key' and 'key.SignatureKey' are checked for `@revoked`.\r\n\r\n  This is fixed now by ([#4145](https://github.com/opentofu/opentofu/pull/4145))\r\n\r\n## BUG FIXES:\r\n\r\n- Address a bug introduced in v1.12.0 causing excessive memory usage by providers. ([#4126](https://github.com/opentofu/opentofu/pull/4126))\r\n- Address a bug introduced in v1.12.0 where `replace_triggered_by` was validated incorrectly. ([#4133](https://github.com/opentofu/opentofu/pull/4133)\r\n- The Azure key provider will now accept the `tenant_id`, `subscription_id`, `environment`, and `metadata_host` variables; a bug previously only allowed these to be set through environment variables. ([#4091](https://github.com/opentofu/opentofu/issues/4091))\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/blob/v1.12/CHANGELOG.md",
+      "prerelease": false,
+      "publishedAt": "2026-05-27T10:44:28Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.1",
+      "version": "v1.12.1"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "opentofu",
+    "name": "OpenTofu",
+    "repository": "opentofu/opentofu"
+  }
+}
