@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "tools": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "platform",
+              "provisioning",
+              "delivery",
+              "observability",
+              "networking",
+              "security",
+              "data"
+            ]
+          },
+          "repository": {
+            "type": "string",
+            "pattern": "^[\\w.-]+\\/[\\w.-]+$"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "homepage": {
+            "type": "string",
+            "format": "uri"
+          },
+          "documentation": {
+            "type": "string",
+            "format": "uri"
+          },
+          "tags": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "enabled": {
+            "default": true,
+            "type": "boolean"
+          },
+          "release": {
+            "default": {},
+            "type": "object",
+            "properties": {
+              "strategy": {
+                "default": "github-releases",
+                "type": "string",
+                "enum": [
+                  "github-releases",
+                  "github-tags",
+                  "manual"
+                ]
+              },
+              "includePrerelease": {
+                "default": false,
+                "type": "boolean"
+              },
+              "tagPattern": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ignorePattern": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "category",
+          "repository",
+          "description"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "tools"
+  ]
+}

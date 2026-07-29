@@ -1,0 +1,752 @@
+OPS RELEASE RADAR
+Personal DevOps/SRE Release Tracker
+===================================
+
+1. MỤC TIÊU
+-----------
+
+Xây dựng một dự án nhỏ phục vụ cá nhân để:
+
+- Theo dõi phiên bản mới của các công cụ DevOps/SRE trên GitHub.
+- Tự động kiểm tra release mới mỗi ngày.
+- Phân loại công cụ theo Platform, Provisioning, Delivery, Observability...
+- Hiển thị các release mới theo ngày, tuần và từng nhóm công cụ.
+- Lưu lịch sử release để có thể tra cứu lại.
+- Deploy website bằng Next.js lên Cloudflare.
+
+Tên repository đề xuất:
+
+    ops-release-radar
+
+Một số tên khác:
+
+- devops-release-catalog
+- ops-radar
+- duyops-radar
+
+
+2. Ý TƯỞNG HỌC TỪ FLUX-SCHEMA
+-----------------------------
+
+Không cần sao chép toàn bộ codebase của fluxcd/flux-schema.
+
+Điểm nên học từ dự án này là mô hình:
+
+    Catalog khai báo trong Git
+             |
+             v
+    Workflow chạy định kỳ
+             |
+             v
+    Thu thập dữ liệu upstream
+             |
+             v
+    Sinh dữ liệu chuẩn hóa
+             |
+             v
+    Commit hoặc tạo Pull Request
+
+flux-schema sử dụng catalog và GitHub Actions để định kỳ lấy các phiên bản
+upstream, sinh lại schema và tạo Pull Request cập nhật.
+
+Tham khảo:
+https://github.com/fluxcd/flux-schema
+https://github.com/fluxcd/flux-schema/blob/main/.github/workflows/update-catalog.yaml
+
+Đối với Ops Release Radar, phần cần lấy từ upstream là GitHub Releases thay vì
+Kubernetes JSON Schema.
+
+
+3. KIẾN TRÚC MVP
+----------------
+
+    config/tools.yaml
+    Danh sách tool cần theo dõi
+             |
+             v
+    GitHub Actions - chạy mỗi sáng
+             |
+             v
+    GitHub Releases API
+             |
+             v
+    data/releases/*.json
+    Dữ liệu đã chuẩn hóa và có lịch sử
+             |
+             v
+    Next.js application
+             |
+             v
+    Cloudflare Workers
+
+Khuyến nghị trong MVP:
+
+- Không dùng database.
+- Không gọi GitHub API trực tiếp khi người dùng mở website.
+- GitHub Actions chịu trách nhiệm lấy và chuẩn hóa release.
+- Dữ liệu release được commit trở lại repository.
+- Next.js đọc JSON đã được sinh sẵn.
+- Cloudflare tự build lại khi repository có commit mới.
+
+Lợi ích:
+
+- Có Git history và diff rõ ràng.
+- Không lộ GitHub token ở frontend.
+- Website không phụ thuộc GitHub API tại runtime.
+- Không gặp rate limit khi người dùng truy cập website.
+- Có thể fork, backup hoặc migrate dễ dàng.
+- Không phải quản lý database trong giai đoạn đầu.
+
+
+4. PHÂN LOẠI CÔNG CỤ
+--------------------
+
+4.1. Platform
+
+- Kubernetes
+- Karpenter
+- Cilium
+- Kubernetes Gateway API
+- cert-manager
+
+4.2. Provisioning
+
+- Terraform
+- OpenTofu
+- Terragrunt
+- Atlantis
+- Packer
+- Ansible
+- Crossplane
+
+4.3. Delivery & GitOps
+
+- Flux
+- Argo CD
+- Helm
+- Kustomize
+- Argo Rollouts
+
+4.4. Observability
+
+- OpenTelemetry Collector
+- Prometheus
+- Grafana
+- VictoriaMetrics
+- Loki
+- Tempo
+- Mimir
+
+4.5. Networking
+
+- Traefik
+- Kong Gateway
+- NGINX
+- Envoy
+- HAProxy
+
+4.6. Security
+
+- Trivy
+- Gitleaks
+- Checkov
+- Kyverno
+- Open Policy Agent
+- Falco
+
+4.7. Data & Messaging
+
+- PostgreSQL
+- ClickHouse
+- Valkey
+- RabbitMQ
+- MongoDB
+
+Quy tắc phân loại:
+
+- Mỗi tool có một category chính.
+- Một tool có thể có nhiều tags.
+- Không nên gán một tool vào nhiều category vì sẽ gây trùng lặp trên giao diện.
+
+Ví dụ:
+
+    category: observability
+    tags:
+      - metrics
+      - logs
+      - traces
+      - kubernetes
+
+
+5. CATALOG KHAI BÁO TOOL
+------------------------
+
+File:
+
+    config/tools.yaml
+
+Ví dụ:
+
+    schemaVersion: 1
+
+    tools:
+      - id: flux
+        name: Flux
+        category: delivery
+        repository: fluxcd/flux2
+        description: GitOps toolkit for Kubernetes
+        homepage: https://fluxcd.io
+        tags:
+          - gitops
+          - kubernetes
+        release:
+          strategy: github-releases
+          includePrerelease: false
+          tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+      - id: otel-collector
+        name: OpenTelemetry Collector
+        category: observability
+        repository: open-telemetry/opentelemetry-collector-releases
+        description: Vendor-neutral telemetry collector
+        tags:
+          - metrics
+          - logs
+          - traces
+        release:
+          strategy: github-releases
+          includePrerelease: false
+
+Các release strategy nên hỗ trợ:
+
+1. github-releases
+
+   Dùng cho repository có phát hành GitHub Release đầy đủ.
+
+2. github-tags
+
+   Dùng làm fallback cho repository chỉ tạo Git tag nhưng không tạo Release.
+
+3. manual
+
+   Dùng cho công cụ không phát hành qua GitHub hoặc cần quản lý đặc biệt.
+
+Các field nên có:
+
+- id
+- name
+- category
+- repository
+- description
+- homepage
+- documentation
+- tags
+- release.strategy
+- release.includePrerelease
+- release.tagPattern
+- release.ignorePattern
+- enabled
+
+
+6. DỮ LIỆU RELEASE ĐƯỢC SINH
+----------------------------
+
+File tổng hợp:
+
+    data/index.json
+
+File lịch sử theo từng tool:
+
+    data/releases/flux.json
+    data/releases/otel-collector.json
+
+Ví dụ dữ liệu:
+
+    {
+      "schemaVersion": 1,
+      "generatedAt": "2026-07-29T00:17:00Z",
+      "tool": {
+        "id": "flux",
+        "name": "Flux",
+        "repository": "fluxcd/flux2"
+      },
+      "releases": [
+        {
+          "id": 123456789,
+          "version": "v2.9.3",
+          "name": "Flux v2.9.3",
+          "channel": "stable",
+          "publishedAt": "2026-07-28T10:00:00Z",
+          "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.3",
+          "notes": "Release note excerpt",
+          "draft": false,
+          "prerelease": false
+        }
+      ]
+    }
+
+Mỗi tool chỉ cần giữ khoảng 20 release gần nhất trong MVP.
+
+
+7. LOGIC ĐỒNG BỘ RELEASE
+------------------------
+
+Không nên chỉ gọi:
+
+    GET /repos/{owner}/{repo}/releases/latest
+
+Lý do:
+
+- Endpoint latest bỏ qua draft và prerelease.
+- GitHub xác định latest dựa trên created_at.
+- created_at có thể không phản ánh đúng thời điểm release được publish.
+- Một project có thể phát hành nhiều release giữa hai lần đồng bộ.
+
+Logic đề xuất:
+
+1. Đọc và validate config/tools.yaml.
+2. Lấy khoảng 10 release gần nhất của từng repository.
+3. Bỏ draft.
+4. Bỏ prerelease nếu includePrerelease là false.
+5. Áp dụng tagPattern và ignorePattern.
+6. Sắp xếp theo published_at.
+7. Merge release dựa trên GitHub release ID.
+8. Không tạo release trùng.
+9. Giữ tối đa 20 release cho mỗi tool.
+10. Sinh lại data/index.json.
+11. Nếu dữ liệu không đổi thì không commit.
+12. Nếu có thay đổi thì commit vào repository.
+
+Commit message đề xuất:
+
+    chore(data): sync releases 2026-07-29
+
+GitHub Releases API:
+https://docs.github.com/en/rest/releases/releases
+
+
+8. GITHUB ACTIONS
+-----------------
+
+Workflow:
+
+    .github/workflows/sync-releases.yaml
+
+Nên hỗ trợ:
+
+- Chạy theo schedule.
+- Cho phép chạy thủ công bằng workflow_dispatch.
+- Chỉ cấp permissions cần thiết.
+- Có concurrency để không chạy hai job sync cùng lúc.
+- Có timeout.
+- Không commit nếu dữ liệu không thay đổi.
+
+Thời gian đề xuất:
+
+    07:17 Asia/Ho_Chi_Minh mỗi ngày
+
+Không nên chạy đúng phút 00 vì GitHub cảnh báo scheduled workflow có thể bị
+delay trong thời gian tải cao, đặc biệt ở đầu mỗi giờ.
+
+Pseudo workflow:
+
+    name: Sync releases
+
+    on:
+      workflow_dispatch:
+      schedule:
+        - cron: "17 7 * * *"
+          timezone: "Asia/Ho_Chi_Minh"
+
+    permissions:
+      contents: write
+
+    concurrency:
+      group: sync-releases
+      cancel-in-progress: false
+
+    jobs:
+      sync:
+        runs-on: ubuntu-latest
+        timeout-minutes: 15
+
+        steps:
+          - Checkout repository
+          - Setup pnpm
+          - Setup Node.js
+          - Install dependencies
+          - Validate tool catalog
+          - Sync GitHub releases
+          - Run generated-data validation
+          - Commit and push if changed
+
+GitHub schedule documentation:
+https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule
+
+GitHub REST API rate limit:
+https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api
+
+GITHUB_TOKEN hiện có giới hạn 1.000 REST request/giờ cho mỗi repository, đủ cho
+MVP theo dõi khoảng 30 đến 100 tool.
+
+
+9. GIAO DIỆN MVP
+----------------
+
+9.1. Trang chủ
+
+- Released Today
+- Released This Week
+- Recently Updated
+- Search theo tên tool
+- Filter theo category
+- Filter theo tag
+- Sort theo thời gian release
+
+9.2. Tool card
+
+Mỗi card hiển thị:
+
+- Tên và logo tool
+- Category
+- Latest version
+- Stable hoặc prerelease
+- Ngày release
+- Thời gian kể từ lần phát hành trước
+- Link tới release notes
+- Link tới repository
+
+9.3. Trang chi tiết tool
+
+- Thông tin tool
+- Repository
+- Documentation
+- Latest version
+- Khoảng 10 đến 20 phiên bản gần nhất
+- Release notes
+- Link compare giữa version hiện tại và version trước
+
+9.4. Favorites
+
+Trong MVP:
+
+- Lưu bằng localStorage.
+- Không cần user account.
+- Có filter chỉ hiển thị tool yêu thích.
+
+
+10. REPOSITORY STRUCTURE
+------------------------
+
+    ops-release-radar/
+    ├── app/
+    │   ├── page.tsx
+    │   ├── tools/
+    │   │   └── [slug]/
+    │   │       └── page.tsx
+    │   └── categories/
+    │       └── [slug]/
+    │           └── page.tsx
+    ├── components/
+    │   ├── category-filter.tsx
+    │   ├── release-card.tsx
+    │   ├── search-box.tsx
+    │   └── tool-card.tsx
+    ├── config/
+    │   └── tools.yaml
+    ├── data/
+    │   ├── index.json
+    │   └── releases/
+    │       ├── flux.json
+    │       └── otel-collector.json
+    ├── lib/
+    │   ├── catalog.ts
+    │   ├── releases.ts
+    │   └── types.ts
+    ├── scripts/
+    │   ├── sync-releases.ts
+    │   └── validate-catalog.ts
+    ├── schemas/
+    │   └── tool.schema.json
+    ├── tests/
+    ├── .github/
+    │   └── workflows/
+    │       ├── ci.yaml
+    │       └── sync-releases.yaml
+    ├── open-next.config.ts
+    ├── wrangler.jsonc
+    ├── package.json
+    └── README.md
+
+
+11. STACK ĐỀ XUẤT
+-----------------
+
+Application:
+
+- Next.js App Router
+- TypeScript
+- pnpm
+- Tailwind CSS
+
+Data và validation:
+
+- YAML
+- Zod
+- JSON Schema
+
+GitHub integration:
+
+- Octokit
+- GitHub REST Releases API
+
+Release notes:
+
+- react-markdown
+- rehype-sanitize
+
+Testing:
+
+- Vitest cho catalog parser và sync logic
+- Playwright smoke test có thể bổ sung sau
+
+Deployment:
+
+- Cloudflare Workers
+- OpenNext adapter
+- Cloudflare Git integration
+
+Cloudflare Next.js guide:
+https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/
+
+
+12. CLOUDFLARE DEPLOYMENT
+-------------------------
+
+Next.js được deploy lên Cloudflare Workers thông qua OpenNext adapter.
+
+Cloudflare hiện hỗ trợ phần lớn tính năng Next.js cần thiết:
+
+- App Router
+- React Server Components
+- Static Site Generation
+- Server-Side Rendering
+- Incremental Static Regeneration
+- Route Handlers
+- Server Actions
+
+Đối với dự án này, phần lớn trang có thể được render tĩnh từ generated JSON.
+
+Deployment flow đề xuất:
+
+    GitHub Action sync release
+              |
+              v
+    Commit dữ liệu mới vào main
+              |
+              v
+    Cloudflare Git integration phát hiện commit
+              |
+              v
+    Build Next.js
+              |
+              v
+    Deploy Cloudflare Workers
+
+Không nên cấu hình đồng thời:
+
+- Cloudflare Git integration; và
+- Một GitHub Actions workflow khác cũng deploy Cloudflare.
+
+Chỉ chọn một deployment path để tránh double build và double deploy.
+
+Khuyến nghị dùng Cloudflare Git integration vì đơn giản hơn cho dự án cá nhân.
+
+Nếu website chỉ dành cho cá nhân:
+
+- Đặt Cloudflare Access phía trước website.
+- Không cần tự xây authentication trong Next.js.
+
+
+13. CI WORKFLOW
+---------------
+
+Workflow:
+
+    .github/workflows/ci.yaml
+
+Chạy khi:
+
+- Pull request vào main.
+- Push vào main, ngoại trừ commit chỉ thay đổi generated data nếu muốn giảm CI.
+
+Các bước:
+
+1. Install dependencies.
+2. Validate tools.yaml.
+3. Lint.
+4. Type check.
+5. Unit test.
+6. Next.js build.
+7. Cloudflare preview build bằng workerd nếu cần.
+
+Security cơ bản:
+
+- Chỉ cấp contents: read cho CI.
+- Sync workflow mới có contents: write.
+- Pin các GitHub Actions quan trọng bằng commit SHA.
+- Không ghi GitHub token vào file hoặc log.
+- Sanitize release notes trước khi render.
+
+
+14. NHỮNG THỨ CHƯA CẦN TRONG MVP
+--------------------------------
+
+Chưa cần:
+
+- Cloudflare D1.
+- PostgreSQL.
+- User registration.
+- OAuth login tự xây.
+- Admin dashboard.
+- Webhook cho tất cả upstream repository.
+- Kubernetes deployment.
+- Microservice backend.
+- AI summarization cho mọi release.
+- Slack hoặc Telegram notification.
+
+Các phần này chỉ bổ sung khi MVP đã chứng minh rằng dashboard được sử dụng
+thường xuyên.
+
+
+15. CÁC PHASE TRIỂN KHAI
+------------------------
+
+PHASE 1 - MVP
+
+- Khoảng 25 đến 30 tool.
+- Catalog bằng YAML.
+- Daily GitHub release sync.
+- Generated JSON được commit vào Git.
+- Trang chủ.
+- Search.
+- Filter theo category và tag.
+- Trang chi tiết tool.
+- Release history.
+- Deploy Cloudflare Workers.
+
+PHASE 2 - PERSONALIZATION
+
+- Favorites.
+- Chỉ hiển thị tool đang sử dụng.
+- RSS feed.
+- Telegram hoặc Slack daily digest.
+- Phân loại major, minor, patch.
+- Highlight breaking changes.
+- Compare release notes giữa hai version.
+
+PHASE 3 - RELEASE INTELLIGENCE
+
+- Theo dõi security advisory và CVE.
+- Theo dõi End-of-Life.
+- Khai báo version đang chạy trong môi trường.
+- So sánh installed version với latest version.
+- Cảnh báo version bị EOL.
+- Hỗ trợ private GitHub repositories.
+- AI summary cho release notes dài.
+
+
+16. TIÊU CHÍ HOÀN THÀNH MVP
+----------------------------
+
+MVP được xem là hoàn thành khi:
+
+- tools.yaml có ít nhất 25 tool hợp lệ.
+- Workflow chạy tự động mỗi ngày.
+- Một release mới được phát hiện và lưu đúng.
+- Workflow chạy lại không tạo dữ liệu trùng.
+- Không có thay đổi thì không tạo commit.
+- Website hiển thị release theo ngày và category.
+- Search hoạt động.
+- Trang chi tiết hiển thị lịch sử release.
+- Release notes được sanitize.
+- Website deploy thành công trên Cloudflare Workers.
+- Không cần database.
+- Không có GitHub token ở client-side.
+
+
+17. QUYẾT ĐỊNH KIẾN TRÚC ĐỀ XUẤT
+--------------------------------
+
+Tên:
+
+    ops-release-radar
+
+Source of truth:
+
+    config/tools.yaml
+
+Automation:
+
+    GitHub Actions chạy mỗi ngày
+
+Storage:
+
+    Generated JSON được version-control trong Git
+
+Frontend:
+
+    Next.js App Router
+
+Runtime:
+
+    Cloudflare Workers thông qua OpenNext
+
+Deployment:
+
+    Cloudflare Git integration
+
+Authentication:
+
+    Không có trong app; dùng Cloudflare Access nếu cần private
+
+Database:
+
+    Không dùng trong MVP
+
+
+18. THÔNG TIN CẦN CHỐT TRƯỚC KHI CODE
+-------------------------------------
+
+1. Tên repository:
+
+   - ops-release-radar
+   - duyops-radar
+   - Tên khác
+
+2. Chế độ truy cập:
+
+   - Public
+   - Private bằng Cloudflare Access
+
+3. Danh sách khoảng 25 đến 30 tool đầu tiên.
+
+4. Domain dự kiến, ví dụ:
+
+   releases.example.com
+   radar.example.com
+
+
+KẾT LUẬN
+--------
+
+Ops Release Radar nên được xây như một Git-backed release catalog:
+
+- Catalog tool quản lý bằng YAML.
+- GitHub Actions cập nhật release mỗi ngày.
+- Release history được lưu thành JSON trong repository.
+- Next.js chỉ đọc dữ liệu đã chuẩn hóa.
+- Cloudflare Workers chịu trách nhiệm phục vụ website.
+
+Thiết kế này đủ nhỏ để phục vụ cá nhân nhưng vẫn có cấu trúc rõ ràng để sau này
+mở rộng thêm notification, EOL, CVE và installed-version tracking.

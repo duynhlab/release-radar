@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-29T16:11:54.744Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 346729148,
+      "name": "v0.72.0",
+      "notes": "## ⚡ Highlights ⚡\r\n👉 https://github.com/aquasecurity/trivy/discussions/10907\r\n\r\n## Changelog\r\nhttps://github.com/aquasecurity/trivy/blob/main/CHANGELOG.md#0720-2026-06-30",
+      "prerelease": false,
+      "publishedAt": "2026-06-30T09:34:06Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.72.0",
+      "version": "v0.72.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 341883739,
+      "name": "v0.71.2",
+      "notes": "## Changelog\n* 055a5c8a53bfd61f7a8e276a5b2f0c3fc1673420 release: v0.71.2 [release/v0.71] (#10871)\n* 875328a4138f26e8559cfee80adaef82b6693076 fix(deps): bump alpine to 3.24.1 [backport: release/v0.71] (#10870)\n* 998f7b3c3f3c9de2132bc4358970eeafbd797fba chore(deps): bump the common group with 4 updates [backport: release/v0.71] (#10867)",
+      "prerelease": false,
+      "publishedAt": "2026-06-19T10:37:28Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.71.2",
+      "version": "v0.71.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 339434589,
+      "name": "v0.71.1",
+      "notes": "## Changelog\n* 164b383121351c2d49c5d354c2245719d972752b release: v0.71.1 [release/v0.71] (#10818)\n* a72d9a4d997c25fbb6534e231b4e206c9b202b31 fix(oci): validate artifact filename\n* 3dd98471dfbbc4a95edd5cd866468d3a8c87fd17 fix: forward ospkg detector options through ospkg.NewScanner [backport: release/v0.71] (#10825)\n* a62cbe40a240d3a3f568401b8a5f86e14114e371 fix(vex): load VEX documents from within the repository directory [backport: release/v0.71] (#10821)\n* 43d1d2628725e913db110b89419f0bebd36f58a8 fix: surface the original analysis error instead of context cancellation [backport: release/v0.71] (#10812)\n* ac7696c7b50d633183ce2ff44898d4b5c6eae565 ci: expect GitHub App bot as backport PR author [backport: release/v0.71] (#10815)",
+      "prerelease": false,
+      "publishedAt": "2026-06-15T09:12:47Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.71.1",
+      "version": "v0.71.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 332522983,
+      "name": "v0.71.0",
+      "notes": "## ⚡ Highlights ⚡\r\n👉 https://github.com/aquasecurity/trivy/discussions/10767\r\n\r\n## Changelog\r\nhttps://github.com/aquasecurity/trivy/blob/main/CHANGELOG.md#0710-2026-06-01",
+      "prerelease": false,
+      "publishedAt": "2026-06-01T13:49:26Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.71.0",
+      "version": "v0.71.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 310199990,
+      "name": "v0.70.0",
+      "notes": "## ⚡ Highlights ⚡\r\n👉 https://github.com/aquasecurity/trivy/discussions/10546\r\n\r\n## Changelog\r\nhttps://github.com/aquasecurity/trivy/blob/main/CHANGELOG.md#0700-2026-04-16",
+      "prerelease": false,
+      "publishedAt": "2026-04-17T06:50:02Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.70.0",
+      "version": "v0.70.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 292538060,
+      "name": "v0.69.3",
+      "notes": "## Changelog\n* 6fb20c8edd70745d6b34bff0387b53b03c8a760a release: v0.69.3 [release/v0.69] (#10293)\n* dabefec57d099184bc8bd268dea23cd5d502f9cc fix(deps): bump github.com/go-git/go-git/v5 from 5.16.4 to 5.16.5 [backport: release/v0.69] (#10291)",
+      "prerelease": false,
+      "publishedAt": "2026-03-03T13:14:48Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.69.3",
+      "version": "v0.69.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 291833946,
+      "name": "v0.69.2",
+      "notes": "## Changelog\n* cfa322ed23f2e33ef1632ae3a5a8c7172f06a5c3 release: v0.69.2 [release/v0.69] (#10266)\n* 86debce0f4897e9501368fe0611c5ae472a141eb fix(deps): bump go.opentelemetry.io/otel/sdk from 1.39.0 to 1.40.0 [backport: release/v0.69] (#10267)\n* cf3d4cd6a8bdf5b5b1d701f591bd8aaabd2c7c27 fix(deps): bump github.com/cloudflare/circl from 1.6.1 to 1.6.3 [backport: release/v0.69] (#10264)\n* 6dfd3b078b95d30e812e04f13fd1cac7e08f9b4e ci: remove apidiff workflow",
+      "prerelease": false,
+      "publishedAt": "2026-03-01T19:14:14Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.69.2",
+      "version": "v0.69.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 64565455,
+      "name": "v0.26.0",
+      "notes": "## Changelog\n* a0047a79 feat(alpine): warn mixing versions (#2000)\n* d786655a Update ASFF template (#1914)\n* a02cf651 chore(deps): replace `containerd/containerd` version to fix CVE-2022-23648 (#1994)\n* 613e38cc chore(deps): bump alpine from 3.15.3 to 3.15.4 (#1993)\n* 3b6d65be test(go): add integration tests for gomod (#1989)\n* 22f5b938 fix(python): fixed panic when scan .egg archive (#1992)\n* 485637c2 fix(go): set correct go modules type (#1990)\n* 6fdb554a feat(alpine): support apk repositories (#1987)\n* d9bddb90 docs: add CBL-Mariner (#1982)\n* 1cf1873f docs(go): fix version (#1986)\n* d77dbe8a feat(go): support go.mod in Go 1.17+ (#1985)\n* 32bd1e48 ci: fix URLs in the PR template (#1972)\n* 94a5a180 ci: add semantic pull requests check (#1968)\n* 72d94b21 docs(issue): added docs for wrong detection issues (#1961)",
+      "prerelease": false,
+      "publishedAt": "2022-04-15T21:41:49Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.26.0",
+      "version": "v0.26.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 64127345,
+      "name": "v0.25.4",
+      "notes": "## Changelog\n* b4a7d6a8 docs: move CONTRIBUTING.md to docs (#1971)\n* 0127c1d3 refactor(table): use file name instead package path (#1966)\n* a92da722 fix(sbom): add --db-repository (#1964)\n* b0f3864e feat(table): add PkgPath in table result (#1960)\n* 0b1d32c1 fix(pom): merge multiple pom imports in a good manner (#1959)",
+      "prerelease": false,
+      "publishedAt": "2022-04-11T16:29:57Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.25.4",
+      "version": "v0.25.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 63717626,
+      "name": "v0.25.3",
+      "notes": "## Changelog\n* d4e3df81 fix(downloadDB): add dbRepositoryFlag to repository and rootfs commands (#1956)\n* 7e48cc1f fix(misconf): update BurntSushi/toml for fix runtime error (#1948)\n* c9efa8c4 fix(misconf): Update fanal/defsec to resolve missing metadata issues (#1947)\n* 52b71542 feat(jar): allow setting Maven Central URL using environment variable (#1939)\n* 21f7a41b chore(chart): update Trivy version in HelmChart to 0.25.0 (#1931)\n* ff2b3d17 chore(chart): remove version comments (#1933)",
+      "prerelease": false,
+      "publishedAt": "2022-04-06T07:16:49Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.25.3",
+      "version": "v0.25.3"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "trivy",
+    "name": "Trivy",
+    "repository": "aquasecurity/trivy"
+  }
+}

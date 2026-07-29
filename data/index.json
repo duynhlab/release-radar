@@ -1,0 +1,345 @@
+{
+  "generatedAt": "2026-07-29T16:11:54.746Z",
+  "schemaVersion": 1,
+  "tools": [
+    {
+      "category": "platform",
+      "description": "Production-grade container orchestration",
+      "documentation": "https://kubernetes.io/docs/",
+      "homepage": "https://kubernetes.io",
+      "id": "kubernetes",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 358395186,
+        "name": "v1.36.3",
+        "prerelease": false,
+        "publishedAt": "2026-07-23T00:35:52Z",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.3",
+        "version": "v1.36.3"
+      },
+      "name": "Kubernetes",
+      "previous": {
+        "publishedAt": "2026-07-22T22:28:35Z",
+        "version": "v1.35.7"
+      },
+      "releaseCount": 7,
+      "repository": "kubernetes/kubernetes",
+      "tags": [
+        "containers",
+        "orchestration"
+      ]
+    },
+    {
+      "category": "platform",
+      "description": "Just-in-time node autoscaling for Kubernetes on AWS",
+      "documentation": "https://karpenter.sh/docs/",
+      "homepage": "https://karpenter.sh",
+      "id": "karpenter",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 355752729,
+        "name": "v1.11.3",
+        "prerelease": false,
+        "publishedAt": "2026-07-17T15:03:05Z",
+        "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.11.3",
+        "version": "v1.11.3"
+      },
+      "name": "Karpenter",
+      "previous": {
+        "publishedAt": "2026-07-17T15:02:53Z",
+        "version": "v1.10.2"
+      },
+      "releaseCount": 10,
+      "repository": "aws/karpenter-provider-aws",
+      "tags": [
+        "kubernetes",
+        "autoscaling",
+        "aws"
+      ]
+    },
+    {
+      "category": "platform",
+      "description": "X.509 certificate management for Kubernetes",
+      "documentation": "https://cert-manager.io/docs/",
+      "homepage": "https://cert-manager.io",
+      "id": "cert-manager",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 361831037,
+        "name": "v1.21.1",
+        "prerelease": false,
+        "publishedAt": "2026-07-29T15:36:11Z",
+        "url": "https://github.com/cert-manager/cert-manager/releases/tag/v1.21.1",
+        "version": "v1.21.1"
+      },
+      "name": "cert-manager",
+      "previous": {
+        "publishedAt": "2026-07-08T22:40:40Z",
+        "version": "v1.21.0"
+      },
+      "releaseCount": 7,
+      "repository": "cert-manager/cert-manager",
+      "tags": [
+        "kubernetes",
+        "tls",
+        "certificates"
+      ]
+    },
+    {
+      "category": "provisioning",
+      "description": "Infrastructure as code for any cloud",
+      "documentation": "https://developer.hashicorp.com/terraform/docs",
+      "homepage": "https://developer.hashicorp.com/terraform",
+      "id": "terraform",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 351091774,
+        "name": "v1.15.8",
+        "prerelease": false,
+        "publishedAt": "2026-07-08T17:45:09Z",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.8",
+        "version": "v1.15.8"
+      },
+      "name": "Terraform",
+      "previous": {
+        "publishedAt": "2026-06-24T16:47:12Z",
+        "version": "v1.15.7"
+      },
+      "releaseCount": 2,
+      "repository": "hashicorp/terraform",
+      "tags": [
+        "iac"
+      ]
+    },
+    {
+      "category": "provisioning",
+      "description": "Open-source infrastructure as code, Terraform-compatible",
+      "documentation": "https://opentofu.org/docs/",
+      "homepage": "https://opentofu.org",
+      "id": "opentofu",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 357295972,
+        "name": "v1.12.5",
+        "prerelease": false,
+        "publishedAt": "2026-07-21T11:39:19Z",
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.5",
+        "version": "v1.12.5"
+      },
+      "name": "OpenTofu",
+      "previous": {
+        "publishedAt": "2026-07-21T11:39:02Z",
+        "version": "v1.11.13"
+      },
+      "releaseCount": 10,
+      "repository": "opentofu/opentofu",
+      "tags": [
+        "iac"
+      ]
+    },
+    {
+      "category": "delivery",
+      "description": "GitOps toolkit for Kubernetes",
+      "documentation": "https://fluxcd.io/flux/",
+      "homepage": "https://fluxcd.io",
+      "id": "flux",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 358785591,
+        "name": "v2.9.3",
+        "prerelease": false,
+        "publishedAt": "2026-07-23T15:31:54Z",
+        "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.3",
+        "version": "v2.9.3"
+      },
+      "name": "Flux",
+      "previous": {
+        "publishedAt": "2026-07-13T13:21:27Z",
+        "version": "v2.9.2"
+      },
+      "releaseCount": 10,
+      "repository": "fluxcd/flux2",
+      "tags": [
+        "gitops",
+        "kubernetes"
+      ]
+    },
+    {
+      "category": "delivery",
+      "description": "Declarative GitOps continuous delivery for Kubernetes",
+      "documentation": "https://argo-cd.readthedocs.io",
+      "homepage": "https://argoproj.github.io/cd/",
+      "id": "argo-cd",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 351665538,
+        "name": "v3.4.5",
+        "prerelease": false,
+        "publishedAt": "2026-07-09T17:01:16Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.5",
+        "version": "v3.4.5"
+      },
+      "name": "Argo CD",
+      "previous": {
+        "publishedAt": "2026-06-18T09:36:37Z",
+        "version": "v3.4.4"
+      },
+      "releaseCount": 7,
+      "repository": "argoproj/argo-cd",
+      "tags": [
+        "gitops",
+        "kubernetes"
+      ]
+    },
+    {
+      "category": "delivery",
+      "description": "The package manager for Kubernetes",
+      "documentation": "https://helm.sh/docs/",
+      "homepage": "https://helm.sh",
+      "id": "helm",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 351788551,
+        "name": "Helm v3.21.3",
+        "prerelease": false,
+        "publishedAt": "2026-07-09T21:20:27Z",
+        "url": "https://github.com/helm/helm/releases/tag/v3.21.3",
+        "version": "v3.21.3"
+      },
+      "name": "Helm",
+      "previous": {
+        "publishedAt": "2026-07-09T20:56:43Z",
+        "version": "v4.2.3"
+      },
+      "releaseCount": 10,
+      "repository": "helm/helm",
+      "tags": [
+        "kubernetes",
+        "packaging"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Monitoring system and time series database",
+      "documentation": "https://prometheus.io/docs/",
+      "homepage": "https://prometheus.io",
+      "id": "prometheus",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 351982664,
+        "name": "3.13.1 / 2026-07-10",
+        "prerelease": false,
+        "publishedAt": "2026-07-10T10:34:15Z",
+        "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.1",
+        "version": "v3.13.1"
+      },
+      "name": "Prometheus",
+      "previous": {
+        "publishedAt": "2026-07-09T08:41:56Z",
+        "version": "v3.5.5"
+      },
+      "releaseCount": 7,
+      "repository": "prometheus/prometheus",
+      "tags": [
+        "metrics",
+        "monitoring"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Open observability and dashboarding platform",
+      "documentation": "https://grafana.com/docs/",
+      "homepage": "https://grafana.com",
+      "id": "grafana",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 357452044,
+        "name": "12.4.6",
+        "prerelease": false,
+        "publishedAt": "2026-07-21T15:32:19Z",
+        "url": "https://github.com/grafana/grafana/releases/tag/v12.4.6",
+        "version": "v12.4.6"
+      },
+      "name": "Grafana",
+      "previous": {
+        "publishedAt": "2026-07-21T12:43:24Z",
+        "version": "v12.3.9"
+      },
+      "releaseCount": 10,
+      "repository": "grafana/grafana",
+      "tags": [
+        "dashboards",
+        "metrics",
+        "logs"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Vendor-neutral telemetry collector",
+      "documentation": "https://opentelemetry.io/docs/collector/",
+      "homepage": "https://opentelemetry.io",
+      "id": "otel-collector",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 357918883,
+        "name": "v0.157.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-22T09:59:16Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.157.0",
+        "version": "v0.157.0"
+      },
+      "name": "OpenTelemetry Collector",
+      "previous": {
+        "publishedAt": "2026-07-07T14:25:15Z",
+        "version": "v0.156.0"
+      },
+      "releaseCount": 4,
+      "repository": "open-telemetry/opentelemetry-collector-releases",
+      "tags": [
+        "metrics",
+        "logs",
+        "traces"
+      ]
+    },
+    {
+      "category": "security",
+      "description": "Comprehensive vulnerability scanner for containers and IaC",
+      "documentation": "https://trivy.dev/latest/docs/",
+      "homepage": "https://trivy.dev",
+      "id": "trivy",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 346729148,
+        "name": "v0.72.0",
+        "prerelease": false,
+        "publishedAt": "2026-06-30T09:34:06Z",
+        "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.72.0",
+        "version": "v0.72.0"
+      },
+      "name": "Trivy",
+      "previous": {
+        "publishedAt": "2026-06-19T10:37:28Z",
+        "version": "v0.71.2"
+      },
+      "releaseCount": 10,
+      "repository": "aquasecurity/trivy",
+      "tags": [
+        "scanning",
+        "vulnerabilities",
+        "containers"
+      ]
+    }
+  ]
+}
