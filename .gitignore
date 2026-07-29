@@ -46,3 +46,6 @@ next-env.d.ts
 # cloudflare/opennext artifacts
 .wrangler/
 cloudflare-env.d.ts
+
+# internal planning notes (kept local only)
+docs/release-radar-plan.txt
