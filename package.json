@@ -39,5 +39,6 @@
     "vitest": "^4.1.10",
     "wrangler": "^4.114.0"
   },
-  "type": "module"
+  "type": "module",
+  "packageManager": "pnpm@11.18.0"
 }
