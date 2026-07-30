@@ -4,6 +4,7 @@ import {
   appendToolToCatalog,
   buildToolEntry,
   CatalogEditError,
+  ensureGroup,
   normalizeRepository,
   type AddToolInputs,
 } from "../lib/catalog-edit.ts";
@@ -63,7 +64,18 @@ async function main(): Promise<void> {
     }
   }
 
-  const yamlText = readFileSync(CATALOG_PATH, "utf8");
+  let yamlText = readFileSync(CATALOG_PATH, "utf8");
+  if (entry.group) {
+    const ensured = ensureGroup(
+      yamlText,
+      entry.group,
+      process.env.INPUT_GROUP_NAME || undefined,
+    );
+    yamlText = ensured.yaml;
+    if (ensured.created) {
+      console.log(`Created new group "${entry.group}"`);
+    }
+  }
   writeFileSync(CATALOG_PATH, appendToolToCatalog(yamlText, entry));
   loadCatalog();
 

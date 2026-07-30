@@ -26,7 +26,10 @@ on:
         description: "Display name (default: derived from repo name)"
         required: false
       group:
-        description: "Group slug (must already exist under groups:)"
+        description: "Group slug (created automatically if it doesn't exist)"
+        required: false
+      group_name:
+        description: "Display name when creating a new group (default: derived from slug)"
         required: false
       tags:
         description: "Comma-separated tags, e.g. kubernetes,operator"
@@ -78,6 +81,7 @@ jobs:
           INPUT_ID: ${{ inputs.id }}
           INPUT_NAME: ${{ inputs.name }}
           INPUT_GROUP: ${{ inputs.group }}
+          INPUT_GROUP_NAME: ${{ inputs.group_name }}
           INPUT_TAGS: ${{ inputs.tags }}
           INPUT_TAG_PATTERN: ${{ inputs.tag_pattern }}
           INPUT_INCLUDE_PRERELEASE: ${{ inputs.include_prerelease }}
