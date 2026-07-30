@@ -1,0 +1,136 @@
+name: Add tool
+
+on:
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: "GitHub repository (owner/repo or full URL)"
+        required: true
+      category:
+        description: "Category"
+        required: true
+        type: choice
+        options:
+          - platform
+          - provisioning
+          - delivery
+          - observability
+          - networking
+          - security
+          - data
+          - ai
+      id:
+        description: "Tool id (default: repo name)"
+        required: false
+      name:
+        description: "Display name (default: derived from repo name)"
+        required: false
+      group:
+        description: "Group slug (must already exist under groups:)"
+        required: false
+      tags:
+        description: "Comma-separated tags, e.g. kubernetes,operator"
+        required: false
+      tag_pattern:
+        description: "Regex the release tag must match"
+        required: false
+        default: '^v\d+\.\d+\.\d+$'
+      include_prerelease:
+        description: "Include prereleases"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: add-tool
+  cancel-in-progress: false
+
+jobs:
+  add-tool:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Add tool to catalog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_REPOSITORY: ${{ inputs.repository }}
+          INPUT_CATEGORY: ${{ inputs.category }}
+          INPUT_ID: ${{ inputs.id }}
+          INPUT_NAME: ${{ inputs.name }}
+          INPUT_GROUP: ${{ inputs.group }}
+          INPUT_TAGS: ${{ inputs.tags }}
+          INPUT_TAG_PATTERN: ${{ inputs.tag_pattern }}
+          INPUT_INCLUDE_PRERELEASE: ${{ inputs.include_prerelease }}
+        run: node scripts/add-tool.ts | tee add-tool.log
+
+      - name: Validate tool catalog
+        run: node scripts/validate-catalog.ts
+
+      - name: Sync GitHub releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/sync-releases.ts
+
+      # The bot PR won't trigger the CI workflow (GITHUB_TOKEN loop
+      # prevention), so run the same checks here before opening it.
+      - name: Run CI checks
+        run: |
+          pnpm test
+          pnpm lint
+          pnpm typecheck
+          pnpm build
+
+      - name: Resolve tool id
+        id: tool
+        run: |
+          TOOL_ID=$(grep -m1 '"id"' add-tool.log | sed 's/.*: "\(.*\)".*/\1/')
+          echo "id=${TOOL_ID}" >> "$GITHUB_OUTPUT"
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          add-paths: |
+            config/tools.yaml
+            schemas/tool.schema.json
+            data/**
+          branch: feat/add-tool-${{ steps.tool.outputs.id }}
+          delete-branch: true
+          commit-message: "Add ${{ steps.tool.outputs.id }} to catalog"
+          title: "Add ${{ steps.tool.outputs.id }} to catalog"
+          body: |
+            Adds `${{ inputs.repository }}` to the catalog via the **Add tool** workflow.
+
+            | Field | Value |
+            |---|---|
+            | Category | `${{ inputs.category }}` |
+            | Group | `${{ inputs.group || '—' }}` |
+            | Tags | `${{ inputs.tags || '—' }}` |
+            | Tag pattern | `${{ inputs.tag_pattern }}` |
+            | Prereleases | `${{ inputs.include_prerelease }}` |
+
+            Release data was synced and the full check suite (validate,
+            test, lint, typecheck, build) passed in the triggering run:
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            > Note: this PR was created with `GITHUB_TOKEN`, so the CI
+            > workflow does not run on it — the checks above stand in for it.

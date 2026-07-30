@@ -68,9 +68,23 @@ Node ≥ 22.18 runs the `.ts` scripts natively — no tsx/ts-node needed.
 | `app/`, `components/` | Next.js UI. `home-explorer.tsx` is the main client component (search/filter/favorites). |
 | `.github/workflows/sync-releases.yaml` | Daily sync, `contents: write`, commits only if `data/` changed. |
 | `.github/workflows/ci.yaml` | PR/push checks, `contents: read`, ignores data-only pushes. |
+| `.github/workflows/add-tool.yaml` | Add a tool from the Actions UI — fills the catalog, syncs data, opens a PR. |
+| `scripts/add-tool.ts` + `lib/catalog-edit.ts` | Catalog intake: normalize repo input, auto-fill metadata, append YAML preserving format. |
 | `open-next.config.ts` + `wrangler.jsonc` | Cloudflare adapter config. |
 
 ## Adding a tool (the 90% task)
+
+**From the GitHub UI (no local setup):** Actions → **Add tool** → Run
+workflow → fill in the repository (owner/repo or URL), category and optional
+fields → a PR appears with the catalog entry plus synced release data —
+review and squash-merge it. The workflow runs the full check suite (validate,
+test, lint, typecheck, build) before opening the PR; note the bot PR itself
+does not trigger the CI workflow (`GITHUB_TOKEN` limitation), the in-run
+checks stand in for it. Requires the repo setting *Actions → General →
+Workflow permissions → "Allow GitHub Actions to create and approve pull
+requests"*.
+
+**Manually:**
 
 1. Add an entry to `config/tools.yaml` (copy an existing one; the JSON schema
    gives autocomplete):
