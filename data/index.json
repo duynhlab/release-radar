@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T03:02:40.233Z",
+  "generatedAt": "2026-07-30T03:06:26.929Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1204,35 +1204,6 @@
       "repository": "open-telemetry/opentelemetry-operator",
       "tags": [
         "metrics",
-        "traces",
-        "kubernetes",
-        "operator"
-      ]
-    },
-    {
-      "category": "observability",
-      "description": "Kubernetes operator for the Jaeger tracing platform",
-      "documentation": "https://www.jaegertracing.io/docs/latest/operator/",
-      "homepage": "https://www.jaegertracing.io",
-      "id": "jaeger-operator",
-      "latest": {
-        "channel": "stable",
-        "draft": false,
-        "id": 196486436,
-        "name": "Release v1.65.0",
-        "prerelease": false,
-        "publishedAt": "2025-01-23T18:08:13Z",
-        "url": "https://github.com/jaegertracing/jaeger-operator/releases/tag/v1.65.0",
-        "version": "v1.65.0"
-      },
-      "name": "Jaeger Operator",
-      "previous": {
-        "publishedAt": "2024-10-09T14:09:54Z",
-        "version": "v1.62.0"
-      },
-      "releaseCount": 10,
-      "repository": "jaegertracing/jaeger-operator",
-      "tags": [
         "traces",
         "kubernetes",
         "operator"

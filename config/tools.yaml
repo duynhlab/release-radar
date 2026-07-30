@@ -658,22 +658,6 @@ tools:
       includePrerelease: false
       tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
 
-  - id: jaeger-operator
-    name: Jaeger Operator
-    category: observability
-    repository: jaegertracing/jaeger-operator
-    description: Kubernetes operator for the Jaeger tracing platform
-    homepage: https://www.jaegertracing.io
-    documentation: https://www.jaegertracing.io/docs/latest/operator/
-    tags:
-      - traces
-      - kubernetes
-      - operator
-    release:
-      strategy: github-releases
-      includePrerelease: false
-      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
-
   - id: kong-charts
     name: Kong Helm Chart
     category: networking
