@@ -908,3 +908,19 @@ tools:
       strategy: github-releases
       includePrerelease: false
       tagPattern: ^v\d+\.\d+\.\d+$
+
+  - id: pgaudit
+    name: pgaudit
+    category: data
+    repository: pgaudit/pgaudit
+    description: PostgreSQL Audit Extension
+    homepage: http://pgaudit.org/
+    tags:
+      - postgresql
+      - extension
+      - pgaudit
+    group: database
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: ^v\d+\.\d+\.\d+$

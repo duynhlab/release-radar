@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-07-30T07:46:33.898Z",
+  "releases": [],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "pgaudit",
+    "name": "pgaudit",
+    "repository": "pgaudit/pgaudit"
+  }
+}
