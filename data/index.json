@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T08:22:40.036Z",
+  "generatedAt": "2026-07-30T08:40:40.355Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1717,10 +1717,22 @@
       },
       "homepage": "http://pgaudit.org/",
       "id": "pgaudit",
-      "latest": null,
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 249699655,
+        "name": "pgAudit 18.0 (PostgreSQL 18)",
+        "prerelease": false,
+        "publishedAt": "2025-09-24T14:41:31Z",
+        "url": "https://github.com/pgaudit/pgaudit/releases/tag/18.0",
+        "version": "18.0"
+      },
       "name": "pgaudit",
-      "previous": null,
-      "releaseCount": 0,
+      "previous": {
+        "publishedAt": "2025-02-28T22:38:24Z",
+        "version": "1.5.3"
+      },
+      "releaseCount": 9,
       "repository": "pgaudit/pgaudit",
       "tags": [
         "postgresql",
@@ -1757,6 +1769,132 @@
         "postgresql",
         "extension",
         "pg_duckdb"
+      ]
+    },
+    {
+      "category": "data",
+      "description": "Archival restoration tool for PostgreSQL, MySQL and more",
+      "documentation": "https://wal-g.readthedocs.io",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
+      "id": "wal-g",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 278649949,
+        "name": "v3.0.8",
+        "prerelease": false,
+        "publishedAt": "2026-01-21T14:19:22Z",
+        "url": "https://github.com/wal-g/wal-g/releases/tag/v3.0.8",
+        "version": "v3.0.8"
+      },
+      "name": "WAL-G",
+      "previous": {
+        "publishedAt": "2025-04-13T09:44:25Z",
+        "version": "v3.0.7"
+      },
+      "releaseCount": 5,
+      "repository": "wal-g/wal-g",
+      "tags": [
+        "postgresql",
+        "backup"
+      ]
+    },
+    {
+      "category": "data",
+      "description": "Backup and restore solution for PostgreSQL",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
+      "homepage": "https://pgmoneta.github.io",
+      "id": "pgmoneta",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 315193378,
+        "name": "pgmoneta 0.21.0",
+        "prerelease": false,
+        "publishedAt": "2026-04-29T13:12:17Z",
+        "url": "https://github.com/pgmoneta/pgmoneta/releases/tag/0.21.0",
+        "version": "0.21.0"
+      },
+      "name": "pgmoneta",
+      "previous": {
+        "publishedAt": "2026-01-19T11:08:31Z",
+        "version": "0.20.0"
+      },
+      "releaseCount": 10,
+      "repository": "pgmoneta/pgmoneta",
+      "tags": [
+        "postgresql",
+        "backup"
+      ]
+    },
+    {
+      "category": "data",
+      "description": "Backup and recovery manager for PostgreSQL",
+      "documentation": "https://docs.pgbarman.org",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
+      "homepage": "https://pgbarman.org",
+      "id": "barman",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 330160157,
+        "name": "Release 3.19.1",
+        "prerelease": false,
+        "publishedAt": "2026-05-27T12:27:23Z",
+        "url": "https://github.com/EnterpriseDB/barman/releases/tag/release/3.19.1",
+        "version": "release/3.19.1"
+      },
+      "name": "Barman",
+      "previous": {
+        "publishedAt": "2026-05-20T14:31:00Z",
+        "version": "release/3.19.0"
+      },
+      "releaseCount": 10,
+      "repository": "EnterpriseDB/barman",
+      "tags": [
+        "postgresql",
+        "backup"
+      ]
+    },
+    {
+      "category": "data",
+      "description": "CloudNativePG plugin for backups with Barman Cloud",
+      "documentation": "https://cloudnative-pg.io/plugin-barman-cloud/",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
+      "id": "plugin-barman-cloud",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 361662147,
+        "name": "v0.14.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-29T10:18:27Z",
+        "url": "https://github.com/cloudnative-pg/plugin-barman-cloud/releases/tag/v0.14.0",
+        "version": "v0.14.0"
+      },
+      "name": "Barman Cloud Plugin",
+      "previous": {
+        "publishedAt": "2026-06-10T09:33:24Z",
+        "version": "v0.13.0"
+      },
+      "releaseCount": 10,
+      "repository": "cloudnative-pg/plugin-barman-cloud",
+      "tags": [
+        "postgresql",
+        "backup",
+        "kubernetes"
       ]
     }
   ]

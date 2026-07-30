@@ -1,6 +1,106 @@
 {
-  "generatedAt": "2026-07-30T07:46:33.898Z",
-  "releases": [],
+  "generatedAt": "2026-07-30T08:35:51.488Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 249699655,
+      "name": "pgAudit 18.0 (PostgreSQL 18)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Error when required hooks are skipped.\r\n\r\n**Improvements**:\r\n\r\n- SELECT FOR UPDATE object logging improvement.\r\n- Disable logging in parallel workers.\r\n- Use strpbrk() instead of strstr() where applicable.\r\n- Fix search_path for trigger functions.\r\n- Minor code optimizations.\r\n\r\n**Features**:\r\n\r\n- PostgreSQL 18 support.",
+      "prerelease": false,
+      "publishedAt": "2025-09-24T14:41:31Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/18.0",
+      "version": "18.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 201278750,
+      "name": "pgAudit 1.5.3 (PostgreSQL 13)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Fix issues that could cause 'pgaudit stack is not empty' errors.",
+      "prerelease": false,
+      "publishedAt": "2025-02-28T22:38:24Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/1.5.3",
+      "version": "1.5.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 201280460,
+      "name": "pgAudit 17.1 (PostgreSQL 17)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Fix issues that could cause 'pgaudit stack is not empty' errors.",
+      "prerelease": false,
+      "publishedAt": "2025-02-19T20:28:04Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/17.1",
+      "version": "17.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 201280002,
+      "name": "pgAudit 16.1 (PostgreSQL 16)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Fix issues that could cause 'pgaudit stack is not empty' errors.",
+      "prerelease": false,
+      "publishedAt": "2025-02-19T20:25:21Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/16.1",
+      "version": "16.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 201279421,
+      "name": "pgAudit 1.7.1 (PostgreSQL 15)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Fix issues that could cause 'pgaudit stack is not empty' errors.",
+      "prerelease": false,
+      "publishedAt": "2025-02-19T20:21:53Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/1.7.1",
+      "version": "1.7.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 201278970,
+      "name": "pgAudit 1.6.3 (PostgreSQL 14)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Fix issues that could cause 'pgaudit stack is not empty' errors.",
+      "prerelease": false,
+      "publishedAt": "2025-02-19T20:19:04Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/1.6.3",
+      "version": "1.6.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 173957565,
+      "name": "pgAudit 17.0 (PostgreSQL 17)",
+      "notes": "**Features**:\r\n\r\n- Improve logging of compound statements.\r\n- PostgreSQL 17 support.",
+      "prerelease": false,
+      "publishedAt": "2024-09-07T06:57:54Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/17.0",
+      "version": "17.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 120012518,
+      "name": "pgAudit 16.0 (PostgreSQL 16)",
+      "notes": "**Features**:\r\n\r\n- Add log_parameter_max_size to set maximum size of logged parameters.\r\n- Redact password for create/alter user mapping.\r\n- PostgreSQL 16 support.",
+      "prerelease": false,
+      "publishedAt": "2023-09-05T20:10:43Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/16.0",
+      "version": "16.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 69339035,
+      "name": "pgAudit 1.7.0 (PostgreSQL 15)",
+      "notes": "**Features**:\r\n\r\n- PostgreSQL 15 support.",
+      "prerelease": false,
+      "publishedAt": "2022-06-13T20:44:18Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/1.7.0",
+      "version": "1.7.0"
+    }
+  ],
   "schemaVersion": 1,
   "tool": {
     "id": "pgaudit",
