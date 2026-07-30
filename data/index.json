@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T02:52:48.177Z",
+  "generatedAt": "2026-07-30T03:06:26.929Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1210,35 +1210,6 @@
       ]
     },
     {
-      "category": "observability",
-      "description": "Kubernetes operator for the Jaeger tracing platform",
-      "documentation": "https://www.jaegertracing.io/docs/latest/operator/",
-      "homepage": "https://www.jaegertracing.io",
-      "id": "jaeger-operator",
-      "latest": {
-        "channel": "stable",
-        "draft": false,
-        "id": 196486436,
-        "name": "Release v1.65.0",
-        "prerelease": false,
-        "publishedAt": "2025-01-23T18:08:13Z",
-        "url": "https://github.com/jaegertracing/jaeger-operator/releases/tag/v1.65.0",
-        "version": "v1.65.0"
-      },
-      "name": "Jaeger Operator",
-      "previous": {
-        "publishedAt": "2024-10-09T14:09:54Z",
-        "version": "v1.62.0"
-      },
-      "releaseCount": 10,
-      "repository": "jaegertracing/jaeger-operator",
-      "tags": [
-        "traces",
-        "kubernetes",
-        "operator"
-      ]
-    },
-    {
       "category": "networking",
       "description": "Helm chart for the Kong Gateway",
       "documentation": "https://docs.konghq.com",
@@ -1350,6 +1321,285 @@
         "secrets",
         "helm-chart",
         "kubernetes"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Horizontally scalable, multi-tenant log aggregation system",
+      "documentation": "https://grafana.com/docs/loki/latest/",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "homepage": "https://grafana.com/oss/loki/",
+      "id": "loki",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 357803314,
+        "name": "v3.7.4",
+        "prerelease": false,
+        "publishedAt": "2026-07-24T07:49:34Z",
+        "url": "https://github.com/grafana/loki/releases/tag/v3.7.4",
+        "version": "v3.7.4"
+      },
+      "name": "Loki",
+      "previous": {
+        "publishedAt": "2026-07-24T07:37:20Z",
+        "version": "v3.6.13"
+      },
+      "releaseCount": 8,
+      "repository": "grafana/loki",
+      "tags": [
+        "logs"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "High-scale distributed tracing backend",
+      "documentation": "https://grafana.com/docs/tempo/latest/",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "homepage": "https://grafana.com/oss/tempo/",
+      "id": "tempo",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 358835818,
+        "name": "v2.9.4",
+        "prerelease": false,
+        "publishedAt": "2026-07-24T12:29:33Z",
+        "url": "https://github.com/grafana/tempo/releases/tag/v2.9.4",
+        "version": "v2.9.4"
+      },
+      "name": "Tempo",
+      "previous": {
+        "publishedAt": "2026-06-12T16:28:23Z",
+        "version": "v2.10.7"
+      },
+      "releaseCount": 9,
+      "repository": "grafana/tempo",
+      "tags": [
+        "traces"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Continuous profiling platform",
+      "documentation": "https://grafana.com/docs/pyroscope/latest/",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "homepage": "https://grafana.com/oss/pyroscope/",
+      "id": "pyroscope",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 357569906,
+        "name": "v2.2.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-21T19:03:11Z",
+        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.2.0",
+        "version": "v2.2.0"
+      },
+      "name": "Pyroscope",
+      "previous": {
+        "publishedAt": "2026-07-10T17:09:12Z",
+        "version": "v2.0.6"
+      },
+      "releaseCount": 10,
+      "repository": "grafana/pyroscope",
+      "tags": [
+        "profiling"
+      ]
+    },
+    {
+      "category": "platform",
+      "description": "Kubernetes operator for distributed k6 load testing",
+      "documentation": "https://grafana.com/docs/k6/latest/set-up/set-up-distributed-k6/",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "homepage": "https://k6.io",
+      "id": "k6-operator",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 343492133,
+        "name": "v1.5.0",
+        "prerelease": false,
+        "publishedAt": "2026-06-23T14:27:31Z",
+        "url": "https://github.com/grafana/k6-operator/releases/tag/v1.5.0",
+        "version": "v1.5.0"
+      },
+      "name": "k6 Operator",
+      "previous": {
+        "publishedAt": "2026-04-28T18:41:37Z",
+        "version": "v1.4.0"
+      },
+      "releaseCount": 10,
+      "repository": "grafana/k6-operator",
+      "tags": [
+        "testing",
+        "kubernetes",
+        "operator"
+      ]
+    },
+    {
+      "category": "ai",
+      "description": "MCP server exposing Grafana to AI agents",
+      "documentation": "https://github.com/grafana/mcp-grafana#readme",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "id": "mcp-grafana",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 361197400,
+        "name": "v1.0.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-28T15:36:26Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.0.0",
+        "version": "v1.0.0"
+      },
+      "name": "Grafana MCP Server",
+      "previous": {
+        "publishedAt": "2026-07-13T14:06:31Z",
+        "version": "v0.17.2"
+      },
+      "releaseCount": 10,
+      "repository": "grafana/mcp-grafana",
+      "tags": [
+        "mcp",
+        "agents"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Helm charts for the Grafana ecosystem (mixed, per-chart releases)",
+      "documentation": "https://grafana.github.io/helm-charts/",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "id": "grafana-helm-charts",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 362034964,
+        "name": "helm-loki-7.2.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-29T20:35:26Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.2.0",
+        "version": "helm-loki-7.2.0"
+      },
+      "name": "Grafana Helm Charts",
+      "previous": {
+        "publishedAt": "2026-07-23T20:10:36Z",
+        "version": "k8s-monitoring-4.3.1"
+      },
+      "releaseCount": 10,
+      "repository": "grafana/helm-charts",
+      "tags": [
+        "helm-chart",
+        "kubernetes"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Grafana data source plugin for Loki",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "id": "loki-datasource",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 362123705,
+        "name": "loki v13.1.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-30T00:45:50Z",
+        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.1.0",
+        "version": "v13.1.0"
+      },
+      "name": "Loki Datasource",
+      "previous": {
+        "publishedAt": "2026-07-24T11:34:48Z",
+        "version": "v13.0.2"
+      },
+      "releaseCount": 4,
+      "repository": "grafana/grafana-loki-datasource",
+      "tags": [
+        "logs",
+        "plugin"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Grafana data source plugin for Tempo",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "id": "tempo-datasource",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 350866281,
+        "name": "tempo v13.1.5",
+        "prerelease": false,
+        "publishedAt": "2026-07-08T10:55:33Z",
+        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.1.5",
+        "version": "v13.1.5"
+      },
+      "name": "Tempo Datasource",
+      "previous": {
+        "publishedAt": "2026-06-24T09:40:49Z",
+        "version": "v13.1.4"
+      },
+      "releaseCount": 6,
+      "repository": "grafana/grafana-tempo-datasource",
+      "tags": [
+        "traces",
+        "plugin"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Grafana data source plugin for ClickHouse",
+      "documentation": "https://grafana.com/grafana/plugins/grafana-clickhouse-datasource/",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "id": "clickhouse-datasource",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 357001119,
+        "name": "grafana-clickhouse-datasource v4.20.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-20T21:23:55Z",
+        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.20.0",
+        "version": "v4.20.0"
+      },
+      "name": "ClickHouse Datasource",
+      "previous": {
+        "publishedAt": "2026-07-07T21:17:24Z",
+        "version": "v4.19.0"
+      },
+      "releaseCount": 10,
+      "repository": "grafana/clickhouse-datasource",
+      "tags": [
+        "clickhouse",
+        "plugin"
       ]
     }
   ]

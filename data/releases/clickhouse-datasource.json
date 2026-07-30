@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-30T03:02:40.210Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 357001119,
+      "name": "grafana-clickhouse-datasource v4.20.0",
+      "notes": "## 4.20.0\n\n### Features\n\n- Add `1.3.0` OTel schema version to support `opentelemetry-collector-contrib` clickhouseexporter `v0.151.0`+, which removed the `TimestampTime` column from `otel_logs`. The `latest` selector now points to this schema; existing data sources continue to use `1.2.9` until manually updated (#1882)\n- Auto-detect the OTel logs schema version from the table's columns when the version selector is on `auto (latest)`, removing the manual version pick for the common case. Pinned versions are unchanged (#1900)\n- Add optional Row Capacity Hint setting for large query responses (#2014)\n\n### Fixes\n\n- Fix dashboard query variables that return numeric or numeric-looking string values (for example `toString(toUnixTimestamp(...))`) failing to resolve with \"Couldn't find any field of type string in the results\" (#2021)\n- Expand macros nested inside another macro's arguments (#2043)\n- Don't break variable loading when `version()` returns no rows (#2023)\n- Correct and align attribute filters added from the log view (#2020)\n- Handle NaN/Inf in Tuple, Map and Nested JSON conversion (#2002)\n- Dependency updates (#2012, #2013)\n\n### Refactors\n\n- Expand macros via the sqlds Interpolator extension point (#2008)\n- Unify the converter type registry behind generic builders (#1990)",
+      "prerelease": false,
+      "publishedAt": "2026-07-20T21:23:55Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.20.0",
+      "version": "v4.20.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 350581454,
+      "name": "grafana-clickhouse-datasource v4.19.0",
+      "notes": "## 4.19.0\n\n### Features\n\n- Compact query mode for single-table data sources (#1841)\n- Pre-built OpenTelemetry dashboards for logs, traces, and per-service deep dives (#1869)\n- Guided variable editor with column values and Map-key support (#1868)\n- Preset-driven annotation editor with change detection (#1922)\n- SchemaPicker for cascading schema navigation in the query builder (#1828)\n- Group OTel attributes in log details (#1829)\n- Native type support for SimpleAggregateFunction numeric/bool/date columns (#1928)\n- Implement DataSourceWithToggleableQueryFiltersSupport interface (#1824)\n\n### Fixes\n\n- Ad-hoc: stop Map-key filters colliding across columns; bound free-form Map-key probe (#1993)\n- Traces: recover OTel columns on schema-fetch failure and guard compact SQL switch (#1992)\n- Traces: only apply the trace-ID timestamp optimization when the companion has Start/End/TraceId columns (#1994)\n- Traces: prevent crash when running Traces queries on older Grafana (#1937)\n- Traces: preserve trace-ID link optimization on cold cache (#1919)\n- Traces: prevent crash on raw-SQL queries with a trace_id column (#1920)\n- Macros: preserve macros in queries with backslash-escaped string literals (#1991)\n- Config: restore inline required-field validation for host/port on default installs (#1995)\n- Render SimpleAggregateFunction string columns correctly (#1927)\n- Fix datasource variable refs in Data Analysis dashboard (#1896)\n\n### Refactors\n\n- Config: migrate the ClickHouse config page design to OpenFeature (#1921)\n- Macros: adopt grafana/macropro as the macro engine (#1802)",
+      "prerelease": false,
+      "publishedAt": "2026-07-07T21:17:24Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.19.0",
+      "version": "v4.19.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 340265661,
+      "name": "grafana-clickhouse-datasource v4.18.0",
+      "notes": "## 4.18.0\n\n### Features\n\n- Introduce single-table mode for logs and traces configuration (#1832)\n- Auto-detect log/trace column roles by conventional names (#1791)\n- Add JSON attributes (tags) support (#1866)\n\n### Performance\n\n- Decouple trace ID lookup optimization from OTel mode (#1786)\n\n### Fixes\n\n- Bound Map-key probe to avoid full-column scans in ad-hoc filters (#1885)\n- Open the linked trace when following a span link (#1890)\n- Default trace optimization to true (#1853)\n- Support Map-typed columns in ad-hoc filters (#1793)\n- Support scope variables in the datasource (#1840)\n- Support JSON column filters and JSON-typed trace tags (#1792)\n- Preserve `grafanaDependency` compatibility with Grafana prereleases (#1892)\n- Remove Grafana 13 hard-break call sites (#1861)\n- Trim whitespace from host setting (#1830, #1831)\n- Dependency updates",
+      "prerelease": false,
+      "publishedAt": "2026-06-16T16:10:26Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.18.0",
+      "version": "v4.18.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 316177448,
+      "name": "grafana-clickhouse-datasource v4.17.0",
+      "notes": "## 4.17.0\n\n### Features\n\n- Allow `$__adhocFilters` macro to work with multiple tables (#1757)\n\n### Performance\n\n- Hold a single `*sql.DB` on `SchemaProvider` and dispose it with the instance (#1819)\n\n### Fixes\n\n- Dedupe autocomplete suggestions and dispose Monaco providers on unmount (#1820)\n- Map adhoc regex operators to `REGEXP` instead of `ILIKE` (#1794)\n- Close `*sql.DB` after each schema introspection query (#1818)\n- Dependency updates",
+      "prerelease": false,
+      "publishedAt": "2026-04-30T23:00:45Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.17.0",
+      "version": "v4.17.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 315421596,
+      "name": "grafana-clickhouse-datasource v4.16.0",
+      "notes": "## 4.16.0\n\n### Features\n\n- Explain column roles in logs/traces/timeseries query builders (#1790)\n- Cache system.tables/columns schema introspection with single flight (#1787)\n\n### Fixes\n\n- Drop LIMIT from single-trace span query (#1795)\n- Forward X-Grafana-User header to ClickHouse when enabled (#1797)\n- Fix slow traceId lookup (#1705)\n- Replace `js-sql-parser` with existing ClickHouse lexer for SQL validation (#1778)\n- Match column suggestions case-insensitively in autocomplete (#1779)\n- Dependency updates",
+      "prerelease": false,
+      "publishedAt": "2026-04-29T20:05:04Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.16.0",
+      "version": "v4.16.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 308372188,
+      "name": "grafana-clickhouse-datasource v4.15.0",
+      "notes": "## 4.15.0\n\n### Features\n\n- Add LogsSample supplemental query, remove deprecated getDataProvider (#1744)\n- Add Grafana query metadata support (#1743)\n- Allow disabling logs and trace links (#1754)\n- Improve query modification (#1738)\n- Add initial support for SQL abstractions (dsAbstraction) (#1756)\n- Add OpenTelemetry instrumentation (#1734)\n- Add field config to trace search results for better default display (#1733)\n- Add filterQuery method to datasource (#1732)\n- Support grouping orderBy columns by their column hint values (#1695)\n- Bump Grafana minimum version to v11.6.0 (#1753)\n\n### Fixes\n\n- Fix log context field returning labels (#1737)\n- Fix additional settings config bug (#1630)\n- Dependency updates",
+      "prerelease": false,
+      "publishedAt": "2026-04-13T14:17:33Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.15.0",
+      "version": "v4.15.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 292665421,
+      "name": "grafana-clickhouse-datasource v4.14.1",
+      "notes": "## 4.14.1\n\n### Features\n\n- Extract `Map` value type for `mapKey` filter in `getFilters` (#1694)\n\n### Fixes\n\n- Dependency updates",
+      "prerelease": false,
+      "publishedAt": "2026-03-03T18:09:08Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.14.1",
+      "version": "v4.14.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 290430408,
+      "name": "grafana-clickhouse-datasource v4.14.0",
+      "notes": "## 4.14.0\n\n### Features\n\n- Add FilterTime hint to enable multi-timestamp log filtering/sorting (#1642)\n- Skip OTel trace time range optimization when trace timestamp table does not exist (#1663)\n\n### Fixes\n\n- Dependency updates\n- Add separate columns for Resource/Scope/Log Attributes (#1560)\n- Fix panic when configuring datasource with numeric timeout values (#1559)",
+      "prerelease": false,
+      "publishedAt": "2026-02-25T15:43:05Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.14.0",
+      "version": "v4.14.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 280347270,
+      "name": "grafana-clickhouse-datasource v4.13.0",
+      "notes": "## 4.13.0\n\n### Features\n\n- Support for hiding table names in ad-hoc filters (#1493)\n- Allow manual placement of ad-hoc filters (#1488)\n- Add support for Nullable(Enum8/16) column types (#1523)\n- Add dashboard variable to control AdHoc filter syntax (#1464)\n\n### Fixes\n\n- Fix generating query with column names containing colons (#1538)\n- Update config HTTPS language (#1537)\n- Dependency updates",
+      "prerelease": false,
+      "publishedAt": "2026-01-27T15:22:36Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.13.0",
+      "version": "v4.13.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 276520835,
+      "name": "grafana-clickhouse-datasource v4.12.0",
+      "notes": "## 4.12.0\n\n### Features\n\n- Support log volume queries for the SQL editor. Note that this will only work for Grafana versions >= 12.4.0 (#1475)\n- Support columns with `.` in ad-hoc filters (#1481)\n\n### Fixes\n\n- Dependency updates",
+      "prerelease": false,
+      "publishedAt": "2026-01-13T21:02:47Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.12.0",
+      "version": "v4.12.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "clickhouse-datasource",
+    "name": "ClickHouse Datasource",
+    "repository": "grafana/clickhouse-datasource"
+  }
+}

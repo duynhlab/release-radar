@@ -658,22 +658,6 @@ tools:
       includePrerelease: false
       tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
 
-  - id: jaeger-operator
-    name: Jaeger Operator
-    category: observability
-    repository: jaegertracing/jaeger-operator
-    description: Kubernetes operator for the Jaeger tracing platform
-    homepage: https://www.jaegertracing.io
-    documentation: https://www.jaegertracing.io/docs/latest/operator/
-    tags:
-      - traces
-      - kubernetes
-      - operator
-    release:
-      strategy: github-releases
-      includePrerelease: false
-      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
-
   - id: kong-charts
     name: Kong Helm Chart
     category: networking
@@ -735,3 +719,138 @@ tools:
       strategy: github-releases
       includePrerelease: false
       tagPattern: "^openbao-\\d+\\.\\d+\\.\\d+$"
+
+  - id: loki
+    name: Loki
+    category: observability
+    repository: grafana/loki
+    description: Horizontally scalable, multi-tenant log aggregation system
+    homepage: https://grafana.com/oss/loki/
+    documentation: https://grafana.com/docs/loki/latest/
+    tags:
+      - logs
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: tempo
+    name: Tempo
+    category: observability
+    repository: grafana/tempo
+    description: High-scale distributed tracing backend
+    homepage: https://grafana.com/oss/tempo/
+    documentation: https://grafana.com/docs/tempo/latest/
+    tags:
+      - traces
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: pyroscope
+    name: Pyroscope
+    category: observability
+    repository: grafana/pyroscope
+    description: Continuous profiling platform
+    homepage: https://grafana.com/oss/pyroscope/
+    documentation: https://grafana.com/docs/pyroscope/latest/
+    tags:
+      - profiling
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: k6-operator
+    name: k6 Operator
+    category: platform
+    repository: grafana/k6-operator
+    description: Kubernetes operator for distributed k6 load testing
+    homepage: https://k6.io
+    documentation: https://grafana.com/docs/k6/latest/set-up/set-up-distributed-k6/
+    tags:
+      - testing
+      - kubernetes
+      - operator
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: mcp-grafana
+    name: Grafana MCP Server
+    category: ai
+    repository: grafana/mcp-grafana
+    description: MCP server exposing Grafana to AI agents
+    documentation: https://github.com/grafana/mcp-grafana#readme
+    tags:
+      - mcp
+      - agents
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: grafana-helm-charts
+    name: Grafana Helm Charts
+    category: observability
+    repository: grafana/helm-charts
+    description: Helm charts for the Grafana ecosystem (mixed, per-chart releases)
+    documentation: https://grafana.github.io/helm-charts/
+    tags:
+      - helm-chart
+      - kubernetes
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "\\d+\\.\\d+\\.\\d+$"
+
+  - id: loki-datasource
+    name: Loki Datasource
+    category: observability
+    repository: grafana/grafana-loki-datasource
+    description: Grafana data source plugin for Loki
+    tags:
+      - logs
+      - plugin
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: tempo-datasource
+    name: Tempo Datasource
+    category: observability
+    repository: grafana/grafana-tempo-datasource
+    description: Grafana data source plugin for Tempo
+    tags:
+      - traces
+      - plugin
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: clickhouse-datasource
+    name: ClickHouse Datasource
+    category: observability
+    repository: grafana/clickhouse-datasource
+    description: Grafana data source plugin for ClickHouse
+    documentation: https://grafana.com/grafana/plugins/grafana-clickhouse-datasource/
+    tags:
+      - clickhouse
+      - plugin
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"

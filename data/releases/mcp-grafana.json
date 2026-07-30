@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-30T03:02:36.874Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 361197400,
+      "name": "v1.0.0",
+      "notes": "### Added\n\n- Agent Observability tools: `agento11y_manage_conversations` and `agento11y_manage_generations` in a new `agento11y` category, excluded from the default tool set ([#944](https://github.com/grafana/mcp-grafana/pull/944))\n- Inline panel viewer for `get_panel_image` on [MCP Apps](https://modelcontextprotocol.io/)-aware hosts, with a dashboard deeplink fallback for other hosts. The deeplink text content is tagged with `_meta.ui.kind = \"deeplink\"` so viewers can locate it structurally instead of by string matching ([#882](https://github.com/grafana/mcp-grafana/pull/882))\n\n### Fixed\n\n- Enable OTLP trace export with the signal-specific `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` environment variable, so operators can ship traces without also exporting logs; the generic `OTEL_EXPORTER_OTLP_ENDPOINT` still enables both signals ([#1004](https://github.com/grafana/mcp-grafana/pull/1004))\n\n### Changed\n\n- Tool calls with unknown argument keys are now rejected with an error naming the unknown keys and listing the valid ones, instead of silently ignoring them and answering from default values ([#997](https://github.com/grafana/mcp-grafana/pull/997))",
+      "prerelease": false,
+      "publishedAt": "2026-07-28T15:36:26Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.0.0",
+      "version": "v1.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 353197329,
+      "name": "v0.17.2",
+      "notes": "### Security\n\n- Bind environment-configured credentials to the configured Grafana URL. A URL supplied in the `X-Grafana-URL` request header no longer causes the environment service-account token, deprecated API key, basic auth, or extra headers to be sent to a caller-specified host ([#XXX](https://github.com/grafana/mcp-grafana/pull/XXX))",
+      "prerelease": false,
+      "publishedAt": "2026-07-13T14:06:31Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.17.2",
+      "version": "v0.17.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 350138406,
+      "name": "v0.17.1",
+      "notes": "### Fixed\n\n- Send the relative path (rather than an absolute URL) to the short-urls API when generating navigation deeplinks ([#976](https://github.com/grafana/mcp-grafana/pull/976))\n\n### Security\n\n- Block DNS rebinding attacks on the HTTP and SSE transports ([#957](https://github.com/grafana/mcp-grafana/pull/957))",
+      "prerelease": false,
+      "publishedAt": "2026-07-07T09:31:26Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.17.1",
+      "version": "v0.17.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 343381337,
+      "name": "v0.17.0",
+      "notes": "### Added\n\n- Datasource management tools for creating and updating datasources via the MCP server, gated behind write tools, with schema-guided configuration that follows each datasource type's JSON schema and excludes sensitive credential fields ([#939](https://github.com/grafana/mcp-grafana/pull/939))\n\n### Fixed\n\n- Recognize the Athena plugin's `rawSQL` query field when extracting dashboard panel queries ([#956](https://github.com/grafana/mcp-grafana/pull/956))",
+      "prerelease": false,
+      "publishedAt": "2026-06-23T09:01:08Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.17.0",
+      "version": "v0.17.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 340248576,
+      "name": "v0.16.0",
+      "notes": "### Added\n\n- Snapshot tools (`list_snapshots`, `get_snapshot`, `create_snapshot`, `delete_snapshot`) for managing Grafana dashboard snapshots ([#949](https://github.com/grafana/mcp-grafana/pull/949))\n- Native dashboard schema v2 support in the dashboard tools ([#937](https://github.com/grafana/mcp-grafana/pull/937))\n- Quickwit datasource support ([#941](https://github.com/grafana/mcp-grafana/pull/941))\n- BigQuery datasource support in `run_panel_query` ([#930](https://github.com/grafana/mcp-grafana/pull/930))\n- Elasticsearch and OpenSearch tools now honor the datasource-configured `timeField` ([#909](https://github.com/grafana/mcp-grafana/pull/909))\n- Relative time syntax (e.g. `now-1h`) for time range parameters across tools ([#942](https://github.com/grafana/mcp-grafana/pull/942))\n- `GRAFANA_SERVICE_ACCOUNT_TOKEN_FILE` environment variable to read the service account token from a file, supporting rotated tokens ([#935](https://github.com/grafana/mcp-grafana/pull/935))\n- Optional `startRfc3339`/`endRfc3339` time range parameters for `list_prometheus_metric_names` to restrict results to metrics active within a window ([#927](https://github.com/grafana/mcp-grafana/pull/927))\n- `query_prometheus` now surfaces datasource `warnings` (e.g. partial responses from Thanos) in its result ([#946](https://github.com/grafana/mcp-grafana/pull/946))\n\n### Fixed\n\n- Elasticsearch client now refuses HTTP redirects that would drop the request body, preventing malformed queries against redirecting endpoints ([#951](https://github.com/grafana/mcp-grafana/pull/951))\n- Propagate forwarded headers to downstream Loki calls by using the configured HTTP transport ([#945](https://github.com/grafana/mcp-grafana/pull/945))",
+      "prerelease": false,
+      "publishedAt": "2026-06-16T15:37:20Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.16.0",
+      "version": "v0.16.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 334371144,
+      "name": "v0.15.2",
+      "notes": "### Fixed\n\n- Docker images are again published to `docker.io/grafana/mcp-grafana`. v0.15.0 and v0.15.1 Docker images were never published because the shared Docker Hub credential was restricted to read-only. The release workflow now publishes via Grafana's GAR-based Docker Hub mirror pipeline ([#925](https://github.com/grafana/mcp-grafana/pull/925))",
+      "prerelease": false,
+      "publishedAt": "2026-06-04T14:01:05Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.15.2",
+      "version": "v0.15.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 333865637,
+      "name": "v0.15.1",
+      "notes": "### Added\n\n- `shorten_url` tool for creating Grafana short links from long dashboard or explore URLs ([#899](https://github.com/grafana/mcp-grafana/pull/899))\n- Provisioning workflow tools: `list_provisioning_repositories` for discovering connected repositories, `validate_provisioning_file` for dry-run validation of provisioning files, and provisioning preview support in `get_panel_image` and `generate_deeplink` for rendering dashboards from PR branches before merge ([#900](https://github.com/grafana/mcp-grafana/pull/900))\n\n### Changed\n\n- Rendering tools now use a shared transport chain with `BaseTransport` support for consistent HTTP middleware ([#918](https://github.com/grafana/mcp-grafana/pull/918))\n\n### Security\n\n- Redact credentials from debug transport logs to prevent accidental exposure ([#920](https://github.com/grafana/mcp-grafana/pull/920))\n- Update Go to 1.26.3 to fix CVE-2026-33810 and bump litellm dependency ([#916](https://github.com/grafana/mcp-grafana/pull/916))",
+      "prerelease": false,
+      "publishedAt": "2026-06-03T16:57:12Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.15.1",
+      "version": "v0.15.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 332484086,
+      "name": "v0.15.0",
+      "notes": "### Added\n\n- Snowflake datasource tools for querying Snowflake through Grafana's `/api/ds/query` endpoint with macro substitution and template variables ([#845](https://github.com/grafana/mcp-grafana/pull/845))\n- Amazon Athena datasource support with schema discovery tools and SQL query execution, including macro substitution and result reuse ([#799](https://github.com/grafana/mcp-grafana/pull/799))\n- VictoriaLogs support through existing Loki tools, routing LogsQL queries via the VictoriaLogs HTTP API without adding new tools ([#850](https://github.com/grafana/mcp-grafana/pull/850))\n- Loki label-strategy analyzer tools for evaluating label cardinality and optimization opportunities ([#885](https://github.com/grafana/mcp-grafana/pull/885))\n- Plugin install and search tools for discovering, inspecting, and installing Grafana plugins ([#835](https://github.com/grafana/mcp-grafana/pull/835))\n\n### Fixed\n\n- Scope datasource fallback cache by request path to prevent incorrect cache hits across different API endpoints ([#897](https://github.com/grafana/mcp-grafana/pull/897))\n- Release builds now report the correct version via ldflags injection ([#895](https://github.com/grafana/mcp-grafana/pull/895))\n- Improved Loki and dashboard tool descriptions for better agent accuracy ([#880](https://github.com/grafana/mcp-grafana/pull/880))\n- Add readResponseBody helper to limit and detect oversized responses, preventing excessive memory use ([#884](https://github.com/grafana/mcp-grafana/pull/884))\n- Improved timeout error messages for proxied tools with context-aware logging ([#881](https://github.com/grafana/mcp-grafana/pull/881))\n- Cap error response body reads to 1KB across all HTTP clients to prevent excessive memory allocation from misbehaving servers ([#876](https://github.com/grafana/mcp-grafana/pull/876))\n\n### Changed\n\n- Consolidated duplicated `/api/ds/query` implementations into a shared helper ([#877](https://github.com/grafana/mcp-grafana/pull/877))\n\n### Security\n\n- Update `golang.org/x/net` to v0.55.0 to address security vulnerability ([#901](https://github.com/grafana/mcp-grafana/pull/901))",
+      "prerelease": false,
+      "publishedAt": "2026-06-01T12:39:48Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.15.0",
+      "version": "v0.15.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 319453909,
+      "name": "v0.14.0",
+      "notes": "### Added\n\n- Generic API request tool for making arbitrary HTTP requests to the Grafana API ([#841](https://github.com/grafana/mcp-grafana/pull/841))\n- OpenSearch datasource support ([#669](https://github.com/grafana/mcp-grafana/pull/669))\n- Tool to retrieve Grafana plugin information ([#826](https://github.com/grafana/mcp-grafana/pull/826))\n- Export logs via OTLP when `OTEL_EXPORTER_OTLP_ENDPOINT` or `OTEL_EXPORTER_OTLP_LOGS_ENDPOINT` is set, consistent with existing OTLP trace export ([#839](https://github.com/grafana/mcp-grafana/pull/839))\n- Configurable slow-request-threshold logging for identifying long-running tool calls ([#756](https://github.com/grafana/mcp-grafana/pull/756))\n- Server instructions now dynamically reflect only the enabled tool categories, preventing agents from attempting to use disabled tools ([#829](https://github.com/grafana/mcp-grafana/pull/829))\n\n### Fixed\n\n- Route OnCall tools through IRM plugin proxy for correct on-behalf-of authentication ([#842](https://github.com/grafana/mcp-grafana/pull/842))\n- Propagate context to jq operations and return clear errors on non-JSON input ([#847](https://github.com/grafana/mcp-grafana/pull/847))\n- Prevent panic in Sift tool when pattern type assertion fails ([#834](https://github.com/grafana/mcp-grafana/pull/834))",
+      "prerelease": false,
+      "publishedAt": "2026-05-08T11:14:21Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.14.0",
+      "version": "v0.14.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 315809166,
+      "name": "v0.13.1",
+      "notes": "### Added\n\n- Support PromQL queries against VictoriaMetrics datasources ([#767](https://github.com/grafana/mcp-grafana/pull/767))\n\n### Fixed\n\n- Include recording rules in datasource ruler listings for complete alerting rule visibility ([#819](https://github.com/grafana/mcp-grafana/pull/819))\n- Propagate request context through OpenAPI convenience calls to ensure proper tracing and cancellation ([#822](https://github.com/grafana/mcp-grafana/pull/822))",
+      "prerelease": false,
+      "publishedAt": "2026-04-30T13:38:42Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.13.1",
+      "version": "v0.13.1"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "mcp-grafana",
+    "name": "Grafana MCP Server",
+    "repository": "grafana/mcp-grafana"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-30T03:02:37.955Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 362034964,
+      "name": "helm-loki-7.2.0",
+      "notes": "Helm chart for Grafana Enterprise Logs supporting monolithic, simple scalable, and microservices modes.\n\nSource commit: https://github.com/grafana/loki/commit/9ccc135cfd2d4fbaab9e73fc8ba491f6ea3b9423\n\nTag on source: https://github.com/grafana/loki/releases/tag/helm-loki-7.2.0",
+      "prerelease": false,
+      "publishedAt": "2026-07-29T20:35:26Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.2.0",
+      "version": "helm-loki-7.2.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358927827,
+      "name": "k8s-monitoring-4.3.1",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/eb9bdc2090014fb1685d322641ab5938769992a4\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.3.1",
+      "prerelease": false,
+      "publishedAt": "2026-07-23T20:10:36Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.3.1",
+      "version": "k8s-monitoring-4.3.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358733077,
+      "name": "cloudcost-exporter-1.1.12",
+      "notes": "Cloud Cost Exporter exports cloud provider agnostic cost metrics to Prometheus.\n\nSource commit: https://github.com/grafana/cloudcost-exporter/commit/364afa827ecc4ac1b863907467764dc250b1f90d\n\nTag on source: https://github.com/grafana/cloudcost-exporter/releases/tag/cloudcost-exporter-1.1.12",
+      "prerelease": false,
+      "publishedAt": "2026-07-23T14:12:15Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.12",
+      "version": "cloudcost-exporter-1.1.12"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358313566,
+      "name": "pyroscope-2.2.0",
+      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/82d868043837a6683c1d93ddeccac85dcd09fc89\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.2.0",
+      "prerelease": false,
+      "publishedAt": "2026-07-22T20:42:44Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.2.0",
+      "version": "pyroscope-2.2.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358116208,
+      "name": "alloy-operator-0.6.2",
+      "notes": "A Helm chart the Alloy Operator, a project to innovate on creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/8f21d0abfc6273e2f882bdaea15d70f3d25d64b0\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.6.2",
+      "prerelease": false,
+      "publishedAt": "2026-07-22T15:10:23Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.2",
+      "version": "alloy-operator-0.6.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 357221926,
+      "name": "pyroscope-2.1.2",
+      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/80c4d217e19ec8b12d91500d2076011ab750bb6b\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.1.2",
+      "prerelease": false,
+      "publishedAt": "2026-07-21T09:07:21Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.1.2",
+      "version": "pyroscope-2.1.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 356860615,
+      "name": "alloy-1.11.0",
+      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/6a3d2e39422c25361f63ab9d4a072502863db466\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.11.0",
+      "prerelease": false,
+      "publishedAt": "2026-07-20T16:37:13Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.11.0",
+      "version": "alloy-1.11.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355423070,
+      "name": "k8s-monitoring-4.3.0",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/31f2e9de314c69380b62fa55adf2f5d1d01f5038\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.3.0",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T01:07:42Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.3.0",
+      "version": "k8s-monitoring-4.3.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355354867,
+      "name": "k8s-monitoring-3.8.11",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/070530f21229c51fd12d880b6207afcce2cdc4a8\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-3.8.11",
+      "prerelease": false,
+      "publishedAt": "2026-07-16T20:53:49Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-3.8.11",
+      "version": "k8s-monitoring-3.8.11"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 354704059,
+      "name": "rollout-operator-0.50.1",
+      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] bump to v0.38.1 by @pr00se in https://github.com/grafana/helm-charts/pull/4192\n\n## New Contributors\n* @pr00se made their first contribution in https://github.com/grafana/helm-charts/pull/4192\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/alloy-1.10.0...rollout-operator-0.50.1",
+      "prerelease": false,
+      "publishedAt": "2026-07-15T20:53:23Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.50.1",
+      "version": "rollout-operator-0.50.1"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "grafana-helm-charts",
+    "name": "Grafana Helm Charts",
+    "repository": "grafana/helm-charts"
+  }
+}
