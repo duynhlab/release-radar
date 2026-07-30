@@ -122,6 +122,9 @@ export function buildIndex(
         ...(tool.homepage ? { homepage: tool.homepage } : {}),
         ...(tool.documentation ? { documentation: tool.documentation } : {}),
         tags: tool.tags,
+        ...(tool.group && catalog.groups[tool.group]
+          ? { group: { id: tool.group, name: catalog.groups[tool.group].name } }
+          : {}),
         latest: latest ? omitNotes(latest) : null,
         previous: previous
           ? { version: previous.version, publishedAt: previous.publishedAt }

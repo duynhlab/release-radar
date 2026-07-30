@@ -40,6 +40,11 @@ export default async function ToolPage({
   const gap = tool.latest
     ? releaseGapLabel(tool.latest.publishedAt, tool.previous)
     : null;
+  const siblings = tool.group
+    ? getIndex().tools.filter(
+        (t) => t.group?.id === tool.group?.id && t.id !== tool.id,
+      )
+    : [];
 
   return (
     <div className="space-y-8">
@@ -114,6 +119,34 @@ export default async function ToolPage({
           </div>
         )}
       </header>
+
+      {tool.group && siblings.length > 0 && (
+        <section
+          aria-label={`Part of ${tool.group.name}`}
+          className="rounded-lg border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900"
+        >
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+            Part of {tool.group.name}
+          </h2>
+          <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            {siblings.map((sibling) => (
+              <li key={sibling.id}>
+                <Link
+                  href={`/tools/${sibling.id}`}
+                  className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+                >
+                  {sibling.name}
+                </Link>
+                {sibling.latest && (
+                  <span className="ml-1.5 font-mono text-xs text-zinc-500 dark:text-zinc-400">
+                    {sibling.latest.version}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section aria-label="Release history" className="space-y-4">
         <h2 className="text-lg font-semibold">
