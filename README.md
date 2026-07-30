@@ -3,10 +3,21 @@
 Personal DevOps/SRE release tracker — a Git-backed catalog that follows new
 releases of infrastructure tools on GitHub.
 
-```
-config/tools.yaml ──▶ GitHub Actions (daily 07:17 ICT) ──▶ data/*.json (committed)
-                                                                 │
-Cloudflare Workers ◀── OpenNext build ◀── Next.js SSG ◀─────────┘
+```mermaid
+flowchart TD
+    catalog["config/tools.yaml<br/>tool catalog (source of truth)"]
+    sync["GitHub Actions<br/>daily sync · 07:17 ICT"]
+    api["GitHub Releases API"]
+    data["data/*.json<br/>release history · max 20/tool"]
+    build["Next.js build · full SSG<br/>via OpenNext"]
+    cf["Cloudflare Workers"]
+
+    catalog --> sync
+    sync <-->|"10 newest releases per repo"| api
+    sync -->|"commit only if changed"| data
+    data -->|"fs read at build time"| build
+    build --> cf
+    data -.->|"push triggers Workers Builds"| build
 ```
 
 Key property: **no database, no runtime API calls, no client-side tokens**.
