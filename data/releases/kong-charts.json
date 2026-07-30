@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-07-30T02:52:46.395Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 348032387,
+      "name": "kong-3.4.1",
+      "notes": "The Cloud-Native Ingress and API-management",
+      "prerelease": false,
+      "publishedAt": "2026-07-02T12:37:36Z",
+      "url": "https://github.com/Kong/charts/releases/tag/kong-3.4.1",
+      "version": "kong-3.4.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 341376609,
+      "name": "kong-3.4.0",
+      "notes": "The Cloud-Native Ingress and API-management",
+      "prerelease": false,
+      "publishedAt": "2026-06-18T12:12:13Z",
+      "url": "https://github.com/Kong/charts/releases/tag/kong-3.4.0",
+      "version": "kong-3.4.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 339657644,
+      "name": "kong-3.3.0",
+      "notes": "The Cloud-Native Ingress and API-management",
+      "prerelease": false,
+      "publishedAt": "2026-06-15T15:54:13Z",
+      "url": "https://github.com/Kong/charts/releases/tag/kong-3.3.0",
+      "version": "kong-3.3.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 303695386,
+      "name": "kong-3.2.0",
+      "notes": "The Cloud-Native Ingress and API-management",
+      "prerelease": false,
+      "publishedAt": "2026-03-31T13:02:48Z",
+      "url": "https://github.com/Kong/charts/releases/tag/kong-3.2.0",
+      "version": "kong-3.2.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "kong-charts",
+    "name": "Kong Helm Chart",
+    "repository": "Kong/charts"
+  }
+}

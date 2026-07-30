@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-30T02:52:46.966Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 354121973,
+      "name": "vector-0.57.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2026-07-14T23:10:29Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.57.0",
+      "version": "vector-0.57.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 333957118,
+      "name": "vector-0.56.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2026-06-03T19:39:56Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.56.0",
+      "version": "vector-0.56.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 312351598,
+      "name": "vector-0.52.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2026-04-22T17:18:40Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.52.0",
+      "version": "vector-0.52.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 295348910,
+      "name": "vector-0.51.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2026-03-10T20:02:23Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.51.0",
+      "version": "vector-0.51.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 280502845,
+      "name": "vector-0.50.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines.\r\n\r\n[Changelog](https://github.com/vectordotdev/helm-charts/blob/develop/CHANGELOG.md)",
+      "prerelease": false,
+      "publishedAt": "2026-01-28T00:06:42Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.50.0",
+      "version": "vector-0.50.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 270835480,
+      "name": "vector-0.49.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2025-12-16T17:58:23Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.49.0",
+      "version": "vector-0.49.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 262185600,
+      "name": "vector-0.48.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2025-11-13T17:08:16Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.48.0",
+      "version": "vector-0.48.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 259653664,
+      "name": "vector-0.47.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2025-11-04T17:56:55Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.47.0",
+      "version": "vector-0.47.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 249432433,
+      "name": "vector-0.46.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2025-09-23T17:26:19Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.46.0",
+      "version": "vector-0.46.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 239457490,
+      "name": "vector-0.45.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2025-08-12T18:35:43Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.45.0",
+      "version": "vector-0.45.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "vector-helm-charts",
+    "name": "Vector Helm Charts",
+    "repository": "vectordotdev/helm-charts"
+  }
+}

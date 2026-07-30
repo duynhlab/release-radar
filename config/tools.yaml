@@ -14,6 +14,15 @@ groups:
   clickhouse:
     name: ClickHouse
     homepage: https://clickhouse.com
+  grafana:
+    name: Grafana
+    homepage: https://grafana.com
+  prometheus:
+    name: Prometheus
+    homepage: https://prometheus.io
+  opentelemetry:
+    name: OpenTelemetry
+    homepage: https://opentelemetry.io
 
 tools:
   - id: kubernetes
@@ -148,6 +157,7 @@ tools:
     tags:
       - metrics
       - monitoring
+    group: prometheus
     release:
       strategy: github-releases
       includePrerelease: false
@@ -164,6 +174,7 @@ tools:
       - dashboards
       - metrics
       - logs
+    group: grafana
     release:
       strategy: github-releases
       includePrerelease: false
@@ -180,6 +191,7 @@ tools:
       - metrics
       - logs
       - traces
+    group: opentelemetry
     release:
       strategy: github-releases
       includePrerelease: false
@@ -576,3 +588,150 @@ tools:
       strategy: github-releases
       includePrerelease: false
       tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: tempo-operator
+    name: Tempo Operator
+    category: observability
+    repository: grafana/tempo-operator
+    description: Kubernetes operator for Grafana Tempo
+    homepage: https://grafana.com
+    documentation: https://grafana.com/docs/tempo/latest/setup/operator/
+    tags:
+      - traces
+      - kubernetes
+      - operator
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: grafana-operator
+    name: Grafana Operator
+    category: observability
+    repository: grafana/grafana-operator
+    description: Kubernetes operator for managing Grafana instances
+    homepage: https://grafana.github.io/grafana-operator/
+    documentation: https://grafana.github.io/grafana-operator/docs/
+    tags:
+      - dashboards
+      - kubernetes
+      - operator
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: prometheus-operator
+    name: Prometheus Operator
+    category: observability
+    repository: prometheus-operator/prometheus-operator
+    description: Kubernetes-native deployment and management of Prometheus
+    homepage: https://prometheus-operator.dev
+    documentation: https://prometheus-operator.dev/docs/getting-started/introduction/
+    tags:
+      - metrics
+      - kubernetes
+      - operator
+    group: prometheus
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: opentelemetry-operator
+    name: OpenTelemetry Operator
+    category: observability
+    repository: open-telemetry/opentelemetry-operator
+    description: Kubernetes operator for the OpenTelemetry Collector and auto-instrumentation
+    homepage: https://opentelemetry.io
+    documentation: https://opentelemetry.io/docs/platforms/kubernetes/operator/
+    tags:
+      - metrics
+      - traces
+      - kubernetes
+      - operator
+    group: opentelemetry
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: jaeger-operator
+    name: Jaeger Operator
+    category: observability
+    repository: jaegertracing/jaeger-operator
+    description: Kubernetes operator for the Jaeger tracing platform
+    homepage: https://www.jaegertracing.io
+    documentation: https://www.jaegertracing.io/docs/latest/operator/
+    tags:
+      - traces
+      - kubernetes
+      - operator
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: kong-charts
+    name: Kong Helm Chart
+    category: networking
+    repository: Kong/charts
+    description: Helm chart for the Kong Gateway
+    homepage: https://konghq.com
+    documentation: https://docs.konghq.com
+    tags:
+      - gateway
+      - helm-chart
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^kong-\\d+\\.\\d+\\.\\d+$"
+
+  - id: vector-helm-charts
+    name: Vector Helm Charts
+    category: observability
+    repository: vectordotdev/helm-charts
+    description: Helm chart for the Vector observability data pipeline
+    homepage: https://vector.dev
+    documentation: https://vector.dev/docs/
+    tags:
+      - logs
+      - helm-chart
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^vector-\\d+\\.\\d+\\.\\d+$"
+
+  - id: floci
+    name: Floci
+    category: platform
+    repository: floci-io/floci
+    description: Light and free AWS local emulator, a LocalStack alternative
+    tags:
+      - aws
+      - testing
+      - emulator
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^\\d+\\.\\d+\\.\\d+$"
+
+  - id: openbao-helm
+    name: OpenBao Helm Chart
+    category: security
+    repository: openbao/openbao-helm
+    description: Helm chart for OpenBao secrets management
+    homepage: https://openbao.org
+    documentation: https://openbao.org/docs/
+    tags:
+      - secrets
+      - helm-chart
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^openbao-\\d+\\.\\d+\\.\\d+$"

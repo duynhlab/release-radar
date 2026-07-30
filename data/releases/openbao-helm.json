@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-30T02:52:48.143Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358141434,
+      "name": "openbao-0.28.6",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* ci(lint-chart): remove version increment requirement by @Nerkho in https://github.com/openbao/openbao-helm/pull/199\n* ci(lint-chart): adjust to check version only if label release is set by @eyenx in https://github.com/openbao/openbao-helm/pull/200\n* ci(tests): update kubernetes version by @Nerkho in https://github.com/openbao/openbao-helm/pull/196\n* fix(csi): harden csi provider security context by @dc-tec in https://github.com/openbao/openbao-helm/pull/186\n* chore: bump OpenBao to v2.6.1 by @Nerkho in https://github.com/openbao/openbao-helm/pull/201\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.28.5...openbao-0.28.6",
+      "prerelease": false,
+      "publishedAt": "2026-07-22T15:51:23Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.6",
+      "version": "openbao-0.28.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 353959573,
+      "name": "openbao-0.28.5",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* chore/change releasing strategy by @eyenx in https://github.com/openbao/openbao-helm/pull/180\n* chore: bump OpenBao to v2.6.0 by @Nerkho in https://github.com/openbao/openbao-helm/pull/197\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.28.4...openbao-0.28.5",
+      "prerelease": false,
+      "publishedAt": "2026-07-14T17:25:55Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.5",
+      "version": "openbao-0.28.5"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 340765638,
+      "name": "openbao-0.28.4",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* Update commented example with missing filed by @rndmh3ro in https://github.com/openbao/openbao-helm/pull/187\n* chore: bump OpenBao to v2.5.5 by @pree in https://github.com/openbao/openbao-helm/pull/191\n\n## New Contributors\n* @rndmh3ro made their first contribution in https://github.com/openbao/openbao-helm/pull/187\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.28.3...openbao-0.28.4",
+      "prerelease": false,
+      "publishedAt": "2026-06-17T12:50:10Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.4",
+      "version": "openbao-0.28.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 326826596,
+      "name": "openbao-0.28.3",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* chore: improve openshift deployment by @karras in https://github.com/openbao/openbao-helm/pull/183\n* chore: bump OpenBao to v2.5.4 by @pree in https://github.com/openbao/openbao-helm/pull/184\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.28.2...openbao-0.28.3",
+      "prerelease": false,
+      "publishedAt": "2026-05-21T11:10:02Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.3",
+      "version": "openbao-0.28.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 321919608,
+      "name": "openbao-0.28.2",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* fix: switch to certified red hat registry images for openshift by @karras in https://github.com/openbao/openbao-helm/pull/181\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.28.1...openbao-0.28.2",
+      "prerelease": false,
+      "publishedAt": "2026-05-13T14:33:31Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.2",
+      "version": "openbao-0.28.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 321814252,
+      "name": "openbao-0.28.1",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* chore: bump openbao-ubi to 2.5.3 and vault-k8s to 1.7.2-ubi for oscp by @karras in https://github.com/openbao/openbao-helm/pull/177\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.28.0...openbao-0.28.1",
+      "prerelease": false,
+      "publishedAt": "2026-05-13T11:31:18Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.1",
+      "version": "openbao-0.28.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 321607666,
+      "name": "openbao-0.28.0",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* feat(server): template `extraContainers` and `extraInitContainers` by @pree in https://github.com/openbao/openbao-helm/pull/179\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.27.2...openbao-0.28.0",
+      "prerelease": false,
+      "publishedAt": "2026-05-13T06:02:41Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.0",
+      "version": "openbao-0.28.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 311607016,
+      "name": "openbao-0.27.2",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* docs: add remark regarding suse rancher and red hat openshift by @karras in https://github.com/openbao/openbao-helm/pull/173\n* chore: Update to openbao 2.5.3 & csi 2.0.2 by @eyenx in https://github.com/openbao/openbao-helm/pull/172\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.27.1...openbao-0.27.2",
+      "prerelease": false,
+      "publishedAt": "2026-04-21T08:40:44Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.27.2",
+      "version": "openbao-0.27.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 309182537,
+      "name": "openbao-0.27.1",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* feat: Allow configuring Grafana dashboard namespace by @brookelew in https://github.com/openbao/openbao-helm/pull/168\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.27.0...openbao-0.27.1",
+      "prerelease": false,
+      "publishedAt": "2026-04-15T06:33:04Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.27.1",
+      "version": "openbao-0.27.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 307395193,
+      "name": "openbao-0.27.0",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* Make injector.external(Bao|Vault)Addr take precendence over global.external(Bao|Vault)Addr by @baurmatt in https://github.com/openbao/openbao-helm/pull/158\n\n## New Contributors\n* @baurmatt made their first contribution in https://github.com/openbao/openbao-helm/pull/158\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.26.3...openbao-0.27.0",
+      "prerelease": false,
+      "publishedAt": "2026-04-10T05:40:33Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.27.0",
+      "version": "openbao-0.27.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "openbao-helm",
+    "name": "OpenBao Helm Chart",
+    "repository": "openbao/openbao-helm"
+  }
+}

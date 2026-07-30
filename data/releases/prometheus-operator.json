@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-30T02:52:44.696Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 361151585,
+      "name": "0.93.0 / 2026-07-28",
+      "notes": "* [CHANGE] Switch from uint to int types in the Go definition of the CRDs and add API validations to reject negative values. #8662 #8666\r\n* [CHANGE] Keep local Prometheus compaction enabled when the Thanos sidecar uploads to object storage, for Prometheus >= v3.9.0 and Thanos >= v0.41.0. The operator now coordinates uploads through the shipper meta file (`--storage.tsdb.delay-compact-file.path`, `--shipper.meta-file-name`, `--shipper.ignore-unequal-block-size`) instead of disabling compaction. Set `spec.disableCompaction: true` to keep the previous behavior. #8694\r\n* [CHANGE] Define a default value of 1 for `.spec.shards` for `Prometheus` and `PrometheusAgent` CRDs. #8691\r\n* [CHANGE/BUGFIX] Add validation markers to all unsigned int fields to reject negative values. #8662\r\n* [CHANGE/BUGFIX] Disable metadata sending when the remote-write configuration uses message version v2.0. #8700\r\n* [FEATURE] Add `updateMessage` field to the Slack receiver in the `AlertmanagerConfig` CRD. #8506\r\n* [FEATURE] Add `chunkEncoding` field to `TSDBSpec` for runtime float encoding selection in `Prometheus` and `PrometheusAgent` CRDs. #8675\r\n* [ENHANCEMENT] Use pod's name as the peer name for Alertmanager >= v0.30.0. #8705\r\n* [BUGFIX] Create IPv6 EndpointSlice for the `kubelet` Service on dual-stack clusters. #8682",
+      "prerelease": false,
+      "publishedAt": "2026-07-28T14:30:04Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.93.0",
+      "version": "v0.93.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 346723369,
+      "name": "0.92.1 / 2026-06-30",
+      "notes": "* [BUGFIX] Fix \"namespace not found\" errors when the operator watches monitoring and workload resources in different resources. #8658",
+      "prerelease": false,
+      "publishedAt": "2026-06-30T09:21:31Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.92.1",
+      "version": "v0.92.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 341276816,
+      "name": "0.92.0 / 2026-06-18",
+      "notes": "> [!NOTE]\r\n> The `PrometheusTopologySharding` and `PrometheusShardRetentionPolicy` feature gates have been promoted to **Beta** in this release and are now enabled by default. See the [sharding documentation](https://prometheus-operator.dev/docs/platform/sharding/) for details.\r\n\r\n* [CHANGE] Add URL validation for the `tokenUrl` field in OAuth2 configuration across all CRDs. #8579\r\n* [CHANGE] Add URL validation for the `url` field in `RemoteReadSpec` in `Prometheus` CRD. #8596\r\n* [FEATURE] Migrate retention options from CLI flags to the config file for `Prometheus` CRD (Prometheus >= v3 uses the config file; older versions continue to use CLI flags). #8547\r\n* [FEATURE] Add `staleSeriesCompactionThreshold` field to `TSDBSpec` in `Prometheus` and `PrometheusAgent` CRDs. #8563\r\n* [FEATURE] Add `labelNameUnderscoreSanitization` and `labelNamePreserveMultipleUnderscores` fields to `OTLPConfig` in `Prometheus` and `PrometheusAgent` CRDs. #8562\r\n* [FEATURE] Add `payload` field to Webhook receiver in `AlertmanagerConfig` CRD. #8507\r\n* [ENHANCEMENT] Use pod topology labels for zone sharding on Kubernetes >= 1.35 when the `PrometheusTopologySharding` feature gate is enabled (removes the need for `attachMetadata.node=true`). #8564\r\n* [ENHANCEMENT] Add validation for the Slack `update_message` field in Alertmanager configuration Secret. #8556\r\n* [BUGFIX] Validate target labels in `Probe` static configuration to prevent invalid Prometheus scrape configs. #7901\r\n* [BUGFIX] Fix goroutine leak and data race in `pollBasedListerWatcher`. #8593\r\n* [BUGFIX] Validate `ProxyConfig` in OAuth2 configuration. #8610\r\n* [BUGFIX] Fix SMTP smarthost format error handling in Alertmanager configuration. #8586\r\n* [BUGFIX] Fix missing `return` in admission webhook after marshal failure. #8582\r\n* [BUGFIX] Fix `FindOwner` to return `nil` on `meta.Accessor` error. #8585\r\n* [BUGFIX] Fix dropped gzip `Close` errors in `GzipConfig` and `GunzipConfig`. #8573\r\n* [BUGFIX] Fix panic on malformed key=value flag input (e.g. `--labels \"key\"`). #8560",
+      "prerelease": false,
+      "publishedAt": "2026-06-18T09:21:12Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.92.0",
+      "version": "v0.92.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 317695675,
+      "name": "0.91.0 / 2026-05-05",
+      "notes": "* [CHANGE] Enforce mutual exclusion of `basicAuth`, `authorization` and `oauth2` in `ScrapeConfig` CRD. #8480\r\n* [CHANGE] Add minimum length validations to string fields in `ScrapeConfig` CRD. #8479\r\n* [CHANGE] Add validations for VictorOps receiver in `AlertmanagerConfig` CRD. #8220\r\n* [CHANGE] Add validations for OpsGenie receiver in `AlertmanagerConfig` CRD. #8267\r\n* [CHANGE] Add validations for Email receiver in `AlertmanagerConfig` CRD. #8270\r\n* [FEATURE] Implement shard retention based on Prometheus data retention (it requires the `PrometheusShardRetentionPolicy` feature gate). #8478\r\n* [FEATURE] Configure node selector when sharding mode is `Topology` for `Prometheus` and `PrometheusAgent` custom resources (it requires the `PrometheusTopologySharding` feature gate). #8486\r\n* [FEATURE] Configure external label with topology information when sharding mode is `Topology` for `Prometheus` and `PrometheusAgent` custom resources (it requires the `PrometheusTopologySharding` feature gate). #8519\r\n* [FEATURE] Distribute scrape targets within topology zones when sharding mode is `Topology` for `Prometheus` and `PrometheusAgent` custom resources (it requires the `PrometheusTopologySharding` feature gate). #8538\r\n* [FEATURE] Add `--promql-options` CLI argument to the admission-webhook binary. #8531\r\n* [FEATURE] Validate `PrometheusRule` resources selected by `Prometheus` resources based on the PromQL enabled features. #8545\r\n* [FEATURE] Add workload identity authentication method for AzureSD in `ScrapeConfig` CRD. #8489\r\n* [ENHANCEMENT] Support strategic merge patch of container probes when workloads are configured with HTTPS. #8427\r\n* [ENHANCEMENT] Support `auth_secret_file` field for Email receiver in Alertmanager configuration Secret. #8394\r\n* [ENHANCEMENT] Support `smtp_auth_secret_file` field in Alertmanager configuration Secret. #8396\r\n* [ENHANCEMENT] Add `externalId` field to SigV4 configuration in `Alertmanager`, `Prometheus`, `PrometheusAgent` and `ThanosRuler` CRDs. #8494\r\n* [ENHANCEMENT] Add `cipherSuites` support for Thanos Sidecars and Rulers. #8524\r\n* [ENHANCEMENT] Add `curves` support for Thanos Sidecars and Rulers. #8542\r\n* [ENHANCEMENT] Speed up configuration reloads by watching the config file's parent directory. #7366\r\n* [ENHANCEMENT] Support Mattermost global webhook URL support in Alertmanager configuration Secret. #8501\r\n* [ENHANCEMENT] Add Mattermost global webhook URL support in `Alertmanager` CRD. #8503 #8534\r\n* [ENHANCEMENT] Support `payload` field for Webhook receiver in Alertmanager configuration Secret. #8505\r\n* [ENHANCEMENT] Support attachment fields for Mattermost receiver in Alertmanager configuration Secret. #8508\r\n* [ENHANCEMENT] Support `update_message` field for Slack receiver in Alertmanager configuration Secret. #8502\r\n* [ENHANCEMENT] Add threading configuration for email receiver in `AlertmanagerConfig` CRD. #8400\r\n* [ENHANCEMENT] Add `healthFilter` field for ConsulSD in `ScrapeConfig` CRD. #8529\r\n* [BUGFIX] Ensure that inactive shards don't scrape any targets when the sharding retention policy is `Retain`. #8513\r\n* [BUGFIX] Fix Telegram bot token validation in Alertmanager configuration Secret. #8465",
+      "prerelease": false,
+      "publishedAt": "2026-05-05T09:15:16Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.91.0",
+      "version": "v0.91.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 301131675,
+      "name": "0.90.1 / 2026-03-25",
+      "notes": "* [BUGFIX] Fix Probe ignoring HTTP client settings in scrape configuration. #8461",
+      "prerelease": false,
+      "publishedAt": "2026-03-25T10:39:21Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.90.1",
+      "version": "v0.90.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 298909362,
+      "name": "0.90.0 / 2026-03-19",
+      "notes": "* [CHANGE/BUGFIX] Validate that the remote-write URL scheme is either `http` or `https`. #8455\r\n* [FEATURE] Add `--repair-policy-for-statefulsets` CLI argument to the operator. It defines how the operator manages StatefulSet's pods stuck at an incorrect revision. Users running Kubernetes v1.35+ are encouraged to enable this feature (see [troubleshooting guide](https://prometheus-operator.dev/docs/platform/troubleshooting/#statefulset-rollout-stuck-after-a-bad-update)). #8443\r\n* [FEATURE] Add `schedulerName` support to the `Prometheus`, `PrometheusAgent`, `Alertmanager` and `ThanosRuler` CRDs. #8451\r\n* [ENHANCEMENT] Add `--web.tls-curves` CLI argument to the operator and admission-webhook binaries. #8385\r\n* [ENHANCEMENT] Support minimum TLS version for Thanos gRPC servers. #8438\r\n* [ENHANCEMENT] Add version label to `ThanosRuler` pods. #8441\r\n* [ENHANCEMENT] Add `messageText` support for Slack receiver in `AlertmanagerConfig` CRD. #8374\r\n* [ENHANCEMENT] Add `messageText` support for Slack receiver in Alertmanager secret config. #8375\r\n* [ENHANCEMENT] Add `forceImplicitTLS` support for SMTP email config in Alertmanager secret config. #8384 #8404\r\n* [ENHANCEMENT] Add `forceImplicitTLS` support for SMTP email config in `AlertmanagerConfig` CRD. #8386\r\n* [ENHANCEMENT] Add `forceImplicitTLS` support for SMTP global config in Alertmanager secret config. #8405\r\n* [ENHANCEMENT] Add `forceImplicitTLS` support for SMTP global config in `Alertmanager` CRD. #8406\r\n* [ENHANCEMENT] Add support for global Telegram bot token in `Alertmanager` CRD. #8372\r\n* [ENHANCEMENT] Add `chatIDFile` support for Telegram receiver in Alertmanager secret config. #8376\r\n* [ENHANCEMENT] Add `wechatAPISecretFile` support in Alertmanager global config. #8377\r\n* [ENHANCEMENT] Add `authSecretFile` support for email config in Alertmanager secret config. #8396\r\n* [ENHANCEMENT] Add nested field support for PagerDuty description in Alertmanager secret config. #8402\r\n* [ENHANCEMENT] Add email threading support in Alertmanager secret config. #8388\r\n* [ENHANCEMENT] Add field and label selectors for ConfigMap watches. #8368\r\n* [ENHANCEMENT] Improve ScrapeConfig API consistency and validation. #8422\r\n* [BUGFIX] Fix `ThanosRuler` config resource status not being updated on initial StatefulSet creation. #8358\r\n* [BUGFIX] Preserve `LastTransitionTime` in Prometheus status conditions. #8346\r\n* [BUGFIX] Make Mattermost `text` field optional in `AlertmanagerConfig` CRD. #8363\r\n* [BUGFIX] Remove nil error wrapping in v1alpha1 duplicate receiver validation. #8379\r\n* [BUGFIX] Aggregate `Available` condition across Prometheus shards. #8434\r\n* [BUGFIX] Reconcile resources with inconsistent status. #8397\r\n* [BUGFIX] Fix namespace lister/watcher compatibility with Kubernetes v1.35 client-go. #8431\r\n* [BUGFIX] Fix missing OAuth2 field in IonosSDConfig generation. #8433\r\n* [BUGFIX] Fix missing fields in AzureSDConfig. #8444\r\n* [BUGFIX] Validate Microsoft Teams V2 URL in `AlertmanagerConfig` CRD. #8227\r\n* [BUGFIX] Fix `labelmap` relabel action rejecting valid replacement values with template variables for Prometheus 2.x. #8337",
+      "prerelease": false,
+      "publishedAt": "2026-03-19T11:20:41Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.90.0",
+      "version": "v0.90.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 283663453,
+      "name": "0.89.0 / 2026-02-05",
+      "notes": "* [ENHANCEMENT] Add `hostNetwork` field to the `Alertmanager` CRD. #8281\r\n* [ENHANCEMENT] Add the `crds` and `full-crds` commands to the operator's binary. #8251\r\n* [ENHANCEMENT] Report deprecated field usage in the `Reconciled` condition type. #8236\r\n* [ENHANCEMENT] Avoid unnecessary reconciliation upon creation of the `ThanosRuler` StatefulSet. #8347\r\n* [ENHANCEMENT] Add `bodySizeLimit` to the ScrapeConfig CRD. #8348\r\n* [ENHANCEMENT] Support `http_headers` field in the Alertmanager Secret. #8357\r\n* [ENHANCEMENT] Add the `-kubelet-http-metrics` flag to enable/disable the HTTP metrics port in the Kubelet endpoint (default=enabled). #8350\r\n* [ENHANCEMENT] Include `operator.prometheus.io/version` annotation in the full version of CRDs. #8279\r\n* [BUGFIX] Validate VictorOps global configuration in the `Alertmanager` CRD. #8020\r\n* [BUGFIX] Validate Jira global configuration in the `Alertmanager` CRD. #8265\r\n* [BUGFIX] Validate VictorOps receiver's URL in the `AlertmanagerConfig` CRD. #8258\r\n* [BUGFIX] Validate Webex receiver's URL in the `AlertmanagerConfig` CRD. #8255\r\n* [BUGFIX] Validate Jira receiver's URL configuration in the `AlertmanagerConfig` CRD. #8230\r\n* [BUGFIX] Validate OpsGenie receiver configuration in the `AlertmanagerConfig` CRD. #8267\r\n* [BUGFIX] Validate WeChat receiver configuration in the `AlertmanagerConfig` CRD. #8271\r\n* [BUGFIX] Validate SNS receiver configuration in the `AlertmanagerConfig` CRD. #8217\r\n* [BUGFIX] Validate Webex global configuration in the `Alertmanager` CRD. #7979\r\n* [BUGFIX] Validate Telegram global configuration in the `Alertmanager` CRD. #8268\r\n* [BUGFIX] Restore statefulset's labels if the creation fails with AlreadyExists. #8343\r\n* [BUGFIX] Fix potential panic due to informer cache races. #8310\r\n* [BUGFIX] Support probers defined with IPv6 addresses in the `Probe` CRD. #8354\r\n* [BUGFIX] Prevent group and repeat intervals with zero duration from breaking Alertmanager. #8126\r\n* [BUGFIX] Propagate all supported RocketChat attributes for `AlertmanagerConfig` CRD. #8016\r\n* [BUGFIX] Add URL validation for WeChat receiver. #8256\r\n* [BUGFIX] Add URL validation for SNS receiver. #8259\r\n* [BUGFIX] Fix GCE service discovery for the `ScrapeConfig` CRD. #8284\r\n* [BUGFIX] Avoid stale conditions in `Alertmanager`, `ThanosRuler`, `Prometheus` and `PrometheusAgent` resources. #8304\r\n* [BUGFIX] Fix race condition when updating rule ConfigMaps. #8290\r\n* [BUGFIX] Fix race condition when patching finalizers. #8323\r\n* [BUGFIX] Reconcile `ScrapeConfig` resources when namespace selection changes. #8334",
+      "prerelease": false,
+      "publishedAt": "2026-02-06T08:54:15Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.89.0",
+      "version": "v0.89.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 280247589,
+      "name": "0.88.1 / 2026-01-27",
+      "notes": "* [BUGFIX] Validate `webhookURL` secret for `MSTeams` receiver in `AlertmanagerConfig` CRD. #8294\r\n* [BUGFIX] Revert maximum version check for `EC2/Lightsail` SD in `ScrapeConfig` CRD. #8308\r\n* [BUGFIX] Relax URL validation in `Slack` receiver in AlertmanagerConfig CRD to support Go templates. #8299 #8331\r\n* [BUGFIX] Relax URL validation in `PagerDuty` in AlertmanagerConfig CRD to support Go templates. #8319\r\n* [BUGFIX] Relax URL validation in `WebhookConfig` in AlertmanagerConfig CRD to support Go templates. #8307 #8317\r\n* [BUGFIX] Relax URL validation in `RocketChat` receiver in AlertmanagerConfig CRD to support Go templates. #8318\r\n* [BUGFIX] Relax URL validation in `Pushover` receiver in AlertmanagerConfig CRD to support Go templates. #8307 #8316",
+      "prerelease": false,
+      "publishedAt": "2026-01-27T10:56:28Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.88.1",
+      "version": "v0.88.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 275451840,
+      "name": "0.88.0 / 2026-01-09",
+      "notes": "* [CHANGE] Use narrower selectors for StatefulSet informers in `Alertmanager` and `ThanosRuler` controllers. It is recommended to upgrade from `v0.85.0` (at least). #8246\r\n* [CHANGE] Reject `EC2/Lightsail` SD for Prometheus >= 3.8.0 in `ScrapeConfig` CRD. #8175\r\n* [FEATURE] Add `podManagementPolicy` field to `Prometheus`, `PrometheusAgent`, `Alertmanager` and `ThanosRuler` CRDs. #8119\r\n* [FEATURE] Add `updateStrategy` field to `Prometheus`, `PrometheusAgent`, `Alertmanager` and `ThanosRuler` CRDs. #8202\r\n* [FEATURE] Add `scrapeNativeHistograms` field to `Prometheus`, `PrometheusAgent`, `ServiceMonitor`, `PodMonitor`, `Probe` and `ScrapeConfig` CRDs. #8102\r\n* [FEATURE] Add `scope` field to `AzureAD` remote write configuration. #8240\r\n* [FEATURE] Add `workloadIdentity` field to `AzureAD` remote write configuration. #7998\r\n* [FEATURE] Add support for PrometheusRule fields `groupLabels` and `queryOffset` in `ThanosRuler`. #8137\r\n* [FEATURE] Add `slackAppToken` and `slackAppUrl` fields to Alertmanager global config for Slack App support. #8238\r\n* [FEATURE] Add `incident.io` receiver support to `Alertmanager` config secret. #8190 #8245 #8228\r\n* [FEATURE] Add `Mattermost` receiver support to `Alertmanager` config secret. #8188\r\n* [FEATURE] Add `apiType` field to `Jira` receiver in `Alertmanager` config secret. #8218\r\n* [FEATURE] Add `timeout` field to `PagerDuty` receiver in `AlertmanagerConfig` CRD. #8162\r\n* [FEATURE] Add `timeout` field to `Slack` receiver in `AlertmanagerConfig` CRD. #8161\r\n* [ENHANCEMENT] Use `minReadySeconds` to set `--dispatch.start-delay` in `Alertmanager`. #8177 #8201\r\n* [ENHANCEMENT] Expose native histograms in operator metrics. #8194\r\n* [ENHANCEMENT] Add `NoSelectedResources` reason to status conditions. #8124\r\n* [ENHANCEMENT] Add `enableHttp2` and `followRedirects` fields to HTTP configuration for `Probe` CRD. #8112\r\n* [ENHANCEMENT] Add CEL validations for `DaemonSet` mode in `PrometheusAgent` CRD (requires the `PrometheusAgentDaemonSetFeature` featuregate). #7881\r\n* [ENHANCEMENT] Improve validation for `Pushover`, `PagerDuty` and `VictorOps` receivers in `AlertmanagerConfig` CRD. #8239 #8113 #8220\r\n* [ENHANCEMENT] Add `apiURL` validation for `WeChat`, `OpsGenie` and `Telegram` receivers in `AlertmanagerConfig` CRD. #8196 #8206 #8199\r\n* [ENHANCEMENT] Validate URL fields in `AlertmanagerConfig` receivers (`MSTeams`, `Webhook`). #8231 #8125\r\n* [ENHANCEMENT] Validate URL fields in `Alertmanager` configuration secret (`WeChat`, `Telegram`, `Pushover` receivers). #7977 #8233 #8232\r\n\r\n## New Contributors\r\n* @MichalTomczakSE made their first contribution in https://github.com/prometheus-operator/prometheus-operator/pull/8144\r\n* @kartikangiras made their first contribution in https://github.com/prometheus-operator/prometheus-operator/pull/8098\r\n* @varundeepsaini made their first contribution in https://github.com/prometheus-operator/prometheus-operator/pull/8207\r\n* @tomlin7 made their first contribution in https://github.com/prometheus-operator/prometheus-operator/pull/8209\r\n* @fluktuid made their first contribution in https://github.com/prometheus-operator/prometheus-operator/pull/8248",
+      "prerelease": false,
+      "publishedAt": "2026-01-09T10:43:42Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.88.0",
+      "version": "v0.88.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 269136506,
+      "name": "0.87.1 / 2025-12-10",
+      "notes": "* [BUGFIX] Fix the generated Alertmanager configuration for html and monospace fields of pushoverConfig receiver in AlertmanagerConfig CRD. #8153",
+      "prerelease": false,
+      "publishedAt": "2025-12-10T13:58:23Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.87.1",
+      "version": "v0.87.1"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "prometheus-operator",
+    "name": "Prometheus Operator",
+    "repository": "prometheus-operator/prometheus-operator"
+  }
+}
