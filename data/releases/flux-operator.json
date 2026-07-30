@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-30T02:46:32.730Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 360540753,
+      "name": "v0.57.0",
+      "notes": "## What's Changed\n* cli: add support for merging multiple kubeconfig files by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/971\n* web: add more keyboard shortcuts and help modal by @roberteggl in https://github.com/controlplaneio-fluxcd/flux-operator/pull/956\n* operator: add support for ExternalArtifact as an RSIP type by @vocarista in https://github.com/controlplaneio-fluxcd/flux-operator/pull/941\n* docs: add guide for monorepo directory structure delivery by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/972\n* Defense in depth: input validation, resource caps, stricter defaults by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/973\n* Release v0.57.0 by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/975\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.56.0...v0.57.0",
+      "prerelease": false,
+      "publishedAt": "2026-07-27T15:51:26Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.57.0",
+      "version": "v0.57.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358818608,
+      "name": "v0.56.0",
+      "notes": "## What's Changed\n* web: update docs for user actions after `FineGrained` mode by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/960\n* cli: fix breakage after Go 1.26.5 fix for CVE-2026-39822 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/965\n* build(deps): bump the actions group across 1 directory with 6 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/966\n* build(deps): bump google.golang.org/grpc from 1.81.1 to 1.82.1 by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/967\n* build(deps-dev): bump brace-expansion from 1.1.15 to 1.1.16 in /web by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/968\n* build(deps): bump fluxcd/flux-schema from v0.10.2 to v0.11.0 in /cmd/cli in the cli-tools group across 1 directory by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/961\n* Release v0.56.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/970\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.55.0...v0.56.0",
+      "prerelease": false,
+      "publishedAt": "2026-07-23T16:31:52Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.56.0",
+      "version": "v0.56.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 353227067,
+      "name": "v0.55.0",
+      "notes": "## What's Changed\n* web: Add OAuth2 autoLogin to skip login page by @Robert27 in https://github.com/controlplaneio-fluxcd/flux-operator/pull/954\n* build(deps): bump the actions group with 2 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/950\n* Release v0.55.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/958\n\n## New Contributors\n* @Robert27 made their first contribution in https://github.com/controlplaneio-fluxcd/flux-operator/pull/954\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.54.1...v0.55.0",
+      "prerelease": false,
+      "publishedAt": "2026-07-13T14:43:48Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.55.0",
+      "version": "v0.55.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 350887373,
+      "name": "v0.54.1",
+      "notes": "## What's Changed\n* operator: fix skipping flux patch versions in the artifact by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/948\n* Release v0.54.1 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/949\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.54.0...v0.54.1",
+      "prerelease": false,
+      "publishedAt": "2026-07-08T11:39:46Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.54.1",
+      "version": "v0.54.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 350404495,
+      "name": "v0.54.0",
+      "notes": "## What's Changed\n* build(deps): bump the cli-tools group across 1 directory with 4 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/935\n* Include Flux plugins updates in `make prep-release` by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/936\n* mcp: introduce debug tool log by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/938\n* operator: fix electing versions beyond supported by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/937\n* mcp: Add Flux plugins to docs index by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/940\n* build(deps): bump the actions group across 1 directory with 11 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/943\n* Release v0.54.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/947\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.53.0...v0.54.0",
+      "prerelease": false,
+      "publishedAt": "2026-07-07T15:09:56Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.54.0",
+      "version": "v0.54.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 346990707,
+      "name": "v0.53.0",
+      "notes": ":rocket: This version comes with support for [Flux v2.9.0](https://github.com/fluxcd/flux2/releases/tag/v2.9.0) \r\n\r\n## What's Changed\r\n* Implement step-based reconciliation for ResourceSets  by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/908\r\n* operator: document ResourceSet step order guarantees by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/911\r\n* operator: fix ResourceSetInputProvider xvalidations by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/913\r\n* cli: introduce `--rm` flag for `patch instance` by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/916\r\n* web: Introduce workload dashboard and log viewer by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/718\r\n* [web-ui] Change reconciler to resource in user-facing places by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/920\r\n* operator: fix FluxInstance not sharding controllers that support it by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/922\r\n* operator: add categories to the CRDs by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/926\r\n* operator: reject invalid FluxInstance sharding with persistent storage by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/925\r\n* build(deps): bump js-yaml from 4.1.1 to 4.3.0 in /web by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/928\r\n* web: compact list for resources, workloads and events by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/931\r\n* cli: make `patch instance` resolve the latest patch by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/933\r\n* web: enhance inventory UI with status updates and manifests viewer by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/932\r\n* Release v0.53.0 by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/934\r\n\r\n\r\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.52.0...v0.53.0",
+      "prerelease": false,
+      "publishedAt": "2026-06-30T17:20:29Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.53.0",
+      "version": "v0.53.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 337282837,
+      "name": "v0.52.0",
+      "notes": "## What's Changed\n* mcp: infer tool input schema before registration by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/901\n* mcp: Add lightweight index for `search_flux_docs` by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/902\n* mcp: strip kubectl last-applied annotation by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/904\n* mcp: add make target for ci build by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/905\n* Release v0.52.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/906\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.51.0...v0.52.0",
+      "prerelease": false,
+      "publishedAt": "2026-06-10T14:11:44Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.52.0",
+      "version": "v0.52.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 336677709,
+      "name": "v0.51.0",
+      "notes": "## What's Changed\n* release: rebuild MCP search index on prep by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/875\n* build(deps): bump fluxcd/flux-cli from v2.8.7 to v2.8.8 in /cmd/cli in the cli-tools group by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/877\n* build(deps): bump fluxcd/flux2 from 2.8.7 to 2.8.8 in the actions group by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/876\n* cli: support branches for `patch instance -v` by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/878\n* feat(web): add one click filtering on status bar by @benoittgt in https://github.com/controlplaneio-fluxcd/flux-operator/pull/885\n* web: implement fine-grained access for gitops actions by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/882\n* build(deps): bump the actions group across 1 directory with 6 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/887\n* web: add chart value for fine-grained gitops actions to config API docs by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/888\n* docs: add WithPrivileges usage documentation by @Iam-Karan-Suresh in https://github.com/controlplaneio-fluxcd/flux-operator/pull/883\n* web: reframe zero trust as principle of least privilege by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/890\n* Update sigstore-go to v1.2.0 by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/892\n* Upgrade to flux-schema 0.4 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/893\n* Add flux-mirror to the CLI container image by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/895\n* mcp: Remove the hints from `get_kubernetes_resources` tool by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/896\n* Release v0.51.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/898\n\n## New Contributors\n* @benoittgt made their first contribution in https://github.com/controlplaneio-fluxcd/flux-operator/pull/885\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.50.0...v0.51.0",
+      "prerelease": false,
+      "publishedAt": "2026-06-09T14:56:12Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.51.0",
+      "version": "v0.51.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 325995853,
+      "name": "v0.50.0",
+      "notes": "## What's Changed\n* olm: Extend compatibility to OpenShift v4.21 by @wombat in https://github.com/controlplaneio-fluxcd/flux-operator/pull/861\n* web: set npm min release age to 2 weeks by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/869\n* ci: release pipeline hardening by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/870\n* operator: change OLM base image to `ubi8-micro` by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/864\n* build(deps): bump the actions group across 1 directory with 3 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/872\n* Upgrade dependencies by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/873\n* build(deps): bump the cli-tools group in /cmd/cli with 2 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/866\n* Release v0.50.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/874\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.49.0...v0.50.0",
+      "prerelease": false,
+      "publishedAt": "2026-05-20T13:49:50Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.50.0",
+      "version": "v0.50.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 321265035,
+      "name": "v0.49.0",
+      "notes": "## What's Changed\n* operator: introduce support for `aws` provider with `GitRepository` sync by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/834\n* mcp: ensure tool schemas include \"properties\" for OpenAI compatibility by @yesid-lopez in https://github.com/controlplaneio-fluxcd/flux-operator/pull/839\n* build(deps-dev): bump postcss from 8.5.6 to 8.5.12 in /web by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/840\n* build(deps): bump the actions group across 1 directory with 3 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/837\n* mcp: upgrade OCIRepository to v1 by @bendwyer in https://github.com/controlplaneio-fluxcd/flux-operator/pull/842\n* Bundle Flux and Flux Schema in the CLI container image by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/841\n* operator: send event on drift for ResourceSetInputProvider by @Mik4sa in https://github.com/controlplaneio-fluxcd/flux-operator/pull/849\n* Add AWS CodeCommit as a ResourceSetInputProvider by @vocarista in https://github.com/controlplaneio-fluxcd/flux-operator/pull/845\n* docs: add node scheduling example to OLM installation docs by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/847\n* build(deps): bump github.com/in-toto/in-toto-golang from 0.9.0 to 0.11.0 by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/854\n* Update dependencies to Kubernetes 1.36.0  by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/855\n* build(deps): bump kubectl from v1.35.4 to v1.36.0 in /cmd/cli in the cli-tools group across 1 directory by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/846\n* docs: Add OCI sync via mTLS by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/857\n* docs: Use `MutatingAdmissionPolicy` for sharding by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/859\n* Release v0.49.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/858\n\n## New Contributors\n* @yesid-lopez made their first contribution in https://github.com/controlplaneio-fluxcd/flux-operator/pull/839\n* @bendwyer made their first contribution in https://github.com/controlplaneio-fluxcd/flux-operator/pull/842\n* @Mik4sa made their first contribution in https://github.com/controlplaneio-fluxcd/flux-operator/pull/849\n* @vocarista made their first contribution in https://github.com/controlplaneio-fluxcd/flux-operator/pull/845\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.48.0...v0.49.0",
+      "prerelease": false,
+      "publishedAt": "2026-05-12T16:08:23Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.49.0",
+      "version": "v0.49.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "flux-operator",
+    "name": "Flux Operator",
+    "repository": "controlplaneio-fluxcd/flux-operator"
+  }
+}
