@@ -23,6 +23,8 @@ groups:
   opentelemetry:
     name: OpenTelemetry
     homepage: https://opentelemetry.io
+  database:
+    name: Databases
 
 tools:
   - id: kubernetes
@@ -334,6 +336,7 @@ tools:
       - postgresql
       - kubernetes
       - operator
+    group: database
     release:
       strategy: github-releases
       includePrerelease: false
@@ -534,6 +537,7 @@ tools:
       - valkey
       - kubernetes
       - operator
+    group: database
     release:
       strategy: github-releases
       includePrerelease: false
@@ -850,6 +854,41 @@ tools:
       - clickhouse
       - plugin
     group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: strimzi-kafka-operator
+    name: Strimzi Kafka Operator
+    category: data
+    repository: strimzi/strimzi-kafka-operator
+    description: Apache Kafka running on Kubernetes
+    homepage: https://strimzi.io
+    documentation: https://strimzi.io/docs/
+    tags:
+      - kafka
+      - messaging
+      - kubernetes
+      - operator
+    group: database
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^\\d+\\.\\d+\\.\\d+$"
+
+  - id: scylla-operator
+    name: Scylla Operator
+    category: data
+    repository: scylladb/scylla-operator
+    description: Kubernetes operator for ScyllaDB clusters
+    homepage: https://www.scylladb.com
+    documentation: https://operator.docs.scylladb.com
+    tags:
+      - scylladb
+      - kubernetes
+      - operator
+    group: database
     release:
       strategy: github-releases
       includePrerelease: false
