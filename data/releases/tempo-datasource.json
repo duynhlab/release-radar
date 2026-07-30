@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-07-30T03:02:39.539Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 350866281,
+      "name": "tempo v13.1.5",
+      "notes": "## 13.1.5\n\n- Fix: Avoid duplicate X-Scope-OrgID header on streaming search ([#207](https://github.com/grafana/grafana-tempo-datasource/pull/207))",
+      "prerelease": false,
+      "publishedAt": "2026-07-08T10:55:33Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.1.5",
+      "version": "v13.1.5"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 344009842,
+      "name": "tempo v13.1.4",
+      "notes": "## 13.1.4\n\n- Fix: Case-insensitive header collision when forwarding team headers ([#199](https://github.com/grafana/grafana-tempo-datasource/pull/199))",
+      "prerelease": false,
+      "publishedAt": "2026-06-24T09:40:49Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.1.4",
+      "version": "v13.1.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 343455309,
+      "name": "tempo v13.1.3",
+      "notes": "## 13.1.3\n\n- Fix path traversal GL-Vuln: VUL-2026-0062 ([#197](https://github.com/grafana/grafana-tempo-datasource/pull/197))",
+      "prerelease": false,
+      "publishedAt": "2026-06-23T11:29:42Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.1.3",
+      "version": "v13.1.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 340680593,
+      "name": "tempo v13.1.2",
+      "notes": "## 13.1.2\n\n- Bump go v1.26.4\n- Search: Unify nested span subframe schema across span sets\n- Update various backend and frontend dependencies",
+      "prerelease": false,
+      "publishedAt": "2026-06-17T10:39:54Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.1.2",
+      "version": "v13.1.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 321784470,
+      "name": "tempo v13.1.1",
+      "notes": "## 13.1.1\n\n- Minor improvements and bug fixes",
+      "prerelease": false,
+      "publishedAt": "2026-05-13T10:24:30Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.1.1",
+      "version": "v13.1.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 319416302,
+      "name": "tempo v13.1.0",
+      "notes": "## 1.0.0 (Unreleased)\n\nInitial release.",
+      "prerelease": false,
+      "publishedAt": "2026-05-08T09:40:31Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.1.0",
+      "version": "v13.1.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "tempo-datasource",
+    "name": "Tempo Datasource",
+    "repository": "grafana/grafana-tempo-datasource"
+  }
+}

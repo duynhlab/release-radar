@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-07-30T03:02:38.667Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 362123705,
+      "name": "loki v13.1.0",
+      "notes": "## 13.1.0\n\n- Persist disabled operations in Loki query builder ([#139](https://github.com/grafana/grafana-loki-datasource/pull/139))\n- Bump @grafana/\\* to 13.1.1 and update dependencies ([#137](https://github.com/grafana/grafana-loki-datasource/pull/137))",
+      "prerelease": false,
+      "publishedAt": "2026-07-30T00:45:50Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.1.0",
+      "version": "v13.1.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 359261783,
+      "name": "loki v13.0.2",
+      "notes": "## 13.0.2\n\n- Streaming key updates ([#135](https://github.com/grafana/grafana-loki-datasource/pull/135))\n- Remove unused Rudderstack events ([#130](https://github.com/grafana/grafana-loki-datasource/pull/130))\n- Update backend dependencies ([#120](https://github.com/grafana/grafana-loki-datasource/pull/120))\n- Update frontend dependencies ([#122](https://github.com/grafana/grafana-loki-datasource/pull/122))\n- Make grafanaDependency prerelease-inclusive ([#126](https://github.com/grafana/grafana-loki-datasource/pull/126))",
+      "prerelease": false,
+      "publishedAt": "2026-07-24T11:34:48Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.0.2",
+      "version": "v13.0.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 354360334,
+      "name": "loki v13.0.1",
+      "notes": "## 13.0.1\n\n- Bump grafana-plugin-sdk-go v0.292.2 ([#124](https://github.com/grafana/grafana-loki-datasource/pull/124))\n- Pin frontend dependencies ([#121](https://github.com/grafana/grafana-loki-datasource/pull/121))\n- Sync with grafana/grafana ([#115](https://github.com/grafana/grafana-loki-datasource/pull/115))",
+      "prerelease": false,
+      "publishedAt": "2026-07-15T10:39:21Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.0.1",
+      "version": "v13.0.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 324263223,
+      "name": "loki v13.0.0",
+      "notes": "## 13.0.0\n\nInitial public release.",
+      "prerelease": false,
+      "publishedAt": "2026-05-18T12:06:32Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.0.0",
+      "version": "v13.0.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "loki-datasource",
+    "name": "Loki Datasource",
+    "repository": "grafana/grafana-loki-datasource"
+  }
+}
