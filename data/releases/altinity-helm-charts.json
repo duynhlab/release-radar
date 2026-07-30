@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-30T02:46:34.361Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 359365274,
+      "name": "clickhouse-0.3.13",
+      "notes": "A Helm chart for creating a ClickHouse® Cluster with the Altinity Operator for ClickHouse",
+      "prerelease": false,
+      "publishedAt": "2026-07-24T14:41:56Z",
+      "url": "https://github.com/Altinity/helm-charts/releases/tag/clickhouse-0.3.13",
+      "version": "clickhouse-0.3.13"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358651707,
+      "name": "release-0.27.2",
+      "notes": "Helm chart to deploy [altinity-clickhouse-operator](https://github.com/Altinity/clickhouse-operator).  The ClickHouse Operator creates, configures and manages ClickHouse clusters running on Kubernetes.  ## CRD Management  CRDs are automatically installed and updated during `helm install` and `helm upgrade` using pre-install/pre-upgrade hooks (enabled by default).  To disable automatic CRD updates, set `crdHook.enabled: false` in values.yaml. When disabled, CRDs must be installed manually: ```bash   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallationtemplates.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseoperatorconfigurations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhousekeeperinstallations.clickhouse-keeper.altinity.com.yaml ```",
+      "prerelease": false,
+      "publishedAt": "2026-07-23T11:56:39Z",
+      "url": "https://github.com/Altinity/helm-charts/releases/tag/release-0.27.2",
+      "version": "release-0.27.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358651706,
+      "name": "release-0.27.2",
+      "notes": "Helm chart to deploy [altinity-clickhouse-operator](https://github.com/Altinity/clickhouse-operator).  The ClickHouse Operator creates, configures and manages ClickHouse clusters running on Kubernetes.  ## CRD Management  CRDs are automatically installed and updated during `helm install` and `helm upgrade` using pre-install/pre-upgrade hooks (enabled by default).  To disable automatic CRD updates, set `crdHook.enabled: false` in values.yaml. When disabled, CRDs must be installed manually: ```bash   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallationtemplates.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseoperatorconfigurations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhousekeeperinstallations.clickhouse-keeper.altinity.com.yaml ```",
+      "prerelease": false,
+      "publishedAt": "2026-07-23T11:56:39Z",
+      "url": "https://github.com/Altinity/helm-charts/releases/tag/release-0.27.2",
+      "version": "release-0.27.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 342585782,
+      "name": "clickhouse-0.3.12",
+      "notes": "A Helm chart for creating a ClickHouse® Cluster with the Altinity Operator for ClickHouse",
+      "prerelease": false,
+      "publishedAt": "2026-06-21T19:17:26Z",
+      "url": "https://github.com/Altinity/helm-charts/releases/tag/clickhouse-0.3.12",
+      "version": "clickhouse-0.3.12"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 334361738,
+      "name": "release-0.27.1",
+      "notes": "Helm chart to deploy [altinity-clickhouse-operator](https://github.com/Altinity/clickhouse-operator).  The ClickHouse Operator creates, configures and manages ClickHouse clusters running on Kubernetes.  ## CRD Management  CRDs are automatically installed and updated during `helm install` and `helm upgrade` using pre-install/pre-upgrade hooks (enabled by default).  To disable automatic CRD updates, set `crdHook.enabled: false` in values.yaml. When disabled, CRDs must be installed manually: ```bash   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallationtemplates.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseoperatorconfigurations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhousekeeperinstallations.clickhouse-keeper.altinity.com.yaml ```",
+      "prerelease": false,
+      "publishedAt": "2026-06-04T13:43:04Z",
+      "url": "https://github.com/Altinity/helm-charts/releases/tag/release-0.27.1",
+      "version": "release-0.27.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 319529311,
+      "name": "release-0.27.0",
+      "notes": "Helm chart to deploy [altinity-clickhouse-operator](https://github.com/Altinity/clickhouse-operator).  The ClickHouse Operator creates, configures and manages ClickHouse clusters running on Kubernetes.  ## CRD Management  CRDs are automatically installed and updated during `helm install` and `helm upgrade` using pre-install/pre-upgrade hooks (enabled by default).  To disable automatic CRD updates, set `crdHook.enabled: false` in values.yaml. When disabled, CRDs must be installed manually: ```bash   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallationtemplates.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseoperatorconfigurations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhousekeeperinstallations.clickhouse-keeper.altinity.com.yaml ```",
+      "prerelease": false,
+      "publishedAt": "2026-05-08T13:58:50Z",
+      "url": "https://github.com/Altinity/helm-charts/releases/tag/release-0.27.0",
+      "version": "release-0.27.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 311362067,
+      "name": "clickhouse-0.3.11",
+      "notes": "A Helm chart for creating a ClickHouse® Cluster with the Altinity Operator for ClickHouse",
+      "prerelease": false,
+      "publishedAt": "2026-04-20T18:39:30Z",
+      "url": "https://github.com/Altinity/helm-charts/releases/tag/clickhouse-0.3.11",
+      "version": "clickhouse-0.3.11"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 309469245,
+      "name": "release-0.26.3",
+      "notes": "Helm chart to deploy [altinity-clickhouse-operator](https://github.com/Altinity/clickhouse-operator).  The ClickHouse Operator creates, configures and manages ClickHouse clusters running on Kubernetes.  ## CRD Management  CRDs are automatically installed and updated during `helm install` and `helm upgrade` using pre-install/pre-upgrade hooks (enabled by default).  To disable automatic CRD updates, set `crdHook.enabled: false` in values.yaml. When disabled, CRDs must be installed manually: ```bash   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallationtemplates.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseoperatorconfigurations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhousekeeperinstallations.clickhouse-keeper.altinity.com.yaml ```",
+      "prerelease": false,
+      "publishedAt": "2026-04-15T17:02:47Z",
+      "url": "https://github.com/Altinity/helm-charts/releases/tag/release-0.26.3",
+      "version": "release-0.26.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 301267881,
+      "name": "clickhouse-0.3.10",
+      "notes": "A Helm chart for creating a ClickHouse® Cluster with the Altinity Operator for ClickHouse",
+      "prerelease": false,
+      "publishedAt": "2026-03-25T15:07:40Z",
+      "url": "https://github.com/Altinity/helm-charts/releases/tag/clickhouse-0.3.10",
+      "version": "clickhouse-0.3.10"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 300836850,
+      "name": "release-0.26.2",
+      "notes": "Helm chart to deploy [altinity-clickhouse-operator](https://github.com/Altinity/clickhouse-operator).  The ClickHouse Operator creates, configures and manages ClickHouse clusters running on Kubernetes.  ## CRD Management  CRDs are automatically installed and updated during `helm install` and `helm upgrade` using pre-install/pre-upgrade hooks (enabled by default).  To disable automatic CRD updates, set `crdHook.enabled: false` in values.yaml. When disabled, CRDs must be installed manually: ```bash   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseinstallationtemplates.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhouseoperatorconfigurations.clickhouse.altinity.com.yaml   kubectl apply -f https://github.com/Altinity/clickhouse-operator/raw/master/deploy/helm/clickhouse-operator/crds/CustomResourceDefinition-clickhousekeeperinstallations.clickhouse-keeper.altinity.com.yaml ```",
+      "prerelease": false,
+      "publishedAt": "2026-03-24T18:41:59Z",
+      "url": "https://github.com/Altinity/helm-charts/releases/tag/release-0.26.2",
+      "version": "release-0.26.2"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "altinity-helm-charts",
+    "name": "Altinity Helm Charts",
+    "repository": "Altinity/helm-charts"
+  }
+}

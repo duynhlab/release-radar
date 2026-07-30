@@ -8,6 +8,12 @@ groups:
   cert-manager:
     name: cert-manager
     homepage: https://cert-manager.io
+  fluxcd:
+    name: Flux
+    homepage: https://fluxcd.io
+  clickhouse:
+    name: ClickHouse
+    homepage: https://clickhouse.com
 
 tools:
   - id: kubernetes
@@ -96,6 +102,7 @@ tools:
     tags:
       - gitops
       - kubernetes
+    group: fluxcd
     release:
       strategy: github-releases
       includePrerelease: false
@@ -451,6 +458,120 @@ tools:
     tags:
       - kubernetes
       - policy
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: kro
+    name: kro
+    category: platform
+    repository: kubernetes-sigs/kro
+    description: Kube Resource Orchestrator for composing Kubernetes APIs
+    homepage: https://kro.run
+    documentation: https://kro.run/docs/overview/
+    tags:
+      - kubernetes
+      - orchestration
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: gatekeeper
+    name: Gatekeeper
+    category: security
+    repository: open-policy-agent/gatekeeper
+    description: OPA-based policy controller for Kubernetes
+    homepage: https://open-policy-agent.github.io/gatekeeper/website/
+    documentation: https://open-policy-agent.github.io/gatekeeper/website/docs/
+    tags:
+      - kubernetes
+      - policy
+      - opa
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: flux-operator
+    name: Flux Operator
+    category: delivery
+    repository: controlplaneio-fluxcd/flux-operator
+    description: Kubernetes operator for managing the lifecycle of Flux CD
+    homepage: https://fluxcd.control-plane.io/operator/
+    documentation: https://fluxcd.control-plane.io/operator/
+    tags:
+      - gitops
+      - kubernetes
+      - operator
+    group: fluxcd
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: valkey-operator
+    name: Valkey Operator
+    category: data
+    repository: valkey-io/valkey-operator
+    description: Kubernetes operator for Valkey clusters
+    homepage: https://valkey.io
+    documentation: https://github.com/valkey-io/valkey-operator/tree/main/docs
+    tags:
+      - valkey
+      - kubernetes
+      - operator
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: temporal-helm-charts
+    name: Temporal Helm Charts
+    category: data
+    repository: temporalio/helm-charts
+    description: Helm chart for the Temporal durable execution platform
+    homepage: https://temporal.io
+    documentation: https://docs.temporal.io
+    tags:
+      - workflow
+      - helm-chart
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^temporal-\\d+\\.\\d+\\.\\d+$"
+
+  - id: altinity-helm-charts
+    name: Altinity Helm Charts
+    category: data
+    repository: Altinity/helm-charts
+    description: Helm charts for ClickHouse and the Altinity operator (mixed, per-chart releases)
+    homepage: https://altinity.com
+    documentation: https://docs.altinity.com
+    tags:
+      - clickhouse
+      - helm-chart
+      - kubernetes
+    group: clickhouse
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "\\d+\\.\\d+\\.\\d+$"
+
+  - id: clickhouse-operator
+    name: ClickHouse Operator
+    category: data
+    repository: ClickHouse/clickhouse-operator
+    description: Official Kubernetes operator for ClickHouse
+    homepage: https://clickhouse.com
+    documentation: https://clickhouse.com/docs
+    tags:
+      - clickhouse
+      - kubernetes
+      - operator
+    group: clickhouse
     release:
       strategy: github-releases
       includePrerelease: false
