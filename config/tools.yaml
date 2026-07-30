@@ -5,6 +5,9 @@ groups:
   victoriametrics:
     name: VictoriaMetrics
     homepage: https://victoriametrics.com
+  cert-manager:
+    name: cert-manager
+    homepage: https://cert-manager.io
 
 tools:
   - id: kubernetes
@@ -49,6 +52,7 @@ tools:
       - kubernetes
       - tls
       - certificates
+    group: cert-manager
     release:
       strategy: github-releases
       includePrerelease: false
@@ -299,3 +303,155 @@ tools:
       strategy: github-releases
       includePrerelease: false
       tagPattern: "\\d+\\.\\d+\\.\\d+$"
+
+  - id: cloudnative-pg
+    name: CloudNativePG
+    category: data
+    repository: cloudnative-pg/cloudnative-pg
+    description: PostgreSQL operator for Kubernetes
+    homepage: https://cloudnative-pg.io
+    documentation: https://cloudnative-pg.io/documentation/
+    tags:
+      - postgresql
+      - kubernetes
+      - operator
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: keda
+    name: KEDA
+    category: platform
+    repository: kedacore/keda
+    description: Kubernetes event-driven autoscaling
+    homepage: https://keda.sh
+    documentation: https://keda.sh/docs/
+    tags:
+      - kubernetes
+      - autoscaling
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: istio
+    name: Istio
+    category: networking
+    repository: istio/istio
+    description: Service mesh for observability, security and traffic management
+    homepage: https://istio.io
+    documentation: https://istio.io/latest/docs/
+    tags:
+      - service-mesh
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^\\d+\\.\\d+\\.\\d+$"
+
+  - id: envoy-gateway
+    name: Envoy Gateway
+    category: networking
+    repository: envoyproxy/gateway
+    description: Manages Envoy Proxy as a Kubernetes gateway
+    homepage: https://gateway.envoyproxy.io
+    documentation: https://gateway.envoyproxy.io/docs/
+    tags:
+      - gateway
+      - envoy
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: external-dns
+    name: ExternalDNS
+    category: networking
+    repository: kubernetes-sigs/external-dns
+    description: Configures external DNS servers from Kubernetes resources
+    documentation: https://kubernetes-sigs.github.io/external-dns/
+    tags:
+      - dns
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: gateway-api
+    name: Gateway API
+    category: networking
+    repository: kubernetes-sigs/gateway-api
+    description: Kubernetes next-generation routing and traffic management API
+    homepage: https://gateway-api.sigs.k8s.io
+    documentation: https://gateway-api.sigs.k8s.io/guides/
+    tags:
+      - kubernetes
+      - api
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: aws-load-balancer-controller
+    name: AWS Load Balancer Controller
+    category: networking
+    repository: kubernetes-sigs/aws-load-balancer-controller
+    description: Manages AWS ALB/NLB for Kubernetes services and ingress
+    documentation: https://kubernetes-sigs.github.io/aws-load-balancer-controller/
+    tags:
+      - aws
+      - kubernetes
+      - ingress
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: trust-manager
+    name: trust-manager
+    category: security
+    repository: cert-manager/trust-manager
+    description: Distributes trust bundles across Kubernetes clusters
+    homepage: https://cert-manager.io
+    documentation: https://cert-manager.io/docs/trust/trust-manager/
+    tags:
+      - kubernetes
+      - tls
+    group: cert-manager
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: sealed-secrets
+    name: Sealed Secrets
+    category: security
+    repository: bitnami-labs/sealed-secrets
+    description: Encrypts Kubernetes secrets so they are safe to store in Git
+    documentation: https://sealed-secrets.netlify.app
+    tags:
+      - kubernetes
+      - secrets
+      - gitops
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: kyverno
+    name: Kyverno
+    category: security
+    repository: kyverno/kyverno
+    description: Policy engine designed for Kubernetes
+    homepage: https://kyverno.io
+    documentation: https://kyverno.io/docs/
+    tags:
+      - kubernetes
+      - policy
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"

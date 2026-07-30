@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T02:16:15.058Z",
+  "generatedAt": "2026-07-30T02:23:20.381Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -63,6 +63,10 @@
       "category": "platform",
       "description": "X.509 certificate management for Kubernetes",
       "documentation": "https://cert-manager.io/docs/",
+      "group": {
+        "id": "cert-manager",
+        "name": "cert-manager"
+      },
       "homepage": "https://cert-manager.io",
       "id": "cert-manager",
       "latest": {
@@ -555,6 +559,291 @@
       "tags": [
         "helm-chart",
         "kubernetes"
+      ]
+    },
+    {
+      "category": "data",
+      "description": "PostgreSQL operator for Kubernetes",
+      "documentation": "https://cloudnative-pg.io/documentation/",
+      "homepage": "https://cloudnative-pg.io",
+      "id": "cloudnative-pg",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 346387279,
+        "name": "v1.30.0",
+        "prerelease": false,
+        "publishedAt": "2026-06-29T16:36:13Z",
+        "url": "https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.0",
+        "version": "v1.30.0"
+      },
+      "name": "CloudNativePG",
+      "previous": {
+        "publishedAt": "2026-06-29T16:06:03Z",
+        "version": "v1.29.2"
+      },
+      "releaseCount": 8,
+      "repository": "cloudnative-pg/cloudnative-pg",
+      "tags": [
+        "postgresql",
+        "kubernetes",
+        "operator"
+      ]
+    },
+    {
+      "category": "platform",
+      "description": "Kubernetes event-driven autoscaling",
+      "documentation": "https://keda.sh/docs/",
+      "homepage": "https://keda.sh",
+      "id": "keda",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 336148639,
+        "name": "v2.20.1",
+        "prerelease": false,
+        "publishedAt": "2026-06-08T17:55:31Z",
+        "url": "https://github.com/kedacore/keda/releases/tag/v2.20.1",
+        "version": "v2.20.1"
+      },
+      "name": "KEDA",
+      "previous": {
+        "publishedAt": "2026-06-01T14:46:38Z",
+        "version": "v2.20.0"
+      },
+      "releaseCount": 10,
+      "repository": "kedacore/keda",
+      "tags": [
+        "kubernetes",
+        "autoscaling"
+      ]
+    },
+    {
+      "category": "networking",
+      "description": "Service mesh for observability, security and traffic management",
+      "documentation": "https://istio.io/latest/docs/",
+      "homepage": "https://istio.io",
+      "id": "istio",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 355218684,
+        "name": "Istio 1.29.6",
+        "prerelease": false,
+        "publishedAt": "2026-07-16T16:51:06Z",
+        "url": "https://github.com/istio/istio/releases/tag/1.29.6",
+        "version": "1.29.6"
+      },
+      "name": "Istio",
+      "previous": {
+        "publishedAt": "2026-07-16T16:50:56Z",
+        "version": "1.30.3"
+      },
+      "releaseCount": 9,
+      "repository": "istio/istio",
+      "tags": [
+        "service-mesh",
+        "kubernetes"
+      ]
+    },
+    {
+      "category": "networking",
+      "description": "Manages Envoy Proxy as a Kubernetes gateway",
+      "documentation": "https://gateway.envoyproxy.io/docs/",
+      "homepage": "https://gateway.envoyproxy.io",
+      "id": "envoy-gateway",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 358248612,
+        "name": "v1.8.3",
+        "prerelease": false,
+        "publishedAt": "2026-07-22T18:59:16Z",
+        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.8.3",
+        "version": "v1.8.3"
+      },
+      "name": "Envoy Gateway",
+      "previous": {
+        "publishedAt": "2026-07-08T15:36:49Z",
+        "version": "v1.7.5"
+      },
+      "releaseCount": 9,
+      "repository": "envoyproxy/gateway",
+      "tags": [
+        "gateway",
+        "envoy",
+        "kubernetes"
+      ]
+    },
+    {
+      "category": "networking",
+      "description": "Configures external DNS servers from Kubernetes resources",
+      "documentation": "https://kubernetes-sigs.github.io/external-dns/",
+      "id": "external-dns",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 305632582,
+        "name": "v0.21.0",
+        "prerelease": false,
+        "publishedAt": "2026-04-06T12:19:06Z",
+        "url": "https://github.com/kubernetes-sigs/external-dns/releases/tag/v0.21.0",
+        "version": "v0.21.0"
+      },
+      "name": "ExternalDNS",
+      "previous": {
+        "publishedAt": "2025-11-14T09:24:38Z",
+        "version": "v0.20.0"
+      },
+      "releaseCount": 5,
+      "repository": "kubernetes-sigs/external-dns",
+      "tags": [
+        "dns",
+        "kubernetes"
+      ]
+    },
+    {
+      "category": "networking",
+      "description": "Kubernetes next-generation routing and traffic management API",
+      "documentation": "https://gateway-api.sigs.k8s.io/guides/",
+      "homepage": "https://gateway-api.sigs.k8s.io",
+      "id": "gateway-api",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 355082598,
+        "name": "v1.6.1",
+        "prerelease": false,
+        "publishedAt": "2026-07-16T16:30:35Z",
+        "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.1",
+        "version": "v1.6.1"
+      },
+      "name": "Gateway API",
+      "previous": {
+        "publishedAt": "2026-06-29T20:40:00Z",
+        "version": "v1.6.0"
+      },
+      "releaseCount": 4,
+      "repository": "kubernetes-sigs/gateway-api",
+      "tags": [
+        "kubernetes",
+        "api"
+      ]
+    },
+    {
+      "category": "networking",
+      "description": "Manages AWS ALB/NLB for Kubernetes services and ingress",
+      "documentation": "https://kubernetes-sigs.github.io/aws-load-balancer-controller/",
+      "id": "aws-load-balancer-controller",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 361446979,
+        "name": "v3.4.3",
+        "prerelease": false,
+        "publishedAt": "2026-07-29T00:32:27Z",
+        "url": "https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.4.3",
+        "version": "v3.4.3"
+      },
+      "name": "AWS Load Balancer Controller",
+      "previous": {
+        "publishedAt": "2026-07-13T22:16:56Z",
+        "version": "v3.4.2"
+      },
+      "releaseCount": 10,
+      "repository": "kubernetes-sigs/aws-load-balancer-controller",
+      "tags": [
+        "aws",
+        "kubernetes",
+        "ingress"
+      ]
+    },
+    {
+      "category": "security",
+      "description": "Distributes trust bundles across Kubernetes clusters",
+      "documentation": "https://cert-manager.io/docs/trust/trust-manager/",
+      "group": {
+        "id": "cert-manager",
+        "name": "cert-manager"
+      },
+      "homepage": "https://cert-manager.io",
+      "id": "trust-manager",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 345705151,
+        "name": "v0.24.0",
+        "prerelease": false,
+        "publishedAt": "2026-06-27T14:35:14Z",
+        "url": "https://github.com/cert-manager/trust-manager/releases/tag/v0.24.0",
+        "version": "v0.24.0"
+      },
+      "name": "trust-manager",
+      "previous": {
+        "publishedAt": "2026-06-10T19:55:14Z",
+        "version": "v0.23.0"
+      },
+      "releaseCount": 8,
+      "repository": "cert-manager/trust-manager",
+      "tags": [
+        "kubernetes",
+        "tls"
+      ]
+    },
+    {
+      "category": "security",
+      "description": "Encrypts Kubernetes secrets so they are safe to store in Git",
+      "documentation": "https://sealed-secrets.netlify.app",
+      "id": "sealed-secrets",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 348610397,
+        "name": "sealed-secrets-v0.38.4",
+        "prerelease": false,
+        "publishedAt": "2026-07-03T12:52:47Z",
+        "url": "https://github.com/bitnami/sealed-secrets/releases/tag/v0.38.4",
+        "version": "v0.38.4"
+      },
+      "name": "Sealed Secrets",
+      "previous": {
+        "publishedAt": "2026-07-03T10:43:23Z",
+        "version": "v0.38.3"
+      },
+      "releaseCount": 7,
+      "repository": "bitnami-labs/sealed-secrets",
+      "tags": [
+        "kubernetes",
+        "secrets",
+        "gitops"
+      ]
+    },
+    {
+      "category": "security",
+      "description": "Policy engine designed for Kubernetes",
+      "documentation": "https://kyverno.io/docs/",
+      "homepage": "https://kyverno.io",
+      "id": "kyverno",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 351869094,
+        "name": "v1.18.2",
+        "prerelease": false,
+        "publishedAt": "2026-07-10T02:34:27Z",
+        "url": "https://github.com/kyverno/kyverno/releases/tag/v1.18.2",
+        "version": "v1.18.2"
+      },
+      "name": "Kyverno",
+      "previous": {
+        "publishedAt": "2026-05-18T10:30:23Z",
+        "version": "v1.18.1"
+      },
+      "releaseCount": 5,
+      "repository": "kyverno/kyverno",
+      "tags": [
+        "kubernetes",
+        "policy"
       ]
     }
   ]
