@@ -37,6 +37,16 @@ export function deriveToolName(repository: string): string {
     .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+/** How many of the given tag names a release tagPattern accepts. */
+export function countPatternMatches(
+  tagNames: string[],
+  pattern?: string,
+): number {
+  if (!pattern) return tagNames.length;
+  const re = new RegExp(pattern);
+  return tagNames.filter((t) => re.test(t)).length;
+}
+
 export interface AddToolInputs {
   repository: string;
   category: Category;

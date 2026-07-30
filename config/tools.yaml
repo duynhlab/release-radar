@@ -923,7 +923,7 @@ tools:
     release:
       strategy: github-releases
       includePrerelease: false
-      tagPattern: ^v\d+\.\d+\.\d+$
+      tagPattern: "^\\d+\\.\\d+(\\.\\d+)?$"
 
   - id: pgduckdb
     name: pg_duckdb
@@ -939,3 +939,65 @@ tools:
       strategy: github-releases
       includePrerelease: false
       tagPattern: ^v\d+\.\d+\.\d+$
+
+  - id: wal-g
+    name: WAL-G
+    category: data
+    repository: wal-g/wal-g
+    description: Archival restoration tool for PostgreSQL, MySQL and more
+    documentation: https://wal-g.readthedocs.io
+    tags:
+      - postgresql
+      - backup
+    group: database
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: pgmoneta
+    name: pgmoneta
+    category: data
+    repository: pgmoneta/pgmoneta
+    description: Backup and restore solution for PostgreSQL
+    homepage: https://pgmoneta.github.io
+    tags:
+      - postgresql
+      - backup
+    group: database
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^\\d+\\.\\d+\\.\\d+$"
+
+  - id: barman
+    name: Barman
+    category: data
+    repository: EnterpriseDB/barman
+    description: Backup and recovery manager for PostgreSQL
+    homepage: https://pgbarman.org
+    documentation: https://docs.pgbarman.org
+    tags:
+      - postgresql
+      - backup
+    group: database
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^release/\\d+\\.\\d+\\.\\d+$"
+
+  - id: plugin-barman-cloud
+    name: Barman Cloud Plugin
+    category: data
+    repository: cloudnative-pg/plugin-barman-cloud
+    description: CloudNativePG plugin for backups with Barman Cloud
+    documentation: https://cloudnative-pg.io/plugin-barman-cloud/
+    tags:
+      - postgresql
+      - backup
+      - kubernetes
+    group: database
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"

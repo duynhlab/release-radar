@@ -3,6 +3,7 @@ import {
   appendToolToCatalog,
   buildToolEntry,
   CatalogEditError,
+  countPatternMatches,
   deriveToolId,
   deriveToolName,
   normalizeRepository,
@@ -86,6 +87,21 @@ describe("buildToolEntry", () => {
     expect(e.id).toBe("my-id");
     expect(e.name).toBe("My Tool");
     expect(e.release.tagPattern).toBe("^release-");
+  });
+});
+
+describe("countPatternMatches", () => {
+  const pgauditTags = ["19beta2", "18.0", "17.1", "17.1rc1", "16.1"];
+
+  it("counts tags accepted by the pattern", () => {
+    expect(countPatternMatches(pgauditTags, "^v\\d+\\.\\d+\\.\\d+$")).toBe(0);
+    expect(countPatternMatches(pgauditTags, "^\\d+\\.\\d+(\\.\\d+)?$")).toBe(3);
+    expect(countPatternMatches(["v1.0.0", "nightly"], "^v\\d+\\.\\d+\\.\\d+$")).toBe(1);
+  });
+
+  it("treats no pattern as match-all and handles empty input", () => {
+    expect(countPatternMatches(pgauditTags)).toBe(5);
+    expect(countPatternMatches([], "^v")).toBe(0);
   });
 });
 

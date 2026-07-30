@@ -4,6 +4,7 @@ import {
   appendToolToCatalog,
   buildToolEntry,
   CatalogEditError,
+  countPatternMatches,
   normalizeRepository,
   type AddToolInputs,
 } from "../lib/catalog-edit.ts";
@@ -49,21 +50,28 @@ async function main(): Promise<void> {
     homepage: repoMeta.homepage,
   });
 
-  // Early warning if the tag pattern would filter out every recent release.
+  // A tool that would sync zero releases must not reach the catalog —
+  // fail fast so the pattern gets fixed in the workflow form, not found
+  // empty on the site later.
   const { data: releases } = await octokit.rest.repos.listReleases({
     owner,
     repo,
     per_page: 5,
   });
   if (releases.length === 0) {
-    console.warn(`::warning::${repository} has no GitHub releases yet`);
-  } else if (entry.release.tagPattern) {
-    const pattern = new RegExp(entry.release.tagPattern);
-    if (!releases.some((r) => pattern.test(r.tag_name))) {
-      console.warn(
-        `::warning::tagPattern ${entry.release.tagPattern} matches none of the 5 latest tags: ${releases.map((r) => r.tag_name).join(", ")}`,
-      );
-    }
+    throw new CatalogEditError(
+      `${repository} has no GitHub releases — nothing to track. ` +
+        "If the repo only pushes git tags, add it manually in config/tools.yaml with strategy github-tags.",
+    );
+  }
+  const tagNames = releases.map((r) => r.tag_name);
+  if (countPatternMatches(tagNames, entry.release.tagPattern) === 0) {
+    const hint = tagNames.every((t) => !t.startsWith("v"))
+      ? ' Hint: these tags have no "v" prefix — try a pattern without "^v".'
+      : "";
+    throw new CatalogEditError(
+      `tagPattern ${entry.release.tagPattern} matches none of the latest tags: ${tagNames.join(", ")}.${hint}`,
+    );
   }
 
   const yamlText = readFileSync(CATALOG_PATH, "utf8");
