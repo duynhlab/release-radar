@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T03:06:26.929Z",
+  "generatedAt": "2026-07-30T03:29:50.259Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -581,6 +581,10 @@
       "category": "data",
       "description": "PostgreSQL operator for Kubernetes",
       "documentation": "https://cloudnative-pg.io/documentation/",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
       "homepage": "https://cloudnative-pg.io",
       "id": "cloudnative-pg",
       "latest": {
@@ -956,6 +960,10 @@
       "category": "data",
       "description": "Kubernetes operator for Valkey clusters",
       "documentation": "https://github.com/valkey-io/valkey-operator/tree/main/docs",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
       "homepage": "https://valkey.io",
       "id": "valkey-operator",
       "latest": {
@@ -1600,6 +1608,73 @@
       "tags": [
         "clickhouse",
         "plugin"
+      ]
+    },
+    {
+      "category": "data",
+      "description": "Apache Kafka running on Kubernetes",
+      "documentation": "https://strimzi.io/docs/",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
+      "homepage": "https://strimzi.io",
+      "id": "strimzi-kafka-operator",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 345423398,
+        "name": "1.1.0",
+        "prerelease": false,
+        "publishedAt": "2026-06-27T14:23:11Z",
+        "url": "https://github.com/strimzi/strimzi-kafka-operator/releases/tag/1.1.0",
+        "version": "1.1.0"
+      },
+      "name": "Strimzi Kafka Operator",
+      "previous": {
+        "publishedAt": "2026-06-17T12:12:25Z",
+        "version": "1.0.1"
+      },
+      "releaseCount": 5,
+      "repository": "strimzi/strimzi-kafka-operator",
+      "tags": [
+        "kafka",
+        "messaging",
+        "kubernetes",
+        "operator"
+      ]
+    },
+    {
+      "category": "data",
+      "description": "Kubernetes operator for ScyllaDB clusters",
+      "documentation": "https://operator.docs.scylladb.com",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
+      "homepage": "https://www.scylladb.com",
+      "id": "scylla-operator",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 326256465,
+        "name": "v1.21.0",
+        "prerelease": false,
+        "publishedAt": "2026-05-20T21:02:23Z",
+        "url": "https://github.com/scylladb/scylla-operator/releases/tag/v1.21.0",
+        "version": "v1.21.0"
+      },
+      "name": "Scylla Operator",
+      "previous": {
+        "publishedAt": "2026-03-27T18:25:58Z",
+        "version": "v1.20.2"
+      },
+      "releaseCount": 7,
+      "repository": "scylladb/scylla-operator",
+      "tags": [
+        "scylladb",
+        "kubernetes",
+        "operator"
       ]
     }
   ]
