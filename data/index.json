@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T02:46:35.225Z",
+  "generatedAt": "2026-07-30T02:52:48.177Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -238,6 +238,10 @@
       "category": "observability",
       "description": "Monitoring system and time series database",
       "documentation": "https://prometheus.io/docs/",
+      "group": {
+        "id": "prometheus",
+        "name": "Prometheus"
+      },
       "homepage": "https://prometheus.io",
       "id": "prometheus",
       "latest": {
@@ -266,6 +270,10 @@
       "category": "observability",
       "description": "Open observability and dashboarding platform",
       "documentation": "https://grafana.com/docs/",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
       "homepage": "https://grafana.com",
       "id": "grafana",
       "latest": {
@@ -295,6 +303,10 @@
       "category": "observability",
       "description": "Vendor-neutral telemetry collector",
       "documentation": "https://opentelemetry.io/docs/collector/",
+      "group": {
+        "id": "opentelemetry",
+        "name": "OpenTelemetry"
+      },
       "homepage": "https://opentelemetry.io",
       "id": "otel-collector",
       "latest": {
@@ -1062,6 +1074,282 @@
         "clickhouse",
         "kubernetes",
         "operator"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Kubernetes operator for Grafana Tempo",
+      "documentation": "https://grafana.com/docs/tempo/latest/setup/operator/",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "homepage": "https://grafana.com",
+      "id": "tempo-operator",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 331888745,
+        "name": "Release v0.21.0",
+        "prerelease": false,
+        "publishedAt": "2026-05-30T06:57:05Z",
+        "url": "https://github.com/grafana/tempo-operator/releases/tag/v0.21.0",
+        "version": "v0.21.0"
+      },
+      "name": "Tempo Operator",
+      "previous": {
+        "publishedAt": "2026-02-13T09:01:50Z",
+        "version": "v0.20.0"
+      },
+      "releaseCount": 10,
+      "repository": "grafana/tempo-operator",
+      "tags": [
+        "traces",
+        "kubernetes",
+        "operator"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Kubernetes operator for managing Grafana instances",
+      "documentation": "https://grafana.github.io/grafana-operator/docs/",
+      "group": {
+        "id": "grafana",
+        "name": "Grafana"
+      },
+      "homepage": "https://grafana.github.io/grafana-operator/",
+      "id": "grafana-operator",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 336541019,
+        "name": "v5.24.0",
+        "prerelease": false,
+        "publishedAt": "2026-06-09T11:36:47Z",
+        "url": "https://github.com/grafana/grafana-operator/releases/tag/v5.24.0",
+        "version": "v5.24.0"
+      },
+      "name": "Grafana Operator",
+      "previous": {
+        "publishedAt": "2026-05-21T13:30:55Z",
+        "version": "v5.23.0"
+      },
+      "releaseCount": 10,
+      "repository": "grafana/grafana-operator",
+      "tags": [
+        "dashboards",
+        "kubernetes",
+        "operator"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Kubernetes-native deployment and management of Prometheus",
+      "documentation": "https://prometheus-operator.dev/docs/getting-started/introduction/",
+      "group": {
+        "id": "prometheus",
+        "name": "Prometheus"
+      },
+      "homepage": "https://prometheus-operator.dev",
+      "id": "prometheus-operator",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 361151585,
+        "name": "0.93.0 / 2026-07-28",
+        "prerelease": false,
+        "publishedAt": "2026-07-28T14:30:04Z",
+        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.93.0",
+        "version": "v0.93.0"
+      },
+      "name": "Prometheus Operator",
+      "previous": {
+        "publishedAt": "2026-06-30T09:21:31Z",
+        "version": "v0.92.1"
+      },
+      "releaseCount": 10,
+      "repository": "prometheus-operator/prometheus-operator",
+      "tags": [
+        "metrics",
+        "kubernetes",
+        "operator"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Kubernetes operator for the OpenTelemetry Collector and auto-instrumentation",
+      "documentation": "https://opentelemetry.io/docs/platforms/kubernetes/operator/",
+      "group": {
+        "id": "opentelemetry",
+        "name": "OpenTelemetry"
+      },
+      "homepage": "https://opentelemetry.io",
+      "id": "opentelemetry-operator",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 353389873,
+        "name": "Release v0.156.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-14T15:41:36Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.156.0",
+        "version": "v0.156.0"
+      },
+      "name": "OpenTelemetry Operator",
+      "previous": {
+        "publishedAt": "2026-07-13T19:45:25Z",
+        "version": "v0.155.0"
+      },
+      "releaseCount": 10,
+      "repository": "open-telemetry/opentelemetry-operator",
+      "tags": [
+        "metrics",
+        "traces",
+        "kubernetes",
+        "operator"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Kubernetes operator for the Jaeger tracing platform",
+      "documentation": "https://www.jaegertracing.io/docs/latest/operator/",
+      "homepage": "https://www.jaegertracing.io",
+      "id": "jaeger-operator",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 196486436,
+        "name": "Release v1.65.0",
+        "prerelease": false,
+        "publishedAt": "2025-01-23T18:08:13Z",
+        "url": "https://github.com/jaegertracing/jaeger-operator/releases/tag/v1.65.0",
+        "version": "v1.65.0"
+      },
+      "name": "Jaeger Operator",
+      "previous": {
+        "publishedAt": "2024-10-09T14:09:54Z",
+        "version": "v1.62.0"
+      },
+      "releaseCount": 10,
+      "repository": "jaegertracing/jaeger-operator",
+      "tags": [
+        "traces",
+        "kubernetes",
+        "operator"
+      ]
+    },
+    {
+      "category": "networking",
+      "description": "Helm chart for the Kong Gateway",
+      "documentation": "https://docs.konghq.com",
+      "homepage": "https://konghq.com",
+      "id": "kong-charts",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 348032387,
+        "name": "kong-3.4.1",
+        "prerelease": false,
+        "publishedAt": "2026-07-02T12:37:36Z",
+        "url": "https://github.com/Kong/charts/releases/tag/kong-3.4.1",
+        "version": "kong-3.4.1"
+      },
+      "name": "Kong Helm Chart",
+      "previous": {
+        "publishedAt": "2026-06-18T12:12:13Z",
+        "version": "kong-3.4.0"
+      },
+      "releaseCount": 4,
+      "repository": "Kong/charts",
+      "tags": [
+        "gateway",
+        "helm-chart",
+        "kubernetes"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Helm chart for the Vector observability data pipeline",
+      "documentation": "https://vector.dev/docs/",
+      "homepage": "https://vector.dev",
+      "id": "vector-helm-charts",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 354121973,
+        "name": "vector-0.57.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-14T23:10:29Z",
+        "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.57.0",
+        "version": "vector-0.57.0"
+      },
+      "name": "Vector Helm Charts",
+      "previous": {
+        "publishedAt": "2026-06-03T19:39:56Z",
+        "version": "vector-0.56.0"
+      },
+      "releaseCount": 10,
+      "repository": "vectordotdev/helm-charts",
+      "tags": [
+        "logs",
+        "helm-chart",
+        "kubernetes"
+      ]
+    },
+    {
+      "category": "platform",
+      "description": "Light and free AWS local emulator, a LocalStack alternative",
+      "id": "floci",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 361514211,
+        "name": "1.5.34",
+        "prerelease": false,
+        "publishedAt": "2026-07-29T04:54:43Z",
+        "url": "https://github.com/floci-io/floci/releases/tag/1.5.34",
+        "version": "1.5.34"
+      },
+      "name": "Floci",
+      "previous": {
+        "publishedAt": "2026-07-15T05:53:55Z",
+        "version": "1.5.33"
+      },
+      "releaseCount": 10,
+      "repository": "floci-io/floci",
+      "tags": [
+        "aws",
+        "testing",
+        "emulator"
+      ]
+    },
+    {
+      "category": "security",
+      "description": "Helm chart for OpenBao secrets management",
+      "documentation": "https://openbao.org/docs/",
+      "homepage": "https://openbao.org",
+      "id": "openbao-helm",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 358141434,
+        "name": "openbao-0.28.6",
+        "prerelease": false,
+        "publishedAt": "2026-07-22T15:51:23Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.6",
+        "version": "openbao-0.28.6"
+      },
+      "name": "OpenBao Helm Chart",
+      "previous": {
+        "publishedAt": "2026-07-14T17:25:55Z",
+        "version": "openbao-0.28.5"
+      },
+      "releaseCount": 10,
+      "repository": "openbao/openbao-helm",
+      "tags": [
+        "secrets",
+        "helm-chart",
+        "kubernetes"
       ]
     }
   ]
