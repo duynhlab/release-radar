@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T03:54:25.753Z",
+  "generatedAt": "2026-07-30T07:46:33.904Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1706,6 +1706,26 @@
         "postgresql",
         "extension",
         "cron"
+      ]
+    },
+    {
+      "category": "data",
+      "description": "PostgreSQL Audit Extension",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
+      "homepage": "http://pgaudit.org/",
+      "id": "pgaudit",
+      "latest": null,
+      "name": "pgaudit",
+      "previous": null,
+      "releaseCount": 0,
+      "repository": "pgaudit/pgaudit",
+      "tags": [
+        "postgresql",
+        "extension",
+        "pgaudit"
       ]
     }
   ]
