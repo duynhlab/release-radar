@@ -96,6 +96,46 @@ tools:
   });
 });
 
+describe("groups", () => {
+  it("accepts a tool referencing a declared group", () => {
+    const catalog = parseCatalog(`
+schemaVersion: 1
+groups:
+  acme:
+    name: Acme Corp
+    homepage: https://acme.dev
+tools:
+  - id: acme-server
+    name: Acme Server
+    category: platform
+    repository: acme/server
+    description: a
+    group: acme
+`);
+    expect(catalog.tools[0].group).toBe("acme");
+    expect(catalog.groups.acme.name).toBe("Acme Corp");
+  });
+
+  it("rejects a tool referencing an undeclared group", () => {
+    const bad = `
+schemaVersion: 1
+tools:
+  - id: acme-server
+    name: Acme Server
+    category: platform
+    repository: acme/server
+    description: a
+    group: nonexistent
+`;
+    expect(() => parseCatalog(bad)).toThrow(/unknown group/);
+  });
+
+  it("defaults groups to an empty map", () => {
+    const catalog = parseCatalog(validYaml);
+    expect(catalog.groups).toEqual({});
+  });
+});
+
 describe("enabledTools", () => {
   it("filters out disabled tools", () => {
     const catalog = parseCatalog(`

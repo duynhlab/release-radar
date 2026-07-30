@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-30T02:06:08.772Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 357853620,
+      "name": "v0.10.0",
+      "notes": "Released at 2026-07-22\r\n\r\n**Update note 1:** the base Docker image has been changed from [Alpine](https://www.alpinelinux.org/) to [distroless](https://github.com/googlecontainertools/distroless) in order to reduce an attack surface (The `distroless` base image doesn't contain any executables contrary to the Alpine base image). For debugging VictoriaTraces containers in Kubernetes it is recommended to use [`kubectl debug`](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_debug/).\r\n\r\n**Update note 2:** VictoriaTraces no longer provides a Docker image for the `linux/386` platform because the `distroless` base image [doesn't support this platform](https://github.com/GoogleContainerTools/distroless/issues/881). Executable files for `linux/386` platform are still published at [the VictoriaTraces releases page](https://github.com/VictoriaMetrics/VictoriaTraces/releases).\r\n\r\n* SECURITY: upgrade Go builder from Go1.26.4 to Go1.26.5. See the list of issues addressed in [Go1.26.5](https://github.com/golang/go/issues?q=milestone%3AGo1.26.5+label%3ACherryPickApproved).\r\n\r\n* FEATURE: switch base Docker image from [Alpine](https://www.alpinelinux.org/) to [distroless](https://github.com/GoogleContainerTools/distroless/). This reduces the image size and attack surface. See [the issue #182](https://github.com/VictoriaMetrics/VictoriaTraces/issues/182) and [issue #1228 in VictoriaLogs](https://github.com/VictoriaMetrics/VictoriaLogs/issues/1228).\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): unify the command-line flags for configuring the lookbehind window of stream fields and fields search APIs with `-search.fieldsLookbehind` (default 2 hours) and `-search.streamFieldsLookbehind` (default 3 days). The old flag `-search.traceServiceAndSpanNameLookbehind` is now deprecated.\r\n\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): return span kinds in strings (`internal`, `client`, `server`, etc.) rather than integers for the Tempo `/api/v2/search/tag/status/values` endpoint; also add support for span kind transformation in TraceQL. Thank @pkieszcz for reporting [the issue #200](https://github.com/VictoriaMetrics/VictoriaTraces/issues/200).\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): correctly apply condition filters in the Tempo search API when searching for related spans. Previously, complex conditions such as `pipe` and trace duration (`join` query) were used as subqueries, which caused the trace duration filter to fail. See [this issue #218](https://github.com/VictoriaMetrics/VictoriaTraces/issues/218).",
+      "prerelease": false,
+      "publishedAt": "2026-07-22T07:59:08Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.10.0",
+      "version": "v0.10.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 348454694,
+      "name": "v0.9.4",
+      "notes": "Released at 2026-07-03\r\n\r\n**Update Note 1:** [cluster version](https://docs.victoriametrics.com/victoriatraces/cluster/): this release bumps the internal `vtselect` and `vtstorage` protocol version (see the queries-longer-than-10MB fix in VictoriaLogs [#1462](https://github.com/VictoriaMetrics/VictoriaLogs/issues/1462)). Any version mismatch between `vtselect` and `vtstorage` will cause requests to fail, meaning queries will error out during a rolling upgrade when the cluster runs mixed component versions. All components must be upgraded if you want to upgrade to this release or later.\r\n\r\n* SECURITY: upgrade Go builder from Go1.26.3 to Go1.26.4. See the list of issues addressed in [Go1.26.4](https://github.com/golang/go/issues?q=milestone%3AGo1.26.4+label%3ACherryPickApproved).\r\n\r\n* FEATURE: [logstorage](https://docs.victoriametrics.com/victorialogs/): upgrade VictoriaLogs dependency from [v1.50.0 to v1.51.0](https://github.com/VictoriaMetrics/VictoriaLogs/compare/v1.50.0...v1.51.0).\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): support configuring max traces limit for Jaeger and Tempo search traces APIs. Previously each API has default limit 20, and a hardcoded limit 1000 to prevent users from requesting an excessively large `limit` query argument.\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): unify the command-line flags for configuring the maximum tags limit used in tags (tag values), service name, and span name search APIs with `-search.maxTags`. The old flags `-search.traceMaxServiceNameList` and `-search.traceMaxSpanNameList` are now deprecated.\r\n\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): return intrinsic span fields (`name`, `kind`, `status`, `duration`) under the `intrinsic` scope of the Tempo `/api/v2/search/tags` endpoint, and support `scope=intrinsic`. Previously these fields were missing (they have no attribute prefix and were skipped during tag discovery, and `scope=intrinsic` returned an error), so they did not appear in the [Grafana Traces Drilldown](https://grafana.com/docs/grafana-cloud/visualizations/simplified-exploration/traces/) attribute breakdown. Thank @vshulakov-sh for [the pull request #175](https://github.com/VictoriaMetrics/VictoriaTraces/pull/175).\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): return proper spans with within spanSets for the Tempo `/api/search` API. Previously, this API only returned root spans. This enables trace span focus by span ID when viewing a trace. See [the pull request #201](https://github.com/VictoriaMetrics/VictoriaTraces/pull/201) for details. Thank @yusufcemalcelebi for reporting the issue and proposing the change.",
+      "prerelease": false,
+      "publishedAt": "2026-07-03T06:56:55Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.9.4",
+      "version": "v0.9.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 341130156,
+      "name": "v0.9.3",
+      "notes": "Released at 2026-06-18\r\n\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): support the Tempo querying traces by id (v1) endpoint `/api/traces/<trace_id>`. Previously only the v2 `/api/v2/traces/<trace_id>` endpoint was served.\r\n\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): honor the `Accept` header on the Tempo traces by id endpoints (v1 and v2). These endpoints now return OTLP/JSON by default, and return protobuf when `Accept: application/protobuf` header is set.\r\n\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtstorage in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): expose filesystem type for storage paths via the `vm_fs_info` metric. This helps identify filesystem-specific issues during troubleshooting. See [#164](https://github.com/VictoriaMetrics/VictoriaTraces/issues/164) for details.\r\n\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtinsert in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): response empty partial success correctly when error message for OTLP ingestion is empty. Thank @immanuwell for [the pull request #170](https://github.com/VictoriaMetrics/VictoriaTraces/pull/170).",
+      "prerelease": false,
+      "publishedAt": "2026-06-18T02:21:52Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.9.3",
+      "version": "v0.9.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 332446910,
+      "name": "v0.9.2",
+      "notes": "Released at 2026-06-01\r\n\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): exclude unnecessary streams during trace search. These streams caused empty `trace_id` values in subsequent queries and parsing errors. This issue was introduced since v0.4.0.",
+      "prerelease": false,
+      "publishedAt": "2026-06-01T11:26:06Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.9.2",
+      "version": "v0.9.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 332261893,
+      "name": "v0.9.1",
+      "notes": "Released at 2026-06-01\r\n\r\n* SECURITY: upgrade Go builder from Go1.26.2 to Go1.26.3. See the list of issues addressed in [Go1.26.3](https://github.com/golang/go/issues?q=milestone%3AGo1.26.3+label%3ACherryPickApproved).\r\n\r\n* FEATURE: [logstorage](https://docs.victoriametrics.com/victorialogs/): upgrade VictoriaLogs dependency from [v1.47.0 to v1.50.0](https://github.com/VictoriaMetrics/VictoriaLogs/compare/v1.47.0...v1.50.0).\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): extend TraceQL support for fuzzy match and regex syntax. Thank @vshulakov-sh for [the pull request #158](https://github.com/VictoriaMetrics/VictoriaTraces/pull/158).\r\n\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): return span status in string (`unset`, `ok`, `error`) instead of integers (`0`, `1`, `2`) in Tempo `/api/v2/search/tag/status/values` endpoint. Thank @vshulakov-sh for [the pull request #155](https://github.com/VictoriaMetrics/VictoriaTraces/pull/155).\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): populate `spanSets` in the Tempo `/api/search` response with a synthesized root span (`spanID`, `startTimeUnixNano`, `durationNanos`, and `service.name`/`nestedSetParent` attributes) to allow [Grafana Traces Drilldown](https://grafana.com/docs/grafana-cloud/visualizations/simplified-exploration/traces/) plugin show traces. Thank @vshulakov-sh for [the pull request #162](https://github.com/VictoriaMetrics/VictoriaTraces/pull/162).\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): safeguard duration calculation for the Tempo search API when start or end time is missing. Previously, the value could exceed the int32 range and cause display errors. See [pull request #153](https://github.com/VictoriaMetrics/VictoriaTraces/pull/153) for details.",
+      "prerelease": false,
+      "publishedAt": "2026-06-01T02:40:13Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.9.1",
+      "version": "v0.9.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 325722772,
+      "name": "v0.9.0",
+      "notes": "Released at 2026-05-20\r\n\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): (experimental) extend Tempo API support for [Grafana Traces Drilldown](https://grafana.com/docs/grafana-cloud/visualizations/simplified-exploration/traces/). Thank @vshulakov-sh for [the pull request #132](https://github.com/VictoriaMetrics/VictoriaTraces/pull/132).\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): add ability to hide the given span attributes on a per-query basis. This may be useful for restricting access to span attributes with sensitive information, by specifying the list of the fields to hide via `hidden_fields_filters` query arg. See [these docs](https://docs.victoriametrics.com/victoriatraces/querying/#hidden-fields) for details.",
+      "prerelease": false,
+      "publishedAt": "2026-05-20T07:50:03Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.9.0",
+      "version": "v0.9.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 313868283,
+      "name": "v0.8.2",
+      "notes": "Released at 2026-04-27\r\n\r\n* SECURITY: upgrade base docker image (Alpine) from 3.23.3 to 3.23.4. See [Alpine 3.23.4 release notes](https://www.alpinelinux.org/posts/Alpine-3.20.10-3.21.7-3.22.4-3.23.4-released.html).\r\n\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtinsert in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): fix OTLP/gRPC failure with TLS enabled during HTTP/2 ALPN negotiation. See [#108](https://github.com/VictoriaMetrics/VictoriaTraces/issues/108) for details. Thank @hklhai for [the pull request #136](https://github.com/VictoriaMetrics/VictoriaTraces/pull/136).\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtinsert in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): fix parsing error for OTLP/JSON when numeric values are passed as numbers instead of strings. See [#134](https://github.com/VictoriaMetrics/VictoriaTraces/issues/134) for details.",
+      "prerelease": false,
+      "publishedAt": "2026-04-27T03:43:42Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.8.2",
+      "version": "v0.8.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 308623108,
+      "name": "v0.8.1",
+      "notes": "Released at 2026-04-14\r\n\r\n* SECURITY: upgrade Go builder from Go1.26.0 to Go1.26.2. See the list of issues addressed in [Go1.26.1](https://github.com/golang/go/issues?q=milestone%3AGo1.26.1+label%3ACherryPickApproved) and [Go1.26.2](https://github.com/golang/go/issues?q=milestone%3AGo1.26.2+label%3ACherryPickApproved).\r\n\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtstorage in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): allow generating service graph relation by database client span. The client span contains `db.system.name` attribute will generate a `service.name:db.system.name` (example: `account_service:mysql`) relation. It can be disabled by setting `-servicegraph.databaseTaskLimit=0`. Thank @wsx864321 for [the pull request #117](https://github.com/VictoriaMetrics/VictoriaTraces/pull/117).\r\n* FEATURE: [dashboards/single-node](https://grafana.com/grafana/dashboards/24136), [dashboards/cluster](https://grafana.com/grafana/dashboards/24134): add clickable source code links to the `Logging rate` panel in `Overview`. Users can use it to navigate directly to the source code location that generated those logs, making debugging and code exploration easier. See [#106](https://github.com/VictoriaMetrics/VictoriaTraces/pull/106).\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): support positive regex matching in the Jaeger query API when filtering traces by tags. See [the pull request #116](https://github.com/VictoriaMetrics/VictoriaTraces/pull/116) for examples. Thank @emamihe for the pull request.",
+      "prerelease": false,
+      "publishedAt": "2026-04-14T02:29:41Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.8.1",
+      "version": "v0.8.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 292032060,
+      "name": "v0.8.0",
+      "notes": "Released at 2026-03-02\r\n\r\n* SECURITY: upgrade Go builder from Go1.25.5 to Go1.26.0. See [the list of issues addressed in Go1.26.0](https://github.com/golang/go/issues?q=milestone%3AGo1.26.0+label%3ACherryPickApproved).\r\n* SECURITY: upgrade base docker image (Alpine) from 3.22.2 to 3.23.3. See [Alpine 3.23.3 release notes](https://www.alpinelinux.org/posts/Alpine-3.20.9-3.21.6-3.22.3-3.23.3-released.html).\r\n\r\n* BUGFIX: fix VictoriaTraces Docker OCI labels `org.opencontainers.image.source` and `org.opencontainers.image.documentation`: point them to VictoriaTraces repo/docs instead of VictoriaMetrics.\r\n\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect, vtstorage in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): (experimental) add support for [Tempo datasource APIs](https://grafana.com/docs/tempo/latest/api_docs/). This starts with support for the basic auto-completion `/tags`, search `/search`, and `/v2/traces/*` APIs. TraceQL metrics and pipelines are not yet available in this release.\r\n* FEATURE: [logstorage](https://docs.victoriametrics.com/victorialogs/): upgrade VictoriaLogs dependency from [v1.43.1 to v1.47.0](https://github.com/VictoriaMetrics/VictoriaLogs/compare/v1.43.1...v1.47.0).",
+      "prerelease": false,
+      "publishedAt": "2026-03-02T11:34:15Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.8.0",
+      "version": "v0.8.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 279609867,
+      "name": "v0.7.1",
+      "notes": "Released at 2026-01-24\r\n\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtstorage in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): adjust `-insert.indexFlushInterval` from 30s to 20s to ensure a proper time gap with `-search.latencyOffset`. This is useful when ingest data is not real-time, as it helps reduce the probability that data can be searched by condition but is not present in the traceID index, resulting in failure to query by traceID.\r\n\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): fix backward compatibility for the old index format. Previously, the old index format was not parsed correctly into the start and end timestamps.",
+      "prerelease": false,
+      "publishedAt": "2026-01-24T09:09:44Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.7.1",
+      "version": "v0.7.1"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "victoriatraces",
+    "name": "VictoriaTraces",
+    "repository": "VictoriaMetrics/VictoriaTraces"
+  }
+}

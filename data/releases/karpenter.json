@@ -1,121 +1,121 @@
 {
-  "generatedAt": "2026-07-29T16:11:44.035Z",
+  "generatedAt": "2026-07-30T02:11:01.883Z",
   "releases": [
     {
       "channel": "stable",
       "draft": false,
-      "id": 355752729,
-      "name": "v1.11.3",
-      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.11.2 [#9392](https://github.com/aws/karpenter-provider-aws/pull/9392) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/0c4e1cfeb0757c2dca913e607d825dde8f7a06d3))",
+      "id": 352382431,
+      "name": "v1.14.0",
+      "notes": "## Features\n- dra allocator implementation (#3082) [#3082](https://github.com/kubernetes-sigs/karpenter/pull/3082) ([Jason Deal](https://github.com/kubernetes-sigs/karpenter/commit/961af74bda8ee253f253494bcbca003e3b0eb150))\n- add zone label to node/nodeclaim lifecycle metrics (#3096) [#3096](https://github.com/kubernetes-sigs/karpenter/pull/3096) ([Derek Frank](https://github.com/kubernetes-sigs/karpenter/commit/8cafe14d22366e4480d2654eadac87dabef9a9e9))\n- Support CapacityBuffer API (#3028) [#3028](https://github.com/kubernetes-sigs/karpenter/pull/3028) ([Sumukha Radhakrishna](https://github.com/kubernetes-sigs/karpenter/commit/82671c0b1985c22a1c65f7dee0c49f409148fea6))\n- consolidateAfter now applies to destination nodes during consolidation (#3006) [#3006](https://github.com/kubernetes-sigs/karpenter/pull/3006) ([Derek Frank](https://github.com/kubernetes-sigs/karpenter/commit/c129d43cef5d5c636c856e09c3933b9ba26fedcb))\n- dra consumable capacity + partitionable devices support (#3110) [#3110](https://github.com/kubernetes-sigs/karpenter/pull/3110) ([Ryan Mistretta](https://github.com/kubernetes-sigs/karpenter/commit/61dff3a2603b8d1bd0715572089919b87b60d9ef))\n- add offering overrides and multi-allocatable scheduling support (#3109) [#3109](https://github.com/kubernetes-sigs/karpenter/pull/3109) ([Jigisha Patil](https://github.com/kubernetes-sigs/karpenter/commit/82608e7579521bfb35d9c6f0c4fc9ce9bd3e446f))\n- dra allocator integration (#3113) [#3113](https://github.com/kubernetes-sigs/karpenter/pull/3113) ([Jason Deal](https://github.com/kubernetes-sigs/karpenter/commit/11d5e0d453ad0cdc8e3e4dae1d76e2c18191b1da))\n- implement Balanced consolidation policy (#2962) [#2962](https://github.com/kubernetes-sigs/karpenter/pull/2962) ([James Thompson](https://github.com/kubernetes-sigs/karpenter/commit/43964dc54782bc68f15b7da6414c50931dadd07b))\n- account for instance type requirements for daemonset scheduling (#2975) [#2975](https://github.com/kubernetes-sigs/karpenter/pull/2975) ([GaneshBannur](https://github.com/kubernetes-sigs/karpenter/commit/dd79c9f2c9320b5d116681b319cd6f889f9274e0))\n- add NormalizedLabelValues for value translation during label normalization (#3104) [#3104](https://github.com/kubernetes-sigs/karpenter/pull/3104) ([Andy Zhang](https://github.com/kubernetes-sigs/karpenter/commit/d77270f8d31a10722bd50f07a0571c2ec1dd514e))\n- bump CapacityBuffer to v1beta1 and emit operator_* status metrics (#3129) [#3129](https://github.com/kubernetes-sigs/karpenter/pull/3129) ([Derek Frank](https://github.com/kubernetes-sigs/karpenter/commit/dfa2913482d23773adcb90760eb88c6f758085ab))\n\n## Bug Fixes\n- use namespaced name as resourceclaim index (#3102) [#3102](https://github.com/kubernetes-sigs/karpenter/pull/3102) ([Jason Deal](https://github.com/kubernetes-sigs/karpenter/commit/fe46f5c0f2ca0d59fdbb775e78e72ec72bc3aaa7))\n- ResourceClaim hydration deadlock (#3122) [#3122](https://github.com/kubernetes-sigs/karpenter/pull/3122) ([Ryan Mistretta](https://github.com/kubernetes-sigs/karpenter/commit/d7a4e1e629c815deb92e73cf299aad47c8a5888b))\n- DRA counter tracking mutation race (#3116) [#3116](https://github.com/kubernetes-sigs/karpenter/pull/3116) ([Ryan Mistretta](https://github.com/kubernetes-sigs/karpenter/commit/293a4d716045863fd58b97db2e2331bef5270ee1))\n- detect pod-level ResourceClaims in HasDRARequirements (#3124) [#3124](https://github.com/kubernetes-sigs/karpenter/pull/3124) ([Andrew Mitchell](https://github.com/kubernetes-sigs/karpenter/commit/0a96b78cb5e61c8334971539738e43f7aaffe456))\n- buffer computeReplicas must take the max of desired replicas and percentage (#3131) [#3131](https://github.com/kubernetes-sigs/karpenter/pull/3131) ([Sumukha Radhakrishna](https://github.com/kubernetes-sigs/karpenter/commit/0435d6d2400dd3d19675e8c662b336ffceb18f71))\n- Ensure DaemonSets with '/initialized' and '/registered' are considered during nodeclaim calculations (#2161) [#2161](https://github.com/kubernetes-sigs/karpenter/pull/2161) ([Wataru](https://github.com/kubernetes-sigs/karpenter/commit/1b4b3e8c829dea93c8a0429e0e27aa68edc98ed7))\n\n## Documentation\n- add Clever Cloud provider to README (#3099) [#3099](https://github.com/kubernetes-sigs/karpenter/pull/3099) ([diodonfrost](https://github.com/kubernetes-sigs/karpenter/commit/32e96ad4435d859473df9bc33167aeb1495c7a8e))\n- add Hetzner to Karpenter implementations list (#3095) [#3095](https://github.com/kubernetes-sigs/karpenter/pull/3095) ([Jannes Stubbemann](https://github.com/kubernetes-sigs/karpenter/commit/c242dcdc117fc02483831b715fe93ffb5d2355df))\n- Support Capacity Buffers in Karpenter (#2898) [#2898](https://github.com/kubernetes-sigs/karpenter/pull/2898) ([Sumukha Radhakrishna](https://github.com/kubernetes-sigs/karpenter/commit/725879aea46ed9be00a9458b99f4e402a31dc3a0))\n- add feature lifecycle, scope guidelines, RFC template, and updated contributing docs (#3049) [#3049](https://github.com/kubernetes-sigs/karpenter/pull/3049) ([Derek Frank](https://github.com/kubernetes-sigs/karpenter/commit/9ae3fd4588096b8becca424010d1361d6f3673e5))\n- InPlacePodVerticalScaling Support RFC (#3037) [#3037](https://github.com/kubernetes-sigs/karpenter/pull/3037) ([Jigisha Patil](https://github.com/kubernetes-sigs/karpenter/commit/4a2d93908c01d9852c69df3673b7c7a1071596c9))\n\n## Performance Improvements\n- memory optimizations in cluster cost tracking (#3068) [#3068](https://github.com/kubernetes-sigs/karpenter/pull/3068) ([Ryan Mistretta](https://github.com/kubernetes-sigs/karpenter/commit/da3a050dc50a52f97313357b2478e1653b6fc1a4))\n\n## Tests\n- replace metrics collection and calibrate resource utilization thresholds for perf tests (#3048) [#3048](https://github.com/kubernetes-sigs/karpenter/pull/3048) ([Andrew Mitchell](https://github.com/kubernetes-sigs/karpenter/commit/8cd2a4016335ecb1456aaedbeea4833f2f371b3c))\n- add Capacity Buffers integ tests (#3044) [#3044](https://github.com/kubernetes-sigs/karpenter/pull/3044) ([Sumukha Radhakrishna](https://github.com/kubernetes-sigs/karpenter/commit/cb50f815613d755397a532c3ab079c519550bbe7))\n- set NodeClassRef on synthesized NodePool and migrate stale InstanceTypeOptions literals (#3117) [#3117](https://github.com/kubernetes-sigs/karpenter/pull/3117) ([Andrew Mitchell](https://github.com/kubernetes-sigs/karpenter/commit/d5e91d67dae32d8c14230c51495fb26f8b59e6ca))\n\n## Chores\n- support consumable capacity and partitionable device fields in core DRA types (#3097) [#3097](https://github.com/kubernetes-sigs/karpenter/pull/3097) ([Ryan Mistretta](https://github.com/kubernetes-sigs/karpenter/commit/2a7dbd24e376f3dc8ef2dd1e6339b57522f8267d))\n- add managed dimension to node and pod metrics (#3091) [#3091](https://github.com/kubernetes-sigs/karpenter/pull/3091) ([Andrew Mitchell](https://github.com/kubernetes-sigs/karpenter/commit/e21d298fa0c1b4e55c6b822a1e70b44101f8ae19))\n- make Buffer expectations provider/env agnostic (#3114) [#3114](https://github.com/kubernetes-sigs/karpenter/pull/3114) ([Sumukha Radhakrishna](https://github.com/kubernetes-sigs/karpenter/commit/1922ddc3358706a274f36e71a6c0a296f457b063))\n- update go-opentelemetry dependencies (#3123) [#3123](https://github.com/kubernetes-sigs/karpenter/pull/3123) ([Sumukha Radhakrishna](https://github.com/kubernetes-sigs/karpenter/commit/14900f21b1655702c05da09d570ba4752baa2304))\n- use status resources in pod resource calculation (#3065) [#3065](https://github.com/kubernetes-sigs/karpenter/pull/3065) ([Jigisha Patil](https://github.com/kubernetes-sigs/karpenter/commit/edccab9f02bf03e8bda3a76377c200fe29f2343a))\n- make NodeClaim launch timeout configurable (#3112) [#3112](https://github.com/kubernetes-sigs/karpenter/pull/3112) ([Andrew Mitchell](https://github.com/kubernetes-sigs/karpenter/commit/d9e28e932331b14a6e4e0f106a5d2d8ff4e015dd))\n- upgrade KWOK to 0.6.0 (#2970) [#2970](https://github.com/kubernetes-sigs/karpenter/pull/2970) ([Alvin Bao](https://github.com/kubernetes-sigs/karpenter/commit/d20cbaffeff155257349aa7ae54bbe725d58ecd0))",
       "prerelease": false,
-      "publishedAt": "2026-07-17T15:03:05Z",
-      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.11.3",
-      "version": "v1.11.3"
+      "publishedAt": "2026-07-11T00:17:51Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.0",
+      "version": "v1.14.0"
     },
     {
       "channel": "stable",
       "draft": false,
-      "id": 355752621,
-      "name": "v1.10.2",
-      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.10.1 [#9393](https://github.com/aws/karpenter-provider-aws/pull/9393) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/75bcc27679046cf9ae3c2485ee05e8d3f425a9c7))",
+      "id": 351092657,
+      "name": "v1.10.1",
+      "notes": "## Bug Fixes\n- **termination**: prevent negative pod grace period when Node Repair … (#3051) [#3051](https://github.com/kubernetes-sigs/karpenter/pull/3051) ([Sarthak Umarani](https://github.com/kubernetes-sigs/karpenter/commit/92fb70ba0b2e5c79e42a1a2787f405450ec3dda9))",
       "prerelease": false,
-      "publishedAt": "2026-07-17T15:02:53Z",
-      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.10.2",
-      "version": "v1.10.2"
+      "publishedAt": "2026-07-08T17:46:58Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.10.1",
+      "version": "v1.10.1"
     },
     {
       "channel": "stable",
       "draft": false,
-      "id": 355752545,
-      "name": "v1.9.2",
-      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.9.1 [#9394](https://github.com/aws/karpenter-provider-aws/pull/9394) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/310b3568f736566ae1005b09b9482082f2fc61ed))",
+      "id": 351092606,
+      "name": "v1.11.2",
+      "notes": "## Bug Fixes\n- **termination**: prevent negative pod grace period when Node Repair … (#3050) [#3050](https://github.com/kubernetes-sigs/karpenter/pull/3050) ([Sarthak Umarani](https://github.com/kubernetes-sigs/karpenter/commit/268e2b6ccbeeab41a3f7a2eb7639584294b46a91))",
       "prerelease": false,
-      "publishedAt": "2026-07-17T15:02:44Z",
-      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.9.2",
-      "version": "v1.9.2"
+      "publishedAt": "2026-07-08T17:46:51Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.11.2",
+      "version": "v1.11.2"
     },
     {
       "channel": "stable",
       "draft": false,
-      "id": 355752407,
-      "name": "v1.8.8",
-      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.8.3 (#9399) [#9399](https://github.com/aws/karpenter-provider-aws/pull/9399) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/5b5bf22ecf397d0b8a0b5ec4ea3cea2473372a91))",
+      "id": 351092599,
+      "name": "v1.9.1",
+      "notes": "## Bug Fixes\n- **termination**: prevent negative pod grace period when Node Repair … (#3052) [#3052](https://github.com/kubernetes-sigs/karpenter/pull/3052) ([Sarthak Umarani](https://github.com/kubernetes-sigs/karpenter/commit/8b01ff52d01fffe92b55dc0febe42313eddc8def))",
       "prerelease": false,
-      "publishedAt": "2026-07-17T15:02:29Z",
-      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.8.8",
-      "version": "v1.8.8"
+      "publishedAt": "2026-07-08T17:46:50Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.9.1",
+      "version": "v1.9.1"
     },
     {
       "channel": "stable",
       "draft": false,
-      "id": 355752264,
-      "name": "v1.7.6",
-      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.7.2 [#9407](https://github.com/aws/karpenter-provider-aws/pull/9407) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/87b7ff2202dbe13f510026c5e9c22f7963f8753c))",
+      "id": 351092590,
+      "name": "v1.6.4",
+      "notes": "## Bug Fixes\n- **termination**: prevent negative pod grace period when Node Repair … (#3056) [#3056](https://github.com/kubernetes-sigs/karpenter/pull/3056) ([Sarthak Umarani](https://github.com/kubernetes-sigs/karpenter/commit/916e26fd9f965557426a48598bde80f71bf1ae61))",
       "prerelease": false,
-      "publishedAt": "2026-07-17T15:02:15Z",
-      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.7.6",
-      "version": "v1.7.6"
+      "publishedAt": "2026-07-08T17:46:49Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.6.4",
+      "version": "v1.6.4"
     },
     {
       "channel": "stable",
       "draft": false,
-      "id": 355752100,
-      "name": "v1.6.8",
-      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.6.4 [#9400](https://github.com/aws/karpenter-provider-aws/pull/9400) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/7a8109fbc814a312069b0c7c67a9ee0810073fba))",
+      "id": 351092587,
+      "name": "v1.8.3",
+      "notes": "## Bug Fixes\n- **termination**: prevent negative pod grace period when Node Repair … (#3054) [#3054](https://github.com/kubernetes-sigs/karpenter/pull/3054) ([Sarthak Umarani](https://github.com/kubernetes-sigs/karpenter/commit/783e51f76ed6bebc3e86a4932c969f7814b623b6))",
       "prerelease": false,
-      "publishedAt": "2026-07-17T15:01:58Z",
-      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.6.8",
-      "version": "v1.6.8"
+      "publishedAt": "2026-07-08T17:46:49Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.8.3",
+      "version": "v1.8.3"
     },
     {
       "channel": "stable",
       "draft": false,
-      "id": 355751994,
-      "name": "v1.5.8",
-      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.5.5 (#9401) [#9401](https://github.com/aws/karpenter-provider-aws/pull/9401) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/02cad97b9fc5973c4efa5ea6a352b5d3646ee839))",
+      "id": 351092583,
+      "name": "v1.7.2",
+      "notes": "## Bug Fixes\n- **termination**: prevent negative pod grace period when Node Repair … (#3055) [#3055](https://github.com/kubernetes-sigs/karpenter/pull/3055) ([Sarthak Umarani](https://github.com/kubernetes-sigs/karpenter/commit/2182df783e32b0861594525ba16232b48ad98d52))",
       "prerelease": false,
-      "publishedAt": "2026-07-17T15:01:45Z",
-      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.5.8",
-      "version": "v1.5.8"
+      "publishedAt": "2026-07-08T17:46:48Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.7.2",
+      "version": "v1.7.2"
     },
     {
       "channel": "stable",
       "draft": false,
-      "id": 355751809,
-      "name": "v1.4.4",
-      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.4.2 (#9402) [#9402](https://github.com/aws/karpenter-provider-aws/pull/9402) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/5bba96f3c0f41db4b72e97b54e94c9275ffa8289))",
+      "id": 351092573,
+      "name": "v1.4.2",
+      "notes": "## Bug Fixes\n- **termination**: prevent negative pod grace period when Node Repair … (#3058) [#3058](https://github.com/kubernetes-sigs/karpenter/pull/3058) ([Sarthak Umarani](https://github.com/kubernetes-sigs/karpenter/commit/e633bc88cfde6bd32a515b69d93ae3a5e1031327))",
       "prerelease": false,
-      "publishedAt": "2026-07-17T15:01:27Z",
-      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.4.4",
-      "version": "v1.4.4"
+      "publishedAt": "2026-07-08T17:46:47Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.4.2",
+      "version": "v1.4.2"
     },
     {
       "channel": "stable",
       "draft": false,
-      "id": 355751671,
-      "name": "v1.3.8",
-      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.3.5 (#9403) [#9403](https://github.com/aws/karpenter-provider-aws/pull/9403) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/33b235cb0020ffdbe19f764e7cf62369057189aa))",
+      "id": 351092570,
+      "name": "v1.5.5",
+      "notes": "## Bug Fixes\n- **termination**: prevent negative pod grace period when Node Repair … (#3057) [#3057](https://github.com/kubernetes-sigs/karpenter/pull/3057) ([Sarthak Umarani](https://github.com/kubernetes-sigs/karpenter/commit/6edc854ffb1e3b79f6559cb75efb0f492760deeb))",
       "prerelease": false,
-      "publishedAt": "2026-07-17T15:01:14Z",
-      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.3.8",
-      "version": "v1.3.8"
+      "publishedAt": "2026-07-08T17:46:47Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.5.5",
+      "version": "v1.5.5"
     },
     {
       "channel": "stable",
       "draft": false,
-      "id": 355430277,
-      "name": "v1.2.8",
-      "notes": "## Chores\n- bump sigs.k8s.io/karpenter to v1.2.5 (#9404) [#9404](https://github.com/aws/karpenter-provider-aws/pull/9404) ([Sarthak Umarani](https://github.com/aws/karpenter-provider-aws/commit/3a570db4a26ef1532d5bd16a5027cfe45cd3789e))",
+      "id": 351092551,
+      "name": "v1.3.5",
+      "notes": "## Bug Fixes\n- **termination**: prevent negative pod grace period when Node Repair … (#3059) [#3059](https://github.com/kubernetes-sigs/karpenter/pull/3059) ([Sarthak Umarani](https://github.com/kubernetes-sigs/karpenter/commit/e5e4f5fe51a117b073d57ba03b710021cdcf7d91))",
       "prerelease": false,
-      "publishedAt": "2026-07-17T01:39:50Z",
-      "url": "https://github.com/aws/karpenter-provider-aws/releases/tag/v1.2.8",
-      "version": "v1.2.8"
+      "publishedAt": "2026-07-08T17:46:44Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.3.5",
+      "version": "v1.3.5"
     }
   ],
   "schemaVersion": 1,
   "tool": {
     "id": "karpenter",
     "name": "Karpenter",
-    "repository": "aws/karpenter-provider-aws"
+    "repository": "kubernetes-sigs/karpenter"
   }
 }

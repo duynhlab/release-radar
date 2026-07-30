@@ -16,6 +16,8 @@ const CATEGORY_STYLES: Record<Category, string> = {
     "bg-rose-50 text-rose-700 dark:bg-rose-950 dark:text-rose-300",
   data:
     "bg-indigo-50 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300",
+  ai:
+    "bg-teal-50 text-teal-700 dark:bg-teal-950 dark:text-teal-300",
 };
 
 export function CategoryBadge({

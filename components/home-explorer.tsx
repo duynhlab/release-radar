@@ -89,7 +89,10 @@ export function HomeExplorer({
     const q = query.trim().toLowerCase();
     const result = tools.filter(
       (tool) =>
-        (!q || tool.name.toLowerCase().includes(q) || tool.id.includes(q)) &&
+        (!q ||
+          tool.name.toLowerCase().includes(q) ||
+          tool.id.includes(q) ||
+          tool.group?.name.toLowerCase().includes(q)) &&
         (category === "all" || tool.category === category) &&
         (tag === "all" || tool.tags.includes(tag)) &&
         (!onlyFavorites || favorites.has(tool.id)),

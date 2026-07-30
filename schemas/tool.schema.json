@@ -6,6 +6,30 @@
       "type": "number",
       "const": 1
     },
+    "groups": {
+      "default": {},
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]*$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "homepage": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    },
     "tools": {
       "minItems": 1,
       "type": "array",
@@ -29,7 +53,8 @@
               "observability",
               "networking",
               "security",
-              "data"
+              "data",
+              "ai"
             ]
           },
           "repository": {
@@ -55,6 +80,10 @@
               "type": "string",
               "minLength": 1
             }
+          },
+          "group": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
           },
           "enabled": {
             "default": true,

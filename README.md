@@ -95,7 +95,7 @@ Node ≥ 22.18 runs the `.ts` scripts natively — no tsx/ts-node needed.
 
 Tag-pattern tips: most tools want `^v\d+\.\d+\.\d+$`. Grafana needs
 `(\+security-\d+)?` appended. OTel Collector releases from the `-releases`
-repo, Karpenter from `aws/karpenter-provider-aws`.
+repo.
 
 ## Sync behavior
 

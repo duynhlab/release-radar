@@ -1,6 +1,11 @@
 # yaml-language-server: $schema=../schemas/tool.schema.json
 schemaVersion: 1
 
+groups:
+  victoriametrics:
+    name: VictoriaMetrics
+    homepage: https://victoriametrics.com
+
 tools:
   - id: kubernetes
     name: Kubernetes
@@ -20,8 +25,8 @@ tools:
   - id: karpenter
     name: Karpenter
     category: platform
-    repository: aws/karpenter-provider-aws
-    description: Just-in-time node autoscaling for Kubernetes on AWS
+    repository: kubernetes-sigs/karpenter
+    description: Just-in-time node autoscaling for Kubernetes
     homepage: https://karpenter.sh
     documentation: https://karpenter.sh/docs/
     tags:
@@ -184,3 +189,113 @@ tools:
       strategy: github-releases
       includePrerelease: false
       tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: traefik-helm-chart
+    name: Traefik Helm Chart
+    category: networking
+    repository: traefik/traefik-helm-chart
+    description: Official Helm chart for the Traefik proxy
+    homepage: https://traefik.io
+    documentation: https://doc.traefik.io/traefik/
+    tags:
+      - helm-chart
+      - ingress
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: crush
+    name: Crush
+    category: ai
+    repository: charmbracelet/crush
+    description: Glamourous AI coding agent for the terminal
+    homepage: https://charm.land
+    tags:
+      - coding-agent
+      - terminal
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: victoriametrics
+    name: VictoriaMetrics
+    category: observability
+    repository: VictoriaMetrics/VictoriaMetrics
+    description: Fast, cost-effective monitoring solution and time series database
+    homepage: https://victoriametrics.com
+    documentation: https://docs.victoriametrics.com
+    tags:
+      - metrics
+      - tsdb
+      - prometheus
+    group: victoriametrics
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: vm-operator
+    name: VictoriaMetrics Operator
+    category: observability
+    repository: VictoriaMetrics/operator
+    description: Kubernetes operator for the VictoriaMetrics stack
+    homepage: https://victoriametrics.com
+    documentation: https://docs.victoriametrics.com/operator/
+    tags:
+      - kubernetes
+      - operator
+      - metrics
+    group: victoriametrics
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: victorialogs
+    name: VictoriaLogs
+    category: observability
+    repository: VictoriaMetrics/VictoriaLogs
+    description: User-friendly and cost-effective database for logs
+    homepage: https://victoriametrics.com
+    documentation: https://docs.victoriametrics.com/victorialogs/
+    tags:
+      - logs
+    group: victoriametrics
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: victoriatraces
+    name: VictoriaTraces
+    category: observability
+    repository: VictoriaMetrics/VictoriaTraces
+    description: Cost-effective database for distributed traces
+    homepage: https://victoriametrics.com
+    documentation: https://docs.victoriametrics.com/victoriatraces/
+    tags:
+      - traces
+    group: victoriametrics
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: vm-helm-charts
+    name: VictoriaMetrics Helm Charts
+    category: observability
+    repository: VictoriaMetrics/helm-charts
+    description: Helm charts for all VictoriaMetrics components (mixed, per-chart releases)
+    homepage: https://victoriametrics.com
+    documentation: https://docs.victoriametrics.com/helm/
+    tags:
+      - helm-chart
+      - kubernetes
+    group: victoriametrics
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "\\d+\\.\\d+\\.\\d+$"

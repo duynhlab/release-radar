@@ -8,6 +8,7 @@ export const CATEGORIES = [
   "networking",
   "security",
   "data",
+  "ai",
 ] as const;
 
 export const CATEGORY_LABELS: Record<(typeof CATEGORIES)[number], string> = {
@@ -18,6 +19,7 @@ export const CATEGORY_LABELS: Record<(typeof CATEGORIES)[number], string> = {
   networking: "Networking",
   security: "Security",
   data: "Data & Messaging",
+  ai: "AI & Agents",
 };
 
 const regexString = z
@@ -44,6 +46,11 @@ export const ReleaseConfigSchema = z.object({
   ignorePattern: regexString.optional(),
 });
 
+export const GroupSchema = z.object({
+  name: z.string().min(1),
+  homepage: z.url().optional(),
+});
+
 export const ToolSchema = z.object({
   id: z
     .string()
@@ -60,6 +67,10 @@ export const ToolSchema = z.object({
   homepage: z.url().optional(),
   documentation: z.url().optional(),
   tags: z.array(z.string().min(1)).default([]),
+  group: z
+    .string()
+    .regex(/^[a-z0-9][a-z0-9-]*$/, "group must be a lowercase slug")
+    .optional(),
   enabled: z.boolean().default(true),
   release: ReleaseConfigSchema.prefault({}),
 });
@@ -67,6 +78,9 @@ export const ToolSchema = z.object({
 export const CatalogSchema = z
   .object({
     schemaVersion: z.literal(1),
+    groups: z
+      .record(z.string().regex(/^[a-z0-9][a-z0-9-]*$/), GroupSchema)
+      .default({}),
     tools: z.array(ToolSchema).min(1),
   })
   .superRefine((catalog, ctx) => {
@@ -80,6 +94,13 @@ export const CatalogSchema = z
         });
       }
       seen.add(tool.id);
+      if (tool.group && !(tool.group in catalog.groups)) {
+        ctx.addIssue({
+          code: "custom",
+          path: ["tools", i, "group"],
+          message: `unknown group "${tool.group}" — declare it under "groups:"`,
+        });
+      }
     }
   });
 
@@ -115,6 +136,7 @@ export const IndexToolSchema = z.object({
   homepage: z.url().optional(),
   documentation: z.url().optional(),
   tags: z.array(z.string()),
+  group: z.object({ id: z.string(), name: z.string() }).optional(),
   latest: ReleaseSchema.omit({ notes: true }).nullable(),
   previous: ReleaseSchema.pick({ version: true, publishedAt: true }).nullable(),
   releaseCount: z.number().int().min(0),
@@ -127,6 +149,7 @@ export const IndexSchema = z.object({
 });
 
 export type Category = (typeof CATEGORIES)[number];
+export type Group = z.infer<typeof GroupSchema>;
 export type ReleaseConfig = z.infer<typeof ReleaseConfigSchema>;
 export type Tool = z.infer<typeof ToolSchema>;
 export type Catalog = z.infer<typeof CatalogSchema>;

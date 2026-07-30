@@ -166,6 +166,9 @@ describe("contentEquals", () => {
 describe("buildIndex", () => {
   const catalog = parseCatalog(`
 schemaVersion: 1
+groups:
+  acme-family:
+    name: Acme Family
 tools:
   - id: acme
     name: Acme
@@ -173,6 +176,7 @@ tools:
     repository: acme/tool
     description: test tool
     homepage: https://acme.dev
+    group: acme-family
   - id: idle
     name: Idle
     category: security
@@ -203,6 +207,15 @@ tools:
     expect(acme.releaseCount).toBe(2);
     expect(index.tools[1].latest).toBeNull();
     expect(index.tools[1].releaseCount).toBe(0);
+  });
+
+  it("attaches group info and omits it for ungrouped tools", () => {
+    const index = buildIndex(catalog, new Map(), "2026-07-10T00:00:00Z");
+    expect(index.tools[0].group).toEqual({
+      id: "acme-family",
+      name: "Acme Family",
+    });
+    expect(index.tools[1]).not.toHaveProperty("group");
   });
 });
 
