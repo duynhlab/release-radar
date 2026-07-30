@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T03:29:50.259Z",
+  "generatedAt": "2026-07-30T03:54:25.753Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1675,6 +1675,37 @@
         "scylladb",
         "kubernetes",
         "operator"
+      ]
+    },
+    {
+      "category": "data",
+      "description": "Run periodic jobs in PostgreSQL",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
+      "id": "pg-cron",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 244726889,
+        "name": "v1.6.7",
+        "prerelease": false,
+        "publishedAt": "2025-09-04T10:18:05Z",
+        "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.7",
+        "version": "v1.6.7"
+      },
+      "name": "pg_cron",
+      "previous": {
+        "publishedAt": "2025-09-04T06:58:25Z",
+        "version": "v1.6.6"
+      },
+      "releaseCount": 10,
+      "repository": "citusdata/pg_cron",
+      "tags": [
+        "postgresql",
+        "extension",
+        "cron"
       ]
     }
   ]

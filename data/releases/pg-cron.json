@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-07-30T03:54:25.745Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 244726889,
+      "name": "v1.6.7",
+      "notes": "## What's Changed\r\n* Fix compile errors on newer versions of GCC @marcoslot in https://github.com/citusdata/pg_cron/pull/403\r\n\r\n\r\n**Full Changelog**: https://github.com/citusdata/pg_cron/compare/v1.6.6...v1.6.7",
+      "prerelease": false,
+      "publishedAt": "2025-09-04T10:18:05Z",
+      "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.7",
+      "version": "v1.6.7"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 244672807,
+      "name": "v1.6.6",
+      "notes": "## What's Changed\r\n* Postgres 18 support by @AndrewJackson2020 @esiaero  @francoricci\r\n* Stop logging notices and repeating log messages by @marcoslot in https://github.com/citusdata/pg_cron/pull/378\r\n* Fixes a possible crash for unavailable cron jobs @SeleznevPavel in https://github.com/citusdata/pg_cron/pull/370\r\n* Fix build issue FreeBSD 14.3  @francoricci in https://github.com/citusdata/pg_cron/pull/394\r\n* Fix type mismatch in dsm_attach() argument by using DatumGetUInt32() by @yjhjstz in https://github.com/citusdata/pg_cron/pull/395\r\n\r\n## New Contributors\r\n* @SeleznevPavel made their first contribution in https://github.com/citusdata/pg_cron/pull/370\r\n* @matthiasfeist made their first contribution in https://github.com/citusdata/pg_cron/pull/375\r\n* @AndrewJackson2020 made their first contribution in https://github.com/citusdata/pg_cron/pull/374\r\n* @TheOtherBrian1 made their first contribution in https://github.com/citusdata/pg_cron/pull/372\r\n* @danieltprice made their first contribution in https://github.com/citusdata/pg_cron/pull/379\r\n* @francoricci made their first contribution in https://github.com/citusdata/pg_cron/pull/394\r\n* @yjhjstz made their first contribution in https://github.com/citusdata/pg_cron/pull/395\r\n\r\n**Full Changelog**: https://github.com/citusdata/pg_cron/compare/v1.6.5...v1.6.6",
+      "prerelease": false,
+      "publishedAt": "2025-09-04T06:58:25Z",
+      "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.6",
+      "version": "v1.6.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 169514166,
+      "name": "v1.6.4",
+      "notes": "## What's Changed\r\n* Fix bug with invalidation of CachedCronJobRelationId by @CyberDem0n in https://github.com/citusdata/pg_cron/pull/346\r\n* Select procedure based on argument type of cron_unschedule_named by @CyberDem0n in https://github.com/citusdata/pg_cron/pull/347\r\n* Revert d90843de92d5e517a23b1e17da56dc08c496c774 per https://github.com/citusdata/pg_cron/issues/342\r\n\r\n**Full Changelog**: https://github.com/citusdata/pg_cron/compare/v1.6.3...v1.6.4",
+      "prerelease": false,
+      "publishedAt": "2024-08-09T13:04:39Z",
+      "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.4",
+      "version": "v1.6.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 166695698,
+      "name": "v1.6.3",
+      "notes": "## What's Changed\r\n* Fix pointer reuse bug causing off-by-1 day of month by @marcoslot in https://github.com/citusdata/pg_cron/pull/292\r\n* Update the database when scheduling an existing job by @nuno-faria in https://github.com/citusdata/pg_cron/pull/293\r\n* Make cron_unschedule_named() accept v1.4 SQL signature. by @nmisch in https://github.com/citusdata/pg_cron/pull/299\r\n* Allow interrupts in pg_cron launcher loop to avoid deadlock by @Ngalstyan4 in https://github.com/citusdata/pg_cron/pull/319\r\n* Fixes possible overflow by @sminux in https://github.com/citusdata/pg_cron/pull/326\r\n* Log start & end time for all failed runs by @kketch in https://github.com/citusdata/pg_cron/pull/324\r\n* Replace MemoryContextResetAndDeleteChildren macro with MemoryContextReset for PG 17 compatibility by @esiaero in https://github.com/citusdata/pg_cron/pull/332\r\n* Fix compiler error on Illumos by @japinli in https://github.com/citusdata/pg_cron/pull/317",
+      "prerelease": false,
+      "publishedAt": "2024-07-23T12:25:24Z",
+      "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.3",
+      "version": "v1.6.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 126080976,
+      "name": "v1.6.2",
+      "notes": "- Fixes off-by-1 issue in day of month",
+      "prerelease": false,
+      "publishedAt": "2023-10-20T22:14:34Z",
+      "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.2",
+      "version": "v1.6.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 122942734,
+      "name": "v1.6.1",
+      "notes": "## What's Changed\r\n* Restart pg_cron scheduler when terminating the background worker by @marcocitus in https://github.com/citusdata/pg_cron/pull/286\r\n\r\n\r\n**Full Changelog**: https://github.com/citusdata/pg_cron/compare/v1.6.0...v1.6.1",
+      "prerelease": false,
+      "publishedAt": "2023-09-28T12:28:16Z",
+      "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.1",
+      "version": "v1.6.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 119085682,
+      "name": "v1.6.0",
+      "notes": "## What's Changed\r\n* Test latest version instead of hardcoding 1.4 by @df7cb in https://github.com/citusdata/pg_cron/pull/268\r\n* fix warning- \"declaration shadows a  previous local\" by @sahemant in https://github.com/citusdata/pg_cron/pull/275\r\n* fix memory corruption bug of cron module by @zhjwpku in https://github.com/citusdata/pg_cron/pull/271\r\n* Convert K&R function definitions by @df7cb in https://github.com/citusdata/pg_cron/pull/281\r\n* add possibility to schedule jobs on the last day of month by @zhjwpku in https://github.com/citusdata/pg_cron/pull/273\r\n* Overall on/off to launch active jobs by @bdrouvotAWS in https://github.com/citusdata/pg_cron/pull/283\r\n\r\n## New Contributors\r\n* @sahemant made their first contribution in https://github.com/citusdata/pg_cron/pull/275\r\n\r\n**Full Changelog**: https://github.com/citusdata/pg_cron/compare/v1.5.2...v1.6.0",
+      "prerelease": false,
+      "publishedAt": "2023-08-29T14:13:47Z",
+      "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.0",
+      "version": "v1.6.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 98532187,
+      "name": "v1.5.2",
+      "notes": "* Fixes a bug that caused crashes after upgrading binaries to 1.5, by Polina Bungina",
+      "prerelease": false,
+      "publishedAt": "2023-04-07T09:51:21Z",
+      "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.5.2",
+      "version": "v1.5.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 91896765,
+      "name": "v1.5.1",
+      "notes": "* Fixes a bug that caused incorrect parsing of some crons schedules",
+      "prerelease": false,
+      "publishedAt": "2023-04-04T10:13:00Z",
+      "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.5.1",
+      "version": "v1.5.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 91573132,
+      "name": "v1.5.0",
+      "notes": "- Adds the possibility of scheduling a job with a 1-59 second interval\r\n- Adds a cron.timezone setting to configure the timezone of cron schedules, by @TsinghuaLucky912\r\n- Removes pg_stat_activity reporting of internal pg_cron metadata queries\r\n- Fixes a bug that caused issues with long job names\r\n- Fixes a bug that caused inactive reboot jobs to still run\r\n- Fixes a bug that could limit concurrency for background workers\r\n- Fixes a bug that prevented compiling on ARM, by @hslightdb\r\n- Fixes regression tests for PostgreSQL <= 12, by @df7cb",
+      "prerelease": false,
+      "publishedAt": "2023-02-07T09:31:29Z",
+      "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.5.0",
+      "version": "v1.5.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "pg-cron",
+    "name": "pg_cron",
+    "repository": "citusdata/pg_cron"
+  }
+}
