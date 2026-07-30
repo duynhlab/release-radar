@@ -3,10 +3,8 @@ import {
   appendToolToCatalog,
   buildToolEntry,
   CatalogEditError,
-  deriveGroupName,
   deriveToolId,
   deriveToolName,
-  ensureGroup,
   normalizeRepository,
 } from "../lib/catalog-edit.ts";
 import { parseCatalog } from "../lib/catalog.ts";
@@ -88,52 +86,6 @@ describe("buildToolEntry", () => {
     expect(e.id).toBe("my-id");
     expect(e.name).toBe("My Tool");
     expect(e.release.tagPattern).toBe("^release-");
-  });
-});
-
-describe("ensureGroup", () => {
-  it("adds a new group to an existing groups map", () => {
-    const { yaml, created } = ensureGroup(baseYaml, "pgbouncer", "PgBouncer");
-    expect(created).toBe(true);
-    const catalog = parseCatalog(yaml);
-    expect(catalog.groups.pgbouncer).toEqual({ name: "PgBouncer" });
-    expect(catalog.groups.acme.name).toBe("Acme Corp"); // untouched
-    expect(yaml.startsWith("# yaml-language-server:")).toBe(true);
-  });
-
-  it("derives the display name from the slug when omitted", () => {
-    const { yaml } = ensureGroup(baseYaml, "my-db-family");
-    expect(parseCatalog(yaml).groups["my-db-family"].name).toBe("My Db Family");
-    expect(deriveGroupName("victoria-metrics")).toBe("Victoria Metrics");
-  });
-
-  it("creates the groups map when the catalog has none", () => {
-    const noGroups = baseYaml.replace(/groups:\n(  acme:\n    name: Acme Corp\n)\n/, "");
-    expect(parseCatalog(noGroups).groups).toEqual({});
-    const { yaml, created } = ensureGroup(noGroups, "acme", "Acme", "https://acme.dev");
-    expect(created).toBe(true);
-    expect(parseCatalog(yaml).groups.acme).toEqual({
-      name: "Acme",
-      homepage: "https://acme.dev",
-    });
-  });
-
-  it("is a no-op when the group already exists", () => {
-    const { yaml, created } = ensureGroup(baseYaml, "acme", "Different Name");
-    expect(created).toBe(false);
-    expect(yaml).toBe(baseYaml);
-  });
-
-  it("rejects invalid slugs", () => {
-    expect(() => ensureGroup(baseYaml, "Not A Slug")).toThrow(CatalogEditError);
-  });
-
-  it("supports the full new-group + tool flow", () => {
-    const { yaml } = ensureGroup(baseYaml, "acme-family");
-    const catalog = parseCatalog(
-      appendToolToCatalog(yaml, { ...entry, group: "acme-family" }),
-    );
-    expect(catalog.tools[1].group).toBe("acme-family");
   });
 });
 

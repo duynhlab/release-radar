@@ -1,7 +1,5 @@
-import { parseDocument, YAMLMap, YAMLSeq } from "yaml";
+import { parseDocument, YAMLSeq } from "yaml";
 import { CatalogSchema, type Category, type Tool } from "./types.ts";
-
-const SLUG_RE = /^[a-z0-9][a-z0-9-]*$/;
 
 export class CatalogEditError extends Error {}
 
@@ -37,47 +35,6 @@ export function deriveToolName(repository: string): string {
     .split("/")[1]
     .replace(/[-_]+/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase());
-}
-
-/** "my-group" → "My Group" — default display name for a new group. */
-export function deriveGroupName(slug: string): string {
-  return slug.replace(/-+/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-}
-
-/**
- * Declares a group in the catalog if it does not exist yet (no-op when it
- * does), preserving existing comments/formatting. Returns the new YAML text
- * and whether the group was created.
- */
-export function ensureGroup(
-  yamlText: string,
-  slug: string,
-  name?: string,
-  homepage?: string,
-): { yaml: string; created: boolean } {
-  if (!SLUG_RE.test(slug)) {
-    throw new CatalogEditError(
-      `group "${slug}" must be a lowercase slug (a-z, 0-9, hyphens)`,
-    );
-  }
-  const doc = parseDocument(yamlText);
-  const existing = CatalogSchema.parse(doc.toJS());
-  if (slug in existing.groups) return { yaml: yamlText, created: false };
-
-  const entry = {
-    name: name?.trim() || deriveGroupName(slug),
-    ...(homepage?.trim() ? { homepage: homepage.trim() } : {}),
-  };
-  const groups = doc.get("groups");
-  if (!(groups instanceof YAMLMap)) {
-    // No groups map yet — create one right after schemaVersion.
-    doc.set("groups", doc.createNode({ [slug]: entry }));
-  } else {
-    groups.set(doc.createNode(slug), doc.createNode(entry));
-  }
-  const result = doc.toString({ lineWidth: 0 });
-  CatalogSchema.parse(parseDocument(result).toJS());
-  return { yaml: result, created: true };
 }
 
 export interface AddToolInputs {
