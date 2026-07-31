@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-07-30T02:06:09.386Z",
+  "generatedAt": "2026-07-31T03:07:49.825Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 362539796,
+      "name": "victoria-metrics-operator-crds-0.14.0",
+      "notes": "# Release notes for version 0.14.0\n\n**Release date:** 30 Jul 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.74.0](https://img.shields.io/badge/v0.74.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Foperator%2Fchangelog%2F%23v0740)\n\n- Release CRDs for operator [v0.74.0](https://github.com/VictoriaMetrics/operator/releases/tag/v0.74.0)",
+      "prerelease": false,
+      "publishedAt": "2026-07-30T15:36:48Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-crds-0.14.0",
+      "version": "victoria-metrics-operator-crds-0.14.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 362539778,
+      "name": "victoria-metrics-operator-0.67.0",
+      "notes": "# Release notes for version 0.67.0\n\n**Release date:** 30 Jul 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.74.0](https://img.shields.io/badge/v0.74.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Foperator%2Fchangelog%2F%23v0740)\n\n- updates operator to [v0.74.0](https://github.com/VictoriaMetrics/operator/releases/tag/v0.74.0) version",
+      "prerelease": false,
+      "publishedAt": "2026-07-30T15:36:46Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-0.67.0",
+      "version": "victoria-metrics-operator-0.67.0"
+    },
     {
       "channel": "stable",
       "draft": false,

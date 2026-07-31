@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-29T16:11:50.935Z",
+  "generatedAt": "2026-07-31T03:07:44.700Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 362401353,
+      "name": "3.13.2 / 2026-07-29",
+      "notes": "## What's Changed\r\n\r\n- [SECURITY] Bump golang.org/x/text to v0.39.0 (CVE-2026-56852) and google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf). #19290 by @krajorama\r\n- [BUGFIX] PromQL: Preallocate the active query tracker file to avoid SIGBUS crashes when the data disk is full. #19289 by @akshajrawat\r\n\r\n**Full Changelog**: https://github.com/prometheus/prometheus/compare/v3.13.1...v3.13.2",
+      "prerelease": false,
+      "publishedAt": "2026-07-30T13:25:26Z",
+      "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.2",
+      "version": "v3.13.2"
+    },
     {
       "channel": "stable",
       "draft": false,

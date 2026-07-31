@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T02:06:03.511Z",
+  "generatedAt": "2026-07-31T03:07:47.039Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 362411992,
+      "name": "v41.1.0",
+      "notes": "# [v41.1.0](https://github.com/traefik/traefik-helm-chart/compare/v41.0.2...v41.1.0) (2026-07-30)\n\n## :rocket: Features\n\n- feat(rbac): grant configmaps write for hub api management #1930 by @ArthurHlt\n- feat(deps): update traefik docker tag to v3.7.7 #1926 by @renovate-with-github-actions[bot]\n- feat(deps): update traefik docker tag to v3.7.8 #1932 by @renovate-with-github-actions[bot]\n- feat(hub): add hardened image variant #1942 by @jspdown\n- feat(hub): :sparkles: add hub.enabled to run Traefik Hub in proxy mode #1934 by @darkweaver87\n- feat(CRDs): update Traefik Hub to v1.33.0 #1939 by @traefiker\n- feat(deps): update traefik docker tag to v3.7.9 #1945 by @renovate-with-github-actions[bot]\n- feat(deps): update ghcr.io/traefik/traefik-hub docker tag to v3.20.7 #1944 by @renovate-with-github-actions[bot]\n- feat: :sparkles: add `hub-manager` chart #1784 by @bpsoraggi\n\n## :bug: Bug fixes\n\n- fix(ports): support IPv6 hostIP values #1933 by @ihopenre-eng\n- fix: support enabling only kubernetesIngressNGINX with rbac.namespaced #1929 by @rtsui-harmonicinc\n- fix(deployment): :bug: accept named port for healthchecksPort #1937 by @darkweaver87\n- fix(rbac): :bug: align namespaced RBAC with kubernetesIngressNGINX namespace scoping #1938 by @darkweaver87\n\n## :package: Others\n\n- docs(examples): fix Argo Rollouts product name #1924 by @tvass\n- chore(deps): update github actions #1927 by @renovate-with-github-actions[bot]\n- chore: :art: file provider scrambled output #1921 by @rtsui-harmonicinc\n- docs: :books: change metrics.prometheus labels types from string to bool #1935 by @AbhinavPraveen\n- chore(deps): update renovatebot/github-action action to v46.1.20 #1940 by @renovate-with-github-actions[bot]\n- docs(migrate): add v40 to v41 values migration helper #1901 by @mloiseleur\n- chore(deps): update github actions #1943 by @renovate-with-github-actions[bot]\n- docs(hub-manager): 📚 rewrite EXAMPLES into a README install guide #1948 by @darkweaver87\n- docs(values): :books: fix rendered types for nullable fields #1936 by @darkweaver87\n- chore(release): 🚀 publish 41.1.0 and hub-manager 1.0.0 #1947 by @darkweaver87\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.9 (default)\n* Traefik Hub: v3.19.3 -> v3.20.7",
+      "prerelease": false,
+      "publishedAt": "2026-07-30T12:16:32Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.1.0",
+      "version": "v41.1.0"
+    },
     {
       "channel": "stable",
       "draft": false,
