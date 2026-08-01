@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-07-30T03:02:37.955Z",
+  "generatedAt": "2026-08-01T03:53:16.379Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 363252291,
+      "name": "k8s-monitoring-4.3.2",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/1735e5ea0d2468f33a64a52c87e2462b30bf5fd5\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.3.2",
+      "prerelease": false,
+      "publishedAt": "2026-07-31T18:20:21Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.3.2",
+      "version": "k8s-monitoring-4.3.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 363123096,
+      "name": "k8s-monitoring-3.8.12",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/6d3f69cdd4d50b96f7382921c714f877ca74d889\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-3.8.12",
+      "prerelease": false,
+      "publishedAt": "2026-07-31T14:22:05Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-3.8.12",
+      "version": "k8s-monitoring-3.8.12"
+    },
     {
       "channel": "stable",
       "draft": false,

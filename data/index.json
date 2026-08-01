@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T03:08:05.392Z",
+  "generatedAt": "2026-08-01T03:53:20.664Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -187,19 +187,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 351665538,
-        "name": "v3.4.5",
+        "id": 363044632,
+        "name": "v3.3.13",
         "prerelease": false,
-        "publishedAt": "2026-07-09T17:01:16Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.5",
-        "version": "v3.4.5"
+        "publishedAt": "2026-07-31T12:15:59Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.13",
+        "version": "v3.3.13"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-06-18T09:36:37Z",
-        "version": "v3.4.4"
+        "publishedAt": "2026-07-31T12:12:38Z",
+        "version": "v3.4.6"
       },
-      "releaseCount": 7,
+      "releaseCount": 9,
       "repository": "argoproj/argo-cd",
       "tags": [
         "gitops",
@@ -398,19 +398,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 359511013,
-        "name": "v0.87.0",
+        "id": 363325807,
+        "name": "v0.88.0",
         "prerelease": false,
-        "publishedAt": "2026-07-24T19:38:05Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.87.0",
-        "version": "v0.87.0"
+        "publishedAt": "2026-07-31T21:07:20Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.88.0",
+        "version": "v0.88.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-07-20T20:08:59Z",
-        "version": "v0.86.0"
+        "publishedAt": "2026-07-24T19:38:05Z",
+        "version": "v0.87.0"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "charmbracelet/crush",
       "tags": [
         "coding-agent",
@@ -558,19 +558,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 362539796,
-        "name": "victoria-metrics-operator-crds-0.14.0",
+        "id": 363081375,
+        "name": "victoria-metrics-operator-0.67.1",
         "prerelease": false,
-        "publishedAt": "2026-07-30T15:36:48Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-crds-0.14.0",
-        "version": "victoria-metrics-operator-crds-0.14.0"
+        "publishedAt": "2026-07-31T13:24:23Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-0.67.1",
+        "version": "victoria-metrics-operator-0.67.1"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-07-30T15:36:46Z",
-        "version": "victoria-metrics-operator-0.67.0"
+        "publishedAt": "2026-07-30T15:36:48Z",
+        "version": "victoria-metrics-operator-crds-0.14.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "VictoriaMetrics/helm-charts",
       "tags": [
         "helm-chart",
@@ -619,19 +619,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 336148639,
-        "name": "v2.20.1",
+        "id": 362929465,
+        "name": "v2.20.2",
         "prerelease": false,
-        "publishedAt": "2026-06-08T17:55:31Z",
-        "url": "https://github.com/kedacore/keda/releases/tag/v2.20.1",
-        "version": "v2.20.1"
+        "publishedAt": "2026-07-31T08:14:38Z",
+        "url": "https://github.com/kedacore/keda/releases/tag/v2.20.2",
+        "version": "v2.20.2"
       },
       "name": "KEDA",
       "previous": {
-        "publishedAt": "2026-06-01T14:46:38Z",
-        "version": "v2.20.0"
+        "publishedAt": "2026-06-08T17:55:31Z",
+        "version": "v2.20.1"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "kedacore/keda",
       "tags": [
         "kubernetes",
@@ -1500,19 +1500,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 362034964,
-        "name": "helm-loki-7.2.0",
+        "id": 363252291,
+        "name": "k8s-monitoring-4.3.2",
         "prerelease": false,
-        "publishedAt": "2026-07-29T20:35:26Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.2.0",
-        "version": "helm-loki-7.2.0"
+        "publishedAt": "2026-07-31T18:20:21Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.3.2",
+        "version": "k8s-monitoring-4.3.2"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-07-23T20:10:36Z",
-        "version": "k8s-monitoring-4.3.1"
+        "publishedAt": "2026-07-31T14:22:05Z",
+        "version": "k8s-monitoring-3.8.12"
       },
-      "releaseCount": 10,
+      "releaseCount": 12,
       "repository": "grafana/helm-charts",
       "tags": [
         "helm-chart",
