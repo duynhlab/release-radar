@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-31T03:07:47.039Z",
+  "generatedAt": "2026-08-04T01:38:44.457Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 364089546,
+      "name": "v41.1.1",
+      "notes": "# [v41.1.1](https://github.com/traefik/traefik-helm-chart/compare/v41.1.0...v41.1.1) (2026-08-03)\n\n## :bug: Bug fixes\n\n- fix: update hardened image registry #1950 by @youkoulayley\n\n## :package: Others\n\n- chore(release): 🚀 publish 41.1.1 #1951 by @youkoulayley\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.9 (default)\n* Traefik Hub: v3.19.3 -> v3.20.7",
+      "prerelease": false,
+      "publishedAt": "2026-08-03T09:05:14Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.1.1",
+      "version": "v41.1.1"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-01T03:53:06.248Z",
+  "generatedAt": "2026-08-04T01:38:46.920Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 364042406,
+      "name": "victoria-metrics-operator-0.67.2",
+      "notes": "# Release notes for version 0.67.2\n\n**Release date:** 03 Aug 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.74.0](https://img.shields.io/badge/v0.74.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Foperator%2Fchangelog%2F%23v0740)\n\n- restored `VM_ENABLEDPROMETHEUSCONVERTER_*` env vars when `operator.disable_prometheus_converter: true` and removed Prometheus CRD names (`PodMonitor`, `ServiceMonitor`, etc.) from `--controller.disableReconcileFor`. In operator v0.68.x the `controllersByName` map does not include Prometheus CRD names — passing them causes the operator to fail on startup.",
+      "prerelease": false,
+      "publishedAt": "2026-08-03T07:20:11Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-0.67.2",
+      "version": "victoria-metrics-operator-0.67.2"
+    },
     {
       "channel": "stable",
       "draft": false,

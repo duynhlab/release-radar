@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-01T03:53:16.379Z",
+  "generatedAt": "2026-08-04T01:38:57.282Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 364247883,
+      "name": "cloudcost-exporter-1.1.13",
+      "notes": "Cloud Cost Exporter exports cloud provider agnostic cost metrics to Prometheus.\n\nSource commit: https://github.com/grafana/cloudcost-exporter/commit/a33ae20d8330b7b4937e250e316f33e7e3dcb0e8\n\nTag on source: https://github.com/grafana/cloudcost-exporter/releases/tag/cloudcost-exporter-1.1.13",
+      "prerelease": false,
+      "publishedAt": "2026-08-03T13:45:03Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.13",
+      "version": "cloudcost-exporter-1.1.13"
+    },
     {
       "channel": "stable",
       "draft": false,
