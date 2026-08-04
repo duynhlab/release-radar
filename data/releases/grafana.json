@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-07-29T16:11:51.603Z",
+  "generatedAt": "2026-08-04T15:51:29.985Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 364906059,
+      "name": "13.1.2",
+      "notes": "[Download page](https://grafana.com/grafana/download/13.1.2)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Bug fixes\n\n- **Logs Table:** Fix missing results when logs stream [#128946](https://github.com/grafana/grafana/pull/128946), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])\n- **Logs Table:** Fix mixed usage of field name and display name [#128698](https://github.com/grafana/grafana/pull/128698), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])\n- **Security**: Fix CVE-2026-13438",
+      "prerelease": false,
+      "publishedAt": "2026-08-04T13:47:13Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.1.2",
+      "version": "v13.1.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 364905734,
+      "name": "13.0.5",
+      "notes": "[Download page](https://grafana.com/grafana/download/13.0.5)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)",
+      "prerelease": false,
+      "publishedAt": "2026-08-04T13:46:43Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.0.5",
+      "version": "v13.0.5"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 364894642,
+      "name": "12.4.7",
+      "notes": "[Download page](https://grafana.com/grafana/download/12.4.7)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Features and enhancements\n\n- **Dashboards:** Get annotations and dashboard endpoint performance improvements [#129780](https://github.com/grafana/grafana/pull/129780), [@filewalkwithme](https://github.com/filewalkwithme)\n\n### Bug fixes\n\n- **DashboardDS:** Fix Mixed panels with a time override stuck in permanent loading [#129289](https://github.com/grafana/grafana/pull/129289), [@oscarkilhed](https://github.com/oscarkilhed)",
+      "prerelease": false,
+      "publishedAt": "2026-08-04T13:29:41Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v12.4.7",
+      "version": "v12.4.7"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 364872746,
+      "name": "12.3.10",
+      "notes": "[Download page](https://grafana.com/grafana/download/12.3.10)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)",
+      "prerelease": false,
+      "publishedAt": "2026-08-04T12:55:16Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v12.3.10",
+      "version": "v12.3.10"
+    },
     {
       "channel": "stable",
       "draft": false,

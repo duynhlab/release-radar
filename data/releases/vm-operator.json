@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-31T03:07:48.582Z",
+  "generatedAt": "2026-08-04T15:51:34.690Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 364756185,
+      "name": "v0.74.1",
+      "notes": "* BUGFIX: [vldistributed](https://docs.victoriametrics.com/operator/resources/vldistributed/): add validation webhook for VLDistributed resources.",
+      "prerelease": false,
+      "publishedAt": "2026-08-04T09:40:08Z",
+      "url": "https://github.com/VictoriaMetrics/operator/releases/tag/v0.74.1",
+      "version": "v0.74.1"
+    },
     {
       "channel": "stable",
       "draft": false,

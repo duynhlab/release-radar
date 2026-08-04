@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T01:39:01.302Z",
+  "generatedAt": "2026-08-04T15:51:55.803Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -187,19 +187,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 363044632,
-        "name": "v3.3.13",
+        "id": 364720007,
+        "name": "v3.5.0",
         "prerelease": false,
-        "publishedAt": "2026-07-31T12:15:59Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.13",
-        "version": "v3.3.13"
+        "publishedAt": "2026-08-04T08:35:57Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.0",
+        "version": "v3.5.0"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-07-31T12:12:38Z",
-        "version": "v3.4.6"
+        "publishedAt": "2026-07-31T12:15:59Z",
+        "version": "v3.3.13"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "argoproj/argo-cd",
       "tags": [
         "gitops",
@@ -279,19 +279,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 357452044,
-        "name": "12.4.6",
+        "id": 364906059,
+        "name": "13.1.2",
         "prerelease": false,
-        "publishedAt": "2026-07-21T15:32:19Z",
-        "url": "https://github.com/grafana/grafana/releases/tag/v12.4.6",
-        "version": "v12.4.6"
+        "publishedAt": "2026-08-04T13:47:13Z",
+        "url": "https://github.com/grafana/grafana/releases/tag/v13.1.2",
+        "version": "v13.1.2"
       },
       "name": "Grafana",
       "previous": {
-        "publishedAt": "2026-07-21T12:43:24Z",
-        "version": "v12.3.9"
+        "publishedAt": "2026-08-04T13:46:43Z",
+        "version": "v13.0.5"
       },
-      "releaseCount": 10,
+      "releaseCount": 14,
       "repository": "grafana/grafana",
       "tags": [
         "dashboards",
@@ -463,19 +463,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 362453592,
-        "name": "v0.74.0",
+        "id": 364756185,
+        "name": "v0.74.1",
         "prerelease": false,
-        "publishedAt": "2026-07-30T13:26:56Z",
-        "url": "https://github.com/VictoriaMetrics/operator/releases/tag/v0.74.0",
-        "version": "v0.74.0"
+        "publishedAt": "2026-08-04T09:40:08Z",
+        "url": "https://github.com/VictoriaMetrics/operator/releases/tag/v0.74.1",
+        "version": "v0.74.1"
       },
       "name": "VictoriaMetrics Operator",
       "previous": {
-        "publishedAt": "2026-07-28T05:51:42Z",
-        "version": "v0.68.7"
+        "publishedAt": "2026-07-30T13:26:56Z",
+        "version": "v0.74.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "VictoriaMetrics/operator",
       "tags": [
         "kubernetes",
@@ -558,19 +558,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 364042406,
-        "name": "victoria-metrics-operator-0.67.2",
+        "id": 364693211,
+        "name": "victoria-metrics-k8s-stack-0.88.0",
         "prerelease": false,
-        "publishedAt": "2026-08-03T07:20:11Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-0.67.2",
-        "version": "victoria-metrics-operator-0.67.2"
+        "publishedAt": "2026-08-04T07:48:57Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.88.0",
+        "version": "victoria-metrics-k8s-stack-0.88.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-07-31T13:24:23Z",
-        "version": "victoria-metrics-operator-0.67.1"
+        "publishedAt": "2026-08-03T07:20:11Z",
+        "version": "victoria-metrics-operator-0.67.2"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "VictoriaMetrics/helm-charts",
       "tags": [
         "helm-chart",
