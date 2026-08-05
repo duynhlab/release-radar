@@ -1032,3 +1032,67 @@ tools:
       strategy: github-releases
       includePrerelease: false
       tagPattern: "^release/\\d+\\.\\d+\\.\\d+$"
+
+  - id: tofu-controller
+    name: Tofu Controller
+    category: provisioning
+    repository: flux-iac/tofu-controller
+    description: A GitOps OpenTofu and Terraform controller for Flux
+    homepage: https://flux-iac.github.io/tofu-controller/
+    tags:
+      - terraform
+      - opentofu
+      - gitops
+      - kubernetes
+    group: fluxcd
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: cloudflared
+    name: cloudflared
+    category: networking
+    repository: cloudflare/cloudflared
+    description: Cloudflare Tunnel client
+    homepage: https://www.cloudflare.com/products/tunnel/
+    documentation: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/
+    tags:
+      - tunnel
+      - cloudflare
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^\\d+\\.\\d+\\.\\d+$"
+
+  - id: trivy-operator
+    name: Trivy Operator
+    category: security
+    repository: aquasecurity/trivy-operator
+    description: Kubernetes-native security toolkit
+    homepage: https://trivy.dev
+    documentation: https://aquasecurity.github.io/trivy-operator/latest
+    tags:
+      - scanning
+      - vulnerabilities
+      - kubernetes
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: headlamp
+    name: Headlamp
+    category: platform
+    repository: kubernetes-sigs/headlamp
+    description: A Kubernetes web UI that is fully-featured, user-friendly and extensible
+    homepage: https://headlamp.dev
+    documentation: https://headlamp.dev/docs/latest/
+    tags:
+      - kubernetes
+      - ui
+      - dashboard
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
