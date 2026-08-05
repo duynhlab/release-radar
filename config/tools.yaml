@@ -1002,6 +1002,21 @@ tools:
       includePrerelease: false
       tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
 
+  - id: sentry-charts
+    name: Sentry Helm Charts
+    category: observability
+    repository: sentry-kubernetes/charts
+    description: Easily deploy Sentry on your Kubernetes Cluster
+    homepage: https://sentry.io
+    tags:
+      - helm-chart
+      - kubernetes
+      - error-tracking
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^sentry-v\\d+\\.\\d+\\.\\d+$"
+
   - id: pgbackrest
     name: pgBackRest
     category: data
