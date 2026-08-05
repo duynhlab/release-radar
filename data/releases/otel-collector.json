@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-29T16:11:53.975Z",
+  "generatedAt": "2026-08-05T03:35:27.981Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 365085491,
+      "name": "v0.158.0",
+      "notes": "Check the [v0.158.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.158.0) and the [v0.158.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.158.0) for changelogs on specific components.\r\n\n\n## Changelog\n* 1400269f8ace841f8d0492f4f9c6c7f305f95268 Update version to 0.158.0 (#1589)\n* c7c0ab53b84c26b54a9fea0b48a9e436ecbd5192 Update github/codeql-action action to v4.37.6 (#1585)\n* 73e0dc27f5088be1f30211a9f4b87eda3d878e73 chore(deps): update opentelemetry collector components (#1586)\n* c70c20380fb1825389d8d4583378ea1185df7315 Update module go.opentelemetry.io/ebpf-profiler to v0.0.202632 (#1583)",
+      "prerelease": false,
+      "publishedAt": "2026-08-04T18:54:05Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.158.0",
+      "version": "v0.158.0"
+    },
     {
       "channel": "stable",
       "draft": false,
