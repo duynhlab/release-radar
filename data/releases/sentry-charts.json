@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-08-05T14:25:20.204Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 360211248,
+      "name": "sentry: v33.1.0",
+      "notes": "## [33.1.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v33.0.0...sentry-v33.1.0) (2026-07-26)\n\n\n### Features\n\n* upgrade sentry to v26.7.1 ([#2263](https://github.com/sentry-kubernetes/charts/issues/2263)) ([d02cfb5](https://github.com/sentry-kubernetes/charts/commit/d02cfb51bac385935082a0cc458cbe83bca8fd02))\n\n\n### Bug Fixes\n\n* use Recreate strategy for single-partition Kafka consumers ([#2258](https://github.com/sentry-kubernetes/charts/issues/2258)) ([c261d9f](https://github.com/sentry-kubernetes/charts/commit/c261d9fe5d6d12279a49a863b4e5265d387a2cae))",
+      "prerelease": false,
+      "publishedAt": "2026-07-27T05:02:13Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.1.0",
+      "version": "sentry-v33.1.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358626345,
+      "name": "sentry: v33.0.0",
+      "notes": "## [33.0.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v32.3.0...sentry-v33.0.0) (2026-07-23)\n\n\n### ⚠ BREAKING CHANGES\n\n* upgrade sentry to v26.7.0 ([#2257](https://github.com/sentry-kubernetes/charts/issues/2257))\n\n### Features\n\n* charts/sentry: add maxPollIntervalMs for snuba eapItemsConsumer ([#2259](https://github.com/sentry-kubernetes/charts/issues/2259)) ([bdbbb72](https://github.com/sentry-kubernetes/charts/commit/bdbbb729cd3c1a2d8772605727c1a2b812ca5c72))\n* upgrade sentry to v26.7.0 ([#2257](https://github.com/sentry-kubernetes/charts/issues/2257)) ([4743524](https://github.com/sentry-kubernetes/charts/commit/47435240145991bf7c4d85df554c875cdad9619c))",
+      "prerelease": false,
+      "publishedAt": "2026-07-23T11:07:21Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.0.0",
+      "version": "sentry-v33.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358511893,
+      "name": "sentry: v32.3.0",
+      "notes": "## [32.3.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v32.2.0...sentry-v32.3.0) (2026-07-13)\n\n\n### Features\n\n* charts/sentry: add configurable PagerDuty integration ([#2252](https://github.com/sentry-kubernetes/charts/issues/2252)) ([45ef34b](https://github.com/sentry-kubernetes/charts/commit/45ef34ba393bf371281402df38e6e335ac64766b))\n\n\n### Bug Fixes\n\n* add relay.asHook for rolling updates ([#2256](https://github.com/sentry-kubernetes/charts/issues/2256)) ([4f027e7](https://github.com/sentry-kubernetes/charts/commit/4f027e761ebf7b714d5b23bd63625a2310c36ef3))\n* charts/sentry: render volumeMounts key for global.volumeMounts ([#2253](https://github.com/sentry-kubernetes/charts/issues/2253)) ([6338bc7](https://github.com/sentry-kubernetes/charts/commit/6338bc71339a5273ed2caf5031023066eda8bfd4))\n* make relay config-render initContainer image configurable ([#2242](https://github.com/sentry-kubernetes/charts/issues/2242)) ([#2255](https://github.com/sentry-kubernetes/charts/issues/2255)) ([855caa6](https://github.com/sentry-kubernetes/charts/commit/855caa64766a309813c8501fe40eec2ce273166d))\n* make S3 access_key/secret_key conditional for IRSA/Pod Identity support ([#2062](https://github.com/sentry-kubernetes/charts/issues/2062)) ([dcae06f](https://github.com/sentry-kubernetes/charts/commit/dcae06f0859486cdd65a5ad3c6502adb9484ee4d))",
+      "prerelease": false,
+      "publishedAt": "2026-07-23T07:12:47Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v32.3.0",
+      "version": "sentry-v32.3.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 338925493,
+      "name": "sentry: v32.2.0",
+      "notes": "## [32.2.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v32.1.0...sentry-v32.2.0) (2026-06-11)\n\n\n### Features\n\n* charts/sentry: route: Add support for HTTPRoute timeouts ([#2231](https://github.com/sentry-kubernetes/charts/issues/2231)) ([7c713cc](https://github.com/sentry-kubernetes/charts/commit/7c713cc306aacf9c313d599261a34543f7bb9d84))",
+      "prerelease": false,
+      "publishedAt": "2026-06-13T07:45:18Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v32.2.0",
+      "version": "sentry-v32.2.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 336714573,
+      "name": "sentry: v32.1.0",
+      "notes": "## [32.1.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v32.0.0...sentry-v32.1.0) (2026-06-09)\n\n\n### Features\n\n* add startup probe for kafka consumer workloads; tighten liveness timing ([#2233](https://github.com/sentry-kubernetes/charts/issues/2233)) ([9e4d85c](https://github.com/sentry-kubernetes/charts/commit/9e4d85cc00ff91dedf582012021c2feb5978e34f))\n\n\n### Bug Fixes\n\n* crash on sentry 26.5.2 due to snuba 26.5.2 ([#2236](https://github.com/sentry-kubernetes/charts/issues/2236)) ([dab6caf](https://github.com/sentry-kubernetes/charts/commit/dab6caf55be9561aae1b3811d423f57df7678524))",
+      "prerelease": false,
+      "publishedAt": "2026-06-09T15:53:05Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v32.1.0",
+      "version": "sentry-v32.1.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 334430796,
+      "name": "sentry: v32.0.0",
+      "notes": "## [32.0.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v31.7.1...sentry-v32.0.0) (2026-06-04)\n\n\n### ⚠ BREAKING CHANGES\n\n* replace deprecated distutils.strtobool and enable rustConsumer ([#2227](https://github.com/sentry-kubernetes/charts/issues/2227))\n\n### Features\n\n* make setup-hook Job restartPolicy configurable ([#2232](https://github.com/sentry-kubernetes/charts/issues/2232)) ([bbb167e](https://github.com/sentry-kubernetes/charts/commit/bbb167e274376a7ad81a29df090d2a2eccbbde48))\n* per taskbroker & taskworker topologySpreadConstraints ([#2228](https://github.com/sentry-kubernetes/charts/issues/2228)) ([546c7b7](https://github.com/sentry-kubernetes/charts/commit/546c7b76735f5c608371f3488f6d38fe4ebc3106))\n* replace deprecated distutils.strtobool and enable rustConsumer ([#2227](https://github.com/sentry-kubernetes/charts/issues/2227)) ([21fa745](https://github.com/sentry-kubernetes/charts/commit/21fa745ca800dc2fd9e91fdcc46447fcf2d361ee))\n\n\n### Bug Fixes\n\n* mtime livenessprobe ([#2230](https://github.com/sentry-kubernetes/charts/issues/2230)) ([d7de9de](https://github.com/sentry-kubernetes/charts/commit/d7de9de267caa0977e5a45c96162d978b8eab825))",
+      "prerelease": false,
+      "publishedAt": "2026-06-04T15:39:03Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v32.0.0",
+      "version": "sentry-v32.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 331919475,
+      "name": "sentry: v31.7.1",
+      "notes": "## [31.7.1](https://github.com/sentry-kubernetes/charts/compare/sentry-v31.7.0...sentry-v31.7.1) (2026-05-30)\n\n\n### Bug Fixes\n\n* add hook-weight 3 to taskbroker and taskworker to prevent CrashLoopBackOff ([#2225](https://github.com/sentry-kubernetes/charts/issues/2225)) ([36afab2](https://github.com/sentry-kubernetes/charts/commit/36afab27227efc1b38cba85e22f97fd836e79605))\n* auto-generate launchpad RPC shared secret on install and upgrade ([#2224](https://github.com/sentry-kubernetes/charts/issues/2224)) ([ef7a2e4](https://github.com/sentry-kubernetes/charts/commit/ef7a2e42b2d030aba0fbb1a040f23a2fa0e5544b))\n* remove invalid annotations from hook jobs ([#2220](https://github.com/sentry-kubernetes/charts/issues/2220)) ([f128e76](https://github.com/sentry-kubernetes/charts/commit/f128e762126bc9597944beffce523fad5911d9b6))",
+      "prerelease": false,
+      "publishedAt": "2026-05-30T10:57:51Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v31.7.1",
+      "version": "sentry-v31.7.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 331375694,
+      "name": "sentry: v31.7.0",
+      "notes": "## [31.7.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v31.6.0...sentry-v31.7.0) (2026-05-29)\n\n\n### Features\n\n* add TLS settings support for Kafka provisioning topicctl ([#2216](https://github.com/sentry-kubernetes/charts/issues/2216)) ([099d344](https://github.com/sentry-kubernetes/charts/commit/099d344892dcfe1cddc4680a07122f6d600a9016))\n* configuration changes for sentry v26.5.0 ([#2212](https://github.com/sentry-kubernetes/charts/issues/2212)) ([3631380](https://github.com/sentry-kubernetes/charts/commit/36313806aeadec0737f155204c55bfa8b7f59729))\n* enable cache (memcached) by default ([#2219](https://github.com/sentry-kubernetes/charts/issues/2219)) ([f451c66](https://github.com/sentry-kubernetes/charts/commit/f451c664e22d59185035317811b19685c7cd8866))\n\n\n### Bug Fixes\n\n* symbolicator cleaner sidecar ignores resource definitions ([#2218](https://github.com/sentry-kubernetes/charts/issues/2218)) ([ddc607b](https://github.com/sentry-kubernetes/charts/commit/ddc607b870d494818b345f76aa5f0f7ecb24e0db))",
+      "prerelease": false,
+      "publishedAt": "2026-05-29T08:18:56Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v31.7.0",
+      "version": "sentry-v31.7.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 329263340,
+      "name": "sentry: v31.6.0",
+      "notes": "## [31.6.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v31.5.1...sentry-v31.6.0) (2026-05-26)\n\n\n### Features\n\n* replace netcat image with busybox for dbCheck hooks ([#2208](https://github.com/sentry-kubernetes/charts/issues/2208)) ([f07bcdc](https://github.com/sentry-kubernetes/charts/commit/f07bcdc150b4ff8392f3a9a07101bc233c913c11))\n\n\n### Bug Fixes\n\n* add missing annotations defaults to values.yaml for all components ([#2211](https://github.com/sentry-kubernetes/charts/issues/2211)) ([186e77a](https://github.com/sentry-kubernetes/charts/commit/186e77aa814cfc6436df6c313793215979aab3f0))\n* use hooks.snubaMigrate instead of hooks.snubaInit in snuba-migrate job ([#2210](https://github.com/sentry-kubernetes/charts/issues/2210)) ([01ae3d6](https://github.com/sentry-kubernetes/charts/commit/01ae3d6850e8acefd359757b07c8f8560d651875))",
+      "prerelease": false,
+      "publishedAt": "2026-05-26T07:42:22Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v31.6.0",
+      "version": "sentry-v31.6.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 328506157,
+      "name": "sentry: v31.5.1",
+      "notes": "## [31.5.1](https://github.com/sentry-kubernetes/charts/compare/sentry-v31.5.0...sentry-v31.5.1) (2026-05-24)\n\n\n### Bug Fixes\n\n* **cleanerfs:** fix indentation in cleanerfs configuration ([#2194](https://github.com/sentry-kubernetes/charts/issues/2194)) ([ac293e3](https://github.com/sentry-kubernetes/charts/commit/ac293e35249aa60329605a601f807ebf255547bb))\n* correct ingestFeedback serviceAccount condition and remove obsolete snuba-replacer option ([#2195](https://github.com/sentry-kubernetes/charts/issues/2195)) ([682f2a0](https://github.com/sentry-kubernetes/charts/commit/682f2a0d48e22cf5bd9b3153bb333d289e854189))\n* remove dead code prefix and fix incorrect comments in externalClickhouse ([#2197](https://github.com/sentry-kubernetes/charts/issues/2197)) ([6e3f8a1](https://github.com/sentry-kubernetes/charts/commit/6e3f8a1cae53c4441106d00e66b25102db86abd3))",
+      "prerelease": false,
+      "publishedAt": "2026-05-24T13:16:39Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v31.5.1",
+      "version": "sentry-v31.5.1"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "sentry-charts",
+    "name": "Sentry Helm Charts",
+    "repository": "sentry-kubernetes/charts"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T14:20:10.851Z",
+  "generatedAt": "2026-08-05T14:25:20.761Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1895,6 +1895,34 @@
         "postgresql",
         "backup",
         "kubernetes"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "Easily deploy Sentry on your Kubernetes Cluster",
+      "homepage": "https://sentry.io",
+      "id": "sentry-charts",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 360211248,
+        "name": "sentry: v33.1.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-27T05:02:13Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.1.0",
+        "version": "sentry-v33.1.0"
+      },
+      "name": "Sentry Helm Charts",
+      "previous": {
+        "publishedAt": "2026-07-23T11:07:21Z",
+        "version": "sentry-v33.0.0"
+      },
+      "releaseCount": 10,
+      "repository": "sentry-kubernetes/charts",
+      "tags": [
+        "helm-chart",
+        "kubernetes",
+        "error-tracking"
       ]
     },
     {
