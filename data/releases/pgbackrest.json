@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-08-05T06:59:34.904Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 356580769,
+      "name": "v2.59.0: PostgreSQL 19 Support",
+      "notes": "**NOTE TO PACKAGERS**: A new distribution tarball is available which simplifies the build process by providing pregenerated HTML documentation, man page, and code. The tarball is attached to each release as an asset and is named pgbackrest-{version}.tar.gz. See the README.md in the tarball for details. Please use the new distribution tarball to avoid the additional build tooling required to generate code in future releases.\n\n**NOTE TO PACKAGERS**: There is a new optional dependency on libsystemd.\n\n**IMPORTANT NOTE**: Starting with this release, only the restore command may be run as root by default. Use allow-root to run other commands as root (though this is not recommended).\n\n**Bug Fixes**:\n\n- Fix expire removing a backup in progress on another host. (Reviewed by Douglas J Hunley. Reported by Dmitrii.)\n- Fix archive-push-queue-max not enforced when a WAL file errors. (Reviewed by Stefan Fercot. Reported by vut12.)\n- Fix async archive-get failure during recovery across a timeline switch. (Reviewed by Douglas J Hunley. Reported by Jimmy Yih.)\n- Fix potential buffer overrun in error module. (Fixed by Christophe Pettus. Reviewed by David Steele.)\n- Fix use-after-free of parallel protocol client. (Reviewed by Douglas J Hunley. Reported by Georgy Shelkovy.)\n- Fix heap overflow when a pg option is set without pg1. (Reviewed by Douglas J Hunley. Reported by Naveen.)\n\n**Features**:\n\n- PostgreSQL 19beta2 support. (Reviewed by Stefan Fercot.)\n- Add archive-expire-before option to clean up WAL archive. (Contributed by Stefan Fercot. Reviewed by David Steele.)\n- Add batch delete for Azure storage. (Reviewed by Douglas J Hunley, Crispy.)\n- Add support for S3 Outposts. (Contributed by Shiva Kumar Ambigi. Reviewed by David Steele, Roberto Mello.)\n- Add S3 process authentication. (Reviewed by Andrew Charlton. Suggested by Andrew Charlton.)\n\n**Improvements**:\n\n- Reconnect SFTP storage after the server drops an idle connection. (Reviewed by Stefan Fercot. Suggested by mustafa0x, tisserat.)\n- Add user/group caching for faster manifest build. (Contributed by Gunnar Lindholm. Reviewed by David Steele.)\n- Add per-repo backup progress to info command output. (Contributed by Will Morland. Reviewed by David Steele, Stefan Fercot.)\n- Add backup.info checks to verify command. (Contributed by Denis Garsh. Reviewed by David Steele, Douglas J Hunley.)\n- Allow the S3 STS endpoint to be configured. (Contributed by Simon Gratton. Reviewed by David Steele.)\n- Add archive-push-batch-size to limit WAL pushed per asynchronous run. (Reviewed by Stefan Fercot.)\n- Exit async archive-push on first error. (Reviewed by Stefan Fercot. Suggested by Lardière Sébastien.)\n- Harden HTTP chunked response parsing. (Contributed by Shubham. Reviewed by David Steele.)\n- Error when running as root unless allow-root is enabled. (Reviewed by Douglas J Hunley.)\n- Fewer binary searches when building manifest. (Contributed by Gunnar Lindholm. Reviewed by David Steele.)\n- Improve seek performance during block incremental delta restore. (Reviewed by David Christensen, Douglas J Hunley.)\n- Bundle backup files in order rather than scanning for a better fit. (Reviewed by Stefan Fercot.)\n- Report the underlying error when a query fails to complete. (Reviewed by Andrew Pogrebnoi. Suggested by Marco Fontana.)\n- Report the actual error when an S3 credential request fails. (Reviewed by Douglas J Hunley. Suggested by Mitchell Grice.)\n- Report archive-push spool path errors to the PostgreSQL log. (Reviewed by Douglas J Hunley. Suggested by Don Seiler.)\n- Hint that pgBackRest may be out of date when a version is unsupported.\n- Add systemd notify integration. (Contributed by Andrew Jackson. Reviewed by David Steele.)\n- Suppress unused parameter errors in meson compiler probes. (Contributed by Jörg Plate. Reviewed by David Steele.)\n- C11 is now the minimum C standard. (Reviewed by Mohammad Ali Nazir Kosar.)\n\n**Documentation Improvements**:\n\n- Make stanza option internal for the repo-* commands. (Reviewed by Stefan Fercot.)\n- Document that info reads encryption settings from global section. (Reviewed by Stefan Fercot. Suggested by Ron Johnson.)\n- Document that expire-auto uses the backup command configuration. (Reviewed by Stefan Fercot. Suggested by Lardière Sébastien.)\n- Document adjusting the logrotate su directive for a dedicated user. (Reviewed by Douglas J Hunley. Suggested by lkanbus.)\n- Document that end-of-line comments are not supported in config files. (Reviewed by Douglas J Hunley. Suggested by Alex Richman.)\n\n**Test Suite Improvements**:\n\n- Fix Alpine group conflicts in CI containers. (Contributed by Artur Zakirov. Reviewed by David Steele.)",
+      "prerelease": false,
+      "publishedAt": "2026-07-20T08:43:24Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.59.0",
+      "version": "release/2.59.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 277874179,
+      "name": "v2.58.0: Object Storage Improvements",
+      "notes": "**IMPORTANT NOTE**: The minimum values for the repo-storage-upload-chunk-size option have increased. They now represent the minimum allowed by the vendors.\r\n\r\n**Bug Fixes**:\r\n\r\n- Fix deadlock due to logging in signal handler. (Fixed by Maxim Michkov. Reviewed by David Steele.)\r\n\r\n**Features**:\r\n\r\n- HTTP support for S3, GCS, and Azure. (Contributed by Will Morland. Reviewed by David Steele.)\r\n- Allow expiration of oldest full backup regardless of current retention. (Contributed by Stefan Fercot. Reviewed by David Steele. Suggested by Ron Johnson.)\r\n- Support for Azure managed identities. (Contributed by Moiz Ibrar, Matthew Mols. Reviewed by David Steele.)\r\n- Experimental support for S3 EKS pod identity. (Contributed by Pierre BOUTELOUP. Reviewed by David Steele.)\r\n- Allow configuration of TLS cipher suites. (Contributed by Gunnar \"Nick\" Bluth. Reviewed by David Steele.)\r\n- Allow process priority to be set. (Reviewed by Douglas J Hunley.)\r\n\r\n**Improvements**:\r\n\r\n- Allow dots in S3 bucket names when using path-style URIs. (Contributed by Joakim Hindersson. Reviewed by David Steele.)\r\n- Require TLS >= 1.2 unless verification is disabled. (Reviewed by Douglas J Hunley, Gunnar \"Nick\" Bluth.)\r\n- Dynamically size S3/GCS/Azure chunks for large uploads. (Reviewed by Douglas J Hunley. Suggested by Timothée Peignier.)\r\n- Optimize S3/GCS/Azure chunk size for small files. (Reviewed by Douglas J Hunley.)\r\n- Remove support for PostgreSQL 9.5. (Reviewed by Douglas J Hunley.)\r\n- Improve logging of default for options with an unresolved dependency. (Reviewed by Stefan Fercot.)\r\n\r\n**Documentation Improvements**:\r\n\r\n- Remove explicit max_wal_senders/wal_level configuration from user guide. (Suggested by Jamie Nguyen.)\r\n- Clarify that bundling is useful for filesystems with large block sizes. (Suggested by Ron Johnson.)",
+      "prerelease": false,
+      "publishedAt": "2026-01-19T10:49:09Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.58.0",
+      "version": "release/2.58.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 255525498,
+      "name": "v2.57.0: Suppress Repository Symlinks",
+      "notes": "**Bug Fixes**:\r\n\r\n- Unnest HTTP/TLS/socket timeouts. (Reviewed by David Christensen.)\r\n- Fix possible segfault in page checksum error message. (Fixed by Zsolt Parragi. Reviewed by David Steele.)\r\n\r\n**Features**:\r\n\r\n- Add repo-symlink option to suppress creation of repository symlinks. (Reviewed by Douglas J Hunley. Suggested by Ron Johnson.)\r\n\r\n**Improvements**:\r\n\r\n- Add HTTP retries for 408 and 429 errors. (Reviewed by David Christensen.)",
+      "prerelease": false,
+      "publishedAt": "2025-10-18T11:13:54Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.57.0",
+      "version": "release/2.57.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 233986076,
+      "name": "v2.56.0: Progress Info Improvements",
+      "notes": "**Bug Fixes**:\r\n\r\n- Fix issue with adhoc expiration when no backups in a repository. (Reviewed by Stefan Fercot. Reported by Anup Gupta.)\r\n\r\n**Features**:\r\n\r\n- Add restore progress to info command output. (Contributed by Denis Garsh, Maxim Michkov. Reviewed by David Steele.)\r\n- Add progress-only detail level for info command output. (Contributed by Denis Garsh. Reviewed by David Steele, Stefan Fercot.)\r\n\r\n**Improvements**:\r\n\r\n- Retry failed reads on object stores. (Reviewed by David Christensen.)\r\n- Fix defaults in command-line help. (Reviewed by David Christensen, Chris Bandy.)\r\n\r\n**Documentation Improvements**:\r\n\r\n- Describe discrete option values in a list where appropriate. (Contributed by Anton Kurochkin. Reviewed by David Steele.)\r\n- Fix \"less than\" in help output for archive-mode option. (Contributed by Anton Kurochkin. Reviewed by David Steele.)",
+      "prerelease": false,
+      "publishedAt": "2025-07-21T17:11:37Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.56.0",
+      "version": "release/2.56.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 216558827,
+      "name": "v2.55.1: Bug Fixes",
+      "notes": "**Bug Fixes**:\r\n\r\n- Revert \"calculate content-md5 on S3 only when required\". (Reviewed by David Christensen. Reported by Frank Brendel.)\r\n- Fix lower bounds checking for option keys. (Reviewed by David Christensen, Wolfgang Walther. Reported by Wolfgang Walther.)",
+      "prerelease": false,
+      "publishedAt": "2025-05-05T17:25:21Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.55.1",
+      "version": "release/2.55.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 213780878,
+      "name": "v2.55.0: Verification Improvements and PostgreSQL 18 Support",
+      "notes": "**Bug Fixes**:\r\n\r\n- Fix block incremental restore issue on non-default repository. (Reviewed by David Christensen, Aleksander Łukasz. Reported by Aleksander Łukasz.)\r\n- Do not set recovery_target_timeline=current for PostgreSQL < 12. (Reviewed by Stefan Fercot.)\r\n- Fix expire archive range logging. (Reviewed by Stefan Fercot. Reported by Aleš Zelený.)\r\n- Fix error reporting for queries with no results. (Reviewed by Stefan Fercot. Reported by Susantha Bathige.)\r\n\r\n**Features**:\r\n\r\n- Verify recovery target timeline. (Reviewed by Stefan Fercot.)\r\n- Allow verification of a specified backup. (Contributed by Maxim Michkov. Reviewed by David Steele.)\r\n- Add support for S3/GCS requester pays. (Contributed by Timothée Peignier. Reviewed by David Steele.)\r\n- PostgreSQL 18 experimental support. (Reviewed by Stefan Fercot.)\r\n- Allow connections to PostgreSQL on abstract domain sockets. (Reviewed by Chris Bandy. Suggested by Chris Bandy.)\r\n- Add numeric output to version command. (Contributed by Stefan Fercot. Reviewed by David Steele.)\r\n\r\n**Improvements**:\r\n\r\n- Allow backup command to operate on remote repositories. (Reviewed by Stefan Fercot.)\r\n- Use lz4 for protocol compression. (Reviewed by Stefan Fercot.)\r\n- Calculate content-md5 on S3 only when required. (Reviewed by David Christensen.)\r\n- Warn when a value for a multi-key option is overwritten. (Reviewed by David Christensen, Stefan Fercot.)\r\n- Add detail logging for expired archive path. (Contributed by Stefan Fercot. Reviewed by David Steele.)\r\n- Remove support for PostgreSQL 9.4. (Reviewed by Stefan Fercot.)\r\n- Remove autoconf/make build. (Reviewed by David Christensen.)\r\n\r\n**Documentation Improvements**:\r\n\r\n- Fix documentation for specifying multiple stanzas with tls-server-auth. (Reviewed by David Christensen, Stefan Fercot. Suggested by Terry MacAndrew.)\r\n- Clarify incremental backup expiration. (Reviewed by Stefan Fercot.)\r\n- Clarify requirement for local/remote pgBackRest versions to match. (Contributed by Greg Clough. Reviewed by David Steele.)\r\n- Add FAQ about exporting self-contained cluster. (Contributed by Stefan Fercot. Reviewed by David Steele.)\r\n- Caveat --tablespace-map-all regarding tablespace creation. (Reviewed by Stefan Fercot, Christophe Courtois. Suggested by Christophe Courtois.)\r\n- Clarify behavior of --repo-retention-full-type. (Reviewed by Antoine Beaupré. Suggested by Antoine Beaupré.)\r\n- Change --process-max recommendation for object stores to --repo-bundle. (Reviewed by Stefan Fercot.)\r\n- Update unix_socket_directory to unix_socket_directories. (Contributed by hyunkyu han. Reviewed by David Steele.)\r\n- Recommend not placing spool-path within pg_xlog/pg_wal. (Reviewed by Martín Marqués, Don Seiler. Suggested by Martín Marqués.)",
+      "prerelease": false,
+      "publishedAt": "2025-04-21T22:37:12Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.55.0",
+      "version": "release/2.55.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 195674561,
+      "name": "v2.54.2: Bug Fix",
+      "notes": "**Bug Fixes**:\r\n\r\n- Fix issue after disabling bundling with block incremental enabled. (Reviewed by David Christensen.)\r\n\r\n**Documentation Improvements**:\r\n\r\n- Clarify behavior of multiple configuration files. (Reviewed by Paul Bierly. Suggested by Paul Bierly.)",
+      "prerelease": false,
+      "publishedAt": "2025-01-20T15:31:43Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.54.2",
+      "version": "release/2.54.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 190985403,
+      "name": "v2.54.1: Bug Fix",
+      "notes": "**Bug Fixes**:\r\n\r\n- Fix issue with version/help commands attempting to load pgbackrest.conf. (Reviewed by Stefan Fercot. Reported by Bradford Boyle, Julian.)\r\n\r\n**Test Suite Improvements**:\r\n\r\n- Stabilize async archiving in integration tests. (Contributed by Viktor Kurilko. Reviewed by David Steele.)",
+      "prerelease": false,
+      "publishedAt": "2024-12-16T16:01:35Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.54.1",
+      "version": "release/2.54.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 180930825,
+      "name": "v2.54.0: Target Time for Versioned Storage",
+      "notes": "**NOTE TO PACKAGERS**: This is last feature release to support the autoconf/make build. Please migrate to meson if you have not already done so. 2.54.X patch releases (if any) will continue to support autoconf/make.\r\n\r\n**Bug Fixes**:\r\n\r\n- Fix PostgreSQL query performance for large datasets. (Fixed by Thibault Vincent, David Steele. Reviewed by David Christensen, Antoine Millet. Reported by Antoine Millet.)\r\n\r\n**Features**:\r\n\r\n- Allow repositories on versioned storage to be read at a target time. (Reviewed by Stefan Fercot, David Christensen.)\r\n- Allow requested standby backup to proceed with no standby. (Reviewed by Stefan Fercot.)\r\n\r\n**Improvements**:\r\n\r\n- Summarize backup reference list for info command text output. (Contributed by Stefan Fercot. Reviewed by David Steele.)\r\n- Refresh web-id token for each S3 authentication. (Contributed by Brent Graveland. Reviewed by David Steele.)\r\n- Correctly display current values for indexed options in help. (Reviewed by David Christensen.)\r\n- Save backup.info only when contents have changed. (Reviewed by Stefan Fercot.)\r\n- Remove limitation on reading files in parallel during restore. (Reviewed by David Christensen.)\r\n- Improve SFTP error messages. (Contributed by Reid Thompson. Reviewed by David Steele.)\r\n\r\n**Documentation Features**:\r\n\r\n- Add performance tuning section to user guide. (Reviewed by Stefan Fercot.)\r\n\r\n**Documentation Improvements**:\r\n\r\n- Clarify source for data_directory. (Contributed by Stefan Fercot. Reviewed by David Steele. Suggested by Matthias.)\r\n- Better logic for deciding when a summary should be lower-cased. (Suggested by Daniel Westermann.)",
+      "prerelease": false,
+      "publishedAt": "2024-10-21T06:15:26Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.54.0",
+      "version": "release/2.54.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 170796303,
+      "name": "v2.53.1: PostgreSQL 17beta3 Support",
+      "notes": "**Bug Fixes**:\r\n\r\n- Fix permissions when restore run as root user. (Reviewed by Stefan Fercot. Reported by Will M.)\r\n- Fix segfault on delayed connection errors. (Reviewed by David Christensen. Reported by Anton Glushakov.)\r\n- Skip local repository duplicate check for SFTP. (Fixed by Reid Thompson. Reviewed by David Steele. Reported by Anton Kurochkin.)\r\n\r\n**Improvements**:\r\n\r\n- PostgreSQL 17beta3 support.",
+      "prerelease": false,
+      "publishedAt": "2024-08-19T04:39:56Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.53.1",
+      "version": "release/2.53.1"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "pgbackrest",
+    "name": "pgBackRest",
+    "repository": "pgbackrest/pgbackrest"
+  }
+}

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-29T16:11:54.744Z",
+  "generatedAt": "2026-08-05T06:58:51.621Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 364145862,
+      "name": "v0.73.0",
+      "notes": "## ⚡ Highlights ⚡\r\n👉 https://github.com/aquasecurity/trivy/discussions/11033\r\n\r\n## Changelog\r\nhttps://github.com/aquasecurity/trivy/blob/main/CHANGELOG.md#0730-2026-08-03",
+      "prerelease": false,
+      "publishedAt": "2026-08-03T10:47:14Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.73.0",
+      "version": "v0.73.0"
+    },
     {
       "channel": "stable",
       "draft": false,
