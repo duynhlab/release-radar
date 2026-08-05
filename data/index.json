@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T03:35:46.659Z",
+  "generatedAt": "2026-08-05T06:59:35.036Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -341,19 +341,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 346729148,
-        "name": "v0.72.0",
+        "id": 364145862,
+        "name": "v0.73.0",
         "prerelease": false,
-        "publishedAt": "2026-06-30T09:34:06Z",
-        "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.72.0",
-        "version": "v0.72.0"
+        "publishedAt": "2026-08-03T10:47:14Z",
+        "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.73.0",
+        "version": "v0.73.0"
       },
       "name": "Trivy",
       "previous": {
-        "publishedAt": "2026-06-19T10:37:28Z",
-        "version": "v0.71.2"
+        "publishedAt": "2026-06-30T09:34:06Z",
+        "version": "v0.72.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "aquasecurity/trivy",
       "tags": [
         "scanning",
@@ -1344,19 +1344,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 365220121,
-        "name": "v3.6.14",
+        "id": 365270362,
+        "name": "v3.7.5",
         "prerelease": false,
-        "publishedAt": "2026-08-05T00:25:17Z",
-        "url": "https://github.com/grafana/loki/releases/tag/v3.6.14",
-        "version": "v3.6.14"
+        "publishedAt": "2026-08-05T03:41:08Z",
+        "url": "https://github.com/grafana/loki/releases/tag/v3.7.5",
+        "version": "v3.7.5"
       },
       "name": "Loki",
       "previous": {
-        "publishedAt": "2026-07-24T07:49:34Z",
-        "version": "v3.7.4"
+        "publishedAt": "2026-08-05T00:25:17Z",
+        "version": "v3.6.14"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "grafana/loki",
       "tags": [
         "logs"
@@ -1895,6 +1895,38 @@
         "postgresql",
         "backup",
         "kubernetes"
+      ]
+    },
+    {
+      "category": "data",
+      "description": "Reliable PostgreSQL Backup & Restore",
+      "documentation": "https://pgbackrest.org/user-guide.html",
+      "group": {
+        "id": "database",
+        "name": "Databases"
+      },
+      "homepage": "https://pgbackrest.org",
+      "id": "pgbackrest",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 356580769,
+        "name": "v2.59.0: PostgreSQL 19 Support",
+        "prerelease": false,
+        "publishedAt": "2026-07-20T08:43:24Z",
+        "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.59.0",
+        "version": "release/2.59.0"
+      },
+      "name": "pgBackRest",
+      "previous": {
+        "publishedAt": "2026-01-19T10:49:09Z",
+        "version": "release/2.58.0"
+      },
+      "releaseCount": 10,
+      "repository": "pgbackrest/pgbackrest",
+      "tags": [
+        "postgresql",
+        "backup"
       ]
     }
   ]
