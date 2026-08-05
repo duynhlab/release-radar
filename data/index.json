@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T06:59:35.036Z",
+  "generatedAt": "2026-08-05T14:20:10.851Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -430,19 +430,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 355686804,
-        "name": "v1.148.0",
+        "id": 363051287,
+        "name": "v1.149.0",
         "prerelease": false,
-        "publishedAt": "2026-07-20T11:02:29Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.148.0",
-        "version": "v1.148.0"
+        "publishedAt": "2026-08-05T12:38:55Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.149.0",
+        "version": "v1.149.0"
       },
       "name": "VictoriaMetrics",
       "previous": {
-        "publishedAt": "2026-07-20T11:02:19Z",
-        "version": "v1.122.27"
+        "publishedAt": "2026-08-05T12:38:49Z",
+        "version": "v1.136.15"
       },
-      "releaseCount": 10,
+      "releaseCount": 13,
       "repository": "VictoriaMetrics/VictoriaMetrics",
       "tags": [
         "metrics",
@@ -558,19 +558,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 364693211,
-        "name": "victoria-metrics-k8s-stack-0.88.0",
+        "id": 365542489,
+        "name": "victoria-metrics-single-0.44.0",
         "prerelease": false,
-        "publishedAt": "2026-08-04T07:48:57Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.88.0",
-        "version": "victoria-metrics-k8s-stack-0.88.0"
+        "publishedAt": "2026-08-05T13:21:30Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.44.0",
+        "version": "victoria-metrics-single-0.44.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-03T07:20:11Z",
-        "version": "victoria-metrics-operator-0.67.2"
+        "publishedAt": "2026-08-05T13:21:28Z",
+        "version": "victoria-metrics-k8s-stack-0.89.0"
       },
-      "releaseCount": 15,
+      "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
       "tags": [
         "helm-chart",
