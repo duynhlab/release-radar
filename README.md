@@ -6,7 +6,7 @@ releases of infrastructure tools on GitHub.
 ```mermaid
 flowchart TD
     catalog["config/tools.yaml<br/>tool catalog (source of truth)"]
-    sync["GitHub Actions<br/>daily sync · 07:17 ICT"]
+    sync["GitHub Actions<br/>2×/day · 09:17 + 21:17 ICT"]
     api["GitHub Releases API"]
     data["data/*.json<br/>release history · max 20/tool"]
     build["Next.js build · full SSG<br/>via OpenNext"]
@@ -33,8 +33,9 @@ data, look at `data/`, not the frontend.
 - **JSON is read with `fs` at build time** (`lib/data.ts`), never `import`ed —
   importing would bundle every release note into the worker and blow the
   3 MiB gzip limit.
-- **`generatedAt` only advances when content changes** — otherwise every daily
-  run would create a noise commit. Idempotency is tested and load-bearing.
+- **`generatedAt` only advances when content changes** — otherwise every
+  scheduled run would create a noise commit. Idempotency is tested and
+  load-bearing.
 - **One deploy path**: Cloudflare Workers Builds (Git integration). Do NOT add
   a deploy step to GitHub Actions — you'd get double deploys.
 
@@ -66,9 +67,10 @@ Node ≥ 22.18 runs the `.ts` scripts natively — no tsx/ts-node needed.
 | `scripts/validate-catalog.ts` | CLI validation + regenerates `schemas/tool.schema.json` (editor autocomplete for the YAML). |
 | `data/` | **Generated.** Never edit by hand; the sync overwrites it. |
 | `app/`, `components/` | Next.js UI. `home-explorer.tsx` is the main client component (search/filter/favorites). |
-| `.github/workflows/sync-releases.yaml` | Daily sync, `contents: write`, commits only if `data/` changed. |
+| `.github/workflows/sync-releases.yaml` | Twice-daily sync, `contents: write`, commits only if `data/` changed. |
 | `.github/workflows/ci.yaml` | PR/push checks, `contents: read`, ignores data-only pushes. |
 | `.github/workflows/add-tool.yaml` | Add a tool from the Actions UI — fills the catalog, syncs data, opens a PR. |
+| `.github/dependabot.yml` | Weekly dependency updates: npm (minor/patch grouped) + github-actions. |
 | `scripts/add-tool.ts` + `lib/catalog-edit.ts` | Catalog intake: normalize repo input, auto-fill metadata, append YAML preserving format. |
 | `open-next.config.ts` + `wrangler.jsonc` | Cloudflare adapter config. |
 
@@ -105,7 +107,7 @@ requests"*.
 
 2. `pnpm validate:catalog` → `GITHUB_TOKEN=$(gh auth token) pnpm sync`.
 3. Commit both the YAML and the generated `data/` files. Push — Cloudflare
-   rebuilds automatically; the daily workflow keeps it updated afterwards.
+   rebuilds automatically; the scheduled workflow keeps it updated afterwards.
 
 Tag-pattern tips: most tools want `^v\d+\.\d+\.\d+$`. Grafana needs
 `(\+security-\d+)?` appended. OTel Collector releases from the `-releases`
@@ -148,7 +150,7 @@ integration):
 - **Build command**: `pnpm exec opennextjs-cloudflare build`
 - **Deploy command**: `npx opennextjs-cloudflare deploy`
 
-Every push to `main` — including the daily data commit — triggers a rebuild.
+Every push to `main` — including the scheduled data commit — triggers a rebuild.
 
 ## Verification standard
 
