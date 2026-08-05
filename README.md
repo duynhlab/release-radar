@@ -52,7 +52,9 @@ data, look at `data/`, not the frontend.
 | `pnpm preview` | Build + serve on workerd (Cloudflare runtime) locally |
 | `pnpm run deploy` | Build + deploy to Cloudflare Workers manually |
 
-Node ≥ 22.18 runs the `.ts` scripts natively — no tsx/ts-node needed.
+Node ≥ 26 runs the `.ts` scripts natively — no tsx/ts-node needed. CI and
+`@types/node` track the same major on purpose: types ahead of the runtime
+would typecheck against APIs that aren't there at run time.
 
 ## Code map
 
