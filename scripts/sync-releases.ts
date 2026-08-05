@@ -1,7 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { Octokit } from "octokit";
-import { enabledTools, loadCatalog } from "../lib/catalog.ts";
+import { enabledTools, loadCatalog } from "../src/server/catalog.ts";
 import {
   buildIndex,
   buildToolFile,
@@ -11,13 +11,13 @@ import {
   releaseMatchesConfig,
   stableStringify,
   type RawGitHubRelease,
-} from "../lib/releases.ts";
+} from "../src/domain/releases.ts";
 import {
   IndexSchema,
   ToolReleasesFileSchema,
   type Tool,
   type ToolReleasesFile,
-} from "../lib/types.ts";
+} from "../src/domain/types.ts";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const RELEASES_DIR = path.join(DATA_DIR, "releases");

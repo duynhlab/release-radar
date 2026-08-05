@@ -59,3 +59,12 @@ artifacts/e2e/**/*.png
 artifacts/e2e/**/*.har
 artifacts/e2e/**/*.zip
 artifacts/e2e/**/trace/
+
+# tanstack start / vite
+.output/
+.tanstack/
+dist/
+src/generated/
+src/routeTree.gen.ts
+public/release-notes/
+worker-configuration.d.ts

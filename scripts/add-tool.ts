@@ -7,9 +7,9 @@ import {
   countPatternMatches,
   normalizeRepository,
   type AddToolInputs,
-} from "../lib/catalog-edit.ts";
-import { CATALOG_PATH, loadCatalog } from "../lib/catalog.ts";
-import { CATEGORIES, type Category } from "../lib/types.ts";
+} from "../src/server/catalog-edit.ts";
+import { CATALOG_PATH, loadCatalog } from "../src/server/catalog.ts";
+import { CATEGORIES, type Category } from "../src/domain/types.ts";
 
 function readInputs(): AddToolInputs {
   const repository = process.env.INPUT_REPOSITORY?.trim();

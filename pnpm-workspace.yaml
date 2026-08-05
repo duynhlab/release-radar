@@ -1,5 +1,9 @@
+# pnpm 10+ blocks postinstall scripts by default (ERR_PNPM_IGNORED_BUILDS).
+# Note this is a map, not a list — a YAML sequence here is silently ignored.
+# sharp arrives via miniflare (wrangler / vite-plugin) and still needs to build.
+# unrs-resolver is gone with eslint-config-next.
 allowBuilds:
-  sharp: true
-  unrs-resolver: true
-  workerd: true
   esbuild: true
+  workerd: true
+  sharp: true
+  agent-browser: true

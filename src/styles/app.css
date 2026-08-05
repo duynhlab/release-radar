@@ -1,0 +1,262 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
+/* Class strategy, not prefers-color-scheme: the toggle must beat the OS. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  /* Self-hosted variable fonts. Never write a raw `font-family` anywhere else —
+     the legacy app had `body { font-family: Arial }` in globals.css which
+     silently defeated the Geist it was loading. tests/unit/styles.test.ts
+     asserts this file declares no font-family outside @theme. */
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, SFMono-Regular, monospace;
+
+  /* Three radius steps, no more. */
+  --radius-control: 0.375rem;
+  --radius-card: 0.625rem;
+  --radius-pill: 9999px;
+
+  /* Borders carry elevation; one shadow, for overlays only. */
+  --shadow-overlay: 0 16px 48px -12px oklch(0 0 0 / 0.55);
+
+  --color-bg: var(--rr-bg);
+  --color-surface: var(--rr-surface);
+  --color-surface-hover: var(--rr-surface-hover);
+  --color-border: var(--rr-border);
+  --color-border-strong: var(--rr-border-strong);
+  --color-fg: var(--rr-fg);
+  --color-fg-muted: var(--rr-fg-muted);
+  --color-fg-subtle: var(--rr-fg-subtle);
+  --color-accent: var(--rr-accent);
+  --color-accent-hover: var(--rr-accent-hover);
+  --color-accent-fg: var(--rr-accent-fg);
+  --color-accent-soft: var(--rr-accent-soft);
+  --color-focus: var(--rr-focus);
+  --color-star: var(--rr-star);
+
+  --color-stable-bg: var(--rr-stable-bg);
+  --color-stable-fg: var(--rr-stable-fg);
+  --color-pre-bg: var(--rr-pre-bg);
+  --color-pre-fg: var(--rr-pre-fg);
+
+  /* Category hues: badge-only, low chroma. */
+  --color-cat-platform-bg: var(--rr-cat-platform-bg);
+  --color-cat-platform-fg: var(--rr-cat-platform-fg);
+  --color-cat-provisioning-bg: var(--rr-cat-provisioning-bg);
+  --color-cat-provisioning-fg: var(--rr-cat-provisioning-fg);
+  --color-cat-delivery-bg: var(--rr-cat-delivery-bg);
+  --color-cat-delivery-fg: var(--rr-cat-delivery-fg);
+  --color-cat-observability-bg: var(--rr-cat-observability-bg);
+  --color-cat-observability-fg: var(--rr-cat-observability-fg);
+  --color-cat-networking-bg: var(--rr-cat-networking-bg);
+  --color-cat-networking-fg: var(--rr-cat-networking-fg);
+  --color-cat-security-bg: var(--rr-cat-security-bg);
+  --color-cat-security-fg: var(--rr-cat-security-fg);
+  --color-cat-data-bg: var(--rr-cat-data-bg);
+  --color-cat-data-fg: var(--rr-cat-data-fg);
+  --color-cat-ai-bg: var(--rr-cat-ai-bg);
+  --color-cat-ai-fg: var(--rr-cat-ai-fg);
+}
+
+/* Dark is the base, so a no-JS visitor gets the intended default. */
+:root,
+.dark {
+  color-scheme: dark;
+  --rr-bg: oklch(0.165 0.01 264);
+  --rr-surface: oklch(0.213 0.012 264);
+  --rr-surface-hover: oklch(0.248 0.014 264);
+  --rr-border: oklch(0.29 0.014 264);
+  --rr-border-strong: oklch(0.38 0.016 264);
+  --rr-fg: oklch(0.965 0.004 264);
+  --rr-fg-muted: oklch(0.76 0.012 264);
+  --rr-fg-subtle: oklch(0.64 0.014 264);
+  --rr-accent: oklch(0.74 0.14 235);
+  --rr-accent-hover: oklch(0.8 0.13 235);
+  --rr-accent-fg: oklch(0.18 0.02 235);
+  --rr-accent-soft: oklch(0.3 0.055 235);
+  --rr-focus: oklch(0.82 0.15 225);
+  --rr-star: oklch(0.82 0.15 85);
+
+  --rr-stable-bg: oklch(0.285 0.045 155);
+  --rr-stable-fg: oklch(0.86 0.09 155);
+  --rr-pre-bg: oklch(0.29 0.05 60);
+  --rr-pre-fg: oklch(0.87 0.095 60);
+
+  --rr-cat-platform-bg: oklch(0.28 0.042 240);
+  --rr-cat-platform-fg: oklch(0.865 0.085 240);
+  --rr-cat-provisioning-bg: oklch(0.28 0.045 295);
+  --rr-cat-provisioning-fg: oklch(0.865 0.085 295);
+  --rr-cat-delivery-bg: oklch(0.28 0.042 155);
+  --rr-cat-delivery-fg: oklch(0.865 0.085 155);
+  --rr-cat-observability-bg: oklch(0.28 0.042 75);
+  --rr-cat-observability-fg: oklch(0.87 0.085 75);
+  --rr-cat-networking-bg: oklch(0.28 0.042 200);
+  --rr-cat-networking-fg: oklch(0.865 0.085 200);
+  --rr-cat-security-bg: oklch(0.28 0.045 15);
+  --rr-cat-security-fg: oklch(0.865 0.085 15);
+  --rr-cat-data-bg: oklch(0.28 0.045 275);
+  --rr-cat-data-fg: oklch(0.865 0.085 275);
+  --rr-cat-ai-bg: oklch(0.28 0.042 175);
+  --rr-cat-ai-fg: oklch(0.865 0.085 175);
+}
+
+.light {
+  color-scheme: light;
+  --rr-bg: oklch(0.985 0.002 264);
+  --rr-surface: oklch(1 0 0);
+  --rr-surface-hover: oklch(0.972 0.003 264);
+  --rr-border: oklch(0.912 0.006 264);
+  --rr-border-strong: oklch(0.84 0.008 264);
+  --rr-fg: oklch(0.235 0.012 264);
+  --rr-fg-muted: oklch(0.47 0.014 264);
+  --rr-fg-subtle: oklch(0.57 0.014 264);
+  --rr-accent: oklch(0.52 0.17 250);
+  --rr-accent-hover: oklch(0.455 0.175 250);
+  --rr-accent-fg: oklch(1 0 0);
+  --rr-accent-soft: oklch(0.955 0.03 250);
+  --rr-focus: oklch(0.56 0.18 250);
+  --rr-star: oklch(0.7 0.16 75);
+
+  --rr-stable-bg: oklch(0.96 0.028 155);
+  --rr-stable-fg: oklch(0.45 0.11 155);
+  --rr-pre-bg: oklch(0.96 0.028 60);
+  --rr-pre-fg: oklch(0.45 0.11 60);
+
+  --rr-cat-platform-bg: oklch(0.96 0.028 240);
+  --rr-cat-platform-fg: oklch(0.45 0.11 240);
+  --rr-cat-provisioning-bg: oklch(0.96 0.028 295);
+  --rr-cat-provisioning-fg: oklch(0.45 0.11 295);
+  --rr-cat-delivery-bg: oklch(0.96 0.028 155);
+  --rr-cat-delivery-fg: oklch(0.45 0.11 155);
+  --rr-cat-observability-bg: oklch(0.96 0.028 75);
+  --rr-cat-observability-fg: oklch(0.45 0.11 75);
+  --rr-cat-networking-bg: oklch(0.96 0.028 200);
+  --rr-cat-networking-fg: oklch(0.45 0.11 200);
+  --rr-cat-security-bg: oklch(0.96 0.028 15);
+  --rr-cat-security-fg: oklch(0.45 0.11 15);
+  --rr-cat-data-bg: oklch(0.96 0.028 275);
+  --rr-cat-data-fg: oklch(0.45 0.11 275);
+  --rr-cat-ai-bg: oklch(0.96 0.028 175);
+  --rr-cat-ai-fg: oklch(0.45 0.11 175);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  /* One visible focus rule for everything. The legacy app only styled the
+     search input and let the browser default cover the rest. */
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    border-radius: var(--radius-control);
+  }
+
+  /* Deep-linked releases must clear the sticky header. */
+  :where([id]) {
+    scroll-margin-top: --spacing(24);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Release-note typography. Lives here rather than in a 700-character
+     arbitrary-variant className, and replaces the inert `prose-sm` the legacy
+     app carried without ever installing @tailwindcss/typography. */
+  .rr-notes {
+    max-width: 72ch;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: var(--color-fg-muted);
+    overflow-wrap: anywhere;
+  }
+  .rr-notes > * + * {
+    margin-top: 0.75rem;
+  }
+  .rr-notes :where(a) {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .rr-notes :where(strong) {
+    color: var(--color-fg);
+    font-weight: 600;
+  }
+  .rr-notes :where(code) {
+    border-radius: 0.25rem;
+    background-color: var(--color-surface-hover);
+    padding: 0.125rem 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-fg);
+  }
+  .rr-notes :where(pre) {
+    overflow-x: auto;
+    border-radius: var(--radius-control);
+    background-color: var(--color-surface-hover);
+    padding: 0.75rem;
+  }
+  .rr-notes :where(pre code) {
+    background-color: transparent;
+    padding: 0;
+  }
+  .rr-notes :where(ul, ol) {
+    padding-left: 1.25rem;
+  }
+  .rr-notes :where(ul) {
+    list-style-type: disc;
+  }
+  .rr-notes :where(ol) {
+    list-style-type: decimal;
+  }
+  .rr-notes :where(li + li) {
+    margin-top: 0.25rem;
+  }
+  .rr-notes :where(blockquote) {
+    border-left: 2px solid var(--color-border-strong);
+    padding-left: 0.75rem;
+    color: var(--color-fg-subtle);
+  }
+  .rr-notes :where(table) {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8125rem;
+  }
+  .rr-notes :where(th, td) {
+    border: 1px solid var(--color-border);
+    padding: 0.375rem 0.5rem;
+    text-align: left;
+  }
+  .rr-notes :where(th) {
+    background-color: var(--color-surface-hover);
+    color: var(--color-fg);
+  }
+  .rr-notes__scroll {
+    overflow-x: auto;
+  }
+  /* Blocked images and links keep their text but never fetch or navigate. */
+  .rr-notes__blocked {
+    color: var(--color-fg-subtle);
+    font-style: italic;
+  }
+}
