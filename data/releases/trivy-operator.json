@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-08-05T15:24:49.156Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 365493039,
+      "name": "v0.33.0",
+      "notes": "## Changelog\n### 🔧 Miscellaneous 🔧\n* 7d7874fa6bbd183e267877e3865b00ad6925d13f: chore: bump up Trivy version to v0.73.0 (#3031) (@afdesk)\n### 👷 Other work 👷\n* df3877a33f196d52f5694d6f1ef125f1fdcef6cb: build(deps): bump golang.org/x/text in the golang group (#3020) (@dependabot[bot])\n* 698db6d8a6fe8e3e450730401a5ef2b57277d2fa: build(deps): bump the k8s group with 5 updates (#3028) (@dependabot[bot])",
+      "prerelease": false,
+      "publishedAt": "2026-08-05T11:57:35Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.33.0",
+      "version": "v0.33.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 350849447,
+      "name": "v0.32.0",
+      "notes": "## Changelog\n### 🐛 Notable Fixes 🐛\n* 9e6aa0b1799d7aa72e96e0f94834022f8f69a50d: fix: handle missing report CRDs during old report cleanup (#3018) (@LaibaBareera)\n### 🔧 Miscellaneous 🔧\n* 8501418795f31bfcd1dac3cee792c1c24bf337e5: chore: bump up Trivy version to v0.72.0 (#3017) (@afdesk)\n### 👷 Other work 👷\n* 39b520355d3ace9a3a94f8f03d4478f7d3b52f0f: build(deps): bump github.com/onsi/ginkgo/v2 in the common group (#3004) (@dependabot[bot])\n* d74f1c388c5e976c0e5120582f72e300fb70ee9a: build(deps): bump golang.org/x/text in the golang group (#3005) (@dependabot[bot])\n* 508e7a46cba15440b2b6c67c743df423fddce120: build(deps): bump the k8s group across 1 directory with 5 updates (#3003) (@dependabot[bot])\n* daf91cfd495dc81d68930e42e2151fde7ac4edf3: build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#3015) (@dependabot[bot])",
+      "prerelease": false,
+      "publishedAt": "2026-07-08T10:20:29Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.32.0",
+      "version": "v0.32.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 341362189,
+      "name": "v0.31.2",
+      "notes": "## Changelog\n### ✨ Notable Changes ✨\n* 559fdc200b62725ffef88f854c4966cc34a0088e: feat: add Persistent Volume and Persistent Volume Claim resources (#2999) (@LaibaBareera)\n### 🔧 Miscellaneous 🔧\n* 213bb926f2d1a9eef19c69c2b493f33f1451b005: chore: bump up Go version to 1.26.4 (#2990) (@afdesk)\n* 1717439d149b68615d9f85049ab3ea39c38c98b0: chore: bump up Trivy version to 0.71.1 (#2998) (@afdesk)\n### 👷 Other work 👷\n* 0dc9aee1e2e652fbc7220d035e36d7b4bbd0d4b0: build(deps): bump alpine from 3.23.4 to 3.24.0 in /build/trivy-operator (#2996) (@dependabot[bot])\n* 347ad2ce3275c164f0db3bc22ec63cb6378e8cab: build(deps): bump alpine from 3.24.0 to 3.24.1 in /build/trivy-operator (#3000) (@dependabot[bot])\n* 1583506daf95747cec2edc90e34231eafe97773a: build(deps): bump the common group across 1 directory with 2 updates (#2982) (@dependabot[bot])\n* 5c5d0627dc694249dd942fe71f5cf0a69689dcde: build(deps): bump the common group across 1 directory with 2 updates (#2994) (@dependabot[bot])\n* a8fff0a6bf128e5e31fb863b90b14ffc1a051617: build(deps): bump the k8s group across 1 directory with 4 updates (#2993) (@dependabot[bot])\n* c8b610b3f6f2337afcd585bb1e8f1b4a3dfd466a: build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2986) (@dependabot[bot])\n* 4910168588688d4cbb861f2dc58ddca3ed335cb7: build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#2997) (@dependabot[bot])",
+      "prerelease": false,
+      "publishedAt": "2026-06-18T11:40:23Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.31.2",
+      "version": "v0.31.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 333129960,
+      "name": "v0.31.1",
+      "notes": "## Changelog\n### 👷 Other work 👷\n* e6229cf29d3edcef707d4dd882c1f7e14d5ceb8c: ci: increase goreleaser timeouts and fix snapshot workflow (#2983) (@afdesk)",
+      "prerelease": false,
+      "publishedAt": "2026-06-02T13:29:06Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.31.1",
+      "version": "v0.31.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 296459986,
+      "name": "v0.30.1",
+      "notes": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### 🐛 Notable Fixes 🐛\r\n* fix: vulnerability metric export fails because of duplicate entries by @sbreitf1 in https://github.com/aquasecurity/trivy-operator/pull/2884\r\n### 📝 Documentation && Miscellaneous 🔧\r\n* chore: bump up KinD and K8s versions by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2802\r\n* chore(deps): bump up cloudflare/circl to version 1.6.3 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2900\r\n* chore: bump up Trivy to version v0.69.2 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2905\r\n* chore: bump up Trivy to version v0.69.3 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2918\r\n### 👒 Dependencies 👒\r\n* build(deps): bump ubi9/ubi-minimal from `759f5f4` to `c7d4414` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2892\r\n* build(deps): bump github.com/onsi/gomega from 1.39.0 to 1.39.1 in the common group by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2876\r\n* build(deps): bump golang.org/x/text from 0.33.0 to 0.34.0 in the golang group by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2877\r\n* build(deps): bump github.com/google/go-containerregistry from 0.20.7 to 0.21.0 in the common group by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2894\r\n* build(deps): bump github.com/aquasecurity/trivy from 0.69.1 to 0.69.2 in the aqua group by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2909\r\n\r\n## New Contributors\r\n* @sbreitf1 made their first contribution in https://github.com/aquasecurity/trivy-operator/pull/2884\r\n\r\n**Full Changelog**: https://github.com/aquasecurity/trivy-operator/compare/v0.30.0...v0.30.1",
+      "prerelease": false,
+      "publishedAt": "2026-03-13T00:10:44Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.30.1",
+      "version": "v0.30.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 285441968,
+      "name": "v0.30.0",
+      "notes": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### ✨ Notable Changes ✨\r\n* feat: add support for custom Trivy ignore file by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2750\r\n* feat: automatically roll deployment in helm chart on configmap change by @jensloe-nhn in https://github.com/aquasecurity/trivy-operator/pull/2760\r\n### 🐛 Notable Fixes 🐛\r\n* fix(ci): clean up space for e2e tests by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2776\r\n* fix: print logs if any error appears by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2725\r\n* fix: Add config file volume to client server mode by @bh-tt in https://github.com/aquasecurity/trivy-operator/pull/2751\r\n* fix: prefer vendor score if both nvd and vendor cvss v3 scores exist by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2774\r\n* fix: error \"creating secret used by scan job failed: /sbom-k8s-cluste… by @dcoppa in https://github.com/aquasecurity/trivy-operator/pull/2759\r\n* fix: validation SBOM reports by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2792\r\n* fix: always generate the compliance report by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2804\r\n* fix: delete completed scan jobs in any case by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2788\r\n* fix: avoid re-mounting GCR volume with credentials by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2801\r\n* fix: use login to private registry by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2595\r\n* fix: alternateReportStorage PVC no longer ignores namespace from values.yaml by @ml-qc in https://github.com/aquasecurity/trivy-operator/pull/2864\r\n### 📝 Documentation && Miscellaneous 🔧\r\n* chore: bump up Trivy to version v0.67.0 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2764\r\n* chore: bump up inderect deps to fix vulns by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2805\r\n* chore: enable non-interactively mode for UBI9 image by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2814\r\n* chore: bump up x/crypto to v0.45.0 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2821\r\n* chore: image apk upgrade optimization by @daanschipper in https://github.com/aquasecurity/trivy-operator/pull/2826\r\n* chore(ubi9): update metadata for UBI9 image by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2846\r\n* chore: bump up Trivy to version v0.69.0 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2870\r\n* chore: bump up Trivy to version v0.69.1 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2875\r\n* ci: added extra_file LICENSE for Dockerfile.ubi9 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2879\r\n* chore: bump up go-git deps to fix CVE-2026-25934 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2882\r\n### 👒 Dependencies 👒\r\n* build(deps): bump ubi9/ubi-minimal from `7c5495d` to `34880b6` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2784\r\n* build(deps): bump alpine from 3.22.1 to 3.22.2 in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2778\r\n* build(deps): bump ubi9/ubi-minimal from `34880b6` to `61d5ad4` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2816\r\n* build(deps): bump ubi9/ubi-minimal from `61d5ad4` to `6fc28bc` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2832\r\n* build(deps): bump alpine from 3.22.2 to 3.23.0 in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2833\r\n* build(deps): bump alpine from 3.23.0 to 3.23.3 in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2866\r\n* build(deps): bump ubi9/ubi-minimal from `6fc28bc` to `bb08f23` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2862\r\n* build(deps): bump golang.org/x/text from 0.31.0 to 0.32.0 in the golang group by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2844\r\n* build(deps): bump ubi9/ubi-minimal from `bb08f23` to `ecd4751` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2873\r\n* build(deps): bump ubi9/ubi-minimal from `ecd4751` to `759f5f4` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2874\r\n* build(deps): bump the common group across 1 directory with 4 updates by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2872\r\n\r\n## New Contributors\r\n* @bh-tt made their first contribution in https://github.com/aquasecurity/trivy-operator/pull/2751\r\n* @jensloe-nhn made their first contribution in https://github.com/aquasecurity/trivy-operator/pull/2760\r\n* @ml-qc made their first contribution in https://github.com/aquasecurity/trivy-operator/pull/2864\r\n\r\n**Full Changelog**: https://github.com/aquasecurity/trivy-operator/compare/v0.29.0...v0.30.0",
+      "prerelease": false,
+      "publishedAt": "2026-02-11T21:31:48Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.30.0",
+      "version": "v0.30.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 249235687,
+      "name": "v0.29.0",
+      "notes": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### ✨ Notable Changes ✨\r\n* feat(dev): add support for pprof by @simar7 in https://github.com/aquasecurity/trivy-operator/pull/2666\r\n* feat(clientServer): add support for extraVolumes in trivy-server by @hichem-belhocine in https://github.com/aquasecurity/trivy-operator/pull/2738\r\n* feat: add labels to operator resources by @cHiv0rz in https://github.com/aquasecurity/trivy-operator/pull/2667\r\n### 🐛 Notable Fixes 🐛\r\n* fix: Ensure configFile volume is mounted for initContainer by @bananasplit393 in https://github.com/aquasecurity/trivy-operator/pull/2713\r\n* fix(helm): always attempt to create ServiceMonitor when it is enabled by @mdusher in https://github.com/aquasecurity/trivy-operator/pull/2745\r\n* fix: add missing permission to get namespaces by @dcoppa in https://github.com/aquasecurity/trivy-operator/pull/2728\r\n### 📝 Documentation && Miscellaneous 🔧\r\n* chore: improve release notes by @simar7 in https://github.com/aquasecurity/trivy-operator/pull/2692\r\n* chore: migrate to aws-go v2 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2694\r\n* chore: bump up Go to version 1.24.6 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2700\r\n* chore: bump up Trivy to version v0.66.0 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2742\r\n* chore: bump up common k8s deps by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2746\r\n### 👒 Dependencies 👒\r\n* build(deps): bump ubi9/ubi-minimal from `295f920` to `e6b39b0` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2696\r\n* build(deps): bump ubi9/ubi-minimal from `e6b39b0` to `8d905a9` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2701\r\n* build(deps): bump helm.sh/helm/v3 from 3.18.4 to 3.18.5 by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2709\r\n* build(deps): bump github.com/hashicorp/go-getter from 1.7.8 to 1.7.9 by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2714\r\n* build(deps): bump ubi9/ubi-minimal from `8d905a9` to `2f06ae0` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2719\r\n* build(deps): bump github.com/go-viper/mapstructure/v2 from 2.3.0 to 2.4.0 by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2721\r\n* build(deps): bump github.com/ulikunitz/xz from 0.5.12 to 0.5.15 by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2729\r\n* build(deps): bump ubi9/ubi-minimal from `2f06ae0` to `7c5495d` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2753\r\n\r\n## New Contributors\r\n* @bananasplit393 made their first contribution in https://github.com/aquasecurity/trivy-operator/pull/2713\r\n* @hichem-belhocine made their first contribution in https://github.com/aquasecurity/trivy-operator/pull/2738\r\n* @mdusher made their first contribution in https://github.com/aquasecurity/trivy-operator/pull/2745\r\n* @cHiv0rz made their first contribution in https://github.com/aquasecurity/trivy-operator/pull/2667\r\n\r\n**Full Changelog**: https://github.com/aquasecurity/trivy-operator/compare/v0.28.0...v0.29.0",
+      "prerelease": false,
+      "publishedAt": "2025-09-23T05:59:33Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.29.0",
+      "version": "v0.29.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 237847241,
+      "name": "v0.28.0",
+      "notes": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### ✨ Notable Changes ✨\r\n* feat: support storageClassName for alternatReportStorage by @cyrinux in https://github.com/aquasecurity/trivy-operator/pull/2633\r\n### 🐛 Notable Fixes 🐛\r\n* fix: bump ubi9 image to latest release by @simar7 in https://github.com/aquasecurity/trivy-operator/pull/2651\r\n* fix: correct output for uncompressed logs by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2652\r\n* fix: Do not error out on invalid rego policies if any by @simar7 in https://github.com/aquasecurity/trivy-operator/pull/2670\r\n### 📝 Documentation && Miscellaneous 🔧\r\n* chore: bump up Trivy to version 0.64.1 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2654\r\n* chore: bump up UBI 9 version to 9.6-1752587672 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2660\r\n* chore: update for CVE-2025-6965 by @simar7 in https://github.com/aquasecurity/trivy-operator/pull/2678\r\n* chore: bump up docker for CVE-2025-54388 by @simar7 in https://github.com/aquasecurity/trivy-operator/pull/2679\r\n* chore: update ubi image by @simar7 in https://github.com/aquasecurity/trivy-operator/pull/2681\r\n* chore: bump up Trivy to version 0.65.0 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2686\r\n### 👒 Dependencies 👒\r\n* build(deps): bump ubi9/ubi-minimal from `0d7cfb0` to `295f920` in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2688\r\n* build(deps): bump alpine from 3.20.6 to 3.22.1 in /build/trivy-operator by @dependabot[bot] in https://github.com/aquasecurity/trivy-operator/pull/2687\r\n\r\n## New Contributors\r\n* @cyrinux made their first contribution in https://github.com/aquasecurity/trivy-operator/pull/2633\r\n\r\n**Full Changelog**: https://github.com/aquasecurity/trivy-operator/compare/v0.27.3...v0.28.0",
+      "prerelease": false,
+      "publishedAt": "2025-08-06T04:49:42Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.28.0",
+      "version": "v0.28.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 231617783,
+      "name": "v0.27.3",
+      "notes": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### 🐛 Notable Fixes 🐛\r\n* fix: bump helm to v3.18.4 by @simar7 in https://github.com/aquasecurity/trivy-operator/pull/2647\r\n* fix: correct predicate logic to allow whitelisted ConfigMaps by @nikpivkin in https://github.com/aquasecurity/trivy-operator/pull/2631\r\n* fix: Deletion of scanjob before ttl expires by @tom1299 in https://github.com/aquasecurity/trivy-operator/pull/2632\r\n* fix(deploy): remove hardcoded namespace from pvc-template by @SamuelWy in https://github.com/aquasecurity/trivy-operator/pull/2646\r\n* fix: add ubi9 images for nightly testing by @simar7 in https://github.com/aquasecurity/trivy-operator/pull/2650\r\n\r\n## New Contributors\r\n* @SamuelWy made their first contribution in https://github.com/aquasecurity/trivy-operator/pull/2646\r\n\r\n**Full Changelog**: https://github.com/aquasecurity/trivy-operator/compare/v0.27.2...v0.27.3",
+      "prerelease": false,
+      "publishedAt": "2025-07-10T22:07:10Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.27.3",
+      "version": "v0.27.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 230694406,
+      "name": "v0.27.2",
+      "notes": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### 🐛 Notable Fixes 🐛\r\n* fix(ci): use multiline syntax to print logs on failure by @nikpivkin in https://github.com/aquasecurity/trivy-operator/pull/2637\r\n### 📝 Documentation && Miscellaneous 🔧\r\n* chore: update UBI to version 9.6-1750782676 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2625\r\n* chore: bump up some deps by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2618\r\n* chore: use a correct default repo for node-collector by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2619\r\n* docs: fix typo in RELEASING.md for Helm chart file name by @nikpivkin in https://github.com/aquasecurity/trivy-operator/pull/2642\r\n* chore: bump up UBI version to 9.6-1751286687 by @afdesk in https://github.com/aquasecurity/trivy-operator/pull/2643\r\n### 👒 Dependencies 👒\r\n* build(deps): bump github.com/go-viper/mapstructure/v2 from 2.2.1 to 2.3.0 by @dependabot in https://github.com/aquasecurity/trivy-operator/pull/2630\r\n\r\n\r\n**Full Changelog**: https://github.com/aquasecurity/trivy-operator/compare/v0.27.1...v0.27.2",
+      "prerelease": false,
+      "publishedAt": "2025-07-08T06:32:42Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.27.2",
+      "version": "v0.27.2"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "trivy-operator",
+    "name": "Trivy Operator",
+    "repository": "aquasecurity/trivy-operator"
+  }
+}

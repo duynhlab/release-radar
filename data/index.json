@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T14:25:20.761Z",
+  "generatedAt": "2026-08-05T15:24:49.824Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1955,6 +1955,125 @@
       "tags": [
         "postgresql",
         "backup"
+      ]
+    },
+    {
+      "category": "provisioning",
+      "description": "A GitOps OpenTofu and Terraform controller for Flux",
+      "group": {
+        "id": "fluxcd",
+        "name": "Flux"
+      },
+      "homepage": "https://flux-iac.github.io/tofu-controller/",
+      "id": "tofu-controller",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 335917053,
+        "name": "v0.16.4",
+        "prerelease": false,
+        "publishedAt": "2026-06-08T11:41:33Z",
+        "url": "https://github.com/flux-iac/tofu-controller/releases/tag/v0.16.4",
+        "version": "v0.16.4"
+      },
+      "name": "Tofu Controller",
+      "previous": {
+        "publishedAt": "2026-05-05T14:36:39Z",
+        "version": "v0.16.3"
+      },
+      "releaseCount": 5,
+      "repository": "flux-iac/tofu-controller",
+      "tags": [
+        "terraform",
+        "opentofu",
+        "gitops",
+        "kubernetes"
+      ]
+    },
+    {
+      "category": "networking",
+      "description": "Cloudflare Tunnel client",
+      "documentation": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/",
+      "homepage": "https://www.cloudflare.com/products/tunnel/",
+      "id": "cloudflared",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 358602139,
+        "name": "2026.7.3",
+        "prerelease": false,
+        "publishedAt": "2026-07-23T10:19:16Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.7.3",
+        "version": "2026.7.3"
+      },
+      "name": "cloudflared",
+      "previous": {
+        "publishedAt": "2026-07-15T13:36:00Z",
+        "version": "2026.7.2"
+      },
+      "releaseCount": 10,
+      "repository": "cloudflare/cloudflared",
+      "tags": [
+        "tunnel",
+        "cloudflare"
+      ]
+    },
+    {
+      "category": "security",
+      "description": "Kubernetes-native security toolkit",
+      "documentation": "https://aquasecurity.github.io/trivy-operator/latest",
+      "homepage": "https://trivy.dev",
+      "id": "trivy-operator",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 365493039,
+        "name": "v0.33.0",
+        "prerelease": false,
+        "publishedAt": "2026-08-05T11:57:35Z",
+        "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.33.0",
+        "version": "v0.33.0"
+      },
+      "name": "Trivy Operator",
+      "previous": {
+        "publishedAt": "2026-07-08T10:20:29Z",
+        "version": "v0.32.0"
+      },
+      "releaseCount": 10,
+      "repository": "aquasecurity/trivy-operator",
+      "tags": [
+        "scanning",
+        "vulnerabilities",
+        "kubernetes"
+      ]
+    },
+    {
+      "category": "platform",
+      "description": "A Kubernetes web UI that is fully-featured, user-friendly and extensible",
+      "documentation": "https://headlamp.dev/docs/latest/",
+      "homepage": "https://headlamp.dev",
+      "id": "headlamp",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 360999401,
+        "name": "0.44.0",
+        "prerelease": false,
+        "publishedAt": "2026-07-29T07:10:29Z",
+        "url": "https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.44.0",
+        "version": "v0.44.0"
+      },
+      "name": "Headlamp",
+      "previous": {
+        "publishedAt": "2026-06-16T22:41:58Z",
+        "version": "v0.43.0"
+      },
+      "releaseCount": 4,
+      "repository": "kubernetes-sigs/headlamp",
+      "tags": [
+        "kubernetes",
+        "ui",
+        "dashboard"
       ]
     }
   ]
