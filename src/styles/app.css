@@ -38,6 +38,14 @@
   --text-detail-title: 1.5rem; /* 24 */
   --text-detail-title--line-height: 1.2;
 
+  /* Tailwind has no breakpoint between sm (640) and lg (1024), but the card
+     grid needs its third column at 900 — md (768) puts three columns on a
+     tablet, where they get too narrow for a two-line description.
+     Declared as a NAMED breakpoint rather than an arbitrary `min-[900px]:`
+     variant: Tailwind emits arbitrary breakpoint variants before the named
+     ones, so `sm:grid-cols-2` came later in the stylesheet and won at 1024. */
+  --breakpoint-cards: 56.25rem;
+
   /* Three radius steps, no more — and honoured everywhere. Two call sites used
      to fall back to Tailwind's default 4px `rounded`, so the rendered app had
      five radii rather than three. */

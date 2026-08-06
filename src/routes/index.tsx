@@ -13,6 +13,7 @@ import {
   type HomeSearch,
   type HomeSearchInput,
 } from "@/features/catalog/search-params";
+import { PageTitle } from "@/components/ui/page-title";
 import { CatalogSkeleton } from "@/components/ui/skeleton";
 import { formatDate } from "@/lib/dates";
 import { buildMeta, canonicalLink } from "@/lib/seo";
@@ -57,14 +58,10 @@ function HomePage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-page-title font-semibold tracking-tight text-fg">
-          DevOps release tracker
-        </h1>
-        <p className="mt-1 text-body text-fg-muted">
-          {tools.length} tools tracked · data updated {formatDate(generatedAt)}
-        </p>
-      </div>
+      <PageTitle
+        title="DevOps release tracker"
+        meta={`${tools.length} tools tracked · updated ${formatDate(generatedAt)}`}
+      />
       <HomeExplorer
         tools={tools}
         generatedAt={generatedAt}

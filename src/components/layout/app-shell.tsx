@@ -21,11 +21,11 @@ export function AppShell({
       <main
         id="main"
         tabIndex={-1}
-        className="mx-auto w-full max-w-7xl flex-1 px-4 py-8 sm:px-6"
+        className="mx-auto w-full max-w-[1360px] flex-1 px-4 py-6 sm:px-6"
       >
         {children}
       </main>
-      <footer className="border-t border-border py-6 text-center text-meta text-fg-subtle">
+      <footer className="border-t border-border py-5 text-center text-meta text-fg-subtle">
         Data synced twice daily from GitHub Releases · Generated statically
       </footer>
     </>

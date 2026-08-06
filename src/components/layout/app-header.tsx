@@ -10,8 +10,8 @@ const SOURCE_URL = "https://github.com/duynhlab/release-radar";
 export function AppHeader({ generatedAt }: { generatedAt: string }) {
   return (
     <header className="sticky top-0 z-30 border-b border-border bg-bg/85 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6">
-        <Link to="/" className="flex items-center gap-2 font-semibold text-fg">
+      <div className="mx-auto flex h-14 max-w-[1360px] items-center gap-3 px-4 sm:px-6">
+        <Link to="/" className="flex items-center gap-2 text-body font-semibold text-fg">
           <span aria-hidden="true">📡</span>
           Release Radar
         </Link>

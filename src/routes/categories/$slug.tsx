@@ -3,6 +3,7 @@ import { CATEGORY_LABELS } from "@/domain/types";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { NotFound } from "@/components/layout/not-found";
 import { ToolGrid } from "@/components/catalog/tool-grid";
+import { PageTitle } from "@/components/ui/page-title";
 import { CatalogSkeleton } from "@/components/ui/skeleton";
 import { getToolsByCategory, isCategory } from "@/data/catalog";
 import { buildMeta, canonicalLink } from "@/lib/seo";
@@ -42,13 +43,10 @@ function CategoryPage() {
     <div className="space-y-6">
       <Breadcrumb current={label} />
 
-      <div>
-        <h1 className="text-page-title font-semibold tracking-tight text-fg">{label}</h1>
-        <p className="mt-1 text-body text-fg-muted">
-          {tools.length} tool{tools.length === 1 ? "" : "s"} tracked in this
-          category
-        </p>
-      </div>
+      <PageTitle
+        title={label}
+        meta={`${tools.length} tool${tools.length === 1 ? "" : "s"} tracked in this category`}
+      />
 
       {tools.length === 0 ? (
         <p role="status" className="py-8 text-body text-fg-muted">
