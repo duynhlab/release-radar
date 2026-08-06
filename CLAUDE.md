@@ -152,8 +152,12 @@ produces a plausible screenshot.
 Deployed via **Workers Builds (Git integration)**, not GitHub Actions.
 
 - **Do not add a deploy step to any workflow.** You'd get double deploys.
-- Build command `pnpm build`, deploy command `wrangler deploy`. These live in
-  the Cloudflare dashboard, **not** in this repo — same as the Node version.
+- Build command `pnpm build`; deploy `pnpm exec wrangler deploy`;
+  non-production branch deploy `pnpm exec wrangler versions upload`. These live
+  in the Cloudflare dashboard, **not** in this repo — same as the Node version.
+- The `pnpm exec` prefix on the deploy commands is load-bearing: wrangler is a
+  devDependency, and the deploy step runs in a bare `/bin/sh` without
+  `node_modules/.bin` on PATH.
 - Set `CLOUDFLARE_INCLUDE_PROCESS_ENV=true` in Workers Builds; prerender runs at
   build time and needs the env.
 - `pnpm preview` builds and serves on workerd. `next dev` behaviour was never

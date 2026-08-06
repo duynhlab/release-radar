@@ -163,8 +163,15 @@ repo.
 Cloudflare Workers, connected through Workers Builds (Git integration):
 
 - **Build command**: `pnpm build`
-- **Deploy command**: `wrangler deploy`
+- **Deploy command**: `pnpm exec wrangler deploy`
+- **Non-production branch deploy command**: `pnpm exec wrangler versions upload`
+  (uploads a preview version without promoting it to production)
 - **Env**: `CLOUDFLARE_INCLUDE_PROCESS_ENV=true` (prerender runs at build time)
+
+The `pnpm exec` prefix is required: wrangler is a devDependency in
+`node_modules/.bin`, and the deploy step runs in a plain `/bin/sh` that does not
+have it on PATH. Without it the build succeeds and the deploy fails with
+`wrangler: not found`.
 
 These live in the Cloudflare dashboard, not in this repo.
 
