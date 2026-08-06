@@ -112,7 +112,9 @@ jobs:
           pnpm test
           pnpm lint
           pnpm typecheck
+          pnpm audit:markdown --check
           pnpm build
+          pnpm check:bundle
 
       - name: Resolve tool id
         id: tool

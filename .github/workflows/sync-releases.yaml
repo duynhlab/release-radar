@@ -43,6 +43,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/sync-releases.ts
 
+      # Release notes are the one input that changes with no human in the loop.
+      # Gating only on PRs would let a new upstream note containing an <iframe>
+      # ship straight to production on a scheduled sync; here it fails the data
+      # commit instead.
+      - name: Markdown corpus gate
+        run: pnpm audit:markdown --check
+
       - name: Commit and push if changed
         run: |
           if [[ -n "$(git status --porcelain data)" ]]; then
