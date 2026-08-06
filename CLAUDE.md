@@ -140,7 +140,7 @@ the loop.
 
 For UI changes also run `pnpm preview` and audit with `agent-browser`.
 Baseline to hold: zero console errors, zero axe violations, LCP <= 2.5s,
-CLS <= 0.1. See `artifacts/e2e/BASELINE.md` and `CANDIDATE.md`.
+CLS <= 0.1. See `artifacts/e2e/README.md`.
 
 **agent-browser gotchas**: the viewport does not survive a navigation, and can
 silently no-op after `set device`/`set media`. Use one session per viewport and

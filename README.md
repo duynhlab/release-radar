@@ -182,7 +182,7 @@ Every push to `main` — including the scheduled data commit — triggers a rebu
 "Compact Technical UI": dense, sharp, information-first. Eight named type tiers
 (11/12/13/14/15/16/22/24px) chosen by role rather than by eye, control heights of
 28/32/36, three radii, and borders rather than shadows for elevation. See
-`CLAUDE.md` for the rules and `artifacts/e2e/COMPACT-UI.md` for the measured
+`CLAUDE.md` for the rules and `artifacts/e2e/README.md` for the measured
 result.
 
 ## Verification standard
@@ -197,7 +197,7 @@ pnpm validate:catalog && pnpm lint && pnpm typecheck && pnpm test \
 For UI changes also run `pnpm preview` and audit with `agent-browser` — `vite
 dev` behaviour is not proof, the workerd path is what ships. Current measured
 baseline: zero console errors, zero axe violations on every route type, grid
-4/2/1 at 1440/768/390, LCP 52–60ms, CLS 0.000. See `artifacts/e2e/`.
+4/2/1 at 1440/768/390, LCP 52–60ms, CLS 0.000. See `artifacts/e2e/README.md`.
 
 **Release notes render through `@tanstack/markdown` with `allowHtml: false`.**
 It has no autolink literals, so bare URLs in notes render as plain text — an

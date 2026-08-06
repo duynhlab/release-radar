@@ -50,6 +50,14 @@ jobs:
       - name: Markdown corpus gate
         run: pnpm audit:markdown --check
 
+      # ci.yaml skips data-only pushes (paths-ignore: data/**), but Cloudflare
+      # still rebuilds on them. Without this the first thing to notice a
+      # malformed index would be a failed Workers Build at 09:17, with nobody
+      # watching and no release data reaching production. `pnpm gen` runs the
+      # exact IndexSchema parse that the build performs.
+      - name: Verify the synced data builds
+        run: pnpm gen
+
       - name: Commit and push if changed
         run: |
           if [[ -n "$(git status --porcelain data)" ]]; then

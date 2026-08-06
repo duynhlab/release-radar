@@ -49,7 +49,7 @@ cloudflare-env.d.ts
 
 # internal planning notes (kept local only)
 docs/release-radar-plan.txt
-ke-hoach-release-radar-greenfield.txt
+ke-hoach-*.txt
 
 # e2e audit artifacts: the text contract is committed, the captures are not.
 # Screenshots/traces/HAR are large and regenerable — the baseline set can be

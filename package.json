@@ -35,7 +35,6 @@
     "@fontsource-variable/geist-mono": "^5.3.0",
     "@tailwindcss/vite": "4.3.3",
     "@tanstack/eslint-plugin-router": "1.162.0",
-    "@tanstack/react-router-devtools": "1.167.1",
     "@testing-library/react": "^16.3.0",
     "@types/node": "^26",
     "@types/react": "^19",
