@@ -1,9 +1,4 @@
-import {
-  HeadContent,
-  Outlet,
-  Scripts,
-  createRootRoute,
-} from "@tanstack/react-router";
+import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { AppError } from "@/components/layout/app-error";
 import { AppShell } from "@/components/layout/app-shell";
@@ -56,8 +51,4 @@ function RootDocument({ children }: { children: ReactNode }) {
       </body>
     </html>
   );
-}
-
-export function RootOutlet() {
-  return <Outlet />;
 }

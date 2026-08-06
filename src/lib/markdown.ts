@@ -5,8 +5,6 @@ import type { ReactNode } from "react";
 import { NOTE_COMPONENTS } from "@/components/releases/markdown-components";
 import { NOTES_MARKDOWN_OPTIONS } from "./markdown-options";
 
-export { NOTES_MARKDOWN_OPTIONS } from "./markdown-options";
-
 export function transformNotes(document: MarkdownDocument): MarkdownDocument {
   return document;
 }

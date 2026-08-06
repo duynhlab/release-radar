@@ -13,7 +13,7 @@ const store = createLocalStorageStore<ThemePreference>({
   serialize: (value) => value,
 });
 
-export function resolveTheme(preference: ThemePreference): ResolvedTheme {
+function resolveTheme(preference: ThemePreference): ResolvedTheme {
   if (preference !== "system") return preference;
   if (typeof window === "undefined") return "dark";
   return window.matchMedia("(prefers-color-scheme: light)").matches

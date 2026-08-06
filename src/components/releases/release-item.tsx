@@ -26,7 +26,6 @@ export function ReleaseItem({
   // cascade a second render on every release.
   const [userToggled, setUserToggled] = useState<boolean | null>(null);
   const open = userToggled ?? defaultOpen;
-  const setOpen = setUserToggled;
 
   return (
     <article
@@ -74,7 +73,7 @@ export function ReleaseItem({
         // sync keeps aria-expanded truthful while Enter/Space stay native.
         <details
           open={open}
-          onToggle={(e) => setOpen(e.currentTarget.open)}
+          onToggle={(e) => setUserToggled(e.currentTarget.open)}
           className="mt-3"
         >
           <summary

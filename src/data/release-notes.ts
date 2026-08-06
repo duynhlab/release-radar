@@ -14,7 +14,7 @@ import { ToolReleasesFileSchema, type Release } from "../domain/types.ts";
 // Any @tanstack/react-start/server import must stay behind createIsomorphicFn's
 // server branch, or Start's import-protection plugin fails the build.
 
-export const NOTES_BASE = "/release-notes";
+const NOTES_BASE = "/release-notes";
 
 const TOOL_ID = /^[a-z0-9][a-z0-9-]*$/;
 

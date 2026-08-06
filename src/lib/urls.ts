@@ -1,11 +1,3 @@
-export function toolPath(id: string): string {
-  return `/tools/${id}`;
-}
-
-export function categoryPath(slug: string): string {
-  return `/categories/${slug}`;
-}
-
 export function repoUrl(repository: string): string {
   return `https://github.com/${repository}`;
 }

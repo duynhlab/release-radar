@@ -20,7 +20,7 @@ const byId = new Map<string, IndexTool>(
 );
 
 /** Newest release first, then name — the one ordering used everywhere. */
-export function byLatestThenName(a: IndexTool, b: IndexTool): number {
+function byLatestThenName(a: IndexTool, b: IndexTool): number {
   return (
     (b.latest?.publishedAt ?? "").localeCompare(a.latest?.publishedAt ?? "") ||
     a.name.localeCompare(b.name)

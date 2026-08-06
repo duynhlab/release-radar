@@ -1,11 +1,6 @@
 import type { MarkdownComponents } from "@tanstack/markdown/react";
 import type { ComponentPropsWithoutRef } from "react";
-import {
-  classifyNoteHref,
-  isAllowedNoteImage,
-} from "@/lib/note-links";
-
-export { classifyNoteHref, isAllowedNoteImage };
+import { classifyNoteHref, isAllowedNoteImage } from "@/lib/note-links";
 
 function NoteLink({ href, children, ...rest }: ComponentPropsWithoutRef<"a">) {
   const kind = classifyNoteHref(href);

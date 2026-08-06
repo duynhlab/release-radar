@@ -2,7 +2,7 @@ import { useLocation } from "@tanstack/react-router";
 import type { Release } from "@/domain/types";
 import { ReleaseItem } from "./release-item";
 
-export type ReleaseWithFragment = Release & { fragment: string };
+type ReleaseWithFragment = Release & { fragment: string };
 
 export function ReleaseHistory({
   releases,

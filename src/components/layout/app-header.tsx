@@ -5,7 +5,7 @@ import { TimeAgo } from "@/components/ui/time-ago";
 import { Tooltip } from "@/components/ui/tooltip";
 import { ThemeToggle } from "./theme-toggle";
 
-export const SOURCE_URL = "https://github.com/duynhlab/release-radar";
+const SOURCE_URL = "https://github.com/duynhlab/release-radar";
 
 export function AppHeader({ generatedAt }: { generatedAt: string }) {
   return (

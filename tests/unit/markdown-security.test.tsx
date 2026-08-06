@@ -1,11 +1,8 @@
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { ReleaseNotes } from "@/components/releases/release-notes";
-import {
-  classifyNoteHref,
-  isAllowedNoteImage,
-} from "@/components/releases/markdown-components";
-import { NOTES_MARKDOWN_OPTIONS } from "@/lib/markdown";
+import { classifyNoteHref, isAllowedNoteImage } from "@/lib/note-links";
+import { NOTES_MARKDOWN_OPTIONS } from "@/lib/markdown-options";
 
 const html = (markdown: string) =>
   renderToStaticMarkup(<ReleaseNotes markdown={markdown} />);

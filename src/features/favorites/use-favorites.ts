@@ -11,7 +11,6 @@ import { createLocalStorageStore } from "@/lib/create-local-storage-store";
  * rename this one.
  */
 export const FAVORITES_STORAGE_KEY = "release-radar:favorites";
-export const FAVORITES_SHAPE_VERSION = 1;
 
 const EMPTY: ReadonlySet<string> = new Set<string>();
 
