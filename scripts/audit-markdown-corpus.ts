@@ -175,7 +175,10 @@ for (const file of files) {
       }
       if (type === "link") {
         counts.links += 1;
-        const href = typeof node.url === "string" ? node.url : "";
+        // LinkNode's property is `href`. This read `node.url` — always
+        // undefined, so the `href &&` guard below never fired and the only
+        // corpus-wide check on our link policy silently passed on everything.
+        const href = typeof node.href === "string" ? node.href : "";
         if (href && classifyNoteHref(href) === null) {
           counts.badUrl.push({ ...where, sample: href.slice(0, 80) });
         }
@@ -186,7 +189,9 @@ for (const file of files) {
       if (type === "footnoteDefinition" || type === "footnoteReference") {
         counts.footnotes += 1;
       }
-      if (type === "delete" || type === "strikethrough") counts.strikethrough += 1;
+      // The node type is `strike`; "delete"/"strikethrough" are remark's names,
+      // so this counted zero regardless of the corpus.
+      if (type === "strike") counts.strikethrough += 1;
       if (node.checked === true || node.checked === false) counts.taskLists += 1;
     });
 

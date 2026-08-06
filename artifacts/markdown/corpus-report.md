@@ -54,6 +54,6 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 
 | | |
 |---|---|
-| Links rejected by our stricter policy | 0 |
+| Links rejected by our stricter policy | 1 |
 | Notes exceeding 250ms to parse | 0 |
 | Non-deterministic parses | 0 |
