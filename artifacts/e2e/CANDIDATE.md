@@ -47,6 +47,31 @@ existing users' stars carry over.
   (203 of 463 total interactive elements are under 40px — those are text links,
   which the size requirement does not cover.)
 
+## Keyboard and focus
+
+| Check | Result |
+|---|---|
+| First focusable element | **Skip to content** |
+| Tab order vs visual order (20 elements) | **0 out of order** |
+| Escape closes the mobile filter Sheet | **yes** |
+| Focus returns to the Filters trigger | **yes** |
+| axe with the Sheet open | **0 violations** |
+| Favorite `aria-pressed` flips | **yes** |
+| Collapsible `aria-expanded` tracks `details.open` | **yes, both directions** |
+
+Reading `aria-expanded` synchronously after `.click()` shows a stale value —
+React batches the state update. Assert after a tick, or the check reports a bug
+that isn't there.
+
+## Theme
+
+| `prefers-color-scheme` | `<html>` class | body background |
+|---|---|---|
+| dark | `dark` | `oklch(0.165 0.01 264)` |
+| light | `light` | `oklch(0.985 0.002 264)` |
+
+Both themes fully authored; the toggle beats the OS via the class strategy.
+
 ## SSR resilience — scripts blocked
 
 | Page | Result |
@@ -81,6 +106,16 @@ still renders in ~55 ms.
 
 **No optimization was performed, because the measurements do not justify one.**
 Optimizing here would add complexity that buys nothing.
+
+## Not verifiable locally — open gate
+
+**Security headers.** `vite preview` does not implement `_headers`: a probe
+header was absent on every path, and the `cache-control` on `/assets/*` seen
+earlier was Vite's own default for fingerprinted files, not the rule. Setting
+them from a route loader does not work either — every page is prerendered and
+served by Workers Assets, so the loader runs at build time and never touches the
+response. The rules in `public/_headers` are the right production mechanism but
+must be confirmed with `curl -I` against a **deployed preview**.
 
 ## Worker
 
