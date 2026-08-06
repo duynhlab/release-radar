@@ -15,7 +15,7 @@ export function SearchField({
   return (
     <div className="relative flex-1">
       <Search
-        className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-fg-subtle"
+        className="pointer-events-none absolute left-2.5 top-1/2 size-3.5 -translate-y-1/2 text-fg-subtle"
         aria-hidden="true"
       />
       <input
@@ -25,11 +25,11 @@ export function SearchField({
         onChange={(e) => onChange(e.target.value)}
         placeholder="Search tools…"
         aria-label="Search tools by name"
-        className="h-10 w-full rounded-control border border-border bg-surface pl-9 pr-16 text-sm text-fg placeholder:text-fg-subtle"
+        className="h-9 w-full rounded-control border border-border bg-surface pl-8 pr-12 text-control text-fg placeholder:text-fg-subtle"
       />
       <kbd
         aria-hidden="true"
-        className="absolute right-3 top-1/2 hidden -translate-y-1/2 rounded border border-border px-1.5 py-0.5 font-mono text-[10px] text-fg-subtle sm:inline-block"
+        className="absolute right-2.5 top-1/2 hidden -translate-y-1/2 rounded-badge border border-border px-1.5 font-mono text-micro leading-5 text-fg-subtle sm:inline-block"
       >
         /
       </kbd>

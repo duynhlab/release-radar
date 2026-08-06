@@ -19,7 +19,7 @@ function ExternalLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex min-h-10 items-center text-sm text-accent hover:underline"
+      className="inline-flex min-h-10 items-center text-body text-accent hover:underline"
     >
       {children}
     </a>
@@ -36,7 +36,7 @@ export function ToolSummary({
   return (
     <header className="space-y-3">
       <div className="flex flex-wrap items-center gap-3">
-        <h1 className="text-2xl font-bold tracking-tight text-fg">
+        <h1 className="text-detail-title font-semibold tracking-tight text-fg">
           {tool.name}
         </h1>
         <CategoryBadge category={tool.category} asLink />
@@ -74,19 +74,19 @@ export function ToolSummary({
       {tool.latest ? (
         <div className="rounded-card border border-border bg-surface p-4">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-            <span className="font-mono text-xl font-semibold text-fg">
+            <span className="font-mono text-version font-semibold text-fg">
               {tool.latest.version}
             </span>
             <ChannelBadge channel={tool.latest.channel} />
-            <span className="text-sm text-fg-muted">
+            <span className="text-body text-fg-muted">
               {formatDate(tool.latest.publishedAt)}
             </span>
             <TimeAgo
               iso={tool.latest.publishedAt}
-              className="text-sm text-fg-subtle"
+              className="text-body text-fg-subtle"
             />
           </div>
-          {gap ? <p className="mt-1 text-xs text-fg-subtle">{gap}</p> : null}
+          {gap ? <p className="mt-1 text-meta text-fg-subtle">{gap}</p> : null}
           <div className="mt-3 flex flex-wrap gap-2">
             <CopyVersionButton version={tool.latest.version} />
             <Button variant="outline" size="md" asChild>

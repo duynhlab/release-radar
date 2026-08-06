@@ -3,6 +3,8 @@ import { useMemo, useState } from "react";
 import type { Category, IndexTool } from "@/domain/types";
 import { Button } from "@/components/ui/button";
 import { Sheet } from "@/components/ui/sheet";
+import { CountPill } from "@/components/ui/count-pill";
+import { SectionLabel } from "@/components/ui/section-label";
 import { ToolGrid } from "@/components/catalog/tool-grid";
 import { useFavorites } from "@/features/favorites/use-favorites";
 import { useNow } from "@/lib/use-now";
@@ -70,9 +72,9 @@ export function HomeExplorer({
                 <SlidersHorizontal className="size-4" aria-hidden="true" />
                 Filters
                 {filterCount > 0 ? (
-                  <span className="ml-1 rounded-pill bg-accent px-1.5 text-xs text-accent-fg">
+                  <CountPill tone="accent" className="ml-1">
                     {filterCount}
-                  </span>
+                  </CountPill>
                 ) : null}
               </Button>
             }
@@ -105,7 +107,7 @@ export function HomeExplorer({
         <div className="flex items-center gap-3">
           {/* role="status" on an always-present node, so filter changes coalesce
               into one polite announcement instead of one per keystroke. */}
-          <p role="status" className="text-sm text-fg-muted">
+          <p role="status" className="text-body text-fg-muted">
             {visible.length === tools.length
               ? `${tools.length} tools`
               : `${visible.length} of ${tools.length} tools`}
@@ -120,8 +122,8 @@ export function HomeExplorer({
 
       {visible.length === 0 ? (
         <div role="status" className="py-16 text-center">
-          <p className="text-base font-medium text-fg">No tools match</p>
-          <p className="mt-1 text-sm text-fg-muted">
+          <p className="text-body font-medium text-fg">No tools match</p>
+          <p className="mt-1 text-body text-fg-muted">
             {search.favorites
               ? "You have no favorites matching these filters. Star a tool to pin it here."
               : "Try a different search term or clear the filters."}
@@ -160,12 +162,9 @@ function Section({
   if (tools.length === 0) return null;
   return (
     <section aria-label={title}>
-      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-fg-muted">
+      <SectionLabel className="mb-2.5" count={tools.length}>
         {title}
-        <span className="ml-2 rounded-pill bg-surface-hover px-2 py-0.5 text-xs font-medium normal-case text-fg-muted">
-          {tools.length}
-        </span>
-      </h2>
+      </SectionLabel>
       <ToolGrid tools={tools} />
     </section>
   );

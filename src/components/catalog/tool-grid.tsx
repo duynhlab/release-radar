@@ -1,4 +1,5 @@
 import type { IndexTool } from "@/domain/types";
+import { TOOL_GRID_CLASS } from "./grid";
 import { useFavorites } from "@/features/favorites/use-favorites";
 import { ToolCard } from "./tool-card";
 
@@ -10,7 +11,7 @@ import { ToolCard } from "./tool-card";
 export function ToolGrid({ tools }: { tools: readonly IndexTool[] }) {
   const { favorites, toggleFavorite } = useFavorites();
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className={TOOL_GRID_CLASS}>
       {tools.map((tool) => (
         <ToolCard
           key={tool.id}

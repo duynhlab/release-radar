@@ -15,10 +15,10 @@ export function NotFound({
 
   return (
     <div className="py-24 text-center">
-      <h1 className="text-2xl font-bold tracking-tight text-fg">
+      <h1 className="text-page-title font-semibold tracking-tight text-fg">
         Page not found
       </h1>
-      <p className="mt-2 text-sm text-fg-muted">{body}</p>
+      <p className="mt-2 text-body text-fg-muted">{body}</p>
       <Button variant="solid" size="md" asChild className="mt-6">
         <Link to="/">Back to all tools</Link>
       </Button>

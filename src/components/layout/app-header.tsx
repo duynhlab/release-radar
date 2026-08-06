@@ -15,7 +15,7 @@ export function AppHeader({ generatedAt }: { generatedAt: string }) {
           <span aria-hidden="true">📡</span>
           Release Radar
         </Link>
-        <span className="ml-auto hidden text-xs text-fg-muted sm:inline">
+        <span className="ml-auto hidden text-meta text-fg-muted sm:inline">
           synced <TimeAgo iso={generatedAt} />
         </span>
         <Tooltip label="Source on GitHub">

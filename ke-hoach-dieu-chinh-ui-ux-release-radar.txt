@@ -1,0 +1,765 @@
+KE HOACH DIEU CHINH UI/UX RELEASE RADAR
+Compact Technical UI - TanStack Start
+
+Ngay lap ke hoach: 2026-08-06
+Trang thai: De xuat de review truoc khi code
+Pham vi: UI/UX cua ban Release Radar lam moi tren TanStack Start
+
+======================================================================
+1. KET LUAN VA HUONG THIET KE
+======================================================================
+
+Ban UI moi hien tai sach, de doc, nhung chua dat do sac net va mat do thong
+tin nhu chmonitor. Nguyen nhan chinh khong phai TanStack Start, Tailwind hay
+shadcn/ui. Nguyen nhan la he thong typography, spacing, sizing va visual
+hierarchy dang qua rong, qua lon va con gan voi default component.
+
+Huong de xuat:
+
+  "Compact Technical UI"
+
+Muc tieu cua huong nay:
+
+- Nho gon, sac net, nhieu thong tin nhung khong roi mat.
+- Co cam giac cua mot cong cu ky thuat danh cho developer/DevOps.
+- Mau sac chi dung de truyen dat category, status va action quan trong.
+- Khoang trang co chu dich, khong tao card cao chi de lap day grid.
+- Light mode la mat chinh; dark mode van phai duoc thiet ke day du.
+- Hoc nguyen tac density cua chmonitor, khong sao chep bo cuc dashboard cua ho.
+
+Stack giu nguyen:
+
+- TanStack Start + TanStack Router, file-based routing, SSR-capable.
+- React 19 + TypeScript.
+- Vite + @cloudflare/vite-plugin.
+- Tailwind CSS v4.
+- shadcn/ui chi dung primitive can thiet, co wrapper rieng cho Release Radar.
+- Geist Variable cho sans, Geist Mono cho version/code/technical values.
+- Lucide icons.
+- agent-browser cua Vercel Labs de audit E2E, accessibility tree, computed
+  styles, Web Vitals va visual screenshot diff.
+
+Tham khao:
+
+- https://github.com/chmonitor/chmonitor
+- https://github.com/chmonitor/chmonitor/blob/main/docs/knowledge/product-design.md
+- https://github.com/vercel-labs/agent-browser
+
+======================================================================
+2. VAN DE CUA UI HIEN TAI
+======================================================================
+
+2.1. Trang danh sach tools
+
+- Page title va body text lon hon muc can thiet cho dashboard ky thuat.
+- Search, select va Favorites cao, tao cam giac form mac dinh.
+- Filter chips tach roi, nhieu pill va chua tao thanh mot filter bar thong nhat.
+- Card co padding lon va bi ep cao, tao khoang trang chet giua badge va version.
+- Title, description, version, time va icon co visual weight gan nhau.
+- Favorite star va footer icons noi hon vai tro that su cua chung.
+- Dong "68 tools" dung mot minh, tao them vertical gap nhung it gia tri.
+- Grid 4 cot nhung mat do chi tuong duong 2-3 cot.
+- Hover/focus state chua tao cam giac card la mot doi tuong co the mo.
+
+2.2. Trang chi tiet tool
+
+- Breadcrumb, title, description, links, tags va latest release tach thanh qua
+  nhieu tang, lam phan dau trang rat dai.
+- Khu vuc noi dung qua rong doi voi release notes.
+- Latest release card lon hon gia tri thong tin no mang lai.
+- Compare link bi day sang phai, mat lien he truc quan voi release tuong ung.
+- Release history rows cao; 20 releases se tao scroll rat dai.
+- Related tools trai ngang toan container, tao nhieu khoang trang.
+- Markdown body chua co reading width, type scale va rhythm rieng.
+
+2.3. Cam giac tong the
+
+- UI sach nhung giong component demo hon la mot san pham da co visual language.
+- Qua nhieu kich thuoc 16-18px cho thong tin thu cap.
+- Border, radius va background da dung nhung chua co token system ro rang.
+- Thieu su phan biet giua primary information va metadata.
+
+======================================================================
+3. DESIGN PRINCIPLES BAT BUOC
+======================================================================
+
+3.1. Information first
+
+- Moi card phai doc duoc theo thu tu: ten tool -> mo ta -> phan loai -> release
+  hien tai -> thoi gian -> metadata/actions.
+- Khong de icon, badge hoac decorative element canh tranh voi version va title.
+
+3.2. Mot tin hieu cho mot y nghia
+
+- Category: badge mau nhe.
+- Stability: badge status.
+- Publisher/owner: neutral text/badge.
+- Khong dung cung luc colored rail + colored border + colored background cho
+  cung mot trang thai.
+
+3.3. Compact nhung accessible
+
+- Visual height cua control co the la 32-36px.
+- Icon button van phai co clickable hit area toi thieu 40px tren touch device.
+- Keyboard focus ro rang va khong bi global shadow rule lam mat.
+- Khong giam text body duoi 13px; metadata co the 11-12px.
+
+3.4. Content-driven height
+
+- Card khong duoc ep cao chi de cac dong bang nhau.
+- Dung line clamp va grid alignment co chu dich.
+- Empty space phai giup phan nhom, khong phai bu cho layout.
+
+3.5. Primitives khong quyet dinh visual language
+
+- Khong sua truc tiep component sinh boi shadcn CLI neu co the tranh.
+- Tao wrapper/app component cho compact Button, FilterChip, ToolCard,
+  ReleaseRow va MarkdownContent.
+- Moi component phai dung semantic design token, khong rai raw color tuy y.
+
+======================================================================
+4. DESIGN TOKENS DE XUAT
+======================================================================
+
+4.1. Typography
+
+Font sans:
+
+- Geist Variable.
+- Fallback: ui-sans-serif, system-ui, sans-serif.
+
+Font mono:
+
+- Geist Mono.
+- Dung cho version, package/chart name, code va tabular technical values.
+
+Type scale desktop:
+
+- Page title: 22px / 1.2 / 600 / tracking-tight.
+- Tool detail title: 24px / 1.2 / 600 / tracking-tight.
+- Section heading: 13px / 1.25 / 600.
+- Section label uppercase: 11px / 1.2 / 600 / tracking 0.06em.
+- Card title: 15px / 1.3 / 600.
+- Body/description: 13px / 1.4 / 400.
+- Control label: 13px / 1.2 / 500.
+- Metadata: 12px / 1.35 / 400.
+- Micro metadata/badge: 11px / 1.2 / 500.
+- Version primary: 16px / 1.3 / 500-600 / Geist Mono.
+- Markdown body: 14px / 1.6, gioi han reading width.
+
+Quy tac font weight:
+
+- Uu tien 400, 500 va 600.
+- Chi dung 700 cho mot metric that su quan trong; khong dung 700 dai tra.
+- Dung tabular-nums cho date counters, version statistics va tool counts.
+
+4.2. Spacing scale
+
+- Micro gap: 4px.
+- Inline gap: 6-8px.
+- Component gap: 12px.
+- Grid gap: 12px desktop nho, 16px desktop rong.
+- Card padding: 14px mobile, 16px desktop.
+- Section gap: 28-32px.
+- Page top/bottom padding: 32px desktop, 20px mobile.
+- Header height: 56px desktop, 52px mobile.
+
+4.3. Control sizing
+
+- Default button: 32px.
+- Large/search/select: 36px.
+- Small button: 28px.
+- Icon glyph: 14-16px, stroke-width 1.5.
+- Badge height: 20px; text 11px; horizontal padding 6-8px.
+- Search shortcut hint: 18-20px; text 10px.
+
+4.4. Radius, border va shadow
+
+- Base radius: 10px.
+- Card radius: 10-12px.
+- Control radius: 7-9px.
+- Badge radius: 5-6px; khong mac dinh rounded-full.
+- Border light: neutral oklch gan 0.92.
+- Border dark: white 10-12% opacity.
+- Khong dung shadow tren page cards o trang thai thuong.
+- Hover: tang border contrast va background tint nhe.
+- Overlay/popover/dialog moi duoc dung shadow ro hon.
+
+4.5. Color system
+
+- Background light: gan white/neutral, khong dung xam xanh ro.
+- Surface: white hoac card semantic token.
+- Foreground: neutral gan den, khong pure black cho tat ca text.
+- Muted foreground: contrast du WCAG AA cho text 12-13px.
+- Brand/accent chi dung cho active state, link va focus ring.
+- Category badges dung tint nhe; status stable dung emerald nhe.
+- Khong dung saturation cao tren dien tich lon.
+
+======================================================================
+5. BO CUC TRANG DANH SACH
+======================================================================
+
+5.1. App header
+
+- Cao 56px, border-bottom 1px.
+- Logo/name ben trai.
+- Ben phai gom synced time, GitHub, theme switch.
+- Icon button visual 28-32px, hit area dat 40px.
+- Khong de header cao hoac rong hon nhu cau.
+
+5.2. Hero/summary
+
+- Page title va summary dat trong mot block gon.
+- "68 tools tracked" va "updated ..." nam cung mot metadata row.
+- Khong lap lai "68 tools" thanh dong rieng phia duoi filters.
+- Khoang cach title -> metadata: 4px.
+- Khoang cach summary -> toolbar: 24px.
+
+5.3. Search va filters
+
+Desktop:
+
+- Row 1: search flex-1, tag select, sort select, favorites toggle.
+- Tat ca cao 36px.
+- Row 2: category filter thanh mot horizontal compact strip.
+- Active category co background foreground/brand ro rang.
+- Inactive category gan nhu text-only hoac neutral surface rat nhe.
+- Neu overflow: horizontal scroll + edge fade, khong wrap thanh 2 dong lon.
+
+Mobile:
+
+- Search full width.
+- Filter/sort/favorites nam row ke tiep va cho horizontal scroll neu can.
+- Category strip scroll ngang.
+- Khong chen tat ca control thanh nhieu dong cao.
+
+5.4. Section header
+
+- "RELEASED TODAY" va count nam cung mot dong.
+- Label 11px uppercase, tracking nhe.
+- Count la muted text hoac compact badge trung tinh.
+- Section gap 28-32px; header -> grid 10-12px.
+
+5.5. Tool card anatomy
+
+Thu tu noi dung:
+
+  Tool name                                      Favorite
+  Description toi da hai dong
+  Category | Publisher | Stability
+
+  Current version                         Relative time
+  Release delta/previous release metadata
+  ----------------------------------------------------
+  History | GitHub | Website
+
+Yeu cau:
+
+- Card target height: khoang 190-215px voi noi dung pho bien.
+- Card title 15px, toi da mot dong; tooltip hoac accessible title khi truncate.
+- Description 13px, toi da hai dong.
+- Badges nam cung mot flexible row; cho wrap toi da 2 dong tren mobile.
+- Version va relative time nam cung baseline.
+- Khong dung spacer flex lon de ep version xuong day.
+- Footer chiem 28-32px va chi co border-top nhe.
+- Footer icon 14px, muted; tang contrast khi hover/focus.
+- Ca card la primary navigation target.
+- Inner action dung stopPropagation de van hoat dong doc lap.
+- Hover: border dam hon mot bac, background tint rat nhe, khong lift/shadow lon.
+- Focus-visible: ring ro va khong bi cat bo.
+
+5.6. Grid responsive
+
+- >= 1280px: 4 cot.
+- 900-1279px: 3 cot.
+- 640-899px: 2 cot.
+- < 640px: 1 cot.
+- Container de xuat: max-width 1320-1360px.
+- Khong tang max-width neu card tro nen qua rong va mat density.
+
+======================================================================
+6. BO CUC TRANG CHI TIET TOOL
+======================================================================
+
+6.1. Header block
+
+- Breadcrumb compact, 12px.
+- Title, category va stable badge nam cung mot visual group.
+- Description nam ngay duoi title, max-width 80ch.
+- Repo/Website/Docs va topic tags nam trong mot metadata/action row gon.
+- Toan bo header khong nen vuot 180-220px tren desktop voi content pho bien.
+
+6.2. Latest release summary
+
+- Chuyen card lon thanh compact summary strip cao khoang 72-88px.
+- Hien version, status, date, relative time va release delta.
+- Copy version va View on GitHub la small actions 28-32px.
+- Tren mobile, action co the xuong dong nhung khong tang padding qua lon.
+
+6.3. Related ecosystem
+
+- Dung mot bordered list/strip gon thay vi card cao.
+- Moi item: tool name + version, khong can cot rong bang nhau neu content it.
+- Desktop co the wrap 2-4 items; mobile thanh vertical rows.
+- Title section 11px uppercase va muted.
+
+6.4. Release history
+
+Collapsed row:
+
+- Cao target 56-64px.
+- Version, status, date, compare action va expand affordance cung mot row.
+- Compare action nam gan release, khong bi day xa den tan mep container.
+- Neu compare text dai, hien label ngan "Compare" va tooltip/full accessible
+  name.
+
+Expanded row:
+
+- Markdown body max-width 80ch.
+- Body 14px, line-height 1.6.
+- Heading scale gon, khong de h1/h2 tu Markdown lon nhu page heading.
+- Code/version dung Geist Mono.
+- List spacing 6-8px.
+- External link co icon hoac accessible indicator nhe.
+- Sanitize theo pipeline @tanstack/markdown da chon trong greenfield plan.
+- Long code/pre co horizontal scroll; khong lam page overflow.
+
+6.5. Desktop width
+
+- Container chung co the 1320-1360px.
+- Text content ben trong release notes phai gioi han 80ch.
+- Khong de mot doan release note chay suot 1300px.
+
+======================================================================
+7. COMPONENT VA CODE ORGANIZATION
+======================================================================
+
+De xuat tach thanh cac lop:
+
+Foundation:
+
+- src/styles.css: theme tokens, font, base typography, light/dark.
+- src/styles/density.css neu can tach density rules.
+- src/lib/design-tokens.ts chi khi JavaScript can dung cung gia tri.
+
+Primitives/wrappers:
+
+- CompactButton.
+- IconAction.
+- CompactBadge.
+- FilterChip/FilterStrip.
+- SectionHeader.
+- Surface/CardShell.
+- MarkdownContent.
+
+Feature components:
+
+- ReleaseRadarHeader.
+- CatalogToolbar.
+- CategoryFilters.
+- ToolGrid.
+- ToolCard.
+- ToolDetailHeader.
+- LatestReleaseSummary.
+- RelatedToolsStrip.
+- ReleaseHistory.
+- ReleaseRow.
+
+Quy tac:
+
+- Khong rai class string dai va khac nhau cho moi card.
+- ToolCard va ReleaseRow phai co mot source of truth cho sizing.
+- UI primitive khong duoc biet data-fetching/Octokit.
+- Route chi compose sections; feature component xu ly presentation.
+- Dung semantic HTML va accessible names truoc khi them data-testid.
+- data-testid chi them cho flow kho tim bang role/name.
+
+======================================================================
+8. CAC GIAI DOAN THUC HIEN
+======================================================================
+
+PHASE 0 - BASELINE VA UI INVENTORY
+
+Cong viec:
+
+- Chup baseline light/dark cho home va tool detail.
+- Ghi lai viewport desktop rong, desktop thuong, tablet va mobile.
+- Dung agent-browser lay accessibility snapshot va computed styles cua:
+  body, page title, search, select, ToolCard, badge, version va release row.
+- Liet ke tat ca component hien dang dung shadcn default sizing.
+- Xac dinh component nao bi duplicate style.
+
+Deliverables:
+
+- Baseline screenshots.
+- Bang current vs target font-size/control-height/card-height.
+- Danh sach component can sua.
+
+Exit gate:
+
+- Co the do duoc hien trang; khong danh gia chi bang cam giac.
+
+PHASE 1 - FOUNDATION TOKENS VA TYPOGRAPHY
+
+Cong viec:
+
+- Cai/load Geist Variable va Geist Mono dung cach, khong chi them dependency.
+- Khai bao font-sans/font-mono trong Tailwind v4 CSS-first tokens.
+- Them semantic light/dark tokens bang OKLCH.
+- Chuan hoa base radius, border, muted foreground va focus ring.
+- Chuan hoa page/container spacing.
+- Them font smoothing va tabular number rules neu can.
+
+Exit gate:
+
+- Body, heading, mono version va metadata dung dung computed font family/size.
+- Light/dark khong flash sai theme khi hydrate.
+- Contrast dat muc chap nhan duoc.
+
+PHASE 2 - COMPACT PRIMITIVES
+
+Cong viec:
+
+- Tao compact button/icon action/badge/filter wrappers.
+- Chuan hoa visual height 28/32/36px.
+- Bao toan keyboard focus va touch hit area.
+- Chuan hoa card shell, border va hover/focus treatment.
+- Khong sua shadcn primitive neu co the customize qua wrapper/call site.
+
+Exit gate:
+
+- Khong con page feature nao tu dat button cao 40-44px neu khong co ly do.
+- Tat ca icon action co accessible name.
+
+PHASE 3 - HOME HEADER, SEARCH VA FILTERS
+
+Cong viec:
+
+- Rut gon app header.
+- Gom tool count va updated time vao summary row.
+- Chuan hoa search/select/favorites 36px.
+- Doi category pills thanh compact filter strip.
+- Ho tro query-string state, back/forward va keyboard.
+- Kiem tra no-JS/SSR initial render khong bi layout jump lon.
+
+Exit gate:
+
+- Toolbar chiem it nhat 20-30% chieu cao hon ban cu.
+- Filter state ro rang va khong phu thuoc chi vao mau.
+
+PHASE 4 - TOOL CARD VA GRID
+
+Cong viec:
+
+- Viet lai anatomy ToolCard.
+- Giam typography, padding va icon weight.
+- Bo forced spacer/forced excessive height.
+- Chuyen whole card thanh navigation target.
+- Chuan hoa favorite va footer actions.
+- Hoan thien 4/3/2/1-column responsive grid.
+
+Exit gate:
+
+- O viewport desktop rong, user scan duoc it nhat 8 cards ma khong can cuon
+  nhieu hon baseline.
+- Card pho bien cao 190-215px.
+- Khong co card title/description lam vo grid.
+
+PHASE 5 - TOOL DETAIL VA RELEASE HISTORY
+
+Cong viec:
+
+- Gom detail header thanh block compact.
+- Doi latest release thanh summary strip.
+- Rut gon related tools.
+- Viet lai ReleaseRow collapsed/expanded.
+- Dua compare action ve gan release.
+- Gioi han Markdown 80ch va chuan hoa Markdown typography.
+- Kiem tra release notes co table, list, link, code va long token.
+
+Exit gate:
+
+- Collapsed release row cao 56-64px.
+- Mo/dong release khong layout shift bat thuong.
+- Markdown an toan, de doc va khong overflow.
+
+PHASE 6 - RESPONSIVE, DARK MODE VA ACCESSIBILITY
+
+Cong viec:
+
+- Test 390x844, 768x1024, 1440x900 va 2048x1190.
+- Test 200% zoom va text scaling.
+- Test light, dark va system theme.
+- Test keyboard-only: search, filters, card, favorite, actions, release expand.
+- Test reduced motion.
+- Kiem tra focus order va accessible names qua snapshot.
+- Kiem tra contrast text, badge, border va focus ring.
+
+Exit gate:
+
+- Khong horizontal page overflow.
+- Khong mat action khi khong co hover.
+- Tat ca flow chinh chay duoc bang keyboard.
+- Dark mode khong chi la dao mau cua light mode.
+
+PHASE 7 - AGENT-BROWSER E2E VA VISUAL AUDIT
+
+Setup de xuat:
+
+- Pin agent-browser trong devDependencies hoac toolchain version duoc review.
+- Cai browser mot lan bang `agent-browser install`.
+- Them scripts de khoi dong preview va audit tren preview build.
+- Audit preview/deployment bundle, khong chi Vite dev server.
+
+Flow E2E bat buoc:
+
+1. Home render:
+   - Mo trang home.
+   - Cho network idle.
+   - Snapshot accessibility tree.
+   - Assert heading, tool count va section headings.
+   - Assert khong co console errors/page errors.
+
+2. Search:
+   - Fill search theo accessible placeholder/label.
+   - Assert ket qua thu hep.
+   - Clear search va assert catalog khoi phuc.
+
+3. Category filter:
+   - Chon category bang role/name.
+   - Assert URL/query state va visible cards.
+   - Back/forward va assert state duoc khoi phuc.
+
+4. Sort/favorites:
+   - Doi sort.
+   - Toggle favorite.
+   - Reload va assert local persistence neu day la product requirement.
+
+5. Card navigation:
+   - Navigate bang whole card.
+   - Assert URL, heading, latest release va history.
+   - Mo link/action ben trong ma khong kich hoat sai card navigation.
+
+6. Release history:
+   - Expand/collapse release notes.
+   - Assert aria-expanded.
+   - Assert Markdown content hien dung.
+   - Assert long code khong lam page overflow.
+
+7. Keyboard:
+   - Tab qua search, filters, cards va actions.
+   - Enter/Space kich hoat dung component.
+   - Focus visible o moi interactive target.
+
+8. Theme:
+   - Set media light va dark.
+   - Screenshot tung theme.
+   - Assert computed background/foreground/border khong rong va khong trung mau.
+
+9. Responsive:
+   - Set viewport cho 390, 768, 1440 va 2048 widths.
+   - Assert grid columns va khong horizontal overflow.
+   - Chup full-page screenshot.
+
+10. Performance sanity:
+    - Chay `agent-browser vitals <url> --json` tren preview build.
+    - Theo doi LCP, CLS, TTFB, FCP, INP va hydration summary.
+    - CLS target <= 0.1; khong co card/grid jump ro rang khi hydrate.
+
+Visual regression:
+
+- Luu baseline theo route + viewport + theme.
+- Dung `agent-browser diff screenshot --baseline ...` de tao pixel diff.
+- Dung threshold nho vua du; khong tang threshold chi de che regression.
+- Review bang mat tat ca diff co thay doi typography, card height, wrapping va
+  focus state.
+- Accessibility snapshot diff bo sung cho visual diff; screenshot pass khong
+  co nghia semantic/accessibility pass.
+
+Computed-style audit:
+
+- Dung `agent-browser get styles` cho cac target quan trong.
+- Kiem tra font family, font size, line height, height, padding, radius,
+  border color va focus treatment.
+- Neu can, dung `agent-browser get box` de do card/control height thuc te.
+
+Debug artifacts khi fail:
+
+- Full-page screenshot.
+- Annotated screenshot.
+- Accessibility snapshot.
+- Console output va page errors.
+- Network requests lien quan.
+- Trace khi loi chi xuat hien trong interaction/hydration.
+
+Exit gate:
+
+- Tat ca flow E2E chinh pass tren preview build.
+- Khong co console/page error.
+- Visual diff da duoc review, khong auto-accept.
+- Vitals khong regression dang ke so voi baseline.
+
+PHASE 8 - CLEANUP VA RELEASE GATE
+
+Cong viec:
+
+- Xoa style duplicate va utility khong con dung.
+- Dam bao dependency UI moi thuc su can thiet.
+- Chay lint, typecheck, unit/component tests va build.
+- Chay agent-browser audit cuoi tren Cloudflare preview.
+- Cap nhat README/design notes voi Compact Technical UI conventions.
+
+Exit gate:
+
+- Build native Cloudflare Workers pass.
+- Light/dark + desktop/mobile da duoc audit.
+- Khong merge neu chi homepage dep ma detail page chua dong bo.
+
+======================================================================
+9. ACCEPTANCE CRITERIA CU THE
+======================================================================
+
+Typography:
+
+[ ] Geist Variable duoc load thuc te va la computed font cua body.
+[ ] Geist Mono la computed font cua version/code.
+[ ] Body/description 13px; metadata 11-12px; page title khoang 22px.
+[ ] Khong con 18px cho card title thong thuong.
+
+Home:
+
+[ ] Header cao khoang 56px.
+[ ] Search/select/favorites cao 36px.
+[ ] Category filters compact va keyboard accessible.
+[ ] Tool count khong lap lai thanh dong rieng thua.
+[ ] Tool cards pho bien cao 190-215px.
+[ ] Desktop rong co 4 cot; tablet/mobile reflow dung.
+[ ] Card hierarchy doc ro trong 2-3 giay khi scan.
+
+Detail:
+
+[ ] Header block compact, khong tao khoang trang chet lon.
+[ ] Latest release dung summary strip, khong phai card cao.
+[ ] Related tools gon.
+[ ] Collapsed release row cao 56-64px.
+[ ] Compare action o gan release.
+[ ] Expanded Markdown max-width 80ch va khong overflow.
+
+Interaction/accessibility:
+
+[ ] Whole card navigation hoat dong bang mouse va keyboard.
+[ ] Inner actions khong trigger nham card navigation.
+[ ] Focus-visible ro o light va dark.
+[ ] Tat ca icon-only button co accessible name.
+[ ] Touch targets du dung tren mobile.
+[ ] prefers-reduced-motion duoc ton trong.
+
+Quality:
+
+[ ] Khong console error/page error.
+[ ] Khong horizontal overflow tai cac viewport bat buoc.
+[ ] CLS <= 0.1 tren flow chinh.
+[ ] Screenshot diff da review cho home/detail, light/dark, desktop/mobile.
+[ ] lint, typecheck, test va production build pass.
+
+======================================================================
+10. NHUNG DIEU KHONG NEN LAM
+======================================================================
+
+- Khong copy nguyen sidebar/dashboard/chart layout cua chmonitor; Release Radar
+  co information architecture khac.
+- Khong cho rang doi sang TanStack se tu dong lam UI dep hon.
+- Khong giam font dong loat bang CSS scale/zoom.
+- Khong dung 10-11px cho body content chi de tang density.
+- Khong them gradient blob, glow, glass va animation neu khong mang thong tin.
+- Khong dung shadow de phan biet moi card.
+- Khong de tat ca badge thanh rounded-full pill.
+- Khong ep fixed height lon cho card.
+- Khong chi test homepage; detail va Markdown moi la noi de bi regression.
+- Khong thay visual review bang mot pixel-diff threshold qua de dai.
+- Khong merge UI reset cung luc voi thay doi data model/routing lon neu co the
+  tach rieng; kho review va kho rollback.
+
+======================================================================
+11. THU TU PR/COMMIT DE XUAT
+======================================================================
+
+PR 1 - UI foundation
+
+- Fonts, tokens, base typography, compact primitives.
+- Khong thay doi feature behavior.
+
+PR 2 - Home compact layout
+
+- Header, toolbar, filters, ToolCard va responsive grid.
+- Them agent-browser flows cho home.
+
+PR 3 - Tool detail compact layout
+
+- Detail header, latest summary, related tools, ReleaseRow, Markdown styling.
+- Them agent-browser flows cho detail/Markdown.
+
+PR 4 - Visual hardening
+
+- Dark mode, mobile, accessibility, screenshot baselines/diffs, vitals.
+- Cleanup duplicate styles va cap nhat design notes.
+
+Moi PR phai co:
+
+- Before/after screenshots cung viewport.
+- Light va dark neu co thay doi token/component chung.
+- Danh sach computed sizes quan trong.
+- Ket qua lint/typecheck/test/build.
+- Ket qua agent-browser audit lien quan.
+
+======================================================================
+12. UOC LUONG VA UU TIEN
+======================================================================
+
+Uu tien P0:
+
+- Typography/tokens.
+- Control sizing.
+- ToolCard anatomy va forced height.
+- Detail release row/Markdown width.
+- Focus/accessibility regression.
+
+Uu tien P1:
+
+- Filter strip polish.
+- Hover transitions.
+- Visual screenshot automation.
+- Dark mode refinement.
+
+Uu tien P2:
+
+- Micro-animation co reduced-motion.
+- Optional compact/comfortable density preference cho user.
+- Advanced skeleton polish.
+
+Uoc luong cho mot developer da quen codebase:
+
+- Phase 0-2: 1-2 ngay.
+- Phase 3-4: 1-2 ngay.
+- Phase 5: 1-2 ngay.
+- Phase 6-8: 1-2 ngay.
+- Tong: khoang 4-8 ngay lam viec, tuy muc do component hien tai da tach tot
+  hay chua va so luong regression phat hien trong audit.
+
+======================================================================
+13. DEFINITION OF DONE
+======================================================================
+
+UI reset chi duoc xem la hoan thanh khi:
+
+- Release Radar co visual language "Compact Technical UI" nhat quan.
+- Home va detail cung mot typography/spacing/component system.
+- Mat do thong tin tang nhung van de doc va accessible.
+- Card khong con cam giac template hoac bi keo cao vo ly.
+- Markdown release notes doc tot va an toan.
+- Light/dark/mobile/keyboard deu duoc audit.
+- agent-browser E2E, accessibility snapshot, computed-style audit, screenshot
+  diff va Web Vitals da chay tren production preview build.
+- Tat ca quality gates cua du an pass truoc khi merge/deploy.
+
+HET

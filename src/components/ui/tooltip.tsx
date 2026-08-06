@@ -28,7 +28,7 @@ export function Tooltip({
       <RadixTooltip.Portal>
         <RadixTooltip.Content
           sideOffset={6}
-          className="z-50 rounded-control border border-border bg-surface px-2 py-1 text-xs text-fg shadow-overlay"
+          className="z-50 rounded-control border border-border bg-surface px-2 py-1 text-meta text-fg shadow-overlay"
         >
           {label}
           <RadixTooltip.Arrow className="fill-border" />

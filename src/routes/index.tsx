@@ -58,10 +58,10 @@ function HomePage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-fg">
+        <h1 className="text-page-title font-semibold tracking-tight text-fg">
           DevOps release tracker
         </h1>
-        <p className="mt-1 text-sm text-fg-muted">
+        <p className="mt-1 text-body text-fg-muted">
           {tools.length} tools tracked · data updated {formatDate(generatedAt)}
         </p>
       </div>

@@ -1,3 +1,4 @@
+import { TOOL_GRID_CLASS } from "@/components/catalog/grid";
 import { cn } from "@/lib/cn";
 
 /**
@@ -20,13 +21,13 @@ export function Skeleton({ className }: { className?: string }) {
 /** Matches the tool card's shape so the grid does not jump when data lands. */
 export function ToolCardSkeleton() {
   return (
-    <div className="flex min-h-52 flex-col gap-2 rounded-card border border-border bg-surface p-3">
+    <div className="flex flex-col gap-2 rounded-card border border-border bg-surface p-4">
       <div className="flex items-start justify-between gap-2">
         <div className="w-full space-y-2">
           <Skeleton className="h-5 w-2/3" />
           <Skeleton className="h-4 w-full" />
         </div>
-        <Skeleton className="size-10 shrink-0 rounded-control" />
+        <Skeleton className="size-8 shrink-0 rounded-control" />
       </div>
       <div className="flex gap-2">
         <Skeleton className="h-5 w-20" />
@@ -44,11 +45,11 @@ export function CatalogSkeleton({ cards = 8 }: { cards?: number }) {
   return (
     <div role="status" aria-label="Loading tools" className="space-y-6">
       <div className="flex flex-col gap-3 sm:flex-row">
-        <Skeleton className="h-10 flex-1" />
-        <Skeleton className="h-10 w-40" />
-        <Skeleton className="h-10 w-32" />
+        <Skeleton className="h-9 flex-1" />
+        <Skeleton className="h-9 w-40" />
+        <Skeleton className="h-9 w-32" />
       </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className={TOOL_GRID_CLASS}>
         {Array.from({ length: cards }, (_, i) => (
           <ToolCardSkeleton key={i} />
         ))}
