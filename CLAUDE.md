@@ -227,6 +227,36 @@ resolution. Route and component code uses `@/…`.
 Framework and build-chain deps are pinned **exact**; they move only through a
 reviewed dependency PR.
 
+## Compact Technical UI conventions
+
+Type sizes are eight **named tiers**, chosen by role, declared in
+`src/styles/app.css`: `micro` 11 · `meta` 12 · `control` 13 · `body` 14 ·
+`card-title` 15 · `version` 16 · `page-title` 22 · `detail-title` 24.
+`tests/unit/styles.test.ts` fails the build on a raw `text-sm`, an arbitrary
+`text-[13px]`, a weight above 600, or a bare `rounded`.
+
+- **Density comes from controls and spacing, not from small body text.** Body
+  and descriptions stay at 14px; controls are 13px, metadata 12px.
+- **Control heights are 28 / 32 / 36.** Icon buttons are 32px visually and carry
+  `hit-40`, a pseudo-element that widens the pointer target to 40px without
+  affecting layout.
+- **Three radii**: `badge` 5px, `control` 8px, `card` 10px. No bare `rounded`.
+- **Borders carry elevation.** The single `shadow-overlay` is for overlays only —
+  never on a page card.
+- **One signal per piece of state.** Don't render the same channel badge or the
+  same date twice on one screen; both happened before this pass.
+- **A new custom utility must be declared to `cn()`** if it shares a Tailwind
+  prefix. tailwind-merge reads `text-<x>` as a colour, so the semantic sizes were
+  silently dropped wherever they met a `text-fg-*` class until `src/lib/cn.ts`
+  declared the font-size group.
+- **Named breakpoints, not arbitrary ones, for layout steps.** Tailwind emits
+  `min-[900px]:` variants *before* the named ones, so `sm:` sorted later and won.
+  `--breakpoint-cards` exists for the grid's 900px step.
+- **Whole-card navigation is a stretched link** (`after:absolute after:inset-0`),
+  not `role="button"` — the card contains a real button and real links. Inner
+  controls sit on `relative z-10`; controls inside a `<summary>` need
+  `stopPropagation` so they don't toggle the disclosure.
+
 ## Key Patterns
 
 - **`src/domain/types.ts` is the single source of truth for shape.** Zod first,
