@@ -1,0 +1,77 @@
+{
+  "tools": 68,
+  "notes": 597,
+  "bareUrl": {
+    "notes": 221,
+    "tools": [
+      "argo-cd",
+      "aws-load-balancer-controller",
+      "cloudnative-pg",
+      "crush",
+      "envoy-gateway",
+      "external-dns",
+      "floci",
+      "flux",
+      "flux-operator",
+      "gatekeeper",
+      "gateway-api",
+      "grafana-helm-charts",
+      "grafana-operator",
+      "headlamp",
+      "helm",
+      "k6-operator",
+      "keda",
+      "kro",
+      "kyverno",
+      "loki",
+      "openbao-helm",
+      "opentelemetry-operator",
+      "opentofu",
+      "pg-cron",
+      "pgduckdb",
+      "pgmoneta",
+      "prometheus",
+      "prometheus-operator",
+      "scylla-operator",
+      "strimzi-kafka-operator",
+      "tempo",
+      "tempo-operator",
+      "traefik-helm-chart",
+      "trivy",
+      "trivy-operator",
+      "trust-manager",
+      "valkey-operator",
+      "victorialogs",
+      "vm-operator",
+      "wal-g"
+    ]
+  },
+  "fullChangelog": 152,
+  "rawHtml": {
+    "notes": 28,
+    "tools": [
+      "argo-cd",
+      "crush",
+      "grafana-operator",
+      "headlamp",
+      "helm",
+      "keda",
+      "pgduckdb",
+      "strimzi-kafka-operator"
+    ]
+  },
+  "indentedCode": {
+    "notes": 0,
+    "tools": []
+  },
+  "setextHeading": 0,
+  "structures": {
+    "links": 4480,
+    "images": 44,
+    "codeFences": 196,
+    "tables": 14,
+    "taskLists": 0,
+    "footnotes": 0,
+    "strikethrough": 0
+  }
+}

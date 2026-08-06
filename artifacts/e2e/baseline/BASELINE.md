@@ -110,5 +110,8 @@ Not regressions — record so the Phase 6 diff review does not re-litigate them:
 - Search also matches tags (today: name, id, group name only).
 - Canonical + Open Graph + sitemap + robots (today: absent).
 - Fonts actually render as Geist (today a stray `body { font-family: Arial }` defeats them).
-- **Accepted regression:** bare URLs in release notes lose their links — 214 notes (35.8%) across
-  36/68 tools — because `@tanstack/markdown` has no autolink literals.
+- **Accepted regression:** bare URLs in release notes lose their links — **221 notes (37.0%) across
+  40/68 tools**, 152 of them mentioning a Full Changelog line — because `@tanstack/markdown` has no
+  autolink literals. Measured by AST walk; see `artifacts/markdown/corpus-report.md`.
+- Raw HTML in 28 notes (8 tools) renders as escaped literal text rather than markup. Zero dangerous
+  HTML, zero indented code blocks, zero Setext headings, zero links rejected by the link policy.
