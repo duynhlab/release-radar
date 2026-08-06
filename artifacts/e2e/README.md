@@ -27,16 +27,33 @@ canonical URL. A redirect-following `curl` would not notice.
 | filter chip | 13px, h=28 | 13 |
 | search / select | 36px | 36 |
 | button · icon button | 32px · 32px visual, 40px hit | 32 · 32/40 |
-| header · container | 57px · 1360px | 56 · 1320–1360 |
-| **card height** | **208px**, 67/68 in range | 190–215 |
+| header | 57px | 56 |
+| **grid container** | **1152px** (`max-w-6xl`) | ~1100 |
+| **reading container** (tool page) | **896px** (`max-w-4xl`) | ~900 |
+| card width | **376px** | ~360 (t3 is 360) |
+| **card height** | **208px** | 190–215 |
 | **detail header** | **151px** | ≤220 |
 | **latest release** | **50px strip** | 72–88 |
 | **collapsed release row** | **50px** | 56–64 |
-| home / tool page height | 4397px / 900px | — |
+| **largest gap between row items** | **8px** (was 944) | — |
+| release notes | 668px (72ch) | ≤80ch |
 
-Grid 4 / 3 / 2 / 1 at ≥1280 / 900–1279 / 640–899 / <640, verified at 2048, 1440,
-1024, 899, 768, 390. No horizontal overflow at any viewport, either page, either
-theme.
+Grid 3 / 2 / 1 at ≥900 / 640–899 / <640, verified at 2048, 1440, 1024, 768, 390.
+No horizontal overflow at any viewport, on either page, in either theme.
+
+### Why two container widths
+
+A grid page and a reading page want different widths, and they used to share one
+at 1360px. That left a release row spreading a version, a badge, a date and two
+links across 1312px with **944px empty — 72% of the row**. Narrowing the column
+halved it; removing the left/right split closed it entirely. The 517px that
+remains is trailing margin at the end of the row, not a hole between two
+islands.
+
+`t3.gg/sponsors` was the reference. Two things it does are worth noting: its
+content column is 1104px with 360px cards, which is where the widths above come
+from — but its grid stays at exactly three 360px columns even at 2048, wasting
+the extra width. That part is deliberately not copied.
 
 ## Accessibility
 

@@ -1,6 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { NotFound } from "@/components/layout/not-found";
+import { PageContainer } from "@/components/layout/page-container";
 import { RelatedTools } from "@/components/catalog/related-tools";
 import { ToolSummary } from "@/components/catalog/tool-summary";
 import { ReleaseHistory } from "@/components/releases/release-history";
@@ -61,7 +62,7 @@ function ToolPage() {
   const { tool, siblings, gap, releases } = Route.useLoaderData();
 
   return (
-    <div className="space-y-5">
+    <PageContainer width="reading" className="space-y-5">
       <Breadcrumb current={tool.name} />
 
       <ToolSummary tool={tool} gap={gap} />
@@ -71,6 +72,6 @@ function ToolPage() {
       ) : null}
 
       <ReleaseHistory releases={releases} repository={tool.repository} />
-    </div>
+    </PageContainer>
   );
 }

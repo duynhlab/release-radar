@@ -13,6 +13,7 @@ import {
   type HomeSearch,
   type HomeSearchInput,
 } from "@/features/catalog/search-params";
+import { PageContainer } from "@/components/layout/page-container";
 import { PageTitle } from "@/components/ui/page-title";
 import { CatalogSkeleton } from "@/components/ui/skeleton";
 import { formatDate } from "@/lib/dates";
@@ -57,7 +58,7 @@ function HomePage() {
   const search = Route.useSearch();
 
   return (
-    <div className="space-y-6">
+    <PageContainer className="space-y-6">
       <PageTitle
         title="DevOps release tracker"
         meta={`${tools.length} tools tracked · updated ${formatDate(generatedAt)}`}
@@ -69,6 +70,6 @@ function HomePage() {
         tags={tags}
         search={search}
       />
-    </div>
+    </PageContainer>
   );
 }

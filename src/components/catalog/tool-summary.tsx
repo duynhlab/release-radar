@@ -91,7 +91,7 @@ export function ToolSummary({
             {formatDate(tool.latest.publishedAt)}
           </span>
           {gap ? <span className="text-meta text-fg-subtle">{gap}</span> : null}
-          <div className="ml-auto flex flex-wrap gap-1.5">
+          <div className="flex flex-wrap gap-1.5">
             <CopyVersionButton version={tool.latest.version} />
             <Button variant="outline" size="sm" asChild>
               <a href={tool.latest.url} target="_blank" rel="noopener noreferrer">

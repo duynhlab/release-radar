@@ -3,6 +3,7 @@ import { CATEGORY_LABELS } from "@/domain/types";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { NotFound } from "@/components/layout/not-found";
 import { ToolGrid } from "@/components/catalog/tool-grid";
+import { PageContainer } from "@/components/layout/page-container";
 import { PageTitle } from "@/components/ui/page-title";
 import { CatalogSkeleton } from "@/components/ui/skeleton";
 import { getToolsByCategory, isCategory } from "@/data/catalog";
@@ -40,7 +41,7 @@ function CategoryPage() {
   const label = CATEGORY_LABELS[category];
 
   return (
-    <div className="space-y-6">
+    <PageContainer className="space-y-6">
       <Breadcrumb current={label} />
 
       <PageTitle
@@ -62,6 +63,6 @@ function CategoryPage() {
           <ToolGrid tools={tools} />
         </section>
       )}
-    </div>
+    </PageContainer>
   );
 }
