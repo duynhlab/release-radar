@@ -120,7 +120,7 @@ export function ReleaseItem({
 
         {release.notes ? (
           <div className="px-3 pb-3">
-            <ReleaseNotes markdown={release.notes} />
+            <ReleaseNotes markdown={release.notes} repository={repository} />
           </div>
         ) : (
           <p className="px-3 pb-3 text-meta text-fg-subtle">

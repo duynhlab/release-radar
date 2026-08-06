@@ -7,18 +7,27 @@ inline HTML.
 
 **690 notes with content across 78 tools.**
 
-## Accepted regression — bare URLs
+## Bare URLs — regression closed
 
-TanStack Markdown has no autolink literals, so a bare URL in prose renders as
-plain text. This was accepted knowingly when the renderer was chosen.
+TanStack Markdown has no autolink literals, so a bare URL in prose used to
+render as plain text. That was accepted knowingly when the renderer was chosen,
+and affected 286 notes (41.4%) across 48 tools. `src/lib/note-autolink.ts`
+now rewrites them into link nodes on the AST between parse and render, along
+with `@user`, `#123` and commit SHAs.
 
 | | |
 |---|---|
-| Notes containing a bare prose URL | **286 (41.4%)** |
-| Tools affected | **48 / 78** |
-| …of which mention a Full Changelog line | 194 |
+| Notes containing a bare prose URL | **32 (4.6%)** |
+| Tools affected | **5 / 78** |
+| …of which mention a Full Changelog line | 10 |
 
-Affected tools: argo-cd, aws-load-balancer-controller, bcvk, bootc, cloudnative-pg, cosign, crush, envoy-gateway, external-dns, floci, flux, flux-operator, gatekeeper, gateway-api, grafana-helm-charts, grafana-operator, headlamp, helm, k6-operator, keda, keycloak, ko, kro, kyverno, loki, nerdctl, oauth2-proxy, openbao-helm, opentelemetry-operator, opentofu, pg-cron, pgdog, pgduckdb, pgmoneta, prometheus, prometheus-operator, scylla-operator, strimzi-kafka-operator, tempo, tempo-operator, traefik-helm-chart, trivy, trivy-operator, trust-manager, valkey-operator, victorialogs, vm-operator, wal-g
+Affected tools: argo-cd, crush, headlamp, keycloak, pgdog
+
+What remains is **not prose**: every one is a URL inside an attribute of raw
+HTML that `allowHtml: false` turned into escaped text — `<a href="…">`,
+`<img src="…">`. Autolinking skips those deliberately: linkifying the middle
+of a visibly-broken tag helps nobody, and it used to split the text node so
+that the raw-HTML count below could no longer see the tag at all.
 
 ## Raw HTML
 
@@ -42,7 +51,7 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 
 | Construct | Count |
 |---|---|
-| Links | 4940 |
+| Links | 16986 |
 | Images | 44 |
 | Code fences | 229 |
 | Tables | 14 |

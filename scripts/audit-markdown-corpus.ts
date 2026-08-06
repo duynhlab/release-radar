@@ -2,6 +2,7 @@ import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { parseMarkdown } from "@tanstack/markdown/parser";
 import { NOTES_MARKDOWN_OPTIONS } from "../src/lib/markdown-options.ts";
+import { autolinkNotes } from "../src/lib/note-autolink.ts";
 import { classifyNoteHref } from "../src/lib/note-links.ts";
 import { ToolReleasesFileSchema } from "../src/domain/types.ts";
 
@@ -56,16 +57,29 @@ interface Counts {
 
 type Node = Record<string, unknown>;
 
-function walk(node: unknown, visit: (n: Node) => void): void {
+/**
+ * `inLink` matters because autolinking makes a linked URL's own label a text
+ * node containing "https://". The old rule — "a text node containing https?://
+ * IS a bare URL, because links are link nodes" — held only while nothing
+ * synthesised links from text. Bare-URL counting must now ignore link labels;
+ * the raw-HTML checks still apply everywhere, since a tag in a link label is
+ * just as much escaped text as one in a paragraph.
+ */
+function walk(
+  node: unknown,
+  visit: (n: Node, inLink: boolean) => void,
+  inLink = false,
+): void {
   if (Array.isArray(node)) {
-    for (const child of node) walk(child, visit);
+    for (const child of node) walk(child, visit, inLink);
     return;
   }
   if (!node || typeof node !== "object") return;
   const n = node as Node;
-  visit(n);
+  visit(n, inLink);
+  const nested = inLink || n.type === "link";
   for (const value of Object.values(n)) {
-    if (value && typeof value === "object") walk(value, visit);
+    if (value && typeof value === "object") walk(value, visit, nested);
   }
 }
 
@@ -148,30 +162,50 @@ for (const file of files) {
     counts.notes += 1;
     const where: Finding = { tool: parsed.tool.id, version: release.version };
 
+    // Autolinking runs on the AST between parse and render, so the audit has
+    // to apply it too — otherwise it keeps reporting bare URLs that the app
+    // now renders as links. Timing and determinism cover the transform as a
+    // result, which is where a backtracking pattern would show up.
+    const parse = () =>
+      autolinkNotes(
+        parseMarkdown(markdown, NOTES_MARKDOWN_OPTIONS),
+        parsed.tool.repository,
+      );
+
+    // Raw-HTML findings describe what upstream sent, so they are measured on
+    // the untransformed AST. Measuring them after autolinking made the metric
+    // depend on our own rewriting: extracting a URL out of an escaped
+    // `<img src="…">` split the text node so no single node held a complete
+    // tag, and three notes silently stopped being counted.
+    const rawDoc = parseMarkdown(markdown, NOTES_MARKDOWN_OPTIONS);
+
     const started = performance.now();
-    const doc = parseMarkdown(markdown, NOTES_MARKDOWN_OPTIONS);
+    const doc = parse();
     const elapsed = performance.now() - started;
     if (elapsed > PARSE_BUDGET_MS) {
       counts.slowParse.push({ ...where, sample: `${Math.round(elapsed)}ms` });
     }
 
-    const again = parseMarkdown(markdown, NOTES_MARKDOWN_OPTIONS);
-    if (JSON.stringify(doc) !== JSON.stringify(again)) {
+    if (JSON.stringify(doc) !== JSON.stringify(parse())) {
       counts.nonDeterministic.push(where);
     }
 
     let sawBareUrl = false;
     let sawRawHtml: string | null = null;
 
-    walk(doc, (node) => {
+    walk(rawDoc, (node) => {
+      if (node.type !== "text" || typeof node.value !== "string") return;
+      const tag = HTML_TAG.exec(node.value);
+      if (tag) sawRawHtml ??= tag[0];
+      if (DANGEROUS_HTML.test(node.value)) {
+        counts.dangerousHtml.push({ ...where, sample: node.value.slice(0, 80) });
+      }
+    });
+
+    walk(doc, (node, inLink) => {
       const type = node.type;
       if (type === "text" && typeof node.value === "string") {
-        if (BARE_URL.test(node.value)) sawBareUrl = true;
-        const tag = HTML_TAG.exec(node.value);
-        if (tag) sawRawHtml ??= tag[0];
-        if (DANGEROUS_HTML.test(node.value)) {
-          counts.dangerousHtml.push({ ...where, sample: node.value.slice(0, 80) });
-        }
+        if (!inLink && BARE_URL.test(node.value)) sawBareUrl = true;
       }
       if (type === "link") {
         counts.links += 1;
@@ -246,10 +280,13 @@ inline HTML.
 
 **${counts.notes} notes with content across ${counts.tools} tools.**
 
-## Accepted regression — bare URLs
+## Bare URLs — regression closed
 
-TanStack Markdown has no autolink literals, so a bare URL in prose renders as
-plain text. This was accepted knowingly when the renderer was chosen.
+TanStack Markdown has no autolink literals, so a bare URL in prose used to
+render as plain text. That was accepted knowingly when the renderer was chosen,
+and affected 286 notes (41.4%) across 48 tools. \`src/lib/note-autolink.ts\`
+now rewrites them into link nodes on the AST between parse and render, along
+with \`@user\`, \`#123\` and commit SHAs.
 
 | | |
 |---|---|
@@ -258,6 +295,12 @@ plain text. This was accepted knowingly when the renderer was chosen.
 | …of which mention a Full Changelog line | ${counts.fullChangelog} |
 
 Affected tools: ${toolsWith(counts.bareUrl).join(", ") || "none"}
+
+What remains is **not prose**: every one is a URL inside an attribute of raw
+HTML that \`allowHtml: false\` turned into escaped text — \`<a href="…">\`,
+\`<img src="…">\`. Autolinking skips those deliberately: linkifying the middle
+of a visibly-broken tag helps nobody, and it used to split the text node so
+that the raw-HTML count below could no longer see the tag at all.
 
 ## Raw HTML
 
