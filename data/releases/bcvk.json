@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-08-06T08:59:09.120Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 348287148,
+      "name": "Release v0.18.0",
+      "notes": "Release v0.18.0\r\n\r\nMostly improvements and maintenance work: adds Fedora 44 support, enhances libvirt with new console, graphical console, journal output, and configurable `virtiofsd` support, improves boot and SSH reliability, and includes various CI, documentation, and infrastructure updates.\r\n\r\n## Installation\r\n\r\nDownload the appropriate binary for your platform from the assets below.\r\n\r\n### Linux x86_64 (glibc)\r\n```bash\r\ncurl -LO https://github.com/bootc-dev/bcvk/releases/download/v0.18.0/bcvk-x86_64-unknown-linux-gnu.tar.gz\r\ntar xzf bcvk-x86_64-unknown-linux-gnu.tar.gz\r\nsudo mv bcvk-x86_64-unknown-linux-gnu /usr/local/bin/bcvk\r\n```\r\n\r\n\r\n## Checksums\r\n\r\nVerify the integrity of your download with the provided SHA256 checksums.\r\n\r\n## What's Changed\r\n* Updates for Fedora 44 release by @jeckersb in https://github.com/bootc-dev/bcvk/pull/271\r\n* Justfile: Remove fedora-bootc:42, add fedora-bootc:{43,44} by @jeckersb in https://github.com/bootc-dev/bcvk/pull/272\r\n* docs: Fix incorrect flag in to-disk example by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/275\r\n* Add --virtiofsd CLI option and VIRTIOFSD_BIN env var support by @nickryand in https://github.com/bootc-dev/bcvk/pull/266\r\n* libvirt: add --console-log and --platform-console-log options by @cgwalters in https://github.com/bootc-dev/bcvk/pull/264\r\n* libvirt: Add opt-in --graphical-console flag for SPICE display by @jeckersb in https://github.com/bootc-dev/bcvk/pull/195\r\n* ephemeral: Fix boot for images without virtiofs dracut module by @cgwalters in https://github.com/bootc-dev/bcvk/pull/273\r\n* Fix SSH polling, disable Ignition+FCOS for now by @cgwalters in https://github.com/bootc-dev/bcvk/pull/281\r\n* ci: Enable merge queue support by @cgwalters in https://github.com/bootc-dev/bcvk/pull/283\r\n* kit: extract CommonSshOptions into ssh_options.rs by @tnk4on in https://github.com/bootc-dev/bcvk/pull/280\r\n* libvirt: Set LC_ALL=C for virsh commands by @tnk4on in https://github.com/bootc-dev/bcvk/pull/286\r\n* Add support for journal output by @cgwalters in https://github.com/bootc-dev/bcvk/pull/268\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/288\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/289\r\n* chore: Configure Renovate by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/287\r\n* Release 0.18.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/278\r\n\r\n## New Contributors\r\n* @nickryand made their first contribution in https://github.com/bootc-dev/bcvk/pull/266\r\n* @tnk4on made their first contribution in https://github.com/bootc-dev/bcvk/pull/280\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bcvk/compare/v0.17.0...v0.18.0",
+      "prerelease": false,
+      "publishedAt": "2026-07-02T21:08:01Z",
+      "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.18.0",
+      "version": "v0.18.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 322976304,
+      "name": "Release v0.17.0",
+      "notes": "Release v0.17.0\r\n\r\nUpdated OpenSSL\r\n\r\n## What's Changed\r\n* Cargo.lock: Update openssl to 0.10.79 by @jmarrero in https://github.com/bootc-dev/bcvk/pull/267\r\n* Release 0.17.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/269\r\n\r\n## Installation\r\n\r\nDownload the appropriate binary for your platform from the assets below.\r\n\r\n### Linux x86_64 (glibc)\r\n```bash\r\ncurl -LO https://github.com/bootc-dev/bcvk/releases/download/v0.17.0/bcvk-x86_64-unknown-linux-gnu.tar.gz\r\ntar xzf bcvk-x86_64-unknown-linux-gnu.tar.gz\r\nsudo mv bcvk-x86_64-unknown-linux-gnu /usr/local/bin/bcvk\r\n```\r\n\r\n\r\n## Checksums\r\n\r\nVerify the integrity of your download with the provided SHA256 checksums.\r\n\r\n## New Contributors\r\n* @jmarrero made their first contribution in https://github.com/bootc-dev/bcvk/pull/267\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bcvk/compare/v0.16.0...v0.17.0",
+      "prerelease": false,
+      "publishedAt": "2026-05-15T06:16:27Z",
+      "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.17.0",
+      "version": "v0.17.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 319347612,
+      "name": "Release v0.15.0",
+      "notes": "Release v0.15.0\r\n\r\nUsability improvements and maintenance work: adds a new command to create base disk images, improves CLI help output, fixes containers-storage: image reference handling, improves foreground ephemeral run guidance.\r\n\r\n## What's Changed\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/251\r\n* Add early dependency checks and fix packaging by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/252\r\n* to-disk: Fix containers-storage prefix duplication by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/253\r\n* ephemeral run: Print hint when running in foreground by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/255\r\n* cli: Add examples to ephemeral and libvirt --help by @cgwalters in https://github.com/bootc-dev/bcvk/pull/256\r\n* ephemeral: Add a few more tips to --help by @cgwalters in https://github.com/bootc-dev/bcvk/pull/257\r\n* cli: Add command to create base disk by @Johan-Liebert1 in https://github.com/bootc-dev/bcvk/pull/254\r\n* Release 0.15.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/260\r\n\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bcvk/compare/v0.14.0...v0.15.0",
+      "prerelease": false,
+      "publishedAt": "2026-05-08T08:34:19Z",
+      "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.15.0",
+      "version": "v0.15.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 311469263,
+      "name": "Release v0.14.0",
+      "notes": "Release v0.14.0\r\n\r\nMostly improvements and maintenance work: adds Ignition config injection for libvirt, enhances integration testing with new macros and broader framework support, improves varlink/QEMU fd passing via the CmdFds API, and cleans up inactive Packit configuration.\r\n\r\n## What's Changed\r\n* libvirt: Add Ignition config injection support by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/245\r\n* packit: remove inactive epel10.3 by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/247\r\n* itest: New macro, support for tmt and debian autopkgtest, and more by @cgwalters in https://github.com/bootc-dev/bcvk/pull/246\r\n* varlink,qemu: Use CmdFds API for fd passing  by @cgwalters in https://github.com/bootc-dev/bcvk/pull/248\r\n* Release 0.14.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/249\r\n\r\n## Installation\r\n\r\nDownload the appropriate binary for your platform from the assets below.\r\n\r\n### Linux x86_64 (glibc)\r\n```bash\r\ncurl -LO https://github.com/bootc-dev/bcvk/releases/download/v0.14.0/bcvk-x86_64-unknown-linux-gnu.tar.gz\r\ntar xzf bcvk-x86_64-unknown-linux-gnu.tar.gz\r\nsudo mv bcvk-x86_64-unknown-linux-gnu /usr/local/bin/bcvk\r\n```\r\n\r\n\r\n## Checksums\r\n\r\nVerify the integrity of your download with the provided SHA256 checksums.\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bcvk/compare/v0.13.0...v0.14.0",
+      "prerelease": false,
+      "publishedAt": "2026-04-21T17:07:21Z",
+      "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.14.0",
+      "version": "v0.14.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 303826249,
+      "name": "Release v0.13.0",
+      "notes": "Release v0.13.0\r\n\r\nFocus on packaging and distribution improvements, expanded platform integration, and enhanced ephemeral/libvirt functionality. This release introduces initial varlink IPC support, and adds Ignition config injection for ephemeral guests.\r\n\r\n## What's Changed\r\n* spec: Use ExclusiveArch for supported architectures by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/221\r\n* packit: Enable CentOS Stream builds by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/224\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/223\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/225\r\n* packit: Add CentOS Stream dist-git branches by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/226\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/227\r\n* Add an initial varlink IPC interface by @cgwalters in https://github.com/bootc-dev/bcvk/pull/222\r\n* packit: Add EPEL branches for automated releases by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/230\r\n* itest: Add reusable integration test library crate by @cgwalters in https://github.com/bootc-dev/bcvk/pull/231\r\n* ephemeral: Add Ignition config injection support by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/232\r\n* integration-tests: use itest::TestResult instead of color_eyre by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/238\r\n* libvirt: Disable firmware debug log (isa-debugcon) by default by @cgwalters in https://github.com/bootc-dev/bcvk/pull/229\r\n* Release 0.13.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/235\r\n\r\n## Installation\r\n\r\nDownload the appropriate binary for your platform from the assets below.\r\n\r\n### Linux x86_64 (glibc)\r\n```bash\r\ncurl -LO https://github.com/bootc-dev/bcvk/releases/download/v0.13.0/bcvk-x86_64-unknown-linux-gnu.tar.gz\r\ntar xzf bcvk-x86_64-unknown-linux-gnu.tar.gz\r\nsudo mv bcvk-x86_64-unknown-linux-gnu /usr/local/bin/bcvk\r\n```\r\n\r\n\r\n## Checksums\r\n\r\nVerify the integrity of your download with the provided SHA256 checksums.\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bcvk/compare/v0.12.0...v0.13.0",
+      "prerelease": false,
+      "publishedAt": "2026-03-31T19:47:26Z",
+      "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.13.0",
+      "version": "v0.13.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 290810977,
+      "name": "Release v0.11.0",
+      "notes": "Release v0.11.0\r\n\r\nThere's mainly bugfixes here, but a key one is\r\n\r\n* qemu: Add --allow-mmap to virtiofsd for mmap support by @cgwalters in https://github.com/bootc-dev/bcvk/pull/201\r\n\r\nwhich fixes several important things in `bcvk ephemeral`.\r\n\r\nA small new feature is\r\n\r\n* Introduce `allow-missing-fsverity` parameter by @Johan-Liebert1 in https://github.com/bootc-dev/bcvk/pull/205\r\n\r\nBesides that we mainly have some preparatory work on distribution packaging (we now also publish binaries as OCI artifacts), some CI/infra tweaks as well etc.\r\n\r\n## Other changes\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/194\r\n* Add Packit automation for COPR builds and Fedora packaging by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/196\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/197\r\n* integration-tests: Remove ignore_status() that hides failures by @cgwalters in https://github.com/bootc-dev/bcvk/pull/203\r\n* credentials: Use remote-fs.target for virtiofs mount ordering by @cgwalters in https://github.com/bootc-dev/bcvk/pull/204\r\n* Add 60s timeout for `test_run_ephemeral_with_instancetype` and bump CI instance to u1.micro. by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/208\r\n* Publish development binaries as OCI artifacts by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/198\r\n* packaging: Add dependencies to spec file by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/207\r\n* docs: Add dnf installation step by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/206\r\n* Release 0.11.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/209\r\n\r\n## Installation\r\n\r\nDownload the appropriate binary for your platform from the assets below.\r\n\r\n### Linux x86_64 (glibc)\r\n```bash\r\ncurl -LO https://github.com/bootc-dev/bcvk/releases/download/v0.11.0/bcvk-x86_64-unknown-linux-gnu.tar.gz\r\ntar xzf bcvk-x86_64-unknown-linux-gnu.tar.gz\r\nsudo mv bcvk-x86_64-unknown-linux-gnu /usr/local/bin/bcvk\r\n```\r\n\r\n\r\n## Checksums\r\n\r\nVerify the integrity of your download with the provided SHA256 checksums.\\\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bcvk/compare/v0.10.0...v0.11.0",
+      "prerelease": false,
+      "publishedAt": "2026-03-02T22:00:39Z",
+      "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.11.0",
+      "version": "v0.11.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 280497949,
+      "name": "Release v0.10.0",
+      "notes": "Release v0.10.0\r\n\r\nMostly maintenance and stability work: libvirt/QEMU robustness fixes, improved ephemeral guest handling including mounts, UKI detection, and DNS/SSH behavior, expanded docs, and new installer and packaging options.\r\n\r\n## What's Changed\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/178\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/179\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/180\r\n* Fix DNS resolution for VPN and private network configurations by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/182\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/183\r\n* ci: Use shared actions from bootc-dev/actions by @cgwalters in https://github.com/bootc-dev/bcvk/pull/186\r\n* libvirt: Fix --transient --replace removing non-existent domains by @cgwalters in https://github.com/bootc-dev/bcvk/pull/187\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/188\r\n* Enhance libvirt ssh timeouts and feedback by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/184\r\n* ephemeral: Replace systemd.volatile=overlay with fine-grained mounts by @cgwalters in https://github.com/bootc-dev/bcvk/pull/189\r\n* docs: Expand man pages with workflow examples and tips by @cgwalters in https://github.com/bootc-dev/bcvk/pull/191\r\n* ephemeral: Fix UKI detection to look inside kernel version subdirectories by @cgwalters in https://github.com/bootc-dev/bcvk/pull/190\r\n* install: Add `bootloader` option by @Johan-Liebert1 in https://github.com/bootc-dev/bcvk/pull/193\r\n* Xshell tests by @cgwalters in https://github.com/bootc-dev/bcvk/pull/192\r\n* contrib/packaging: New spec file by @cgwalters in https://github.com/bootc-dev/bcvk/pull/109\r\n* Release 0.10.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/185\r\n\r\n## New Contributors\r\n* @Johan-Liebert1 made their first contribution in https://github.com/bootc-dev/bcvk/pull/193\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bcvk/compare/v0.9.0...v0.10.0\r\n\r\n## Installation\r\n\r\nDownload the appropriate binary for your platform from the assets below.\r\n\r\n### Linux x86_64 (glibc)\r\n```bash\r\ncurl -LO https://github.com/bootc-dev/bcvk/releases/download/v0.10.0/bcvk-x86_64-unknown-linux-gnu.tar.gz\r\ntar xzf bcvk-x86_64-unknown-linux-gnu.tar.gz\r\nsudo mv bcvk-x86_64-unknown-linux-gnu /usr/local/bin/bcvk\r\n```\r\n\r\n\r\n## Checksums\r\n\r\nVerify the integrity of your download with the provided SHA256 checksums.",
+      "prerelease": false,
+      "publishedAt": "2026-01-28T00:01:26Z",
+      "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.10.0",
+      "version": "v0.10.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 270561300,
+      "name": "Release v0.9.0",
+      "notes": "Release v0.9.0\r\n\r\nMostly bug fixes: libvirt/QEMU cleanup and fixes around secure boot, firmware interop, and temp file handling, plus improvements for ephemeral guests covering DNS resolution and signature handling, along with routine infra file syncing.\r\n\r\n## What's Changed\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/168\r\n* libvirt: Remove predictable named file in /tmp by @cgwalters in https://github.com/bootc-dev/bcvk/pull/169\r\n* libvirt: Fix custom secure boot logic by @cgwalters in https://github.com/bootc-dev/bcvk/pull/170\r\n* libvirt: Add QEMU firmware interop JSON descriptor support by @cgwalters in https://github.com/bootc-dev/bcvk/pull/172\r\n* Fix signature handling with additionalimagestore by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/166\r\n* Fix DNS resolution in ephemeral guests by @gursewak1997 in https://github.com/bootc-dev/bcvk/pull/167\r\n* Release 0.9.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/175\r\n\r\n## New Contributors\r\n* @gursewak1997 made their first contribution in https://github.com/bootc-dev/bcvk/pull/166\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bcvk/compare/v0.8.0...v0.9.0\r\n\r\n## Installation\r\n\r\nDownload the appropriate binary for your platform from the assets below.\r\n\r\n### Linux x86_64 (glibc)\r\n```bash\r\ncurl -LO https://github.com/bootc-dev/bcvk/releases/download/v0.9.0/bcvk-x86_64-unknown-linux-gnu.tar.gz\r\ntar xzf bcvk-x86_64-unknown-linux-gnu.tar.gz\r\nsudo mv bcvk-x86_64-unknown-linux-gnu /usr/local/bin/bcvk\r\n```\r\n\r\n\r\n## Checksums\r\n\r\nVerify the integrity of your download with the provided SHA256 checksums.",
+      "prerelease": false,
+      "publishedAt": "2025-12-16T20:19:19Z",
+      "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.9.0",
+      "version": "v0.9.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 266738103,
+      "name": "Release v0.8.0",
+      "notes": "Release v0.8.0\r\n\r\nNo major changes, just one SELinux fix for virtiofsd to increase compatibility with using it for container storage, and one to support running on Arch Linux.\r\n\r\n## What's Changed\r\n* Sync common files from infra repository by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/152\r\n* virtiofs: Set SELinux context on readonly mounts by @cgwalters in https://github.com/bootc-dev/bcvk/pull/159\r\n* build-sys: Try testing alma 10.0 instead by @cgwalters in https://github.com/bootc-dev/bcvk/pull/155\r\n* virtiofsd_paths: Extends virtiofsd binary locations by @loacker-dev in https://github.com/bootc-dev/bcvk/pull/163\r\n* ephemeral: Add an option to override the entrypoint by @cgwalters in https://github.com/bootc-dev/bcvk/pull/149\r\n* Release 0.8.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/160\r\n\r\n## New Contributors\r\n* @loacker-dev made their first contribution in https://github.com/bootc-dev/bcvk/pull/163\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bcvk/compare/v0.7.0...v0.8.0\r\n\r\n## Installation\r\n\r\nDownload the appropriate binary for your platform from the assets below.\r\n\r\n### Linux x86_64 (glibc)\r\n```bash\r\ncurl -LO https://github.com/bootc-dev/bcvk/releases/download/v0.8.0/bcvk-x86_64-unknown-linux-gnu.tar.gz\r\ntar xzf bcvk-x86_64-unknown-linux-gnu.tar.gz\r\nsudo mv bcvk-x86_64-unknown-linux-gnu /usr/local/bin/bcvk\r\n```\r\n\r\n\r\n## Checksums\r\n\r\nVerify the integrity of your download with the provided SHA256 checksums.",
+      "prerelease": false,
+      "publishedAt": "2025-12-02T14:16:34Z",
+      "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.8.0",
+      "version": "v0.8.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "bcvk",
+    "name": "bcvk",
+    "repository": "bootc-dev/bcvk"
+  }
+}

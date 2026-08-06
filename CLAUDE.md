@@ -53,7 +53,7 @@ Fix pgaudit tag pattern          → fix(catalog): correct pgaudit tag pattern
 ## Project Overview
 
 Personal DevOps/SRE release tracker: a Git-backed catalog that follows new
-releases of infrastructure tools on GitHub. Currently **68 tools** across 8
+releases of infrastructure tools on GitHub. Currently **78 tools** across 10
 groups and 11 categories.
 
 A category says **what a tool is for**, and a tool has exactly one. How it ships
@@ -184,7 +184,7 @@ config/tools.yaml → Actions sync (2x/day, 09:17 + 21:17 ICT) → data/*.json
                   → TanStack Start prerender → Cloudflare Workers
 ```
 
-- **80 prerendered pages**: 1 home + 11 categories + 68 tools. `check:bundle`
+- **90 prerendered pages**: 1 home + 11 categories + 78 tools. `check:bundle`
   derives this from `CATEGORIES.length` — don't reintroduce a literal count.
 - `data/` is **generated**. Never edit by hand.
 - Scheduled runs are best-effort: observed 1.5–3.5h late.
@@ -206,7 +206,7 @@ in which filesystem access works. This drives everything below.
   reads them with `fs` — **scripts and tests only**, never from `src/routes/**`.
 - **`prerender.autoSubfolderIndex: false` is mandatory.** The default `true`
   emits `foo/index.html` and makes Workers Assets serve `/foo` as a 307 to
-  `/foo/`, putting a redirect on 79 of 80 URLs.
+  `/foo/`, putting a redirect on 89 of 90 URLs.
 - **`prerender.autoStaticPathsDiscovery: false`** or the explicit `pages` list
   stops being authoritative.
 - **`throw notFound()` alone gives a real 404** and server-renders the

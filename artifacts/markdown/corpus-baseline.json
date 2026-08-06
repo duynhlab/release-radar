@@ -1,12 +1,15 @@
 {
-  "tools": 68,
-  "notes": 598,
+  "tools": 78,
+  "notes": 690,
   "bareUrl": {
-    "notes": 222,
+    "notes": 286,
     "tools": [
       "argo-cd",
       "aws-load-balancer-controller",
+      "bcvk",
+      "bootc",
       "cloudnative-pg",
+      "cosign",
       "crush",
       "envoy-gateway",
       "external-dns",
@@ -21,13 +24,18 @@
       "helm",
       "k6-operator",
       "keda",
+      "keycloak",
+      "ko",
       "kro",
       "kyverno",
       "loki",
+      "nerdctl",
+      "oauth2-proxy",
       "openbao-helm",
       "opentelemetry-operator",
       "opentofu",
       "pg-cron",
+      "pgdog",
       "pgduckdb",
       "pgmoneta",
       "prometheus",
@@ -46,18 +54,23 @@
       "wal-g"
     ]
   },
-  "fullChangelog": 152,
+  "fullChangelog": 194,
   "rawHtml": {
-    "notes": 28,
+    "notes": 54,
     "tools": [
       "argo-cd",
       "crush",
       "grafana-operator",
+      "grype",
       "headlamp",
       "helm",
       "keda",
+      "keycloak",
+      "nerdctl",
+      "pgdog",
       "pgduckdb",
-      "strimzi-kafka-operator"
+      "strimzi-kafka-operator",
+      "syft"
     ]
   },
   "indentedCode": {
@@ -66,9 +79,9 @@
   },
   "setextHeading": 0,
   "structures": {
-    "links": 4538,
+    "links": 4940,
     "images": 44,
-    "codeFences": 196,
+    "codeFences": 229,
     "tables": 14,
     "taskLists": 0,
     "footnotes": 0,
