@@ -108,7 +108,7 @@ policy. When it fires, pin the previous release rather than bypassing it.
 ## Testing
 
 ```bash
-pnpm test         # vitest: unit + dom + worker projects, 199 tests
+pnpm test         # vitest: unit + dom + worker projects, 227 tests
 ```
 
 Three projects in `vitest.config.ts`:
@@ -123,6 +123,13 @@ Three projects in `vitest.config.ts`:
   catalog loads with no `node:fs`. Uses its own minimal
   `tests/worker/wrangler.test.jsonc`, because pointing the pool at the real
   config makes it try to resolve `main` as a file path.
+
+`tests/tsconfig.json` must keep its **`"exclude": []`**. It extends the root
+config, which lists `"tests"` in `exclude`; overriding only `compilerOptions`
+inherits that, so the project excluded every file it exists to check — `tsc -p
+tests` compiled 67 files, none of them a test. The second half of
+`pnpm typecheck` proved nothing about the suite until a component gained a
+required prop and four stale call sites in tests still typechecked green.
 
 `tests/` has its own `tsconfig.json` relaxing `noUncheckedIndexedAccess`;
 indexing a fixture you just built is safe by construction. It stays **on** for

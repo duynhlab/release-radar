@@ -48,7 +48,7 @@ data, look at `data/`, not the frontend.
 | `pnpm dev` | Vite dev server |
 | `pnpm validate:catalog` | Validate `config/tools.yaml` + regenerate JSON schema |
 | `pnpm sync` | Fetch releases from GitHub (needs `GITHUB_TOKEN`) |
-| `pnpm test` | Vitest: unit + dom + worker projects (199 tests) |
+| `pnpm test` | Vitest: unit + dom + worker projects (227 tests) |
 | `pnpm lint` / `pnpm typecheck` | ESLint / tsc |
 | `pnpm build` | Production build + prerender (90 pages) |
 | `pnpm audit:markdown` | Inventory the release-note corpus; `--check` gates it |
@@ -202,9 +202,12 @@ baseline: zero console errors, zero axe violations on every route type, grid
 4/2/1 at 1440/768/390, LCP 52–60ms, CLS 0.000. See `artifacts/e2e/README.md`.
 
 **Release notes render through `@tanstack/markdown` with `allowHtml: false`.**
-It has no autolink literals, so bare URLs in notes render as plain text — an
-accepted regression affecting 221 of 597 notes across 40 tools, measured in
-`artifacts/markdown/corpus-report.md`.
+It has no autolink literals, so `@user`, `#123`, commit SHAs and bare URLs all
+arrive as plain text. `src/lib/note-autolink.ts` rewrites them into link nodes
+on the AST between parse and render — the only place it can, since the React
+renderer emits text nodes verbatim without consulting the component map.
+Working on the AST is also what keeps code spans and fenced blocks literal.
+Measured in `artifacts/markdown/corpus-report.md`.
 
 ## Deferred by design (don't build yet)
 

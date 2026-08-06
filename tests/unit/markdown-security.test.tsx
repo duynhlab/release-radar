@@ -5,7 +5,9 @@ import { classifyNoteHref, isAllowedNoteImage } from "@/lib/note-links";
 import { NOTES_MARKDOWN_OPTIONS } from "@/lib/markdown-options";
 
 const html = (markdown: string) =>
-  renderToStaticMarkup(<ReleaseNotes markdown={markdown} />);
+  renderToStaticMarkup(
+    <ReleaseNotes markdown={markdown} repository="argoproj/argo-cd" />,
+  );
 
 describe("markdown configuration", () => {
   it("is frozen with allowHtml and headingIds off", () => {
@@ -177,5 +179,63 @@ describe("classifyNoteHref", () => {
     ["HTTP://x.example", "external"],
   ])("classifies %s", (href, expected) => {
     expect(classifyNoteHref(href as string | undefined)).toBe(expected);
+  });
+});
+
+describe("autolinking, through the real render path", () => {
+  it("links a mention, an issue ref and a sha with the expected hrefs", () => {
+    const out = html("@user fixed #12 in c7c0ab53b84c26b54a9fea0b48a9e436ecbd5192");
+    expect(out).toContain('href="https://github.com/user"');
+    expect(out).toContain('href="https://github.com/argoproj/argo-cd/issues/12"');
+    expect(out).toContain(
+      'href="https://github.com/argoproj/argo-cd/commit/c7c0ab53b84c26b54a9fea0b48a9e436ecbd5192"',
+    );
+  });
+
+  it("gives autolinks the same rel policy as authored links", () => {
+    // Synthesised links are LinkNodes, so they flow through NoteLink rather
+    // than bypassing it — that is the whole reason not to emit anchors.
+    const out = html("thanks @user");
+    expect(out).toMatch(/<a[^>]+rel="noopener noreferrer nofollow ugc"/);
+    expect(out).toContain('target="_blank"');
+  });
+
+  it("does not linkify inside a code span", () => {
+    const out = html("use `#2086` here");
+    expect(out).not.toContain("issues/2086");
+    expect(out).toContain("#2086");
+  });
+
+  it("emits no nested anchor when a ref sits in link text", () => {
+    const out = html("[see #2086](https://example.com)");
+    expect(out.match(/<a /g)).toHaveLength(1);
+    expect(out).not.toContain("issues/2086");
+  });
+
+  it("never lets a blocked scheme reach an href, even via the link label", () => {
+    // A blocked scheme does not become <a href="">: the parser drops the link
+    // outright and keeps only its label as a text node. That label is then
+    // ordinary text, so autolinking applies to it. The invariant that matters
+    // is that the dangerous URL is gone and any href we emit is one we built.
+    const out = html("[#2086](javascript:alert(1))");
+    expect(out).not.toContain("javascript:");
+    expect(out).toContain('href="https://github.com/argoproj/argo-cd/issues/2086"');
+  });
+
+  it("grants a blocked-scheme label no more than bare prose would", () => {
+    // The worst case is a label that is itself a URL. It ends up linked — but
+    // identically to writing the URL as prose, which this feature links by
+    // design, and it still gets the nofollow/ugc treatment from NoteLink.
+    const out = html("[https://evil.example](javascript:alert(1))");
+    expect(out).not.toContain("javascript:");
+    expect(out).toMatch(/<a[^>]+rel="noopener noreferrer nofollow ugc"/);
+    expect(html("visit https://evil.example")).toContain('href="https://evil.example"');
+  });
+
+  it("adds no id attribute", () => {
+    // The headings test asserts this document-wide; keep autolinks clear of it.
+    expect(html("@user #12 c7c0ab53b84c26b54a9fea0b48a9e436ecbd5192")).not.toContain(
+      "id=",
+    );
   });
 });

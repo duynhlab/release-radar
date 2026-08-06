@@ -30,15 +30,15 @@ describe("hydration determinism", () => {
   it("renders release notes deterministically", () => {
     const markdown =
       "## Changes\n\n- fixed [#1](https://github.com/a/b/pull/1)\n\n```sh\nkubectl get pods\n```";
-    expect(renderToString(<ReleaseNotes markdown={markdown} />)).toBe(
-      renderToString(<ReleaseNotes markdown={markdown} />),
+    expect(renderToString(<ReleaseNotes markdown={markdown} repository="a/b" />)).toBe(
+      renderToString(<ReleaseNotes markdown={markdown} repository="a/b" />),
     );
   });
 
   it("does not warn during render", () => {
     const error = vi.spyOn(console, "error").mockImplementation(() => {});
     renderToString(<TimeAgo iso="2026-07-23T00:35:52Z" />);
-    renderToString(<ReleaseNotes markdown="hello **world**" />);
+    renderToString(<ReleaseNotes markdown="hello **world**" repository="a/b" />);
     expect(error).not.toHaveBeenCalled();
     error.mockRestore();
   });

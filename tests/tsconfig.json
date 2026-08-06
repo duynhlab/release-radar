@@ -11,5 +11,13 @@
   "compilerOptions": {
     "noUncheckedIndexedAccess": false
   },
+  // Load-bearing. Only compilerOptions were overridden above, so `exclude` was
+  // inherited from the root config — where it lists "tests", resolved relative
+  // to the root. This project therefore excluded every file it exists to
+  // check: `tsc -p tests` compiled 67 files, none of them under tests/, and
+  // `pnpm typecheck` silently proved nothing about the suite for as long as it
+  // has existed. It took a component gaining a required prop, with four stale
+  // call sites in tests and a green typecheck, to notice.
+  "exclude": [],
   "include": ["**/*.ts", "**/*.tsx", "../src/**/*.ts", "../src/**/*.tsx"]
 }
