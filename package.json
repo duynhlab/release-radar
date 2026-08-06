@@ -11,7 +11,7 @@
     "deploy": "vite build && wrangler deploy",
     "gen": "node scripts/gen-catalog.ts",
     "lint": "pnpm gen && eslint .",
-    "typecheck": "pnpm gen && tsc --noEmit",
+    "typecheck": "pnpm gen && tsc --noEmit && tsc -p tests --noEmit",
     "test": "pnpm gen && vitest run",
     "validate:catalog": "node scripts/validate-catalog.ts",
     "audit:markdown": "node scripts/audit-markdown-corpus.ts",

@@ -1,4 +1,5 @@
 import { parseDocument, YAMLSeq } from "yaml";
+import { repositoryName } from "../domain/repository.ts";
 import { CatalogSchema, type Category, type Tool } from "../domain/types.ts";
 
 export class CatalogEditError extends Error {}
@@ -18,7 +19,7 @@ export function normalizeRepository(input: string): string {
 
 /** Repo name → valid catalog id slug. */
 export function deriveToolId(repository: string): string {
-  const repoName = repository.split("/")[1];
+  const repoName = repositoryName(repository);
   const slug = repoName
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
@@ -31,8 +32,7 @@ export function deriveToolId(repository: string): string {
 
 /** Repo name → human-ish display name ("external-dns" → "External Dns"). */
 export function deriveToolName(repository: string): string {
-  return repository
-    .split("/")[1]
+  return repositoryName(repository)
     .replace(/[-_]+/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase());
 }

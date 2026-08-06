@@ -23,7 +23,10 @@ export default defineConfig([
   ...tseslint.configs.recommended,
   react.configs.flat.recommended,
   react.configs.flat["jsx-runtime"],
-  reactHooks.configs.recommended,
+  // eslint-plugin-react-hooks 7 still ships configs.recommended in legacy
+  // eslintrc shape (plugins as an array); the flat variants are under
+  // configs.flat. Likewise jsx-a11y exposes flatConfigs, not configs.
+  reactHooks.configs.flat.recommended,
   jsxA11y.flatConfigs.recommended,
   // Catches createFileRoute property-order mistakes that silently break type
   // inference rather than erroring.

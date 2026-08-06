@@ -113,6 +113,9 @@ export function buildIndex(
       const releases = filesById.get(tool.id)?.releases ?? [];
       const latest = releases[0] ?? null;
       const previous = releases[1] ?? null;
+      // Hoisted: the guard and the read are two separate index expressions, so
+      // narrowing the first does not narrow the second.
+      const group = tool.group ? catalog.groups[tool.group] : undefined;
       return {
         id: tool.id,
         name: tool.name,
@@ -122,8 +125,8 @@ export function buildIndex(
         ...(tool.homepage ? { homepage: tool.homepage } : {}),
         ...(tool.documentation ? { documentation: tool.documentation } : {}),
         tags: tool.tags,
-        ...(tool.group && catalog.groups[tool.group]
-          ? { group: { id: tool.group, name: catalog.groups[tool.group].name } }
+        ...(tool.group && group
+          ? { group: { id: tool.group, name: group.name } }
           : {}),
         latest: latest ? omitNotes(latest) : null,
         previous: previous

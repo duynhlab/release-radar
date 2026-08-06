@@ -28,6 +28,7 @@
 
     "paths": { "@/*": ["./src/*"] }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/**/*.ts", "tests/**/*.ts", "tests/**/*.tsx", "*.ts"],
-  "exclude": ["node_modules", ".output", "dist", ".wrangler"]
+  // tests/ has its own tsconfig, which relaxes noUncheckedIndexedAccess.
+  "include": ["src/**/*.ts", "src/**/*.tsx", "scripts/**/*.ts", "*.ts"],
+  "exclude": ["node_modules", ".output", "dist", ".wrangler", "tests"]
 }

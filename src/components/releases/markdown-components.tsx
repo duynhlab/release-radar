@@ -115,15 +115,26 @@ function noteHeading(className: string) {
 const NoteHeadingPrimary = noteHeading("text-base font-semibold text-fg");
 const NoteHeadingSecondary = noteHeading("text-sm font-semibold text-fg");
 
-/** Code blocks scroll horizontally, so axe scrollable-region-focusable wants a
- *  keyboard-reachable container. */
+/*
+ * Code blocks and tables scroll horizontally, and axe's
+ * scrollable-region-focusable requires a keyboard-reachable container for
+ * exactly that — a scrollable region no one can reach by keyboard is a WCAG
+ * 2.1.1 failure. jsx-a11y/no-noninteractive-tabindex disagrees on principle,
+ * and here it is the one that is wrong: the legacy app shipped this same
+ * tabIndex and measured zero axe violations.
+ *
+ * role="region" would satisfy both rules but promotes every code block to a
+ * landmark, which wrecks the landmark structure on a page with 20 notes. So the
+ * lint rule is suppressed narrowly instead.
+ */
 function NotePre(props: ComponentPropsWithoutRef<"pre">) {
+  // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex -- axe scrollable-region-focusable
   return <pre {...props} tabIndex={0} />;
 }
 
-/** Same treatment for tables, which overflow at 390px. */
 function NoteTable({ children, ...rest }: ComponentPropsWithoutRef<"table">) {
   return (
+    // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex -- axe scrollable-region-focusable
     <div className="rr-notes__scroll" tabIndex={0}>
       <table {...rest}>{children}</table>
     </div>

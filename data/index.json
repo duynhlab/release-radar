@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T15:24:49.824Z",
+  "generatedAt": "2026-08-06T01:31:31.310Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -831,7 +831,7 @@
         "version": "v0.38.3"
       },
       "releaseCount": 7,
-      "repository": "bitnami-labs/sealed-secrets",
+      "repository": "bitnami/sealed-secrets",
       "tags": [
         "kubernetes",
         "secrets",

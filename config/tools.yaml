@@ -451,7 +451,7 @@ tools:
   - id: sealed-secrets
     name: Sealed Secrets
     category: security
-    repository: bitnami-labs/sealed-secrets
+    repository: bitnami/sealed-secrets
     description: Encrypts Kubernetes secrets so they are safe to store in Git
     documentation: https://sealed-secrets.netlify.app
     tags:

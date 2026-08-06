@@ -21,11 +21,14 @@ export default defineConfig({
           name: "dom",
           environment: "jsdom",
           include: ["tests/dom/**/*.test.{ts,tsx}"],
+          setupFiles: ["tests/dom/setup.ts"],
         },
       },
       {
         plugins: [
-          cloudflareTest({ wrangler: { configPath: "./wrangler.jsonc" } }),
+          cloudflareTest({
+            wrangler: { configPath: "./tests/worker/wrangler.test.jsonc" },
+          }),
         ],
         test: {
           name: "worker",

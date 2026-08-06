@@ -1,0 +1,10 @@
+{
+  // Worker-runtime tests import modules directly; they never boot the app's
+  // server entry. Pointing the pool at the real wrangler.jsonc makes it try to
+  // statically analyse `main: "@tanstack/react-start/server-entry"` as a file
+  // path and warn on every run. Same runtime, no entry point.
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "release-radar-tests",
+  "compatibility_date": "2026-07-01",
+  "compatibility_flags": ["nodejs_compat"]
+}

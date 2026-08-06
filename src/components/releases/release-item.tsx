@@ -1,5 +1,5 @@
 import { Link2 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { Release } from "@/domain/types";
 import { ChannelBadge } from "@/components/ui/badge";
 import { formatDate } from "@/lib/dates";
@@ -19,14 +19,14 @@ export function ReleaseItem({
   fragment: string;
   defaultOpen: boolean;
 }) {
-  const [open, setOpen] = useState(defaultOpen);
-
-  // A deep link arrives only after hydration (fragments are never sent to the
-  // server), so SSR keeps the first release open exactly as before and the
-  // targeted one expands once the hash is known.
-  useEffect(() => {
-    if (defaultOpen) setOpen(true);
-  }, [defaultOpen]);
+  // Derived, not synced. A deep link arrives only after hydration (fragments
+  // are never sent to the server), so `defaultOpen` changes on the client once
+  // the hash is known. Tracking only the user's own toggle and falling back to
+  // defaultOpen lets that happen without an effect writing state — which would
+  // cascade a second render on every release.
+  const [userToggled, setUserToggled] = useState<boolean | null>(null);
+  const open = userToggled ?? defaultOpen;
+  const setOpen = setUserToggled;
 
   return (
     <article

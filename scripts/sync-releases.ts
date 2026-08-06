@@ -2,6 +2,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { Octokit } from "octokit";
 import { enabledTools, loadCatalog } from "../src/server/catalog.ts";
+import { splitRepository } from "../src/domain/repository.ts";
 import {
   buildIndex,
   buildToolFile,
@@ -42,7 +43,7 @@ async function fetchRawReleases(
   octokit: Octokit,
   tool: Tool,
 ): Promise<RawGitHubRelease[]> {
-  const [owner, repo] = tool.repository.split("/");
+  const { owner, repo } = splitRepository(tool.repository);
   if (tool.release.strategy === "github-releases") {
     const { data } = await octokit.rest.repos.listReleases({
       owner,

@@ -18,7 +18,12 @@ export const NOTES_BASE = "/release-notes";
 
 const TOOL_ID = /^[a-z0-9][a-z0-9-]*$/;
 
-async function parseResponse(res: Response): Promise<Release[]> {
+/**
+ * Exported so the parse contract can be tested directly. Reaching it through
+ * loadToolReleases requires a live request context for the origin, which a test
+ * harness does not have — the server branch correctly degrades to [] instead.
+ */
+export async function parseNotesResponse(res: Response): Promise<Release[]> {
   if (!res.ok) return [];
   return ToolReleasesFileSchema.parse(await res.json()).releases;
 }
@@ -28,7 +33,9 @@ const fetchNotes = createIsomorphicFn()
     try {
       const { getRequest } = await import("@tanstack/react-start/server");
       const origin = new URL(getRequest().url).origin;
-      return await parseResponse(await fetch(`${origin}${NOTES_BASE}/${id}.json`));
+      return await parseNotesResponse(
+        await fetch(`${origin}${NOTES_BASE}/${id}.json`),
+      );
     } catch {
       // Only reachable if a valid tool page was never prerendered. Degrade to
       // an empty history rather than a 500 — the page renders its empty state.
@@ -37,7 +44,7 @@ const fetchNotes = createIsomorphicFn()
   })
   .client(async (id: string): Promise<Release[]> => {
     try {
-      return await parseResponse(await fetch(`${NOTES_BASE}/${id}.json`));
+      return await parseNotesResponse(await fetch(`${NOTES_BASE}/${id}.json`));
     } catch {
       return [];
     }
