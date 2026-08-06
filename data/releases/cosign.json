@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-08-06T08:59:04.912Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 365912930,
+      "name": "v3.1.3",
+      "notes": "## What's Changed\r\n\r\nThis release resolves GHSA-fx35-mq7g-6g98, a verification bypass using an unexpected public key in a legacy bundle.\r\n\r\n* Auto-detect default digest algorithm for public keys in https://github.com/sigstore/cosign/pull/5019\r\n* fix(pkcs11key): return an error instead of panicking when no key pair matches in https://github.com/sigstore/cosign/pull/5022\r\n* Supporting OCI Signing with X.509 Certificate Chain in https://github.com/sigstore/cosign/pull/4614\r\n* test(inspect): replace mock TSA client usage with local timestamp response generator in https://github.com/sigstore/cosign/pull/5021\r\n* fix: prevent shell completions for various options not taking filenames in https://github.com/sigstore/cosign/pull/5032\r\n* fix(blob): compare file checksums case-insensitively in https://github.com/sigstore/cosign/pull/5036\r\n* Verification bypass via public key in legacy bundle (GHSA-fx35-mq7g-6g98) in https://github.com/sigstore/cosign/pull/5040\r\n\r\n**Full Changelog**: https://github.com/sigstore/cosign/compare/v3.1.2...v3.1.3",
+      "prerelease": false,
+      "publishedAt": "2026-08-06T01:09:23Z",
+      "url": "https://github.com/sigstore/cosign/releases/tag/v3.1.3",
+      "version": "v3.1.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355751884,
+      "name": "v3.1.2",
+      "notes": "This may be the last Cosign v3.1 release, as we finish deprecations and removing unused functionality. Soon we'll start work on Cosign v4 where we will remove things that are currently deprecated. We'll continue to support Cosign v3, with it's opt-in backwards compatibility, as described in [our versioning policy](https://github.com/sigstore/cosign/blob/main/VERSIONING.md).\r\n\r\nIf you haven't already, now is an excellent time to move to the bundle format that has been supported since Cosign v2.6.\r\n\r\nWe have received a ton of fixes over the past month from folks using Cosign in a variety of environments - thank you all!\r\n\r\n## Deprecations\r\n\r\n* 816f2b6634821cefe6ceabbffdd5ff7ffc00d0a4 Deprecate --payload for sign and verify commands (#4991)\r\n\r\n## Features\r\n\r\n* 5121398c0ae6f4444d8ffd10447d7b765184f304 docs: add OVHcloud KMS in available external plugins (#4962)\r\n* 38f73bb8fd949fad71e7086bd122080b2d47ceeb Add insecure registry flag to ko publish in kind-verify-attestation workflow (#4970)\r\n* 2e0749ac11c7326299f6af65ae6a3ab6a6750586 Deprecate --output-attestation (#4958)\r\n* 2233166935e2940a530e5a740adc095f4ca4863d Add bundle inspect command (#4842)\r\n\r\n## Fixes\r\n\r\n* eb3bb86f712a1163591b6663bbc434afb6fad467 Guard against empty certificate PEM in mutate.Signature (#4998)\r\n* 089731c31f750153e9d91ec248c990e3b1991c2b fix(download): Validate predicate type for new bundle format\r\n* d996ce12df6967bb5bf81e3244bfbbe1c2665f34 Skip nil subject entries in IntotoSubjectClaimVerifier (#5016)\r\n* 8ca5b2002f5cd43614c476665e2055e59392b59d Fix Makefile: fall back to \"unknown\" version info when built outside a git repo (#5000)\r\n* df78bf67985f09e431f88b69be5842b7d0f5f4eb fix(verify): skip identity validation for security keys (#5012)\r\n* aebdc3a232083841b9c957fbba6b80b41df8caad fix: include artifactType in OCI 1.1 signature referrer manifest\r\n* c0edaac063a90b1dcacdabc7fc23e6c6f8ade90d Allow attestation download to handle both bundle types (#4996)\r\n* a8642c7b8611d557b4a592e6b94b188bd9427d7c Fix panic in dockerfile verify on malformed FROM lines (#4979)\r\n* ef3e3b446a011852929a08f51095ecc67495bfe7 fix(release): restore signing-step auth and fail on image signing errors (#4978)\r\n* 16ddbcf9040b75e2329f2436b65ba3ed340dac88 feat(signing-config): add --base-config flag to override services from base config (#4977)\r\n* f17f812494b558499d89a37a6c9161657d2371e9 fix: pass NewBundleFormat to KeyOpts in sign command (#4981)\r\n* 6ef8d9d040a481e26e065349c292799615ea7e7b fix: ignore build stage references in dockerfile verify (#4961)\r\n* 8dbdef561622178f453d64d83faa02b1744a19f7 fix: allow '=' in annotation values (#4957)\r\n\r\n## Cleanup\r\n\r\n* 193d2153431f8bb0d945a4c1ee721872f73add67 Remove unused policy evaluation code (#4936)\r\n* 0fc9811059a037c32599e133ec4cc9fead4f354e Remove unused signing code (#4918)\r\n* 95dceda0e7ea0b8d1f1a1d2b9a98c9fb2a6e5b74 Remove unused OCI code (#4935)\r\n* b1dd2e9524daf7406b350cbbfa7f4cd7b8ea0973 Remove unused ephemeral signer (#4938)\r\n\r\n## Documentation\r\n\r\n* 81841260820bdddef3ea65c6f0824caca0cf2715 feat: improve verify flag shell completions (#4965)\r\n* ed0efe8cb464c1bae4711f87b552b1f2e602c816 docs: fix Short style and add Example fields to piv-tool subcommands (#4942)\r\n* d41b86c63cfd2653c263962a9225691c5774c228 docs: add Example fields to env and bundle create commands (#4941)\r\n* 8a7174a1d462b3bb5a2722c7e1cf3a24fd1d3896 docs: fix Short style and add Example fields to pkcs11-tool subcommands\r\n\r\n### Thanks to all contributors!",
+      "prerelease": false,
+      "publishedAt": "2026-07-17T15:34:53Z",
+      "url": "https://github.com/sigstore/cosign/releases/tag/v3.1.2",
+      "version": "v3.1.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 336749399,
+      "name": "v3.1.1",
+      "notes": "## What's Changed\r\n\r\n_Note: v3.1.0 was skipped due to a bug in our release pipeline. v3.1.1 is identical to v3.1.0_\r\n\r\nThis release deprecates a number of flags related to verification material input for trust root material, as well as the bundle format, standardized across Sigstore SDKs, which is now the default output and input for signing and verifying respectively. You may continue to use the deprecated flags with Cosign v3.x releases. The deprecated flags will be removed in a future Cosign v4 release.\r\n\r\nThis release also updates the signing path for logging to Rekor v2. DSSE attestations will be logged as hashed entries, using the DSSE's pre-auth encoding (PAE). This should unblock developers who want to upload large signed DSSEs such as SBOMs.\r\n\r\n* Initialize PKCS11 slots Before Getting Token Info in https://github.com/sigstore/cosign/pull/4803\r\n* Sign exclusively via sigstore-go in https://github.com/sigstore/cosign/pull/4618\r\n* bundle create: Prevent IgnoreTlog when bundle contains SET in https://github.com/sigstore/cosign/pull/4829\r\n* Require bundle output or registry upload in https://github.com/sigstore/cosign/pull/4785\r\n* fix(load): pass NameOptions to name.ParseReference in https://github.com/sigstore/cosign/pull/4786\r\n* fix: honor --digestAlg when hashing a blob in verify-blob-attestation in https://github.com/sigstore/cosign/pull/4813\r\n* Deprecate Flags for v4: Certificates in https://github.com/sigstore/cosign/pull/4822\r\n* Deprecate flags signing config in https://github.com/sigstore/cosign/pull/4844\r\n* Deprecate flags bundle in https://github.com/sigstore/cosign/pull/4838\r\n* Fix typo in map of verify command fields unsupported for new bundle format in https://github.com/sigstore/cosign/pull/4853\r\n* Add bundle upgrade command in https://github.com/sigstore/cosign/pull/4820\r\n* Deprecate Flags for v4 in https://github.com/sigstore/cosign/pull/4854\r\n* fix: close file descriptor leaked in WriteSignedImageIndexImages loop in https://github.com/sigstore/cosign/pull/4869\r\n* fix: use Header.Set to prevent duplicate Authorization on retry in https://github.com/sigstore/cosign/pull/4870\r\n* feat(cli): add Rekor v2 flag to cosign signing-config create in https://github.com/sigstore/cosign/pull/4868\r\n* Fix crash verifying timestamps when no timestamp was verified in https://github.com/sigstore/cosign/pull/4881\r\n* Deprecate Flags for v4: OCI Referrers in https://github.com/sigstore/cosign/pull/4804\r\n* Use the configured Target Repository more consistently in https://github.com/sigstore/cosign/pull/4836\r\n* fix: check HTTP status code in LoadFileOrURL in https://github.com/sigstore/cosign/pull/4877\r\n* Fix unsafe type assertion in Rego policy evaluation by in https://github.com/sigstore/cosign/pull/4882\r\n* Fix Ed25519ph check to respect custom signing configs in sign-blob in https://github.com/sigstore/cosign/pull/4880\r\n* Enable initialize command output in conformance in https://github.com/sigstore/cosign/pull/4892\r\n* verify: return TUF errors for new bundle trusted roots in https://github.com/sigstore/cosign/pull/4878\r\n* Deprecate subcommands in https://github.com/sigstore/cosign/pull/4894\r\n* Remove docstring references to deprecated flags in https://github.com/sigstore/cosign/pull/4910\r\n* fix(verify): Attach detached certificates to static signatures via wrapped verifier in https://github.com/sigstore/cosign/pull/4737\r\n* fix(verify): copy CheckOpts inside VerifyNewBundle to fix data race in https://github.com/sigstore/cosign/pull/4917\r\n* Update sigstore-go to v1.2.0 in https://github.com/sigstore/cosign/pull/4914\r\n\r\n**Full Changelog**: https://github.com/sigstore/cosign/compare/v3.0.6...v3.1.1",
+      "prerelease": false,
+      "publishedAt": "2026-06-09T17:34:35Z",
+      "url": "https://github.com/sigstore/cosign/releases/tag/v3.1.1",
+      "version": "v3.1.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 305842182,
+      "name": "v3.0.6",
+      "notes": "## Changelog\r\n\r\nv3.0.6 resolves [GHSA-w6c6-c85g-mmv6](https://github.com/sigstore/cosign/security/advisories/GHSA-w6c6-c85g-mmv6). This release also adds support for signing with OpenBao-managed keys.\r\n\r\n* f1ad3ee952313be5d74a49d67ba0aa8d0d5e351f Fix DSSE predicate check (GHSA-w6c6-c85g-mmv6) (#4801)\r\n* a09afa97480a0a4a20ad6314600598b7bddc8c0c Handle whitespace-only certificate annotation (#4760)\r\n* 5a38a6d3368f0286ef214c3fd81388c99b3444b8 fix(sign): closing SignerVerifier too early when signing with a security key (#4761)\r\n* 2290a593c9f5b300322b83e1f2a632953aeb840c Disallow --new-bundle-format and --rfc3161-timestamp (#4762)\r\n* 36f40082f3c507e131cb9d926b75b36606160483 support managed keys in conformance testing (#4728)\r\n* 3274cf98c6a2c2fc12618edfa26612e8a071820a Add support for GCE metadata server env var (#4732)\r\n* 2e9754aa80a54fe7062a63debe12ae2b11b87e5a fix: preserve per-layer annotations in WriteAttestationsReferrer (#4709)\r\n* dece2753067e2da18c5e0a0060e0de59fedee0b0 Fix parsing of in-toto for string predicates\r\n* bd4f0fde48c16d2c55ad82acf34166a39be262a8 Mark batch of flags for deprecation (#4698)\r\n* 9b259ff6b690c0f0844893016cd23c2c250124f2 disallow key and cert identity being used together during verification (#4636)\r\n* 95eb1c3155b7ad11cc443c5a26f37eeede244e66 support key creation in GitLab group (#4704)\r\n\r\n### Thanks to all contributors!",
+      "prerelease": false,
+      "publishedAt": "2026-04-06T22:29:24Z",
+      "url": "https://github.com/sigstore/cosign/releases/tag/v3.0.6",
+      "version": "v3.0.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 288413621,
+      "name": "v3.0.5",
+      "notes": "# v3.0.5\r\n\r\nv3.0.5 resolves a [low-severity advisory](https://github.com/sigstore/cosign/security/advisories/GHSA-wfqv-66vq-46rm) for private PKIs.\r\n\r\n## Deprecations\r\n\r\n* Deprecate rekor-entry-type flag (#4691)\r\n* Deprecate cosign triangulate (#4676)\r\n* Deprecate cosign copy (#4681)\r\n\r\n## Features\r\n\r\n* Automatically require signed timestamp with Rekor v2 entries (#4666)\r\n* Allow --local-image with --new-bundle-format for v2 and v3 signatures (#4626)\r\n* Add mTLS support for TSA client connections when signing with a signing config (#4620)\r\n* Enforce TSA requirement for Rekor v2, Fuclio signing (#4683)\r\n\r\n## Bug Fixes\r\n\r\n* Add empty predicate to cosign sign when payload type is application/vnd.in-toto+json (#4635)\r\n* fix: avoid panic on malformed attestation payload (#4651)\r\n* fix: avoid panic on malformed tlog entries (#4649)\r\n* fix: avoid panic on malformed replace payload (#4653)\r\n* Gracefully fail if bundle payload body is not a string (#4648)\r\n* Verify validity of chain rather than just certificate (#4663)\r\n* fix: avoid panic on malformed tlog entry body (#4652)\r\n\r\n## Documentation\r\n\r\n* docs(cosign): clarify RFC3161 revocation semantics (#4642)\r\n* Fix typo in CLI help (#4701)\r\n\r\n**Full Changelog**: https://github.com/sigstore/cosign/compare/v3.0.4...v3.0.5\r\n\r\n## New Contributors\r\n* @dortam888 made their first contribution in https://github.com/sigstore/cosign/pull/4635\r\n* @1seal made their first contribution in https://github.com/sigstore/cosign/pull/4642\r\n* @tuminoid made their first contribution in https://github.com/sigstore/cosign/pull/4626\r\n* @Silvanoc made their first contribution in https://github.com/sigstore/cosign/pull/4701",
+      "prerelease": false,
+      "publishedAt": "2026-02-19T20:11:59Z",
+      "url": "https://github.com/sigstore/cosign/releases/tag/v3.0.5",
+      "version": "v3.0.5"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 275625037,
+      "name": "v3.0.4",
+      "notes": "# v3.0.4\r\n\r\nv3.0.4 resolves https://github.com/sigstore/cosign/security/advisories/GHSA-whqx-f9j3-ch6m.\r\n\r\n## Changes\r\n\r\n* Fix bundle verify path for old bundle/trusted root (GHSA-whqx-f9j3-ch6m) (#4623)\r\n* Optimize cosign tree performance by caching digest resolution (#4612)\r\n* Don't require a trusted root to verify offline with a key (#4613)\r\n* Support default services for trusted-root and signing-config creation (#4592)\r\n\r\n**Full Changelog**: https://github.com/sigstore/cosign/compare/v3.0.3...v3.0.4",
+      "prerelease": false,
+      "publishedAt": "2026-01-09T22:13:05Z",
+      "url": "https://github.com/sigstore/cosign/releases/tag/v3.0.4",
+      "version": "v3.0.4"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "cosign",
+    "name": "Cosign",
+    "repository": "sigstore/cosign"
+  }
+}

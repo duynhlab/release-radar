@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-08-06T08:59:09.930Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 362744266,
+      "name": "v0.1.51",
+      "notes": "### Performance\r\n* Implement async processing during resharding, improving performance @ygxio\r\n* Remove an allocation in the load balancer hot path @sgrif\r\n* Don't reset/set parameters that haven't changed during parameter sync in transaction mode @levkk\r\n* Prevent thundering herd with multiple users in `users.toml` when loading schema at startup @levkk \r\n\r\n### Stability\r\n* Fix timers/loops stop firing after 12 days of uptime breaking connection pools @meskill\r\n* Fix crash in new parser handling partitioned table DDL @levkk\r\n* Enable jemalloc `background_thread` by default, giving memory back to OS @IgorOhrimenko\r\n\r\n### New features\r\n* Support mTLS between PgDog and Postgres servers @andy-paine\r\n* Re-implement two-phase commit WAL @levkk\r\n* Optionally allow password users to bypass mTLS @bhargavtheertham-cb\r\n* Add locked clients OTEL metric to track count of clients locked to a specific server @KennanHunter\r\n\r\n### Code quality\r\n* Remove dead types, simplify construction of other types in tests @sgrif \r\n* Fix flaky load balancer test @KrishnaSindhur\r\n* Fix flaky test `test_reload_connection_count_stable` @sgrif\r\n\r\n### New Contributors\r\n* @andy-paine made their first contribution in https://github.com/pgdogdev/pgdog/pull/1173\r\n* @IgorOhrimenko made their first contribution in https://github.com/pgdogdev/pgdog/pull/1260\r\n* @KrishnaSindhur made their first contribution in https://github.com/pgdogdev/pgdog/pull/1272\r\n* @KennanHunter made their first contribution in https://github.com/pgdogdev/pgdog/pull/1286\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.50...v0.1.51",
+      "prerelease": false,
+      "publishedAt": "2026-07-30T21:56:54Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.51",
+      "version": "v0.1.51"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 358862118,
+      "name": "v0.1.50",
+      "notes": "## What's Changed\r\n* fix: validate message length before widening it to an unsigned integer @frangz \r\n* fix: hot mutex in client stats @levkk \r\n* fix: switch to alternative Tokio timer for >2 workers (10-20% CPU reduction with 16+ workers) @levkk\r\n* fix: fully support the extended protocol for `BEGIN`/`ROLLBACK` commands intercepted by the proxy @Kerem-Kurt\r\n* fix: avoid heap allocations when encoding integer and float parameters in sharded queries @crodas\r\n* fix(config): idempotent random admin password generation @meskill\r\n* fix: make `pgdog-config` doc comments pass rustdoc lints @crodas\r\n* fix: +lse (atomics) optimizations for ARM64 (5-10% CPU reduction) @levkk\r\n* fix(config): improve validation messages for sharding config @meskill\r\n* feat: add process name to 2pc transaction gid @levkk\r\n* feat: add correct `SIGTERM` handler\r\n\r\n## New Contributors\r\n* @Kerem-Kurt made their first contribution in https://github.com/pgdogdev/pgdog/pull/1231\r\n* @crodas made their first contribution in https://github.com/pgdogdev/pgdog/pull/1240\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.49...v0.1.50",
+      "prerelease": false,
+      "publishedAt": "2026-07-23T17:59:36Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.50",
+      "version": "v0.1.50"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 355379474,
+      "name": "v0.1.49",
+      "notes": "## Highlights\r\n\r\n### New query parser\r\n\r\nWe rewrote the query parser to use our in-house library: https://github.com/pgdogdev/pg_raw_parse/. It's based on `pg_query` but maps Rust structs directly to the arena-allocated `MemoryContext` allocated by the Postgres parser. This brings our (de)ser cost for parsing queries to 0.\r\n\r\n**Early metrics**:\r\n\r\n1. 2x improvement in parsing speed vs `query_parser_engine = \"pg_query_raw\"`\r\n2. 8x improvement in parsing speed vs `query_parser_engine = \"pg_query_protobuf\"` (used by default, so most users will see this)\r\n3. 90% (6x) reduction in memory usage (eliminates the OOM problems we've been having with large queries e.g., #854 #1061)\r\n\r\nIt's entirely generated using Rust build scripts directly from Postgres C code and allows us to do major version upgrades in one, 5 line PR. More on this soon on our blog.\r\n\r\n#### How to use\r\n\r\nThe new parser is experimental and disabled by default. We are building a separate Docker image for each release / commit in `main`. To use it, just append `-new-parser` prefix to the tag, for example:\r\n\r\n```yaml\r\nimage:\r\n  tag: v0.1.49-new-parser\r\n```\r\n\r\nby @sgrif \r\n\r\n### New plugin interface\r\n\r\nThe plugins system was rewritten to use safer primitives and simpler API. **This is a breaking change**. We ported all in-tree plugins to the new interface, so no impact on any plugins we currently ship with PgDog in the Docker image. If you wrote your own plugins, reach out to us and we'll help you fix them. New documentation coming soon.\r\n\r\nby @sgrif \r\n\r\n## Changelog\r\n\r\n* fix: skip multi-statement SET validation in session mode by @zefixlluja\r\n* fix: add default to engine in `[[query_parsers]]` by @levkk \r\n* fix: `include_primary_if_replica_banned` ignored primary if it was the only candidate by @levkk @kzemek\r\n* fix: role detector deadlocked when new databases with `role = \"auto\"` were added at runtime by @levkk\r\n* feat: allow `read_write_split` when parser is disabled  to direct traffic by default @levkk\r\n* fix: query parser ran regex twice by @levkk\r\n* test: disable copy_data retry_tests temporarily by @meskill\r\n* fix(replication): fix `wait_for_replication` logic for unrelated changes by @meskill\r\n* fix: LSN detector can now correctly identify replica-only deployments by @levkk\r\n* fix: support `psycopg2` (handle `SET` commands) in admin DB by @levkk\r\n* feat(**breaking**): use a less horrendously unsafe FFI interface for plugins by @sgrif\r\n* chore(config): save file content for `ConfigAndUsers` for diff handling in EE by @meskill\r\n* refactor: remove fingerprinting from our codebase by @sgrif\r\n* feat: update the parser to support Postgres 18 by @sgrif\r\n\r\n## New Contributors\r\n* @zefixlluja made their first contribution in https://github.com/pgdogdev/pgdog/pull/1157\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.48...v0.1.49",
+      "prerelease": false,
+      "publishedAt": "2026-07-16T21:52:34Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.49",
+      "version": "v0.1.49"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 351595003,
+      "name": "v0.1.48",
+      "notes": "## What's Changed\r\n* feat: manual connection pinning using `SET pgdog.pin TO true; -- false / RESET to unpin`; useful to temporarily use session-level features in transaction mode\r\n* feat: Hashicorp Vault static role credentials @larrywax\r\n* feat: per-database query parser setting\r\n* fix(sharding): correctly handle pipelined cross-shard queries @sgrif\r\n* fix(replication): better cancellation handling during replication streaming @meskill\r\n* fix: don't re-create connections when password changes, allowing for faster reloads\r\n* chore: normalize configs for nextest and rust integration tests @meskill \r\n* refactor: ported several functions to new, much faster parser @sgrif \r\n\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.47...v0.1.48",
+      "prerelease": false,
+      "publishedAt": "2026-07-09T14:49:04Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.48",
+      "version": "v0.1.48"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 348318319,
+      "name": "v0.1.47",
+      "notes": "## What's Changed\r\n* feat(lb): speed up failover & add standalone connection fallback for LSN check\r\n* feat(sharding): add support for two-phase commit to `COPY` used for resharding  @yogesh1801\r\n* refactor(resharding): rework of async tasks used in resharding to handle cancellation better @meskill\r\n* fix(sharding): prevent premature cutover due to lag miscalculation  @meskill\r\n* fix(sharding): update the processed LSN on keep-alive messages  @meskill \r\n* fix(lb): replica lag evaluation in load balancer used for banning replicas\r\n* fix(lb): fix no routing error with `prefer_primary` when all replicas are banned @stewart-glabs  \r\n* refactor(sharding): more parser code is moving to `pg_parse_raw` @sgrif\r\n\r\n## New Contributors\r\n* @yogesh1801 made their first contribution in https://github.com/pgdogdev/pgdog/pull/1088\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.46...v0.1.47",
+      "prerelease": false,
+      "publishedAt": "2026-07-02T22:16:54Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.47",
+      "version": "v0.1.47"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 345016680,
+      "name": "v0.1.46",
+      "notes": "## Breaking change\r\n\r\nPgDog now blocks `UPDATE` queries that **mutate a sharding key** in a table that has **foreign key references** to other tables which automatically mutate the referenced tables using:\r\n\r\n- `CASCADE`\r\n- `SET NULL`\r\n\r\nBoth of these were previously breaking referential integrity, since we were not moving the referenced rows. `RESTRICT` (which is typically default) is not affected because Postgres is able to validate ref integrity before we move the row.\r\n\r\n## Changelog\r\n\r\n* feat(sharding): rewrite `[[sharded_mappings]]` config to make it easier to use @meskill (not documented yet, old config format still works)\r\n* feat: add `query_size_limit` setting to block/warn on very large queries @meskill\r\n* feat: `RELOAD` keeps connections and paused state if adding or removing connection databases or users  @murex971\r\n* feat(load balancer): add `prefer_primary`  read/write separation mode to allow manual opt into load balancing @stewart-glabs\r\n* feat: log warning when `lsn_check_delay` is misconfigured\r\n* refactor: start porting the codebase to use the new, much faster SQL parser @sgrif \r\n* feat(sharding): block cross-shard sharding key updates on tables that have foreign key constraints  @murex971\r\n* feat(auth): Hashicorp Vault server authentication integration  @larrywax\r\n\r\n## New Contributors\r\n* @stewart-glabs made their first contribution in https://github.com/pgdogdev/pgdog/pull/1090\r\n* @larrywax made their first contribution in https://github.com/pgdogdev/pgdog/pull/958\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.45...v0.1.46",
+      "prerelease": false,
+      "publishedAt": "2026-06-25T22:23:00Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.46",
+      "version": "v0.1.46"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 341595985,
+      "name": "v0.1.45",
+      "notes": "## What's Changed\r\n\r\n### Distribution\r\n\r\nPre-compiled binaries now ship with every release in GitHub:\r\n\r\n- Linux x86/ARM\r\n- Mac (Apple Silicon)\r\n- Debian package (amd64/arm64).\r\n\r\n### Breaking change\r\n\r\n`SET LOCAL pgdog.shard` and `SET LOCAL pgdog.sharding_key` now assume the entire transaction will be sent to that one shard only. Any query that attempts to talk to a different shard, incl. omnisharded writes, will be blocked. This is not really a breaking change, but more of a bug fix, but still worth calling this out since this changes the behavior of the sharding logic a bit.\r\n\r\nIf using sharding, please double check this release before deploying to prod just to make sure the new shard checker doesn't accidentally (and incorrectly) block your query from execution.\r\n\r\n### Changelog\r\n\r\n* feat: check that tuples in multi-tuple `INSERT` statement belong to the same shard before rewriting @murex971\r\n* feat: handle the special case of `SELECT set_config(...)`, which we didn't track previously; this fixes the  \"`pg_dump` broke my pooler\" issue @sgrif\r\n* feat: enable parser for LISTEN/NOTIFY/UNLISTEN in pooler-only mode (`query_parser = \"on\" not required, makes PgDog much faster)\r\n* feat: add LISTEN/NOTIFY stats\r\n* fix(sharding): `COPY` with rows exceeding one `CopyData` message size were incorrectly routed to all shards @LnL7\r\n* fix: Elixir driver sends `Close` for one-off statements, which we incorrectly rejected with an error\r\n* fix: major performance improvements in `pg_query`, affecting long queries @sgrif\r\n* fix: Windows build by @imor\r\n* fix: race condition in `LISTEN` when registering for a channel for the first time\r\n* fix: `UnexpectedEof` error log when passthrough auth is enabled\r\n* fix: use interval instead of sleep in stats loop which may have caused our stats to stop working after 12 days of uptime (potential Tokio bug, not confirmed)\r\n\r\n## New Contributors\r\n* @LnL7 made their first contribution in https://github.com/pgdogdev/pgdog/pull/1062\r\n* @murex971 made their first contribution in https://github.com/pgdogdev/pgdog/pull/1065\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.44...v0.1.45",
+      "prerelease": false,
+      "publishedAt": "2026-06-18T19:12:32Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.45",
+      "version": "v0.1.45"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 338172668,
+      "name": "v0.1.44",
+      "notes": "## What's Changed\r\n\r\n* fix(security): use `constant_eq` for password checks @meskill\r\n* fix(security): admin password not checked when using passthrough auth\r\n* fix(resharding): fix issues with copy data @meskill\r\n* feat(resharding): use binary protocol for replication (slightly faster than text) @meskill \r\n* fix(sharding): don't track columns independently, allowing duplicate expression rewrites in cross-shard queries @sgrif\r\n* feat(sharding): error when encountering an unsupported aggregate function in cross-shard queries @sgrif\r\n* feat(sharding): give a more meaningful error message when a helper column is missing in cross-shard queries @sgrif\r\n* chore: update to Rust 2024 @sgrif\r\n* fix: refactor and improve the functionality of `avg()` @sgrif \r\n* refactor: aggregate functions cleanup @sgrif \r\n* fix: clippy fixes @imor\r\n* fix: more clippy errors and CI enforcement @meskill \r\n* fix: handle comments in `SET` in regex detector \r\n\r\nAlso introducing our company mascot, Von Count.\r\n\r\n<img width=\"225\" height=\"225\" alt=\"image\" src=\"https://github.com/user-attachments/assets/43c6fe1c-6620-4e64-9863-c567e5838cca\" />\r\n\r\n\r\n## New Contributors\r\n* @imor made their first contribution in https://github.com/pgdogdev/pgdog/pull/1056\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.43...v0.1.44",
+      "prerelease": false,
+      "publishedAt": "2026-06-11T18:55:40Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.44",
+      "version": "v0.1.44"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 334659522,
+      "name": "v0.1.43",
+      "notes": "## What's Changed\r\n* feat: allow disabling idle healthchecks @kitop\r\n* feat: add `query_log_stdout` config for pgcat-style query logging @marcomicera\r\n* feat: allow to bypass DNS TTL entirely with `dns_ttl = 0`\r\n* fix: use smaller data structure to map clients to servers, improving connection pool performance slightly @meskill\r\n* test: fix flaky prepared statements test @meskill\r\n* refactor: cleanup some awkward Rust patterns @sgrif \r\n\r\n## New Contributors\r\n* @marcomicera made their first contribution in https://github.com/pgdogdev/pgdog/pull/1015\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.42...v0.1.43",
+      "prerelease": false,
+      "publishedAt": "2026-06-04T23:20:12Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.43",
+      "version": "v0.1.43"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 330964100,
+      "name": "v0.1.42",
+      "notes": "## What's Changed\r\n* feat(logging): identify the source of auth secret for new server connections\r\n* feat(tls): mTLS using client certificates and per-user `CN`/`dNSName` matching (this is still experimental and not final, use for testing / PoC only); can replace password auth for client -> PgDog connections\r\n* feat: maintenance mode can now be set on a per-database basis instead of just globally\r\n* feat(logging): log which auth error the user experienced to stderr; helps debug complex auth configurations\r\n* fix: HTTP health check returned false negative when passthrough auth was used @sunil-2000\r\n* fix(sharding): correct display for integers in cross-shard aggregates @sgrif\r\n* fix(sharding): false positive cross-shard check for `BEGIN` in session mode with cross-shard queries disabled\r\n* fix(sharding): multi-tuple INSERTs rewrites with `go/pq` (broke in the last release when we removed `prepared_statements = \"extended_anonymous\"`)\r\n* fix(metrics): false positive OpenMetrics error in logs (`hyper::Error(IncompleteMessage)`)\r\n* chore: update dependencies @sgrif\r\n* test(resharding): add benchmarks for copy_data & replication by @meskill\r\n* chore(test): fix some flaky tests\r\n\r\n## New Contributors\r\n* @sunil-2000 made their first contribution in https://github.com/pgdogdev/pgdog/pull/997\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.41...v0.1.42",
+      "prerelease": false,
+      "publishedAt": "2026-05-28T16:08:52Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.42",
+      "version": "v0.1.42"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "pgdog",
+    "name": "PgDog",
+    "repository": "pgdogdev/pgdog"
+  }
+}

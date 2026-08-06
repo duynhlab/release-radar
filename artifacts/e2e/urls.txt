@@ -78,3 +78,13 @@
 /tools/cloudflared
 /tools/trivy-operator
 /tools/headlamp
+/tools/keycloak
+/tools/oauth2-proxy
+/tools/cosign
+/tools/grype
+/tools/syft
+/tools/ko
+/tools/nerdctl
+/tools/bootc
+/tools/bcvk
+/tools/pgdog

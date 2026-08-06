@@ -44,6 +44,8 @@ on:
           - grafana
           - prometheus
           - opentelemetry
+          - anchore
+          - bootc-dev
           - database
       tags:
         description: "Comma-separated tags, e.g. kubernetes,operator"

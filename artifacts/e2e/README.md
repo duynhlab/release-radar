@@ -1,19 +1,19 @@
 # Browser audit record
 
 Measured on `pnpm preview` (workerd) or on production, never on `vite dev`.
-`urls.txt` is the full 80-URL inventory used by the sweeps below.
+`urls.txt` is the full 90-URL inventory used by the sweeps below.
 
 Supersedes the earlier `BASELINE.md` (legacy OpenNext) and `CANDIDATE.md`
 (TanStack rebuild); both were two generations stale and largely duplicated this.
 
 ## URL contract — the thing most likely to break silently
 
-**All 80 URLs return 200 with no redirect.** 1 home + 11 categories + 68 tools.
+**All 90 URLs return 200 with no redirect.** 1 home + 11 categories + 78 tools.
 Unknown tool, category and path each return a real 404.
 
 This holds only because `prerender.autoSubfolderIndex` is `false`. The default
 `true` emits `foo/index.html`, which makes Workers Assets serve `/foo` as a
-**307** to `/foo/` — a redirect hop on 79 of 80 URLs and a change to every
+**307** to `/foo/` — a redirect hop on 89 of 90 URLs and a change to every
 canonical URL. A redirect-following `curl` would not notice.
 
 The four slugs retired in the 8→11 taxonomy change (`platform`, `provisioning`,

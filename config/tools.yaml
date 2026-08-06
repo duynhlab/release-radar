@@ -23,6 +23,12 @@ groups:
   opentelemetry:
     name: OpenTelemetry
     homepage: https://opentelemetry.io
+  anchore:
+    name: Anchore
+    homepage: https://anchore.com
+  bootc-dev:
+    name: bootc
+    homepage: https://bootc-dev.github.io/bootc/
   database:
     name: Databases
 
@@ -1092,6 +1098,159 @@ tools:
       - kubernetes
       - ui
       - dashboard
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: keycloak
+    name: Keycloak
+    category: security
+    repository: keycloak/keycloak
+    description: Identity and access management for modern applications and services
+    homepage: https://www.keycloak.org
+    documentation: https://www.keycloak.org/documentation
+    tags:
+      - identity
+      - sso
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      # Tags carry no "v" prefix, and a rolling "nightly" tag is published.
+      tagPattern: "^\\d+\\.\\d+\\.\\d+$"
+
+  - id: oauth2-proxy
+    name: OAuth2 Proxy
+    category: security
+    repository: oauth2-proxy/oauth2-proxy
+    description: Reverse proxy that adds authentication with OIDC and other identity providers
+    homepage: https://oauth2-proxy.github.io/oauth2-proxy
+    tags:
+      - identity
+      - proxy
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: cosign
+    name: Cosign
+    category: security
+    repository: sigstore/cosign
+    description: Code signing and transparency for containers and binaries
+    documentation: https://docs.sigstore.dev/cosign/signing/overview/
+    tags:
+      - signing
+      - supply-chain
+      - containers
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+      # v2 and v3 are maintained in parallel and released the same day, so
+      # without this half the history would be v2 backports and the latest
+      # version would jump backwards whenever a v2-only patch landed last.
+      ignorePattern: "^v2\\."
+
+  - id: grype
+    name: Grype
+    category: security
+    repository: anchore/grype
+    description: Vulnerability scanner for container images and filesystems
+    tags:
+      - scanning
+      - vulnerabilities
+      - containers
+    group: anchore
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: syft
+    name: Syft
+    category: security
+    repository: anchore/syft
+    description: Generates a software bill of materials from container images and filesystems
+    tags:
+      - sbom
+      - supply-chain
+      - containers
+    group: anchore
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: ko
+    name: ko
+    category: gitops
+    repository: ko-build/ko
+    description: Builds and deploys Go applications as container images without a Dockerfile
+    homepage: https://ko.build
+    documentation: https://ko.build/configuration/
+    tags:
+      - containers
+      - packaging
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: nerdctl
+    name: nerdctl
+    category: kubernetes
+    repository: containerd/nerdctl
+    description: Docker-compatible CLI for containerd, with Compose and rootless support
+    tags:
+      - containers
+      - cli
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: bootc
+    name: bootc
+    category: iac
+    repository: bootc-dev/bootc
+    description: Boot and transactionally upgrade a host operating system from a container image
+    homepage: https://bootc-dev.github.io/bootc/
+    tags:
+      - containers
+      - os
+    group: bootc-dev
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: bcvk
+    name: bcvk
+    category: iac
+    repository: bootc-dev/bcvk
+    description: Runs bootc containers as ephemeral VMs and builds disk images from them
+    tags:
+      - containers
+      - virtualization
+    group: bootc-dev
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: pgdog
+    name: PgDog
+    category: database
+    repository: pgdogdev/pgdog
+    description: PostgreSQL connection pooler, load balancer and sharder
+    homepage: https://pgdog.dev
+    documentation: https://docs.pgdog.dev
+    tags:
+      - postgresql
+      - proxy
+      - sharding
+    group: database
     release:
       strategy: github-releases
       includePrerelease: false

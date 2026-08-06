@@ -5,7 +5,7 @@ Classification walks the `@tanstack/markdown` AST — never regexes over source,
 which cannot distinguish a `<name>` placeholder inside a fenced block from real
 inline HTML.
 
-**598 notes with content across 68 tools.**
+**690 notes with content across 78 tools.**
 
 ## Accepted regression — bare URLs
 
@@ -14,11 +14,11 @@ plain text. This was accepted knowingly when the renderer was chosen.
 
 | | |
 |---|---|
-| Notes containing a bare prose URL | **222 (37.1%)** |
-| Tools affected | **40 / 68** |
-| …of which mention a Full Changelog line | 152 |
+| Notes containing a bare prose URL | **286 (41.4%)** |
+| Tools affected | **48 / 78** |
+| …of which mention a Full Changelog line | 194 |
 
-Affected tools: argo-cd, aws-load-balancer-controller, cloudnative-pg, crush, envoy-gateway, external-dns, floci, flux, flux-operator, gatekeeper, gateway-api, grafana-helm-charts, grafana-operator, headlamp, helm, k6-operator, keda, kro, kyverno, loki, openbao-helm, opentelemetry-operator, opentofu, pg-cron, pgduckdb, pgmoneta, prometheus, prometheus-operator, scylla-operator, strimzi-kafka-operator, tempo, tempo-operator, traefik-helm-chart, trivy, trivy-operator, trust-manager, valkey-operator, victorialogs, vm-operator, wal-g
+Affected tools: argo-cd, aws-load-balancer-controller, bcvk, bootc, cloudnative-pg, cosign, crush, envoy-gateway, external-dns, floci, flux, flux-operator, gatekeeper, gateway-api, grafana-helm-charts, grafana-operator, headlamp, helm, k6-operator, keda, keycloak, ko, kro, kyverno, loki, nerdctl, oauth2-proxy, openbao-helm, opentelemetry-operator, opentofu, pg-cron, pgdog, pgduckdb, pgmoneta, prometheus, prometheus-operator, scylla-operator, strimzi-kafka-operator, tempo, tempo-operator, traefik-helm-chart, trivy, trivy-operator, trust-manager, valkey-operator, victorialogs, vm-operator, wal-g
 
 ## Raw HTML
 
@@ -27,8 +27,8 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 
 | | |
 |---|---|
-| Notes containing a raw HTML tag | 28 (4.7%) |
-| Tools affected | 8 |
+| Notes containing a raw HTML tag | 54 (7.8%) |
+| Tools affected | 13 |
 | Dangerous HTML (script/iframe/on\*=) | **0** |
 
 ## Syntax the renderer does not support
@@ -42,9 +42,9 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 
 | Construct | Count |
 |---|---|
-| Links | 4538 |
+| Links | 4940 |
 | Images | 44 |
-| Code fences | 196 |
+| Code fences | 229 |
 | Tables | 14 |
 | Task-list items | 0 |
 | Footnotes | 0 |
