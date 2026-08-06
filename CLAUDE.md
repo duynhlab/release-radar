@@ -21,7 +21,7 @@ type(scope): subject
 Every commit carries this trailer:
 
 ```
-Co-Authored-By: duynebot <duynebot@users.noreply.github.com>
+Co-Authored-By: duynebot <bot@duynh.me>
 ```
 
 **Never add Claude attribution** — no `Co-Authored-By: Claude …` trailer, no
@@ -53,7 +53,8 @@ Fix pgaudit tag pattern          → fix(catalog): correct pgaudit tag pattern
 ## Project Overview
 
 Personal DevOps/SRE release tracker: a Git-backed catalog that follows new
-releases of infrastructure tools on GitHub. Currently 64 tools across 8 groups.
+releases of infrastructure tools on GitHub. Currently **68 tools** across 8
+groups and 8 categories.
 
 No database, no runtime API calls, no client-side tokens. The site is a pure
 function of the committed JSON — **if the site shows wrong data, look at
@@ -65,15 +66,17 @@ function of the committed JSON — **if the site shows wrong data, look at
 pnpm install
 ```
 
-- Node ≥ 26. It runs the `.ts` scripts natively — no tsx/ts-node.
+- Node >= 26. It runs the `.ts` scripts natively — no tsx/ts-node.
 - pnpm 11.18.0, pinned via `packageManager`.
 - Syncing locally needs a token: `GITHUB_TOKEN=$(gh auth token) pnpm sync`.
-- `.dev.vars` is gitignored and only holds `NEXTJS_ENV`.
+- `pnpm-workspace.yaml` holds `allowBuilds` (a **map**, not a list — a YAML
+  sequence there is silently ignored) and `overrides` (pnpm 11 reads them there,
+  not from `package.json`).
 
 ## Development
 
 ```bash
-pnpm dev          # Next.js dev server
+pnpm dev          # vite dev
 ```
 
 Adding a tool is the 90% task:
@@ -83,118 +86,169 @@ Adding a tool is the 90% task:
 3. `GITHUB_TOKEN=$(gh auth token) pnpm sync`
 4. Commit **both** the YAML and the generated `data/` files.
 
-See README §"Adding a tool" for tag-pattern tips — that's where the per-repo
-quirks are recorded. Note that `pnpm sync` refreshes every tool, so unrelated
-`data/` files often ride along in the diff; say so in the PR body.
+See README §"Adding a tool" for tag-pattern tips. Note that `pnpm sync`
+refreshes every tool, so unrelated `data/` files often ride along in the diff;
+say so in the PR body.
 
 Dependency trap: `pnpm install` does **not** move a version forward inside a
-range that's already satisfied. `"@types/react": "^19"` resolved at 19.2.17
-stays at 19.2.17. Use `pnpm update <pkg>` to walk the range forward.
+range that's already satisfied. Use `pnpm update <pkg>` to walk the range
+forward.
+
+This environment enforces a pnpm `minimumReleaseAge` policy — packages published
+in the last 24h are rejected, and the failure names the lockfile rather than the
+policy. When it fires, pin the previous release rather than bypassing it.
 
 ## Testing
 
 ```bash
-pnpm test         # vitest, 47 tests across 4 files
+pnpm test         # vitest: unit + dom + worker projects, 189 tests
 ```
 
-`tests/` holds `sync.test.ts`, `catalog.test.ts`, `catalog-edit.test.ts`, and
-`sanitize.test.tsx`. `vitest.config.ts` picks up `tests/**/*.test.{ts,tsx}`
-only.
+Three projects in `vitest.config.ts`:
 
-`lib/releases.ts` is the correctness core and is pure by design — new release
-logic goes there, with tests, rather than into a script or a component.
+- **unit** (node) — domain, catalog relations against real data, search params,
+  filters, markdown security.
+- **dom** (jsdom) — theme boot script, favorites store, hotkey hook, SSR
+  determinism. `tests/dom/setup.ts` installs a Storage polyfill: **Node 26
+  defines its own disabled `localStorage` global that shadows jsdom's**, so bare
+  `localStorage` is undefined without it.
+- **worker** (workerd, via `@cloudflare/vitest-pool-workers`) — proves the
+  catalog loads with no `node:fs`. Uses its own minimal
+  `tests/worker/wrangler.test.jsonc`, because pointing the pool at the real
+  config makes it try to resolve `main` as a file path.
+
+`tests/` has its own `tsconfig.json` relaxing `noUncheckedIndexedAccess`;
+indexing a fixture you just built is safe by construction. It stays **on** for
+`src/` and `scripts/`, where it caught a `repository.split("/")[1]` that reached
+Octokit as `owner: undefined`.
+
+`src/domain/releases.ts` is the correctness core and is pure by design.
 
 ## Code Quality
 
-The merge gate, same as CI runs it:
+The merge gate, same as CI:
 
 ```bash
-pnpm validate:catalog && pnpm test && pnpm lint && pnpm typecheck && pnpm build
+pnpm validate:catalog && pnpm lint && pnpm typecheck && pnpm test \
+  && pnpm audit:markdown --check && pnpm build && pnpm check:bundle
 ```
 
-For UI changes, or dependency bumps that touch the runtime (`react-dom`,
-`wrangler`), also run `pnpm preview` — `next dev` behavior is not proof, the
-SSG/worker path is what ships. Baseline to hold: zero console errors, zero
-axe-core violations.
+`pnpm check:bundle` is the only check that proves release notes stay out of the
+worker on a real build. `pnpm audit:markdown --check` also runs in the **sync**
+workflow, because release notes are the one input that changes with no human in
+the loop.
+
+For UI changes also run `pnpm preview` and audit with `agent-browser`.
+Baseline to hold: zero console errors, zero axe violations, LCP <= 2.5s,
+CLS <= 0.1. See `artifacts/e2e/BASELINE.md` and `CANDIDATE.md`.
+
+**agent-browser gotchas**: the viewport does not survive a navigation, and can
+silently no-op after `set device`/`set media`. Use one session per viewport and
+assert `innerWidth` before trusting any capture — a wrong viewport still
+produces a plausible screenshot.
 
 ## Cloudflare Workers
 
-Deployed via OpenNext to Workers, connected through **Workers Builds (Git
-integration)** — not GitHub Actions.
+Deployed via **Workers Builds (Git integration)**, not GitHub Actions.
 
 - **Do not add a deploy step to any workflow.** You'd get double deploys.
-- `pnpm preview` builds and serves on workerd. Verify with curl against the
-  real routes, and query the local observability API for span outcomes and log
-  levels:
-  ```bash
-  curl -X POST http://localhost:8787/cdn-cgi/local/explorer/api/local/observability/query \
-    -H 'Content-Type: application/json' \
-    -d '{"sql":"SELECT name, outcome FROM spans WHERE parent_id IS NULL"}'
-  ```
-- `incrementalCache: staticAssetsIncrementalCache` in `open-next.config.ts` is
-  load-bearing — `defineCloudflareConfig()` alone makes SSG pages return
-  500/404 on workerd. Don't remove it.
-- Never `export const runtime = "edge"` — the adapter doesn't support it.
-- The Cloudflare build environment's Node version lives in the Cloudflare
-  dashboard, **not** in this repo. Changing `node-version` in the workflows
-  does not move it; it's the one Node version here that isn't version
-  controlled.
+- Build command `pnpm build`; deploy `pnpm exec wrangler deploy`;
+  non-production branch deploy `pnpm exec wrangler versions upload`. These live
+  in the Cloudflare dashboard, **not** in this repo — same as the Node version.
+- The `pnpm exec` prefix on the deploy commands is load-bearing: wrangler is a
+  devDependency, and the deploy step runs in a bare `/bin/sh` without
+  `node_modules/.bin` on PATH.
+- Set `CLOUDFLARE_INCLUDE_PROCESS_ENV=true` in Workers Builds; prerender runs at
+  build time and needs the env.
+- `pnpm preview` builds and serves on workerd. `next dev` behaviour was never
+  proof and neither is `vite dev`.
 
 ## Architecture
 
 ```
-config/tools.yaml → Actions sync (2×/day, 09:17 + 21:17 ICT) → data/*.json
-                  → Next.js SSG → Cloudflare Workers
+config/tools.yaml → Actions sync (2x/day, 09:17 + 21:17 ICT) → data/*.json
+                  → TanStack Start prerender → Cloudflare Workers
 ```
 
-- Full SSG. Every route sets `dynamic = "error"` so the build fails loudly if
-  one accidentally becomes dynamic; the dynamic routes also set
-  `dynamicParams = false`.
-- JSON is read with `fs` at build time (`lib/data.ts`), never `import`ed —
-  importing would bundle every release note into the worker and blow the 3 MiB
-  gzip limit.
-- 3 routes (`app/page.tsx`, `app/categories/[slug]`, `app/tools/[slug]`) →
-  76 static pages.
-- `data/` is **generated**. Never edit it by hand; the sync overwrites it.
-- Scheduled runs are best-effort: observed 1.5–3.5h late in this repo, so
-  09:17 means "sometime after 09:17".
+- **77 prerendered pages**: 1 home + 8 categories + 68 tools.
+- `data/` is **generated**. Never edit by hand.
+- Scheduled runs are best-effort: observed 1.5–3.5h late.
+
+### The load-bearing bits
+
+**Prerender runs in workerd, not Node.** `node:fs` fails there with
+`[unenv] fs.readFileSync is not implemented yet!`. So there is no render context
+in which filesystem access works. This drives everything below.
+
+- **The catalog index is code-generated** into `src/generated/catalog.ts`
+  (gitignored) by `scripts/lib/gen-catalog.ts`. ~8.5 KB gzipped, so it ships to
+  both worker and client, and 404s need no network hop. Zod validates at
+  generation time and `tsc` structurally checks the emitted literal, so bad data
+  fails `pnpm typecheck` rather than production.
+- **Release notes are static assets.** `data/releases/*.json` is copied to
+  `public/release-notes/` and fetched over HTTP by the `/tools/$slug` loader.
+  1.9 MB must never enter the worker bundle. `src/server/release-notes.ts` still
+  reads them with `fs` — **scripts and tests only**, never from `src/routes/**`.
+- **`prerender.autoSubfolderIndex: false` is mandatory.** The default `true`
+  emits `foo/index.html` and makes Workers Assets serve `/foo` as a 307 to
+  `/foo/`, putting a redirect on 76 of 77 URLs.
+- **`prerender.autoStaticPathsDiscovery: false`** or the explicit `pages` list
+  stops being authoritative.
+- **`throw notFound()` alone gives a real 404** and server-renders the
+  notFoundComponent. No `setResponseStatus` needed. Never set
+  `assets.not_found_handling: "single-page-application"` — it returns 200.
+- **Start's import-protection fails the build** if route code imports
+  `@tanstack/react-start/server`, even behind `await import()` in an SSR branch.
+  Use `createServerOnlyFn` / `createIsomorphicFn().server()`.
+
+### Import rule
+
+Anything reachable from `node scripts/*.ts` — `src/domain/**`, `src/server/**`,
+`scripts/**` — must use **relative specifiers with explicit `.ts` extensions**
+and never the `@/` alias. Node's native type stripping does no extension
+resolution. Route and component code uses `@/…`.
 
 ## Core Technologies
 
 | | |
 |---|---|
 | Node / pnpm | 26 / 11.18.0 |
-| Next.js | 16.2.12 — App Router, Turbopack |
+| TanStack Start | 1.168.36 (Release Candidate) |
+| TanStack Router | 1.170.19 |
 | React | 19.2.8 |
 | TypeScript | 6.0.3 |
-| Tailwind | 4.3.3, via `@tailwindcss/postcss` |
-| OpenNext | `@opennextjs/cloudflare` 1.20.2 |
-| wrangler | 4.118.0 — workerd `compatibility_date: 2026-07-01`, `nodejs_compat` |
+| Vite | 8.2.0 (native `resolve.tsconfigPaths`) |
+| Tailwind | 4.3.3 via `@tailwindcss/vite` |
+| Cloudflare | `@cloudflare/vite-plugin` 1.50.0, wrangler 4.118.0 |
 | Zod | 4.4.3 |
-| Octokit | 5.0.5 |
-| vitest | 4.1.10 |
-| Markdown | react-markdown 10.1.0 + remark-gfm + rehype-sanitize |
+| Markdown | `@tanstack/markdown` 0.0.13 (**alpha**) |
+| vitest | 4.1.10 + `@cloudflare/vitest-pool-workers` 0.20.1 |
 
-`next` and `eslint-config-next` are pinned exact (no caret) on purpose — they
-move only through a reviewed Dependabot PR.
+Framework and build-chain deps are pinned **exact**; they move only through a
+reviewed dependency PR.
 
 ## Key Patterns
 
-- **`lib/types.ts` is the single source of truth for shape.** Zod schema
-  first, types via `z.infer`. Don't hand-write an interface that duplicates a
-  schema.
-- **`lib/releases.ts` is pure**: normalize → filter (`releaseMatchesConfig`) →
-  merge/dedupe by GitHub release id → cap at `MAX_RELEASES_PER_TOOL` (20) →
-  `stableStringify`. Release notes are truncated at `NOTES_MAX_LENGTH`.
+- **`src/domain/types.ts` is the single source of truth for shape.** Zod first,
+  types via `z.infer`.
+- **`src/domain/releases.ts` is pure**: normalize → filter → merge/dedupe by id
+  → cap at 20 → `stableStringify`.
 - **`generatedAt` only advances when content changes** (`contentEquals`).
-  Idempotency is tested and load-bearing — otherwise every scheduled run
-  produces a noise commit.
-- **Release notes are hostile input.** Render them only through
-  `components/release-notes.tsx` (rehype-sanitize). There is no second path.
-- **No `Date.now()` in render paths** — it breaks hydration. `TimeAgo` renders
-  the absolute date until hydrated; the home page uses `generatedAt` as the
-  server clock via `useSyncExternalStore`.
-- **`scripts/sync-releases.ts` try/catches per tool.** One flaky repo must
-  never block the rest or wipe existing data.
-- **Sync commits don't trigger CI** (GITHUB_TOKEN loop prevention) but do
-  trigger Cloudflare rebuilds. Intentional.
+- **Release notes are hostile input.** Render only through
+  `components/releases/release-notes.tsx`. `allowHtml: false` **and**
+  `headingIds: false` are both load-bearing — the latter because a tool page
+  renders up to 20 note documents and duplicate heading ids would be an axe
+  violation. There is no second path.
+- **Link policy is stricter than the library's.** `@tanstack/markdown` returns
+  an *empty string* for a blocked scheme rather than dropping the attribute, and
+  admits protocol-relative `//host`. `src/lib/note-links.ts` treats `""` as "not
+  a link" and rejects `//`.
+- **Native `<details>`, not Radix Collapsible.** Radix unmounts closed content,
+  which would strip 19 of 20 notes from the SSR HTML.
+- **No `Date.now()` in render paths.** `TimeAgo` renders the absolute date until
+  hydrated; recency buckets use `generatedAt` as the server clock via
+  `useSyncExternalStore`. `formatDate` pins UTC and `TimeAgo` pins the `en`
+  locale for the same reason.
+- **`scripts/sync-releases.ts` try/catches per tool.** One flaky repo must never
+  block the rest.
+- **Sync commits don't trigger CI** but do trigger Cloudflare rebuilds.

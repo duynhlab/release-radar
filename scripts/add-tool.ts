@@ -7,9 +7,10 @@ import {
   countPatternMatches,
   normalizeRepository,
   type AddToolInputs,
-} from "../lib/catalog-edit.ts";
-import { CATALOG_PATH, loadCatalog } from "../lib/catalog.ts";
-import { CATEGORIES, type Category } from "../lib/types.ts";
+} from "../src/server/catalog-edit.ts";
+import { CATALOG_PATH, loadCatalog } from "../src/server/catalog.ts";
+import { splitRepository } from "../src/domain/repository.ts";
+import { CATEGORIES, type Category } from "../src/domain/types.ts";
 
 function readInputs(): AddToolInputs {
   const repository = process.env.INPUT_REPOSITORY?.trim();
@@ -41,7 +42,7 @@ function readInputs(): AddToolInputs {
 async function main(): Promise<void> {
   const inputs = readInputs();
   const repository = normalizeRepository(inputs.repository);
-  const [owner, repo] = repository.split("/");
+  const { owner, repo } = splitRepository(repository);
   const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
   const { data: repoMeta } = await octokit.rest.repos.get({ owner, repo });

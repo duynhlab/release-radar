@@ -2,8 +2,8 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import path from "node:path";
 import { parse } from "yaml";
 import { z } from "zod";
-import { CatalogError, enabledTools, loadCatalog } from "../lib/catalog.ts";
-import { CatalogSchema, type Catalog } from "../lib/types.ts";
+import { CatalogError, enabledTools, loadCatalog } from "../src/server/catalog.ts";
+import { CatalogSchema, type Catalog } from "../src/domain/types.ts";
 
 const SCHEMA_PATH = path.join(process.cwd(), "schemas", "tool.schema.json");
 const RELEASES_DIR = path.join(process.cwd(), "data", "releases");

@@ -49,3 +49,25 @@ cloudflare-env.d.ts
 
 # internal planning notes (kept local only)
 docs/release-radar-plan.txt
+ke-hoach-release-radar-greenfield.txt
+
+# e2e audit artifacts: the text contract is committed, the captures are not.
+# Screenshots/traces/HAR are large and regenerable — the baseline set can be
+# rebuilt from the legacy-opennext tag. Force-add only curated diffs needed for
+# a specific review.
+artifacts/e2e/**/*.png
+artifacts/e2e/**/*.har
+artifacts/e2e/**/*.zip
+artifacts/e2e/**/trace/
+
+# tanstack start / vite
+# NOTE: src/routeTree.gen.ts is deliberately NOT ignored. It is generated, but
+# `tsc --noEmit` runs before any build in CI, and without it every
+# createFileRoute loses type inference and the typecheck collapses. It only
+# changes when a route file is added or removed.
+.output/
+.tanstack/
+dist/
+src/generated/
+public/release-notes/
+worker-configuration.d.ts

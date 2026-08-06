@@ -1,5 +1,23 @@
+# pnpm 10+ blocks postinstall scripts by default (ERR_PNPM_IGNORED_BUILDS).
+# Note this is a map, not a list — a YAML sequence here is silently ignored.
+# sharp arrives via miniflare (wrangler / vite-plugin) and still needs to build.
 allowBuilds:
-  sharp: true
-  unrs-resolver: true
-  workerd: true
   esbuild: true
+  workerd: true
+  sharp: true
+  agent-browser: true
+
+# pnpm 11 reads overrides here, not from package.json.
+#
+# brace-expansion is lint-time only (eslint plugin chain) and pins forward
+# cleanly.
+#
+# undici is deliberately NOT overridden. `pnpm audit --prod` is clean; the
+# remaining findings all sit on .>@cloudflare/vite-plugin>miniflare>undici,
+# which is build/test tooling and never reaches dist/server — the deployed
+# worker uses Cloudflare's native fetch (verified by grepping the build).
+# Forcing >=7.29.0 breaks jsdom 28, which requires the version it ships with:
+# the whole dom test project stops loading. Re-check when jsdom widens its
+# range or miniflare bumps its dependency.
+overrides:
+  brace-expansion: ">=5.0.9"

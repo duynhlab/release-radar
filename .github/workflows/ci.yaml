@@ -47,5 +47,14 @@ jobs:
       - name: Unit tests
         run: pnpm test
 
+      - name: Markdown corpus gate
+        run: pnpm audit:markdown --check
+
       - name: Build
         run: pnpm build
+
+      # Proves the central constraint on a real build: the catalog index reaches
+      # the worker and release notes never do. Nothing else catches a refactor
+      # that turns the asset fetch back into a static import.
+      - name: Check worker bundle
+        run: pnpm check:bundle

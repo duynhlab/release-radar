@@ -1,14 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "release-radar",
-  "main": ".open-next/worker.js",
+  "main": "@tanstack/react-start/server-entry",
   "compatibility_date": "2026-07-01",
   "compatibility_flags": ["nodejs_compat"],
-  "assets": {
-    "directory": ".open-next/assets",
-    "binding": "ASSETS"
-  },
-  "observability": {
-    "enabled": true
-  }
+  "observability": { "enabled": true },
+  "upload_source_maps": true
+  // No "assets" block: @cloudflare/vite-plugin owns static assets.
+  // Never set assets.not_found_handling to "single-page-application" — that
+  // serves index.html with a 200 for unknown paths and defeats real 404s.
 }

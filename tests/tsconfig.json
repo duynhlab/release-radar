@@ -1,0 +1,15 @@
+{
+  // Tests index into fixtures they construct in the same file
+  // (catalog.tools[0], releases[1]), where the value is known-present by
+  // construction. noUncheckedIndexedAccess there buys nothing and costs a
+  // non-null assertion on every line.
+  //
+  // It stays ON for src/ and scripts/, where it caught real defects: a
+  // repository.split("/")[1] that reached Octokit as `owner: undefined`, and a
+  // group lookup whose guard did not narrow the second index expression.
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noUncheckedIndexedAccess": false
+  },
+  "include": ["**/*.ts", "**/*.tsx", "../src/**/*.ts", "../src/**/*.tsx"]
+}
