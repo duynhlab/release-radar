@@ -6,7 +6,7 @@ import { NotFound } from "@/components/layout/not-found";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { getIndex } from "@/data/catalog";
 import { THEME_BOOT_SCRIPT } from "@/features/theme/theme-script";
-import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 import appCss from "@/styles/app.css?url";
 
 export const Route = createRootRoute({
@@ -24,7 +24,9 @@ export const Route = createRootRoute({
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
-      { rel: "canonical", href: SITE_URL },
+      // No canonical here: router head links MERGE rather than override, so a
+      // root-level canonical ships alongside each route's own and every page
+      // ends up with two conflicting ones. Routes own their canonical.
     ],
   }),
   errorComponent: AppError,

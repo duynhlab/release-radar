@@ -9,7 +9,7 @@ export const SITE_DESCRIPTION =
  * so it lives here as the single place to change it.
  */
 export const SITE_URL = (
-  import.meta.env?.VITE_SITE_URL ?? "https://release-radar.duynh.dev"
+  import.meta.env?.VITE_SITE_URL ?? "https://radar.duynh.me"
 ).replace(/\/$/, "");
 
 /** Next's `metadata.template: "%s · Release Radar"` has no TanStack equivalent. */
