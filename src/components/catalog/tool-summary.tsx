@@ -1,10 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import type { IndexTool } from "@/domain/types";
-import { CategoryBadge, ChannelBadge, NeutralBadge } from "@/components/ui/badge";
+import { CategoryBadge, NeutralBadge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { TimeAgo } from "@/components/ui/time-ago";
 import { CopyVersionButton } from "@/components/releases/copy-version-button";
-import { formatDate } from "@/lib/dates";
 import { repoUrl } from "@/lib/urls";
 
 function ExternalLink({
@@ -40,9 +39,9 @@ export function ToolSummary({
           {tool.name}
         </h1>
         <CategoryBadge category={tool.category} asLink />
-        {/* Channel appears once, here. It used to render again inside the
-            latest-release block — the same signal twice on one screen. */}
-        {tool.latest ? <ChannelBadge channel={tool.latest.channel} /> : null}
+        {/* No channel badge here: every release row below carries one, and the
+            first of those IS tool.latest — so this was the same signal twice on
+            one screen, which is exactly what the badge row is not for. */}
       </div>
 
       <p className="max-w-[80ch] text-body text-fg-muted">{tool.description}</p>
@@ -81,15 +80,15 @@ export function ToolSummary({
           <span className="font-mono text-version font-semibold text-fg">
             {tool.latest.version}
           </span>
-          {/* The date appears once. It used to sit beside its own relative form
-              — two renderings of one value. The relative form is the tooltip. */}
+          {/* One rendering of the date. TimeAgo already carries the absolute
+              form in its title, and renders it as its own text until hydration
+              — so a sibling formatDate() span printed the identical string
+              beside it in every prerendered page, which is what crawlers and
+              no-JS visitors actually saw. */}
           <TimeAgo
             iso={tool.latest.publishedAt}
             className="text-meta text-fg-muted"
           />
-          <span className="text-meta text-fg-subtle">
-            {formatDate(tool.latest.publishedAt)}
-          </span>
           {gap ? <span className="text-meta text-fg-subtle">{gap}</span> : null}
           <div className="flex flex-wrap gap-1.5">
             <CopyVersionButton version={tool.latest.version} />

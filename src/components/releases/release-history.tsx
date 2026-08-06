@@ -1,5 +1,6 @@
-import { useLocation } from "@tanstack/react-router";
+import { useLocation, useRouter } from "@tanstack/react-router";
 import type { Release } from "@/domain/types";
+import { Button } from "@/components/ui/button";
 import { CountPill } from "@/components/ui/count-pill";
 import { ReleaseItem } from "./release-item";
 
@@ -8,10 +9,14 @@ type ReleaseWithFragment = Release & { fragment: string };
 export function ReleaseHistory({
   releases,
   repository,
+  unavailable = false,
 }: {
   releases: readonly ReleaseWithFragment[];
   repository: string;
+  /** The notes asset could not be fetched — distinct from having none. */
+  unavailable?: boolean;
 }) {
+  const router = useRouter();
   const hash = useLocation({
     select: (l) => {
       try {
@@ -26,10 +31,22 @@ export function ReleaseHistory({
     <section aria-label="Release history" className="space-y-2">
       <h2 className="flex items-center gap-2 text-card-title font-semibold text-fg">
         Release history
-        <CountPill>{releases.length}</CountPill>
+        {/* No "0" pill beside a message that already says there is nothing. */}
+        {releases.length > 0 ? <CountPill>{releases.length}</CountPill> : null}
       </h2>
 
-      {releases.length === 0 ? (
+      {unavailable ? (
+        // A transport failure, not an empty history — promising that a sync
+        // will fix it would be wrong, and retrying actually can.
+        <div role="alert" className="space-y-3">
+          <p className="text-body text-fg-muted">
+            Release notes could not be loaded. The tool itself is still tracked.
+          </p>
+          <Button variant="outline" size="sm" onClick={() => void router.invalidate()}>
+            Try again
+          </Button>
+        </div>
+      ) : releases.length === 0 ? (
         <p role="status" className="text-body text-fg-muted">
           No releases tracked yet. The next scheduled sync will populate this
           page.

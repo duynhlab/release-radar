@@ -18,7 +18,7 @@ export const Route = createFileRoute("/tools/$slug")({
     const tool = getTool(slug);
     if (!tool) throw notFound();
 
-    const releases = await loadToolReleases(slug);
+    const notes = await loadToolReleases(slug);
     return {
       tool,
       siblings: getSiblings(tool),
@@ -28,7 +28,9 @@ export const Route = createFileRoute("/tools/$slug")({
       gap: tool.latest
         ? releaseGapLabel(tool.latest.publishedAt, tool.previous)
         : null,
-      releases: assignReleaseFragments(releases),
+      notesUnavailable: notes.status === "unavailable",
+      releases:
+        notes.status === "ok" ? assignReleaseFragments(notes.releases) : [],
     };
   },
   head: ({ loaderData }) => {
@@ -59,7 +61,8 @@ export const Route = createFileRoute("/tools/$slug")({
 });
 
 function ToolPage() {
-  const { tool, siblings, gap, releases } = Route.useLoaderData();
+  const { tool, siblings, gap, releases, notesUnavailable } =
+    Route.useLoaderData();
 
   return (
     <PageContainer width="reading" className="space-y-5">
@@ -71,7 +74,11 @@ function ToolPage() {
         <RelatedTools groupName={tool.group.name} siblings={siblings} />
       ) : null}
 
-      <ReleaseHistory releases={releases} repository={tool.repository} />
+      <ReleaseHistory
+        releases={releases}
+        repository={tool.repository}
+        unavailable={notesUnavailable}
+      />
     </PageContainer>
   );
 }

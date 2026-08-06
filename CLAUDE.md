@@ -108,7 +108,7 @@ policy. When it fires, pin the previous release rather than bypassing it.
 ## Testing
 
 ```bash
-pnpm test         # vitest: unit + dom + worker projects, 227 tests
+pnpm test         # vitest: unit + dom + worker projects, 232 tests
 ```
 
 Three projects in `vitest.config.ts`:
@@ -266,7 +266,14 @@ Type sizes are eight **named tiers**, chosen by role, declared in
 - **Borders carry elevation.** The single `shadow-overlay` is for overlays only —
   never on a page card.
 - **One signal per piece of state.** Don't render the same channel badge or the
-  same date twice on one screen; both happened before this pass.
+  same date twice on one screen. This has now regressed twice, and both times
+  the code comment claimed the fix was already in place — so trust the rendered
+  HTML, not the comment. `tests/unit/ui-signals.test.tsx` guards it.
+- **A badge that can only say one thing is not a signal.** `ChannelBadge`
+  renders nothing for `stable`, because every tool sets
+  `includePrerelease: false` and so all 690 stored releases are stable — it was
+  painting ~768 chips that carried no information and gave the exception no
+  extra weight. Promote exceptions; keep the normal case quiet.
 - **A new custom utility must be declared to `cn()`** if it shares a Tailwind
   prefix. tailwind-merge reads `text-<x>` as a colour, so the semantic sizes were
   silently dropped wherever they met a `text-fg-*` class until `src/lib/cn.ts`
