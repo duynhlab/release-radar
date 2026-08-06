@@ -12,7 +12,7 @@ schemaVersion: 1
 tools:
   - id: flux
     name: Flux
-    category: delivery
+    category: gitops
     repository: fluxcd/flux2
     description: GitOps toolkit for Kubernetes
     tags:
@@ -40,7 +40,7 @@ schemaVersion: 1
 tools:
   - id: helm
     name: Helm
-    category: delivery
+    category: gitops
     repository: helm/helm
     description: Kubernetes package manager
 `);
@@ -58,12 +58,12 @@ schemaVersion: 1
 tools:
   - id: flux
     name: Flux
-    category: delivery
+    category: gitops
     repository: fluxcd/flux2
     description: a
   - id: flux
     name: Flux again
-    category: delivery
+    category: gitops
     repository: fluxcd/flux2
     description: b
 `;
@@ -81,7 +81,7 @@ schemaVersion: 1
 tools:
   - id: flux
     name: Flux
-    category: delivery
+    category: gitops
     repository: fluxcd/flux2
     description: a
     release:
@@ -91,7 +91,11 @@ tools:
   });
 
   it("rejects an unknown category", () => {
-    const bad = validYaml.replace("category: delivery", "category: nonsense");
+    const bad = validYaml.replace("category: gitops", "category: nonsense");
+    // Without this, renaming the fixture's slug makes the replace a silent
+    // no-op and the test then asserts that *valid* YAML throws — a failure
+    // that reads like a schema bug rather than a stale fixture.
+    expect(bad).not.toBe(validYaml);
     expect(() => parseCatalog(bad)).toThrow(CatalogError);
   });
 });
@@ -107,7 +111,7 @@ groups:
 tools:
   - id: acme-server
     name: Acme Server
-    category: platform
+    category: kubernetes
     repository: acme/server
     description: a
     group: acme
@@ -122,7 +126,7 @@ schemaVersion: 1
 tools:
   - id: acme-server
     name: Acme Server
-    category: platform
+    category: kubernetes
     repository: acme/server
     description: a
     group: nonexistent
@@ -143,13 +147,13 @@ schemaVersion: 1
 tools:
   - id: a
     name: A
-    category: platform
+    category: kubernetes
     repository: a/a
     description: a
     enabled: false
   - id: b
     name: B
-    category: platform
+    category: kubernetes
     repository: b/b
     description: b
 `);

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-06T05:56:00.154Z",
+  "generatedAt": "2026-08-06T07:26:30.145Z",
   "schemaVersion": 1,
   "tools": [
     {
-      "category": "platform",
+      "category": "kubernetes",
       "description": "Production-grade container orchestration",
       "documentation": "https://kubernetes.io/docs/",
       "homepage": "https://kubernetes.io",
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "category": "platform",
+      "category": "kubernetes",
       "description": "Just-in-time node autoscaling for Kubernetes",
       "documentation": "https://karpenter.sh/docs/",
       "homepage": "https://karpenter.sh",
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "category": "platform",
+      "category": "security",
       "description": "X.509 certificate management for Kubernetes",
       "documentation": "https://cert-manager.io/docs/",
       "group": {
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "category": "provisioning",
+      "category": "iac",
       "description": "Infrastructure as code for any cloud",
       "documentation": "https://developer.hashicorp.com/terraform/docs",
       "homepage": "https://developer.hashicorp.com/terraform",
@@ -120,7 +120,7 @@
       ]
     },
     {
-      "category": "provisioning",
+      "category": "iac",
       "description": "Open-source infrastructure as code, Terraform-compatible",
       "documentation": "https://opentofu.org/docs/",
       "homepage": "https://opentofu.org",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "category": "delivery",
+      "category": "gitops",
       "description": "GitOps toolkit for Kubernetes",
       "documentation": "https://fluxcd.io/flux/",
       "group": {
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "category": "delivery",
+      "category": "gitops",
       "description": "Declarative GitOps continuous delivery for Kubernetes",
       "documentation": "https://argo-cd.readthedocs.io",
       "homepage": "https://argoproj.github.io/cd/",
@@ -207,7 +207,7 @@
       ]
     },
     {
-      "category": "delivery",
+      "category": "gitops",
       "description": "The package manager for Kubernetes",
       "documentation": "https://helm.sh/docs/",
       "homepage": "https://helm.sh",
@@ -578,7 +578,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "database",
       "description": "PostgreSQL operator for Kubernetes",
       "documentation": "https://cloudnative-pg.io/documentation/",
       "group": {
@@ -611,7 +611,7 @@
       ]
     },
     {
-      "category": "platform",
+      "category": "kubernetes",
       "description": "Kubernetes event-driven autoscaling",
       "documentation": "https://keda.sh/docs/",
       "homepage": "https://keda.sh",
@@ -867,7 +867,7 @@
       ]
     },
     {
-      "category": "platform",
+      "category": "kubernetes",
       "description": "Kube Resource Orchestrator for composing Kubernetes APIs",
       "documentation": "https://kro.run/docs/overview/",
       "homepage": "https://kro.run",
@@ -924,7 +924,7 @@
       ]
     },
     {
-      "category": "delivery",
+      "category": "gitops",
       "description": "Kubernetes operator for managing the lifecycle of Flux CD",
       "documentation": "https://fluxcd.control-plane.io/operator/",
       "group": {
@@ -957,7 +957,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "database",
       "description": "Kubernetes operator for Valkey clusters",
       "documentation": "https://github.com/valkey-io/valkey-operator/tree/main/docs",
       "group": {
@@ -990,7 +990,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "messaging",
       "description": "Helm chart for the Temporal durable execution platform",
       "documentation": "https://docs.temporal.io",
       "homepage": "https://temporal.io",
@@ -1019,7 +1019,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "database",
       "description": "Helm charts for ClickHouse and the Altinity operator (mixed, per-chart releases)",
       "documentation": "https://docs.altinity.com",
       "group": {
@@ -1052,7 +1052,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "database",
       "description": "Official Kubernetes operator for ClickHouse",
       "documentation": "https://clickhouse.com/docs",
       "group": {
@@ -1276,7 +1276,7 @@
       ]
     },
     {
-      "category": "platform",
+      "category": "testing",
       "description": "Light and free AWS local emulator, a LocalStack alternative",
       "id": "floci",
       "latest": {
@@ -1425,7 +1425,7 @@
       ]
     },
     {
-      "category": "platform",
+      "category": "testing",
       "description": "Kubernetes operator for distributed k6 load testing",
       "documentation": "https://grafana.com/docs/k6/latest/set-up/set-up-distributed-k6/",
       "group": {
@@ -1611,7 +1611,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "messaging",
       "description": "Apache Kafka running on Kubernetes",
       "documentation": "https://strimzi.io/docs/",
       "group": {
@@ -1645,7 +1645,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "database",
       "description": "Kubernetes operator for ScyllaDB clusters",
       "documentation": "https://operator.docs.scylladb.com",
       "group": {
@@ -1678,7 +1678,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "database",
       "description": "Run periodic jobs in PostgreSQL",
       "group": {
         "id": "database",
@@ -1709,7 +1709,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "database",
       "description": "PostgreSQL Audit Extension",
       "group": {
         "id": "database",
@@ -1741,7 +1741,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "database",
       "description": "DuckDB-powered Postgres for high performance apps & analytics.",
       "group": {
         "id": "database",
@@ -1772,7 +1772,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "backup",
       "description": "Archival restoration tool for PostgreSQL, MySQL and more",
       "documentation": "https://wal-g.readthedocs.io",
       "group": {
@@ -1803,7 +1803,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "backup",
       "description": "Backup and restore solution for PostgreSQL",
       "group": {
         "id": "database",
@@ -1834,7 +1834,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "backup",
       "description": "Backup and recovery manager for PostgreSQL",
       "documentation": "https://docs.pgbarman.org",
       "group": {
@@ -1866,7 +1866,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "backup",
       "description": "CloudNativePG plugin for backups with Barman Cloud",
       "documentation": "https://cloudnative-pg.io/plugin-barman-cloud/",
       "group": {
@@ -1926,7 +1926,7 @@
       ]
     },
     {
-      "category": "data",
+      "category": "backup",
       "description": "Reliable PostgreSQL Backup & Restore",
       "documentation": "https://pgbackrest.org/user-guide.html",
       "group": {
@@ -1958,7 +1958,7 @@
       ]
     },
     {
-      "category": "provisioning",
+      "category": "gitops",
       "description": "A GitOps OpenTofu and Terraform controller for Flux",
       "group": {
         "id": "fluxcd",
@@ -2048,7 +2048,7 @@
       ]
     },
     {
-      "category": "platform",
+      "category": "kubernetes",
       "description": "A Kubernetes web UI that is fully-featured, user-friendly and extensible",
       "documentation": "https://headlamp.dev/docs/latest/",
       "homepage": "https://headlamp.dev",

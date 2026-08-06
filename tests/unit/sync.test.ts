@@ -39,7 +39,7 @@ schemaVersion: 1
 tools:
   - id: acme
     name: Acme
-    category: platform
+    category: kubernetes
     repository: acme/tool
     description: test tool
     release:
@@ -172,7 +172,7 @@ groups:
 tools:
   - id: acme
     name: Acme
-    category: platform
+    category: kubernetes
     repository: acme/tool
     description: test tool
     homepage: https://acme.dev

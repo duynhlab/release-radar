@@ -78,20 +78,26 @@
   --color-pre-fg: var(--rr-pre-fg);
 
   /* Category hues: badge-only, low chroma. */
-  --color-cat-platform-bg: var(--rr-cat-platform-bg);
-  --color-cat-platform-fg: var(--rr-cat-platform-fg);
-  --color-cat-provisioning-bg: var(--rr-cat-provisioning-bg);
-  --color-cat-provisioning-fg: var(--rr-cat-provisioning-fg);
-  --color-cat-delivery-bg: var(--rr-cat-delivery-bg);
-  --color-cat-delivery-fg: var(--rr-cat-delivery-fg);
+  --color-cat-kubernetes-bg: var(--rr-cat-kubernetes-bg);
+  --color-cat-kubernetes-fg: var(--rr-cat-kubernetes-fg);
+  --color-cat-gitops-bg: var(--rr-cat-gitops-bg);
+  --color-cat-gitops-fg: var(--rr-cat-gitops-fg);
+  --color-cat-iac-bg: var(--rr-cat-iac-bg);
+  --color-cat-iac-fg: var(--rr-cat-iac-fg);
   --color-cat-observability-bg: var(--rr-cat-observability-bg);
   --color-cat-observability-fg: var(--rr-cat-observability-fg);
+  --color-cat-database-bg: var(--rr-cat-database-bg);
+  --color-cat-database-fg: var(--rr-cat-database-fg);
+  --color-cat-backup-bg: var(--rr-cat-backup-bg);
+  --color-cat-backup-fg: var(--rr-cat-backup-fg);
+  --color-cat-messaging-bg: var(--rr-cat-messaging-bg);
+  --color-cat-messaging-fg: var(--rr-cat-messaging-fg);
   --color-cat-networking-bg: var(--rr-cat-networking-bg);
   --color-cat-networking-fg: var(--rr-cat-networking-fg);
   --color-cat-security-bg: var(--rr-cat-security-bg);
   --color-cat-security-fg: var(--rr-cat-security-fg);
-  --color-cat-data-bg: var(--rr-cat-data-bg);
-  --color-cat-data-fg: var(--rr-cat-data-fg);
+  --color-cat-testing-bg: var(--rr-cat-testing-bg);
+  --color-cat-testing-fg: var(--rr-cat-testing-fg);
   --color-cat-ai-bg: var(--rr-cat-ai-bg);
   --color-cat-ai-fg: var(--rr-cat-ai-fg);
 }
@@ -120,21 +126,29 @@
   --rr-pre-bg: oklch(0.29 0.05 60);
   --rr-pre-fg: oklch(0.87 0.095 60);
 
-  --rr-cat-platform-bg: oklch(0.28 0.042 240);
-  --rr-cat-platform-fg: oklch(0.865 0.085 240);
-  --rr-cat-provisioning-bg: oklch(0.28 0.045 295);
-  --rr-cat-provisioning-fg: oklch(0.865 0.085 295);
-  --rr-cat-delivery-bg: oklch(0.28 0.042 155);
-  --rr-cat-delivery-fg: oklch(0.865 0.085 155);
-  --rr-cat-observability-bg: oklch(0.28 0.042 75);
-  --rr-cat-observability-fg: oklch(0.87 0.085 75);
-  --rr-cat-networking-bg: oklch(0.28 0.042 200);
-  --rr-cat-networking-fg: oklch(0.865 0.085 200);
+  /* 11 hues ≥25 apart so adjacent badges stay distinguishable, and clear of
+     the channel badges (stable 155, pre 60) which share a card with them. */
+  --rr-cat-kubernetes-bg: oklch(0.28 0.045 240);
+  --rr-cat-kubernetes-fg: oklch(0.865 0.085 240);
+  --rr-cat-gitops-bg: oklch(0.28 0.045 140);
+  --rr-cat-gitops-fg: oklch(0.865 0.085 140);
+  --rr-cat-iac-bg: oklch(0.28 0.045 300);
+  --rr-cat-iac-fg: oklch(0.865 0.085 300);
+  --rr-cat-observability-bg: oklch(0.28 0.045 45);
+  --rr-cat-observability-fg: oklch(0.865 0.085 45);
+  --rr-cat-database-bg: oklch(0.28 0.045 270);
+  --rr-cat-database-fg: oklch(0.865 0.085 270);
+  --rr-cat-backup-bg: oklch(0.28 0.045 330);
+  --rr-cat-backup-fg: oklch(0.865 0.085 330);
+  --rr-cat-messaging-bg: oklch(0.28 0.045 355);
+  --rr-cat-messaging-fg: oklch(0.865 0.085 355);
+  --rr-cat-networking-bg: oklch(0.28 0.045 205);
+  --rr-cat-networking-fg: oklch(0.865 0.085 205);
   --rr-cat-security-bg: oklch(0.28 0.045 15);
   --rr-cat-security-fg: oklch(0.865 0.085 15);
-  --rr-cat-data-bg: oklch(0.28 0.045 275);
-  --rr-cat-data-fg: oklch(0.865 0.085 275);
-  --rr-cat-ai-bg: oklch(0.28 0.042 175);
+  --rr-cat-testing-bg: oklch(0.28 0.045 110);
+  --rr-cat-testing-fg: oklch(0.865 0.085 110);
+  --rr-cat-ai-bg: oklch(0.28 0.045 175);
   --rr-cat-ai-fg: oklch(0.865 0.085 175);
 }
 
@@ -164,20 +178,26 @@
   --rr-pre-bg: oklch(0.96 0.028 60);
   --rr-pre-fg: oklch(0.45 0.11 60);
 
-  --rr-cat-platform-bg: oklch(0.96 0.028 240);
-  --rr-cat-platform-fg: oklch(0.45 0.11 240);
-  --rr-cat-provisioning-bg: oklch(0.96 0.028 295);
-  --rr-cat-provisioning-fg: oklch(0.45 0.11 295);
-  --rr-cat-delivery-bg: oklch(0.96 0.028 155);
-  --rr-cat-delivery-fg: oklch(0.45 0.11 155);
-  --rr-cat-observability-bg: oklch(0.96 0.028 75);
-  --rr-cat-observability-fg: oklch(0.45 0.11 75);
-  --rr-cat-networking-bg: oklch(0.96 0.028 200);
-  --rr-cat-networking-fg: oklch(0.45 0.11 200);
+  --rr-cat-kubernetes-bg: oklch(0.96 0.028 240);
+  --rr-cat-kubernetes-fg: oklch(0.45 0.11 240);
+  --rr-cat-gitops-bg: oklch(0.96 0.028 140);
+  --rr-cat-gitops-fg: oklch(0.45 0.11 140);
+  --rr-cat-iac-bg: oklch(0.96 0.028 300);
+  --rr-cat-iac-fg: oklch(0.45 0.11 300);
+  --rr-cat-observability-bg: oklch(0.96 0.028 45);
+  --rr-cat-observability-fg: oklch(0.45 0.11 45);
+  --rr-cat-database-bg: oklch(0.96 0.028 270);
+  --rr-cat-database-fg: oklch(0.45 0.11 270);
+  --rr-cat-backup-bg: oklch(0.96 0.028 330);
+  --rr-cat-backup-fg: oklch(0.45 0.11 330);
+  --rr-cat-messaging-bg: oklch(0.96 0.028 355);
+  --rr-cat-messaging-fg: oklch(0.45 0.11 355);
+  --rr-cat-networking-bg: oklch(0.96 0.028 205);
+  --rr-cat-networking-fg: oklch(0.45 0.11 205);
   --rr-cat-security-bg: oklch(0.96 0.028 15);
   --rr-cat-security-fg: oklch(0.45 0.11 15);
-  --rr-cat-data-bg: oklch(0.96 0.028 275);
-  --rr-cat-data-fg: oklch(0.45 0.11 275);
+  --rr-cat-testing-bg: oklch(0.96 0.028 110);
+  --rr-cat-testing-fg: oklch(0.45 0.11 110);
   --rr-cat-ai-bg: oklch(0.96 0.028 175);
   --rr-cat-ai-fg: oklch(0.45 0.11 175);
 }

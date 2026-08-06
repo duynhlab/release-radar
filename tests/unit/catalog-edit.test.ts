@@ -20,7 +20,7 @@ groups:
 tools:
   - id: flux
     name: Flux
-    category: delivery
+    category: gitops
     repository: fluxcd/flux2
     description: GitOps toolkit
     release:
@@ -30,7 +30,7 @@ tools:
 `;
 
 const entry = buildToolEntry(
-  { repository: "acme/tool", category: "platform", tags: ["kubernetes"] },
+  { repository: "acme/tool", category: "kubernetes", tags: ["kubernetes"] },
   { description: "A tool", homepage: "https://acme.dev" },
 );
 
@@ -66,7 +66,7 @@ describe("buildToolEntry", () => {
 
   it("drops non-URL homepage and falls back on empty description", () => {
     const e = buildToolEntry(
-      { repository: "acme/tool", category: "platform" },
+      { repository: "acme/tool", category: "kubernetes" },
       { description: "  ", homepage: "not-a-url" },
     );
     expect(e.homepage).toBeUndefined();
@@ -133,7 +133,7 @@ describe("appendToolToCatalog", () => {
     const dup = buildToolEntry(
       {
         repository: "fluxcd/flux2",
-        category: "delivery",
+        category: "gitops",
         id: "flux-again",
         tagPattern: "^v\\d+\\.\\d+\\.\\d+$",
       },
@@ -146,7 +146,7 @@ describe("appendToolToCatalog", () => {
     const other = buildToolEntry(
       {
         repository: "fluxcd/flux2",
-        category: "delivery",
+        category: "gitops",
         id: "flux-charts",
         tagPattern: "^chart-",
       },

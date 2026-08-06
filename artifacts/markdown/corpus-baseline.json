@@ -1,8 +1,8 @@
 {
   "tools": 68,
-  "notes": 597,
+  "notes": 598,
   "bareUrl": {
-    "notes": 221,
+    "notes": 222,
     "tools": [
       "argo-cd",
       "aws-load-balancer-controller",
@@ -66,7 +66,7 @@
   },
   "setextHeading": 0,
   "structures": {
-    "links": 4480,
+    "links": 4538,
     "images": 44,
     "codeFences": 196,
     "tables": 14,

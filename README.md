@@ -9,7 +9,7 @@ flowchart TD
     sync["GitHub Actions<br/>2×/day · 09:17 + 21:17 ICT"]
     api["GitHub Releases API"]
     data["data/*.json<br/>release history · max 20/tool"]
-    build["TanStack Start<br/>prerender · 77 pages"]
+    build["TanStack Start<br/>prerender · 80 pages"]
     cf["Cloudflare Workers"]
 
     catalog --> sync
@@ -28,7 +28,7 @@ data, look at `data/`, not the frontend.
 
 - **Data is committed to Git** — history and diffs for free, no rate limits at
   view time, trivially forkable. Modeled after fluxcd/flux-schema.
-- **Fully prerendered** — all 77 pages are generated at build time from the
+- **Fully prerendered** — all 80 pages are generated at build time from the
   validated catalog, so the prerendered set and the 404-free set are the same
   set by construction.
 - **The catalog index is code-generated, release notes are static assets.**
@@ -48,9 +48,9 @@ data, look at `data/`, not the frontend.
 | `pnpm dev` | Vite dev server |
 | `pnpm validate:catalog` | Validate `config/tools.yaml` + regenerate JSON schema |
 | `pnpm sync` | Fetch releases from GitHub (needs `GITHUB_TOKEN`) |
-| `pnpm test` | Vitest: unit + dom + worker projects (189 tests) |
+| `pnpm test` | Vitest: unit + dom + worker projects (199 tests) |
 | `pnpm lint` / `pnpm typecheck` | ESLint / tsc |
-| `pnpm build` | Production build + prerender (77 pages) |
+| `pnpm build` | Production build + prerender (80 pages) |
 | `pnpm audit:markdown` | Inventory the release-note corpus; `--check` gates it |
 | `pnpm check:bundle` | Prove release notes stay out of the worker |
 | `pnpm preview` | Build + serve on workerd (Cloudflare runtime) locally |
@@ -102,7 +102,9 @@ requests"*.
    ```yaml
    - id: my-tool
      name: My Tool
-     category: observability   # platform | provisioning | delivery | observability | networking | security | data
+     # kubernetes | gitops | iac | observability | database | backup
+     # messaging | networking | security | testing | ai
+     category: observability
      repository: owner/repo
      description: One-line description
      homepage: https://example.com
@@ -139,7 +141,7 @@ repo.
    where filesystem access works — that is why release notes are static assets.
 2. **`prerender.autoSubfolderIndex` must stay `false`.** The default `true`
    emits `foo/index.html`, so Workers Assets serves `/foo` as a 307 to `/foo/` —
-   a redirect hop on 76 of 77 URLs, and every canonical URL changes.
+   a redirect hop on 79 of 80 URLs, and every canonical URL changes.
 3. **`throw notFound()` alone gives a real 404** and server-renders the 404 body.
    Never set `assets.not_found_handling: "single-page-application"` — it returns
    200 for unknown paths.

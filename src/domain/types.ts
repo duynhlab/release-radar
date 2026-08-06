@@ -1,24 +1,39 @@
 import { z } from "zod";
 
+/**
+ * Declaration order is display order: it drives the filter chips and
+ * `getUsedCategories()`. It runs cluster → delivery → data → cross-cutting.
+ *
+ * A category names *what a tool is for*, never how it ships. `operator`,
+ * `helm-chart`, `plugin` and `extension` describe 40% of the catalog and are
+ * tags — `tempo`, `tempo-operator` and `tempo-datasource` are three artifacts of
+ * one thing and belong on one page.
+ */
 export const CATEGORIES = [
-  "platform",
-  "provisioning",
-  "delivery",
+  "kubernetes",
+  "gitops",
+  "iac",
   "observability",
+  "database",
+  "backup",
+  "messaging",
   "networking",
   "security",
-  "data",
+  "testing",
   "ai",
 ] as const;
 
 export const CATEGORY_LABELS: Record<(typeof CATEGORIES)[number], string> = {
-  platform: "Platform",
-  provisioning: "Provisioning",
-  delivery: "Delivery & GitOps",
-  observability: "Observability",
+  kubernetes: "Kubernetes",
+  gitops: "GitOps & Delivery",
+  iac: "Infrastructure as Code",
+  observability: "Monitoring & Observability",
+  database: "Databases",
+  backup: "Backup & Recovery",
+  messaging: "Messaging & Workflow",
   networking: "Networking",
   security: "Security",
-  data: "Data & Messaging",
+  testing: "Testing",
   ai: "AI & Agents",
 };
 

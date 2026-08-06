@@ -11,13 +11,16 @@ on:
         required: true
         type: choice
         options:
-          - platform
-          - provisioning
-          - delivery
+          - kubernetes
+          - gitops
+          - iac
           - observability
+          - database
+          - backup
+          - messaging
           - networking
           - security
-          - data
+          - testing
           - ai
       id:
         description: "Tool id (default: repo name)"
