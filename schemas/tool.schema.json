@@ -47,13 +47,16 @@
           "category": {
             "type": "string",
             "enum": [
-              "platform",
-              "provisioning",
-              "delivery",
+              "kubernetes",
+              "gitops",
+              "iac",
               "observability",
+              "database",
+              "backup",
+              "messaging",
               "networking",
               "security",
-              "data",
+              "testing",
               "ai"
             ]
           },

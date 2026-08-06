@@ -54,7 +54,14 @@ Fix pgaudit tag pattern          → fix(catalog): correct pgaudit tag pattern
 
 Personal DevOps/SRE release tracker: a Git-backed catalog that follows new
 releases of infrastructure tools on GitHub. Currently **68 tools** across 8
-groups and 8 categories.
+groups and 11 categories.
+
+A category says **what a tool is for**, and a tool has exactly one. How it ships
+— `operator`, `helm-chart`, `plugin`, `extension` — is a tag, not a category:
+that axis covers 40% of the catalog and cuts across every domain, so `tempo`,
+`tempo-operator` and `tempo-datasource` all belong on the same category page.
+Adding a category is only worth it when several existing tools would move into
+it; a page with one tool is worse than a slightly fat one.
 
 No database, no runtime API calls, no client-side tokens. The site is a pure
 function of the committed JSON — **if the site shows wrong data, look at
@@ -101,7 +108,7 @@ policy. When it fires, pin the previous release rather than bypassing it.
 ## Testing
 
 ```bash
-pnpm test         # vitest: unit + dom + worker projects, 189 tests
+pnpm test         # vitest: unit + dom + worker projects, 199 tests
 ```
 
 Three projects in `vitest.config.ts`:
@@ -147,6 +154,13 @@ silently no-op after `set device`/`set media`. Use one session per viewport and
 assert `innerWidth` before trusting any capture — a wrong viewport still
 produces a plausible screenshot.
 
+Also: a **stale `vite preview` holds the port and serves a deleted `dist/`** —
+HTML answers 200 while the hashed CSS 404s, so the page renders unstyled and
+every measurement is quietly wrong. Free the port with
+`lsof -ti tcp:4173 | xargs kill -9`, wait for the CSS asset itself to return
+200, and assert a known-styled property inside the eval before believing any
+number. Full list in `artifacts/e2e/README.md`.
+
 ## Cloudflare Workers
 
 Deployed via **Workers Builds (Git integration)**, not GitHub Actions.
@@ -170,7 +184,8 @@ config/tools.yaml → Actions sync (2x/day, 09:17 + 21:17 ICT) → data/*.json
                   → TanStack Start prerender → Cloudflare Workers
 ```
 
-- **77 prerendered pages**: 1 home + 8 categories + 68 tools.
+- **80 prerendered pages**: 1 home + 11 categories + 68 tools. `check:bundle`
+  derives this from `CATEGORIES.length` — don't reintroduce a literal count.
 - `data/` is **generated**. Never edit by hand.
 - Scheduled runs are best-effort: observed 1.5–3.5h late.
 
@@ -191,7 +206,7 @@ in which filesystem access works. This drives everything below.
   reads them with `fs` — **scripts and tests only**, never from `src/routes/**`.
 - **`prerender.autoSubfolderIndex: false` is mandatory.** The default `true`
   emits `foo/index.html` and makes Workers Assets serve `/foo` as a 307 to
-  `/foo/`, putting a redirect on 76 of 77 URLs.
+  `/foo/`, putting a redirect on 79 of 80 URLs.
 - **`prerender.autoStaticPathsDiscovery: false`** or the explicit `pages` list
   stops being authoritative.
 - **`throw notFound()` alone gives a real 404** and server-renders the

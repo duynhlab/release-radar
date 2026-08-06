@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import path from "node:path";
-import { IndexSchema } from "../src/domain/types.ts";
+import { CATEGORIES, IndexSchema } from "../src/domain/types.ts";
 
 /**
  * The only check that proves the central constraint on a real build:
@@ -87,7 +87,9 @@ if (totalGzip > WORKER_GZIP_BUDGET) {
 // 4. Every expected page prerendered as a flat file (autoSubfolderIndex:false),
 //    so the legacy "200, no redirect" URL contract holds.
 const htmlCount = walk(CLIENT_DIR).filter((f) => f.endsWith(".html")).length;
-const expected = 1 + 8 + index.tools.length;
+// Derived, not literal: a hardcoded count silently goes stale the next time the
+// taxonomy changes, and this check is the only thing guarding the page contract.
+const expected = 1 + CATEGORIES.length + index.tools.length;
 if (htmlCount !== expected) {
   failures.push(`prerendered ${htmlCount} pages, expected ${expected}`);
 }

@@ -29,7 +29,7 @@ groups:
 tools:
   - id: kubernetes
     name: Kubernetes
-    category: platform
+    category: kubernetes
     repository: kubernetes/kubernetes
     description: Production-grade container orchestration
     homepage: https://kubernetes.io
@@ -44,7 +44,7 @@ tools:
 
   - id: karpenter
     name: Karpenter
-    category: platform
+    category: kubernetes
     repository: kubernetes-sigs/karpenter
     description: Just-in-time node autoscaling for Kubernetes
     homepage: https://karpenter.sh
@@ -60,7 +60,7 @@ tools:
 
   - id: cert-manager
     name: cert-manager
-    category: platform
+    category: security
     repository: cert-manager/cert-manager
     description: X.509 certificate management for Kubernetes
     homepage: https://cert-manager.io
@@ -77,7 +77,7 @@ tools:
 
   - id: terraform
     name: Terraform
-    category: provisioning
+    category: iac
     repository: hashicorp/terraform
     description: Infrastructure as code for any cloud
     homepage: https://developer.hashicorp.com/terraform
@@ -91,7 +91,7 @@ tools:
 
   - id: opentofu
     name: OpenTofu
-    category: provisioning
+    category: iac
     repository: opentofu/opentofu
     description: Open-source infrastructure as code, Terraform-compatible
     homepage: https://opentofu.org
@@ -105,7 +105,7 @@ tools:
 
   - id: flux
     name: Flux
-    category: delivery
+    category: gitops
     repository: fluxcd/flux2
     description: GitOps toolkit for Kubernetes
     homepage: https://fluxcd.io
@@ -121,7 +121,7 @@ tools:
 
   - id: argo-cd
     name: Argo CD
-    category: delivery
+    category: gitops
     repository: argoproj/argo-cd
     description: Declarative GitOps continuous delivery for Kubernetes
     homepage: https://argoproj.github.io/cd/
@@ -136,7 +136,7 @@ tools:
 
   - id: helm
     name: Helm
-    category: delivery
+    category: gitops
     repository: helm/helm
     description: The package manager for Kubernetes
     homepage: https://helm.sh
@@ -327,7 +327,7 @@ tools:
 
   - id: cloudnative-pg
     name: CloudNativePG
-    category: data
+    category: database
     repository: cloudnative-pg/cloudnative-pg
     description: PostgreSQL operator for Kubernetes
     homepage: https://cloudnative-pg.io
@@ -344,7 +344,7 @@ tools:
 
   - id: keda
     name: KEDA
-    category: platform
+    category: kubernetes
     repository: kedacore/keda
     description: Kubernetes event-driven autoscaling
     homepage: https://keda.sh
@@ -480,7 +480,7 @@ tools:
 
   - id: kro
     name: kro
-    category: platform
+    category: kubernetes
     repository: kubernetes-sigs/kro
     description: Kube Resource Orchestrator for composing Kubernetes APIs
     homepage: https://kro.run
@@ -511,7 +511,7 @@ tools:
 
   - id: flux-operator
     name: Flux Operator
-    category: delivery
+    category: gitops
     repository: controlplaneio-fluxcd/flux-operator
     description: Kubernetes operator for managing the lifecycle of Flux CD
     homepage: https://fluxcd.control-plane.io/operator/
@@ -528,7 +528,7 @@ tools:
 
   - id: valkey-operator
     name: Valkey Operator
-    category: data
+    category: database
     repository: valkey-io/valkey-operator
     description: Kubernetes operator for Valkey clusters
     homepage: https://valkey.io
@@ -545,7 +545,7 @@ tools:
 
   - id: temporal-helm-charts
     name: Temporal Helm Charts
-    category: data
+    category: messaging
     repository: temporalio/helm-charts
     description: Helm chart for the Temporal durable execution platform
     homepage: https://temporal.io
@@ -561,7 +561,7 @@ tools:
 
   - id: altinity-helm-charts
     name: Altinity Helm Charts
-    category: data
+    category: database
     repository: Altinity/helm-charts
     description: Helm charts for ClickHouse and the Altinity operator (mixed, per-chart releases)
     homepage: https://altinity.com
@@ -578,7 +578,7 @@ tools:
 
   - id: clickhouse-operator
     name: ClickHouse Operator
-    category: data
+    category: database
     repository: ClickHouse/clickhouse-operator
     description: Official Kubernetes operator for ClickHouse
     homepage: https://clickhouse.com
@@ -696,7 +696,7 @@ tools:
 
   - id: floci
     name: Floci
-    category: platform
+    category: testing
     repository: floci-io/floci
     description: Light and free AWS local emulator, a LocalStack alternative
     tags:
@@ -771,7 +771,7 @@ tools:
 
   - id: k6-operator
     name: k6 Operator
-    category: platform
+    category: testing
     repository: grafana/k6-operator
     description: Kubernetes operator for distributed k6 load testing
     homepage: https://k6.io
@@ -861,7 +861,7 @@ tools:
 
   - id: strimzi-kafka-operator
     name: Strimzi Kafka Operator
-    category: data
+    category: messaging
     repository: strimzi/strimzi-kafka-operator
     description: Apache Kafka running on Kubernetes
     homepage: https://strimzi.io
@@ -879,7 +879,7 @@ tools:
 
   - id: scylla-operator
     name: Scylla Operator
-    category: data
+    category: database
     repository: scylladb/scylla-operator
     description: Kubernetes operator for ScyllaDB clusters
     homepage: https://www.scylladb.com
@@ -896,7 +896,7 @@ tools:
 
   - id: pg-cron
     name: pg_cron
-    category: data
+    category: database
     repository: citusdata/pg_cron
     description: Run periodic jobs in PostgreSQL
     tags:
@@ -911,7 +911,7 @@ tools:
 
   - id: pgaudit
     name: pgaudit
-    category: data
+    category: database
     repository: pgaudit/pgaudit
     description: PostgreSQL Audit Extension
     homepage: http://pgaudit.org/
@@ -927,7 +927,7 @@ tools:
 
   - id: pgduckdb
     name: pg_duckdb
-    category: data
+    category: database
     repository: duckdb/pg_duckdb
     description: DuckDB-powered Postgres for high performance apps & analytics.
     tags:
@@ -942,7 +942,7 @@ tools:
 
   - id: wal-g
     name: WAL-G
-    category: data
+    category: backup
     repository: wal-g/wal-g
     description: Archival restoration tool for PostgreSQL, MySQL and more
     documentation: https://wal-g.readthedocs.io
@@ -957,7 +957,7 @@ tools:
 
   - id: pgmoneta
     name: pgmoneta
-    category: data
+    category: backup
     repository: pgmoneta/pgmoneta
     description: Backup and restore solution for PostgreSQL
     homepage: https://pgmoneta.github.io
@@ -972,7 +972,7 @@ tools:
 
   - id: barman
     name: Barman
-    category: data
+    category: backup
     repository: EnterpriseDB/barman
     description: Backup and recovery manager for PostgreSQL
     homepage: https://pgbarman.org
@@ -988,7 +988,7 @@ tools:
 
   - id: plugin-barman-cloud
     name: Barman Cloud Plugin
-    category: data
+    category: backup
     repository: cloudnative-pg/plugin-barman-cloud
     description: CloudNativePG plugin for backups with Barman Cloud
     documentation: https://cloudnative-pg.io/plugin-barman-cloud/
@@ -1019,7 +1019,7 @@ tools:
 
   - id: pgbackrest
     name: pgBackRest
-    category: data
+    category: backup
     repository: pgbackrest/pgbackrest
     description: Reliable PostgreSQL Backup & Restore
     homepage: https://pgbackrest.org
@@ -1035,7 +1035,7 @@ tools:
 
   - id: tofu-controller
     name: Tofu Controller
-    category: provisioning
+    category: gitops
     repository: flux-iac/tofu-controller
     description: A GitOps OpenTofu and Terraform controller for Flux
     homepage: https://flux-iac.github.io/tofu-controller/
@@ -1083,7 +1083,7 @@ tools:
 
   - id: headlamp
     name: Headlamp
-    category: platform
+    category: kubernetes
     repository: kubernetes-sigs/headlamp
     description: A Kubernetes web UI that is fully-featured, user-friendly and extensible
     homepage: https://headlamp.dev

@@ -90,7 +90,7 @@ describe("isFiltered / activeFilterCount", () => {
   });
 
   it("counts only the non-search facets", () => {
-    const search = parseHomeSearch({ q: "x", category: "data", favorites: true });
+    const search = parseHomeSearch({ q: "x", category: "database", favorites: true });
     expect(isFiltered(search)).toBe(true);
     // q is visible in its own field, so it does not add to the Filters badge.
     expect(activeFilterCount(search)).toBe(2);

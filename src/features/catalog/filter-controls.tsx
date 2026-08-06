@@ -15,17 +15,21 @@ export function CategoryChips({
 }) {
   const options: Array<Category | "all"> = ["all", ...categories];
   return (
-    // Horizontal scroller on narrow screens. The -mx-4 px-4 bleed is what stops
-    // a clipped chip from creating horizontal overflow at 390px. No tabIndex on
-    // the scroller: the buttons inside are already focusable, which satisfies
+    // Horizontal scroller on narrow screens. No tabIndex on the scroller: the
+    // buttons inside are already focusable, which satisfies
     // scrollable-region-focusable, and a tab stop here would be dead weight.
     // The -mx-4 px-4 bleed keeps a clipped chip from creating horizontal page
     // overflow at 390px; the mask fades the cut edge instead of slicing a chip
     // in half, so it reads as "more to the right" rather than as a bug.
+    //
+    // It wraps at `cards` (900px), not `sm`. With 11 categories the labels are
+    // long enough that 640–899px wrapped to three rows — 96px of chips above
+    // the results. Scrolling one 28px row until there is room for two is the
+    // better trade, and it reuses the breakpoint the grid already switches on.
     <div
       role="group"
       aria-label="Filter by category"
-      className="-mx-4 flex gap-1.5 overflow-x-auto px-4 [mask-image:linear-gradient(to_right,transparent,black_16px,black_calc(100%-16px),transparent)] [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0 sm:[mask-image:none]"
+      className="-mx-4 flex gap-1.5 overflow-x-auto px-4 [mask-image:linear-gradient(to_right,transparent,black_16px,black_calc(100%-16px),transparent)] [scrollbar-width:none] cards:mx-0 cards:flex-wrap cards:px-0 cards:[mask-image:none]"
       style={{ scrollSnapType: "x proximity" }}
     >
       {options.map((option) => {

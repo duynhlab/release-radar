@@ -14,7 +14,7 @@ import {
 function tool(over: Partial<IndexTool> & { id: string }): IndexTool {
   return {
     name: over.id,
-    category: "platform",
+    category: "kubernetes",
     repository: `acme/${over.id}`,
     description: "",
     tags: [],

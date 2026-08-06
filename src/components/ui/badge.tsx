@@ -6,13 +6,16 @@ import { cn } from "@/lib/cn";
 // Static class strings per category so Tailwind's scanner sees them. A computed
 // `bg-cat-${category}-bg` would be invisible to it and silently render unstyled.
 const CATEGORY_STYLES: Record<Category, string> = {
-  platform: "bg-cat-platform-bg text-cat-platform-fg",
-  provisioning: "bg-cat-provisioning-bg text-cat-provisioning-fg",
-  delivery: "bg-cat-delivery-bg text-cat-delivery-fg",
+  kubernetes: "bg-cat-kubernetes-bg text-cat-kubernetes-fg",
+  gitops: "bg-cat-gitops-bg text-cat-gitops-fg",
+  iac: "bg-cat-iac-bg text-cat-iac-fg",
   observability: "bg-cat-observability-bg text-cat-observability-fg",
+  database: "bg-cat-database-bg text-cat-database-fg",
+  backup: "bg-cat-backup-bg text-cat-backup-fg",
+  messaging: "bg-cat-messaging-bg text-cat-messaging-fg",
   networking: "bg-cat-networking-bg text-cat-networking-fg",
   security: "bg-cat-security-bg text-cat-security-fg",
-  data: "bg-cat-data-bg text-cat-data-fg",
+  testing: "bg-cat-testing-bg text-cat-testing-fg",
   ai: "bg-cat-ai-bg text-cat-ai-fg",
 };
 

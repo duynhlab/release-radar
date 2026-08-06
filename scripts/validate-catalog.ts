@@ -3,7 +3,12 @@ import path from "node:path";
 import { parse } from "yaml";
 import { z } from "zod";
 import { CatalogError, enabledTools, loadCatalog } from "../src/server/catalog.ts";
-import { CatalogSchema, IndexSchema, type Catalog } from "../src/domain/types.ts";
+import {
+  CATEGORIES,
+  CatalogSchema,
+  IndexSchema,
+  type Catalog,
+} from "../src/domain/types.ts";
 
 const SCHEMA_PATH = path.join(process.cwd(), "schemas", "tool.schema.json");
 const RELEASES_DIR = path.join(process.cwd(), "data", "releases");
@@ -40,21 +45,27 @@ function checkOrphanData(catalog: Catalog): string[] {
 }
 
 /**
- * The Add tool workflow exposes groups as a static dropdown — keep it in
- * sync with the catalog's groups map.
+ * The Add tool workflow exposes groups and categories as static dropdowns.
+ * Nothing else can catch them drifting: a stale option is valid YAML, so the
+ * workflow runs and only fails inside `scripts/add-tool.ts` — an Actions
+ * failure long after the change that caused it, with CI still green.
  */
-function checkWorkflowGroupOptions(catalog: Catalog): string | null {
+function checkWorkflowDropdown(
+  input: string,
+  expectedValues: readonly string[],
+): string | null {
   if (!existsSync(ADD_TOOL_WORKFLOW)) return null;
   const workflow = parse(readFileSync(ADD_TOOL_WORKFLOW, "utf8"));
   const options: string[] | undefined =
-    workflow?.on?.workflow_dispatch?.inputs?.group?.options;
+    workflow?.on?.workflow_dispatch?.inputs?.[input]?.options;
   if (!Array.isArray(options)) {
-    return "add-tool.yaml: group input has no options list";
+    return `add-tool.yaml: ${input} input has no options list`;
   }
-  const expected = ["none", ...Object.keys(catalog.groups)].sort();
+  // Order-insensitive: the dropdown's order is a UI choice, not a contract.
+  const expected = [...expectedValues].sort();
   const actual = [...options].sort();
   if (JSON.stringify(expected) !== JSON.stringify(actual)) {
-    return `add-tool.yaml group dropdown is out of sync with catalog groups.\n  expected: ${expected.join(", ")}\n  actual:   ${actual.join(", ")}`;
+    return `add-tool.yaml ${input} dropdown is out of sync with the catalog.\n  expected: ${expected.join(", ")}\n  actual:   ${actual.join(", ")}`;
   }
   return null;
 }
@@ -106,9 +117,12 @@ function main(): void {
     process.exit(1);
   }
 
-  const groupMismatch = checkWorkflowGroupOptions(catalog);
-  if (groupMismatch) {
-    console.error(groupMismatch);
+  const dropdownMismatches = [
+    checkWorkflowDropdown("group", ["none", ...Object.keys(catalog.groups)]),
+    checkWorkflowDropdown("category", CATEGORIES),
+  ].filter((m) => m !== null);
+  if (dropdownMismatches.length > 0) {
+    console.error(dropdownMismatches.join("\n"));
     process.exit(1);
   }
 
