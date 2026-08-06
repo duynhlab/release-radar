@@ -1,7 +1,7 @@
 import { createIsomorphicFn } from "@tanstack/react-start";
 import { ToolReleasesFileSchema, type Release } from "../domain/types.ts";
 
-// Release notes are ~1.9 MB across 68 files. They are served as STATIC ASSETS
+// Release notes are ~1.9 MB across 78 files. They are served as STATIC ASSETS
 // and must never enter the worker bundle.
 //
 // There is no fs path here on purpose: the prerender pass runs in workerd, not
@@ -19,17 +19,32 @@ const NOTES_BASE = "/release-notes";
 const TOOL_ID = /^[a-z0-9][a-z0-9-]*$/;
 
 /**
+ * A tool with no releases still has a file containing `releases: []`, so a
+ * missing or unparseable asset is a transport failure, not an empty history.
+ * Collapsing both to `[]` made the page promise that "the next scheduled sync
+ * will populate this page" — which a sync cannot do about a broken CDN.
+ */
+export type NotesResult =
+  | { status: "ok"; releases: Release[] }
+  | { status: "unavailable" };
+
+const UNAVAILABLE: NotesResult = { status: "unavailable" };
+
+/**
  * Exported so the parse contract can be tested directly. Reaching it through
  * loadToolReleases requires a live request context for the origin, which a test
- * harness does not have — the server branch correctly degrades to [] instead.
+ * harness does not have — the server branch correctly degrades instead.
  */
-export async function parseNotesResponse(res: Response): Promise<Release[]> {
-  if (!res.ok) return [];
-  return ToolReleasesFileSchema.parse(await res.json()).releases;
+export async function parseNotesResponse(res: Response): Promise<NotesResult> {
+  if (!res.ok) return UNAVAILABLE;
+  return {
+    status: "ok",
+    releases: ToolReleasesFileSchema.parse(await res.json()).releases,
+  };
 }
 
 const fetchNotes = createIsomorphicFn()
-  .server(async (id: string): Promise<Release[]> => {
+  .server(async (id: string): Promise<NotesResult> => {
     try {
       const { getRequest } = await import("@tanstack/react-start/server");
       const origin = new URL(getRequest().url).origin;
@@ -38,19 +53,19 @@ const fetchNotes = createIsomorphicFn()
       );
     } catch {
       // Only reachable if a valid tool page was never prerendered. Degrade to
-      // an empty history rather than a 500 — the page renders its empty state.
-      return [];
+      // a reported failure rather than a 500.
+      return UNAVAILABLE;
     }
   })
-  .client(async (id: string): Promise<Release[]> => {
+  .client(async (id: string): Promise<NotesResult> => {
     try {
       return await parseNotesResponse(await fetch(`${NOTES_BASE}/${id}.json`));
     } catch {
-      return [];
+      return UNAVAILABLE;
     }
   });
 
-export async function loadToolReleases(id: string): Promise<Release[]> {
-  if (!TOOL_ID.test(id)) return [];
+export async function loadToolReleases(id: string): Promise<NotesResult> {
+  if (!TOOL_ID.test(id)) return UNAVAILABLE;
   return fetchNotes(id);
 }

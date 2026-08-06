@@ -72,8 +72,6 @@
   --color-focus: var(--rr-focus);
   --color-star: var(--rr-star);
 
-  --color-stable-bg: var(--rr-stable-bg);
-  --color-stable-fg: var(--rr-stable-fg);
   --color-pre-bg: var(--rr-pre-bg);
   --color-pre-fg: var(--rr-pre-fg);
 
@@ -121,13 +119,11 @@
   --rr-focus: oklch(0.82 0.15 225);
   --rr-star: oklch(0.82 0.15 85);
 
-  --rr-stable-bg: oklch(0.285 0.045 155);
-  --rr-stable-fg: oklch(0.86 0.09 155);
   --rr-pre-bg: oklch(0.29 0.05 60);
   --rr-pre-fg: oklch(0.87 0.095 60);
 
   /* 11 hues ≥25 apart so adjacent badges stay distinguishable, and clear of
-     the channel badges (stable 155, pre 60) which share a card with them. */
+     the prerelease badge (hue 60), which can share a card with them. */
   --rr-cat-kubernetes-bg: oklch(0.28 0.045 240);
   --rr-cat-kubernetes-fg: oklch(0.865 0.085 240);
   --rr-cat-gitops-bg: oklch(0.28 0.045 140);
@@ -173,8 +169,6 @@
   --rr-focus: oklch(0.56 0.18 250);
   --rr-star: oklch(0.7 0.16 75);
 
-  --rr-stable-bg: oklch(0.96 0.028 155);
-  --rr-stable-fg: oklch(0.45 0.11 155);
   --rr-pre-bg: oklch(0.96 0.028 60);
   --rr-pre-fg: oklch(0.45 0.11 60);
 

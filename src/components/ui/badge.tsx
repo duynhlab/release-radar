@@ -43,19 +43,21 @@ export function CategoryBadge({
   );
 }
 
+/**
+ * Renders only for a prerelease — an exception signal, not a label.
+ *
+ * Every tool sets `includePrerelease: false`, so the sync filters prereleases
+ * out and all 690 stored releases are stable. A badge that reads "stable" on
+ * every card and every history row (~768 renders) states something that cannot
+ * be false, while the case worth noticing was signalled at the same size and
+ * weight, differing only in hue.
+ *
+ * The guard lives here rather than at the call sites so it cannot come back the
+ * next time a badge row is edited.
+ */
 export function ChannelBadge({ channel }: { channel: "stable" | "prerelease" }) {
-  return (
-    <span
-      className={cn(
-        base,
-        channel === "stable"
-          ? "bg-stable-bg text-stable-fg"
-          : "bg-pre-bg text-pre-fg",
-      )}
-    >
-      {channel}
-    </span>
-  );
+  if (channel === "stable") return null;
+  return <span className={cn(base, "bg-pre-bg text-pre-fg")}>{channel}</span>;
 }
 
 export function NeutralBadge({

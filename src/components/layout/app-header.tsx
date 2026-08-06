@@ -16,8 +16,14 @@ export function AppHeader({ generatedAt }: { generatedAt: string }) {
           <span aria-hidden="true">📡</span>
           Release Radar
         </Link>
-        <span className="ml-auto hidden text-meta text-fg-muted sm:inline">
-          synced <TimeAgo iso={generatedAt} />
+        {/* Stays mounted at every width: `hidden` is display:none, so the
+            ml-auto that right-aligns the icon buttons was inert below sm and
+            they packed against the logo with ~163px of dead space at 390px.
+            Only the word is dropped on mobile — "is this data current?" is the
+            whole product, so the timestamp itself belongs on every screen. */}
+        <span className="ml-auto min-w-0 truncate text-meta text-fg-muted">
+          <span className="hidden sm:inline">synced </span>
+          <TimeAgo iso={generatedAt} />
         </span>
         <Tooltip label="Source on GitHub">
           <Button size="icon" variant="ghost" asChild>

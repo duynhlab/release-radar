@@ -48,7 +48,7 @@ data, look at `data/`, not the frontend.
 | `pnpm dev` | Vite dev server |
 | `pnpm validate:catalog` | Validate `config/tools.yaml` + regenerate JSON schema |
 | `pnpm sync` | Fetch releases from GitHub (needs `GITHUB_TOKEN`) |
-| `pnpm test` | Vitest: unit + dom + worker projects (227 tests) |
+| `pnpm test` | Vitest: unit + dom + worker projects (232 tests) |
 | `pnpm lint` / `pnpm typecheck` | ESLint / tsc |
 | `pnpm build` | Production build + prerender (90 pages) |
 | `pnpm audit:markdown` | Inventory the release-note corpus; `--check` gates it |

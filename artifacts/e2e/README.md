@@ -80,8 +80,9 @@ the extra width. That part is deliberately not copied.
 with no console output or page errors.
 
 **The tool page is the exception**: axe-core 4.12.1 reports 1 serious
-`nested-interactive` violation (14 nodes) — the release row nests a control
-inside its `<summary>`. It reproduces identically on production, so it predates
+`nested-interactive` violation, one node per release row (6 on `/tools/cosign`,
+10 on `/tools/argo-cd`) — the release row nests a control inside its
+`<summary>`. It reproduces identically on production, so it predates
 the taxonomy change and is not caused by it. This section previously claimed
 zero across all four routes; that claim was wrong for the tool page. Tracked
 separately — fixing it means restructuring the disclosure row, not a doc edit.
@@ -112,6 +113,26 @@ values come from painting the colour to a 1×1 canvas and reading the pixel back
 
 `fg-subtle` was 4.29 in light — under the 4.5 AA floor, on the tier that carries
 12px metadata. **axe never reported it**, because it cannot resolve `oklch()`.
+
+## Signal density
+
+`ChannelBadge` renders nothing for `stable`. All 690 stored releases are stable
+— every tool sets `includePrerelease: false` — so the chip appeared ~768 times
+sitewide and could never say anything else, while the case worth noticing got
+the same size and weight and differed only in hue. `/tools/grafana` went from 15
+`stable` chips to 0.
+
+The tool summary prints the publish date once. `TimeAgo` renders the absolute
+date as its own text until hydration, so a sibling `formatDate()` span printed
+the identical string beside it in **every prerendered page** — the state
+crawlers and no-JS visitors actually get. Measured on the served HTML, not in a
+browser, because hydration hides it.
+
+At 390px the header's icons sit 16px from the right edge (the container
+padding). They previously packed against the logo with **163px of dead space**,
+because `ml-auto` sat on a `hidden` — i.e. `display:none` — element. The
+freshness timestamp now renders at every width; only the word "synced" drops
+below `sm`.
 
 ## agent-browser gotchas
 

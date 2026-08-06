@@ -41,15 +41,19 @@ describe("release notes in the worker runtime", () => {
     const spy = vi.fn();
     globalThis.fetch = spy as unknown as typeof fetch;
     // Path traversal must never become a subrequest.
-    expect(await loadToolReleases("../../etc/passwd")).toEqual([]);
-    expect(await loadToolReleases("Grafana")).toEqual([]);
+    expect(await loadToolReleases("../../etc/passwd")).toEqual({
+      status: "unavailable",
+    });
+    expect(await loadToolReleases("Grafana")).toEqual({ status: "unavailable" });
     expect(spy).not.toHaveBeenCalled();
   });
 
   it("parses a valid response", async () => {
-    const releases = await parseNotesResponse(
+    const result = await parseNotesResponse(
       new Response(JSON.stringify(validFile), { status: 200 }),
     );
+    expect(result.status).toBe("ok");
+    const releases = result.status === "ok" ? result.releases : [];
     expect(releases).toHaveLength(1);
     expect(releases[0]!.version).toBe("v11.0.0");
   });
@@ -62,28 +66,36 @@ describe("release notes in the worker runtime", () => {
     ).rejects.toThrow();
   });
 
-  it("returns an empty history without parsing on a non-ok response", async () => {
+  it("reports unavailable without parsing on a non-ok response", async () => {
+    // A tool with no releases still ships a file containing releases: [], so a
+    // 404 is a transport failure and must not read as an empty history.
     expect(
       await parseNotesResponse(new Response("nope", { status: 404 })),
-    ).toEqual([]);
+    ).toEqual({ status: "unavailable" });
   });
 
-  it("degrades to [] when no request context exists for the origin", async () => {
+  it("reports unavailable when no request context exists for the origin", async () => {
     // The server branch needs a live request to resolve its own origin. In a
     // harness there is none, so this exercises the real degradation path.
     stubFetch(new Response(JSON.stringify(validFile), { status: 200 }));
-    expect(await loadToolReleases("grafana")).toEqual([]);
+    expect(await loadToolReleases("grafana")).toEqual({
+      status: "unavailable",
+    });
   });
 
-  it("degrades to an empty history on 404 rather than throwing", async () => {
+  it("reports unavailable on 404 rather than throwing", async () => {
     stubFetch(new Response("nope", { status: 404 }));
-    expect(await loadToolReleases("grafana")).toEqual([]);
+    expect(await loadToolReleases("grafana")).toEqual({
+      status: "unavailable",
+    });
   });
 
-  it("degrades when the fetch itself fails", async () => {
+  it("reports unavailable when the fetch itself fails", async () => {
     stubFetch(() => Promise.reject(new Error("network down")));
-    // A tool page that was never prerendered must render its empty state, not
-    // a 500.
-    expect(await loadToolReleases("grafana")).toEqual([]);
+    // A tool page that was never prerendered must say so, not render a 500 and
+    // not claim the tool has no releases.
+    expect(await loadToolReleases("grafana")).toEqual({
+      status: "unavailable",
+    });
   });
 });
