@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { Octokit } from "octokit";
+import { z } from "zod";
 import { enabledTools, loadCatalog } from "../src/server/catalog.ts";
 import { splitRepository } from "../src/domain/repository.ts";
 import {
@@ -32,9 +33,17 @@ function readJsonIfExists<T>(filePath: string, parse: (raw: unknown) => T): T | 
   try {
     return parse(JSON.parse(readFileSync(filePath, "utf8")));
   } catch (err) {
-    console.warn(
-      `warn      ${path.basename(filePath)} is invalid, rebuilding: ${err instanceof Error ? err.message : String(err)}`,
-    );
+    // A ZodError's `message` is the raw issue array as JSON — dozens of lines
+    // of noise for what is usually one repeated problem. Prettify it, as
+    // validate-catalog does, so the recovery path stays readable.
+    const reason =
+      err instanceof z.ZodError
+        ? z.prettifyError(err)
+        : err instanceof Error
+          ? err.message
+          : String(err);
+    console.warn(`warn      ${path.basename(filePath)} is invalid, rebuilding:`);
+    console.warn(reason);
     return null;
   }
 }
