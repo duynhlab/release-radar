@@ -21,7 +21,7 @@ type(scope): subject
 Every commit carries this trailer:
 
 ```
-Co-Authored-By: duynebot <duynebot@users.noreply.github.com>
+Co-Authored-By: duynebot <bot@duynh.me>
 ```
 
 **Never add Claude attribution** — no `Co-Authored-By: Claude …` trailer, no

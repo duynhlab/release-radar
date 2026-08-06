@@ -13,6 +13,7 @@ import {
   type HomeSearch,
   type HomeSearchInput,
 } from "@/features/catalog/search-params";
+import { CatalogSkeleton } from "@/components/ui/skeleton";
 import { formatDate } from "@/lib/dates";
 import { buildMeta, canonicalLink } from "@/lib/seo";
 import { SITE_DESCRIPTION, SITE_NAME, absoluteUrl } from "@/lib/site";
@@ -46,6 +47,7 @@ export const Route = createFileRoute("/")({
       links: [canonicalLink(absoluteUrl(canonicalHomePath(search)))],
     };
   },
+  pendingComponent: () => <CatalogSkeleton />,
   component: HomePage,
 });
 

@@ -5,6 +5,7 @@ import { ToolSummary } from "@/components/catalog/tool-summary";
 import { ReleaseHistory } from "@/components/releases/release-history";
 import { getSiblings, getTool } from "@/data/catalog";
 import { loadToolReleases } from "@/data/release-notes";
+import { Skeleton } from "@/components/ui/skeleton";
 import { releaseGapLabel } from "@/lib/dates";
 import { buildMeta, canonicalLink } from "@/lib/seo";
 import { absoluteUrl, pageTitle } from "@/lib/site";
@@ -44,6 +45,13 @@ export const Route = createFileRoute("/tools/$slug")({
       links: [canonicalLink(canonical)],
     };
   },
+  pendingComponent: () => (
+    <div role="status" aria-label="Loading tool" className="space-y-8">
+      <Skeleton className="h-8 w-64" />
+      <Skeleton className="h-24 w-full" />
+      <Skeleton className="h-40 w-full" />
+    </div>
+  ),
   notFoundComponent: () => <NotFound kind="tool" />,
   component: ToolPage,
 });

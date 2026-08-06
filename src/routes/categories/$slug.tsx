@@ -2,6 +2,7 @@ import { Link, createFileRoute, notFound } from "@tanstack/react-router";
 import { CATEGORY_LABELS } from "@/domain/types";
 import { NotFound } from "@/components/layout/not-found";
 import { ToolGrid } from "@/components/catalog/tool-grid";
+import { CatalogSkeleton } from "@/components/ui/skeleton";
 import { getToolsByCategory, isCategory } from "@/data/catalog";
 import { buildMeta, canonicalLink } from "@/lib/seo";
 import { absoluteUrl, pageTitle } from "@/lib/site";
@@ -27,6 +28,7 @@ export const Route = createFileRoute("/categories/$slug")({
       links: [canonicalLink(canonical)],
     };
   },
+  pendingComponent: () => <CatalogSkeleton cards={4} />,
   notFoundComponent: () => <NotFound kind="category" />,
   component: CategoryPage,
 });

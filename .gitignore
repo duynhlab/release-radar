@@ -61,10 +61,13 @@ artifacts/e2e/**/*.zip
 artifacts/e2e/**/trace/
 
 # tanstack start / vite
+# NOTE: src/routeTree.gen.ts is deliberately NOT ignored. It is generated, but
+# `tsc --noEmit` runs before any build in CI, and without it every
+# createFileRoute loses type inference and the typecheck collapses. It only
+# changes when a route file is added or removed.
 .output/
 .tanstack/
 dist/
 src/generated/
-src/routeTree.gen.ts
 public/release-notes/
 worker-configuration.d.ts
