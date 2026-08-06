@@ -5,7 +5,7 @@ Classification walks the `@tanstack/markdown` AST — never regexes over source,
 which cannot distinguish a `<name>` placeholder inside a fenced block from real
 inline HTML.
 
-**597 notes with content across 68 tools.**
+**598 notes with content across 68 tools.**
 
 ## Accepted regression — bare URLs
 
@@ -14,7 +14,7 @@ plain text. This was accepted knowingly when the renderer was chosen.
 
 | | |
 |---|---|
-| Notes containing a bare prose URL | **221 (37.0%)** |
+| Notes containing a bare prose URL | **222 (37.1%)** |
 | Tools affected | **40 / 68** |
 | …of which mention a Full Changelog line | 152 |
 
@@ -42,7 +42,7 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 
 | Construct | Count |
 |---|---|
-| Links | 4480 |
+| Links | 4538 |
 | Images | 44 |
 | Code fences | 196 |
 | Tables | 14 |
