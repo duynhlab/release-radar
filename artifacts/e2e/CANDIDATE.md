@@ -107,15 +107,45 @@ still renders in ~55 ms.
 **No optimization was performed, because the measurements do not justify one.**
 Optimizing here would add complexity that buys nothing.
 
-## Not verifiable locally — open gate
+## Deployed preview — Phase 5 gate CLOSED
 
-**Security headers.** `vite preview` does not implement `_headers`: a probe
-header was absent on every path, and the `cache-control` on `/assets/*` seen
-earlier was Vite's own default for fingerprinted files, not the rule. Setting
-them from a route loader does not work either — every page is prerendered and
-served by Workers Assets, so the loader runs at build time and never touches the
-response. The rules in `public/_headers` are the right production mechanism but
-must be confirmed with `curl -I` against a **deployed preview**.
+Verified against a real Workers deployment
+(`feat-tanstack-rebuild-release-radar.duyne.workers.dev`), not `vite preview`.
+
+**Security headers all apply.** `_headers` works in production exactly as
+intended; it simply is not implemented by `vite preview`, which is why the
+earlier local check found nothing. All seven present on `/`:
+
+| Header | Value |
+|---|---|
+| `content-security-policy` | `default-src 'self'; script-src 'self' 'unsafe-inline'; …; frame-ancestors 'none'; object-src 'none'` |
+| `strict-transport-security` | `max-age=31536000; includeSubDomains` |
+| `x-content-type-options` | `nosniff` |
+| `x-frame-options` | `DENY` |
+| `referrer-policy` | `strict-origin-when-cross-origin` |
+| `cross-origin-opener-policy` | `same-origin` |
+| `permissions-policy` | all sensors `()` |
+
+| Check on the deployment | Result |
+|---|---|
+| All 77 URLs | **200, no redirect** |
+| `/tools/does-not-exist`, `/categories/nope`, `/nope` | **404** |
+| `/assets/*` cache | `public,max-age=31536000,immutable` |
+| `/release-notes/*` cache | `public,max-age=300,must-revalidate` |
+| `/og.png`, `/sitemap.xml`, `/robots.txt` | 200, correct content types |
+| axe wcag2a+aa on `/`, tool, category, 404 | **0 violations** |
+| Console / page errors | **none** |
+
+Web Vitals over the real network, 3 runs on `/`:
+
+| Run | LCP | CLS | TTFB |
+|---|---|---|---|
+| 1 | 476 ms | 0.040 | 149 ms |
+| 2 | 464 ms | 0.000 | 407 ms |
+| 3 | 108 ms | 0.000 | 58 ms |
+
+Against targets of LCP ≤ 2.5 s and CLS ≤ 0.1, with real TLS and network latency
+rather than localhost.
 
 ## Worker
 
