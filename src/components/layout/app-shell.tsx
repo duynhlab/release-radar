@@ -21,7 +21,7 @@ export function AppShell({
       <main
         id="main"
         tabIndex={-1}
-        className="mx-auto w-full max-w-[1360px] flex-1 px-4 py-6 sm:px-6"
+        className="w-full flex-1 px-4 py-6 sm:px-6"
       >
         {children}
       </main>

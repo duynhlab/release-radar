@@ -85,17 +85,22 @@ export function ReleaseItem({
             </a>
           ) : null}
 
-          <span className="ml-auto flex items-center gap-1">
-            <a
-              href={release.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              aria-label={`${release.version} on GitHub`}
-              className="text-meta text-accent hover:underline"
-            >
-              GitHub
-            </a>
+          <a
+            href={release.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            aria-label={`${release.version} on GitHub`}
+            className="text-meta text-accent hover:underline"
+          >
+            GitHub
+          </a>
+
+          {/* Nothing is pushed to the far edge. Splitting the row left/right
+              left a hole in the middle — 72% of a 1312px row, and still 59%
+              once the column narrowed. Everything clusters left; the trailing
+              space is just margin, not a gap between two islands. */}
+          <span className="flex items-center">
             <Button
               size="icon"
               variant="ghost"

@@ -249,6 +249,12 @@ Type sizes are eight **named tiers**, chosen by role, declared in
   prefix. tailwind-merge reads `text-<x>` as a colour, so the semantic sizes were
   silently dropped wherever they met a `text-fg-*` class until `src/lib/cn.ts`
   declared the font-size group.
+- **Two container widths, chosen by page type.** `PageContainer` gives grid
+  pages `max-w-6xl` (1152px, cards land at ~376px) and the tool page
+  `max-w-4xl` (896px). One shared width made a release row 72% empty.
+- **Don't push a row's actions to both edges.** Splitting left/right in a wide
+  container leaves a hole in the middle; cluster them and let the trailing space
+  be margin.
 - **Named breakpoints, not arbitrary ones, for layout steps.** Tailwind emits
   `min-[900px]:` variants *before* the named ones, so `sm:` sorted later and won.
   `--breakpoint-cards` exists for the grid's 900px step.
