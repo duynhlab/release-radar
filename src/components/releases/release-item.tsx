@@ -2,6 +2,7 @@ import { Link2 } from "lucide-react";
 import { useState } from "react";
 import type { Release } from "@/domain/types";
 import { ChannelBadge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { formatDate } from "@/lib/dates";
 import { compareUrl } from "@/lib/urls";
 import { ReleaseNotes } from "./release-notes";
@@ -33,7 +34,7 @@ export function ReleaseItem({
       className="rounded-card border border-border bg-surface p-5"
     >
       <header className="flex flex-wrap items-center gap-x-3 gap-y-2">
-        <h3 className="font-mono text-lg font-semibold text-fg">
+        <h3 className="font-mono text-card-title font-semibold text-fg">
           <a
             href={release.url}
             target="_blank"
@@ -44,22 +45,20 @@ export function ReleaseItem({
           </a>
         </h3>
         <ChannelBadge channel={release.channel} />
-        <time dateTime={release.publishedAt} className="text-sm text-fg-muted">
+        <time dateTime={release.publishedAt} className="text-body text-fg-muted">
           {formatDate(release.publishedAt)}
         </time>
-        <a
-          href={`#${fragment}`}
-          aria-label={`Link to release ${release.version}`}
-          className="inline-flex size-10 items-center justify-center rounded-control text-fg-subtle hover:bg-surface-hover hover:text-fg"
-        >
-          <Link2 className="size-4" aria-hidden="true" />
-        </a>
+        <Button size="icon" variant="ghost" asChild>
+          <a href={`#${fragment}`} aria-label={`Link to release ${release.version}`}>
+            <Link2 className="size-4" aria-hidden="true" />
+          </a>
+        </Button>
         {previous ? (
           <a
             href={compareUrl(repository, previous.version, release.version)}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-auto text-sm text-accent hover:underline"
+            className="ml-auto text-body text-accent hover:underline"
           >
             Compare {previous.version} → {release.version}
           </a>
@@ -78,7 +77,7 @@ export function ReleaseItem({
         >
           <summary
             aria-expanded={open}
-            className="cursor-pointer select-none text-sm font-medium text-fg-muted hover:text-fg"
+            className="cursor-pointer select-none text-body font-medium text-fg-muted hover:text-fg"
           >
             Release notes
           </summary>

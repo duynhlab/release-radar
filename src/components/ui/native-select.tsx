@@ -24,7 +24,7 @@ export function NativeSelect({
       <select
         id={id}
         className={cn(
-          "h-10 rounded-control border border-border bg-surface px-2.5 text-sm text-fg-muted transition-colors hover:bg-surface-hover hover:text-fg",
+          "h-9 rounded-control border border-border bg-surface px-2.5 text-control text-fg-muted transition-colors hover:bg-surface-hover hover:text-fg",
           className,
         )}
         {...props}

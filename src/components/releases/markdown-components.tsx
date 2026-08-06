@@ -70,8 +70,8 @@ function noteHeading(className: string) {
   };
 }
 
-const NoteHeadingPrimary = noteHeading("text-base font-semibold text-fg");
-const NoteHeadingSecondary = noteHeading("text-sm font-semibold text-fg");
+const NoteHeadingPrimary = noteHeading("text-card-title font-semibold text-fg");
+const NoteHeadingSecondary = noteHeading("text-body font-semibold text-fg");
 
 /*
  * Code blocks and tables scroll horizontally, and axe's

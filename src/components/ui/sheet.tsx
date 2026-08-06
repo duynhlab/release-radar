@@ -29,7 +29,7 @@ export function Sheet({
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 z-40 bg-black/60" />
         <Dialog.Content className="fixed inset-x-0 bottom-0 z-50 max-h-[85vh] overflow-y-auto rounded-t-card border-t border-border bg-bg p-4 shadow-overlay">
-          <Dialog.Title className="text-base font-semibold text-fg">
+          <Dialog.Title className="text-body font-semibold text-fg">
             {title}
           </Dialog.Title>
           <Dialog.Description className="sr-only">

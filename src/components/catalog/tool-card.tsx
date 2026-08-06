@@ -28,7 +28,7 @@ export function ToolCard({
         <div className="min-w-0">
           {/* Two lines, not truncate: a one-line clamp cut the distinguishing
               part of names like "VictoriaMetrics Helm Charts". */}
-          <h3 className="line-clamp-2 text-base font-semibold text-fg">
+          <h3 className="line-clamp-2 text-card-title font-semibold text-fg">
             <Link
               to="/tools/$slug"
               params={{ slug: tool.id }}
@@ -37,7 +37,7 @@ export function ToolCard({
               {tool.name}
             </Link>
           </h3>
-          <p className="mt-0.5 line-clamp-2 text-sm text-fg-muted">
+          <p className="mt-0.5 line-clamp-2 text-body text-fg-muted">
             {tool.description}
           </p>
         </div>
@@ -67,16 +67,16 @@ export function ToolCard({
               href={tool.latest.url}
               target="_blank"
               rel="noreferrer"
-              className="font-mono text-base font-medium text-fg hover:underline"
+              className="font-mono text-body font-medium text-fg hover:underline"
             >
               {tool.latest.version}
             </a>
-            <TimeAgo iso={tool.latest.publishedAt} className="text-xs text-fg-subtle" />
+            <TimeAgo iso={tool.latest.publishedAt} className="text-meta text-fg-subtle" />
           </div>
-          {gap ? <p className="text-xs text-fg-subtle">{gap}</p> : null}
+          {gap ? <p className="text-meta text-fg-subtle">{gap}</p> : null}
         </div>
       ) : (
-        <p className="mt-auto text-sm text-fg-subtle">No releases tracked yet</p>
+        <p className="mt-auto text-body text-fg-subtle">No releases tracked yet</p>
       )}
 
       <div className="flex items-center gap-0 border-t border-border pt-1 text-fg-subtle">

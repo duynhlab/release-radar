@@ -17,7 +17,7 @@ const CATEGORY_STYLES: Record<Category, string> = {
 };
 
 const base =
-  "inline-flex items-center gap-1 rounded-control px-2 py-0.5 text-xs font-medium";
+  "inline-flex h-5 items-center gap-1 rounded-badge px-1.5 text-micro font-medium";
 
 export function CategoryBadge({
   category,

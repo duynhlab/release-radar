@@ -25,7 +25,7 @@ export function AppShell({
       >
         {children}
       </main>
-      <footer className="border-t border-border py-6 text-center text-xs text-fg-subtle">
+      <footer className="border-t border-border py-6 text-center text-meta text-fg-subtle">
         Data synced twice daily from GitHub Releases · Generated statically
       </footer>
     </>

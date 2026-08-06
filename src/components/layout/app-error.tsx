@@ -5,10 +5,10 @@ export function AppError({ error }: { error: Error }) {
   const router = useRouter();
   return (
     <div role="alert" className="py-24 text-center">
-      <h1 className="text-2xl font-bold tracking-tight text-fg">
+      <h1 className="text-page-title font-semibold tracking-tight text-fg">
         Something went wrong
       </h1>
-      <p className="mt-2 text-sm text-fg-muted">{error.message}</p>
+      <p className="mt-2 text-body text-fg-muted">{error.message}</p>
       <Button
         variant="solid"
         size="md"

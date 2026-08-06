@@ -1,4 +1,5 @@
-import { Link, createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, notFound } from "@tanstack/react-router";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { NotFound } from "@/components/layout/not-found";
 import { RelatedTools } from "@/components/catalog/related-tools";
 import { ToolSummary } from "@/components/catalog/tool-summary";
@@ -61,19 +62,7 @@ function ToolPage() {
 
   return (
     <div className="space-y-8">
-      <nav aria-label="Breadcrumb" className="text-sm">
-        <ol className="flex items-center gap-2 text-fg-muted">
-          <li>
-            <Link to="/" className="hover:text-fg">
-              All tools
-            </Link>
-          </li>
-          <li aria-hidden="true">/</li>
-          <li aria-current="page" className="text-fg">
-            {tool.name}
-          </li>
-        </ol>
-      </nav>
+      <Breadcrumb current={tool.name} />
 
       <ToolSummary tool={tool} gap={gap} />
 

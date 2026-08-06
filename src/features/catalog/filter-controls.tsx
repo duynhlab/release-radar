@@ -34,7 +34,7 @@ export function CategoryChips({
             onClick={() => onSelect(option)}
             aria-pressed={active}
             className={cn(
-              "shrink-0 rounded-control px-2.5 py-1 text-xs font-medium transition-colors",
+              "inline-flex h-7 shrink-0 items-center rounded-control px-2.5 text-control font-medium transition-colors",
               active
                 ? "bg-accent text-accent-fg"
                 : "bg-surface text-fg-muted hover:bg-surface-hover hover:text-fg",
