@@ -12,12 +12,12 @@ export function RelatedTools({
   return (
     <section
       aria-label={`Part of ${groupName}`}
-      className="rounded-card border border-border bg-surface p-4"
+      className="rounded-card border border-border bg-surface px-3 py-2.5"
     >
       <SectionLabel>Part of {groupName}</SectionLabel>
-      <ul className="mt-3 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="mt-2 grid gap-x-5 gap-y-1 sm:grid-cols-2 cards:grid-cols-3 xl:grid-cols-4">
         {siblings.map((sibling) => (
-          <li key={sibling.id} className="flex items-baseline gap-2 text-body">
+          <li key={sibling.id} className="flex items-baseline gap-2 text-control">
             <Link
               to="/tools/$slug"
               params={{ slug: sibling.id }}

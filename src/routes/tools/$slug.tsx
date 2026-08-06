@@ -61,7 +61,7 @@ function ToolPage() {
   const { tool, siblings, gap, releases } = Route.useLoaderData();
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-5">
       <Breadcrumb current={tool.name} />
 
       <ToolSummary tool={tool} gap={gap} />

@@ -23,7 +23,7 @@ export function ReleaseHistory({
   });
 
   return (
-    <section aria-label="Release history" className="space-y-4">
+    <section aria-label="Release history" className="space-y-2">
       <h2 className="flex items-center gap-2 text-card-title font-semibold text-fg">
         Release history
         <CountPill>{releases.length}</CountPill>
