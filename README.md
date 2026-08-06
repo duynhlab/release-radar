@@ -177,6 +177,14 @@ These live in the Cloudflare dashboard, not in this repo.
 
 Every push to `main` — including the scheduled data commit — triggers a rebuild.
 
+## UI conventions
+
+"Compact Technical UI": dense, sharp, information-first. Eight named type tiers
+(11/12/13/14/15/16/22/24px) chosen by role rather than by eye, control heights of
+28/32/36, three radii, and borders rather than shadows for elevation. See
+`CLAUDE.md` for the rules and `artifacts/e2e/COMPACT-UI.md` for the measured
+result.
+
 ## Verification standard
 
 Before merging (CI runs the same):

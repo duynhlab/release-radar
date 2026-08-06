@@ -147,7 +147,11 @@
   --rr-border-strong: oklch(0.84 0.008 264);
   --rr-fg: oklch(0.235 0.012 264);
   --rr-fg-muted: oklch(0.47 0.014 264);
-  --rr-fg-subtle: oklch(0.57 0.014 264);
+  /* 0.57 measured 4.29:1 on --rr-bg, under the 4.5 WCAG AA floor for normal
+     text — and this tier carries 12px metadata (relative times, release gap
+     lines). axe reported no violation, because it cannot resolve oklch()
+     colours; the number came from sampling rendered pixels on a canvas. */
+  --rr-fg-subtle: oklch(0.53 0.014 264);
   --rr-accent: oklch(0.52 0.17 250);
   --rr-accent-hover: oklch(0.455 0.175 250);
   --rr-accent-fg: oklch(1 0 0);
