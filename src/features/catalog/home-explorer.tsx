@@ -46,8 +46,8 @@ export function HomeExplorer({
   const filterCount = activeFilterCount(search);
 
   return (
-    <div className="space-y-6">
-      <div className="space-y-3">
+    <div className="space-y-5">
+      <div className="space-y-2.5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           <SearchField
             value={search.q}
@@ -104,13 +104,13 @@ export function HomeExplorer({
           onSelect={(category) => update({ category })}
         />
 
-        <div className="flex items-center gap-3">
-          {/* role="status" on an always-present node, so filter changes coalesce
-              into one polite announcement instead of one per keystroke. */}
-          <p role="status" className="text-body text-fg-muted">
-            {visible.length === tools.length
-              ? `${tools.length} tools`
-              : `${visible.length} of ${tools.length} tools`}
+        {/* role="status" on an always-present node so filter changes coalesce
+            into one polite announcement rather than one per keystroke. The
+            unfiltered total lives in the page metadata row, so repeating it
+            here would be the same number twice on one screen. */}
+        <div className="flex min-h-7 items-center gap-2">
+          <p role="status" className="text-meta text-fg-muted">
+            {filtered ? `${visible.length} of ${tools.length} tools` : ""}
           </p>
           {filtered ? (
             <Button variant="ghost" size="sm" onClick={clear}>
@@ -135,7 +135,7 @@ export function HomeExplorer({
           ) : null}
         </div>
       ) : (
-        <div className="space-y-8">
+        <div className="space-y-7">
           <Section title="Released today" tools={buckets.today} />
           <Section title="Released this week" tools={buckets.week} />
           <Section
