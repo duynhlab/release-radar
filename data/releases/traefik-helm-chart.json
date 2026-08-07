@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-04T01:38:44.457Z",
+  "generatedAt": "2026-08-07T15:09:16.775Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 366771550,
+      "name": "v41.2.0",
+      "notes": "# [v41.2.0](https://github.com/traefik/traefik-helm-chart/compare/v41.1.1...v41.2.0) (2026-08-07)\r\n\r\n\r\n> [!IMPORTANT]\r\n> This release includes a CRD update. See chart [UPGRADING](https://github.com/traefik/traefik-helm-chart?tab=readme-ov-file#upgrading) instructions and upstream [migration guide](https://doc.traefik.io/traefik/v3.7/migrate/v3/#v3710).\r\n\r\n## :rocket: Features\r\n\r\n- feat(hub): :sparkles: support AWS EC2 provider #1946 by @zalbiraw\r\n- feat: allow setting emptyDir options for data and tmp volumes #1958 by @dmaes\r\n- feat(deps): update traefik docker tag to v3.7.10 #1954 by @renovate-with-github-actions[bot]\r\n- feat(deps): update ghcr.io/traefik/traefik-hub docker tag to v3.20.8 #1953 by @renovate-with-github-actions[bot]\r\n\r\n## :bug: Bug fixes\r\n\r\n- fix(hub): 🐛 enable providers with default config #1956 by @mloiseleur\r\n- fix(rbac): allow namespaced rbac with only the knative provider #1955 by @karpovantonme\r\n- fix(crds/middleware): add missing ErrorRequestHeaders field #1960 by @mloiseleur\r\n- fix(changelog): only update the chart being released #1963 by @mloiseleur\r\n\r\n## :package: Others\r\n\r\n- chore(deps): update github actions #1952 by @renovate-with-github-actions[bot]\r\n- ci(artifacthub): structured changelog with link on major #1925 by @mloiseleur\r\n- test(service): LoadBalancer node port opt-out #1959 by @tomatotomata\r\n- ci(renovate): scope updates per chart on VALUES.md & AppVersion #1961 by @mloiseleur\r\n- chore(release): 🚀 publish 41.2.0 #1964 by @mloiseleur\r\n\r\n## 👌 Traefik version support\r\n\r\n* Traefik Proxy: v3.6.0 -> v3.7.10 (default)\r\n* Traefik Hub: v3.19.3 -> v3.20.8",
+      "prerelease": false,
+      "publishedAt": "2026-08-07T13:36:40Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.2.0",
+      "version": "v41.2.0"
+    },
     {
       "channel": "stable",
       "draft": false,

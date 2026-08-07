@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-29T16:11:48.003Z",
+  "generatedAt": "2026-08-07T15:09:12.595Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 366806075,
+      "name": "v2.9.4",
+      "notes": "## Highlights\n\nFlux v2.9.4 is a patch release that ships various fixes to the Flux controllers, covering source-watcher tarball extraction and glob expansion limits, the refspecs accepted by `ImageUpdateAutomation`, the HTTP request limits of the notification-controller servers, and Helm repository index loading, OCI chart digest pinning, `Bucket` error handling and GCS static authentication in source-controller. On the CLI side, `flux migrate -f` now supports migrating repositories to Flux 2.9. Users are encouraged to upgrade for the best experience.\n\nNote that this release contains CRD schema changes for `ArtifactGenerator` and `ImageUpdateAutomation`; both CRDs must be updated along with the controllers.\n\nℹ️ Please follow the [Upgrade Procedure for Flux v2.7+](https://github.com/fluxcd/flux2/discussions/5572) for a smooth upgrade from Flux v2.6 to the latest version.\n\nFixes:\n- Confine tarball extraction and bound glob expansion (source-watcher)\n- Disallow force-update and deletion via refspecs (image-automation-controller)\n- Unify HTTP server request limits (notification-controller)\n- Align Helm repository index loading with upstream Helm v4 (source-controller)\n- Improve error handling in `Bucket` reconciliation (source-controller)\n- Pin OCI chart verification by digest (source-controller)\n- Limit GCS static authentication to service account keys (source-controller)\n- Restrict the `allow-webhooks` network policy to the receiver port (flux CLI)\n\nImprovements:\n- Add support for migrating repositories to 2.9 in `flux migrate -f` (flux CLI)\n- Update fluxcd/pkg dependencies, which align the ECR host detection with upstream (source-controller, image-reflector-controller, flux CLI)\n- Update Bitbucket Cloud receiver guidance (notification-controller)\n\n## Components changelog\n\n- source-controller [v1.9.4](https://github.com/fluxcd/source-controller/blob/v1.9.4/CHANGELOG.md)\n- source-watcher [v2.2.3](https://github.com/fluxcd/source-watcher/blob/v2.2.3/CHANGELOG.md)\n- notification-controller [v1.9.3](https://github.com/fluxcd/notification-controller/blob/v1.9.3/CHANGELOG.md)\n- image-reflector-controller [v1.2.4](https://github.com/fluxcd/image-reflector-controller/blob/v1.2.4/CHANGELOG.md)\n- image-automation-controller [v1.2.4](https://github.com/fluxcd/image-automation-controller/blob/v1.2.4/CHANGELOG.md)\n\n## CLI changelog\n\n* [release/v2.9.x] Add support for 2.9 in `migrate -f` by @fluxcdbot in https://github.com/fluxcd/flux2/pull/6021\n* Update fluxcd/pkg dependencies by @fluxcdbot in https://github.com/fluxcd/flux2/pull/6026\n* [release/v2.9.x] fix: restrict `allow-webhooks` netpol to receiver port by @fluxcdbot in https://github.com/fluxcd/flux2/pull/6029\n* Update toolkit components by @fluxcdbot in https://github.com/fluxcd/flux2/pull/6031\n\n**Full Changelog**: https://github.com/fluxcd/flux2/compare/v2.9.3...v2.9.4",
+      "prerelease": false,
+      "publishedAt": "2026-08-07T14:31:04Z",
+      "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.4",
+      "version": "v2.9.4"
+    },
     {
       "channel": "stable",
       "draft": false,
