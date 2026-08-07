@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-06T08:59:09.930Z",
+  "generatedAt": "2026-08-07T02:08:53.690Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 366382103,
+      "name": "v0.1.52",
+      "notes": "### Bug fixes\r\n* Use one timestamp for OTEL metric batches, fixing Prometheus + OTEL integration @KennanHunter\r\n* Direct-to-shard queries were incorrectly flagged as omnisharded when using schema sharding function @levkk \r\n* Pub/sub channels  were not scoped by database, causing misrouted messages with multiple databases using LISTEN/NOTIFY in transaction mode @4thel00z\r\n* Normalize sharding tables identifiers to support Postgres-like format (quotes preserve capitalization) @nsavvide\r\n\r\n### Features\r\n* Handle different OIDs for custom types in sharded deployments @sgrif \r\n* New lookup sharding function for manual sharding using omnisharded tables @rlittlefield\r\n* Support turning on/off dry run mode through an admin database command @levkk \r\n* Allow per-role pool configuration in `[[users]]` and `[[databases]]` config sections @levkk\r\n\r\n### Performance\r\n* Binary `COPY` tuple was encoding column data one byte at a time, causing allocator churn @ygxio\r\n\r\n### Misc\r\n* Add Elixir test suite @brentjanderson\r\n* Some cleanup in Rust/Go integration suites @sgrif \r\n* Make shutdown integration test deterministic @IgorOhrimenko\r\n* Add Grafana + Prometheus example @KennanHunter\r\n\r\n## New Contributors\r\n* @4thel00z made their first contribution in https://github.com/pgdogdev/pgdog/pull/1285\r\n* @rlittlefield made their first contribution in https://github.com/pgdogdev/pgdog/pull/1279\r\n* @brentjanderson made their first contribution in https://github.com/pgdogdev/pgdog/pull/1310\r\n* @nsavvide made their first contribution in https://github.com/pgdogdev/pgdog/pull/1312\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.51...v0.1.52",
+      "prerelease": false,
+      "publishedAt": "2026-08-06T19:31:03Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.52",
+      "version": "v0.1.52"
+    },
     {
       "channel": "stable",
       "draft": false,

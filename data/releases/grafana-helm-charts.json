@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-04T01:38:57.282Z",
+  "generatedAt": "2026-08-07T02:08:43.797Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 366422962,
+      "name": "alloy-1.11.1",
+      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/233907cff225ce253f812bdfc14138dac1fa0cd2\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.11.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-06T23:01:29Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.11.1",
+      "version": "alloy-1.11.1"
+    },
     {
       "channel": "stable",
       "draft": false,

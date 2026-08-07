@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-05T15:24:47.867Z",
+  "generatedAt": "2026-08-07T02:08:48.789Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 366293813,
+      "name": "v0.16.5",
+      "notes": "## Changelog\r\n\r\n[v0.16.5 changelog](https://github.com/flux-iac/tofu-controller/blob/v0.16.5/CHANGELOG.md)\r\n\r\n## Container images\r\n\r\n- `ghcr.io/flux-iac/tofu-controller:v0.16.5`\r\n- `ghcr.io/flux-iac/tf-runner:v0.16.5`\r\n- `ghcr.io/flux-iac/tf-runner:v0.16.5-base`\r\n\r\nSupported architectures: `linux/amd64`, `linux/arm64` and `linux/arm/v7`.",
+      "prerelease": false,
+      "publishedAt": "2026-08-06T14:44:07Z",
+      "url": "https://github.com/flux-iac/tofu-controller/releases/tag/v0.16.5",
+      "version": "v0.16.5"
+    },
     {
       "channel": "stable",
       "draft": false,

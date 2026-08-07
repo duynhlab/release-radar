@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T08:59:09.941Z",
+  "generatedAt": "2026-08-07T02:08:53.696Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 365542489,
-        "name": "victoria-metrics-single-0.44.0",
+        "id": 366159825,
+        "name": "victoria-metrics-k8s-stack-0.90.0",
         "prerelease": false,
-        "publishedAt": "2026-08-05T13:21:30Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.44.0",
-        "version": "victoria-metrics-single-0.44.0"
+        "publishedAt": "2026-08-06T11:03:50Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.90.0",
+        "version": "victoria-metrics-k8s-stack-0.90.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-05T13:21:28Z",
-        "version": "victoria-metrics-k8s-stack-0.89.0"
+        "publishedAt": "2026-08-05T13:21:30Z",
+        "version": "victoria-metrics-single-0.44.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -1344,19 +1344,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 365270362,
-        "name": "v3.7.5",
+        "id": 366120009,
+        "name": "v3.6.15",
         "prerelease": false,
-        "publishedAt": "2026-08-05T03:41:08Z",
-        "url": "https://github.com/grafana/loki/releases/tag/v3.7.5",
-        "version": "v3.7.5"
+        "publishedAt": "2026-08-06T09:59:23Z",
+        "url": "https://github.com/grafana/loki/releases/tag/v3.6.15",
+        "version": "v3.6.15"
       },
       "name": "Loki",
       "previous": {
-        "publishedAt": "2026-08-05T00:25:17Z",
-        "version": "v3.6.14"
+        "publishedAt": "2026-08-06T09:42:29Z",
+        "version": "v3.7.6"
       },
-      "releaseCount": 10,
+      "releaseCount": 12,
       "repository": "grafana/loki",
       "tags": [
         "logs"
@@ -1406,19 +1406,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 357569906,
-        "name": "v2.2.0",
+        "id": 366187041,
+        "name": "v2.2.1",
         "prerelease": false,
-        "publishedAt": "2026-07-21T19:03:11Z",
-        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.2.0",
-        "version": "v2.2.0"
+        "publishedAt": "2026-08-06T11:58:05Z",
+        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.2.1",
+        "version": "v2.2.1"
       },
       "name": "Pyroscope",
       "previous": {
-        "publishedAt": "2026-07-10T17:09:12Z",
-        "version": "v2.0.6"
+        "publishedAt": "2026-08-06T11:34:09Z",
+        "version": "v2.1.2"
       },
-      "releaseCount": 10,
+      "releaseCount": 12,
       "repository": "grafana/pyroscope",
       "tags": [
         "profiling"
@@ -1500,19 +1500,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 364247883,
-        "name": "cloudcost-exporter-1.1.13",
+        "id": 366422962,
+        "name": "alloy-1.11.1",
         "prerelease": false,
-        "publishedAt": "2026-08-03T13:45:03Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.13",
-        "version": "cloudcost-exporter-1.1.13"
+        "publishedAt": "2026-08-06T23:01:29Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.11.1",
+        "version": "alloy-1.11.1"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-07-31T18:20:21Z",
-        "version": "k8s-monitoring-4.3.2"
+        "publishedAt": "2026-08-03T13:45:03Z",
+        "version": "cloudcost-exporter-1.1.13"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "grafana/helm-charts",
       "tags": [
         "helm-chart",
@@ -1969,19 +1969,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 335917053,
-        "name": "v0.16.4",
+        "id": 366293813,
+        "name": "v0.16.5",
         "prerelease": false,
-        "publishedAt": "2026-06-08T11:41:33Z",
-        "url": "https://github.com/flux-iac/tofu-controller/releases/tag/v0.16.4",
-        "version": "v0.16.4"
+        "publishedAt": "2026-08-06T14:44:07Z",
+        "url": "https://github.com/flux-iac/tofu-controller/releases/tag/v0.16.5",
+        "version": "v0.16.5"
       },
       "name": "Tofu Controller",
       "previous": {
-        "publishedAt": "2026-05-05T14:36:39Z",
-        "version": "v0.16.3"
+        "publishedAt": "2026-06-08T11:41:33Z",
+        "version": "v0.16.4"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "flux-iac/tofu-controller",
       "tags": [
         "terraform",
@@ -2349,19 +2349,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 362744266,
-        "name": "v0.1.51",
+        "id": 366382103,
+        "name": "v0.1.52",
         "prerelease": false,
-        "publishedAt": "2026-07-30T21:56:54Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.51",
-        "version": "v0.1.51"
+        "publishedAt": "2026-08-06T19:31:03Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.52",
+        "version": "v0.1.52"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-07-23T17:59:36Z",
-        "version": "v0.1.50"
+        "publishedAt": "2026-07-30T21:56:54Z",
+        "version": "v0.1.51"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "pgdogdev/pgdog",
       "tags": [
         "postgresql",
