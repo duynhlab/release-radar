@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T15:09:44.531Z",
+  "generatedAt": "2026-08-08T03:43:48.574Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -398,19 +398,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 363325807,
-        "name": "v0.88.0",
+        "id": 366896328,
+        "name": "v0.88.1",
         "prerelease": false,
-        "publishedAt": "2026-07-31T21:07:20Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.88.0",
-        "version": "v0.88.0"
+        "publishedAt": "2026-08-07T17:05:42Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.88.1",
+        "version": "v0.88.1"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-07-24T19:38:05Z",
-        "version": "v0.87.0"
+        "publishedAt": "2026-07-31T21:07:20Z",
+        "version": "v0.88.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "charmbracelet/crush",
       "tags": [
         "coding-agent",
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 366159825,
-        "name": "victoria-metrics-k8s-stack-0.90.0",
+        "id": 366961142,
+        "name": "victoria-metrics-k8s-stack-0.90.1",
         "prerelease": false,
-        "publishedAt": "2026-08-06T11:03:50Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.90.0",
-        "version": "victoria-metrics-k8s-stack-0.90.0"
+        "publishedAt": "2026-08-07T19:15:40Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.90.1",
+        "version": "victoria-metrics-k8s-stack-0.90.1"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-05T13:21:30Z",
-        "version": "victoria-metrics-single-0.44.0"
+        "publishedAt": "2026-08-06T11:03:50Z",
+        "version": "victoria-metrics-k8s-stack-0.90.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -936,19 +936,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 360540753,
-        "name": "v0.57.0",
+        "id": 366835261,
+        "name": "v0.58.0",
         "prerelease": false,
-        "publishedAt": "2026-07-27T15:51:26Z",
-        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.57.0",
-        "version": "v0.57.0"
+        "publishedAt": "2026-08-07T15:18:09Z",
+        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.58.0",
+        "version": "v0.58.0"
       },
       "name": "Flux Operator",
       "previous": {
-        "publishedAt": "2026-07-23T16:31:52Z",
-        "version": "v0.56.0"
+        "publishedAt": "2026-07-27T15:51:26Z",
+        "version": "v0.57.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "controlplaneio-fluxcd/flux-operator",
       "tags": [
         "gitops",

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T02:46:32.730Z",
+  "generatedAt": "2026-08-08T03:43:34.827Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 366835261,
+      "name": "v0.58.0",
+      "notes": "## What's Changed\n* scripts: include docs index in prep-release by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/976\n* [web] Add CPU/Memory usage to workload dashboard by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/982\n* build(deps-dev): bump postcss from 8.5.12 to 8.5.25 in /web by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/983\n* operator: fix workload identity for Azure DevOps by @PadenZach in https://github.com/controlplaneio-fluxcd/flux-operator/pull/986\n* Release v0.58.0 by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/988\n\n## New Contributors\n* @PadenZach made their first contribution in https://github.com/controlplaneio-fluxcd/flux-operator/pull/986\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.57.0...v0.58.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-07T15:18:09Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.58.0",
+      "version": "v0.58.0"
+    },
     {
       "channel": "stable",
       "draft": false,
