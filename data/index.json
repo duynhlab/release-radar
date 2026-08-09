@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T14:49:48.899Z",
+  "generatedAt": "2026-08-09T03:53:46.867Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1500,19 +1500,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 366422962,
-        "name": "alloy-1.11.1",
+        "id": 367343184,
+        "name": "pyroscope-2.2.1",
         "prerelease": false,
-        "publishedAt": "2026-08-06T23:01:29Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.11.1",
-        "version": "alloy-1.11.1"
+        "publishedAt": "2026-08-09T00:54:15Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.2.1",
+        "version": "pyroscope-2.2.1"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-03T13:45:03Z",
-        "version": "cloudcost-exporter-1.1.13"
+        "publishedAt": "2026-08-06T23:01:29Z",
+        "version": "alloy-1.11.1"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "grafana/helm-charts",
       "tags": [
         "helm-chart",
