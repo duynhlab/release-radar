@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-06T08:59:06.498Z",
+  "generatedAt": "2026-08-10T15:16:32.025Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 367998216,
+      "name": "v1.51.0",
+      "notes": "### Added Features\n\n- detect native Go FIPS 140 mode in binaries [PR [#5155](https://github.com/anchore/syft/pull/5155) @gunnypatel]\n- add extended-stdlib scope and module patterns for symbol capture [PR [#5154](https://github.com/anchore/syft/pull/5154) @wagoodman]\n\n### Bug Fixes\n\n- Cleanup snap temporary directories [PR [#5117](https://github.com/anchore/syft/pull/5117) @spiffcs]\n- add correct CPE vendor/product candidates for Git for Windows PE binary [PR [#5156](https://github.com/anchore/syft/pull/5156) @westonsteimel]\n- javascript-package-cataloger creates phantom `<name>@unknown` packages for subpath or export-map stub package.json files [Issue [#5118](https://github.com/anchore/syft/issues/5118)]\n- Syft generates incorrect PURLs for legacy JARs missing Maven metadata, causing Grype false negatives [Issue [#4598](https://github.com/anchore/syft/issues/4598)] [PR [#5146](https://github.com/anchore/syft/pull/5146) @ankit090701]\n- When scanning an image, syft only reports one file per set of hardlinks, leading to wrong SPDX packageVerificationCode [Issue [#5019](https://github.com/anchore/syft/issues/5019)] [PR [#5029](https://github.com/anchore/syft/pull/5029) @wagoodman]\n- Support deno binary latest and some old versions [Issue [#5057](https://github.com/anchore/syft/issues/5057)] [PR [#5084](https://github.com/anchore/syft/pull/5084) @ychampion]\n- Update install methods in README.md [Issue [#3198](https://github.com/anchore/syft/issues/3198)]\n\n### Dependencies\n\n9 dependency changes (9 updated). 2 vulnerabilities remediated.\n\n**🟢 Remediated (2)**\n\n- [GHSA-hc8v-wwc9-vgxm](https://github.com/advisories/GHSA-hc8v-wwc9-vgxm) (High) — github.com/go-git/go-git/v5\n- [GHSA-qgq7-7hm3-q39j](https://github.com/advisories/GHSA-qgq7-7hm3-q39j) (Medium) — github.com/go-git/go-git/v5\n\n<details>\n<summary>Updated (9 packages)</summary>\n\n- github.com/diskfs/go-diskfs `v1.9.3` → `v1.9.4`\n- github.com/go-git/go-billy/v5 `v5.9.0` → `v5.9.1`\n- github.com/go-git/go-git/v5 `v5.19.1` → `v5.19.2` **(🟢 remediated [GHSA-hc8v-wwc9-vgxm](https://github.com/advisories/GHSA-hc8v-wwc9-vgxm), [GHSA-qgq7-7hm3-q39j](https://github.com/advisories/GHSA-qgq7-7hm3-q39j))**\n- github.com/jedib0t/go-pretty/v6 `v6.8.1` → `v6.8.3`\n- github.com/klauspost/compress `v1.19.0` → `v1.19.1`\n- github.com/magiconair/properties `v1.8.10` → `v1.18.11`\n- github.com/ulikunitz/xz `v0.5.15` → `v0.5.16`\n- go.yaml.in/yaml/v3 `v3.0.4` → `v3.0.5`\n- modernc.org/sqlite `v1.54.0` → `v1.55.0`\n</details>\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.50.0...v1.51.0)**",
+      "prerelease": false,
+      "publishedAt": "2026-08-10T14:55:18Z",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.51.0",
+      "version": "v1.51.0"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T03:53:46.867Z",
+  "generatedAt": "2026-08-10T15:16:33.819Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1163,19 +1163,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 361151585,
-        "name": "0.93.0 / 2026-07-28",
+        "id": 367989357,
+        "name": "0.93.1 / 2026-08-10",
         "prerelease": false,
-        "publishedAt": "2026-07-28T14:30:04Z",
-        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.93.0",
-        "version": "v0.93.0"
+        "publishedAt": "2026-08-10T14:41:12Z",
+        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.93.1",
+        "version": "v0.93.1"
       },
       "name": "Prometheus Operator",
       "previous": {
-        "publishedAt": "2026-06-30T09:21:31Z",
-        "version": "v0.92.1"
+        "publishedAt": "2026-07-28T14:30:04Z",
+        "version": "v0.93.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "prometheus-operator/prometheus-operator",
       "tags": [
         "metrics",
@@ -1311,19 +1311,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 358141434,
-        "name": "openbao-0.28.6",
+        "id": 367848604,
+        "name": "openbao-0.29.0",
         "prerelease": false,
-        "publishedAt": "2026-07-22T15:51:23Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.6",
-        "version": "openbao-0.28.6"
+        "publishedAt": "2026-08-10T10:59:40Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.0",
+        "version": "openbao-0.29.0"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-07-14T17:25:55Z",
-        "version": "openbao-0.28.5"
+        "publishedAt": "2026-07-22T15:51:23Z",
+        "version": "openbao-0.28.6"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "openbao/openbao-helm",
       "tags": [
         "secrets",
@@ -1469,19 +1469,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 361197400,
-        "name": "v1.0.0",
+        "id": 367811702,
+        "name": "v1.1.0",
         "prerelease": false,
-        "publishedAt": "2026-07-28T15:36:26Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.0.0",
-        "version": "v1.0.0"
+        "publishedAt": "2026-08-10T09:45:22Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.1.0",
+        "version": "v1.1.0"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-07-13T14:06:31Z",
-        "version": "v0.17.2"
+        "publishedAt": "2026-07-28T15:36:26Z",
+        "version": "v1.0.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "grafana/mcp-grafana",
       "tags": [
         "mcp",
@@ -1905,19 +1905,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 360211248,
-        "name": "sentry: v33.1.0",
+        "id": 367860045,
+        "name": "sentry: v33.3.0",
         "prerelease": false,
-        "publishedAt": "2026-07-27T05:02:13Z",
-        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.1.0",
-        "version": "sentry-v33.1.0"
+        "publishedAt": "2026-08-10T11:22:34Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.3.0",
+        "version": "sentry-v33.3.0"
       },
       "name": "Sentry Helm Charts",
       "previous": {
-        "publishedAt": "2026-07-23T11:07:21Z",
-        "version": "sentry-v33.0.0"
+        "publishedAt": "2026-08-10T06:51:20Z",
+        "version": "sentry-v33.2.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 12,
       "repository": "sentry-kubernetes/charts",
       "tags": [
         "helm-chart",
@@ -2201,19 +2201,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 361268005,
-        "name": "v1.50.0",
+        "id": 367998216,
+        "name": "v1.51.0",
         "prerelease": false,
-        "publishedAt": "2026-07-28T17:44:08Z",
-        "url": "https://github.com/anchore/syft/releases/tag/v1.50.0",
-        "version": "v1.50.0"
+        "publishedAt": "2026-08-10T14:55:18Z",
+        "url": "https://github.com/anchore/syft/releases/tag/v1.51.0",
+        "version": "v1.51.0"
       },
       "name": "Syft",
       "previous": {
-        "publishedAt": "2026-07-21T13:16:54Z",
-        "version": "v1.49.0"
+        "publishedAt": "2026-07-28T17:44:08Z",
+        "version": "v1.50.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "anchore/syft",
       "tags": [
         "sbom",

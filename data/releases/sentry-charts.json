@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-05T14:25:20.204Z",
+  "generatedAt": "2026-08-10T15:16:28.198Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 367860045,
+      "name": "sentry: v33.3.0",
+      "notes": "## [33.3.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v33.2.0...sentry-v33.3.0) (2026-08-10)\n\n\n### Features\n\n* upgrade to v26.7.2 ([#2276](https://github.com/sentry-kubernetes/charts/issues/2276)) ([4fc47a7](https://github.com/sentry-kubernetes/charts/commit/4fc47a780d22ca5e73f544298e1d85ff8cd6918c))\n\n\n### Bug Fixes\n\n* charts/sentry: support TLS in ClickHouse cleanup ([#2274](https://github.com/sentry-kubernetes/charts/issues/2274)) ([58ec7f9](https://github.com/sentry-kubernetes/charts/commit/58ec7f9b5d5318afd740a69d9441fdb7a7c1e9a4))",
+      "prerelease": false,
+      "publishedAt": "2026-08-10T11:22:34Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.3.0",
+      "version": "sentry-v33.3.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 367729412,
+      "name": "sentry: v33.2.0",
+      "notes": "## [33.2.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v33.1.0...sentry-v33.2.0) (2026-07-31)\n\n\n### Features\n\n* charts/sentry: add maxPollIntervalMs for snuba replacer ([#2266](https://github.com/sentry-kubernetes/charts/issues/2266)) ([52c48ca](https://github.com/sentry-kubernetes/charts/commit/52c48cae85bd150b04e89ca6517e1147e9e55aef))\n\n\n### Bug Fixes\n\n* charts/sentry: add missing taskworker topics to default provisioning list ([#2267](https://github.com/sentry-kubernetes/charts/issues/2267)) ([7c5113e](https://github.com/sentry-kubernetes/charts/commit/7c5113e77f0559b82d4b19e1470ae74625e8a59e))\n* extend Recreate/RollingUpdate strategy to remaining Kafka consumer deployments ([#2238](https://github.com/sentry-kubernetes/charts/issues/2238)) ([#2269](https://github.com/sentry-kubernetes/charts/issues/2269)) ([e37c168](https://github.com/sentry-kubernetes/charts/commit/e37c168c55051a480a0a13df906a8db8863f4fa3))",
+      "prerelease": false,
+      "publishedAt": "2026-08-10T06:51:20Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.2.0",
+      "version": "sentry-v33.2.0"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T02:52:44.696Z",
+  "generatedAt": "2026-08-10T15:16:19.843Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 367989357,
+      "name": "0.93.1 / 2026-08-10",
+      "notes": "* [BUGFIX] Fix duplicate kubelet targets for nodes reporting several addresses of the same IP family. #8739\r\n* [BUGFIX] Fix argument list for Thanos containers when custom TLS ciphers or curves are specified. #8749",
+      "prerelease": false,
+      "publishedAt": "2026-08-10T14:41:12Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.93.1",
+      "version": "v0.93.1"
+    },
     {
       "channel": "stable",
       "draft": false,

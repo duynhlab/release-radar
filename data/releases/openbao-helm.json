@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T02:52:48.143Z",
+  "generatedAt": "2026-08-10T15:16:21.502Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 367848604,
+      "name": "openbao-0.29.0",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* fix(openshift): update readinessProbe to support horizontal scalability by @pree in https://github.com/openbao/openbao-helm/pull/189\n* fix: Add global imagePullSecrets to Snapshot CronJob by @sido114 in https://github.com/openbao/openbao-helm/pull/178\n* Support bearerTokenFile for ServiceMonitor by @baurmatt in https://github.com/openbao/openbao-helm/pull/159\n* feat: apply server.statefulset.securityContext on helm test pod by @Nerkho in https://github.com/openbao/openbao-helm/pull/182\n* fix(openshift): use non certified quay.io ubi container image by @pree in https://github.com/openbao/openbao-helm/pull/203\n* Fix: Allow using custom Secret keys for Snapshot Agent S3 credentials by @jessebot in https://github.com/openbao/openbao-helm/pull/195\n* chore(csi): update to v2.0.3 by @eyenx in https://github.com/openbao/openbao-helm/pull/204\n* fix(chart): duplicate backendtlspolicy hostname rendering by @dc-tec in https://github.com/openbao/openbao-helm/pull/185\n* chore(snapshot-agent): update to 0.4.0 and add config by @eyenx in https://github.com/openbao/openbao-helm/pull/206\n* chore(chart): remove obsolete Kubernetes API and version compatibility checks by @kangetsu121 in https://github.com/openbao/openbao-helm/pull/208\n* fix(httpRoute): add templating for timeouts in rule by @eyenx in https://github.com/openbao/openbao-helm/pull/207\n* chore: release 0.29.0 by @eyenx in https://github.com/openbao/openbao-helm/pull/209\n\n## New Contributors\n* @sido114 made their first contribution in https://github.com/openbao/openbao-helm/pull/178\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.28.6...openbao-0.29.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-10T10:59:40Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.0",
+      "version": "openbao-0.29.0"
+    },
     {
       "channel": "stable",
       "draft": false,
