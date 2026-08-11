@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T15:16:33.819Z",
+  "generatedAt": "2026-08-11T03:55:52.338Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1500,19 +1500,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 367343184,
-        "name": "pyroscope-2.2.1",
+        "id": 368168337,
+        "name": "helm-loki-7.3.0",
         "prerelease": false,
-        "publishedAt": "2026-08-09T00:54:15Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.2.1",
-        "version": "pyroscope-2.2.1"
+        "publishedAt": "2026-08-10T20:06:21Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.3.0",
+        "version": "helm-loki-7.3.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-06T23:01:29Z",
-        "version": "alloy-1.11.1"
+        "publishedAt": "2026-08-10T19:50:20Z",
+        "version": "k8s-monitoring-4.3.3"
       },
-      "releaseCount": 15,
+      "releaseCount": 18,
       "repository": "grafana/helm-charts",
       "tags": [
         "helm-chart",
@@ -2170,19 +2170,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 361394926,
-        "name": "v0.116.1",
+        "id": 368071274,
+        "name": "v0.117.0",
         "prerelease": false,
-        "publishedAt": "2026-07-28T21:45:14Z",
-        "url": "https://github.com/anchore/grype/releases/tag/v0.116.1",
-        "version": "v0.116.1"
+        "publishedAt": "2026-08-10T16:54:43Z",
+        "url": "https://github.com/anchore/grype/releases/tag/v0.117.0",
+        "version": "v0.117.0"
       },
       "name": "Grype",
       "previous": {
-        "publishedAt": "2026-07-16T16:52:20Z",
-        "version": "v0.116.0"
+        "publishedAt": "2026-07-28T21:45:14Z",
+        "version": "v0.116.1"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "anchore/grype",
       "tags": [
         "scanning",
