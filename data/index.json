@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T04:18:22.838Z",
+  "generatedAt": "2026-08-12T14:44:59.365Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -187,19 +187,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 364720007,
-        "name": "v3.5.0",
+        "id": 369213663,
+        "name": "v3.5.1",
         "prerelease": false,
-        "publishedAt": "2026-08-04T08:35:57Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.0",
-        "version": "v3.5.0"
+        "publishedAt": "2026-08-12T12:12:58Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.1",
+        "version": "v3.5.1"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-07-31T12:15:59Z",
-        "version": "v3.3.13"
+        "publishedAt": "2026-08-12T11:25:08Z",
+        "version": "v3.4.7"
       },
-      "releaseCount": 10,
+      "releaseCount": 13,
       "repository": "argoproj/argo-cd",
       "tags": [
         "gitops",
@@ -1031,19 +1031,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 359365274,
-        "name": "clickhouse-0.3.13",
+        "id": 369047928,
+        "name": "release-0.27.3",
         "prerelease": false,
-        "publishedAt": "2026-07-24T14:41:56Z",
-        "url": "https://github.com/Altinity/helm-charts/releases/tag/clickhouse-0.3.13",
-        "version": "clickhouse-0.3.13"
+        "publishedAt": "2026-08-12T07:02:13Z",
+        "url": "https://github.com/Altinity/helm-charts/releases/tag/release-0.27.3",
+        "version": "release-0.27.3"
       },
       "name": "Altinity Helm Charts",
       "previous": {
-        "publishedAt": "2026-07-23T11:56:39Z",
-        "version": "release-0.27.2"
+        "publishedAt": "2026-07-24T14:41:56Z",
+        "version": "clickhouse-0.3.13"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "Altinity/helm-charts",
       "tags": [
         "clickhouse",
