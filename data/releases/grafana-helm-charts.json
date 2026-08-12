@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-11T03:55:40.197Z",
+  "generatedAt": "2026-08-12T04:18:11.093Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 368802889,
+      "name": "k8s-monitoring-4.4.0",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/c30159c11902b58d123c01ac8944168d74bd56ca\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.4.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-11T19:22:54Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.4.0",
+      "version": "k8s-monitoring-4.4.0"
+    },
     {
       "channel": "stable",
       "draft": false,
