@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T07:59:34.111Z",
+  "generatedAt": "2026-08-13T15:15:14.086Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1999,19 +1999,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 358602139,
-        "name": "2026.7.3",
+        "id": 369818643,
+        "name": "2026.8.0",
         "prerelease": false,
-        "publishedAt": "2026-07-23T10:19:16Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.7.3",
-        "version": "2026.7.3"
+        "publishedAt": "2026-08-13T10:05:08Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.8.0",
+        "version": "2026.8.0"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-07-15T13:36:00Z",
-        "version": "2026.7.2"
+        "publishedAt": "2026-07-23T10:19:16Z",
+        "version": "2026.7.3"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "cloudflare/cloudflared",
       "tags": [
         "tunnel",
