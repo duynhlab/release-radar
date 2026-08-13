@@ -102,17 +102,28 @@ Behavioural checks that axe cannot make:
 
 `getComputedStyle()` returns `oklch()` for these tokens. Parsing that as RGB
 produced exactly `1.00` for every pair — a clean-looking table of garbage. Real
-values come from painting the colour to a 1×1 canvas and reading the pixel back.
+values come from painting the colour to a 1×1 canvas and reading the pixel
+back. `tests/unit/contrast.test.ts` now computes the same ratios from the
+source tokens (oklch → linear sRGB → WCAG luminance, verified against the
+canvas numbers), so the floors — and the dark glare ceiling — hold in CI
+without a browser.
 
 | Token | Light | Dark |
 |---|---|---|
-| body foreground | 15.98 | 17.40 |
-| fg-muted | 6.52 | 8.98 |
-| fg-subtle | 5.04 | 5.73 |
+| body foreground | 15.98 | 14.30 |
+| fg-muted | 6.52 | 10.31 |
+| fg-subtle | 5.04 | 6.69 |
 | category badges, all 11 hues | 6.07–6.99 | 9.36–9.84 |
 
 `fg-subtle` was 4.29 in light — under the 4.5 AA floor, on the tier that carries
 12px metadata. **axe never reported it**, because it cannot resolve `oklch()`.
+
+Dark `fg` was 17.40 — over-contrast, not under: near-white `#f2f3f6` haloes on
+a dark ground, and next to 8.98 body text every markdown block read as gray
+paragraphs with glaring bold. Re-tuned 2026-08-13 (fg 0.965→0.90, fg-muted
+0.76→0.80, fg-subtle 0.64→0.68) and `.rr-notes` body moved to full-emphasis
+`fg`; the contrast test pins a ≤15.5 ceiling on dark `fg` so it cannot creep
+back to white.
 
 ## Signal density
 
