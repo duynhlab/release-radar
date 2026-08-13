@@ -303,7 +303,15 @@ Type sizes are eight **named tiers**, chosen by role, declared in
   `components/releases/release-notes.tsx`. `allowHtml: false` **and**
   `headingIds: false` are both load-bearing — the latter because a tool page
   renders up to 20 note documents and duplicate heading ids would be an axe
-  violation. There is no second path.
+  violation. There is no second path — with one sanctioned exception:
+- **READMEs are the sanctioned second markdown config**, one flag wide.
+  `README_MARKDOWN_OPTIONS` differs from the notes config only in
+  `frontmatter: true`; `tests/unit/readme-security.test.tsx` pins every other
+  flag to the notes values. Render only through `components/readme/readme.tsx`.
+  README links are repo-relative (`docs/x.md` resolves to
+  `github.com/<repo>/blob/HEAD/…` via `src/lib/readme-links.ts`), headings are
+  real h3–h6 (depths normalized by `src/lib/readme-transform.ts` so the outline
+  never skips), and there is no autolinking — `#1 in benchmarks` is prose.
 - **Link policy is stricter than the library's.** `@tanstack/markdown` returns
   an *empty string* for a blocked scheme rather than dropping the attribute, and
   admits protocol-relative `//host`. `src/lib/note-links.ts` treats `""` as "not

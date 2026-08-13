@@ -34,3 +34,23 @@ export const NOTES_MARKDOWN_OPTIONS: Readonly<ParseOptions & RenderOptions> =
     highlighter: undefined,
     extensions: [],
   });
+
+/**
+ * The one sanctioned exception to "no second path": repository READMEs.
+ * Every security-relevant flag is IDENTICAL to the notes config and must stay
+ * that way — tests/unit/readme-security.test.tsx pins each one. The only
+ * divergence is `frontmatter: true`: READMEs commonly open with a `---` block,
+ * which with `false` renders as a literal thematic break plus stray text.
+ *
+ * Rendering differences (real headings, repo-relative link resolution) live in
+ * the component map and AST transform, not here.
+ */
+export const README_MARKDOWN_OPTIONS: Readonly<ParseOptions & RenderOptions> =
+  Object.freeze({
+    allowHtml: false,
+    frontmatter: true,
+    headingIds: false,
+    headingAnchors: false,
+    highlighter: undefined,
+    extensions: [],
+  });
