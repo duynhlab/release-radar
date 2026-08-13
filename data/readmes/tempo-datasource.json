@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-13T07:59:00.388Z",
+  "readme": {
+    "htmlUrl": "https://github.com/grafana/grafana-tempo-datasource/blob/main/README.md",
+    "markdown": "# Tempo data source for Grafana\n\n> **Note**: This core plugin was extracted from the [grafana/grafana](https://github.com/grafana/grafana) repository\n> and is now bundled with Grafana.\n\n## Overview\n\nGrafana datasource for the Tempo distributed tracing backend — Grafana Labs' high-volume,\nminimal-dependency open-source tracing system. The plugin lets you query and visualize traces\nstored in Tempo, including TraceQL, Search, Service Graph, and TraceID-based lookups.\n\n## Requirements\n\n- Grafana 12.3.0 or later\n\n## Getting started\n\nThis plugin is bundled with Grafana — no installation is required for standard Grafana deployments.\n\n1. Navigate to **Connections > Data sources** in Grafana.\n2. Click **Add data source** and search for \"Tempo\".\n3. Configure the connection settings and click **Save & test**.\n\nFor detailed setup instructions, see the\n[Tempo data source documentation](https://grafana.com/docs/grafana/latest/datasources/tempo/).\n\n### Custom Grafana distributions\n\nIf you are building a custom Grafana binary or distribution that excludes bundled plugins,\nyou can install this plugin from the [Grafana plugin catalog](https://grafana.com/grafana/plugins/).\n\n## Documentation\n\nFull documentation is available at:\n\nhttps://grafana.com/docs/grafana/latest/datasources/tempo/\n\n## Contributing\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md).\n\n## License\n\nThis plugin is licensed under the [AGPL-3.0](LICENSE).",
+    "path": "README.md"
+  },
+  "schemaVersion": 1,
+  "tool": {
+    "id": "tempo-datasource",
+    "name": "Tempo Datasource",
+    "repository": "grafana/grafana-tempo-datasource"
+  }
+}

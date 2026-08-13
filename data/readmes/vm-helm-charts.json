@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-13T07:58:19.547Z",
+  "readme": {
+    "htmlUrl": "https://github.com/VictoriaMetrics/helm-charts/blob/master/README.md",
+    "markdown": "# VictoriaMetrics Helm Charts\n\nDocumentation is available [here](https://docs.victoriametrics.com/helm/)",
+    "path": "README.md"
+  },
+  "schemaVersion": 1,
+  "tool": {
+    "id": "vm-helm-charts",
+    "name": "VictoriaMetrics Helm Charts",
+    "repository": "VictoriaMetrics/helm-charts"
+  }
+}

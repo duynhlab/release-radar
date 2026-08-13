@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-13T07:58:58.057Z",
+  "readme": {
+    "htmlUrl": "https://github.com/grafana/helm-charts/blob/main/README.md",
+    "markdown": "# Grafana Kubernetes Helm Charts\n\n[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)\n[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/grafana)](https://artifacthub.io/packages/search?repo=grafana)\n\nThe code is provided as-is with no warranties.\n\n## Usage\n\n[Helm](https://helm.sh) must be installed to use the charts.\nPlease refer to Helm's [documentation](https://helm.sh/docs/) to get started.\n\nOnce Helm is set up properly, add the repo as follows:\n\n```console\nhelm repo add grafana https://grafana.github.io/helm-charts\n```\n\nYou can then run `helm search repo grafana` to see the charts.\n\n<!-- Keep full URL links to repo files because this README syncs from main to gh-pages.  -->\nChart documentation is available in [grafana directory](https://github.com/grafana/helm-charts/blob/main/charts/grafana/README.md).\n\n## Helm Provenance and Integrity\n\nCharts in this repository may be signed, allowing you to verify their integrity and\norigin. More information about how provenance works can be found in the official\n[Helm documentation](https://helm.sh/docs/topics/provenance/).\n\nA local running GPG agent is required to complete the verification process.\n\nTo add the public signing key to your keyring, run:\n\n```console\ncurl https://grafana.github.io/helm-charts/pubkey.gpg | gpg --import\n```\n\nDepending on your GnuPG version (2.1+ in particular), you may need to export the\nimported key so that Helm can find it:\n\n```console\ngpg --export > ~/.gnupg/pubring.gpg\n```\n\nOnce your keyring is configured, pass the `--verify` flag to `helm install`,\n`helm upgrade`, `helm pull`, or `helm template` to validate a chart's signature and\nconfirm its authenticity.\n\n## Contributing\n\n<!-- Keep full URL links to repo files because this README syncs from main to gh-pages.  -->\nWe'd love to have you contribute! Please refer to our [contribution guidelines](https://github.com/grafana/helm-charts/blob/main/CONTRIBUTING.md) for details.\n\n## License\n\n<!-- Keep full URL links to repo files because this README syncs from main to gh-pages.  -->\n[Apache 2.0 License](https://github.com/grafana/helm-charts/blob/main/LICENSE).",
+    "path": "README.md"
+  },
+  "schemaVersion": 1,
+  "tool": {
+    "id": "grafana-helm-charts",
+    "name": "Grafana Helm Charts",
+    "repository": "grafana/helm-charts"
+  }
+}

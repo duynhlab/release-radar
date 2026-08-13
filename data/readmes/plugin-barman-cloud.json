@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-13T07:59:12.648Z",
+  "readme": {
+    "htmlUrl": "https://github.com/cloudnative-pg/plugin-barman-cloud/blob/main/README.md",
+    "markdown": "[![CloudNativePG](./logo/cloudnativepg.png)](https://cloudnative-pg.io/)\n\n# Barman Cloud CNPG-I plugin for CloudNativePG\n\nThe documentation for the Barman Cloud Plugin for CloudNativePG is available at\n[https://cloudnative-pg.io/plugin-barman-cloud](https://cloudnative-pg.github.io/plugin-barman-cloud).\n\n---\n\nThe Barman Cloud CNPG-I plugin is a component of the\n[CloudNativePG project](https://github.com/cloudnative-pg) and adheres to the\nsame community-driven [governance](GOVERNANCE.md) model under the\n[CNCF](https://cncf.io).\n\n<p style=\"text-align:center;\" align=\"center\">\n      <picture align=\"center\">\n         <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://github.com/cncf/artwork/blob/main/other/cncf/horizontal/white/cncf-white.svg?raw=true\">\n         <source media=\"(prefers-color-scheme: light)\" srcset=\"https://github.com/cncf/artwork/blob/main/other/cncf/horizontal/color/cncf-color.svg?raw=true\">\n         <img align=\"center\" src=\"https://github.com/cncf/artwork/blob/main/other/cncf/horizontal/color/cncf-color.svg?raw=true\" alt=\"CNCF logo\" width=\"50%\"/>\n      </picture>\n</p>\n\n---\n\n<p align=\"center\">\nCloudNativePG was originally built and sponsored by <a href=\"https://www.enterprisedb.com\">EDB</a>.\n</p>\n\n<p style=\"text-align:center;\" align=\"center\">\n      <picture align=\"center\">\n         <source media=\"(prefers-color-scheme: dark)\" srcset=\"https://raw.githubusercontent.com/cloudnative-pg/.github/main/logo/edb_landscape_color_white.svg\">\n         <source media=\"(prefers-color-scheme: light)\" srcset=\"https://raw.githubusercontent.com/cloudnative-pg/.github/main/logo/edb_landscape_color_grey.svg\">\n         <img align=\"center\" src=\"https://raw.githubusercontent.com/cloudnative-pg/.github/main/logo/edb_landscape_color_grey.svg\" alt=\"EDB logo\" width=\"25%\"/>\n      </picture>\n</p>\n\n---\n\n<p align=\"center\">\n<a href=\"https://www.postgresql.org/about/policies/trademarks/\">Postgres, PostgreSQL, and the Slonik Logo</a>\nare trademarks or registered trademarks of the PostgreSQL Community Association\nof Canada, and used with their permission.\n</p>\n\n---",
+    "path": "README.md"
+  },
+  "schemaVersion": 1,
+  "tool": {
+    "id": "plugin-barman-cloud",
+    "name": "Barman Cloud Plugin",
+    "repository": "cloudnative-pg/plugin-barman-cloud"
+  }
+}

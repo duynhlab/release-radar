@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-13T07:58:50.407Z",
+  "readme": {
+    "htmlUrl": "https://github.com/openbao/openbao-helm/blob/main/README.md",
+    "markdown": "# OpenBao Helm Chart\n\n> :warning: **Please note**: We take OpenBao's security and our users' trust very seriously. If\n> you believe you have found a security issue in OpenBao Helm, _please responsibly disclose_\n> by contacting us at [openbao-security@lists.openssf.org](mailto:openbao-security@lists.openssf.org).\n\nThis repository contains the OpenBao Helm chart for installing\nand configuring OpenBao on Kubernetes. This chart supports multiple use\ncases of OpenBao on Kubernetes depending on the values provided.\n\n## Prerequisites\n\nTo use the charts here, [Helm](https://helm.sh/) must be configured for your\nKubernetes cluster. Setting up Kubernetes and Helm is outside the scope of\nthis README. Please refer to the Kubernetes and Helm documentation.\n\nThe versions required are:\n\n- **Helm 3.12+** - Earliest version tested\n- **Kubernetes 1.30+** - This is the earliest version of Kubernetes tested.\n  It is possible that this chart works with earlier versions but it is\n  untested.\n\nIn general, the latest versions of widely adopted Kubernetes distributions such\nas SUSE Rancher or Red Hat OpenShift are supported.\n\n## Usage\n\nTo install the latest version of this chart, add the OpenBao helm repository and run `helm install`:\n\n```console\nhelm repo add openbao https://openbao.github.io/openbao-helm\n\nhelm install openbao openbao/openbao\n```\n\nAlternatively you can use the OCI based helm chart as well:\n\n```\nhelm install oci://ghcr.io/openbao/charts/openbao\n```\n\nPlease see the many options supported in the [`values.yaml`](https://github.com/openbao/openbao-helm/blob/main/charts/openbao/values.yaml) file. These are also fully documented directly in the [openbao README](https://github.com/openbao/openbao-helm/blob/main/charts/openbao/README.md) along with more detailed installation instructions.",
+    "path": "README.md"
+  },
+  "schemaVersion": 1,
+  "tool": {
+    "id": "openbao-helm",
+    "name": "OpenBao Helm Chart",
+    "repository": "openbao/openbao-helm"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T04:21:16.079Z",
+  "generatedAt": "2026-08-13T07:59:34.111Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1196,19 +1196,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 353389873,
-        "name": "Release v0.156.0",
+        "id": 369734850,
+        "name": "Release v0.157.0",
         "prerelease": false,
-        "publishedAt": "2026-07-14T15:41:36Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.156.0",
-        "version": "v0.156.0"
+        "publishedAt": "2026-08-13T07:58:29Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.157.0",
+        "version": "v0.157.0"
       },
       "name": "OpenTelemetry Operator",
       "previous": {
-        "publishedAt": "2026-07-13T19:45:25Z",
-        "version": "v0.155.0"
+        "publishedAt": "2026-07-14T15:41:36Z",
+        "version": "v0.156.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "open-telemetry/opentelemetry-operator",
       "tags": [
         "metrics",

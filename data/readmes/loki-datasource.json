@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-13T07:58:59.211Z",
+  "readme": {
+    "htmlUrl": "https://github.com/grafana/grafana-loki-datasource/blob/main/README.md",
+    "markdown": "# Loki data source for Grafana\n\n> **Note**: This core plugin was extracted from the [grafana/grafana](https://github.com/grafana/grafana) repository\n> and is now bundled with Grafana.\n\n## Overview\n\nThe Loki data source plugin allows you to query and visualize log data from [Grafana Loki](https://grafana.com/oss/loki/), a horizontally scalable, highly available log aggregation system.\n\n## Requirements\n\n- Grafana 12.3 or later\n\n## Getting started\n\nThis plugin is bundled with Grafana — no installation is required for standard Grafana deployments.\n\n1. Navigate to **Connections > Data sources** in Grafana.\n2. Click **Add data source** and search for \"Loki\".\n3. Configure the connection settings and click **Save & test**.\n\nFor detailed setup instructions, see the\n[Loki data source documentation](https://grafana.com/docs/grafana/latest/datasources/loki/).\n\n### Custom Grafana distributions\n\nIf you are building a custom Grafana binary or distribution that excludes bundled plugins,\nyou can install this plugin from the [Grafana plugin catalog](https://grafana.com/grafana/plugins/).\n\n## Documentation\n\nFull documentation is available at:\n\nhttps://grafana.com/docs/grafana/latest/datasources/loki/\n\n## Contributing\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md).\n\n## License\n\nThis plugin is licensed under the [AGPL-3.0](LICENSE).",
+    "path": "README.md"
+  },
+  "schemaVersion": 1,
+  "tool": {
+    "id": "loki-datasource",
+    "name": "Loki Datasource",
+    "repository": "grafana/grafana-loki-datasource"
+  }
+}
