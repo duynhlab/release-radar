@@ -12,6 +12,7 @@ import {
 
 const SCHEMA_PATH = path.join(process.cwd(), "schemas", "tool.schema.json");
 const RELEASES_DIR = path.join(process.cwd(), "data", "releases");
+const READMES_DIR = path.join(process.cwd(), "data", "readmes");
 const INDEX_PATH = path.join(process.cwd(), "data", "index.json");
 const ADD_TOOL_WORKFLOW = path.join(
   process.cwd(),
@@ -30,18 +31,21 @@ function regenerateJsonSchema(): void {
 }
 
 /**
- * Every data/releases/*.json must belong to a catalog tool. An orphan means
- * the catalog and generated data have diverged (e.g. a tool entry was lost
- * in a bad merge or revert) — the next sync would silently drop the tool
- * from the site, so fail loudly here instead.
+ * Every data/releases/*.json and data/readmes/*.json must belong to a catalog
+ * tool. An orphan means the catalog and generated data have diverged (e.g. a
+ * tool entry was lost in a bad merge or revert) — the next sync would silently
+ * drop the tool from the site, so fail loudly here instead.
  */
 function checkOrphanData(catalog: Catalog): string[] {
-  if (!existsSync(RELEASES_DIR)) return [];
   const ids = new Set(catalog.tools.map((t) => t.id));
-  return readdirSync(RELEASES_DIR)
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => f.replace(/\.json$/, ""))
-    .filter((id) => !ids.has(id));
+  const orphansIn = (dir: string): string[] =>
+    existsSync(dir)
+      ? readdirSync(dir)
+          .filter((f) => f.endsWith(".json"))
+          .map((f) => f.replace(/\.json$/, ""))
+          .filter((id) => !ids.has(id))
+      : [];
+  return [...new Set([...orphansIn(RELEASES_DIR), ...orphansIn(READMES_DIR)])];
 }
 
 /**
@@ -105,7 +109,7 @@ function main(): void {
   const orphans = checkOrphanData(catalog);
   if (orphans.length > 0) {
     console.error(
-      `Orphan release data (no catalog entry): ${orphans.join(", ")}\n` +
+      `Orphan data (no catalog entry): ${orphans.join(", ")}\n` +
         "Either restore the tool in config/tools.yaml or delete the data file.",
     );
     process.exit(1);

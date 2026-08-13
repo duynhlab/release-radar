@@ -5,7 +5,7 @@ Classification walks the `@tanstack/markdown` AST — never regexes over source,
 which cannot distinguish a `<name>` placeholder inside a fenced block from real
 inline HTML.
 
-**690 notes with content across 78 tools.**
+**726 notes with content across 78 tools.**
 
 ## Bare URLs — regression closed
 
@@ -17,9 +17,9 @@ with `@user`, `#123` and commit SHAs.
 
 | | |
 |---|---|
-| Notes containing a bare prose URL | **32 (4.6%)** |
+| Notes containing a bare prose URL | **37 (5.1%)** |
 | Tools affected | **5 / 78** |
-| …of which mention a Full Changelog line | 10 |
+| …of which mention a Full Changelog line | 13 |
 
 Affected tools: argo-cd, crush, headlamp, keycloak, pgdog
 
@@ -36,7 +36,7 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 
 | | |
 |---|---|
-| Notes containing a raw HTML tag | 54 (7.8%) |
+| Notes containing a raw HTML tag | 61 (8.4%) |
 | Tools affected | 13 |
 | Dangerous HTML (script/iframe/on\*=) | **0** |
 
@@ -51,9 +51,9 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 
 | Construct | Count |
 |---|---|
-| Links | 16986 |
-| Images | 44 |
-| Code fences | 229 |
+| Links | 17567 |
+| Images | 46 |
+| Code fences | 246 |
 | Tables | 14 |
 | Task-list items | 0 |
 | Footnotes | 0 |
@@ -65,4 +65,23 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 |---|---|
 | Links rejected by our stricter policy | 1 |
 | Notes exceeding 250ms to parse | 0 |
+| Non-deterministic parses | 0 |
+
+## READMEs
+
+**77 READMEs** from `data/readmes/`, analyzed through the
+README pipeline (heading normalization, repo-relative link resolution, no
+autolinking). Raw HTML and Setext headings are report-only here — pervasive and
+cosmetic respectively — while dangerous HTML, determinism and the parse budget
+gate the same as notes.
+
+| | |
+|---|---|
+| Containing raw HTML | 36 (of 77) |
+| Dangerous HTML (script/iframe/on\*=) | **0** |
+| Setext headings | 1 |
+| Links | 2116 |
+| …rejected by the README link policy | 6 |
+| Images (all render as blocked placeholders) | 266 |
+| Exceeding 250ms to parse | 0 |
 | Non-deterministic parses | 0 |

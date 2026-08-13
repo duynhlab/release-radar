@@ -142,6 +142,25 @@ export const ToolReleasesFileSchema = z.object({
   releases: z.array(ReleaseSchema).max(20),
 });
 
+export const ToolReadmeFileSchema = z.object({
+  schemaVersion: z.literal(1),
+  generatedAt: z.iso.datetime(),
+  tool: z.object({
+    id: z.string(),
+    name: z.string(),
+    repository: z.string(),
+  }),
+  // null means "synced fine, repo has no renderable README" — distinct from
+  // the file being absent, which means the sync never ran for this tool.
+  readme: z
+    .object({
+      markdown: z.string().min(1),
+      path: z.string().min(1),
+      htmlUrl: z.url(),
+    })
+    .nullable(),
+});
+
 export const IndexToolSchema = z.object({
   id: z.string(),
   name: z.string(),
@@ -170,5 +189,7 @@ export type Tool = z.infer<typeof ToolSchema>;
 export type Catalog = z.infer<typeof CatalogSchema>;
 export type Release = z.infer<typeof ReleaseSchema>;
 export type ToolReleasesFile = z.infer<typeof ToolReleasesFileSchema>;
+export type ToolReadmeFile = z.infer<typeof ToolReadmeFileSchema>;
+export type ToolReadme = ToolReadmeFile["readme"];
 export type IndexTool = z.infer<typeof IndexToolSchema>;
 export type ReleaseIndex = z.infer<typeof IndexSchema>;
