@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T14:44:59.365Z",
+  "generatedAt": "2026-08-13T04:21:16.079Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -398,19 +398,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 366896328,
-        "name": "v0.88.1",
+        "id": 369497417,
+        "name": "v0.89.0",
         "prerelease": false,
-        "publishedAt": "2026-08-07T17:05:42Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.88.1",
-        "version": "v0.88.1"
+        "publishedAt": "2026-08-12T20:04:42Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.89.0",
+        "version": "v0.89.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-07-31T21:07:20Z",
-        "version": "v0.88.0"
+        "publishedAt": "2026-08-07T17:05:42Z",
+        "version": "v0.88.1"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "charmbracelet/crush",
       "tags": [
         "coding-agent",
@@ -1311,19 +1311,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 367848604,
-        "name": "openbao-0.29.0",
+        "id": 369470546,
+        "name": "openbao-0.29.1",
         "prerelease": false,
-        "publishedAt": "2026-08-10T10:59:40Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.0",
-        "version": "openbao-0.29.0"
+        "publishedAt": "2026-08-12T19:13:18Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.1",
+        "version": "openbao-0.29.1"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-07-22T15:51:23Z",
-        "version": "openbao-0.28.6"
+        "publishedAt": "2026-08-10T10:59:40Z",
+        "version": "openbao-0.29.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "openbao/openbao-helm",
       "tags": [
         "secrets",
