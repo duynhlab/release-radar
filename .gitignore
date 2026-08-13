@@ -70,4 +70,5 @@ artifacts/e2e/**/trace/
 dist/
 src/generated/
 public/release-notes/
+public/readme-content/
 worker-configuration.d.ts

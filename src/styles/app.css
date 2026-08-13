@@ -334,4 +334,22 @@
     color: var(--color-fg-subtle);
     font-style: italic;
   }
+  /* README-only: real headings (normalized to h3–h6 by readme-transform).
+     Sizes follow the named tiers — h3 at card-title (15), the rest at body. */
+  .rr-readme :where(h3) {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-fg);
+  }
+  .rr-readme :where(h4, h5, h6) {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-fg);
+  }
+  .rr-readme :where(* + h3) {
+    margin-top: 1.25rem;
+  }
+  .rr-readme :where(* + h4, * + h5, * + h6) {
+    margin-top: 1rem;
+  }
 }

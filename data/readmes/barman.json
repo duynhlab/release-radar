@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-08-13T07:59:11.394Z",
+  "readme": null,
+  "schemaVersion": 1,
+  "tool": {
+    "id": "barman",
+    "name": "Barman",
+    "repository": "EnterpriseDB/barman"
+  }
+}

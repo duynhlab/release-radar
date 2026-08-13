@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-13T07:58:35.789Z",
+  "readme": {
+    "htmlUrl": "https://github.com/open-policy-agent/gatekeeper/blob/master/README.md",
+    "markdown": "# Gatekeeper\n\n![Static Badge](https://img.shields.io/badge/OPA%20Version-v0.60.0-blue)\n\n## How is Gatekeeper different from OPA?\n\nCompared to using [OPA with its sidecar kube-mgmt](https://www.openpolicyagent.org/docs/kubernetes-admission-control.html) (aka Gatekeeper v1.0), Gatekeeper introduces the following functionality:\n\n   * An extensible, parameterized [policy library](https://open-policy-agent.github.io/gatekeeper-library/website/)\n   * Native Kubernetes CRDs for instantiating the policy library (aka \"constraints\")\n   * Native Kubernetes CRDs for extending the policy library (aka \"constraint templates\")\n   * Native Kubernetes CRDs for [mutation](https://open-policy-agent.github.io/gatekeeper/website/docs/mutation/) support\n   * Audit functionality\n   * External data support\n\n## Getting started\n\nCheck out the [installation instructions](https://open-policy-agent.github.io/gatekeeper/website/docs/install) to deploy Gatekeeper components to your Kubernetes cluster.\n\n## Documentation\n\nPlease see the [Gatekeeper website](https://open-policy-agent.github.io/gatekeeper/website/docs/howto) for more in-depth information.\n\n## Policy Library\n\nSee the [Gatekeeper policy library](https://open-policy-agent.github.io/gatekeeper-library/website/) for a collection of constraint templates and sample constraints that you can use with Gatekeeper.\n\n## Community & Contributing\n\nPlease refer to [Gatekeeper's contribution guide](https://open-policy-agent.github.io/gatekeeper/website/docs/help) to find out how you can help.\n\n## Code of conduct\n\nThis project is governed by the [CNCF Code of conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).\n\n## Security\n\nFor details on how to report vulnerabilities and security release process, please refer to [Gatekeeper Security](https://open-policy-agent.github.io/gatekeeper/website/docs/security) for more information.",
+    "path": "README.md"
+  },
+  "schemaVersion": 1,
+  "tool": {
+    "id": "gatekeeper",
+    "name": "Gatekeeper",
+    "repository": "open-policy-agent/gatekeeper"
+  }
+}

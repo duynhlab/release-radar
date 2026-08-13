@@ -10,11 +10,17 @@ export function ReleaseHistory({
   releases,
   repository,
   unavailable = false,
+  hideHeading = false,
 }: {
   releases: readonly ReleaseWithFragment[];
   repository: string;
   /** The notes asset could not be fetched — distinct from having none. */
   unavailable?: boolean;
+  /**
+   * When a tab strip already carries the visible label and count, the heading
+   * goes sr-only — the outline keeps its h2, the screen shows one signal.
+   */
+  hideHeading?: boolean;
 }) {
   const router = useRouter();
   const hash = useLocation({
@@ -29,11 +35,15 @@ export function ReleaseHistory({
 
   return (
     <section aria-label="Release history" className="space-y-2">
-      <h2 className="flex items-center gap-2 text-card-title font-semibold text-fg">
-        Release history
-        {/* No "0" pill beside a message that already says there is nothing. */}
-        {releases.length > 0 ? <CountPill>{releases.length}</CountPill> : null}
-      </h2>
+      {hideHeading ? (
+        <h2 className="sr-only">Release history</h2>
+      ) : (
+        <h2 className="flex items-center gap-2 text-card-title font-semibold text-fg">
+          Release history
+          {/* No "0" pill beside a message that already says there is nothing. */}
+          {releases.length > 0 ? <CountPill>{releases.length}</CountPill> : null}
+        </h2>
+      )}
 
       {unavailable ? (
         // A transport failure, not an empty history — promising that a sync

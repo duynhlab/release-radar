@@ -1,10 +1,18 @@
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { parseMarkdown } from "@tanstack/markdown/parser";
-import { NOTES_MARKDOWN_OPTIONS } from "../src/lib/markdown-options.ts";
+import {
+  NOTES_MARKDOWN_OPTIONS,
+  README_MARKDOWN_OPTIONS,
+} from "../src/lib/markdown-options.ts";
 import { autolinkNotes } from "../src/lib/note-autolink.ts";
 import { classifyNoteHref } from "../src/lib/note-links.ts";
-import { ToolReleasesFileSchema } from "../src/domain/types.ts";
+import { resolveReadmeHref } from "../src/lib/readme-links.ts";
+import { normalizeReadmeHeadings } from "../src/lib/readme-transform.ts";
+import {
+  ToolReadmeFileSchema,
+  ToolReleasesFileSchema,
+} from "../src/domain/types.ts";
 
 /**
  * Inventory every release note through the real parser and fail on the things
@@ -19,6 +27,7 @@ import { ToolReleasesFileSchema } from "../src/domain/types.ts";
  */
 
 const RELEASES_DIR = path.join(process.cwd(), "data", "releases");
+const READMES_DIR = path.join(process.cwd(), "data", "readmes");
 const OUT_DIR = path.join(process.cwd(), "artifacts", "markdown");
 const REPORT_PATH = path.join(OUT_DIR, "corpus-report.md");
 const BASELINE_PATH = path.join(OUT_DIR, "corpus-baseline.json");
@@ -243,6 +252,94 @@ for (const file of files) {
   }
 }
 
+// --- READMEs --------------------------------------------------------------
+//
+// The other markdown corpus that changes with no human in the loop. Analyzed
+// through the real README pipeline (README_MARKDOWN_OPTIONS + heading
+// normalization, no autolinking) and the README link policy. Raw HTML is
+// reported but not baseline-gated: badge/layout HTML is pervasive and volatile
+// in READMEs, and it renders as escaped text regardless — the hard gates
+// (dangerous HTML, determinism, parse budget) are what must hold. Setext
+// headings are likewise report-only here: a README using one loses hierarchy
+// cosmetically, which is not worth breaking the unattended sync over.
+
+interface ReadmeCounts {
+  readmes: number;
+  rawHtml: Finding[];
+  dangerousHtml: Finding[];
+  setextHeading: Finding[];
+  badUrl: Finding[];
+  slowParse: Finding[];
+  nonDeterministic: Finding[];
+  links: number;
+  images: number;
+}
+
+const readmeCounts: ReadmeCounts = {
+  readmes: 0,
+  rawHtml: [],
+  dangerousHtml: [],
+  setextHeading: [],
+  badUrl: [],
+  slowParse: [],
+  nonDeterministic: [],
+  links: 0,
+  images: 0,
+};
+
+const readmeFiles = existsSync(READMES_DIR)
+  ? readdirSync(READMES_DIR)
+      .filter((f) => f.endsWith(".json"))
+      .sort()
+  : [];
+
+for (const file of readmeFiles) {
+  const parsed = ToolReadmeFileSchema.parse(
+    JSON.parse(readFileSync(path.join(READMES_DIR, file), "utf8")),
+  );
+  if (!parsed.readme) continue;
+  readmeCounts.readmes += 1;
+  const markdown = parsed.readme.markdown;
+  const where: Finding = { tool: parsed.tool.id, version: parsed.readme.path };
+
+  const parse = () =>
+    normalizeReadmeHeadings(parseMarkdown(markdown, README_MARKDOWN_OPTIONS));
+
+  const started = performance.now();
+  const doc = parse();
+  const elapsed = performance.now() - started;
+  if (elapsed > PARSE_BUDGET_MS) {
+    readmeCounts.slowParse.push({ ...where, sample: `${Math.round(elapsed)}ms` });
+  }
+  if (JSON.stringify(doc) !== JSON.stringify(parse())) {
+    readmeCounts.nonDeterministic.push(where);
+  }
+
+  let sawRawHtml: string | null = null;
+  walk(doc, (node) => {
+    if (node.type === "text" && typeof node.value === "string") {
+      const tag = HTML_TAG.exec(node.value);
+      if (tag) sawRawHtml ??= tag[0];
+      if (DANGEROUS_HTML.test(node.value)) {
+        readmeCounts.dangerousHtml.push({
+          ...where,
+          sample: node.value.slice(0, 80),
+        });
+      }
+    }
+    if (node.type === "link") {
+      readmeCounts.links += 1;
+      const href = typeof node.href === "string" ? node.href : "";
+      if (href && resolveReadmeHref(href, parsed.tool.repository) === null) {
+        readmeCounts.badUrl.push({ ...where, sample: href.slice(0, 80) });
+      }
+    }
+    if (node.type === "image") readmeCounts.images += 1;
+  });
+  if (sawRawHtml) readmeCounts.rawHtml.push({ ...where, sample: sawRawHtml });
+  if (scanSource(markdown).setext) readmeCounts.setextHeading.push(where);
+}
+
 const toolsWith = (findings: Finding[]) =>
   [...new Set(findings.map((f) => f.tool))].sort();
 
@@ -265,6 +362,14 @@ const summary = {
     taskLists: counts.taskLists,
     footnotes: counts.footnotes,
     strikethrough: counts.strikethrough,
+  },
+  readmes: {
+    readmes: readmeCounts.readmes,
+    rawHtml: readmeCounts.rawHtml.length,
+    setextHeading: readmeCounts.setextHeading.length,
+    badUrl: readmeCounts.badUrl.length,
+    links: readmeCounts.links,
+    images: readmeCounts.images,
   },
 };
 
@@ -339,14 +444,45 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 | Links rejected by our stricter policy | ${counts.badUrl.length} |
 | Notes exceeding ${PARSE_BUDGET_MS}ms to parse | ${counts.slowParse.length} |
 | Non-deterministic parses | ${counts.nonDeterministic.length} |
+
+## READMEs
+
+**${readmeCounts.readmes} READMEs** from \`data/readmes/\`, analyzed through the
+README pipeline (heading normalization, repo-relative link resolution, no
+autolinking). Raw HTML and Setext headings are report-only here — pervasive and
+cosmetic respectively — while dangerous HTML, determinism and the parse budget
+gate the same as notes.
+
+| | |
+|---|---|
+| Containing raw HTML | ${readmeCounts.rawHtml.length} (of ${readmeCounts.readmes}) |
+| Dangerous HTML (script/iframe/on\\*=) | **${readmeCounts.dangerousHtml.length}** |
+| Setext headings | ${readmeCounts.setextHeading.length} |
+| Links | ${readmeCounts.links} |
+| …rejected by the README link policy | ${readmeCounts.badUrl.length} |
+| Images (all render as blocked placeholders) | ${readmeCounts.images} |
+| Exceeding ${PARSE_BUDGET_MS}ms to parse | ${readmeCounts.slowParse.length} |
+| Non-deterministic parses | ${readmeCounts.nonDeterministic.length} |
 `;
+
+// The previous baseline must be read BEFORE the new one is written: writing
+// first made every --check comparison self-referential, so the "rose from N"
+// gates could never fire.
+const check = process.argv.includes("--check");
+let baseline: typeof summary | null = null;
+if (check) {
+  try {
+    baseline = JSON.parse(readFileSync(BASELINE_PATH, "utf8")) as typeof summary;
+  } catch {
+    baseline = null;
+  }
+}
 
 writeFileSync(REPORT_PATH, report);
 writeFileSync(BASELINE_PATH, `${JSON.stringify(summary, null, 2)}\n`);
 
 // --- gate ---------------------------------------------------------------
 
-const check = process.argv.includes("--check");
 const failures: string[] = [];
 
 if (counts.dangerousHtml.length > 0) {
@@ -365,14 +501,23 @@ if (counts.setextHeading.length > 0) {
   // becoming a paragraph plus a rule.
   failures.push(`${counts.setextHeading.length} notes use Setext headings`);
 }
+if (readmeCounts.dangerousHtml.length > 0) {
+  failures.push(
+    `${readmeCounts.dangerousHtml.length} READMEs contain script/iframe/event-handler HTML`,
+  );
+}
+if (readmeCounts.nonDeterministic.length > 0) {
+  failures.push(
+    `${readmeCounts.nonDeterministic.length} READMEs parse non-deterministically`,
+  );
+}
+if (readmeCounts.slowParse.length > 0) {
+  failures.push(
+    `${readmeCounts.slowParse.length} READMEs exceed the ${PARSE_BUDGET_MS}ms parse budget`,
+  );
+}
 
 if (check) {
-  let baseline: typeof summary | null = null;
-  try {
-    baseline = JSON.parse(readFileSync(BASELINE_PATH, "utf8")) as typeof summary;
-  } catch {
-    baseline = null;
-  }
   if (baseline) {
     if (counts.rawHtml.length > baseline.rawHtml.notes) {
       failures.push(
@@ -400,6 +545,9 @@ console.log(`indented code:  ${counts.indentedCode.length} notes`);
 console.log(`setext:         ${counts.setextHeading.length}`);
 console.log(`dangerous HTML: ${counts.dangerousHtml.length}`);
 console.log(`rejected links: ${counts.badUrl.length}`);
+console.log(
+  `readmes:        ${readmeCounts.readmes} (${readmeCounts.rawHtml.length} raw HTML, ${readmeCounts.dangerousHtml.length} dangerous, ${readmeCounts.badUrl.length} rejected links)`,
+);
 console.log(`report:         ${path.relative(process.cwd(), REPORT_PATH)}`);
 
 if (failures.length > 0) {

@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-13T07:58:48.151Z",
+  "readme": {
+    "htmlUrl": "https://github.com/vectordotdev/helm-charts/blob/develop/README.md",
+    "markdown": "# Vector Helm Charts\n\nOfficial Helm charts for Vector:\n- [Vector](charts/vector/README.md) (vector/vector)\n\n# How to use the Vector Helm Repository\n\nYou can add this repository to your Helm repositories:\n\n```shell\nhelm repo add vector https://helm.vector.dev\nhelm repo update\n```\n\nOr use the chart directly via the `OCI` `oci://ghcr.io/vectordotdev/helm-charts/vector`",
+    "path": "README.md"
+  },
+  "schemaVersion": 1,
+  "tool": {
+    "id": "vector-helm-charts",
+    "name": "Vector Helm Charts",
+    "repository": "vectordotdev/helm-charts"
+  }
+}

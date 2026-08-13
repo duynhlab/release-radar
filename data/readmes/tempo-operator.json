@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-13T07:58:42.569Z",
+  "readme": {
+    "htmlUrl": "https://github.com/grafana/tempo-operator/blob/main/README.md",
+    "markdown": "# Grafana Tempo operator\n\nThis is a Kubernetes operator for [Grafana Tempo](https://github.com/grafana/tempo).\n\n\n## Features\n\n* **Resource Limits** - Specify overall resource requests and limits in the `TempoStack` CR; the operator assigns fractions of it to each component\n* **AuthN and AuthZ** - Supports OpenID Control (OIDC) and role-based access control (RBAC)\n* **Managed upgrades** - Updating the operator will automatically update all managed Tempo clusters\n* **Multitenancy** - Multiple tenants can send traces to the same Tempo cluster\n* **mTLS** - Communication between the Tempo components can be secured via mTLS\n* **Jaeger UI** - Traces can be visualized in Jaeger UI and exposed via Ingress or OpenShift Route\n* **Observability** - The operator and `TempoStack` operands expose telemetry (metrics, traces) and integrate with Prometheus `ServiceMonitor` and `PrometheusRule`\n\n\n## Documentation\n\n* [Operator documentation](https://grafana.com/docs/tempo/next/setup/operator/)\n* [Tempo CRD design](https://docs.google.com/document/d/1avSSf__R226l2b3hbcpXlYH7w6iKtXZsd9VTcpxDqng/edit)\n\n\n## Deploy\n\n1. Install cert-manager and minio: `make cert-manager deploy-minio`\n\n2. Build and deploy operator:\n\n```bash\nIMG_PREFIX=docker.io/${USER} OPERATOR_VERSION=$(date +%s).0.0 make docker-build docker-push deploy\n``` \n\n3. Create a secret for minio in the namespace you are using:\n```yaml\nkubectl apply -f - <<EOF\napiVersion: v1\nkind: Secret\nmetadata:\n  name: minio-test\nstringData:\n  endpoint: http://minio.minio.svc:9000\n  bucket: tempo\n  access_key_id: tempo\n  access_key_secret: supersecret\ntype: Opaque\nEOF\n```\n4. Create Tempo CR:\n\n```yaml\nkubectl apply -f - <<EOF\napiVersion: tempo.grafana.com/v1alpha1\nkind: TempoStack\nmetadata:\n  name: simplest\nspec:\n  storage:\n    secret:\n      name: minio-test\n      type: s3\n  storageSize: 1Gi\n  resources:\n    total:\n      limits:\n        memory: 2Gi\n        cpu: 2000m\n  template:\n    queryFrontend:\n      jaegerQuery:\n        enabled: true\nEOF\n```\n\n\n## Community\n\n* [Grafana Slack #tempo-operator](https://grafana.slack.com/archives/C0414EUU39A)",
+    "path": "README.md"
+  },
+  "schemaVersion": 1,
+  "tool": {
+    "id": "tempo-operator",
+    "name": "Tempo Operator",
+    "repository": "grafana/tempo-operator"
+  }
+}

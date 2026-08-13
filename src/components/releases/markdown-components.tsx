@@ -85,12 +85,12 @@ const NoteHeadingSecondary = noteHeading("text-body font-semibold text-fg");
  * landmark, which wrecks the landmark structure on a page with 20 notes. So the
  * lint rule is suppressed narrowly instead.
  */
-function NotePre(props: ComponentPropsWithoutRef<"pre">) {
+export function NotePre(props: ComponentPropsWithoutRef<"pre">) {
   // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex -- axe scrollable-region-focusable
   return <pre {...props} tabIndex={0} />;
 }
 
-function NoteTable({ children, ...rest }: ComponentPropsWithoutRef<"table">) {
+export function NoteTable({ children, ...rest }: ComponentPropsWithoutRef<"table">) {
   return (
     // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex -- axe scrollable-region-focusable
     <div className="rr-notes__scroll" tabIndex={0}>

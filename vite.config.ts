@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import viteReact from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import { generateCatalogModule } from "./scripts/lib/gen-catalog.ts";
-import { copyReleaseNotes } from "./scripts/lib/copy-release-notes.ts";
+import { copyReadmes, copyReleaseNotes } from "./scripts/lib/copy-release-notes.ts";
 import { buildPrerenderPages } from "./src/lib/prerender-pages.ts";
 import { SITE_URL } from "./src/lib/site.ts";
 
@@ -14,6 +14,7 @@ export default defineConfig(async () => {
   // throws a prettified Zod error, so a bad index fails the build right here.
   const { releaseIndex } = await generateCatalogModule();
   await copyReleaseNotes();
+  await copyReadmes();
 
   return {
     // Vite 8 resolves tsconfig paths natively — no vite-tsconfig-paths.

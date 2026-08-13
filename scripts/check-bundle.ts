@@ -73,6 +73,34 @@ if (sampled === 0) {
   failures.push("no release notes were long enough to sample — check is vacuous");
 }
 
+// 2b. Same probe for READMEs — they ship as /readme-content assets and are the
+//     other multi-megabyte corpus that must stay out of the worker. Not gated
+//     on `sampled === 0` like notes: the READMEs directory may legitimately be
+//     empty until the first post-feature sync runs.
+const readmesDir = path.join(DATA_DIR, "readmes");
+const readmeFiles = (() => {
+  try {
+    return readdirSync(readmesDir).filter((f) => f.endsWith(".json"));
+  } catch {
+    return [];
+  }
+})();
+let readmesSampled = 0;
+for (const file of readmeFiles.slice(0, 12)) {
+  const parsed: unknown = JSON.parse(
+    readFileSync(path.join(readmesDir, file), "utf8"),
+  );
+  const markdown = (parsed as { readme?: { markdown?: string } | null }).readme
+    ?.markdown;
+  if (!markdown || markdown.length <= 80) continue;
+  readmesSampled += 1;
+  const probe = markdown.slice(0, 80);
+  const hit = serverSources.find((s) => s.text.includes(probe));
+  if (hit) {
+    failures.push(`README from ${file} leaked into ${hit.file}`);
+  }
+}
+
 // 3. Worker gzip budget.
 const totalGzip = serverSources.reduce(
   (sum, s) => sum + gzipSync(Buffer.from(s.text)).length,
@@ -110,6 +138,7 @@ console.log(`server chunks:      ${serverFiles.length}`);
 console.log(`worker gzip:        ${totalGzip} bytes (budget ${WORKER_GZIP_BUDGET})`);
 console.log(`catalog in worker:  ${indexPresent ? "yes" : "NO"}`);
 console.log(`note bodies sampled:${sampled}, leaked: 0`);
+console.log(`readmes sampled:    ${readmesSampled}`);
 console.log(`prerendered pages:  ${htmlCount} (expected ${expected})`);
 
 if (failures.length > 0) {

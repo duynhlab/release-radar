@@ -1,5 +1,6 @@
 import { renderToString } from "react-dom/server";
 import { describe, expect, it, vi } from "vitest";
+import { Readme } from "../../src/components/readme/readme.tsx";
 import { ReleaseNotes } from "../../src/components/releases/release-notes.tsx";
 import { TimeAgo } from "../../src/components/ui/time-ago.tsx";
 import { formatDate } from "../../src/lib/dates.ts";
@@ -35,10 +36,19 @@ describe("hydration determinism", () => {
     );
   });
 
+  it("renders a README deterministically", () => {
+    const markdown =
+      "# Tool\n\nSee [docs](docs/guide.md) and ![badge](https://img.shields.io/x.svg)\n\n### Usage";
+    expect(renderToString(<Readme markdown={markdown} repository="a/b" />)).toBe(
+      renderToString(<Readme markdown={markdown} repository="a/b" />),
+    );
+  });
+
   it("does not warn during render", () => {
     const error = vi.spyOn(console, "error").mockImplementation(() => {});
     renderToString(<TimeAgo iso="2026-07-23T00:35:52Z" />);
     renderToString(<ReleaseNotes markdown="hello **world**" repository="a/b" />);
+    renderToString(<Readme markdown="# hi\n\n[x](./y.md)" repository="a/b" />);
     expect(error).not.toHaveBeenCalled();
     error.mockRestore();
   });

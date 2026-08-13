@@ -37,3 +37,6 @@
 # the page that links to it.
 /release-notes/*
   Cache-Control: public,max-age=300,must-revalidate
+
+/readme-content/*
+  Cache-Control: public,max-age=300,must-revalidate
