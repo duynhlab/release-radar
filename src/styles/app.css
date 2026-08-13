@@ -109,9 +109,19 @@
   --rr-surface-hover: oklch(0.248 0.014 264);
   --rr-border: oklch(0.29 0.014 264);
   --rr-border-strong: oklch(0.38 0.016 264);
-  --rr-fg: oklch(0.965 0.004 264);
-  --rr-fg-muted: oklch(0.76 0.012 264);
-  --rr-fg-subtle: oklch(0.64 0.014 264);
+  /* 0.965 measured 17.4:1 on --rr-bg — far past the point where contrast
+     helps. Near-white text on a dark ground haloes (halation), and paragraphs
+     sat at half that luminance, so every markdown block read as gray body
+     with glaring bold. 0.90 is ~14.3:1: still comfortably past the 7:1 AAA
+     floor, no glare. tests/unit/contrast.test.ts pins a ceiling so this does
+     not creep back up. */
+  --rr-fg: oklch(0.9 0.006 264);
+  /* 10.3:1 on --rr-bg. Raised with fg lowered so the body/emphasis gap inside
+     one paragraph is a step, not a jump (was 8.97 vs 17.41). */
+  --rr-fg-muted: oklch(0.8 0.012 264);
+  /* 6.7:1 on --rr-bg, 6.1:1 on --rr-surface — this tier carries 12px metadata,
+     same reasoning as the light-theme note below. */
+  --rr-fg-subtle: oklch(0.68 0.014 264);
   --rr-accent: oklch(0.74 0.14 235);
   --rr-accent-hover: oklch(0.8 0.13 235);
   --rr-accent-fg: oklch(0.18 0.02 235);
@@ -262,7 +272,10 @@
     max-width: 72ch;
     font-size: 0.875rem;
     line-height: 1.65;
-    color: var(--color-fg-muted);
+    /* Full emphasis, not fg-muted: this is long-form reading (a README runs
+       pages), and muted paragraphs next to 600-weight fg runs read as gray
+       body with bright bold. Hierarchy inside markdown comes from weight. */
+    color: var(--color-fg);
     overflow-wrap: anywhere;
   }
   .rr-notes > * + * {

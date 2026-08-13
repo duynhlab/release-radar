@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import {
   THEME_BOOT_SCRIPT,
+  THEME_COLORS,
   THEME_STORAGE_KEY,
 } from "../../src/features/theme/theme-script.ts";
 
@@ -28,6 +29,7 @@ describe("theme boot script", () => {
     document.documentElement.className = "";
     delete document.documentElement.dataset.theme;
     document.documentElement.style.colorScheme = "";
+    document.querySelector('meta[name="theme-color"]')?.remove();
     vi.unstubAllGlobals();
   });
 
@@ -77,6 +79,31 @@ describe("theme boot script", () => {
     expect(() => runBootScript()).not.toThrow();
     expect(document.documentElement.classList.contains("dark")).toBe(true);
     getItem.mockRestore();
+  });
+
+  it("sets the theme-color meta to the resolved background", () => {
+    // Browser chrome can't read CSS variables, so the script owns the meta —
+    // a media-query pair would ignore the manual .light/.dark override.
+    mockPrefersLight(false);
+    runBootScript();
+    const meta = document.querySelector('meta[name="theme-color"]');
+    expect(meta?.getAttribute("content")).toBe(THEME_COLORS.dark);
+
+    localStorage.setItem(THEME_STORAGE_KEY, "light");
+    runBootScript();
+    expect(meta?.getAttribute("content")).toBe(THEME_COLORS.light);
+  });
+
+  it("updates an existing meta rather than adding a second one", () => {
+    mockPrefersLight(true);
+    const existing = document.createElement("meta");
+    existing.setAttribute("name", "theme-color");
+    existing.setAttribute("content", "#12161d");
+    document.head.appendChild(existing);
+    runBootScript();
+    const metas = document.querySelectorAll('meta[name="theme-color"]');
+    expect(metas).toHaveLength(1);
+    expect(metas[0]?.getAttribute("content")).toBe(THEME_COLORS.light);
   });
 
   it("never leaves both classes applied", () => {

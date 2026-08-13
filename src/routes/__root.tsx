@@ -5,7 +5,7 @@ import { AppShell } from "@/components/layout/app-shell";
 import { NotFound } from "@/components/layout/not-found";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { getIndex } from "@/data/catalog";
-import { THEME_BOOT_SCRIPT } from "@/features/theme/theme-script";
+import { THEME_BOOT_SCRIPT, THEME_COLORS } from "@/features/theme/theme-script";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 import appCss from "@/styles/app.css?url";
 
@@ -19,7 +19,9 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: SITE_NAME },
       { name: "description", content: SITE_DESCRIPTION },
-      { name: "theme-color", content: "#12161d" },
+      // Dark is the no-JS default; the theme boot script rewrites this to the
+      // resolved theme's background before first paint.
+      { name: "theme-color", content: THEME_COLORS.dark },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

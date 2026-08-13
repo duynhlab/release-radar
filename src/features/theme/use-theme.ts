@@ -1,6 +1,7 @@
 import { useCallback, useSyncExternalStore } from "react";
 import { createLocalStorageStore } from "@/lib/create-local-storage-store";
 import {
+  THEME_COLORS,
   THEME_STORAGE_KEY,
   type ResolvedTheme,
   type ThemePreference,
@@ -28,6 +29,11 @@ function apply(preference: ThemePreference): void {
   el.classList.add(resolved);
   el.dataset.theme = preference;
   el.style.colorScheme = resolved;
+  // Browser chrome follows the resolved background; the boot script created
+  // the meta if the head didn't ship one.
+  document
+    .querySelector('meta[name="theme-color"]')
+    ?.setAttribute("content", THEME_COLORS[resolved]);
 }
 
 const CYCLE: ThemePreference[] = ["system", "light", "dark"];
