@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-06T08:59:08.552Z",
+  "generatedAt": "2026-08-14T04:19:11.408Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 369936713,
+      "name": "Release v1.16.8",
+      "notes": "## bootc 1.16.8\r\n\r\n## What's Changed\r\n* composefs: Drop pull-time repo handle before running GC by @cgwalters in https://github.com/bootc-dev/bootc/pull/2365\r\n* ci: Dynamically re-gate heavy tests on PRs when no merge queue is active by @cgwalters in https://github.com/bootc-dev/bootc/pull/2363\r\n* Release 1.16.8 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2377\r\n\r\n### Assets\r\n\r\n- `bootc-1.16.8-vendor.tar.zstd` - Vendored dependencies archive\r\n- `bootc-1.16.8.tar.zstd` - Source archive\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bootc/compare/v1.16.7...v1.16.8",
+      "prerelease": false,
+      "publishedAt": "2026-08-13T17:38:50Z",
+      "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.8",
+      "version": "v1.16.8"
+    },
     {
       "channel": "stable",
       "draft": false,

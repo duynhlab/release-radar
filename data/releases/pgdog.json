@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-07T02:08:53.690Z",
+  "generatedAt": "2026-08-14T04:19:12.840Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 370183597,
+      "name": "v0.1.53",
+      "notes": "### New parser\r\n\r\nNew parser is now **enabled by default**. Please test this release before launching in production. You should see 6x-8x speed improvements resulting in lower latency for query cache misses, and up to 90% memory usage reduction overall. This is not a typo! We fixed quite a few things here.\r\n\r\nThis also makes the `query_parser_engine` setting redundant and obsolete. It will now be ignored.\r\n\r\nBy @sgrif \r\n\r\n### Bug fixes\r\n* Fix negative interval text format parsing in cross-shard aggregates @bryanmehall\r\n* Connection pools were giving clients closed server connections, causing intermittent errors @nsavvide \r\n* In `role = \"auto\"` mode, set all hosts to `role = \"replica\"` until proven otherwise; this unblocks reads faster during configuration changes @murex971\r\n* [New parser] Fix `GRANT` and `CREATE STATISTICS` DDL handling @levkk\r\n* When using schema-based sharding, ignore the inconsistent omnisharded tables write check @levkk\r\n* Include `sv_idle_xact` calculation into the example Datadog dashboard @zacharywelch\r\n* Fix crash when a cross-shard `avg()` calculation was done on empty tables @sgrif\r\n* `RESET PREPARED` admin command wasn't doing anything @IgorOhrimenko\r\n* Fix Mac OS build for the new parser @jkaczman\r\n* Fix pipelined queries using Postgres portals; specifically affected the Node JS Postgres drivers @nsavvide\r\n* Sending portal close messages could potentially close prepared statements that were identically named @meskill \r\n* Schema synchronization during resharding now restores `REPLICA IDENTITY` indexes in the post-data phase @rlittlefield\r\n* Cross-shard aggregates with passthrough columns now work correctly @jkaczman\r\n* `PREPARE` was leaking memory in the prepared statements cache @meskill \r\n* Fix incorrect handling of errors in mixed simple/extended protocol exchange @jkaczman \r\n\r\n### Performance\r\n* Lower the number of memory allocations in prepared statements cache @meskill \r\n* Remove unnecessary statement allocation in the parser (50% allocation reduction in the hot path) @sgrif \r\n\r\n### Features\r\n* Track selected, inserted and deleted rows, as reported by server connections @murex971\r\n* Support prepared statements cache TTL (time to live), automatically re-planning statements periodically; this sidesteps the stale execution plan problem @meskill \r\n\r\n### Misc\r\n* Clippy pass over new parser code @sgrif \r\n* Bump Mac OS runner to `macos-26` (`macos-14` is about to be deprecated) @jkaczman\r\n* Docker compose demo wasn't saving Postgres data correctly @andyatkinson\r\n* Small refactor of pool health tracking @sgrif\r\n\r\n## New Contributors\r\n* @bryanmehall made their first contribution in https://github.com/pgdogdev/pgdog/pull/1321\r\n* @zacharywelch made their first contribution in https://github.com/pgdogdev/pgdog/pull/1333\r\n* @jkaczman made their first contribution in https://github.com/pgdogdev/pgdog/pull/1336\r\n* @andyatkinson made their first contribution in https://github.com/pgdogdev/pgdog/pull/1343\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.52...v0.1.53",
+      "prerelease": false,
+      "publishedAt": "2026-08-13T20:09:31Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.53",
+      "version": "v0.1.53"
+    },
     {
       "channel": "stable",
       "draft": false,

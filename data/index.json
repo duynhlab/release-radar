@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T15:15:14.086Z",
+  "generatedAt": "2026-08-14T04:19:12.847Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -215,19 +215,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 351788551,
-        "name": "Helm v3.21.3",
+        "id": 370020950,
+        "name": "Helm v4.2.4",
         "prerelease": false,
-        "publishedAt": "2026-07-09T21:20:27Z",
-        "url": "https://github.com/helm/helm/releases/tag/v3.21.3",
-        "version": "v3.21.3"
+        "publishedAt": "2026-08-13T15:33:04Z",
+        "url": "https://github.com/helm/helm/releases/tag/v4.2.4",
+        "version": "v4.2.4"
       },
       "name": "Helm",
       "previous": {
-        "publishedAt": "2026-07-09T20:56:43Z",
-        "version": "v4.2.3"
+        "publishedAt": "2026-07-09T21:20:27Z",
+        "version": "v3.21.3"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "helm/helm",
       "tags": [
         "kubernetes",
@@ -1375,19 +1375,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 358835818,
-        "name": "v2.9.4",
+        "id": 370183428,
+        "name": "v3.0.3",
         "prerelease": false,
-        "publishedAt": "2026-07-24T12:29:33Z",
-        "url": "https://github.com/grafana/tempo/releases/tag/v2.9.4",
-        "version": "v2.9.4"
+        "publishedAt": "2026-08-13T20:37:13Z",
+        "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
+        "version": "v3.0.3"
       },
       "name": "Tempo",
       "previous": {
-        "publishedAt": "2026-06-12T16:28:23Z",
-        "version": "v2.10.7"
+        "publishedAt": "2026-08-13T20:37:12Z",
+        "version": "v2.10.8"
       },
-      "releaseCount": 9,
+      "releaseCount": 12,
       "repository": "grafana/tempo",
       "tags": [
         "traces"
@@ -1999,19 +1999,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 369818643,
-        "name": "2026.8.0",
+        "id": 370034954,
+        "name": "2026.8.1",
         "prerelease": false,
-        "publishedAt": "2026-08-13T10:05:08Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.8.0",
-        "version": "2026.8.0"
+        "publishedAt": "2026-08-13T15:52:41Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.8.1",
+        "version": "2026.8.1"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-07-23T10:19:16Z",
-        "version": "2026.7.3"
+        "publishedAt": "2026-08-13T10:05:08Z",
+        "version": "2026.8.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "cloudflare/cloudflared",
       "tags": [
         "tunnel",
@@ -2287,19 +2287,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 364930190,
-        "name": "Release v1.16.7",
+        "id": 369936713,
+        "name": "Release v1.16.8",
         "prerelease": false,
-        "publishedAt": "2026-08-04T14:27:16Z",
-        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.7",
-        "version": "v1.16.7"
+        "publishedAt": "2026-08-13T17:38:50Z",
+        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.8",
+        "version": "v1.16.8"
       },
       "name": "bootc",
       "previous": {
-        "publishedAt": "2026-07-28T13:32:34Z",
-        "version": "v1.16.6"
+        "publishedAt": "2026-08-04T14:27:16Z",
+        "version": "v1.16.7"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "bootc-dev/bootc",
       "tags": [
         "containers",
@@ -2349,19 +2349,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 366382103,
-        "name": "v0.1.52",
+        "id": 370183597,
+        "name": "v0.1.53",
         "prerelease": false,
-        "publishedAt": "2026-08-06T19:31:03Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.52",
-        "version": "v0.1.52"
+        "publishedAt": "2026-08-13T20:09:31Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.53",
+        "version": "v0.1.53"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-07-30T21:56:54Z",
-        "version": "v0.1.51"
+        "publishedAt": "2026-08-06T19:31:03Z",
+        "version": "v0.1.52"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "pgdogdev/pgdog",
       "tags": [
         "postgresql",
