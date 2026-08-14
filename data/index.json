@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T04:19:12.847Z",
+  "generatedAt": "2026-08-14T15:07:34.241Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -215,19 +215,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 370020950,
-        "name": "Helm v4.2.4",
+        "id": 370643786,
+        "name": "Helm v3.21.4",
         "prerelease": false,
-        "publishedAt": "2026-08-13T15:33:04Z",
-        "url": "https://github.com/helm/helm/releases/tag/v4.2.4",
-        "version": "v4.2.4"
+        "publishedAt": "2026-08-14T14:55:42Z",
+        "url": "https://github.com/helm/helm/releases/tag/v3.21.4",
+        "version": "v3.21.4"
       },
       "name": "Helm",
       "previous": {
-        "publishedAt": "2026-07-09T21:20:27Z",
-        "version": "v3.21.3"
+        "publishedAt": "2026-08-13T15:33:04Z",
+        "version": "v4.2.4"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "helm/helm",
       "tags": [
         "kubernetes",
@@ -1999,19 +1999,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 370034954,
-        "name": "2026.8.1",
+        "id": 370556845,
+        "name": "2026.8.2",
         "prerelease": false,
-        "publishedAt": "2026-08-13T15:52:41Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.8.1",
-        "version": "2026.8.1"
+        "publishedAt": "2026-08-14T12:23:25Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.8.2",
+        "version": "2026.8.2"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-08-13T10:05:08Z",
-        "version": "2026.8.0"
+        "publishedAt": "2026-08-13T15:52:41Z",
+        "version": "2026.8.1"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "cloudflare/cloudflared",
       "tags": [
         "tunnel",
