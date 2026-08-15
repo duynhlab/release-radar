@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T15:07:34.241Z",
+  "generatedAt": "2026-08-15T14:39:30.511Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -675,19 +675,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 358248612,
-        "name": "v1.8.3",
+        "id": 371044887,
+        "name": "v1.9.0",
         "prerelease": false,
-        "publishedAt": "2026-07-22T18:59:16Z",
-        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.8.3",
-        "version": "v1.8.3"
+        "publishedAt": "2026-08-15T12:31:24Z",
+        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.9.0",
+        "version": "v1.9.0"
       },
       "name": "Envoy Gateway",
       "previous": {
-        "publishedAt": "2026-07-08T15:36:49Z",
-        "version": "v1.7.5"
+        "publishedAt": "2026-07-22T18:59:16Z",
+        "version": "v1.8.3"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "envoyproxy/gateway",
       "tags": [
         "gateway",
