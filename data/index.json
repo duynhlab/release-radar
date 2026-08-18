@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T14:39:30.511Z",
+  "generatedAt": "2026-08-18T03:08:59.931Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -312,19 +312,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 365085491,
-        "name": "v0.158.0",
+        "id": 372032345,
+        "name": "v0.159.0",
         "prerelease": false,
-        "publishedAt": "2026-08-04T18:54:05Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.158.0",
-        "version": "v0.158.0"
+        "publishedAt": "2026-08-18T01:09:57Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.159.0",
+        "version": "v0.159.0"
       },
       "name": "OpenTelemetry Collector",
       "previous": {
-        "publishedAt": "2026-07-22T09:59:16Z",
-        "version": "v0.157.0"
+        "publishedAt": "2026-08-04T18:54:05Z",
+        "version": "v0.158.0"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "open-telemetry/opentelemetry-collector-releases",
       "tags": [
         "metrics",
@@ -430,19 +430,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 363051287,
-        "name": "v1.149.0",
+        "id": 370663729,
+        "name": "v1.150.0",
         "prerelease": false,
-        "publishedAt": "2026-08-05T12:38:55Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.149.0",
-        "version": "v1.149.0"
+        "publishedAt": "2026-08-17T09:53:36Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.150.0",
+        "version": "v1.150.0"
       },
       "name": "VictoriaMetrics",
       "previous": {
-        "publishedAt": "2026-08-05T12:38:49Z",
-        "version": "v1.136.15"
+        "publishedAt": "2026-08-17T09:53:24Z",
+        "version": "v1.148.2"
       },
-      "releaseCount": 13,
+      "releaseCount": 15,
       "repository": "VictoriaMetrics/VictoriaMetrics",
       "tags": [
         "metrics",
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 367225846,
-        "name": "victoria-metrics-k8s-stack-0.90.2",
+        "id": 371879229,
+        "name": "victoria-metrics-single-0.45.0",
         "prerelease": false,
-        "publishedAt": "2026-08-08T14:49:18Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.90.2",
-        "version": "victoria-metrics-k8s-stack-0.90.2"
+        "publishedAt": "2026-08-17T18:48:01Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.45.0",
+        "version": "victoria-metrics-single-0.45.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-07T19:15:40Z",
-        "version": "victoria-metrics-k8s-stack-0.90.1"
+        "publishedAt": "2026-08-17T18:47:59Z",
+        "version": "victoria-metrics-k8s-stack-0.91.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -1196,19 +1196,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 369734850,
-        "name": "Release v0.157.0",
+        "id": 371734238,
+        "name": "Release v0.158.0",
         "prerelease": false,
-        "publishedAt": "2026-08-13T07:58:29Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.157.0",
-        "version": "v0.157.0"
+        "publishedAt": "2026-08-17T12:22:22Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.158.0",
+        "version": "v0.158.0"
       },
       "name": "OpenTelemetry Operator",
       "previous": {
-        "publishedAt": "2026-07-14T15:41:36Z",
-        "version": "v0.156.0"
+        "publishedAt": "2026-08-13T07:58:29Z",
+        "version": "v0.157.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "open-telemetry/opentelemetry-operator",
       "tags": [
         "metrics",
@@ -1938,19 +1938,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 356580769,
-        "name": "v2.59.0: PostgreSQL 19 Support",
+        "id": 371643672,
+        "name": "v2.59.1: PostgreSQL 19beta3 Support",
         "prerelease": false,
-        "publishedAt": "2026-07-20T08:43:24Z",
-        "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.59.0",
-        "version": "release/2.59.0"
+        "publishedAt": "2026-08-17T09:30:25Z",
+        "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.59.1",
+        "version": "release/2.59.1"
       },
       "name": "pgBackRest",
       "previous": {
-        "publishedAt": "2026-01-19T10:49:09Z",
-        "version": "release/2.58.0"
+        "publishedAt": "2026-07-20T08:43:24Z",
+        "version": "release/2.59.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "pgbackrest/pgbackrest",
       "tags": [
         "postgresql",

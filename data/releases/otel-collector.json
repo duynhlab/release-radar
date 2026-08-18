@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-05T03:35:27.981Z",
+  "generatedAt": "2026-08-18T03:08:24.363Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372032345,
+      "name": "v0.159.0",
+      "notes": "Check the [v0.159.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.159.0) and the [v0.159.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.159.0) for changelogs on specific components.\n\n\n## Changelog\n* f817832365a9a2b829bc7c25feffcf8834585dea Update version to 0.159.0 (#1607)\n* c5fb418e5129024ff44e745fdef4e2cce2af5b24 Update OpenTelemetry Collector Components (#1606)\n* e88951123d6164b3fc2e1fedfec2883e810ffdb1 Update module go.opentelemetry.io/ebpf-profiler to v0.0.202633 (#1603)\n* f9ae36cda0213c894245e8d50f488270c5ac5993 Update dockerfile deps (#1602)\n* 07810ed13f4f7b9e0aab04f645c7c2cab140ad68 Update open-telemetry/shared-workflows action to v0.7.0 (#1605)\n* ffd272d07baf450d98a2e81d870fa7bb84d32eb2 [chore] use shared ossf workflow (#1601)",
+      "prerelease": false,
+      "publishedAt": "2026-08-18T01:09:57Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.159.0",
+      "version": "v0.159.0"
+    },
     {
       "channel": "stable",
       "draft": false,
