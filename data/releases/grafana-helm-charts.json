@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-12T04:18:11.093Z",
+  "generatedAt": "2026-08-18T14:52:59.084Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372237452,
+      "name": "helm-k6-operator-4.6.0",
+      "notes": "A Helm chart to install the k6-operator\n\nSource commit: https://github.com/grafana/k6-operator/commit/cf0ae21f4e26b0dd0f99d763ae72e063b4384f2a\n\nTag on source: https://github.com/grafana/k6-operator/releases/tag/helm-k6-operator-4.6.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-18T09:40:58Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/helm-k6-operator-4.6.0",
+      "version": "helm-k6-operator-4.6.0"
+    },
     {
       "channel": "stable",
       "draft": false,
