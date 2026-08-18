@@ -1039,6 +1039,22 @@ tools:
       includePrerelease: false
       tagPattern: "^release/\\d+\\.\\d+\\.\\d+$"
 
+  - id: percona-backup-mongodb
+    name: Percona Backup for MongoDB
+    category: backup
+    repository: percona/percona-backup-mongodb
+    description: Distributed backup and restore tool for MongoDB
+    homepage: https://www.percona.com/mongodb/software/percona-backup-mongodb
+    documentation: https://docs.percona.com/percona-backup-mongodb/
+    tags:
+      - mongodb
+      - backup
+    group: database
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
   - id: tofu-controller
     name: Tofu Controller
     category: gitops
