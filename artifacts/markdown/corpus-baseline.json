@@ -1,11 +1,12 @@
 {
-  "tools": 78,
-  "notes": 726,
+  "tools": 80,
+  "notes": 775,
   "bareUrl": {
-    "notes": 37,
+    "notes": 38,
     "tools": [
       "argo-cd",
       "crush",
+      "grafana",
       "headlamp",
       "keycloak",
       "pgdog"
@@ -36,20 +37,20 @@
   },
   "setextHeading": 0,
   "structures": {
-    "links": 17567,
-    "images": 46,
-    "codeFences": 246,
-    "tables": 14,
+    "links": 18458,
+    "images": 47,
+    "codeFences": 260,
+    "tables": 15,
     "taskLists": 0,
     "footnotes": 0,
     "strikethrough": 0
   },
   "readmes": {
-    "readmes": 77,
+    "readmes": 79,
     "rawHtml": 36,
     "setextHeading": 1,
-    "badUrl": 6,
-    "links": 2116,
-    "images": 266
+    "badUrl": 7,
+    "links": 2138,
+    "images": 273
   }
 }
