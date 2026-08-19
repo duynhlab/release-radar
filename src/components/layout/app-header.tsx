@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { GithubIcon } from "@/components/ui/github-icon";
 import { TimeAgo } from "@/components/ui/time-ago";
 import { Tooltip } from "@/components/ui/tooltip";
 import { HEADER_CONTAINER } from "./page-container";
@@ -33,7 +33,7 @@ export function AppHeader({ generatedAt }: { generatedAt: string }) {
               rel="noreferrer"
               aria-label="Release Radar source code on GitHub"
             >
-              <Github className="size-4" aria-hidden="true" />
+              <GithubIcon className="size-4" aria-hidden="true" />
             </a>
           </Button>
         </Tooltip>
