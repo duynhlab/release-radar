@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
-import { Github, Globe, History } from "lucide-react";
+import { Globe, History } from "lucide-react";
 import type { IndexTool } from "@/domain/types";
 import { CategoryBadge, ChannelBadge, NeutralBadge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { GithubIcon } from "@/components/ui/github-icon";
 import { TimeAgo } from "@/components/ui/time-ago";
 import { Tooltip } from "@/components/ui/tooltip";
 import { FavoriteToggle } from "./favorite-toggle";
@@ -120,7 +121,7 @@ export function ToolCard({
               rel="noreferrer"
               aria-label={`GitHub repository of ${tool.name}`}
             >
-              <Github className="size-3.5" aria-hidden="true" />
+              <GithubIcon className="size-3.5" aria-hidden="true" />
             </a>
           </Button>
         </Tooltip>
