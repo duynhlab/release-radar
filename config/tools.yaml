@@ -811,8 +811,23 @@ tools:
     name: Grafana Helm Charts
     category: observability
     repository: grafana/helm-charts
-    description: Helm charts for the Grafana ecosystem (mixed, per-chart releases)
+    description: Grafana Labs Helm charts (mimir-distributed, k8s-monitoring — OSS charts moved to grafana-community)
     documentation: https://grafana.github.io/helm-charts/
+    tags:
+      - helm-chart
+      - kubernetes
+    group: grafana
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "\\d+\\.\\d+\\.\\d+$"
+
+  - id: grafana-community-helm-charts
+    name: Grafana Community Helm Charts
+    category: observability
+    repository: grafana-community/helm-charts
+    description: Community-maintained Helm charts for Grafana OSS (grafana, loki, tempo — migrated from grafana/helm-charts)
+    documentation: https://grafana-community.github.io/helm-charts/
     tags:
       - helm-chart
       - kubernetes

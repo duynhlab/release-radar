@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-13T04:20:57.593Z",
+  "generatedAt": "2026-08-19T02:05:25.343Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372606068,
+      "name": "openbao-0.29.2",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* feat: support matchConditions for agent-injector webhook by @gokken-roko in https://github.com/openbao/openbao-helm/pull/214\n* chore(snap): update to 0.4.1 by @eyenx in https://github.com/openbao/openbao-helm/pull/215\n* chore: bump OpenBao to v2.6.2 by @Nerkho in https://github.com/openbao/openbao-helm/pull/216\n\n## New Contributors\n* @gokken-roko made their first contribution in https://github.com/openbao/openbao-helm/pull/214\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.29.1...openbao-0.29.2",
+      "prerelease": false,
+      "publishedAt": "2026-08-18T19:55:55Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.2",
+      "version": "openbao-0.29.2"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-08-19T02:05:35.629Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372331508,
+      "name": "grafana-12.11.0",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.2.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/745\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.2.2...grafana-12.11.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-18T12:33:22Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-12.11.0",
+      "version": "grafana-12.11.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372328675,
+      "name": "tempo-distributed-3.2.2",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Update `query_backend_after` default value to `15m` by @z0rc in https://github.com/grafana-community/helm-charts/pull/708\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.2.1...tempo-distributed-3.2.2",
+      "prerelease": false,
+      "publishedAt": "2026-08-18T12:28:54Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.2.2",
+      "version": "tempo-distributed-3.2.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372156636,
+      "name": "tempo-distributed-3.2.1",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] feat: Add traffic distribution option to Tempo by @obabec in https://github.com/grafana-community/helm-charts/pull/742\n\n## New Contributors\n* @obabec made their first contribution in https://github.com/grafana-community/helm-charts/pull/742\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.2.0...tempo-distributed-3.2.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-18T07:19:21Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.2.1",
+      "version": "tempo-distributed-3.2.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 371197158,
+      "name": "tempo-distributed-3.2.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Add PodDisruptionBudgets for block-builder and live-store by @KyriosGN0 in https://github.com/grafana-community/helm-charts/pull/741\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.9.0...tempo-distributed-3.2.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-16T00:59:56Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.2.0",
+      "version": "tempo-distributed-3.2.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 370861933,
+      "name": "loki-18.9.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update prom/memcached-exporter Docker tag to v0.17.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/738\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.1.0...loki-18.9.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-14T22:57:37Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.9.0",
+      "version": "loki-18.9.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 370861791,
+      "name": "tempo-distributed-3.1.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Update prom/memcached-exporter Docker tag to v0.17.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/739\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.8.1...tempo-distributed-3.1.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-14T22:56:51Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.1.0",
+      "version": "tempo-distributed-3.1.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 370347852,
+      "name": "loki-18.8.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v0.4.11 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/737\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.0.7...loki-18.8.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-14T04:16:25Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.8.1",
+      "version": "loki-18.8.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 370267203,
+      "name": "tempo-distributed-3.0.7",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Update docker.io/grafana/tempo Docker tag to v3.0.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/735\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-vulture-0.13.1...tempo-distributed-3.0.7",
+      "prerelease": false,
+      "publishedAt": "2026-08-13T23:35:12Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.0.7",
+      "version": "tempo-distributed-3.0.7"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 370265570,
+      "name": "tempo-vulture-0.13.1",
+      "notes": "Grafana Tempo Vulture - A tool to monitor Tempo performance.\n\n## What's Changed\n* [tempo-vulture] Update docker.io/grafana/tempo-vulture Docker tag to v3.0.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/736\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-2.2.4...tempo-vulture-0.13.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-13T23:29:14Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-vulture-0.13.1",
+      "version": "tempo-vulture-0.13.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 370141608,
+      "name": "tempo-2.2.4",
+      "notes": "Grafana Tempo Single Binary Mode\n\n## What's Changed\n* [CI] Update github-workflow dependency updates to v4.2.4 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/733\n* [tempo] Update docker.io/grafana/tempo Docker tag to v2.10.8 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/734\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.8.0...tempo-2.2.4",
+      "prerelease": false,
+      "publishedAt": "2026-08-13T19:02:48Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-2.2.4",
+      "version": "tempo-2.2.4"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "grafana-community-helm-charts",
+    "name": "Grafana Community Helm Charts",
+    "repository": "grafana-community/helm-charts"
+  }
+}

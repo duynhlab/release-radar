@@ -5,7 +5,7 @@ Classification walks the `@tanstack/markdown` AST — never regexes over source,
 which cannot distinguish a `<name>` placeholder inside a fenced block from real
 inline HTML.
 
-**726 notes with content across 78 tools.**
+**775 notes with content across 80 tools.**
 
 ## Bare URLs — regression closed
 
@@ -17,11 +17,11 @@ with `@user`, `#123` and commit SHAs.
 
 | | |
 |---|---|
-| Notes containing a bare prose URL | **37 (5.1%)** |
-| Tools affected | **5 / 78** |
+| Notes containing a bare prose URL | **38 (4.9%)** |
+| Tools affected | **6 / 80** |
 | …of which mention a Full Changelog line | 13 |
 
-Affected tools: argo-cd, crush, headlamp, keycloak, pgdog
+Affected tools: argo-cd, crush, grafana, headlamp, keycloak, pgdog
 
 What remains is **not prose**: every one is a URL inside an attribute of raw
 HTML that `allowHtml: false` turned into escaped text — `<a href="…">`,
@@ -36,7 +36,7 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 
 | | |
 |---|---|
-| Notes containing a raw HTML tag | 61 (8.4%) |
+| Notes containing a raw HTML tag | 61 (7.9%) |
 | Tools affected | 13 |
 | Dangerous HTML (script/iframe/on\*=) | **0** |
 
@@ -51,10 +51,10 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 
 | Construct | Count |
 |---|---|
-| Links | 17567 |
-| Images | 46 |
-| Code fences | 246 |
-| Tables | 14 |
+| Links | 18458 |
+| Images | 47 |
+| Code fences | 260 |
+| Tables | 15 |
 | Task-list items | 0 |
 | Footnotes | 0 |
 | Strikethrough | 0 |
@@ -63,13 +63,13 @@ arrives as text and React escapes it. It is inert, but visible as a literal tag.
 
 | | |
 |---|---|
-| Links rejected by our stricter policy | 1 |
+| Links rejected by our stricter policy | 11 |
 | Notes exceeding 250ms to parse | 0 |
 | Non-deterministic parses | 0 |
 
 ## READMEs
 
-**77 READMEs** from `data/readmes/`, analyzed through the
+**79 READMEs** from `data/readmes/`, analyzed through the
 README pipeline (heading normalization, repo-relative link resolution, no
 autolinking). Raw HTML and Setext headings are report-only here — pervasive and
 cosmetic respectively — while dangerous HTML, determinism and the parse budget
@@ -77,11 +77,11 @@ gate the same as notes.
 
 | | |
 |---|---|
-| Containing raw HTML | 36 (of 77) |
+| Containing raw HTML | 36 (of 79) |
 | Dangerous HTML (script/iframe/on\*=) | **0** |
 | Setext headings | 1 |
-| Links | 2116 |
-| …rejected by the README link policy | 6 |
-| Images (all render as blocked placeholders) | 266 |
+| Links | 2138 |
+| …rejected by the README link policy | 7 |
+| Images (all render as blocked placeholders) | 273 |
 | Exceeding 250ms to parse | 0 |
 | Non-deterministic parses | 0 |
