@@ -152,6 +152,17 @@ worker on a real build. `pnpm audit:markdown --check` also runs in the **sync**
 workflow, because release notes are the one input that changes with no human in
 the loop.
 
+That gate fails only on what is unsafe or broken — dangerous HTML,
+non-deterministic parses, the parse budget, Setext headings. **Corpus counts are
+never a ratchet.** Raw-HTML and indented-code drift is printed and nothing more:
+sync commits only `data/`, so the baseline sits at whatever a human last
+regenerated while the corpus moves twice a day, and `raw-HTML notes rose from 61
+to 64` froze release data for two days over three upstream notes that render as
+escaped text. Also,
+`--check` writes nothing — only a bare `pnpm audit:markdown` refreshes
+`artifacts/markdown/corpus-{baseline.json,report.md}`, which keeps that refresh
+a reviewable diff instead of a side effect of the gate.
+
 For UI changes also run `pnpm preview` and audit with `agent-browser`.
 Baseline to hold: zero console errors, zero axe violations, LCP <= 2.5s,
 CLS <= 0.1. See `artifacts/e2e/README.md`.

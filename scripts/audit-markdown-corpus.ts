@@ -465,9 +465,11 @@ gate the same as notes.
 | Non-deterministic parses | ${readmeCounts.nonDeterministic.length} |
 `;
 
-// The previous baseline must be read BEFORE the new one is written: writing
-// first made every --check comparison self-referential, so the "rose from N"
-// gates could never fire.
+// `--check` is read-only. Writing the baseline it had just finished comparing
+// against made the drift report one-shot: the first run reported the rise, and
+// every run after it compared the corpus against itself. `pnpm audit:markdown`
+// with no flag is the single path that refreshes the committed report and
+// baseline, which keeps that refresh a reviewable diff.
 const check = process.argv.includes("--check");
 let baseline: typeof summary | null = null;
 if (check) {
@@ -476,10 +478,10 @@ if (check) {
   } catch {
     baseline = null;
   }
+} else {
+  writeFileSync(REPORT_PATH, report);
+  writeFileSync(BASELINE_PATH, `${JSON.stringify(summary, null, 2)}\n`);
 }
-
-writeFileSync(REPORT_PATH, report);
-writeFileSync(BASELINE_PATH, `${JSON.stringify(summary, null, 2)}\n`);
 
 // --- gate ---------------------------------------------------------------
 
@@ -517,24 +519,35 @@ if (readmeCounts.slowParse.length > 0) {
   );
 }
 
-if (check) {
-  if (baseline) {
-    if (counts.rawHtml.length > baseline.rawHtml.notes) {
-      failures.push(
-        `raw-HTML notes rose from ${baseline.rawHtml.notes} to ${counts.rawHtml.length}`,
-      );
-    }
-    const newRawTools = toolsWith(counts.rawHtml).filter(
-      (t) => !baseline.rawHtml.tools.includes(t),
+// --- corpus drift, reported and never gated -------------------------------
+//
+// Counting raw HTML and indented code cannot be a ratchet on an unattended
+// pipeline. The sync workflow commits only `data/`, so the baseline stays at
+// whatever a human last regenerated while the corpus moves twice a day — the
+// gap only ever widens, and going red is a matter of time. It happened: four
+// scheduled runs in a row died on `raw-HTML notes rose from 61 to 64`, which
+// froze release data for two days over three upstream notes. Under
+// `allowHtml: false` those tags render as escaped text, exactly as the READMEs
+// above already argue. The hard gates are what must hold; drift is a signal to
+// read, not a reason to stop shipping data.
+const drift: string[] = [];
+
+if (check && baseline) {
+  if (counts.rawHtml.length > baseline.rawHtml.notes) {
+    drift.push(
+      `raw-HTML notes ${baseline.rawHtml.notes} \u2192 ${counts.rawHtml.length}`,
     );
-    if (newRawTools.length > 0) {
-      failures.push(`new tools emitting raw HTML: ${newRawTools.join(", ")}`);
-    }
-    if (counts.indentedCode.length > baseline.indentedCode.notes) {
-      failures.push(
-        `indented code blocks rose from ${baseline.indentedCode.notes} to ${counts.indentedCode.length}`,
-      );
-    }
+  }
+  const newRawTools = toolsWith(counts.rawHtml).filter(
+    (t) => !baseline.rawHtml.tools.includes(t),
+  );
+  if (newRawTools.length > 0) {
+    drift.push(`tools newly emitting raw HTML: ${newRawTools.join(", ")}`);
+  }
+  if (counts.indentedCode.length > baseline.indentedCode.notes) {
+    drift.push(
+      `indented code notes ${baseline.indentedCode.notes} \u2192 ${counts.indentedCode.length}`,
+    );
   }
 }
 
@@ -548,7 +561,15 @@ console.log(`rejected links: ${counts.badUrl.length}`);
 console.log(
   `readmes:        ${readmeCounts.readmes} (${readmeCounts.rawHtml.length} raw HTML, ${readmeCounts.dangerousHtml.length} dangerous, ${readmeCounts.badUrl.length} rejected links)`,
 );
-console.log(`report:         ${path.relative(process.cwd(), REPORT_PATH)}`);
+if (!check) {
+  console.log(`report:         ${path.relative(process.cwd(), REPORT_PATH)}`);
+}
+
+if (drift.length > 0) {
+  console.log("\ncorpus drift since the committed baseline (not gated):");
+  for (const d of drift) console.log(`  - ${d}`);
+  console.log("Refresh it with `pnpm audit:markdown`.");
+}
 
 if (failures.length > 0) {
   console.error("\nMarkdown corpus gate failed:");

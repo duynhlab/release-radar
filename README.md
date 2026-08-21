@@ -51,7 +51,7 @@ data, look at `data/`, not the frontend.
 | `pnpm test` | Vitest: unit + dom + worker projects (232 tests) |
 | `pnpm lint` / `pnpm typecheck` | ESLint / tsc |
 | `pnpm build` | Production build + prerender (90 pages) |
-| `pnpm audit:markdown` | Inventory the release-note corpus; `--check` gates it |
+| `pnpm audit:markdown` | Inventory the release-note corpus; `--check` gates the unsafe findings |
 | `pnpm check:bundle` | Prove release notes stay out of the worker |
 | `pnpm preview` | Build + serve on workerd (Cloudflare runtime) locally |
 | `pnpm run deploy` | Build + `wrangler deploy` manually |
@@ -208,6 +208,13 @@ on the AST between parse and render — the only place it can, since the React
 renderer emits text nodes verbatim without consulting the component map.
 Working on the AST is also what keeps code spans and fenced blocks literal.
 Measured in `artifacts/markdown/corpus-report.md`.
+
+`--check` fails on dangerous HTML, non-deterministic parses, the 250ms parse
+budget and Setext headings. It reports raw-HTML and indented-code drift without
+failing — those render as escaped text, and a count-based ratchet on a corpus
+that moves twice a day with no human in the loop only ever ends up blocking the
+sync. `--check` is read-only; a bare `pnpm audit:markdown` is what refreshes the
+committed report and baseline.
 
 ## Deferred by design (don't build yet)
 
