@@ -1,6 +1,72 @@
 {
-  "generatedAt": "2026-08-19T02:05:35.629Z",
+  "generatedAt": "2026-08-21T03:54:19.992Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373996795,
+      "name": "loki-18.11.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update Helm release rollout-operator to v0.51.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/752\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.3.0...loki-18.11.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-20T20:00:50Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.0",
+      "version": "loki-18.11.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373996340,
+      "name": "tempo-distributed-3.3.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Update Helm release rollout-operator to v0.51.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/753\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.10.1...tempo-distributed-3.3.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-20T19:59:59Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.3.0",
+      "version": "tempo-distributed-3.3.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373597003,
+      "name": "loki-18.10.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Qualify memcached image defaults and expose registry keys by @jkroepke with @Copilot in https://github.com/grafana-community/helm-charts/pull/749\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.10.0...loki-18.10.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-20T08:51:45Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.10.1",
+      "version": "loki-18.10.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373531841,
+      "name": "loki-18.10.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] make publishNotReadyAddresses overridable on service helper by @abhilashasharmagupta in https://github.com/grafana-community/helm-charts/pull/747\n\n## New Contributors\n* @abhilashasharmagupta made their first contribution in https://github.com/grafana-community/helm-charts/pull/747\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-12.11.1...loki-18.10.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-20T06:39:41Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.10.0",
+      "version": "loki-18.10.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373354018,
+      "name": "grafana-12.11.1",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Omit replicas on StatefulSet when autoscaling is enabled by @gavinwoolley in https://github.com/grafana-community/helm-charts/pull/746\n\n## New Contributors\n* @gavinwoolley made their first contribution in https://github.com/grafana-community/helm-charts/pull/746\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.9.1...grafana-12.11.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T21:12:01Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-12.11.1",
+      "version": "grafana-12.11.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373352581,
+      "name": "loki-18.9.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Omit null fields in memcached PDB rendering across Helm versions by @jkroepke with @Copilot in https://github.com/grafana-community/helm-charts/pull/723\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-12.11.0...loki-18.9.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T21:09:46Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.9.1",
+      "version": "loki-18.9.1"
+    },
     {
       "channel": "stable",
       "draft": false,

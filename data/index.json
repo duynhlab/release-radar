@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T02:06:15.296Z",
+  "generatedAt": "2026-08-21T03:54:35.446Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -11,19 +11,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 358395186,
-        "name": "v1.36.3",
+        "id": 373962889,
+        "name": "v1.35.8",
         "prerelease": false,
-        "publishedAt": "2026-07-23T00:35:52Z",
-        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.3",
-        "version": "v1.36.3"
+        "publishedAt": "2026-08-20T18:59:55Z",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.8",
+        "version": "v1.35.8"
       },
       "name": "Kubernetes",
       "previous": {
-        "publishedAt": "2026-07-22T22:28:35Z",
-        "version": "v1.35.7"
+        "publishedAt": "2026-08-20T18:45:38Z",
+        "version": "v1.34.11"
       },
-      "releaseCount": 7,
+      "releaseCount": 10,
       "repository": "kubernetes/kubernetes",
       "tags": [
         "containers",
@@ -101,19 +101,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 351091774,
-        "name": "v1.15.8",
+        "id": 373119079,
+        "name": "v1.15.9",
         "prerelease": false,
-        "publishedAt": "2026-07-08T17:45:09Z",
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.8",
-        "version": "v1.15.8"
+        "publishedAt": "2026-08-19T14:29:32Z",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.9",
+        "version": "v1.15.9"
       },
       "name": "Terraform",
       "previous": {
-        "publishedAt": "2026-06-24T16:47:12Z",
-        "version": "v1.15.7"
+        "publishedAt": "2026-07-08T17:45:09Z",
+        "version": "v1.15.8"
       },
-      "releaseCount": 2,
+      "releaseCount": 3,
       "repository": "hashicorp/terraform",
       "tags": [
         "iac"
@@ -128,19 +128,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 357295972,
-        "name": "v1.12.5",
+        "id": 372998315,
+        "name": "v1.12.6",
         "prerelease": false,
-        "publishedAt": "2026-07-21T11:39:19Z",
-        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.5",
-        "version": "v1.12.5"
+        "publishedAt": "2026-08-19T11:40:07Z",
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.6",
+        "version": "v1.12.6"
       },
       "name": "OpenTofu",
       "previous": {
-        "publishedAt": "2026-07-21T11:39:02Z",
-        "version": "v1.11.13"
+        "publishedAt": "2026-08-19T11:39:12Z",
+        "version": "v1.11.14"
       },
-      "releaseCount": 10,
+      "releaseCount": 12,
       "repository": "opentofu/opentofu",
       "tags": [
         "iac"
@@ -398,19 +398,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 369497417,
-        "name": "v0.89.0",
+        "id": 373348849,
+        "name": "v0.90.0",
         "prerelease": false,
-        "publishedAt": "2026-08-12T20:04:42Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.89.0",
-        "version": "v0.89.0"
+        "publishedAt": "2026-08-19T21:01:49Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.90.0",
+        "version": "v0.90.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-08-07T17:05:42Z",
-        "version": "v0.88.1"
+        "publishedAt": "2026-08-12T20:04:42Z",
+        "version": "v0.89.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "charmbracelet/crush",
       "tags": [
         "coding-agent",
@@ -703,19 +703,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 305632582,
-        "name": "v0.21.0",
+        "id": 373719578,
+        "name": "v0.22.0",
         "prerelease": false,
-        "publishedAt": "2026-04-06T12:19:06Z",
-        "url": "https://github.com/kubernetes-sigs/external-dns/releases/tag/v0.21.0",
-        "version": "v0.21.0"
+        "publishedAt": "2026-08-20T12:32:17Z",
+        "url": "https://github.com/kubernetes-sigs/external-dns/releases/tag/v0.22.0",
+        "version": "v0.22.0"
       },
       "name": "ExternalDNS",
       "previous": {
-        "publishedAt": "2025-11-14T09:24:38Z",
-        "version": "v0.20.0"
+        "publishedAt": "2026-04-06T12:19:06Z",
+        "version": "v0.21.0"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "kubernetes-sigs/external-dns",
       "tags": [
         "dns",
@@ -818,19 +818,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372244064,
-        "name": "sealed-secrets-v0.39.0",
+        "id": 373597812,
+        "name": "sealed-secrets-v0.39.1",
         "prerelease": false,
-        "publishedAt": "2026-08-18T09:53:01Z",
-        "url": "https://github.com/bitnami/sealed-secrets/releases/tag/v0.39.0",
-        "version": "v0.39.0"
+        "publishedAt": "2026-08-20T08:53:22Z",
+        "url": "https://github.com/bitnami/sealed-secrets/releases/tag/v0.39.1",
+        "version": "v0.39.1"
       },
       "name": "Sealed Secrets",
       "previous": {
-        "publishedAt": "2026-07-03T12:52:47Z",
-        "version": "v0.38.4"
+        "publishedAt": "2026-08-18T09:53:01Z",
+        "version": "v0.39.0"
       },
-      "releaseCount": 8,
+      "releaseCount": 9,
       "repository": "bitnami/sealed-secrets",
       "tags": [
         "kubernetes",
@@ -847,19 +847,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 351869094,
-        "name": "v1.18.2",
+        "id": 373621752,
+        "name": "v1.19.0",
         "prerelease": false,
-        "publishedAt": "2026-07-10T02:34:27Z",
-        "url": "https://github.com/kyverno/kyverno/releases/tag/v1.18.2",
-        "version": "v1.18.2"
+        "publishedAt": "2026-08-20T09:34:27Z",
+        "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0",
+        "version": "v1.19.0"
       },
       "name": "Kyverno",
       "previous": {
-        "publishedAt": "2026-05-18T10:30:23Z",
-        "version": "v1.18.1"
+        "publishedAt": "2026-07-10T02:34:27Z",
+        "version": "v1.18.2"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "kyverno/kyverno",
       "tags": [
         "kubernetes",
@@ -936,19 +936,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 366835261,
-        "name": "v0.58.0",
+        "id": 372919063,
+        "name": "v0.58.1",
         "prerelease": false,
-        "publishedAt": "2026-08-07T15:18:09Z",
-        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.58.0",
-        "version": "v0.58.0"
+        "publishedAt": "2026-08-19T09:10:39Z",
+        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.58.1",
+        "version": "v0.58.1"
       },
       "name": "Flux Operator",
       "previous": {
-        "publishedAt": "2026-07-27T15:51:26Z",
-        "version": "v0.57.0"
+        "publishedAt": "2026-08-07T15:18:09Z",
+        "version": "v0.58.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "controlplaneio-fluxcd/flux-operator",
       "tags": [
         "gitops",
@@ -1500,17 +1500,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372237452,
-        "name": "helm-k6-operator-4.6.0",
+        "id": 373951069,
+        "name": "rollout-operator-0.51.1",
         "prerelease": false,
-        "publishedAt": "2026-08-18T09:40:58Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/helm-k6-operator-4.6.0",
-        "version": "helm-k6-operator-4.6.0"
+        "publishedAt": "2026-08-20T18:38:45Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.51.1",
+        "version": "rollout-operator-0.51.1"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-11T19:22:54Z",
-        "version": "k8s-monitoring-4.4.0"
+        "publishedAt": "2026-08-20T13:34:08Z",
+        "version": "mimir-distributed-6.2.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1531,19 +1531,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372331508,
-        "name": "grafana-12.11.0",
+        "id": 373996795,
+        "name": "loki-18.11.0",
         "prerelease": false,
-        "publishedAt": "2026-08-18T12:33:22Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-12.11.0",
-        "version": "grafana-12.11.0"
+        "publishedAt": "2026-08-20T20:00:50Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.0",
+        "version": "loki-18.11.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-18T12:28:54Z",
-        "version": "tempo-distributed-3.2.2"
+        "publishedAt": "2026-08-20T19:59:59Z",
+        "version": "tempo-distributed-3.3.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 16,
       "repository": "grafana-community/helm-charts",
       "tags": [
         "helm-chart",
@@ -1654,19 +1654,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 345423398,
-        "name": "1.1.0",
+        "id": 373406555,
+        "name": "1.2.0",
         "prerelease": false,
-        "publishedAt": "2026-06-27T14:23:11Z",
-        "url": "https://github.com/strimzi/strimzi-kafka-operator/releases/tag/1.1.0",
-        "version": "1.1.0"
+        "publishedAt": "2026-08-20T08:05:38Z",
+        "url": "https://github.com/strimzi/strimzi-kafka-operator/releases/tag/1.2.0",
+        "version": "1.2.0"
       },
       "name": "Strimzi Kafka Operator",
       "previous": {
-        "publishedAt": "2026-06-17T12:12:25Z",
-        "version": "1.0.1"
+        "publishedAt": "2026-06-27T14:23:11Z",
+        "version": "1.1.0"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "strimzi/strimzi-kafka-operator",
       "tags": [
         "kafka",
@@ -1814,19 +1814,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 278649949,
-        "name": "v3.0.8",
+        "id": 373798825,
+        "name": "v3.0.9",
         "prerelease": false,
-        "publishedAt": "2026-01-21T14:19:22Z",
-        "url": "https://github.com/wal-g/wal-g/releases/tag/v3.0.8",
-        "version": "v3.0.8"
+        "publishedAt": "2026-08-20T14:26:20Z",
+        "url": "https://github.com/wal-g/wal-g/releases/tag/v3.0.9",
+        "version": "v3.0.9"
       },
       "name": "WAL-G",
       "previous": {
-        "publishedAt": "2025-04-13T09:44:25Z",
-        "version": "v3.0.7"
+        "publishedAt": "2026-01-21T14:19:22Z",
+        "version": "v3.0.8"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "wal-g/wal-g",
       "tags": [
         "postgresql",
@@ -1936,19 +1936,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372166312,
-        "name": "sentry: v33.3.1",
+        "id": 373557184,
+        "name": "sentry: v33.6.0",
         "prerelease": false,
-        "publishedAt": "2026-08-18T07:37:24Z",
-        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.3.1",
-        "version": "sentry-v33.3.1"
+        "publishedAt": "2026-08-20T07:34:46Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.6.0",
+        "version": "sentry-v33.6.0"
       },
       "name": "Sentry Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-10T11:22:34Z",
-        "version": "sentry-v33.3.0"
+        "publishedAt": "2026-08-19T08:50:21Z",
+        "version": "sentry-v33.5.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 16,
       "repository": "sentry-kubernetes/charts",
       "tags": [
         "helm-chart",
@@ -2119,19 +2119,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 360999401,
-        "name": "0.44.0",
+        "id": 374045850,
+        "name": "0.45.0",
         "prerelease": false,
-        "publishedAt": "2026-07-29T07:10:29Z",
-        "url": "https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.44.0",
-        "version": "v0.44.0"
+        "publishedAt": "2026-08-20T23:55:46Z",
+        "url": "https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.45.0",
+        "version": "v0.45.0"
       },
       "name": "Headlamp",
       "previous": {
-        "publishedAt": "2026-06-16T22:41:58Z",
-        "version": "v0.43.0"
+        "publishedAt": "2026-07-29T07:10:29Z",
+        "version": "v0.44.0"
       },
-      "releaseCount": 4,
+      "releaseCount": 5,
       "repository": "kubernetes-sigs/headlamp",
       "tags": [
         "kubernetes",
@@ -2148,19 +2148,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 365627026,
-        "name": "26.7.1",
+        "id": 372805386,
+        "name": "26.7.2",
         "prerelease": false,
-        "publishedAt": "2026-08-05T15:54:37Z",
-        "url": "https://github.com/keycloak/keycloak/releases/tag/26.7.1",
-        "version": "26.7.1"
+        "publishedAt": "2026-08-19T05:26:20Z",
+        "url": "https://github.com/keycloak/keycloak/releases/tag/26.7.2",
+        "version": "26.7.2"
       },
       "name": "Keycloak",
       "previous": {
-        "publishedAt": "2026-07-09T06:58:13Z",
-        "version": "26.7.0"
+        "publishedAt": "2026-08-05T15:54:37Z",
+        "version": "26.7.1"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "keycloak/keycloak",
       "tags": [
         "identity",
@@ -2175,19 +2175,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 336540026,
-        "name": "v7.15.3",
+        "id": 373521225,
+        "name": "v7.15.4",
         "prerelease": false,
-        "publishedAt": "2026-06-09T11:34:27Z",
-        "url": "https://github.com/oauth2-proxy/oauth2-proxy/releases/tag/v7.15.3",
-        "version": "v7.15.3"
+        "publishedAt": "2026-08-20T06:13:03Z",
+        "url": "https://github.com/oauth2-proxy/oauth2-proxy/releases/tag/v7.15.4",
+        "version": "v7.15.4"
       },
       "name": "OAuth2 Proxy",
       "previous": {
-        "publishedAt": "2026-04-14T11:18:22Z",
-        "version": "v7.15.2"
+        "publishedAt": "2026-06-09T11:34:27Z",
+        "version": "v7.15.3"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "oauth2-proxy/oauth2-proxy",
       "tags": [
         "identity",
@@ -2412,19 +2412,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 370183597,
-        "name": "v0.1.53",
+        "id": 374032331,
+        "name": "v0.1.54",
         "prerelease": false,
-        "publishedAt": "2026-08-13T20:09:31Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.53",
-        "version": "v0.1.53"
+        "publishedAt": "2026-08-20T21:10:01Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.54",
+        "version": "v0.1.54"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-08-06T19:31:03Z",
-        "version": "v0.1.52"
+        "publishedAt": "2026-08-13T20:09:31Z",
+        "version": "v0.1.53"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "pgdogdev/pgdog",
       "tags": [
         "postgresql",

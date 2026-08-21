@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-08-18T14:53:09.594Z",
+  "generatedAt": "2026-08-21T03:54:26.978Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373557184,
+      "name": "sentry: v33.6.0",
+      "notes": "## [33.6.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v33.5.0...sentry-v33.6.0) (2026-08-20)\n\n\n### Features\n\n* charts/sentry: source S3 and integration credentials from a Secret ([#2279](https://github.com/sentry-kubernetes/charts/issues/2279)) ([87bb399](https://github.com/sentry-kubernetes/charts/commit/87bb399c31f7f6e5b8c9bf14505e88dea01c520a))",
+      "prerelease": false,
+      "publishedAt": "2026-08-20T07:34:46Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.6.0",
+      "version": "sentry-v33.6.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372908268,
+      "name": "sentry: v33.5.0",
+      "notes": "## [33.5.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v33.4.0...sentry-v33.5.0) (2026-08-19)\n\n\n### Features\n\n* charts/sentry: add existingSecret support for GeoIP credentials ([#2284](https://github.com/sentry-kubernetes/charts/issues/2284)) ([b9d3d6d](https://github.com/sentry-kubernetes/charts/commit/b9d3d6d4b4e231b0c3ce4b0406820e00cf69b4fa))",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T08:50:21Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.5.0",
+      "version": "sentry-v33.5.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372805733,
+      "name": "sentry: v33.4.0",
+      "notes": "## [33.4.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v33.3.1...sentry-v33.4.0) (2026-08-18)\n\n\n### Features\n\n* upgrade to sentry v26.8.0 ([#2281](https://github.com/sentry-kubernetes/charts/issues/2281)) ([86be27f](https://github.com/sentry-kubernetes/charts/commit/86be27faee920e0e662e17926301adc22b02c501))",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T04:58:32Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.4.0",
+      "version": "sentry-v33.4.0"
+    },
     {
       "channel": "stable",
       "draft": false,

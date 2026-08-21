@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-06T08:59:03.465Z",
+  "generatedAt": "2026-08-21T03:54:30.851Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373521225,
+      "name": "v7.15.4",
+      "notes": "## Release Highlights\r\n\r\n- 🔵 Golang version upgrade to v1.26.7\r\n    - Upgrade of all dependencies to their latest versions\r\n- 🕵️‍♀️ Vulnerabilities have been addressed\r\n    - [CVE-2026-33818](https://nvd.nist.gov/vuln/detail/CVE-2026-33818)\r\n    - [CVE-2026-39821](https://nvd.nist.gov/vuln/detail/CVE-2026-39821)\r\n    - [CVE-2026-39822](https://nvd.nist.gov/vuln/detail/CVE-2026-39822)\r\n    - [CVE-2026-42505](https://nvd.nist.gov/vuln/detail/CVE-2026-42505)\r\n    - [CVE-2026-46600](https://nvd.nist.gov/vuln/detail/CVE-2026-46600)\r\n    - [CVE-2026-56852](https://nvd.nist.gov/vuln/detail/CVE-2026-56852)\r\n    - [CVE-2026-56853](https://nvd.nist.gov/vuln/detail/CVE-2026-56853)\r\n    - [CVE-2026-56858](https://nvd.nist.gov/vuln/detail/CVE-2026-56858)\r\n    - [CVE-2026-56859](https://nvd.nist.gov/vuln/detail/CVE-2026-56859)\r\n    - [CVE-2026-56860](https://nvd.nist.gov/vuln/detail/CVE-2026-56860)\r\n    - [CVE-2026-56862](https://nvd.nist.gov/vuln/detail/CVE-2026-56862)\r\n\r\n## Important Notes\r\n\r\n## Breaking Changes\r\n\r\n## Changes since v7.15.3\r\n\r\n- [#3493](https://github.com/oauth2-proxy/oauth2-proxy/pull/3493) chore(deps): update gomod @tuunit",
+      "prerelease": false,
+      "publishedAt": "2026-08-20T06:13:03Z",
+      "url": "https://github.com/oauth2-proxy/oauth2-proxy/releases/tag/v7.15.4",
+      "version": "v7.15.4"
+    },
     {
       "channel": "stable",
       "draft": false,

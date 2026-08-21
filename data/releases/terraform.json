@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-29T16:11:45.318Z",
+  "generatedAt": "2026-08-21T03:53:52.756Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373119079,
+      "name": "v1.15.9",
+      "notes": "## 1.15.9 (August 19, 2026)\n\n\nBUG FIXES:\n\n* validate: Child module validation has been fixed and will now raise errors or warning diagnostics for invalid blocks. (`list`, `import`, `backend`, and `cloud`) ([#38994](https://github.com/hashicorp/terraform/issues/38994))\n\n\nNOTES:\n\n* Update go-slug to v0.18.3 to mitigate CVE-2026-14978, which is a Unicode normalization issue that could lead to files not being correctly excluded via `.terraformignore` from upload to a Terraform Enterprise or HCP Terraform during a run ([#39036](https://github.com/hashicorp/terraform/issues/39036))",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T14:29:32Z",
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.9",
+      "version": "v1.15.9"
+    },
     {
       "channel": "stable",
       "draft": false,

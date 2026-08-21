@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-14T04:19:12.840Z",
+  "generatedAt": "2026-08-21T03:54:35.439Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 374032331,
+      "name": "v0.1.54",
+      "notes": "## Performance\r\n* 8% performance improvement in the connection pooler by optimizing our use of Tokio futures @ygxio\r\n* Additional performance improvements by using Tokio futures correctly @sgrif \r\n* Remove several unnecessary memory allocations @ygxio \r\n\r\n## Bugs\r\n* Don't validate replica identity during the schema sync & data sync phases of resharding if caller does not intend to use logical replication to sync real-time data @bhargavtheertham-cb\r\n* Extended protocol pipeline messages were incorrectly ordered in cross-shard queries @meskill\r\n* Schema sharding shouldn't trigger the incomplete omnisharded writes check @jkaczman \r\n* `DISTINCT` state was not reset between cross-shard queries in the same transaction @levkk \r\n\r\n## Features\r\n* Make OpenMetrics host configurable with `openmetrics_host` @murex971 \r\n* Block direct-to-shard queries when `SET pgdog.sharding_key` doesn't match a mapped value in list-based and range-based sharding configuration @jkaczman \r\n* Setting `read_only` on a user in `users.toml` will direct that user's traffic to replicas, if configured @jkaczman \r\n* Partial support for `PREPARE` and `EXECUTE` (including sharding); the prepared statement can be only executed with `EXECUTE` at the moment and cannot be executed using the extended protocol @levkk \r\n* Wait for health check to pass before allowing traffic on _newly_ added databases in `pgdog.toml` @sgrif \r\n* Optional FIPS mode (compile time flag: `cargo build -p pgdog --release --features fips`)\r\n\r\n\r\n## Testing\r\n* Basic Haskell acceptance tests @levkk\r\n* Ensure we only generate a node id when `NODE_ID` is set @meskill \r\n\r\n## Code quality\r\n* Remove library target and only build binary target, allowing us to more easily detect dead code @sgrif \r\n* Remove a bunch of dead code @sgrif \r\n* Cleanup multi-shard and row decoder code @levkk \r\n\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.53...v0.1.54",
+      "prerelease": false,
+      "publishedAt": "2026-08-20T21:10:01Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.54",
+      "version": "v0.1.54"
+    },
     {
       "channel": "stable",
       "draft": false,

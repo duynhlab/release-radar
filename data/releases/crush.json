@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-13T04:20:42.660Z",
+  "generatedAt": "2026-08-21T03:54:00.029Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373348849,
+      "name": "v0.90.0",
+      "notes": "## Tiny patch\r\n\r\nThis is a tiny release, but we thought it would be worth it.\r\n\r\n* Updated [Bubble Tea](https://github.com/charmbracelet/bubbletea/releases/tag/v2.0.9) with a couple fixes for some terminal emulators.\r\n* Updated [Fantasy](https://github.com/charmbracelet/fantasy/releases/tag/v0.41.2) with fixes for AWS SSO and better cache hitting.\r\n*  Fixed wrong background color on permissions dialog. This was a regression from adding Bash syntax highlighting on [v0.89.0](https://github.com/charmbracelet/crush/releases/tag/v0.89.0).\r\n* Updated our `.gitattributes` to make development easier on Windows. We're normalizing LF (instead of CRLF) as line breaks to fix some tests on Windows.\r\n\r\n## Changelog\r\n### Fixed\r\n* ed15da4c46e0bdc3afae4842db54e7def7b9f15e: fix(ui): use dialog background for bash syntax highlighting in permissions (#3575) (@andreynering)\r\n### Other stuff\r\n* 0f14334fb03703a5557f875d182e347e6375e0e7: chore: normalize line endings to `lf` via `.gitattributes` (#3555) (@Lin-BoYuan)\r\n\r\n\r\n---\r\n\r\n<details>\r\n<summary>Verifying the artifacts</summary>\r\n\r\nFirst, download the [`checksums.txt` file](https://github.com/charmbracelet/crush/releases/download/v0.90.0/checksums.txt) and the [`checksums.txt.sigstore.json` file](https://github.com/charmbracelet/crush/releases/download/v0.90.0/checksums.txt.sigstore.json) files, for example, with `wget`:\r\n\r\n```bash\r\nwget 'https://github.com/charmbracelet/crush/releases/download/v0.90.0/checksums.txt'\r\nwget 'https://github.com/charmbracelet/crush/releases/download/v0.90.0/checksums.txt.sigstore.json'\r\n```\r\n\r\nThen, verify it using [`cosign`](https://github.com/sigstore/cosign):\r\n\r\n```bash\r\ncosign verify-blob \\\r\n  --certificate-identity 'https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main' \\\r\n  --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \\\r\n  --bundle 'checksums.txt.sigstore.json' \\\r\n  ./checksums.txt\r\n```\r\n\r\nIf the output is `Verified OK`, you can safely use it to verify the checksums of other artifacts you downloaded from the release using `sha256sum`:\r\n\r\n```bash\r\nsha256sum --ignore-missing -c checksums.txt\r\n```\r\n\r\nDone! You artifacts are now verified!\r\n\r\n</details>\r\n\r\n<a href=\"https://charm.land/\"><img alt=\"The Charm logo\" src=\"https://stuff.charm.sh/charm-banner-next.jpg\" width=\"400\"></a>\r\n\r\nThoughts? Questions? We love hearing from you. Feel free to reach out on [X](https://x.com/charmcli), [Discord](https://charm.land/discord), [Slack](https://charm.land/slack), [The Fediverse](https://mastodon.social/@charmcli), [Bluesky](https://bsky.app/profile/charm.land).",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T21:01:49Z",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.90.0",
+      "version": "v0.90.0"
+    },
     {
       "channel": "stable",
       "draft": false,

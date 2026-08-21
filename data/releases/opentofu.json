@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-07-29T16:11:47.299Z",
+  "generatedAt": "2026-08-21T03:53:53.891Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372998315,
+      "name": "v1.12.6",
+      "notes": "## SECURITY ADVISORIES:\r\n\r\n- When interacting with OCI Distribution registries for module or provider package installation, earlier versions of OpenTofu could incorrectly resend credentials intended for the original origin to the target of an HTTP redirect. ([#4422](https://github.com/opentofu/opentofu/pull/4422))\r\n- When interacting with an attacker-controlled remote state backend or provider/module registry, `tofu init` in earlier versions of OpenTofu could potentially cause high CPU usage and/or high memory usage resolving crafted relative URLs in the API responses. ([#4472](https://github.com/opentofu/opentofu/pull/4472))\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.12.5...v1.12.6",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T11:40:07Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.6",
+      "version": "v1.12.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372945632,
+      "name": "v1.11.14",
+      "notes": "## SECURITY ADVISORIES:\r\n\r\n- When interacting with OCI Distribution registries for module or provider package installation, previous versions of OpenTofu could incorrectly resend credentials intended for the original origin to the target of an HTTP redirect. ([#4423](https://github.com/opentofu/opentofu/pull/4423))\r\n- When interacting with an attacker-controlled remote state backend or provider/module registry, `tofu init` in earlier versions of OpenTofu could potentially cause high CPU usage and/or high memory usage resolving crafted relative URLs in the API responses. ([#4473](https://github.com/opentofu/opentofu/pull/4473))\r\n\r\n> [!NOTE]\r\n> This is the final patch release planned for the OpenTofu v1.11 series. We recommend upgrading to a newer release series as soon as possible.\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.11.13...v1.11.14",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T11:39:12Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.14",
+      "version": "v1.11.14"
+    },
     {
       "channel": "stable",
       "draft": false,

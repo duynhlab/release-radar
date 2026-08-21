@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-08T03:43:34.827Z",
+  "generatedAt": "2026-08-21T03:54:10.398Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 372919063,
+      "name": "v0.58.1",
+      "notes": "## What's Changed\n* build(deps): bump the actions group across 1 directory with 3 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/984\n* build(deps): bump js-yaml from 4.3.0 to 4.3.1 in /web by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/989\n* build(deps): bump github.com/go-git/go-git/v5 from 5.19.1 to 5.19.2 by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/990\n* cli: sync the CLI image and instance chart with `distro mirror` command by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/998\n* operator: optimize `inventory.Diff` with map lookup by @manoj-1407 in https://github.com/controlplaneio-fluxcd/flux-operator/pull/981\n* deps: Update `golang.org/x` packages by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/999\n* Release v0.58.1 by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1000\n\n## New Contributors\n* @manoj-1407 made their first contribution in https://github.com/controlplaneio-fluxcd/flux-operator/pull/981\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.58.0...v0.58.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T09:10:39Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.58.1",
+      "version": "v0.58.1"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-08-18T14:52:59.084Z",
+  "generatedAt": "2026-08-21T03:54:19.534Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373951069,
+      "name": "rollout-operator-0.51.1",
+      "notes": "Grafana rollout-operator\n\n## What's Changed\n* Attempt to fix chart release by @andyasp in https://github.com/grafana/helm-charts/pull/4214\n* [rollout-operator] increment chart for re-release by @andyasp in https://github.com/grafana/helm-charts/pull/4215\n\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/mimir-distributed-6.2.0...rollout-operator-0.51.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-20T18:38:45Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.51.1",
+      "version": "rollout-operator-0.51.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373760233,
+      "name": "mimir-distributed-6.2.0",
+      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/f1819df99cfcc68edd6c0ec69aa834a4bb227cae\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.2.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-20T13:34:08Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.2.0",
+      "version": "mimir-distributed-6.2.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373280973,
+      "name": "rollout-operator-0.51.0",
+      "notes": "Grafana rollout-operator\n\n## What's Changed\n* fix: correct shared workflow action tag comments by @zeitlinger in https://github.com/grafana/helm-charts/pull/4211\n* [rollout-operator] update for v0.39.0 by @andyasp in https://github.com/grafana/helm-charts/pull/4212\n\n## New Contributors\n* @zeitlinger made their first contribution in https://github.com/grafana/helm-charts/pull/4211\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/beyla-1.16.11...rollout-operator-0.51.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T18:58:13Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.51.0",
+      "version": "rollout-operator-0.51.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 373012798,
+      "name": "beyla-1.16.11",
+      "notes": "eBPF-based autoinstrumentation HTTP, HTTP2 and gRPC services, as well as network metrics.\n\nSource commit: https://github.com/grafana/beyla/commit/3565b386011ef8e43b328859bb54ae9c033bc55d\n\nTag on source: https://github.com/grafana/beyla/releases/tag/beyla-1.16.11",
+      "prerelease": false,
+      "publishedAt": "2026-08-19T11:56:45Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.11",
+      "version": "beyla-1.16.11"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -176,50 +220,6 @@
       "publishedAt": "2026-07-21T09:07:21Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.1.2",
       "version": "pyroscope-2.1.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 356860615,
-      "name": "alloy-1.11.0",
-      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/6a3d2e39422c25361f63ab9d4a072502863db466\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.11.0",
-      "prerelease": false,
-      "publishedAt": "2026-07-20T16:37:13Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.11.0",
-      "version": "alloy-1.11.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 355423070,
-      "name": "k8s-monitoring-4.3.0",
-      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/31f2e9de314c69380b62fa55adf2f5d1d01f5038\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.3.0",
-      "prerelease": false,
-      "publishedAt": "2026-07-17T01:07:42Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.3.0",
-      "version": "k8s-monitoring-4.3.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 355354867,
-      "name": "k8s-monitoring-3.8.11",
-      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/070530f21229c51fd12d880b6207afcce2cdc4a8\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-3.8.11",
-      "prerelease": false,
-      "publishedAt": "2026-07-16T20:53:49Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-3.8.11",
-      "version": "k8s-monitoring-3.8.11"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 354704059,
-      "name": "rollout-operator-0.50.1",
-      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] bump to v0.38.1 by @pr00se in https://github.com/grafana/helm-charts/pull/4192\n\n## New Contributors\n* @pr00se made their first contribution in https://github.com/grafana/helm-charts/pull/4192\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/alloy-1.10.0...rollout-operator-0.50.1",
-      "prerelease": false,
-      "publishedAt": "2026-07-15T20:53:23Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.50.1",
-      "version": "rollout-operator-0.50.1"
     }
   ],
   "schemaVersion": 1,
