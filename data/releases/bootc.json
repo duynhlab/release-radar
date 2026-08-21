@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-14T04:19:11.408Z",
+  "generatedAt": "2026-08-21T14:54:05.513Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 374125806,
+      "name": "Release v1.16.9",
+      "notes": "## bootc 1.16.9\r\n\r\n## What's Changed\r\n* ci: Skip heavy test jobs for docs-only PRs by @gursewak1997 in https://github.com/bootc-dev/bootc/pull/2391\r\n* fix(deps): update bcvk-qemu digest to d0433d9 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2371\r\n* ci: Fix docs-only detection in compute-ci-level by @gursewak1997 in https://github.com/bootc-dev/bootc/pull/2394\r\n* Adding Incubation docs - releases.md & Roadmap.md by @mohan-shash in https://github.com/bootc-dev/bootc/pull/2369\r\n* docs: Document tmpfs-backed storage for usr-overlay by @jmarrero in https://github.com/bootc-dev/bootc/pull/2381\r\n* Release 1.16.9 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2383\r\n\r\n### Assets\r\n\r\n- `bootc-1.16.9-vendor.tar.zstd` - Vendored dependencies archive\r\n- `bootc-1.16.9.tar.zstd` - Source archive\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bootc/compare/v1.16.8...v1.16.9",
+      "prerelease": false,
+      "publishedAt": "2026-08-21T13:25:12Z",
+      "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.9",
+      "version": "v1.16.9"
+    },
     {
       "channel": "stable",
       "draft": false,

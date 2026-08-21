@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T03:54:35.446Z",
+  "generatedAt": "2026-08-21T14:54:06.639Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -370,19 +370,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 366771550,
-        "name": "v41.2.0",
+        "id": 374228312,
+        "name": "v41.3.0",
         "prerelease": false,
-        "publishedAt": "2026-08-07T13:36:40Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.2.0",
-        "version": "v41.2.0"
+        "publishedAt": "2026-08-21T07:21:36Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.3.0",
+        "version": "v41.3.0"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-08-03T09:05:14Z",
-        "version": "v41.1.1"
+        "publishedAt": "2026-08-07T13:36:40Z",
+        "version": "v41.2.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "traefik/traefik-helm-chart",
       "tags": [
         "helm-chart",
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 371879229,
-        "name": "victoria-metrics-single-0.45.0",
+        "id": 374336333,
+        "name": "victoria-metrics-k8s-stack-0.91.1",
         "prerelease": false,
-        "publishedAt": "2026-08-17T18:48:01Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.45.0",
-        "version": "victoria-metrics-single-0.45.0"
+        "publishedAt": "2026-08-21T10:49:59Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.91.1",
+        "version": "victoria-metrics-k8s-stack-0.91.1"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-17T18:47:59Z",
-        "version": "victoria-metrics-k8s-stack-0.91.0"
+        "publishedAt": "2026-08-17T18:48:01Z",
+        "version": "victoria-metrics-single-0.45.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -2350,19 +2350,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 369936713,
-        "name": "Release v1.16.8",
+        "id": 374125806,
+        "name": "Release v1.16.9",
         "prerelease": false,
-        "publishedAt": "2026-08-13T17:38:50Z",
-        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.8",
-        "version": "v1.16.8"
+        "publishedAt": "2026-08-21T13:25:12Z",
+        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.9",
+        "version": "v1.16.9"
       },
       "name": "bootc",
       "previous": {
-        "publishedAt": "2026-08-04T14:27:16Z",
-        "version": "v1.16.7"
+        "publishedAt": "2026-08-13T17:38:50Z",
+        "version": "v1.16.8"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "bootc-dev/bootc",
       "tags": [
         "containers",
