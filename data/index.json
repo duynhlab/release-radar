@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T03:07:42.199Z",
+  "generatedAt": "2026-08-22T14:37:42.199Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 374336333,
-        "name": "victoria-metrics-k8s-stack-0.91.1",
+        "id": 374877173,
+        "name": "victoria-metrics-k8s-stack-0.91.2",
         "prerelease": false,
-        "publishedAt": "2026-08-21T10:49:59Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.91.1",
-        "version": "victoria-metrics-k8s-stack-0.91.1"
+        "publishedAt": "2026-08-22T08:41:49Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.91.2",
+        "version": "victoria-metrics-k8s-stack-0.91.2"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-17T18:48:01Z",
-        "version": "victoria-metrics-single-0.45.0"
+        "publishedAt": "2026-08-21T10:49:59Z",
+        "version": "victoria-metrics-k8s-stack-0.91.1"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
