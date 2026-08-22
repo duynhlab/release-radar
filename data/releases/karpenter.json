@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T02:11:01.883Z",
+  "generatedAt": "2026-08-22T03:07:00.913Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 374707429,
+      "name": "v1.14.1",
+      "notes": "## Chores\n- cherrypicks for v1.14.1 (#3238) [#3238](https://github.com/kubernetes-sigs/karpenter/pull/3238) ([Ryan Mistretta](https://github.com/kubernetes-sigs/karpenter/commit/6e7eab7a0f485d7225eb98995fad9b66c79b322b))",
+      "prerelease": false,
+      "publishedAt": "2026-08-21T22:35:25Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.1",
+      "version": "v1.14.1"
+    },
     {
       "channel": "stable",
       "draft": false,

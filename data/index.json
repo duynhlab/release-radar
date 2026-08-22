@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T14:54:06.639Z",
+  "generatedAt": "2026-08-22T03:07:42.199Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -39,19 +39,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 352382431,
-        "name": "v1.14.0",
+        "id": 374707429,
+        "name": "v1.14.1",
         "prerelease": false,
-        "publishedAt": "2026-07-11T00:17:51Z",
-        "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.0",
-        "version": "v1.14.0"
+        "publishedAt": "2026-08-21T22:35:25Z",
+        "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.1",
+        "version": "v1.14.1"
       },
       "name": "Karpenter",
       "previous": {
-        "publishedAt": "2026-07-08T17:46:58Z",
-        "version": "v1.10.1"
+        "publishedAt": "2026-07-11T00:17:51Z",
+        "version": "v1.14.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "kubernetes-sigs/karpenter",
       "tags": [
         "kubernetes",
@@ -1936,19 +1936,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 373557184,
-        "name": "sentry: v33.6.0",
+        "id": 374481190,
+        "name": "sentry: v33.7.0",
         "prerelease": false,
-        "publishedAt": "2026-08-20T07:34:46Z",
-        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.6.0",
-        "version": "sentry-v33.6.0"
+        "publishedAt": "2026-08-21T14:57:27Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.7.0",
+        "version": "sentry-v33.7.0"
       },
       "name": "Sentry Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-19T08:50:21Z",
-        "version": "sentry-v33.5.0"
+        "publishedAt": "2026-08-20T07:34:46Z",
+        "version": "sentry-v33.6.0"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "sentry-kubernetes/charts",
       "tags": [
         "helm-chart",
