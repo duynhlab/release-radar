@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T14:37:42.199Z",
+  "generatedAt": "2026-08-23T03:15:26.782Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -398,19 +398,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 373348849,
-        "name": "v0.90.0",
+        "id": 375037224,
+        "name": "v0.91.0",
         "prerelease": false,
-        "publishedAt": "2026-08-19T21:01:49Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.90.0",
-        "version": "v0.90.0"
+        "publishedAt": "2026-08-22T20:56:04Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.91.0",
+        "version": "v0.91.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-08-12T20:04:42Z",
-        "version": "v0.89.0"
+        "publishedAt": "2026-08-19T21:01:49Z",
+        "version": "v0.90.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "charmbracelet/crush",
       "tags": [
         "coding-agent",
