@@ -1,7 +1,7 @@
 import { createIsomorphicFn } from "@tanstack/react-start";
 import { ToolReleasesFileSchema, type Release } from "../domain/types.ts";
 
-// Release notes are ~1.9 MB across 78 files. They are served as STATIC ASSETS
+// Release notes are ~2.5 MB across 81 files. They are served as STATIC ASSETS
 // and must never enter the worker bundle.
 //
 // There is no fs path here on purpose: the prerender pass runs in workerd, not

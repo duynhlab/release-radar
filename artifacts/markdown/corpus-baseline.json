@@ -1,8 +1,8 @@
 {
-  "tools": 80,
-  "notes": 775,
+  "tools": 81,
+  "notes": 819,
   "bareUrl": {
-    "notes": 38,
+    "notes": 42,
     "tools": [
       "argo-cd",
       "crush",
@@ -14,10 +14,11 @@
   },
   "fullChangelog": 13,
   "rawHtml": {
-    "notes": 61,
+    "notes": 66,
     "tools": [
       "argo-cd",
       "crush",
+      "external-dns",
       "grafana-operator",
       "grype",
       "headlamp",
@@ -37,20 +38,20 @@
   },
   "setextHeading": 0,
   "structures": {
-    "links": 18458,
-    "images": 47,
-    "codeFences": 260,
-    "tables": 15,
+    "links": 19515,
+    "images": 51,
+    "codeFences": 274,
+    "tables": 19,
     "taskLists": 0,
     "footnotes": 0,
     "strikethrough": 0
   },
   "readmes": {
-    "readmes": 79,
+    "readmes": 80,
     "rawHtml": 36,
     "setextHeading": 1,
     "badUrl": 7,
-    "links": 2138,
-    "images": 273
+    "links": 2185,
+    "images": 275
   }
 }

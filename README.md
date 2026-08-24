@@ -9,7 +9,7 @@ flowchart TD
     sync["GitHub Actions<br/>2×/day · 09:17 + 21:17 ICT"]
     api["GitHub Releases API"]
     data["data/*.json<br/>release history · max 20/tool"]
-    build["TanStack Start<br/>prerender · 90 pages"]
+    build["TanStack Start<br/>prerender · 93 pages"]
     cf["Cloudflare Workers"]
 
     catalog --> sync
@@ -28,11 +28,11 @@ data, look at `data/`, not the frontend.
 
 - **Data is committed to Git** — history and diffs for free, no rate limits at
   view time, trivially forkable. Modeled after fluxcd/flux-schema.
-- **Fully prerendered** — all 90 pages are generated at build time from the
+- **Fully prerendered** — all 93 pages are generated at build time from the
   validated catalog, so the prerendered set and the 404-free set are the same
   set by construction.
 - **The catalog index is code-generated, release notes are static assets.**
-  The index is ~8.5 KB gzipped and ships to the worker; the 1.9 MB of release
+  The index is ~8.5 KB gzipped and ships to the worker; the 2.5 MB of release
   notes never enter the bundle and are fetched from the asset CDN instead.
   `pnpm check:bundle` fails the build if that ever regresses.
 - **`generatedAt` only advances when content changes** — otherwise every
@@ -48,9 +48,9 @@ data, look at `data/`, not the frontend.
 | `pnpm dev` | Vite dev server |
 | `pnpm validate:catalog` | Validate `config/tools.yaml` + regenerate JSON schema |
 | `pnpm sync` | Fetch releases from GitHub (needs `GITHUB_TOKEN`) |
-| `pnpm test` | Vitest: unit + dom + worker projects (232 tests) |
+| `pnpm test` | Vitest: unit + dom + worker projects (313 tests) |
 | `pnpm lint` / `pnpm typecheck` | ESLint / tsc |
-| `pnpm build` | Production build + prerender (90 pages) |
+| `pnpm build` | Production build + prerender (93 pages) |
 | `pnpm audit:markdown` | Inventory the release-note corpus; `--check` gates the unsafe findings |
 | `pnpm check:bundle` | Prove release notes stay out of the worker |
 | `pnpm preview` | Build + serve on workerd (Cloudflare runtime) locally |
@@ -77,24 +77,10 @@ would typecheck against APIs that aren't there at run time.
 | `src/routes/`, `src/components/`, `src/features/` | UI. `features/catalog/home-explorer.tsx` drives search/filter/favorites. |
 | `.github/workflows/sync-releases.yaml` | Twice-daily sync, `contents: write`, commits only if `data/` changed. |
 | `.github/workflows/ci.yaml` | PR/push checks, `contents: read`, ignores data-only pushes. |
-| `.github/workflows/add-tool.yaml` | Add a tool from the Actions UI — fills the catalog, syncs data, opens a PR. |
 | `.github/dependabot.yml` | Weekly dependency updates: npm (minor/patch grouped) + github-actions. |
-| `scripts/add-tool.ts` + `lib/catalog-edit.ts` | Catalog intake: normalize repo input, auto-fill metadata, append YAML preserving format. |
 | `vite.config.ts` + `wrangler.jsonc` | Build and Cloudflare config. |
 
 ## Adding a tool (the 90% task)
-
-**From the GitHub UI (no local setup):** Actions → **Add tool** → Run
-workflow → fill in the repository (owner/repo or URL), category and optional
-fields → a PR appears with the catalog entry plus synced release data —
-review and squash-merge it. The workflow runs the full check suite (validate,
-test, lint, typecheck, build) before opening the PR; note the bot PR itself
-does not trigger the CI workflow (`GITHUB_TOKEN` limitation), the in-run
-checks stand in for it. Requires the repo setting *Actions → General →
-Workflow permissions → "Allow GitHub Actions to create and approve pull
-requests"*.
-
-**Manually:**
 
 1. Add an entry to `config/tools.yaml` (copy an existing one; the JSON schema
    gives autocomplete):

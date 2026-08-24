@@ -7,7 +7,7 @@ import { CATEGORIES, IndexSchema } from "../src/domain/types.ts";
  * The only check that proves the central constraint on a real build:
  * the catalog index reaches the worker, and release notes never do.
  *
- * Notes are ~1.9 MB raw. If a refactor ever turns the asset fetch back into a
+ * Notes are ~2.5 MB raw. If a refactor ever turns the asset fetch back into a
  * static import, everything still builds and the pages still render — the only
  * symptom is a fat worker. This makes it a hard failure instead.
  */

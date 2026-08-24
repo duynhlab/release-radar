@@ -59,7 +59,7 @@ function copyJsonAssets(srcDir: string, outDir: string): CopyResult {
   return { written, removed, total: sources.length };
 }
 
-/** data/releases/*.json → public/release-notes/ (~1.9 MB across 78 files). */
+/** data/releases/*.json → public/release-notes/ (~2.5 MB across 81 files). */
 export async function copyReleaseNotes(): Promise<CopyResult> {
   return copyJsonAssets(
     path.join(process.cwd(), "data", "releases"),

@@ -23,8 +23,3 @@ export function splitRepository(repository: string): RepositoryParts {
   }
   return { owner: match[1], repo: match[2] };
 }
-
-/** Just the repo name — the part used to derive ids and display names. */
-export function repositoryName(repository: string): string {
-  return splitRepository(repository).repo;
-}
