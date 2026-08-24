@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-21T03:54:19.534Z",
+  "generatedAt": "2026-08-24T15:00:09.014Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 375717690,
+      "name": "grafana-operator-5.25.0",
+      "notes": "Helm chart for the [grafana-operator](https://github.com/grafana/grafana-operator)\n\nTag on source: https://github.com/grafana/grafana-operator/releases/tag/v5.25.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-24T13:27:13Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/grafana-operator-5.25.0",
+      "version": "grafana-operator-5.25.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-07-22T15:10:23Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.2",
       "version": "alloy-operator-0.6.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 357221926,
-      "name": "pyroscope-2.1.2",
-      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/80c4d217e19ec8b12d91500d2076011ab750bb6b\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.1.2",
-      "prerelease": false,
-      "publishedAt": "2026-07-21T09:07:21Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.1.2",
-      "version": "pyroscope-2.1.2"
     }
   ],
   "schemaVersion": 1,

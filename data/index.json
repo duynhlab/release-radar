@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T08:09:12.908Z",
+  "generatedAt": "2026-08-24T15:00:33.122Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1134,19 +1134,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 336541019,
-        "name": "v5.24.0",
+        "id": 375717365,
+        "name": "v5.25.0",
         "prerelease": false,
-        "publishedAt": "2026-06-09T11:36:47Z",
-        "url": "https://github.com/grafana/grafana-operator/releases/tag/v5.24.0",
-        "version": "v5.24.0"
+        "publishedAt": "2026-08-24T13:26:43Z",
+        "url": "https://github.com/grafana/grafana-operator/releases/tag/v5.25.0",
+        "version": "v5.25.0"
       },
       "name": "Grafana Operator",
       "previous": {
-        "publishedAt": "2026-05-21T13:30:55Z",
-        "version": "v5.23.0"
+        "publishedAt": "2026-06-09T11:36:47Z",
+        "version": "v5.24.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "grafana/grafana-operator",
       "tags": [
         "dashboards",
@@ -1504,17 +1504,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 373951069,
-        "name": "rollout-operator-0.51.1",
+        "id": 375717690,
+        "name": "grafana-operator-5.25.0",
         "prerelease": false,
-        "publishedAt": "2026-08-20T18:38:45Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.51.1",
-        "version": "rollout-operator-0.51.1"
+        "publishedAt": "2026-08-24T13:27:13Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/grafana-operator-5.25.0",
+        "version": "grafana-operator-5.25.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-20T13:34:08Z",
-        "version": "mimir-distributed-6.2.0"
+        "publishedAt": "2026-08-20T18:38:45Z",
+        "version": "rollout-operator-0.51.1"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1940,19 +1940,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 374481190,
-        "name": "sentry: v33.7.0",
+        "id": 375576729,
+        "name": "sentry: v33.8.0",
         "prerelease": false,
-        "publishedAt": "2026-08-21T14:57:27Z",
-        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.7.0",
-        "version": "sentry-v33.7.0"
+        "publishedAt": "2026-08-24T09:20:19Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.8.0",
+        "version": "sentry-v33.8.0"
       },
       "name": "Sentry Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-20T07:34:46Z",
-        "version": "sentry-v33.6.0"
+        "publishedAt": "2026-08-21T14:57:27Z",
+        "version": "sentry-v33.7.0"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "sentry-kubernetes/charts",
       "tags": [
         "helm-chart",
