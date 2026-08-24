@@ -53,7 +53,7 @@ Fix pgaudit tag pattern          → fix(catalog): correct pgaudit tag pattern
 ## Project Overview
 
 Personal DevOps/SRE release tracker: a Git-backed catalog that follows new
-releases of infrastructure tools on GitHub. Currently **78 tools** across 10
+releases of infrastructure tools on GitHub. Currently **81 tools** across 11
 groups and 11 categories.
 
 A category says **what a tool is for**, and a tool has exactly one. How it ships
@@ -108,7 +108,7 @@ policy. When it fires, pin the previous release rather than bypassing it.
 ## Testing
 
 ```bash
-pnpm test         # vitest: unit + dom + worker projects, 232 tests
+pnpm test         # vitest: unit + dom + worker projects, 313 tests
 ```
 
 Three projects in `vitest.config.ts`:
@@ -202,7 +202,7 @@ config/tools.yaml → Actions sync (2x/day, 09:17 + 21:17 ICT) → data/*.json
                   → TanStack Start prerender → Cloudflare Workers
 ```
 
-- **90 prerendered pages**: 1 home + 11 categories + 78 tools. `check:bundle`
+- **93 prerendered pages**: 1 home + 11 categories + 81 tools. `check:bundle`
   derives this from `CATEGORIES.length` — don't reintroduce a literal count.
 - `data/` is **generated**. Never edit by hand.
 - Scheduled runs are best-effort: observed 1.5–3.5h late.
@@ -220,7 +220,7 @@ in which filesystem access works. This drives everything below.
   fails `pnpm typecheck` rather than production.
 - **Release notes are static assets.** `data/releases/*.json` is copied to
   `public/release-notes/` and fetched over HTTP by the `/tools/$slug` loader.
-  1.9 MB must never enter the worker bundle. `src/server/release-notes.ts` still
+  2.5 MB must never enter the worker bundle. `src/server/release-notes.ts` still
   reads them with `fs` — **scripts and tests only**, never from `src/routes/**`.
 - **`prerender.autoSubfolderIndex: false` is mandatory.** The default `true`
   emits `foo/index.html` and makes Workers Assets serve `/foo` as a 307 to

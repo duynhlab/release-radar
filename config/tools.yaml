@@ -31,6 +31,9 @@ groups:
     homepage: https://bootc-dev.github.io/bootc/
   database:
     name: Databases
+  temporal:
+    name: Temporal
+    homepage: https://temporal.io
 
 tools:
   - id: kubernetes
@@ -560,6 +563,7 @@ tools:
       - workflow
       - helm-chart
       - kubernetes
+    group: temporal
     release:
       strategy: github-releases
       includePrerelease: false
@@ -1282,6 +1286,23 @@ tools:
       - proxy
       - sharding
     group: database
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: temporal-worker-controller
+    name: Temporal Worker Controller
+    category: messaging
+    repository: temporalio/temporal-worker-controller
+    description: Kubernetes controller for Temporal Worker versioning and progressive rollouts
+    homepage: https://temporal.io
+    documentation: https://docs.temporal.io/production-deployment/worker-deployments/worker-versioning
+    tags:
+      - workflow
+      - kubernetes
+      - operator
+    group: temporal
     release:
       strategy: github-releases
       includePrerelease: false
