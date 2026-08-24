@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-08-21T03:54:19.992Z",
+  "generatedAt": "2026-08-24T03:16:44.875Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 375296112,
+      "name": "loki-18.11.2",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Fix Service and PodDisruptionBudget rendered for disabled components by @jkroepke with @Copilot in https://github.com/grafana-community/helm-charts/pull/750\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-12.11.2...loki-18.11.2",
+      "prerelease": false,
+      "publishedAt": "2026-08-23T18:48:22Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.2",
+      "version": "loki-18.11.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 375289897,
+      "name": "grafana-12.11.2",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Fix GOMEMLIMIT: computed ratio + user-override support by @jkroepke with @Copilot in https://github.com/grafana-community/helm-charts/pull/755\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.11.1...grafana-12.11.2",
+      "prerelease": false,
+      "publishedAt": "2026-08-23T18:23:19Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-12.11.2",
+      "version": "grafana-12.11.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 375252291,
+      "name": "loki-18.11.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Document StatefulSet-immutable Helm values by @RaviTharuma in https://github.com/grafana-community/helm-charts/pull/751\n\n## New Contributors\n* @RaviTharuma made their first contribution in https://github.com/grafana-community/helm-charts/pull/751\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.11.0...loki-18.11.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-23T15:42:15Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.1",
+      "version": "loki-18.11.1"
+    },
     {
       "channel": "stable",
       "draft": false,
