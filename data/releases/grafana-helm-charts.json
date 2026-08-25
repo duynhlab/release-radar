@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-24T15:00:09.014Z",
+  "generatedAt": "2026-08-25T03:12:57.220Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 375871907,
+      "name": "alloy-operator-0.7.0",
+      "notes": "Grafana Alloy Operator, providing innovative ways for creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/ac2f98f3667d81cd65ff737c13a515eb0b0001d7\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.7.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-24T17:25:01Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.7.0",
+      "version": "alloy-operator-0.7.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 375834199,
+      "name": "alloy-1.12.0",
+      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/16e6de80b7472c9425361632dc4f0e2e8439e50e\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.12.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-24T16:18:10Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.12.0",
+      "version": "alloy-1.12.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-07-23T14:12:15Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.12",
       "version": "cloudcost-exporter-1.1.12"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 358313566,
-      "name": "pyroscope-2.2.0",
-      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/82d868043837a6683c1d93ddeccac85dcd09fc89\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.2.0",
-      "prerelease": false,
-      "publishedAt": "2026-07-22T20:42:44Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.2.0",
-      "version": "pyroscope-2.2.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 358116208,
-      "name": "alloy-operator-0.6.2",
-      "notes": "A Helm chart the Alloy Operator, a project to innovate on creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/8f21d0abfc6273e2f882bdaea15d70f3d25d64b0\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.6.2",
-      "prerelease": false,
-      "publishedAt": "2026-07-22T15:10:23Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.2",
-      "version": "alloy-operator-0.6.2"
     }
   ],
   "schemaVersion": 1,
