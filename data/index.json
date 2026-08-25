@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T03:13:16.651Z",
+  "generatedAt": "2026-08-25T15:05:15.445Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1473,19 +1473,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 367811702,
-        "name": "v1.1.0",
+        "id": 376469064,
+        "name": "v1.2.0",
         "prerelease": false,
-        "publishedAt": "2026-08-10T09:45:22Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.1.0",
-        "version": "v1.1.0"
+        "publishedAt": "2026-08-25T14:26:33Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.2.0",
+        "version": "v1.2.0"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-07-28T15:36:26Z",
-        "version": "v1.0.0"
+        "publishedAt": "2026-08-10T09:45:22Z",
+        "version": "v1.1.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "grafana/mcp-grafana",
       "tags": [
         "mcp",
@@ -1535,19 +1535,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 375296112,
-        "name": "loki-18.11.2",
+        "id": 376484776,
+        "name": "tempo-2.3.0",
         "prerelease": false,
-        "publishedAt": "2026-08-23T18:48:22Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.2",
-        "version": "loki-18.11.2"
+        "publishedAt": "2026-08-25T14:48:27Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-2.3.0",
+        "version": "tempo-2.3.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-23T18:23:19Z",
-        "version": "grafana-12.11.2"
+        "publishedAt": "2026-08-23T18:48:22Z",
+        "version": "loki-18.11.2"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
       "tags": [
         "helm-chart",

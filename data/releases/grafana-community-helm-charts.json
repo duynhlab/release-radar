@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-24T03:16:44.875Z",
+  "generatedAt": "2026-08-25T15:04:56.809Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 376484776,
+      "name": "tempo-2.3.0",
+      "notes": "Grafana Tempo Single Binary Mode\n\n## What's Changed\n* [CI] Update dependency losisin/helm-values-schema-json to v2.6.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/757\n* [tempo] Add Gateway API HTTPRoute support by @KyriosGN0 in https://github.com/grafana-community/helm-charts/pull/740\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.11.2...tempo-2.3.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-25T14:48:27Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-2.3.0",
+      "version": "tempo-2.3.0"
+    },
     {
       "channel": "stable",
       "draft": false,
