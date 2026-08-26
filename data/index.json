@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T15:05:15.445Z",
+  "generatedAt": "2026-08-26T03:18:36.064Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -398,19 +398,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 375037224,
-        "name": "v0.91.0",
+        "id": 376688444,
+        "name": "v0.91.1",
         "prerelease": false,
-        "publishedAt": "2026-08-22T20:56:04Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.91.0",
-        "version": "v0.91.0"
+        "publishedAt": "2026-08-25T20:18:11Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.91.1",
+        "version": "v0.91.1"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-08-19T21:01:49Z",
-        "version": "v0.90.0"
+        "publishedAt": "2026-08-22T20:56:04Z",
+        "version": "v0.91.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "charmbracelet/crush",
       "tags": [
         "coding-agent",
@@ -1504,17 +1504,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 375871907,
-        "name": "alloy-operator-0.7.0",
+        "id": 376773883,
+        "name": "k8s-monitoring-4.5.0",
         "prerelease": false,
-        "publishedAt": "2026-08-24T17:25:01Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.7.0",
-        "version": "alloy-operator-0.7.0"
+        "publishedAt": "2026-08-25T23:22:31Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.0",
+        "version": "k8s-monitoring-4.5.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-24T16:18:10Z",
-        "version": "alloy-1.12.0"
+        "publishedAt": "2026-08-25T19:17:09Z",
+        "version": "k8s-monitoring-4.4.1"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 376484776,
-        "name": "tempo-2.3.0",
+        "id": 376641671,
+        "name": "grafana-mcp-0.21.0",
         "prerelease": false,
-        "publishedAt": "2026-08-25T14:48:27Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-2.3.0",
-        "version": "tempo-2.3.0"
+        "publishedAt": "2026-08-25T19:06:37Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.21.0",
+        "version": "grafana-mcp-0.21.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-23T18:48:22Z",
-        "version": "loki-18.11.2"
+        "publishedAt": "2026-08-25T19:02:38Z",
+        "version": "loki-18.11.3"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2354,19 +2354,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 374125806,
-        "name": "Release v1.16.9",
+        "id": 376645141,
+        "name": "Release v1.16.10",
         "prerelease": false,
-        "publishedAt": "2026-08-21T13:25:12Z",
-        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.9",
-        "version": "v1.16.9"
+        "publishedAt": "2026-08-25T20:55:04Z",
+        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.10",
+        "version": "v1.16.10"
       },
       "name": "bootc",
       "previous": {
-        "publishedAt": "2026-08-13T17:38:50Z",
-        "version": "v1.16.8"
+        "publishedAt": "2026-08-21T13:25:12Z",
+        "version": "v1.16.9"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "bootc-dev/bootc",
       "tags": [
         "containers",

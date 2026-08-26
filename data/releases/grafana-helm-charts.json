@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-25T03:12:57.220Z",
+  "generatedAt": "2026-08-26T03:18:16.525Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 376773883,
+      "name": "k8s-monitoring-4.5.0",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/ee663e9f28cc1d7bea32bfabc2cc7a0382fb45b1\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.5.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-25T23:22:31Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.0",
+      "version": "k8s-monitoring-4.5.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 376648610,
+      "name": "k8s-monitoring-4.4.1",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/230fd41ea44ee4d299feda2f20c955b49f55184f\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.4.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-25T19:17:09Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.4.1",
+      "version": "k8s-monitoring-4.4.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-07-29T20:35:26Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.2.0",
       "version": "helm-loki-7.2.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 358927827,
-      "name": "k8s-monitoring-4.3.1",
-      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/eb9bdc2090014fb1685d322641ab5938769992a4\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.3.1",
-      "prerelease": false,
-      "publishedAt": "2026-07-23T20:10:36Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.3.1",
-      "version": "k8s-monitoring-4.3.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 358733077,
-      "name": "cloudcost-exporter-1.1.12",
-      "notes": "Cloud Cost Exporter exports cloud provider agnostic cost metrics to Prometheus.\n\nSource commit: https://github.com/grafana/cloudcost-exporter/commit/364afa827ecc4ac1b863907467764dc250b1f90d\n\nTag on source: https://github.com/grafana/cloudcost-exporter/releases/tag/cloudcost-exporter-1.1.12",
-      "prerelease": false,
-      "publishedAt": "2026-07-23T14:12:15Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.12",
-      "version": "cloudcost-exporter-1.1.12"
     }
   ],
   "schemaVersion": 1,

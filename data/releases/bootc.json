@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-21T14:54:05.513Z",
+  "generatedAt": "2026-08-26T03:18:34.316Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 376645141,
+      "name": "Release v1.16.10",
+      "notes": "## bootc 1.16.10\r\n\r\n## What's Changed\r\n* tmpfiles: Tolerate EACCES when resolving declared paths by @gursewak1997 in https://github.com/bootc-dev/bootc/pull/2382\r\n* Uki print dump diff fix by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2370\r\n* Switch download only by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2342\r\n* ci: Update for Fedora 45 branching from rawhide by @jeckersb in https://github.com/bootc-dev/bootc/pull/2397\r\n* docs/composefs: Document zstd:chunked pull limitation by @andrewdunndev in https://github.com/bootc-dev/bootc/pull/2409\r\n* Release 1.16.10 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2407\r\n\r\n### Assets\r\n\r\n- `bootc-1.16.10-vendor.tar.zstd` - Vendored dependencies archive\r\n- `bootc-1.16.10.tar.zstd` - Source archive\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bootc/compare/v1.16.9...v1.16.10",
+      "prerelease": false,
+      "publishedAt": "2026-08-25T20:55:04Z",
+      "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.10",
+      "version": "v1.16.10"
+    },
     {
       "channel": "stable",
       "draft": false,
