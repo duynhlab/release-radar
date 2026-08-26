@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T03:18:36.064Z",
+  "generatedAt": "2026-08-26T15:52:52.071Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -101,19 +101,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 373119079,
-        "name": "v1.15.9",
+        "id": 377147512,
+        "name": "v1.16.0",
         "prerelease": false,
-        "publishedAt": "2026-08-19T14:29:32Z",
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.9",
-        "version": "v1.15.9"
+        "publishedAt": "2026-08-26T13:05:28Z",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0",
+        "version": "v1.16.0"
       },
       "name": "Terraform",
       "previous": {
-        "publishedAt": "2026-07-08T17:45:09Z",
-        "version": "v1.15.8"
+        "publishedAt": "2026-08-19T14:29:32Z",
+        "version": "v1.15.9"
       },
-      "releaseCount": 3,
+      "releaseCount": 4,
       "repository": "hashicorp/terraform",
       "tags": [
         "iac"
