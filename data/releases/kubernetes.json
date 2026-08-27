@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-21T03:53:51.230Z",
+  "generatedAt": "2026-08-27T12:46:27.781Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 377265881,
+      "name": "v1.37.0",
+      "notes": "See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md).\n\nSee the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md) for more details.",
+      "prerelease": false,
+      "publishedAt": "2026-08-26T16:29:12Z",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0",
+      "version": "v1.37.0"
+    },
     {
       "channel": "stable",
       "draft": false,

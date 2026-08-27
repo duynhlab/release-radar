@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T15:52:52.071Z",
+  "generatedAt": "2026-08-27T12:47:15.808Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -11,19 +11,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 373962889,
-        "name": "v1.35.8",
+        "id": 377265881,
+        "name": "v1.37.0",
         "prerelease": false,
-        "publishedAt": "2026-08-20T18:59:55Z",
-        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.8",
-        "version": "v1.35.8"
+        "publishedAt": "2026-08-26T16:29:12Z",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0",
+        "version": "v1.37.0"
       },
       "name": "Kubernetes",
       "previous": {
-        "publishedAt": "2026-08-20T18:45:38Z",
-        "version": "v1.34.11"
+        "publishedAt": "2026-08-20T18:59:55Z",
+        "version": "v1.35.8"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "kubernetes/kubernetes",
       "tags": [
         "containers",
@@ -187,19 +187,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 369213663,
-        "name": "v3.5.1",
+        "id": 377717934,
+        "name": "v3.4.8",
         "prerelease": false,
-        "publishedAt": "2026-08-12T12:12:58Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.1",
-        "version": "v3.5.1"
+        "publishedAt": "2026-08-27T09:56:04Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.8",
+        "version": "v3.4.8"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-08-12T11:25:08Z",
-        "version": "v3.4.7"
+        "publishedAt": "2026-08-27T09:55:47Z",
+        "version": "v3.5.2"
       },
-      "releaseCount": 13,
+      "releaseCount": 15,
       "repository": "argoproj/argo-cd",
       "tags": [
         "gitops",
@@ -398,19 +398,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 376688444,
-        "name": "v0.91.1",
+        "id": 377284485,
+        "name": "v0.91.2",
         "prerelease": false,
-        "publishedAt": "2026-08-25T20:18:11Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.91.1",
-        "version": "v0.91.1"
+        "publishedAt": "2026-08-26T17:03:03Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.91.2",
+        "version": "v0.91.2"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-08-22T20:56:04Z",
-        "version": "v0.91.0"
+        "publishedAt": "2026-08-25T20:18:11Z",
+        "version": "v0.91.1"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "charmbracelet/crush",
       "tags": [
         "coding-agent",
@@ -1259,19 +1259,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 354121973,
-        "name": "vector-0.57.0",
+        "id": 377279263,
+        "name": "vector-0.58.0",
         "prerelease": false,
-        "publishedAt": "2026-07-14T23:10:29Z",
-        "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.57.0",
-        "version": "vector-0.57.0"
+        "publishedAt": "2026-08-26T16:53:07Z",
+        "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.58.0",
+        "version": "vector-0.58.0"
       },
       "name": "Vector Helm Charts",
       "previous": {
-        "publishedAt": "2026-06-03T19:39:56Z",
-        "version": "vector-0.56.0"
+        "publishedAt": "2026-07-14T23:10:29Z",
+        "version": "vector-0.57.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "vectordotdev/helm-charts",
       "tags": [
         "logs",
@@ -1504,17 +1504,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 376773883,
-        "name": "k8s-monitoring-4.5.0",
+        "id": 377808956,
+        "name": "alloy-1.12.1",
         "prerelease": false,
-        "publishedAt": "2026-08-25T23:22:31Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.0",
-        "version": "k8s-monitoring-4.5.0"
+        "publishedAt": "2026-08-27T12:35:53Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.12.1",
+        "version": "alloy-1.12.1"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-25T19:17:09Z",
-        "version": "k8s-monitoring-4.4.1"
+        "publishedAt": "2026-08-25T23:22:31Z",
+        "version": "k8s-monitoring-4.5.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 376641671,
-        "name": "grafana-mcp-0.21.0",
+        "id": 377683401,
+        "name": "tempo-distributed-3.5.1",
         "prerelease": false,
-        "publishedAt": "2026-08-25T19:06:37Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.21.0",
-        "version": "grafana-mcp-0.21.0"
+        "publishedAt": "2026-08-27T08:55:05Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.5.1",
+        "version": "tempo-distributed-3.5.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-25T19:02:38Z",
-        "version": "loki-18.11.3"
+        "publishedAt": "2026-08-27T08:48:50Z",
+        "version": "tempo-distributed-3.5.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1565,19 +1565,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 362123705,
-        "name": "loki v13.1.0",
+        "id": 377750974,
+        "name": "loki v13.1.1",
         "prerelease": false,
-        "publishedAt": "2026-07-30T00:45:50Z",
-        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.1.0",
-        "version": "v13.1.0"
+        "publishedAt": "2026-08-27T10:57:20Z",
+        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.1.1",
+        "version": "v13.1.1"
       },
       "name": "Loki Datasource",
       "previous": {
-        "publishedAt": "2026-07-24T11:34:48Z",
-        "version": "v13.0.2"
+        "publishedAt": "2026-07-30T00:45:50Z",
+        "version": "v13.1.0"
       },
-      "releaseCount": 4,
+      "releaseCount": 5,
       "repository": "grafana/grafana-loki-datasource",
       "tags": [
         "logs",
@@ -1595,19 +1595,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 350866281,
-        "name": "tempo v13.1.5",
+        "id": 377750560,
+        "name": "tempo v13.2.0",
         "prerelease": false,
-        "publishedAt": "2026-07-08T10:55:33Z",
-        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.1.5",
-        "version": "v13.1.5"
+        "publishedAt": "2026-08-27T10:56:32Z",
+        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.2.0",
+        "version": "v13.2.0"
       },
       "name": "Tempo Datasource",
       "previous": {
-        "publishedAt": "2026-06-24T09:40:49Z",
-        "version": "v13.1.4"
+        "publishedAt": "2026-07-08T10:55:33Z",
+        "version": "v13.1.5"
       },
-      "releaseCount": 6,
+      "releaseCount": 7,
       "repository": "grafana/grafana-tempo-datasource",
       "tags": [
         "traces",

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T02:52:46.966Z",
+  "generatedAt": "2026-08-27T12:46:52.811Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 377279263,
+      "name": "vector-0.58.0",
+      "notes": "A lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2026-08-26T16:53:07Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.58.0",
+      "version": "vector-0.58.0"
+    },
     {
       "channel": "stable",
       "draft": false,

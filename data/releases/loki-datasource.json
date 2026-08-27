@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T03:02:38.667Z",
+  "generatedAt": "2026-08-27T12:46:58.052Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 377750974,
+      "name": "loki v13.1.1",
+      "notes": "## 13.1.1\n\n- Bump go v1.26.7 and grafana-plugin-sdk-go v0.296.4  ([#134](https://github.com/grafana/grafana-loki-datasource/pull/134))\n- Chore: update lezer/logql ([#186](https://github.com/grafana/grafana-loki-datasource/pull/186))\n- Removing abstraction related logic ([#182](https://github.com/grafana/grafana-loki-datasource/pull/182))\n- chore: bump dependencies for vuln fixes ([#183](https://github.com/grafana/grafana-loki-datasource/pull/183))\n- Tests: Update frontend datetime tests not to expect Moment internals ([#179](https://github.com/grafana/grafana-loki-datasource/pull/179))",
+      "prerelease": false,
+      "publishedAt": "2026-08-27T10:57:20Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.1.1",
+      "version": "v13.1.1"
+    },
     {
       "channel": "stable",
       "draft": false,

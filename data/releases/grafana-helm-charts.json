@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-26T03:18:16.525Z",
+  "generatedAt": "2026-08-27T12:46:56.966Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 377808956,
+      "name": "alloy-1.12.1",
+      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/5975f1be5e7e343ee3df4497942446ed23ae902a\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.12.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-27T12:35:53Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.12.1",
+      "version": "alloy-1.12.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-07-31T14:22:05Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-3.8.12",
       "version": "k8s-monitoring-3.8.12"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 362034964,
-      "name": "helm-loki-7.2.0",
-      "notes": "Helm chart for Grafana Enterprise Logs supporting monolithic, simple scalable, and microservices modes.\n\nSource commit: https://github.com/grafana/loki/commit/9ccc135cfd2d4fbaab9e73fc8ba491f6ea3b9423\n\nTag on source: https://github.com/grafana/loki/releases/tag/helm-loki-7.2.0",
-      "prerelease": false,
-      "publishedAt": "2026-07-29T20:35:26Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.2.0",
-      "version": "helm-loki-7.2.0"
     }
   ],
   "schemaVersion": 1,
