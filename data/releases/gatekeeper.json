@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T02:46:31.807Z",
+  "generatedAt": "2026-08-27T23:47:29.509Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378149694,
+      "name": "v3.23.1",
+      "notes": "## Bug Fixes\n\n- Make generated VAP deterministic to stop reconcile loop (CP #4640) (#4792) [#4792](https://github.com/open-policy-agent/gatekeeper/pull/4792) ([abhisheksheth28](https://github.com/open-policy-agent/gatekeeper/commit/c19d98355a6f932f7b562de25b1bae18680a2863))\n- Surface namespace cache errors and avoid redundant VAP status updates (CP #4656, CP #4703) (#4795) [#4795](https://github.com/open-policy-agent/gatekeeper/pull/4795) ([abhisheksheth28](https://github.com/open-policy-agent/gatekeeper/commit/00eab8b671efde7e1610636f54c20b17796699b6))\n- Add default failure policy for K8sNativeValidation templates (CP #4568) (#4796) [#4796](https://github.com/open-policy-agent/gatekeeper/pull/4796) ([abhisheksheth28](https://github.com/open-policy-agent/gatekeeper/commit/720cd139354f93c99f7fef07747159c11ad5347a))\n- Prevent generated VAP update churn from defaulted scope (#4793) CP (#4794) [#4794](https://github.com/open-policy-agent/gatekeeper/pull/4794) ([Anlan Du](https://github.com/open-policy-agent/gatekeeper/commit/e7fa29383d2cd867885a88e78006175fc8cf2e59))\n\n\n## Chores\n\n- Backport security updates for v3.23.1 (#4791) [#4791](https://github.com/open-policy-agent/gatekeeper/pull/4791) ([abhisheksheth28](https://github.com/open-policy-agent/gatekeeper/commit/09a99a025bc7c5e4a01e16824580c7c9e0456bf9))\n\n\n## Dependencies\n\n- Bump go.opentelemetry.io/otel to from v1.43.0 to v1.44.0 (CP #4652) (#4653) [#4653](https://github.com/open-policy-agent/gatekeeper/pull/4653) ([abhisheksheth28](https://github.com/open-policy-agent/gatekeeper/commit/2bcc151289bfc93d1fd0e3b34ea41c2b45d199e7))\n- Bump github.com/onsi/gomega from 1.42.0 to 1.42.1 (CP #4647) (#4664) [#4664](https://github.com/open-policy-agent/gatekeeper/pull/4664) ([abhisheksheth28](https://github.com/open-policy-agent/gatekeeper/commit/ae195d7f86029e25f22601c751cee4579ddef577))\n- Bump golang from `68b7145` to `1164890` (CP #4665) (#4666) [#4666](https://github.com/open-policy-agent/gatekeeper/pull/4666) ([abhisheksheth28](https://github.com/open-policy-agent/gatekeeper/commit/5d54575cf8b016d98cba3f976b78ce0169f84528))\n\n\n## Bug Fixes\n\n- Update runner for release workflow (CP #4636) (#4638) [#4638](https://github.com/open-policy-agent/gatekeeper/pull/4638) ([abhisheksheth28](https://github.com/open-policy-agent/gatekeeper/commit/29b5b9e6b38b84684774b936ab82a77e09cb607b))",
+      "prerelease": false,
+      "publishedAt": "2026-08-27T22:03:10Z",
+      "url": "https://github.com/open-policy-agent/gatekeeper/releases/tag/v3.23.1",
+      "version": "v3.23.1"
+    },
     {
       "channel": "stable",
       "draft": false,

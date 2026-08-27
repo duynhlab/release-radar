@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-19T02:05:25.343Z",
+  "generatedAt": "2026-08-27T23:47:38.026Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 377932721,
+      "name": "openbao-0.29.3",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* fix(snapshotAgent): add concurrencyPolicy by @eyenx in https://github.com/openbao/openbao-helm/pull/218\n* fix(chart): remove obsolete PodSecurityPolicy support by @kangetsu121 in https://github.com/openbao/openbao-helm/pull/211\n* chore(openshift): use UBI image for csi agent by @pree in https://github.com/openbao/openbao-helm/pull/219\n* chore: release 0.29.3 by @eyenx in https://github.com/openbao/openbao-helm/pull/222\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.29.2...openbao-0.29.3",
+      "prerelease": false,
+      "publishedAt": "2026-08-27T15:28:10Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.3",
+      "version": "openbao-0.29.3"
+    },
     {
       "channel": "stable",
       "draft": false,

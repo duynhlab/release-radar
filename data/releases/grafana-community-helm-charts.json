@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-27T12:46:57.468Z",
+  "generatedAt": "2026-08-27T23:47:42.581Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378180667,
+      "name": "loki-18.11.4",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update loki dependency non-major updates to v3.7.7 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/771\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.5.1...loki-18.11.4",
+      "prerelease": false,
+      "publishedAt": "2026-08-27T23:36:59Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.4",
+      "version": "loki-18.11.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-18T12:28:54Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.2.2",
       "version": "tempo-distributed-3.2.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 372156636,
-      "name": "tempo-distributed-3.2.1",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] feat: Add traffic distribution option to Tempo by @obabec in https://github.com/grafana-community/helm-charts/pull/742\n\n## New Contributors\n* @obabec made their first contribution in https://github.com/grafana-community/helm-charts/pull/742\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.2.0...tempo-distributed-3.2.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-18T07:19:21Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.2.1",
-      "version": "tempo-distributed-3.2.1"
     }
   ],
   "schemaVersion": 1,

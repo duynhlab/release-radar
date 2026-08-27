@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-21T03:54:35.439Z",
+  "generatedAt": "2026-08-27T23:48:02.757Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378076118,
+      "name": "v0.1.56",
+      "notes": "## Bug fixes\r\n- Don't set the thread stack size to 32MB by default and don't warn the user about a deprecated setting at runtime (`query_parser_engine`).",
+      "prerelease": false,
+      "publishedAt": "2026-08-27T19:35:42Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.56",
+      "version": "v0.1.56"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378045914,
+      "name": "v0.1.55",
+      "notes": "## Security\r\n- Docker images now use keyless cosign attestation @dkarter \r\n\r\n## Features\r\n- Support execution of multi-statement queries sent via the simple protocol, e.g., `SET statement_timeout TO 0; SELECT * FROM users;`. Previously, this would error out. Limitation: we don't automatically start a transaction, so only one DML statement per query is allowed. @levkk \r\n- Switch to our implementation of query normalization instead of using `pg_query` (only relevant if using the Enterprise edition) @sgrif @jkaczman \r\n\r\n## Performance\r\n- Remove more unnecessary allocations @sgrif @meskill @jkaczman \r\n- Don't pin small future in hot path (1% performance improvement or so) @ygxio \r\n\r\n## Bug fixes\r\n- Avoid `NoPrimary` errors when primary election is delayed (`role = \"auto\"` mode) @meskill\r\n- Preserve query case in admin commands before passing the string to the query parser @meskill \r\n- Proxy shutdown was sometimes delayed by a race condition in the load balancer monitor @meskill\r\n- Support parameter type casting in `EXECUTE` statements @murex971 \r\n- Don't run unnecessary `SELECT` query during sharding key update @jkaczman \r\n\r\n## Code quality\r\n- Add `query_parser_engine = \"pg_query_protobuf\"` deprecation warning and remove the setting from usage @jkaczman \r\n- Dead code removal @sgrif @meskill \r\n- Use `pub(crate)` instead of `pub` to help with dead code analysis @sgrif \r\n- Refactor the resharding task runner to use more types @meskill \r\n- Move pool configuration into `pgdog-config` crate, for easier use in Enterprise code @meskill \r\n- Fix flaky tests @jkaczman \r\n\r\n## New Contributors\r\n\r\n* @dkarter made their first contribution in https://github.com/pgdogdev/pgdog/pull/1442\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.54...v0.1.55",
+      "prerelease": false,
+      "publishedAt": "2026-08-27T18:48:25Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.55",
+      "version": "v0.1.55"
+    },
     {
       "channel": "stable",
       "draft": false,

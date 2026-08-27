@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-21T14:53:27.931Z",
+  "generatedAt": "2026-08-27T23:47:17.494Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 377861365,
+      "name": "v41.4.0",
+      "notes": "# [v41.4.0](https://github.com/traefik/traefik-helm-chart/compare/v41.3.0...v41.4.0) (2026-08-27)\r\n\r\n## :rocket: Features\r\n\r\n- feat: add `aliasHeadersStrategy` value #1982 by @jnoordsij\r\n- feat: deprecate `underscoreHeadersStrategy` value #1983 by @jnoordsij\r\n- feat(deps): update traefik docker tag to v3.7.12 #1981 by @renovate-with-github-actions[bot]\r\n- feat(deps): update ghcr.io/traefik/traefik-hub docker tag to v3.20.12 #1980 by @renovate-with-github-actions[bot]\r\n- feat(hub): :sparkles: support apiManagement OpenAPI refresh interval #1949 by @darkweaver87\r\n\r\n## :bug: Bug fixes\r\n\r\n- fix: :bug: hub/proxy mapping #1984 by @darkweaver87\r\n- fix(rbac): restore secretResourceNames for namespaced role #1972 by @HarnageaGabriel\r\n\r\n## :package: Others\r\n\r\n- chore(deps): update dawidd6/action-download-artifact action to v24 #1979 by @renovate-with-github-actions[bot]\r\n- chore(deps): update renovatebot/github-action action to v46.2.4 #1978 by @renovate-with-github-actions[bot]\r\n- chore(release): 🚀 publish 41.4.0 #1985 by @darkweaver87\r\n\r\n## 👌 Traefik version support\r\n\r\n* Traefik Proxy: v3.6.0 -> v3.7.12 (default)\r\n* Traefik Hub: v3.19.3 -> v3.20.12",
+      "prerelease": false,
+      "publishedAt": "2026-08-27T13:52:41Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.4.0",
+      "version": "v41.4.0"
+    },
     {
       "channel": "stable",
       "draft": false,

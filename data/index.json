@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T12:47:15.808Z",
+  "generatedAt": "2026-08-27T23:48:03.331Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -370,19 +370,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 374228312,
-        "name": "v41.3.0",
+        "id": 377861365,
+        "name": "v41.4.0",
         "prerelease": false,
-        "publishedAt": "2026-08-21T07:21:36Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.3.0",
-        "version": "v41.3.0"
+        "publishedAt": "2026-08-27T13:52:41Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.4.0",
+        "version": "v41.4.0"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-08-07T13:36:40Z",
-        "version": "v41.2.0"
+        "publishedAt": "2026-08-21T07:21:36Z",
+        "version": "v41.3.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "traefik/traefik-helm-chart",
       "tags": [
         "helm-chart",
@@ -647,19 +647,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 355218684,
-        "name": "Istio 1.29.6",
+        "id": 377818094,
+        "name": "Istio 1.29.7",
         "prerelease": false,
-        "publishedAt": "2026-07-16T16:51:06Z",
-        "url": "https://github.com/istio/istio/releases/tag/1.29.6",
-        "version": "1.29.6"
+        "publishedAt": "2026-08-27T15:11:19Z",
+        "url": "https://github.com/istio/istio/releases/tag/1.29.7",
+        "version": "1.29.7"
       },
       "name": "Istio",
       "previous": {
-        "publishedAt": "2026-07-16T16:50:56Z",
-        "version": "1.30.3"
+        "publishedAt": "2026-08-27T15:10:20Z",
+        "version": "1.30.4"
       },
-      "releaseCount": 9,
+      "releaseCount": 11,
       "repository": "istio/istio",
       "tags": [
         "service-mesh",
@@ -903,19 +903,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 351274984,
-        "name": "v3.23.0",
+        "id": 378149694,
+        "name": "v3.23.1",
         "prerelease": false,
-        "publishedAt": "2026-07-09T03:05:48Z",
-        "url": "https://github.com/open-policy-agent/gatekeeper/releases/tag/v3.23.0",
-        "version": "v3.23.0"
+        "publishedAt": "2026-08-27T22:03:10Z",
+        "url": "https://github.com/open-policy-agent/gatekeeper/releases/tag/v3.23.1",
+        "version": "v3.23.1"
       },
       "name": "Gatekeeper",
       "previous": {
-        "publishedAt": "2026-04-27T21:42:53Z",
-        "version": "v3.22.2"
+        "publishedAt": "2026-07-09T03:05:48Z",
+        "version": "v3.23.0"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "open-policy-agent/gatekeeper",
       "tags": [
         "kubernetes",
@@ -1315,19 +1315,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372606068,
-        "name": "openbao-0.29.2",
+        "id": 377932721,
+        "name": "openbao-0.29.3",
         "prerelease": false,
-        "publishedAt": "2026-08-18T19:55:55Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.2",
-        "version": "openbao-0.29.2"
+        "publishedAt": "2026-08-27T15:28:10Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.3",
+        "version": "openbao-0.29.3"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-08-12T19:13:18Z",
-        "version": "openbao-0.29.1"
+        "publishedAt": "2026-08-18T19:55:55Z",
+        "version": "openbao-0.29.2"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "openbao/openbao-helm",
       "tags": [
         "secrets",
@@ -1348,19 +1348,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 366120009,
-        "name": "v3.6.15",
+        "id": 378143006,
+        "name": "v3.6.16",
         "prerelease": false,
-        "publishedAt": "2026-08-06T09:59:23Z",
-        "url": "https://github.com/grafana/loki/releases/tag/v3.6.15",
-        "version": "v3.6.15"
+        "publishedAt": "2026-08-27T21:54:42Z",
+        "url": "https://github.com/grafana/loki/releases/tag/v3.6.16",
+        "version": "v3.6.16"
       },
       "name": "Loki",
       "previous": {
-        "publishedAt": "2026-08-06T09:42:29Z",
-        "version": "v3.7.6"
+        "publishedAt": "2026-08-27T20:20:03Z",
+        "version": "v3.7.7"
       },
-      "releaseCount": 12,
+      "releaseCount": 14,
       "repository": "grafana/loki",
       "tags": [
         "logs"
@@ -1504,17 +1504,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377808956,
-        "name": "alloy-1.12.1",
+        "id": 377923280,
+        "name": "alloy-operator-0.7.1",
         "prerelease": false,
-        "publishedAt": "2026-08-27T12:35:53Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.12.1",
-        "version": "alloy-1.12.1"
+        "publishedAt": "2026-08-27T15:14:32Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.7.1",
+        "version": "alloy-operator-0.7.1"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-25T23:22:31Z",
-        "version": "k8s-monitoring-4.5.0"
+        "publishedAt": "2026-08-27T12:35:53Z",
+        "version": "alloy-1.12.1"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377683401,
-        "name": "tempo-distributed-3.5.1",
+        "id": 378180667,
+        "name": "loki-18.11.4",
         "prerelease": false,
-        "publishedAt": "2026-08-27T08:55:05Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.5.1",
-        "version": "tempo-distributed-3.5.1"
+        "publishedAt": "2026-08-27T23:36:59Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.4",
+        "version": "loki-18.11.4"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-27T08:48:50Z",
-        "version": "tempo-distributed-3.5.0"
+        "publishedAt": "2026-08-27T08:55:05Z",
+        "version": "tempo-distributed-3.5.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1626,19 +1626,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 357001119,
-        "name": "grafana-clickhouse-datasource v4.20.0",
+        "id": 378008326,
+        "name": "v4.21.1",
         "prerelease": false,
-        "publishedAt": "2026-07-20T21:23:55Z",
-        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.20.0",
-        "version": "v4.20.0"
+        "publishedAt": "2026-08-27T17:36:19Z",
+        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.21.1",
+        "version": "v4.21.1"
       },
       "name": "ClickHouse Datasource",
       "previous": {
-        "publishedAt": "2026-07-07T21:17:24Z",
-        "version": "v4.19.0"
+        "publishedAt": "2026-08-27T14:09:23Z",
+        "version": "v4.21.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 12,
       "repository": "grafana/clickhouse-datasource",
       "tags": [
         "clickhouse",
@@ -1881,19 +1881,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 330160157,
-        "name": "Release 3.19.1",
+        "id": 378115747,
+        "name": "Release 3.20.0",
         "prerelease": false,
-        "publishedAt": "2026-05-27T12:27:23Z",
-        "url": "https://github.com/EnterpriseDB/barman/releases/tag/release/3.19.1",
-        "version": "release/3.19.1"
+        "publishedAt": "2026-08-27T20:49:24Z",
+        "url": "https://github.com/EnterpriseDB/barman/releases/tag/release/3.20.0",
+        "version": "release/3.20.0"
       },
       "name": "Barman",
       "previous": {
-        "publishedAt": "2026-05-20T14:31:00Z",
-        "version": "release/3.19.0"
+        "publishedAt": "2026-05-27T12:27:23Z",
+        "version": "release/3.19.1"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "EnterpriseDB/barman",
       "tags": [
         "postgresql",
@@ -2237,19 +2237,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 368071274,
-        "name": "v0.117.0",
+        "id": 378093156,
+        "name": "v0.118.0",
         "prerelease": false,
-        "publishedAt": "2026-08-10T16:54:43Z",
-        "url": "https://github.com/anchore/grype/releases/tag/v0.117.0",
-        "version": "v0.117.0"
+        "publishedAt": "2026-08-27T20:04:42Z",
+        "url": "https://github.com/anchore/grype/releases/tag/v0.118.0",
+        "version": "v0.118.0"
       },
       "name": "Grype",
       "previous": {
-        "publishedAt": "2026-07-28T21:45:14Z",
-        "version": "v0.116.1"
+        "publishedAt": "2026-08-10T16:54:43Z",
+        "version": "v0.117.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "anchore/grype",
       "tags": [
         "scanning",
@@ -2268,19 +2268,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 367998216,
-        "name": "v1.51.0",
+        "id": 377988884,
+        "name": "v1.51.1",
         "prerelease": false,
-        "publishedAt": "2026-08-10T14:55:18Z",
-        "url": "https://github.com/anchore/syft/releases/tag/v1.51.0",
-        "version": "v1.51.0"
+        "publishedAt": "2026-08-27T17:01:15Z",
+        "url": "https://github.com/anchore/syft/releases/tag/v1.51.1",
+        "version": "v1.51.1"
       },
       "name": "Syft",
       "previous": {
-        "publishedAt": "2026-07-28T17:44:08Z",
-        "version": "v1.50.0"
+        "publishedAt": "2026-08-10T14:55:18Z",
+        "version": "v1.51.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "anchore/syft",
       "tags": [
         "sbom",
@@ -2416,19 +2416,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 374032331,
-        "name": "v0.1.54",
+        "id": 378076118,
+        "name": "v0.1.56",
         "prerelease": false,
-        "publishedAt": "2026-08-20T21:10:01Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.54",
-        "version": "v0.1.54"
+        "publishedAt": "2026-08-27T19:35:42Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.56",
+        "version": "v0.1.56"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-08-13T20:09:31Z",
-        "version": "v0.1.53"
+        "publishedAt": "2026-08-27T18:48:25Z",
+        "version": "v0.1.55"
       },
-      "releaseCount": 13,
+      "releaseCount": 15,
       "repository": "pgdogdev/pgdog",
       "tags": [
         "postgresql",

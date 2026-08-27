@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-07T02:08:42.146Z",
+  "generatedAt": "2026-08-27T23:47:38.871Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378143006,
+      "name": "v3.6.16",
+      "notes": "## [3.6.16](https://github.com/grafana/loki/compare/v3.6.15...v3.6.16) (2026-08-27)\n\n\n### Features\n\n* Add flag to ignore missing chunks during deletion of logs with line filter [release-3.6.x] ([#24232](https://github.com/grafana/loki/issues/24232)) ([b87159f](https://github.com/grafana/loki/commit/b87159fa8cd7f93e2445e48e0c0409b403e56db7))\n\n\n### Bug Fixes\n\n* **security/UNKNOWN/:** Update module go.etcd.io/etcd/client/pkg/v3 to v3.5.33 [SECURITY] (release-3.6.x) ([#24062](https://github.com/grafana/loki/issues/24062)) ([bf4b367](https://github.com/grafana/loki/commit/bf4b3670ff3e2eb9f29183d6dfb4d729b83f62ec))\n* **storage:** Pre-compute SHA-256 to avoid aws-chunked on PutObject [release-3.6.x] ([#24214](https://github.com/grafana/loki/issues/24214)) ([0a29895](https://github.com/grafana/loki/commit/0a29895fe461acbf848376a451896d9f8a542b3d))",
+      "prerelease": false,
+      "publishedAt": "2026-08-27T21:54:42Z",
+      "url": "https://github.com/grafana/loki/releases/tag/v3.6.16",
+      "version": "v3.6.16"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378094533,
+      "name": "v3.7.7",
+      "notes": "## [3.7.7](https://github.com/grafana/loki/compare/v3.7.6...v3.7.7) (2026-08-27)\n\n\n### Features\n\n* Add flag to ignore missing chunks during deletion of logs with line filter [release-3.7.x] ([#24233](https://github.com/grafana/loki/issues/24233)) ([7a40404](https://github.com/grafana/loki/commit/7a40404f32b3e6464c9cfc6cc7dd75a40f3931da))\n\n\n### Bug Fixes\n\n* **security/UNKNOWN/:** Update module github.com/containerd/containerd/v2 to v2.2.5 [SECURITY] (release-3.7.x) ([#24097](https://github.com/grafana/loki/issues/24097)) ([07cd1f0](https://github.com/grafana/loki/commit/07cd1f0a43d5f742525249aa21f0e47b9d51c4ff))\n* **security/UNKNOWN/:** Update module go.etcd.io/etcd/client/pkg/v3 to v3.6.14 [SECURITY] (release-3.7.x) ([#24061](https://github.com/grafana/loki/issues/24061)) ([9d1c9ee](https://github.com/grafana/loki/commit/9d1c9ee0164c020f8125046a7a9d67986c59320b))\n* **security/UNKNOWN/:** Update module golang.org/x/mod to v0.40.0 [SECURITY] (release-3.7.x) ([#23962](https://github.com/grafana/loki/issues/23962)) ([1d5e027](https://github.com/grafana/loki/commit/1d5e027b64370c19abf1495928fd0b89363680d7))\n* **storage:** Pre-compute SHA-256 to avoid aws-chunked on PutObject [release-3.7.x] ([#24215](https://github.com/grafana/loki/issues/24215)) ([3d6f245](https://github.com/grafana/loki/commit/3d6f245b74c52841e8e2ccc6e7883962bfdec7c0))",
+      "prerelease": false,
+      "publishedAt": "2026-08-27T20:20:03Z",
+      "url": "https://github.com/grafana/loki/releases/tag/v3.7.7",
+      "version": "v3.7.7"
+    },
     {
       "channel": "stable",
       "draft": false,
