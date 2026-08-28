@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T23:48:03.331Z",
+  "generatedAt": "2026-08-28T14:20:58.764Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -675,19 +675,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 371044887,
-        "name": "v1.9.0",
+        "id": 378442796,
+        "name": "v1.9.1",
         "prerelease": false,
-        "publishedAt": "2026-08-15T12:31:24Z",
-        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.9.0",
-        "version": "v1.9.0"
+        "publishedAt": "2026-08-28T11:34:36Z",
+        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.9.1",
+        "version": "v1.9.1"
       },
       "name": "Envoy Gateway",
       "previous": {
-        "publishedAt": "2026-07-22T18:59:16Z",
-        "version": "v1.8.3"
+        "publishedAt": "2026-08-28T11:03:57Z",
+        "version": "v1.8.4"
       },
-      "releaseCount": 10,
+      "releaseCount": 12,
       "repository": "envoyproxy/gateway",
       "tags": [
         "gateway",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 378180667,
-        "name": "loki-18.11.4",
+        "id": 378480409,
+        "name": "loki-18.11.6",
         "prerelease": false,
-        "publishedAt": "2026-08-27T23:36:59Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.4",
-        "version": "loki-18.11.4"
+        "publishedAt": "2026-08-28T12:48:57Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.6",
+        "version": "loki-18.11.6"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-27T08:55:05Z",
-        "version": "tempo-distributed-3.5.1"
+        "publishedAt": "2026-08-28T11:03:40Z",
+        "version": "loki-18.11.5"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

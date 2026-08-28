@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-27T23:47:42.581Z",
+  "generatedAt": "2026-08-28T14:20:42.039Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378480409,
+      "name": "loki-18.11.6",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Don't render a memcached PDB with no budget by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/768\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.11.5...loki-18.11.6",
+      "prerelease": false,
+      "publishedAt": "2026-08-28T12:48:57Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.6",
+      "version": "loki-18.11.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378428654,
+      "name": "loki-18.11.5",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v0.4.12 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/772\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.11.4...loki-18.11.5",
+      "prerelease": false,
+      "publishedAt": "2026-08-28T11:03:40Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.5",
+      "version": "loki-18.11.5"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-08-19T21:09:46Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.9.1",
       "version": "loki-18.9.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 372331508,
-      "name": "grafana-12.11.0",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.2.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/745\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.2.2...grafana-12.11.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-18T12:33:22Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-12.11.0",
-      "version": "grafana-12.11.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 372328675,
-      "name": "tempo-distributed-3.2.2",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Update `query_backend_after` default value to `15m` by @z0rc in https://github.com/grafana-community/helm-charts/pull/708\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.2.1...tempo-distributed-3.2.2",
-      "prerelease": false,
-      "publishedAt": "2026-08-18T12:28:54Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.2.2",
-      "version": "tempo-distributed-3.2.2"
     }
   ],
   "schemaVersion": 1,

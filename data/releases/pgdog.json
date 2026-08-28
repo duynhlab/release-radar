@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-27T23:48:02.757Z",
+  "generatedAt": "2026-08-28T14:20:58.175Z",
   "releases": [
     {
       "channel": "stable",
       "draft": false,
       "id": 378076118,
       "name": "v0.1.56",
-      "notes": "## Bug fixes\r\n- Don't set the thread stack size to 32MB by default and don't warn the user about a deprecated setting at runtime (`query_parser_engine`).",
+      "notes": "Hot fix for [v0.1.55](https://github.com/pgdogdev/pgdog/releases/tag/v0.1.55).\r\n\r\n## Bug fixes\r\n- Don't set the thread stack size to 32MB by default and don't warn the user about a deprecated setting at runtime (`query_parser_engine`).",
       "prerelease": false,
       "publishedAt": "2026-08-27T19:35:42Z",
       "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.56",
