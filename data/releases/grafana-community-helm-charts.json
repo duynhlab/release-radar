@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-08-28T14:20:42.039Z",
+  "generatedAt": "2026-08-29T09:02:15.302Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378857892,
+      "name": "grafana-mcp-0.22.0",
+      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v1.3.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/776\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.11.7...grafana-mcp-0.22.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-29T03:06:23Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.22.0",
+      "version": "grafana-mcp-0.22.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378773223,
+      "name": "loki-18.11.7",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update docker.io/kiwigrid/k8s-sidecar Docker tag to v2.10.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/775\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.0.1...loki-18.11.7",
+      "prerelease": false,
+      "publishedAt": "2026-08-28T21:26:04Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.7",
+      "version": "loki-18.11.7"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 378770133,
+      "name": "grafana-13.0.1",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Update quay.io/kiwigrid/k8s-sidecar Docker tag to v2.10.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/774\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.11.6...grafana-13.0.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-28T21:18:17Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.0.1",
+      "version": "grafana-13.0.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-08-20T08:51:45Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.10.1",
       "version": "loki-18.10.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 373531841,
-      "name": "loki-18.10.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] make publishNotReadyAddresses overridable on service helper by @abhilashasharmagupta in https://github.com/grafana-community/helm-charts/pull/747\n\n## New Contributors\n* @abhilashasharmagupta made their first contribution in https://github.com/grafana-community/helm-charts/pull/747\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-12.11.1...loki-18.10.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-20T06:39:41Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.10.0",
-      "version": "loki-18.10.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 373354018,
-      "name": "grafana-12.11.1",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Omit replicas on StatefulSet when autoscaling is enabled by @gavinwoolley in https://github.com/grafana-community/helm-charts/pull/746\n\n## New Contributors\n* @gavinwoolley made their first contribution in https://github.com/grafana-community/helm-charts/pull/746\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.9.1...grafana-12.11.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-19T21:12:01Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-12.11.1",
-      "version": "grafana-12.11.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 373352581,
-      "name": "loki-18.9.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Omit null fields in memcached PDB rendering across Helm versions by @jkroepke with @Copilot in https://github.com/grafana-community/helm-charts/pull/723\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-12.11.0...loki-18.9.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-19T21:09:46Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.9.1",
-      "version": "loki-18.9.1"
     }
   ],
   "schemaVersion": 1,
