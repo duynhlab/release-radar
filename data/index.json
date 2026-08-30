@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T09:02:32.684Z",
+  "generatedAt": "2026-08-30T18:04:55.563Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 374877173,
-        "name": "victoria-metrics-k8s-stack-0.91.2",
+        "id": 379356568,
+        "name": "victoria-metrics-estimator-0.0.0",
         "prerelease": false,
-        "publishedAt": "2026-08-22T08:41:49Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.91.2",
-        "version": "victoria-metrics-k8s-stack-0.91.2"
+        "publishedAt": "2026-08-30T17:48:54Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-estimator-0.0.0",
+        "version": "victoria-metrics-estimator-0.0.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-21T10:49:59Z",
-        "version": "victoria-metrics-k8s-stack-0.91.1"
+        "publishedAt": "2026-08-30T17:48:52Z",
+        "version": "victoria-metrics-common-0.4.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -2449,19 +2449,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372966857,
-        "name": "v1.9.0",
+        "id": 379214408,
+        "name": "v1.7.1",
         "prerelease": false,
-        "publishedAt": "2026-08-19T10:34:21Z",
-        "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.9.0",
-        "version": "v1.9.0"
+        "publishedAt": "2026-08-30T16:57:34Z",
+        "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.7.1",
+        "version": "v1.7.1"
       },
       "name": "Temporal Worker Controller",
       "previous": {
-        "publishedAt": "2026-07-30T19:21:06Z",
-        "version": "v1.8.1"
+        "publishedAt": "2026-08-19T10:34:21Z",
+        "version": "v1.9.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "temporalio/temporal-worker-controller",
       "tags": [
         "workflow",

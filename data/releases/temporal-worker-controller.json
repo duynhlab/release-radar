@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-24T08:09:12.902Z",
+  "generatedAt": "2026-08-30T18:04:55.557Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 379214408,
+      "name": "v1.7.1",
+      "notes": "### What changed\r\n\r\n- Make controller more resilient to inconsistent Temporal state, delay requeue after Temporal ResourceExhausted, improve logs (https://github.com/temporalio/temporal-worker-controller/pull/554)\r\n  - Get version status directly from version summaries `Status` field instead of deducing the status from routing config. Log warning if any version's `Status` field is inconsistent with routing config.\r\n- fix(controller): DescribeVersion on NotRegistered Versions to prevent premature scaledown of said versions  (https://github.com/temporalio/temporal-worker-controller/pull/556)\r\n  - Verify the status `NotRegistered` Worker Versions with `DescribeVersion` before scaling down their Kubernetes Deployments\r\n\r\n**Full Changelog**: https://github.com/temporalio/temporal-worker-controller/compare/v1.7.0...v1.7.1",
+      "prerelease": false,
+      "publishedAt": "2026-08-30T16:57:34Z",
+      "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.7.1",
+      "version": "v1.7.1"
+    },
     {
       "channel": "stable",
       "draft": false,

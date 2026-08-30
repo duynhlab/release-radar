@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-22T14:37:10.405Z",
+  "generatedAt": "2026-08-30T18:04:20.677Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 379356568,
+      "name": "victoria-metrics-estimator-0.0.0",
+      "notes": "A Helm chart for VictoriaMetrics vmestimator",
+      "prerelease": false,
+      "publishedAt": "2026-08-30T17:48:54Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-estimator-0.0.0",
+      "version": "victoria-metrics-estimator-0.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 379356563,
+      "name": "victoria-metrics-common-0.4.0",
+      "notes": "# Release notes for version 0.4.0\n\n**Release date:** 30 Aug 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0)\n\n- **breaking (chart-internal API)**: `vm.operator.kind` no longer guesses a default resource-name prefix for an appKey that isn't already `vm`/`vl`/`vt`-prefixed; it now requires an explicit `kindOverride` and fails otherwise. `vm.managed.fullname` delegates to `vm.operator.kind` instead of duplicating its own prefix logic, so it gains the same `kindOverride` support and fail-fast behavior. All consuming charts have been updated to pass `kindOverride` where needed.",
+      "prerelease": false,
+      "publishedAt": "2026-08-30T17:48:52Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-common-0.4.0",
+      "version": "victoria-metrics-common-0.4.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-08-05T13:21:26Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-gateway-0.36.0",
       "version": "victoria-metrics-gateway-0.36.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 365542414,
-      "name": "victoria-metrics-distributed-0.43.0",
-      "notes": "# Release notes for version 0.43.0\n\n**Release date:** 05 Aug 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.149.0](https://img.shields.io/badge/v1.149.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11490) ![VM Operator: 0.59.3](https://img.shields.io/badge/VM_Operator-0.59.3-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230593)\n\n- bump version of VM components to [v1.149.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.149.0)",
-      "prerelease": false,
-      "publishedAt": "2026-08-05T13:21:24Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-distributed-0.43.0",
-      "version": "victoria-metrics-distributed-0.43.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 365542390,
-      "name": "victoria-metrics-cluster-0.48.0",
-      "notes": "# Release notes for version 0.48.0\n\n**Release date:** 05 Aug 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.149.0](https://img.shields.io/badge/v1.149.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11490)\n\n- bump version of VM components to [v1.149.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.149.0)\n- added network policy configuration support. See [#2977](https://github.com/VictoriaMetrics/helm-charts/issues/2977)",
-      "prerelease": false,
-      "publishedAt": "2026-08-05T13:21:22Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-cluster-0.48.0",
-      "version": "victoria-metrics-cluster-0.48.0"
     }
   ],
   "schemaVersion": 1,
