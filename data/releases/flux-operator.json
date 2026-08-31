@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-21T03:54:10.398Z",
+  "generatedAt": "2026-08-31T20:04:10.971Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 379964102,
+      "name": "v0.59.0",
+      "notes": "## What's Changed\n* olm: Extend support to OpenShift 4.22 by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1001\n* web: compute inventory status using `healthCheckExprs` by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1005\n* mcp: migrate to stateless MCP Server (spec `2026-07-28`) by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1006\n* mcp: add field selection to `get_kubernetes_resources` tool by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1008\n* mcp: advertise server instructions to MCP clients by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1009\n* mcp: Add `diff_kubernetes_manifest` tool  by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1010\n* mcp: remove dead code for enabling specific tools by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1013\n* operator: honor reconcile   disabled annotation on in-cluster objects by @dgunzy in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1011\n* mcp: consolidate reconcile requests under `reconcile_flux_resource` tool by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1015\n* mcp: extend `get_kubernetes_logs` tool to workloads  by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1017\n* mcp: add `get_kubernetes_events` tool  by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1019\n* mcp: add `patch_kubernetes_resource` tool by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1020\n* mcp:  `search_flux_docs` with fuzzy search over chunked index by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1021\n* build(deps): bump kubectl from v1.36.3 to v1.36.4 in /cmd/cli in the cli-tools group by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1012\n* build(deps): bump the actions group across 1 directory with 3 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1007\n* Release v0.59.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1022\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.58.1...v0.59.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-31T18:23:36Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.59.0",
+      "version": "v0.59.0"
+    },
     {
       "channel": "stable",
       "draft": false,

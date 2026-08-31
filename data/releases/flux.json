@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-07T15:09:12.595Z",
+  "generatedAt": "2026-08-31T20:03:52.794Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 379920857,
+      "name": "v2.9.5",
+      "notes": "## Highlights\n\nFlux v2.9.5 is a patch release that moves helm-controller and source-controller back to upstream Helm, now at v4.2.4, dropping the temporary Flux fork. It hardens the handling of kubeconfig Secrets in helm-controller and kustomize-controller, which now reject kubeconfigs referencing files on the local filesystem and require credentials and certificates to be embedded inline. It also stops kustomize-controller from leaving behind the temporary directories of a previous process that exited without running its cleanup, and fixes a crash in post-build substitution where a substring expression with a negative length, e.g. `${VAR:2:-1}`, panicked instead of counting back from the end of the string like Bash does. Across all controllers and the CLI, the fluxcd/pkg dependencies have been updated, bringing Kubernetes to 1.36.4. Users are encouraged to upgrade for the best experience.\n\nℹ️ Please follow the [Upgrade Procedure for Flux v2.7+](https://github.com/fluxcd/flux2/discussions/5572) for a smooth upgrade from Flux v2.6 to the latest version.\n\nFixes:\n- Validate kubeconfigs from `.spec.kubeConfig` Secrets, rejecting local file references in `certificate-authority`, `tokenFile`, `client-certificate` and `client-key`; credentials and certificates must be embedded inline (helm-controller, kustomize-controller)\n- Purge temporary directories at startup (kustomize-controller)\n- Fix panic on negative-length substring expressions in post-build substitution (kustomize-controller, flux CLI)\n\nImprovements:\n- Move back to upstream Helm v4.2.4, dropping the Flux fork (helm-controller, source-controller)\n- Update fluxcd/pkg dependencies, which bring Kubernetes to 1.36.4 (all controllers, flux CLI)\n\n## Components changelog\n\n- source-controller [v1.9.5](https://github.com/fluxcd/source-controller/blob/v1.9.5/CHANGELOG.md)\n- source-watcher [v2.2.4](https://github.com/fluxcd/source-watcher/blob/v2.2.4/CHANGELOG.md)\n- kustomize-controller [v1.9.5](https://github.com/fluxcd/kustomize-controller/blob/v1.9.5/CHANGELOG.md)\n- helm-controller [v1.6.4](https://github.com/fluxcd/helm-controller/blob/v1.6.4/CHANGELOG.md)\n- notification-controller [v1.9.4](https://github.com/fluxcd/notification-controller/blob/v1.9.4/CHANGELOG.md)\n- image-reflector-controller [v1.2.5](https://github.com/fluxcd/image-reflector-controller/blob/v1.2.5/CHANGELOG.md)\n- image-automation-controller [v1.2.5](https://github.com/fluxcd/image-automation-controller/blob/v1.2.5/CHANGELOG.md)\n\n## CLI changelog\n\n* Update fluxcd/pkg dependencies by @fluxcdbot in https://github.com/fluxcd/flux2/pull/6046\n* Update fluxcd/pkg dependencies by @fluxcdbot in https://github.com/fluxcd/flux2/pull/6048\n* Update toolkit components by @fluxcdbot in https://github.com/fluxcd/flux2/pull/6049\n\n**Full Changelog**: https://github.com/fluxcd/flux2/compare/v2.9.4...v2.9.5",
+      "prerelease": false,
+      "publishedAt": "2026-08-31T17:05:02Z",
+      "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.5",
+      "version": "v2.9.5"
+    },
     {
       "channel": "stable",
       "draft": false,
