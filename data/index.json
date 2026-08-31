@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T18:04:55.563Z",
+  "generatedAt": "2026-08-31T08:39:03.858Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 379356568,
-        "name": "victoria-metrics-estimator-0.0.0",
+        "id": 379570564,
+        "name": "victoria-metrics-anomaly-1.12.17",
         "prerelease": false,
-        "publishedAt": "2026-08-30T17:48:54Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-estimator-0.0.0",
-        "version": "victoria-metrics-estimator-0.0.0"
+        "publishedAt": "2026-08-31T07:19:39Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-anomaly-1.12.17",
+        "version": "victoria-metrics-anomaly-1.12.17"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-30T17:48:52Z",
-        "version": "victoria-metrics-common-0.4.0"
+        "publishedAt": "2026-08-31T06:42:07Z",
+        "version": "victoria-metrics-operator-0.67.3"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
