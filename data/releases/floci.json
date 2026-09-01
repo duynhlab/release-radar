@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-01T07:49:22.555Z",
+  "generatedAt": "2026-09-01T17:49:42.591Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 380487636,
+      "name": "2.0.1",
+      "notes": "## [2.0.1](https://github.com/floci-io/floci/compare/2.0.0...2.0.1) (2026-09-01)\n\n\n### Bug Fixes\n\n* **rds-data:** fixing empty array response from statement ([#2880](https://github.com/floci-io/floci/issues/2880)) ([46283f3](https://github.com/floci-io/floci/commit/46283f3209275dde55ede37ce6d889b5d296d3c5))",
+      "prerelease": false,
+      "publishedAt": "2026-09-01T12:43:50Z",
+      "url": "https://github.com/floci-io/floci/releases/tag/2.0.1",
+      "version": "2.0.1"
+    },
     {
       "channel": "stable",
       "draft": false,

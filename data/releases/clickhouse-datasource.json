@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-27T23:47:45.140Z",
+  "generatedAt": "2026-09-01T17:49:49.220Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 380651201,
+      "name": "v4.21.2",
+      "notes": "## [4.21.2](https://github.com/grafana/clickhouse-datasource/compare/v4.21.1...v4.21.2) (2026-09-01)\n\n\n### 🐛 Bug Fixes\n\n* **autocomplete:** show query macros instead of ClickHouse internal functions ([#2153](https://github.com/grafana/clickhouse-datasource/issues/2153)) ([4b1f085](https://github.com/grafana/clickhouse-datasource/commit/4b1f085bc3c340663c0bd63d48fbd83301b9bb7e))",
+      "prerelease": false,
+      "publishedAt": "2026-09-01T16:11:50Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.21.2",
+      "version": "v4.21.2"
+    },
     {
       "channel": "stable",
       "draft": false,
