@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T20:04:42.036Z",
+  "generatedAt": "2026-09-01T07:49:45.686Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -398,19 +398,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377284485,
-        "name": "v0.91.2",
+        "id": 380045000,
+        "name": "v0.92.0",
         "prerelease": false,
-        "publishedAt": "2026-08-26T17:03:03Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.91.2",
-        "version": "v0.91.2"
+        "publishedAt": "2026-08-31T20:53:04Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.92.0",
+        "version": "v0.92.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-08-25T20:18:11Z",
-        "version": "v0.91.1"
+        "publishedAt": "2026-08-26T17:03:03Z",
+        "version": "v0.91.2"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "charmbracelet/crush",
       "tags": [
         "coding-agent",
@@ -1286,19 +1286,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372106134,
-        "name": "1.7.0",
+        "id": 380223901,
+        "name": "2.0.0",
         "prerelease": false,
-        "publishedAt": "2026-08-18T05:24:40Z",
-        "url": "https://github.com/floci-io/floci/releases/tag/1.7.0",
-        "version": "1.7.0"
+        "publishedAt": "2026-09-01T05:04:27Z",
+        "url": "https://github.com/floci-io/floci/releases/tag/2.0.0",
+        "version": "2.0.0"
       },
       "name": "Floci",
       "previous": {
-        "publishedAt": "2026-08-06T05:32:56Z",
-        "version": "1.6.0"
+        "publishedAt": "2026-08-18T05:24:40Z",
+        "version": "1.7.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "floci-io/floci",
       "tags": [
         "aws",
