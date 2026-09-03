@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-02T07:06:43.684Z",
+  "generatedAt": "2026-09-03T07:10:42.111Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 381578945,
+      "name": "v1.10.1",
+      "notes": "## What's Changed\r\n* fix(controller): skip ClusterConnection watch when namespace-scoped by @aldredb in https://github.com/temporalio/temporal-worker-controller/pull/567\r\n\r\n\r\n**Full Changelog**: https://github.com/temporalio/temporal-worker-controller/compare/v1.10.0...v1.10.1",
+      "prerelease": false,
+      "publishedAt": "2026-09-02T21:15:20Z",
+      "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.10.1",
+      "version": "v1.10.1"
+    },
     {
       "channel": "stable",
       "draft": false,

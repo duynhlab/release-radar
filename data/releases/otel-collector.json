@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-18T02:51:42.156Z",
+  "generatedAt": "2026-09-03T07:09:55.327Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 381617813,
+      "name": "v0.160.0",
+      "notes": "Check the [v0.160.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.160.0) and the [v0.160.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.160.0) for changelogs on specific components.\n\n\n## Changelog\n* 5c31bfdc7e8a68aed5e173673c6946299a694ee6 Update version to 0.160.0 (#1635)\n* 2bddbca9808dca72dc039cb408716547f0b014b9 Update golang:1.27-alpine3.23 Docker digest to d9e2f2f (#1631)\n* 92ff133111af4f1f63a8098880b35b780be1dc01 Update OpenTelemetry Collector Components (#1632)\n* 797d0a1e01475967232251ca0738c124b9b27a46 fix(ci): don't fail Windows docker-tests on collector stderr output (#1634)",
+      "prerelease": false,
+      "publishedAt": "2026-09-02T22:47:58Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.160.0",
+      "version": "v0.160.0"
+    },
     {
       "channel": "stable",
       "draft": false,

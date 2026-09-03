@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T17:54:47.056Z",
+  "generatedAt": "2026-09-03T07:10:42.117Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -312,19 +312,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372032345,
-        "name": "v0.159.0",
+        "id": 381617813,
+        "name": "v0.160.0",
         "prerelease": false,
-        "publishedAt": "2026-08-18T01:09:57Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.159.0",
-        "version": "v0.159.0"
+        "publishedAt": "2026-09-02T22:47:58Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.160.0",
+        "version": "v0.160.0"
       },
       "name": "OpenTelemetry Collector",
       "previous": {
-        "publishedAt": "2026-08-04T18:54:05Z",
-        "version": "v0.158.0"
+        "publishedAt": "2026-08-18T01:09:57Z",
+        "version": "v0.159.0"
       },
-      "releaseCount": 6,
+      "releaseCount": 7,
       "repository": "open-telemetry/opentelemetry-collector-releases",
       "tags": [
         "metrics",
@@ -2449,19 +2449,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 380946484,
-        "name": "v1.10.0",
+        "id": 381578945,
+        "name": "v1.10.1",
         "prerelease": false,
-        "publishedAt": "2026-09-02T02:51:15Z",
-        "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.10.0",
-        "version": "v1.10.0"
+        "publishedAt": "2026-09-02T21:15:20Z",
+        "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.10.1",
+        "version": "v1.10.1"
       },
       "name": "Temporal Worker Controller",
       "previous": {
-        "publishedAt": "2026-08-30T16:57:34Z",
-        "version": "v1.7.1"
+        "publishedAt": "2026-09-02T02:51:15Z",
+        "version": "v1.10.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "temporalio/temporal-worker-controller",
       "tags": [
         "workflow",
