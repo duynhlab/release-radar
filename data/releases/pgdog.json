@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-28T14:20:58.175Z",
+  "generatedAt": "2026-09-03T17:51:39.227Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 382144026,
+      "name": "v0.1.57",
+      "notes": "## Performance\r\n- SCRAM client authentication (which uses expensive crypto) is now pushed to background threads, which will avoid blocking other clients from running queries during connection storms\r\n\r\n\r\n## Features\r\n- Add `listen_backlog` configuration setting to control how many _new_,  _concurrent_, TCP connections PgDog will allow until they are silently rejected @ryderhwang\r\n- `DISCARD` now clears client's prepared statement cache, advisory locks & notification channels @murex971\r\n- `CREATE TEMP TABLE` now pins the client connection until the table is dropped or the client disconnects @sgrif \r\n- Count and show number of idle-in-transaction timeouts as a pool statistic @murex971 \r\n- Add support for `SCRAM-SHA-256-PLUS` client authentication @abnegate\r\n- Add `banned` gauge to OpenMetrics and OTEL indicating which database is currently blocked from reads by the load balancer @ChrisJr404 \r\n\r\n\r\n## Bugs\r\n- Fix cross-shard `variance()` crash when empty/null results returned by shards @sgrif \r\n- Prepared statements prepared via simple protocol now respect `prepared_statements_ttl` @jkaczman \r\n\r\n## Code quality\r\n- Refactor resharding task queue to use more types @meskill \r\n- Clean up resharding logging @levkk \r\n- Refactor the query engine code to support cross-shard subqueries and CTEs @jkaczman \r\n\r\n\r\n## New Contributors\r\n\r\n* @ryderhwang made their first contribution in https://github.com/pgdogdev/pgdog/pull/1452\r\n* @abnegate made their first contribution in https://github.com/pgdogdev/pgdog/pull/1457\r\n* @mvidaurre made their first contribution in https://github.com/pgdogdev/pgdog/pull/1483\r\n* @ChrisJr404 made their first contribution in https://github.com/pgdogdev/pgdog/pull/1443\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.56...v0.1.57",
+      "prerelease": false,
+      "publishedAt": "2026-09-03T15:44:14Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.57",
+      "version": "v0.1.57"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-26T03:18:34.316Z",
+  "generatedAt": "2026-09-03T17:51:37.864Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 382040376,
+      "name": "Release v1.16.11",
+      "notes": "## bootc 1.16.11\r\n\r\n## What's Changed\r\n* podstorage: Skip `podman image exists` for non-storage transports by @yeetypete in https://github.com/bootc-dev/bootc/pull/2410\r\n* Update composefs-rs to v0.9.0 tag by @cgwalters in https://github.com/bootc-dev/bootc/pull/2393\r\n* Unshare fix for boot.automount by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2411\r\n* podstorage: Add early check for missing podman binary by @HarshwardhanPatil07 in https://github.com/bootc-dev/bootc/pull/2386\r\n* Add eln-11 to os-image-map.json by @jeckersb in https://github.com/bootc-dev/bootc/pull/2413\r\n* fix(deps): update bcvk-qemu digest to 9be6847 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2404\r\n* tmt: Introduce `skip_for_ostree` by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2416\r\n* composefs/status: Detect BLS layout on non-EFI systems by @dustinkirkland in https://github.com/bootc-dev/bootc/pull/2376\r\n* docs: Include best practices and recommendations for LUKS by @cgwalters in https://github.com/bootc-dev/bootc/pull/2390\r\n* composefs: Fix inverted rollback queued detection by @andrewdunndev in https://github.com/bootc-dev/bootc/pull/2406\r\n* test-install: Fix chunkah hang by removing host systemd/dbus leak, without breaking journal logging by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2392\r\n* composefs.md: Move digest and erofs formats into blockers by @cgwalters in https://github.com/bootc-dev/bootc/pull/2424\r\n* Tmt early exits by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2426\r\n* ci: Pass GitHub token to documentation build by @HarshwardhanPatil07 in https://github.com/bootc-dev/bootc/pull/2427\r\n* lint: Check required runtime dependencies by @HarshwardhanPatil07 in https://github.com/bootc-dev/bootc/pull/2421\r\n* Add Kheeper registry to list of adopters by @mandi-bt in https://github.com/bootc-dev/bootc/pull/2430\r\n* lsm: treat `unlabeled_t` SELinux context as unlabeled for relabeling by @joelcapitao in https://github.com/bootc-dev/bootc/pull/2368\r\n* fix(deps): update bcvk-qemu digest to 13d860c by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2418\r\n* Release 1.16.11 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2419\r\n\r\n## New Contributors\r\n* @HarshwardhanPatil07 made their first contribution in https://github.com/bootc-dev/bootc/pull/2386\r\n* @mandi-bt made their first contribution in https://github.com/bootc-dev/bootc/pull/2430\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bootc/compare/v1.16.10...v1.16.11\r\n\r\n### Assets\r\n\r\n- `bootc-1.16.11-vendor.tar.zstd` - Vendored dependencies archive\r\n- `bootc-1.16.11.tar.zstd` - Source archive",
+      "prerelease": false,
+      "publishedAt": "2026-09-03T13:28:45Z",
+      "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.11",
+      "version": "v1.16.11"
+    },
     {
       "channel": "stable",
       "draft": false,

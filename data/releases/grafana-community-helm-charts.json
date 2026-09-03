@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-29T09:02:15.302Z",
+  "generatedAt": "2026-09-03T17:51:20.838Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 381812154,
+      "name": "grafana-13.1.0",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [CI] Update helm/kind-action action to v1.15.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/778\n* [grafana] Update grafana dependency non-major updates by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/777\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.22.0...grafana-13.1.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-03T07:15:09Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.1.0",
+      "version": "grafana-13.1.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-20T19:59:59Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.3.0",
       "version": "tempo-distributed-3.3.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 373597003,
-      "name": "loki-18.10.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Qualify memcached image defaults and expose registry keys by @jkroepke with @Copilot in https://github.com/grafana-community/helm-charts/pull/749\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.10.0...loki-18.10.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-20T08:51:45Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.10.1",
-      "version": "loki-18.10.1"
     }
   ],
   "schemaVersion": 1,

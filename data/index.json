@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T07:10:42.117Z",
+  "generatedAt": "2026-09-03T17:51:39.904Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1315,19 +1315,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377932721,
-        "name": "openbao-0.29.3",
+        "id": 382078485,
+        "name": "openbao-0.29.4",
         "prerelease": false,
-        "publishedAt": "2026-08-27T15:28:10Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.3",
-        "version": "openbao-0.29.3"
+        "publishedAt": "2026-09-03T14:12:51Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.4",
+        "version": "openbao-0.29.4"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-08-18T19:55:55Z",
-        "version": "openbao-0.29.2"
+        "publishedAt": "2026-08-27T15:28:10Z",
+        "version": "openbao-0.29.3"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "openbao/openbao-helm",
       "tags": [
         "secrets",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 378857892,
-        "name": "grafana-mcp-0.22.0",
+        "id": 381812154,
+        "name": "grafana-13.1.0",
         "prerelease": false,
-        "publishedAt": "2026-08-29T03:06:23Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.22.0",
-        "version": "grafana-mcp-0.22.0"
+        "publishedAt": "2026-09-03T07:15:09Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.1.0",
+        "version": "grafana-13.1.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-28T21:26:04Z",
-        "version": "loki-18.11.7"
+        "publishedAt": "2026-08-29T03:06:23Z",
+        "version": "grafana-mcp-0.22.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2354,19 +2354,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 376645141,
-        "name": "Release v1.16.10",
+        "id": 382040376,
+        "name": "Release v1.16.11",
         "prerelease": false,
-        "publishedAt": "2026-08-25T20:55:04Z",
-        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.10",
-        "version": "v1.16.10"
+        "publishedAt": "2026-09-03T13:28:45Z",
+        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.11",
+        "version": "v1.16.11"
       },
       "name": "bootc",
       "previous": {
-        "publishedAt": "2026-08-21T13:25:12Z",
-        "version": "v1.16.9"
+        "publishedAt": "2026-08-25T20:55:04Z",
+        "version": "v1.16.10"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "bootc-dev/bootc",
       "tags": [
         "containers",
@@ -2416,19 +2416,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 378076118,
-        "name": "v0.1.56",
+        "id": 382144026,
+        "name": "v0.1.57",
         "prerelease": false,
-        "publishedAt": "2026-08-27T19:35:42Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.56",
-        "version": "v0.1.56"
+        "publishedAt": "2026-09-03T15:44:14Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.57",
+        "version": "v0.1.57"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-08-27T18:48:25Z",
-        "version": "v0.1.55"
+        "publishedAt": "2026-08-27T19:35:42Z",
+        "version": "v0.1.56"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "pgdogdev/pgdog",
       "tags": [
         "postgresql",

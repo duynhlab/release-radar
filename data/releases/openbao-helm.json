@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-27T23:47:38.026Z",
+  "generatedAt": "2026-09-03T17:51:15.991Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 382078485,
+      "name": "openbao-0.29.4",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* feat(snapshotAgent): allow setting nodeSelector and affinity by @diogotorres97 in https://github.com/openbao/openbao-helm/pull/225\n* chore(snapshotAgent): update to v0.4.4 by @eyenx in https://github.com/openbao/openbao-helm/pull/226\n* fix(charts): invalid yaml in statefulset by @fiepankalla-code in https://github.com/openbao/openbao-helm/pull/224\n* chore: release 0.29.4 by @eyenx in https://github.com/openbao/openbao-helm/pull/227\n\n## New Contributors\n* @diogotorres97 made their first contribution in https://github.com/openbao/openbao-helm/pull/225\n* @fiepankalla-code made their first contribution in https://github.com/openbao/openbao-helm/pull/224\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.29.3...openbao-0.29.4",
+      "prerelease": false,
+      "publishedAt": "2026-09-03T14:12:51Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.4",
+      "version": "openbao-0.29.4"
+    },
     {
       "channel": "stable",
       "draft": false,
