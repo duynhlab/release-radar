@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T02:23:15.745Z",
+  "generatedAt": "2026-09-04T07:15:04.331Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 382255313,
+      "name": "v1.6.2",
+      "notes": "# v1.6.2\r\n\r\n## Major Changes Since v1.6.1\r\n\r\n### Bug or Regression\r\n\r\n- HTTPRequestRedirectFilter status codes 303, 307, and 308 are Extended conformance, not Core. (#5173, @kflynn)\r\n\r\n### Other (Cleanup or Flake)\r\n\r\n- Fix flaky `TCPRouteWeightedRouting` and `UDPRouteWeightedRouting` conformance tests by adding a data-plane readiness check before performing weighted routing assertions. (#5064, @arybolovlev)\r\n- Fix `FailFast` not working as expected (#5204, @zirain)\r\n- Allow disabling parallel tests at the suite level (#5184, @zirain)",
+      "prerelease": false,
+      "publishedAt": "2026-09-03T18:49:15Z",
+      "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.2",
+      "version": "v1.6.2"
+    },
     {
       "channel": "stable",
       "draft": false,

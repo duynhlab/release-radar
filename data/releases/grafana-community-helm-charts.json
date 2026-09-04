@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-03T17:51:20.838Z",
+  "generatedAt": "2026-09-04T07:15:21.115Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 382434775,
+      "name": "loki-18.12.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update loki dependency non-major updates by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/780\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.2.0...loki-18.12.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-04T02:09:10Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.12.0",
+      "version": "loki-18.12.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 382432597,
+      "name": "grafana-13.2.0",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Update quay.io/kiwigrid/k8s-sidecar Docker tag to v2.11.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/779\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.1.0...grafana-13.2.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-04T02:02:06Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.0",
+      "version": "grafana-13.2.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-08-23T15:42:15Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.1",
       "version": "loki-18.11.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 373996795,
-      "name": "loki-18.11.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update Helm release rollout-operator to v0.51.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/752\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.3.0...loki-18.11.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-20T20:00:50Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.0",
-      "version": "loki-18.11.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 373996340,
-      "name": "tempo-distributed-3.3.0",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Update Helm release rollout-operator to v0.51.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/753\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.10.1...tempo-distributed-3.3.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-20T19:59:59Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.3.0",
-      "version": "tempo-distributed-3.3.0"
     }
   ],
   "schemaVersion": 1,

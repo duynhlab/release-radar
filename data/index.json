@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T17:51:39.904Z",
+  "generatedAt": "2026-09-04T07:15:40.701Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -731,19 +731,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 355082598,
-        "name": "v1.6.1",
+        "id": 382255313,
+        "name": "v1.6.2",
         "prerelease": false,
-        "publishedAt": "2026-07-16T16:30:35Z",
-        "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.1",
-        "version": "v1.6.1"
+        "publishedAt": "2026-09-03T18:49:15Z",
+        "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.2",
+        "version": "v1.6.2"
       },
       "name": "Gateway API",
       "previous": {
-        "publishedAt": "2026-06-29T20:40:00Z",
-        "version": "v1.6.0"
+        "publishedAt": "2026-07-16T16:30:35Z",
+        "version": "v1.6.1"
       },
-      "releaseCount": 4,
+      "releaseCount": 5,
       "repository": "kubernetes-sigs/gateway-api",
       "tags": [
         "kubernetes",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 381812154,
-        "name": "grafana-13.1.0",
+        "id": 382434775,
+        "name": "loki-18.12.0",
         "prerelease": false,
-        "publishedAt": "2026-09-03T07:15:09Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.1.0",
-        "version": "grafana-13.1.0"
+        "publishedAt": "2026-09-04T02:09:10Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.12.0",
+        "version": "loki-18.12.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-29T03:06:23Z",
-        "version": "grafana-mcp-0.22.0"
+        "publishedAt": "2026-09-04T02:02:06Z",
+        "version": "grafana-13.2.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1912,19 +1912,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 361662147,
-        "name": "v0.14.0",
+        "id": 382241573,
+        "name": "v0.15.0",
         "prerelease": false,
-        "publishedAt": "2026-07-29T10:18:27Z",
-        "url": "https://github.com/cloudnative-pg/plugin-barman-cloud/releases/tag/v0.14.0",
-        "version": "v0.14.0"
+        "publishedAt": "2026-09-03T18:26:11Z",
+        "url": "https://github.com/cloudnative-pg/plugin-barman-cloud/releases/tag/v0.15.0",
+        "version": "v0.15.0"
       },
       "name": "Barman Cloud Plugin",
       "previous": {
-        "publishedAt": "2026-06-10T09:33:24Z",
-        "version": "v0.13.0"
+        "publishedAt": "2026-07-29T10:18:27Z",
+        "version": "v0.14.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "cloudnative-pg/plugin-barman-cloud",
       "tags": [
         "postgresql",
