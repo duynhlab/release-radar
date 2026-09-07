@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T07:19:37.038Z",
+  "generatedAt": "2026-09-07T18:44:28.314Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -247,19 +247,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372165056,
-        "name": "3.14.0 / 2026-08-17",
+        "id": 384066667,
+        "name": "3.13.3 / 2026-09-07",
         "prerelease": false,
-        "publishedAt": "2026-08-18T08:49:40Z",
-        "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0",
-        "version": "v3.14.0"
+        "publishedAt": "2026-09-07T14:18:03Z",
+        "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.3",
+        "version": "v3.13.3"
       },
       "name": "Prometheus",
       "previous": {
-        "publishedAt": "2026-07-30T13:25:26Z",
-        "version": "v3.13.2"
+        "publishedAt": "2026-08-18T08:49:40Z",
+        "version": "v3.14.0"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "prometheus/prometheus",
       "tags": [
         "metrics",
@@ -370,19 +370,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377861365,
-        "name": "v41.4.0",
+        "id": 383968977,
+        "name": "v41.5.0",
         "prerelease": false,
-        "publishedAt": "2026-08-27T13:52:41Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.4.0",
-        "version": "v41.4.0"
+        "publishedAt": "2026-09-07T09:26:27Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.5.0",
+        "version": "v41.5.0"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-08-21T07:21:36Z",
-        "version": "v41.3.0"
+        "publishedAt": "2026-08-27T13:52:41Z",
+        "version": "v41.4.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "traefik/traefik-helm-chart",
       "tags": [
         "helm-chart",
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 383848717,
-        "name": "victoria-metrics-single-0.46.0",
+        "id": 384211055,
+        "name": "victoria-metrics-k8s-stack-0.92.1",
         "prerelease": false,
-        "publishedAt": "2026-09-07T05:29:51Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.46.0",
-        "version": "victoria-metrics-single-0.46.0"
+        "publishedAt": "2026-09-07T16:23:41Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.92.1",
+        "version": "victoria-metrics-k8s-stack-0.92.1"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-07T05:29:50Z",
-        "version": "victoria-metrics-k8s-stack-0.92.0"
+        "publishedAt": "2026-09-07T05:29:51Z",
+        "version": "victoria-metrics-single-0.46.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",

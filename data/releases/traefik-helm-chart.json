@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-27T23:47:17.494Z",
+  "generatedAt": "2026-09-07T18:43:52.204Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 383968977,
+      "name": "v41.5.0",
+      "notes": "# [v41.5.0](https://github.com/traefik/traefik-helm-chart/compare/v41.4.0...v41.5.0) (2026-09-07)\r\n\r\n> [!IMPORTANT]\r\n> This release includes a CRD update. See chart [UPGRADING](https://github.com/traefik/traefik-helm-chart?tab=readme-ov-file#upgrading) instructions and upstream [migration guide](https://doc.traefik.io/traefik/v3.7/migrate/v3/#v3710).\r\n\r\n## :rocket: Features\r\n\r\n- feat(CRDs): update Traefik Hub to v1.34.0 #1992 by @traefiker\r\n- feat(deps): update traefik docker tag to v3.7.13 #1995 by @renovate-with-github-actions[bot]\r\n- feat(deps): update ghcr.io/traefik/traefik-hub docker tag to v3.20.13 #1994 by @renovate-with-github-actions[bot]\r\n\r\n## :bug: Bug fixes\r\n\r\n- fix: grant ConfigMap write verbs to namespaced role #1998 by @jspdown\r\n\r\n## :package: Others\r\n\r\n- docs: 📚️ update gateway api instructions to current supported version #1990 by @mloiseleur\r\n- chore(deps): update github actions #1986 by @renovate-with-github-actions[bot]\r\n- chore(deps): update github actions #1996 by @renovate-with-github-actions[bot]\r\n- chore(release): 🚀 publish 41.5.0 #1997 by @darkweaver87\r\n\r\n## 👌 Traefik version support\r\n\r\n* Traefik Proxy: v3.6.0 -> v3.7.13 (default)\r\n* Traefik Hub: v3.19.3 -> v3.20.13",
+      "prerelease": false,
+      "publishedAt": "2026-09-07T09:26:27Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.5.0",
+      "version": "v41.5.0"
+    },
     {
       "channel": "stable",
       "draft": false,
