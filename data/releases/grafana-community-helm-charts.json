@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-04T17:36:32.409Z",
+  "generatedAt": "2026-09-07T07:19:19.283Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 383714766,
+      "name": "grafana-13.2.2",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [CI] Add type field to bug report template by @jkroepke in https://github.com/grafana-community/helm-charts/pull/784\n* [CI] Add type field to feature request template by @jkroepke in https://github.com/grafana-community/helm-charts/pull/785\n* [grafana] fix duplicate servicemonitor release label by @tyler-dalton in https://github.com/grafana-community/helm-charts/pull/783\n\n## New Contributors\n* @tyler-dalton made their first contribution in https://github.com/grafana-community/helm-charts/pull/783\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.2.1...grafana-13.2.2",
+      "prerelease": false,
+      "publishedAt": "2026-09-06T20:56:33Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.2",
+      "version": "grafana-13.2.2"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-25T14:48:27Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-2.3.0",
       "version": "tempo-2.3.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 375296112,
-      "name": "loki-18.11.2",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Fix Service and PodDisruptionBudget rendered for disabled components by @jkroepke with @Copilot in https://github.com/grafana-community/helm-charts/pull/750\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-12.11.2...loki-18.11.2",
-      "prerelease": false,
-      "publishedAt": "2026-08-23T18:48:22Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.2",
-      "version": "loki-18.11.2"
     }
   ],
   "schemaVersion": 1,
