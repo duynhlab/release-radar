@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T07:14:58.635Z",
+  "generatedAt": "2026-09-08T17:55:59.497Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1410,19 +1410,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 376031230,
-        "name": "v2.3.0",
+        "id": 384886955,
+        "name": "v2.3.1",
         "prerelease": false,
-        "publishedAt": "2026-08-24T22:35:47Z",
-        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.3.0",
-        "version": "v2.3.0"
+        "publishedAt": "2026-09-08T16:15:15Z",
+        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.3.1",
+        "version": "v2.3.1"
       },
       "name": "Pyroscope",
       "previous": {
-        "publishedAt": "2026-08-06T11:58:05Z",
-        "version": "v2.2.1"
+        "publishedAt": "2026-09-08T16:14:15Z",
+        "version": "v2.2.2"
       },
-      "releaseCount": 13,
+      "releaseCount": 15,
       "repository": "grafana/pyroscope",
       "tags": [
         "profiling"
@@ -1504,17 +1504,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377923280,
-        "name": "alloy-operator-0.7.1",
+        "id": 384908198,
+        "name": "pyroscope-2.3.1",
         "prerelease": false,
-        "publishedAt": "2026-08-27T15:14:32Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.7.1",
-        "version": "alloy-operator-0.7.1"
+        "publishedAt": "2026-09-08T16:50:30Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.3.1",
+        "version": "pyroscope-2.3.1"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-27T12:35:53Z",
-        "version": "alloy-1.12.1"
+        "publishedAt": "2026-08-27T15:14:32Z",
+        "version": "alloy-operator-0.7.1"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1723,19 +1723,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 244726889,
-        "name": "v1.6.7",
+        "id": 384815128,
+        "name": "v1.6.8",
         "prerelease": false,
-        "publishedAt": "2025-09-04T10:18:05Z",
-        "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.7",
-        "version": "v1.6.7"
+        "publishedAt": "2026-09-08T14:39:42Z",
+        "url": "https://github.com/citusdata/pg_cron/releases/tag/v1.6.8",
+        "version": "v1.6.8"
       },
       "name": "pg_cron",
       "previous": {
-        "publishedAt": "2025-09-04T06:58:25Z",
-        "version": "v1.6.6"
+        "publishedAt": "2025-09-04T10:18:05Z",
+        "version": "v1.6.7"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "citusdata/pg_cron",
       "tags": [
         "postgresql",
