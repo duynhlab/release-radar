@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-08T17:55:38.081Z",
+  "generatedAt": "2026-09-09T17:50:07.964Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 385699394,
+      "name": "k8s-monitoring-4.5.1",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/3226b4e9f71fbfb7e0b6891fc8894b37e6394c17\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.5.1",
+      "prerelease": false,
+      "publishedAt": "2026-09-09T16:59:41Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.1",
+      "version": "k8s-monitoring-4.5.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-06T23:01:29Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.11.1",
       "version": "alloy-1.11.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 364247883,
-      "name": "cloudcost-exporter-1.1.13",
-      "notes": "Cloud Cost Exporter exports cloud provider agnostic cost metrics to Prometheus.\n\nSource commit: https://github.com/grafana/cloudcost-exporter/commit/a33ae20d8330b7b4937e250e316f33e7e3dcb0e8\n\nTag on source: https://github.com/grafana/cloudcost-exporter/releases/tag/cloudcost-exporter-1.1.13",
-      "prerelease": false,
-      "publishedAt": "2026-08-03T13:45:03Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.13",
-      "version": "cloudcost-exporter-1.1.13"
     }
   ],
   "schemaVersion": 1,

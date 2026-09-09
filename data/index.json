@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T17:55:59.497Z",
+  "generatedAt": "2026-09-09T17:50:26.536Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -101,19 +101,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 381346113,
-        "name": "v1.16.1",
+        "id": 385535336,
+        "name": "v1.16.2",
         "prerelease": false,
-        "publishedAt": "2026-09-02T14:49:32Z",
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.1",
-        "version": "v1.16.1"
+        "publishedAt": "2026-09-09T13:22:31Z",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.2",
+        "version": "v1.16.2"
       },
       "name": "Terraform",
       "previous": {
-        "publishedAt": "2026-08-26T13:05:28Z",
-        "version": "v1.16.0"
+        "publishedAt": "2026-09-02T14:49:32Z",
+        "version": "v1.16.1"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "hashicorp/terraform",
       "tags": [
         "iac"
@@ -1167,19 +1167,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 367989357,
-        "name": "0.93.1 / 2026-08-10",
+        "id": 385459003,
+        "name": "0.94.0 / 2026-09-09",
         "prerelease": false,
-        "publishedAt": "2026-08-10T14:41:12Z",
-        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.93.1",
-        "version": "v0.93.1"
+        "publishedAt": "2026-09-09T11:31:02Z",
+        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.94.0",
+        "version": "v0.94.0"
       },
       "name": "Prometheus Operator",
       "previous": {
-        "publishedAt": "2026-07-28T14:30:04Z",
-        "version": "v0.93.0"
+        "publishedAt": "2026-08-10T14:41:12Z",
+        "version": "v0.93.1"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "prometheus-operator/prometheus-operator",
       "tags": [
         "metrics",
@@ -1504,17 +1504,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 384908198,
-        "name": "pyroscope-2.3.1",
+        "id": 385699394,
+        "name": "k8s-monitoring-4.5.1",
         "prerelease": false,
-        "publishedAt": "2026-09-08T16:50:30Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.3.1",
-        "version": "pyroscope-2.3.1"
+        "publishedAt": "2026-09-09T16:59:41Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.1",
+        "version": "k8s-monitoring-4.5.1"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-27T15:14:32Z",
-        "version": "alloy-operator-0.7.1"
+        "publishedAt": "2026-09-08T16:50:30Z",
+        "version": "pyroscope-2.3.1"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
