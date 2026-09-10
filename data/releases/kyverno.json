@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-21T03:54:08.718Z",
+  "generatedAt": "2026-09-10T07:18:30.468Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 386047463,
+      "name": "v1.19.1",
+      "notes": null,
+      "prerelease": false,
+      "publishedAt": "2026-09-10T06:24:30Z",
+      "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1",
+      "version": "v1.19.1"
+    },
     {
       "channel": "stable",
       "draft": false,
