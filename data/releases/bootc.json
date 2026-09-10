@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-03T17:51:37.864Z",
+  "generatedAt": "2026-09-10T17:42:50.557Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 385821128,
+      "name": "Release v1.16.12",
+      "notes": "## bootc 1.16.12\r\n\r\n### Changes\r\n\r\n* ci: Add back GrubCC tests by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2441\r\n* packit: Use aliases for Fedora by @jeckersb in https://github.com/bootc-dev/bootc/pull/2435\r\n* lsm: Use libselinux for process availability by @cgwalters in https://github.com/bootc-dev/bootc/pull/2445\r\n* GC UKI and UKI Addons from Composefs Repository by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2380\r\n* Release 1.16.12 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2439\r\n\r\n### Assets\r\n\r\n- `bootc-1.16.12-vendor.tar.zstd` - Vendored dependencies archive\r\n- `bootc-1.16.12.tar.zstd` - Source archive\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bootc/compare/v1.16.11...v1.16.12",
+      "prerelease": false,
+      "publishedAt": "2026-09-10T13:08:18Z",
+      "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.12",
+      "version": "v1.16.12"
+    },
     {
       "channel": "stable",
       "draft": false,

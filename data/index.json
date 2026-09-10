@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T07:19:05.203Z",
+  "generatedAt": "2026-09-10T17:42:52.338Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -527,19 +527,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 357853620,
-        "name": "v0.10.0",
+        "id": 370454117,
+        "name": "v0.11.0",
         "prerelease": false,
-        "publishedAt": "2026-07-22T07:59:08Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.10.0",
-        "version": "v0.10.0"
+        "publishedAt": "2026-08-14T08:49:53Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.11.0",
+        "version": "v0.11.0"
       },
       "name": "VictoriaTraces",
       "previous": {
-        "publishedAt": "2026-07-03T06:56:55Z",
-        "version": "v0.9.4"
+        "publishedAt": "2026-07-22T07:59:08Z",
+        "version": "v0.10.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "VictoriaMetrics/VictoriaTraces",
       "tags": [
         "traces"
@@ -818,19 +818,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 373597812,
-        "name": "sealed-secrets-v0.39.1",
+        "id": 386437436,
+        "name": "sealed-secrets-v0.40.0",
         "prerelease": false,
-        "publishedAt": "2026-08-20T08:53:22Z",
-        "url": "https://github.com/bitnami/sealed-secrets/releases/tag/v0.39.1",
-        "version": "v0.39.1"
+        "publishedAt": "2026-09-10T16:10:29Z",
+        "url": "https://github.com/bitnami/sealed-secrets/releases/tag/v0.40.0",
+        "version": "v0.40.0"
       },
       "name": "Sealed Secrets",
       "previous": {
-        "publishedAt": "2026-08-18T09:53:01Z",
-        "version": "v0.39.0"
+        "publishedAt": "2026-08-20T08:53:22Z",
+        "version": "v0.39.1"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "bitnami/sealed-secrets",
       "tags": [
         "kubernetes",
@@ -1473,19 +1473,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 378601443,
-        "name": "v1.3.0",
+        "id": 386413486,
+        "name": "v1.4.0",
         "prerelease": false,
-        "publishedAt": "2026-08-28T15:59:24Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.3.0",
-        "version": "v1.3.0"
+        "publishedAt": "2026-09-10T15:39:40Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.4.0",
+        "version": "v1.4.0"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-08-25T14:26:33Z",
-        "version": "v1.2.0"
+        "publishedAt": "2026-08-28T15:59:24Z",
+        "version": "v1.3.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "grafana/mcp-grafana",
       "tags": [
         "mcp",
@@ -1595,19 +1595,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377750560,
-        "name": "tempo v13.2.0",
+        "id": 386393800,
+        "name": "tempo v13.2.1",
         "prerelease": false,
-        "publishedAt": "2026-08-27T10:56:32Z",
-        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.2.0",
-        "version": "v13.2.0"
+        "publishedAt": "2026-09-10T15:12:54Z",
+        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.2.1",
+        "version": "v13.2.1"
       },
       "name": "Tempo Datasource",
       "previous": {
-        "publishedAt": "2026-07-08T10:55:33Z",
-        "version": "v13.1.5"
+        "publishedAt": "2026-08-27T10:56:32Z",
+        "version": "v13.2.0"
       },
-      "releaseCount": 7,
+      "releaseCount": 8,
       "repository": "grafana/grafana-tempo-datasource",
       "tags": [
         "traces",
@@ -2354,19 +2354,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 382040376,
-        "name": "Release v1.16.11",
+        "id": 385821128,
+        "name": "Release v1.16.12",
         "prerelease": false,
-        "publishedAt": "2026-09-03T13:28:45Z",
-        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.11",
-        "version": "v1.16.11"
+        "publishedAt": "2026-09-10T13:08:18Z",
+        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.12",
+        "version": "v1.16.12"
       },
       "name": "bootc",
       "previous": {
-        "publishedAt": "2026-08-25T20:55:04Z",
-        "version": "v1.16.10"
+        "publishedAt": "2026-09-03T13:28:45Z",
+        "version": "v1.16.11"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "bootc-dev/bootc",
       "tags": [
         "containers",

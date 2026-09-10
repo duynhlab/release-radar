@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-27T12:46:59.195Z",
+  "generatedAt": "2026-09-10T17:42:34.649Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 386393800,
+      "name": "tempo v13.2.1",
+      "notes": "## 13.2.1\n\n- Dependency updates ([#226](https://github.com/grafana/grafana-tempo-datasource/pull/226))\n- Fix TraceQL instant metrics queries failing when Tempo returns new fields ([#247](https://github.com/grafana/grafana-tempo-datasource/pull/227))",
+      "prerelease": false,
+      "publishedAt": "2026-09-10T15:12:54Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.2.1",
+      "version": "v13.2.1"
+    },
     {
       "channel": "stable",
       "draft": false,
