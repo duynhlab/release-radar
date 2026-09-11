@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T07:17:38.415Z",
+  "generatedAt": "2026-09-11T17:45:46.948Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -72,19 +72,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 361831037,
-        "name": "v1.21.1",
+        "id": 386823741,
+        "name": "v1.21.2",
         "prerelease": false,
-        "publishedAt": "2026-07-29T15:36:11Z",
-        "url": "https://github.com/cert-manager/cert-manager/releases/tag/v1.21.1",
-        "version": "v1.21.1"
+        "publishedAt": "2026-09-11T07:51:11Z",
+        "url": "https://github.com/cert-manager/cert-manager/releases/tag/v1.21.2",
+        "version": "v1.21.2"
       },
       "name": "cert-manager",
       "previous": {
-        "publishedAt": "2026-07-08T22:40:40Z",
-        "version": "v1.21.0"
+        "publishedAt": "2026-07-29T15:36:11Z",
+        "version": "v1.21.1"
       },
-      "releaseCount": 7,
+      "releaseCount": 8,
       "repository": "cert-manager/cert-manager",
       "tags": [
         "kubernetes",
@@ -791,19 +791,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 345705151,
-        "name": "v0.24.0",
+        "id": 387168855,
+        "name": "v0.25.0",
         "prerelease": false,
-        "publishedAt": "2026-06-27T14:35:14Z",
-        "url": "https://github.com/cert-manager/trust-manager/releases/tag/v0.24.0",
-        "version": "v0.24.0"
+        "publishedAt": "2026-09-11T16:42:03Z",
+        "url": "https://github.com/cert-manager/trust-manager/releases/tag/v0.25.0",
+        "version": "v0.25.0"
       },
       "name": "trust-manager",
       "previous": {
-        "publishedAt": "2026-06-10T19:55:14Z",
-        "version": "v0.23.0"
+        "publishedAt": "2026-06-27T14:35:14Z",
+        "version": "v0.24.0"
       },
-      "releaseCount": 8,
+      "releaseCount": 9,
       "repository": "cert-manager/trust-manager",
       "tags": [
         "kubernetes",
@@ -936,19 +936,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 379964102,
-        "name": "v0.59.0",
+        "id": 387072902,
+        "name": "v0.60.0",
         "prerelease": false,
-        "publishedAt": "2026-08-31T18:23:36Z",
-        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.59.0",
-        "version": "v0.59.0"
+        "publishedAt": "2026-09-11T13:47:49Z",
+        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.60.0",
+        "version": "v0.60.0"
       },
       "name": "Flux Operator",
       "previous": {
-        "publishedAt": "2026-08-19T09:10:39Z",
-        "version": "v0.58.1"
+        "publishedAt": "2026-08-31T18:23:36Z",
+        "version": "v0.59.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "controlplaneio-fluxcd/flux-operator",
       "tags": [
         "gitops",
@@ -1473,19 +1473,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 386413486,
-        "name": "v1.4.0",
+        "id": 387078528,
+        "name": "v1.4.1",
         "prerelease": false,
-        "publishedAt": "2026-09-10T15:39:40Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.4.0",
-        "version": "v1.4.0"
+        "publishedAt": "2026-09-11T13:55:43Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.4.1",
+        "version": "v1.4.1"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-08-28T15:59:24Z",
-        "version": "v1.3.0"
+        "publishedAt": "2026-09-10T15:39:40Z",
+        "version": "v1.4.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "grafana/mcp-grafana",
       "tags": [
         "mcp",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 386518469,
-        "name": "grafana-mcp-0.23.0",
+        "id": 387213401,
+        "name": "grafana-13.2.3",
         "prerelease": false,
-        "publishedAt": "2026-09-10T18:15:51Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.23.0",
-        "version": "grafana-mcp-0.23.0"
+        "publishedAt": "2026-09-11T17:16:06Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.3",
+        "version": "grafana-13.2.3"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-08T01:45:38Z",
-        "version": "synthetic-monitoring-agent-1.19.0"
+        "publishedAt": "2026-09-11T17:13:00Z",
+        "version": "tempo-2.4.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2066,19 +2066,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 385758990,
-        "name": "2026.9.0",
+        "id": 387069586,
+        "name": "2026.9.1",
         "prerelease": false,
-        "publishedAt": "2026-09-09T18:38:16Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.9.0",
-        "version": "2026.9.0"
+        "publishedAt": "2026-09-11T13:42:53Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.9.1",
+        "version": "2026.9.1"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-08-31T10:12:13Z",
-        "version": "2026.8.3"
+        "publishedAt": "2026-09-09T18:38:16Z",
+        "version": "2026.9.0"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "cloudflare/cloudflared",
       "tags": [
         "tunnel",

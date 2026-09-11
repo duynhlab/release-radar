@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-09-11T07:17:18.770Z",
+  "generatedAt": "2026-09-11T17:45:26.500Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387213401,
+      "name": "grafana-13.2.3",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Disable default plugin auto-update checks to prevent v13 bundled plugin upgrade failures by @jkroepke with @Copilot in https://github.com/grafana-community/helm-charts/pull/791\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-2.4.0...grafana-13.2.3",
+      "prerelease": false,
+      "publishedAt": "2026-09-11T17:16:06Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.3",
+      "version": "grafana-13.2.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387211615,
+      "name": "tempo-2.4.0",
+      "notes": "Grafana Tempo Single Binary Mode\n\n## What's Changed\n* [tempo] Add the missing headless service by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/761\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.23.1...tempo-2.4.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-11T17:13:00Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-2.4.0",
+      "version": "tempo-2.4.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387211031,
+      "name": "grafana-mcp-0.23.1",
+      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v1.4.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/793\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.23.0...grafana-mcp-0.23.1",
+      "prerelease": false,
+      "publishedAt": "2026-09-11T17:12:00Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.23.1",
+      "version": "grafana-mcp-0.23.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-08-26T17:44:50Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.0.0",
       "version": "grafana-13.0.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 377271938,
-      "name": "synthetic-monitoring-agent-1.18.0",
-      "notes": "Grafana's Synthetic Monitoring application. The agent provides probe functionality and executes network checks for monitoring remote targets.  > [!NOTE] > Grafana Cloud Synthetic Monitoring does not officially support this chart. > If you are a Grafana Cloud customer and require support, please follow the [recommended installation methods](https://grafana.com/docs/grafana-cloud/testing/synthetic-monitoring/set-up/set-up-private-probes/#deployment-with-kubernetes) listed in the public docs. \n\n## What's Changed\n* [synthetic-monitoring-agent] Update docker.io/grafana/synthetic-monitoring-agent Docker tag to v0.64.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/767\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.4.0...synthetic-monitoring-agent-1.18.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-26T16:40:13Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.18.0",
-      "version": "synthetic-monitoring-agent-1.18.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 377262502,
-      "name": "tempo-distributed-3.4.0",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Add zone-aware replication for the live-store by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/760\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.21.0...tempo-distributed-3.4.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-26T16:23:01Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.4.0",
-      "version": "tempo-distributed-3.4.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 376641671,
-      "name": "grafana-mcp-0.21.0",
-      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v1.2.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/765\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.11.3...grafana-mcp-0.21.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-25T19:06:37Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.21.0",
-      "version": "grafana-mcp-0.21.0"
     }
   ],
   "schemaVersion": 1,

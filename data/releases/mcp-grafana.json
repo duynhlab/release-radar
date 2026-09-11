@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-10T17:42:30.891Z",
+  "generatedAt": "2026-09-11T17:45:25.224Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387078528,
+      "name": "v1.4.1",
+      "notes": "### Added\n\n- `labelSelector` parameter on the Sift tools (`find_error_pattern_logs`, `find_slow_requests`), accepting PromQL/LogQL stream selector syntax so investigations can be scoped with regex and negative matchers (e.g. `{namespace=~\"prod.*\", cluster=\"us-east-1\"}`) rather than exact label equality only. **Breaking:** this replaces the previous required `labels` map parameter on those tools ([#1165](https://github.com/grafana/mcp-grafana/pull/1165))\n\n### Fixed\n\n- `run_panel_query` now routes on the datasource's real type rather than the type recorded in the dashboard panel, so `--loki-enforced-matchers` can no longer be bypassed by a panel that mislabels a Loki datasource ([#1169](https://github.com/grafana/mcp-grafana/pull/1169))\n- The default-organisation warning is no longer logged at startup when dynamic multi-org support is enabled, where a default org is expected to be absent ([#1167](https://github.com/grafana/mcp-grafana/pull/1167))",
+      "prerelease": false,
+      "publishedAt": "2026-09-11T13:55:43Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.4.1",
+      "version": "v1.4.1"
+    },
     {
       "channel": "stable",
       "draft": false,
