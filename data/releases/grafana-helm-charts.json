@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-09T17:50:07.964Z",
+  "generatedAt": "2026-09-11T07:17:18.199Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 386685432,
+      "name": "k8s-monitoring-3.8.13",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/f9de664719e1ea4e98e9e7cd5cb64dd9b59594bd\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-3.8.13",
+      "prerelease": false,
+      "publishedAt": "2026-09-10T23:21:41Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-3.8.13",
+      "version": "k8s-monitoring-3.8.13"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-09T00:54:15Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.2.1",
       "version": "pyroscope-2.2.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 366422962,
-      "name": "alloy-1.11.1",
-      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/233907cff225ce253f812bdfc14138dac1fa0cd2\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.11.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-06T23:01:29Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.11.1",
-      "version": "alloy-1.11.1"
     }
   ],
   "schemaVersion": 1,

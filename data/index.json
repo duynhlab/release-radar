@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T17:42:52.338Z",
+  "generatedAt": "2026-09-11T07:17:38.415Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1504,17 +1504,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 385699394,
-        "name": "k8s-monitoring-4.5.1",
+        "id": 386685432,
+        "name": "k8s-monitoring-3.8.13",
         "prerelease": false,
-        "publishedAt": "2026-09-09T16:59:41Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.1",
-        "version": "k8s-monitoring-4.5.1"
+        "publishedAt": "2026-09-10T23:21:41Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-3.8.13",
+        "version": "k8s-monitoring-3.8.13"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-08T16:50:30Z",
-        "version": "pyroscope-2.3.1"
+        "publishedAt": "2026-09-09T16:59:41Z",
+        "version": "k8s-monitoring-4.5.1"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 384396327,
-        "name": "synthetic-monitoring-agent-1.19.0",
+        "id": 386518469,
+        "name": "grafana-mcp-0.23.0",
         "prerelease": false,
-        "publishedAt": "2026-09-08T01:45:38Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.19.0",
-        "version": "synthetic-monitoring-agent-1.19.0"
+        "publishedAt": "2026-09-10T18:15:51Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.23.0",
+        "version": "grafana-mcp-0.23.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-06T20:56:33Z",
-        "version": "grafana-13.2.2"
+        "publishedAt": "2026-09-08T01:45:38Z",
+        "version": "synthetic-monitoring-agent-1.19.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1565,19 +1565,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377750974,
-        "name": "loki v13.1.1",
+        "id": 386655840,
+        "name": "loki v13.2.0",
         "prerelease": false,
-        "publishedAt": "2026-08-27T10:57:20Z",
-        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.1.1",
-        "version": "v13.1.1"
+        "publishedAt": "2026-09-10T22:07:44Z",
+        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.0",
+        "version": "v13.2.0"
       },
       "name": "Loki Datasource",
       "previous": {
-        "publishedAt": "2026-07-30T00:45:50Z",
-        "version": "v13.1.0"
+        "publishedAt": "2026-08-27T10:57:20Z",
+        "version": "v13.1.1"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "grafana/grafana-loki-datasource",
       "tags": [
         "logs",
@@ -2416,19 +2416,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 382144026,
-        "name": "v0.1.57",
+        "id": 386667963,
+        "name": "v0.1.58",
         "prerelease": false,
-        "publishedAt": "2026-09-03T15:44:14Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.57",
-        "version": "v0.1.57"
+        "publishedAt": "2026-09-10T22:35:48Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.58",
+        "version": "v0.1.58"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-08-27T19:35:42Z",
-        "version": "v0.1.56"
+        "publishedAt": "2026-09-03T15:44:14Z",
+        "version": "v0.1.57"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "pgdogdev/pgdog",
       "tags": [
         "postgresql",

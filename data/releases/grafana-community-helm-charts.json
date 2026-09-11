@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-08T07:14:41.079Z",
+  "generatedAt": "2026-09-11T07:17:18.770Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 386518469,
+      "name": "grafana-mcp-0.23.0",
+      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [CI] Update github-workflow dependency updates to v4.3.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/788\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v1.4.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/792\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/synthetic-monitoring-agent-1.19.0...grafana-mcp-0.23.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-10T18:15:51Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.23.0",
+      "version": "grafana-mcp-0.23.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-25T19:06:37Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.21.0",
       "version": "grafana-mcp-0.21.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 376639270,
-      "name": "loki-18.11.3",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Fix Zone-aware ingester StatefulSets emit a duplicate name label by @pomcho555 in https://github.com/grafana-community/helm-charts/pull/762\n\n## New Contributors\n* @pomcho555 made their first contribution in https://github.com/grafana-community/helm-charts/pull/762\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-2.3.0...loki-18.11.3",
-      "prerelease": false,
-      "publishedAt": "2026-08-25T19:02:38Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.3",
-      "version": "loki-18.11.3"
     }
   ],
   "schemaVersion": 1,

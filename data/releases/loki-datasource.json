@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-27T12:46:58.052Z",
+  "generatedAt": "2026-09-11T07:17:19.403Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 386655840,
+      "name": "loki v13.2.0",
+      "notes": "## 13.2.0\n\n- Support detected field values in dashboard variables ([#177](https://github.com/grafana/grafana-loki-datasource/pull/177))\n- Fix: drop query statistics from empty frames ([#192](https://github.com/grafana/grafana-loki-datasource/pull/192))\n- Fix: do not keep any extra frame when the response is empty ([#193](https://github.com/grafana/grafana-loki-datasource/pull/193))\n- Resolve high-severity CVEs in `golang.org/x/crypto`, `browserslist`, and `fast-uri` ([#191](https://github.com/grafana/grafana-loki-datasource/pull/191), [#129](https://github.com/grafana/grafana-loki-datasource/pull/129))",
+      "prerelease": false,
+      "publishedAt": "2026-09-10T22:07:44Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.0",
+      "version": "v13.2.0"
+    },
     {
       "channel": "stable",
       "draft": false,
