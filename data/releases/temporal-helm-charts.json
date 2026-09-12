@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T02:46:33.810Z",
+  "generatedAt": "2026-09-12T07:09:09.157Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387414425,
+      "name": "temporal-1.7.0",
+      "notes": "Temporal is a distributed, scalable, durable, and highly available orchestration engine to execute asynchronous long-running business logic in a scalable and resilient way.",
+      "prerelease": false,
+      "publishedAt": "2026-09-12T01:21:05Z",
+      "url": "https://github.com/temporalio/helm-charts/releases/tag/temporal-1.7.0",
+      "version": "temporal-1.7.0"
+    },
     {
       "channel": "stable",
       "draft": false,

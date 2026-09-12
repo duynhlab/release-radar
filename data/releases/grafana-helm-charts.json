@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-11T07:17:18.199Z",
+  "generatedAt": "2026-09-12T07:09:17.271Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387456408,
+      "name": "rollout-operator-0.52.0",
+      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] update for v0.40.0 by @lamida in https://github.com/grafana/helm-charts/pull/4218\n\n## New Contributors\n* @lamida made their first contribution in https://github.com/grafana/helm-charts/pull/4218\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/alloy-1.12.0...rollout-operator-0.52.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-12T04:42:03Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.52.0",
+      "version": "rollout-operator-0.52.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387318549,
+      "name": "k8s-monitoring-4.5.2",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/b4002ba056d92630af377f859a04ad999365fd34\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.5.2",
+      "prerelease": false,
+      "publishedAt": "2026-09-11T20:33:00Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.2",
+      "version": "k8s-monitoring-4.5.2"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-08-10T19:50:20Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.3.3",
       "version": "k8s-monitoring-4.3.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 368051927,
-      "name": "alloy-operator-0.6.3",
-      "notes": "Grafana Alloy Operator, providing innovative ways for creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/f62cffb7ee6995a72c193f30fdadadc27b3d877f\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.6.3",
-      "prerelease": false,
-      "publishedAt": "2026-08-10T16:20:08Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.6.3",
-      "version": "alloy-operator-0.6.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 367343184,
-      "name": "pyroscope-2.2.1",
-      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/0ea0d16148738517389a74ed07b1a2b0bf6109c3\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.2.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-09T00:54:15Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.2.1",
-      "version": "pyroscope-2.2.1"
     }
   ],
   "schemaVersion": 1,

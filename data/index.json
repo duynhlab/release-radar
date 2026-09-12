@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T17:45:46.948Z",
+  "generatedAt": "2026-09-12T07:09:34.571Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -398,19 +398,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 385848265,
-        "name": "v0.93.1",
+        "id": 387421289,
+        "name": "v0.94.1",
         "prerelease": false,
-        "publishedAt": "2026-09-09T21:08:58Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.93.1",
-        "version": "v0.93.1"
+        "publishedAt": "2026-09-12T01:53:28Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.94.1",
+        "version": "v0.94.1"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-08-31T20:53:04Z",
-        "version": "v0.92.0"
+        "publishedAt": "2026-09-09T21:08:58Z",
+        "version": "v0.93.1"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "charmbracelet/crush",
       "tags": [
         "coding-agent",
@@ -1002,19 +1002,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 353007969,
-        "name": "temporal-1.6.0",
+        "id": 387414425,
+        "name": "temporal-1.7.0",
         "prerelease": false,
-        "publishedAt": "2026-07-13T08:11:35Z",
-        "url": "https://github.com/temporalio/helm-charts/releases/tag/temporal-1.6.0",
-        "version": "temporal-1.6.0"
+        "publishedAt": "2026-09-12T01:21:05Z",
+        "url": "https://github.com/temporalio/helm-charts/releases/tag/temporal-1.7.0",
+        "version": "temporal-1.7.0"
       },
       "name": "Temporal Helm Charts",
       "previous": {
-        "publishedAt": "2026-07-01T19:55:01Z",
-        "version": "temporal-1.5.0"
+        "publishedAt": "2026-07-13T08:11:35Z",
+        "version": "temporal-1.6.0"
       },
-      "releaseCount": 8,
+      "releaseCount": 9,
       "repository": "temporalio/helm-charts",
       "tags": [
         "workflow",
@@ -1504,17 +1504,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 386685432,
-        "name": "k8s-monitoring-3.8.13",
+        "id": 387456408,
+        "name": "rollout-operator-0.52.0",
         "prerelease": false,
-        "publishedAt": "2026-09-10T23:21:41Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-3.8.13",
-        "version": "k8s-monitoring-3.8.13"
+        "publishedAt": "2026-09-12T04:42:03Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.52.0",
+        "version": "rollout-operator-0.52.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-09T16:59:41Z",
-        "version": "k8s-monitoring-4.5.1"
+        "publishedAt": "2026-09-11T20:33:00Z",
+        "version": "k8s-monitoring-4.5.2"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 387213401,
-        "name": "grafana-13.2.3",
+        "id": 387460625,
+        "name": "loki-18.13.0",
         "prerelease": false,
-        "publishedAt": "2026-09-11T17:16:06Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.3",
-        "version": "grafana-13.2.3"
+        "publishedAt": "2026-09-12T05:02:50Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.0",
+        "version": "loki-18.13.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-11T17:13:00Z",
-        "version": "tempo-2.4.0"
+        "publishedAt": "2026-09-11T20:28:45Z",
+        "version": "loki-18.12.2"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

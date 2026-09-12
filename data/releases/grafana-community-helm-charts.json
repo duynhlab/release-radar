@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-09-11T17:45:26.500Z",
+  "generatedAt": "2026-09-12T07:09:17.797Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387460625,
+      "name": "loki-18.13.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update rollout-operator Docker tag to v0.52.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/798\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.12.2...loki-18.13.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-12T05:02:50Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.0",
+      "version": "loki-18.13.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387316409,
+      "name": "loki-18.12.2",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Use oci reference for rollout-operator chart by @jkroepke in https://github.com/grafana-community/helm-charts/pull/795\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-3.0.0...loki-18.12.2",
+      "prerelease": false,
+      "publishedAt": "2026-09-11T20:28:45Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.12.2",
+      "version": "loki-18.12.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387232891,
+      "name": "tempo-3.0.0",
+      "notes": "Grafana Tempo Single Binary Mode\n\n## What's Changed\n* fix: avoid labels in issues by @jkroepke in https://github.com/grafana-community/helm-charts/pull/794\n* [tempo] Run Tempo 3.0 in monolithic mode by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/764\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.2.3...tempo-3.0.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-11T17:51:20Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-3.0.0",
+      "version": "tempo-3.0.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-08-27T23:36:59Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.4",
       "version": "loki-18.11.4"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 377683401,
-      "name": "tempo-distributed-3.5.1",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Update grafana/enterprise-traces Docker tag to v2.8.11 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/769\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.5.0...tempo-distributed-3.5.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-27T08:55:05Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.5.1",
-      "version": "tempo-distributed-3.5.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 377679777,
-      "name": "tempo-distributed-3.5.0",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Add an opt-in headless governing service for StatefulSets by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/763\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.0.0...tempo-distributed-3.5.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-27T08:48:50Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.5.0",
-      "version": "tempo-distributed-3.5.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 377310510,
-      "name": "grafana-13.0.0",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Set readOnlyRootFilesystem=true and use distroless image tag by @jkroepke in https://github.com/grafana-community/helm-charts/pull/756\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/synthetic-monitoring-agent-1.18.0...grafana-13.0.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-26T17:44:50Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.0.0",
-      "version": "grafana-13.0.0"
     }
   ],
   "schemaVersion": 1,
