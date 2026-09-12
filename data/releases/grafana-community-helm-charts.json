@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-12T07:09:17.797Z",
+  "generatedAt": "2026-09-12T17:09:07.919Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387634477,
+      "name": "grafana-13.2.4",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Hash only the config data in checksum/* annotations by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/797\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.13.0...grafana-13.2.4",
+      "prerelease": false,
+      "publishedAt": "2026-09-12T16:39:44Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.4",
+      "version": "grafana-13.2.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-28T11:03:40Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.5",
       "version": "loki-18.11.5"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 378180667,
-      "name": "loki-18.11.4",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update loki dependency non-major updates to v3.7.7 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/771\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.5.1...loki-18.11.4",
-      "prerelease": false,
-      "publishedAt": "2026-08-27T23:36:59Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.4",
-      "version": "loki-18.11.4"
     }
   ],
   "schemaVersion": 1,

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-11T07:17:37.807Z",
+  "generatedAt": "2026-09-12T17:09:23.017Z",
   "releases": [
     {
       "channel": "stable",
       "draft": false,
       "id": 386667963,
       "name": "v0.1.58",
-      "notes": "## Features\r\n\r\n- Database-specific TLS configuration (incl. mTLS), allowing different TLS certificates per host in `pgdog.toml` @rlittlefield\r\n- Correct handling of `DISCARD`, incl. `DISCARD TEMP` and `DISCARD ALL` @murex971\r\n- Add `FORCE_RELOAD` admin command which guarantees all subsequent queries are sent to new connection pools (vs. `RELOAD` which is async) @jkaczman\r\n- Query engine hooks for  `pgdog.nextval` function (only available in EE) to generate globally unique, monotonically increasing integers with no gaps (using Raft in the control plane) @levkk\r\n\r\n## Bugs\r\n\r\n- Allow omnisharded reads with a shard comment routing inside cross-shard write transactions @rlittlefield \r\n- Connections were unncessarily dropped and re-created when a replica was added (or removed) to (from) `pgdog.toml` @jkaczman \r\n- Correctly handle omnisharded writes inside CTEs @rlittlefield \r\n\r\n## Code quality\r\n\r\n- Added `CHANGELOG.md` and `CHANGELOG-ENTERPRISE.md` to track changes to open source and enterprise edition @levkk\r\n\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.57...v0.1.58",
+      "notes": "## Features\r\n\r\n- Database-specific TLS configuration (incl. mTLS), allowing different TLS certificates per host in `pgdog.toml` @rlittlefield\r\n- Correct handling of `DISCARD`, incl. `DISCARD TEMP` and `DISCARD ALL` @murex971\r\n- Add `FORCE_RELOAD` admin command which guarantees all subsequent queries are sent to new connection pools (vs. `RELOAD` which is async) @jkaczman\r\n- Query engine hooks for  `pgdog.nextval` function (only available in EE) to generate globally unique, monotonically increasing integers with no gaps (using Raft in the control plane) @levkk\r\n\r\n## Bugs\r\n\r\n- Allow omnisharded reads with a shard comment routing inside cross-shard write transactions @rlittlefield \r\n- Connections were unncessarily dropped and re-created when a replica was added (or removed) in `pgdog.toml` @jkaczman \r\n- Correctly handle omnisharded writes inside CTEs @rlittlefield \r\n\r\n## Code quality\r\n\r\n- Added `CHANGELOG.md` and `CHANGELOG-ENTERPRISE.md` to track changes to open source and enterprise edition @levkk\r\n\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.57...v0.1.58",
       "prerelease": false,
       "publishedAt": "2026-09-10T22:35:48Z",
       "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.58",
