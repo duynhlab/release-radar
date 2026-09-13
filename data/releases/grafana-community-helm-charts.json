@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-12T17:09:07.919Z",
+  "generatedAt": "2026-09-13T07:27:50.661Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 387742191,
+      "name": "tempo-distributed-3.6.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [grafana-mcp] Update .helmignore to include ci and tests directories by @jkroepke in https://github.com/grafana-community/helm-charts/pull/800\n* [loki] Update .helmignore to simplify ignored files by @jkroepke in https://github.com/grafana-community/helm-charts/pull/801\n* [synthetic-monitoring-agent] Update .helmignore to include ci and tes… by @jkroepke in https://github.com/grafana-community/helm-charts/pull/802\n* [tempo-vulture] Update .helmignore to include ci and tests directories by @jkroepke in https://github.com/grafana-community/helm-charts/pull/803\n* [tempo] Update .helmignore to include ci and tests directories by @jkroepke in https://github.com/grafana-community/helm-charts/pull/804\n* [tempo-distributed] Update Helm release rollout-operator to v0.52.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/799\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.2.4...tempo-distributed-3.6.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-13T00:05:51Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.6.0",
+      "version": "tempo-distributed-3.6.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-28T12:48:57Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.6",
       "version": "loki-18.11.6"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 378428654,
-      "name": "loki-18.11.5",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v0.4.12 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/772\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.11.4...loki-18.11.5",
-      "prerelease": false,
-      "publishedAt": "2026-08-28T11:03:40Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.5",
-      "version": "loki-18.11.5"
     }
   ],
   "schemaVersion": 1,
