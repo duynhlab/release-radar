@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-11T17:45:25.224Z",
+  "generatedAt": "2026-09-14T19:22:06.319Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 388537923,
+      "name": "v1.4.2",
+      "notes": "### Added\n\n- Optional `version` parameter on `get_dashboard_by_uid` to retrieve a specific saved version of a dashboard. New `list_dashboard_versions` tool returns version metadata (version number, author, timestamp, message) ([#1158](https://github.com/grafana/mcp-grafana/pull/1158))\n\n### Fixed\n\n- Removed unconditional `tools/list` response field injection (`resultType`, `cacheScope`, `ttlMs`) that broke legacy MCP clients which validate against the base protocol schema ([#1179](https://github.com/grafana/mcp-grafana/pull/1179))",
+      "prerelease": false,
+      "publishedAt": "2026-09-14T16:14:13Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.4.2",
+      "version": "v1.4.2"
+    },
     {
       "channel": "stable",
       "draft": false,

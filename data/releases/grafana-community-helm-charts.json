@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-13T17:25:15.905Z",
+  "generatedAt": "2026-09-14T19:22:07.448Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 388356776,
+      "name": "loki-18.13.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Fix helm test canary address after removed loki-canary.fullname helper by @zoispag in https://github.com/grafana-community/helm-charts/pull/808\n\n## New Contributors\n* @zoispag made their first contribution in https://github.com/grafana-community/helm-charts/pull/808\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.7.0...loki-18.13.1",
+      "prerelease": false,
+      "publishedAt": "2026-09-14T11:51:08Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.1",
+      "version": "loki-18.13.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-29T03:06:23Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.22.0",
       "version": "grafana-mcp-0.22.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 378773223,
-      "name": "loki-18.11.7",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update docker.io/kiwigrid/k8s-sidecar Docker tag to v2.10.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/775\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.0.1...loki-18.11.7",
-      "prerelease": false,
-      "publishedAt": "2026-08-28T21:26:04Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.11.7",
-      "version": "loki-18.11.7"
     }
   ],
   "schemaVersion": 1,

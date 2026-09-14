@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T07:54:18.398Z",
+  "generatedAt": "2026-09-14T19:22:26.111Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -187,19 +187,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 388190298,
-        "name": "v3.4.9",
+        "id": 388226313,
+        "name": "v3.5.3",
         "prerelease": false,
-        "publishedAt": "2026-09-14T06:41:58Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.9",
-        "version": "v3.4.9"
+        "publishedAt": "2026-09-14T07:58:59Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.3",
+        "version": "v3.5.3"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-08-27T09:56:04Z",
-        "version": "v3.4.8"
+        "publishedAt": "2026-09-14T06:41:58Z",
+        "version": "v3.4.9"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "argoproj/argo-cd",
       "tags": [
         "gitops",
@@ -398,19 +398,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 387421289,
-        "name": "v0.94.1",
+        "id": 388407199,
+        "name": "v0.94.2",
         "prerelease": false,
-        "publishedAt": "2026-09-12T01:53:28Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.94.1",
-        "version": "v0.94.1"
+        "publishedAt": "2026-09-14T13:11:45Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.94.2",
+        "version": "v0.94.2"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-09-09T21:08:58Z",
-        "version": "v0.93.1"
+        "publishedAt": "2026-09-12T01:53:28Z",
+        "version": "v0.94.1"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "charmbracelet/crush",
       "tags": [
         "coding-agent",
@@ -430,19 +430,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 378581196,
-        "name": "v1.151.0",
+        "id": 387088407,
+        "name": "v1.152.0",
         "prerelease": false,
-        "publishedAt": "2026-08-31T10:58:41Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.151.0",
-        "version": "v1.151.0"
+        "publishedAt": "2026-09-14T10:36:37Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.152.0",
+        "version": "v1.152.0"
       },
       "name": "VictoriaMetrics",
       "previous": {
-        "publishedAt": "2026-08-31T10:58:24Z",
-        "version": "v1.148.3"
+        "publishedAt": "2026-09-14T10:36:21Z",
+        "version": "v1.148.4"
       },
-      "releaseCount": 17,
+      "releaseCount": 19,
       "repository": "VictoriaMetrics/VictoriaMetrics",
       "tags": [
         "metrics",
@@ -1200,19 +1200,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 371734238,
-        "name": "Release v0.158.0",
+        "id": 388510956,
+        "name": "Release v0.159.0",
         "prerelease": false,
-        "publishedAt": "2026-08-17T12:22:22Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.158.0",
-        "version": "v0.158.0"
+        "publishedAt": "2026-09-14T16:47:31Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.159.0",
+        "version": "v0.159.0"
       },
       "name": "OpenTelemetry Operator",
       "previous": {
-        "publishedAt": "2026-08-13T07:58:29Z",
-        "version": "v0.157.0"
+        "publishedAt": "2026-08-17T12:22:22Z",
+        "version": "v0.158.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "open-telemetry/opentelemetry-operator",
       "tags": [
         "metrics",
@@ -1473,19 +1473,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 387078528,
-        "name": "v1.4.1",
+        "id": 388537923,
+        "name": "v1.4.2",
         "prerelease": false,
-        "publishedAt": "2026-09-11T13:55:43Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.4.1",
-        "version": "v1.4.1"
+        "publishedAt": "2026-09-14T16:14:13Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.4.2",
+        "version": "v1.4.2"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-09-10T15:39:40Z",
-        "version": "v1.4.0"
+        "publishedAt": "2026-09-11T13:55:43Z",
+        "version": "v1.4.1"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "grafana/mcp-grafana",
       "tags": [
         "mcp",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 387838014,
-        "name": "tempo-distributed-3.7.0",
+        "id": 388356776,
+        "name": "loki-18.13.1",
         "prerelease": false,
-        "publishedAt": "2026-09-13T08:20:19Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.7.0",
-        "version": "tempo-distributed-3.7.0"
+        "publishedAt": "2026-09-14T11:51:08Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.1",
+        "version": "loki-18.13.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-13T08:14:15Z",
-        "version": "tempo-distributed-3.6.1"
+        "publishedAt": "2026-09-13T08:20:19Z",
+        "version": "tempo-distributed-3.7.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

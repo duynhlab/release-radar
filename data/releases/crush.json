@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-12T07:08:58.033Z",
+  "generatedAt": "2026-09-14T19:21:44.897Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 388407199,
+      "name": "v0.94.2",
+      "notes": "## Lil’ OpenAI-Compatible Protocol Fix\r\n\r\nThis is a hot little mini patch to fix a regression in OpenAI-compatible endpoints that could occur when turns were stopped partway through. This regression happened because we were _furiously_ making improvements for the DeepSeek V4.X Flash series that you all cannot seem to get enough of!\r\n\r\nThanks also to the very patient @teddytennant who fixed a small bug around turning home dirs into ~s.\r\n\r\nxoxo,\r\nCharm\r\n\r\n## Changelog\r\n\r\n* 6f670995436a0bab99e3fdddd0eebc5c52c39072: fix(home): require path boundary when shortening or expanding ~ (#3552) (@teddytennant)\r\n* 066f4444d086aeac877ec0a67eb2a3d56fedde27: openaicompat: bump fantasy to fix regression around reasoning-only turns (@meowgorithm)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Verifying the artifacts</summary>\r\n\r\nFirst, download the [`checksums.txt` file](https://github.com/charmbracelet/crush/releases/download/v0.94.2/checksums.txt) and the [`checksums.txt.sigstore.json` file](https://github.com/charmbracelet/crush/releases/download/v0.94.2/checksums.txt.sigstore.json) files, for example, with `wget`:\r\n\r\n```bash\r\nwget 'https://github.com/charmbracelet/crush/releases/download/v0.94.2/checksums.txt'\r\nwget 'https://github.com/charmbracelet/crush/releases/download/v0.94.2/checksums.txt.sigstore.json'\r\n```\r\n\r\nThen, verify it using [`cosign`](https://github.com/sigstore/cosign):\r\n\r\n```bash\r\ncosign verify-blob \\\r\n  --certificate-identity 'https://github.com/charmbracelet/meta/.github/workflows/goreleaser.yml@refs/heads/main' \\\r\n  --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \\\r\n  --bundle 'checksums.txt.sigstore.json' \\\r\n  ./checksums.txt\r\n```\r\n\r\nIf the output is `Verified OK`, you can safely use it to verify the checksums of other artifacts you downloaded from the release using `sha256sum`:\r\n\r\n```bash\r\nsha256sum --ignore-missing -c checksums.txt\r\n```\r\n\r\nDone! You artifacts are now verified!\r\n\r\n</details>\r\n\r\n<a href=\"https://charm.land/\"><img alt=\"The Charm logo\" src=\"https://stuff.charm.sh/charm-banner-next.jpg\" width=\"400\"></a>\r\n\r\nThoughts? Questions? We love hearing from you. Feel free to reach out on [X](https://x.com/charmcli), [Discord](https://charm.land/discord), [Slack](https://charm.land/slack), [The Fediverse](https://mastodon.social/@charmcli), [Bluesky](https://bsky.app/profile/charm.land).",
+      "prerelease": false,
+      "publishedAt": "2026-09-14T13:11:45Z",
+      "url": "https://github.com/charmbracelet/crush/releases/tag/v0.94.2",
+      "version": "v0.94.2"
+    },
     {
       "channel": "stable",
       "draft": false,
