@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T17:25:33.969Z",
+  "generatedAt": "2026-09-14T07:54:18.398Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -187,19 +187,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377717934,
-        "name": "v3.4.8",
+        "id": 388190298,
+        "name": "v3.4.9",
         "prerelease": false,
-        "publishedAt": "2026-08-27T09:56:04Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.8",
-        "version": "v3.4.8"
+        "publishedAt": "2026-09-14T06:41:58Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.9",
+        "version": "v3.4.9"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-08-27T09:55:47Z",
-        "version": "v3.5.2"
+        "publishedAt": "2026-08-27T09:56:04Z",
+        "version": "v3.4.8"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "argoproj/argo-cd",
       "tags": [
         "gitops",
