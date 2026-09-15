@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-15T07:43:44.283Z",
+  "generatedAt": "2026-09-15T18:12:00.650Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 389176701,
+      "name": "grafana-13.2.5",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [CI] Use target values for baseline chart installation. by @jkroepke in https://github.com/grafana-community/helm-charts/pull/812\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.2.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/814\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.23.2...grafana-13.2.5",
+      "prerelease": false,
+      "publishedAt": "2026-09-15T13:38:25Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.5",
+      "version": "grafana-13.2.5"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-04T02:02:06Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.0",
       "version": "grafana-13.2.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 381812154,
-      "name": "grafana-13.1.0",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [CI] Update helm/kind-action action to v1.15.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/778\n* [grafana] Update grafana dependency non-major updates by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/777\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.22.0...grafana-13.1.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-03T07:15:09Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.1.0",
-      "version": "grafana-13.1.0"
     }
   ],
   "schemaVersion": 1,
