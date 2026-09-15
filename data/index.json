@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T19:22:26.111Z",
+  "generatedAt": "2026-09-15T07:44:04.885Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1286,19 +1286,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 380487636,
-        "name": "2.0.1",
+        "id": 388876516,
+        "name": "2.1.0",
         "prerelease": false,
-        "publishedAt": "2026-09-01T12:43:50Z",
-        "url": "https://github.com/floci-io/floci/releases/tag/2.0.1",
-        "version": "2.0.1"
+        "publishedAt": "2026-09-15T04:56:15Z",
+        "url": "https://github.com/floci-io/floci/releases/tag/2.1.0",
+        "version": "2.1.0"
       },
       "name": "Floci",
       "previous": {
-        "publishedAt": "2026-09-01T05:04:27Z",
-        "version": "2.0.0"
+        "publishedAt": "2026-09-01T12:43:50Z",
+        "version": "2.0.1"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "floci-io/floci",
       "tags": [
         "aws",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 388356776,
-        "name": "loki-18.13.1",
+        "id": 388706093,
+        "name": "grafana-mcp-0.23.2",
         "prerelease": false,
-        "publishedAt": "2026-09-14T11:51:08Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.1",
-        "version": "loki-18.13.1"
+        "publishedAt": "2026-09-14T20:55:33Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.23.2",
+        "version": "grafana-mcp-0.23.2"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-13T08:20:19Z",
-        "version": "tempo-distributed-3.7.0"
+        "publishedAt": "2026-09-14T11:51:08Z",
+        "version": "loki-18.13.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
