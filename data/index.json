@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T07:41:18.777Z",
+  "generatedAt": "2026-09-16T18:12:28.516Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -72,19 +72,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 386823741,
-        "name": "v1.21.2",
+        "id": 390076917,
+        "name": "v1.20.4",
         "prerelease": false,
-        "publishedAt": "2026-09-11T07:51:11Z",
-        "url": "https://github.com/cert-manager/cert-manager/releases/tag/v1.21.2",
-        "version": "v1.21.2"
+        "publishedAt": "2026-09-16T16:48:51Z",
+        "url": "https://github.com/cert-manager/cert-manager/releases/tag/v1.20.4",
+        "version": "v1.20.4"
       },
       "name": "cert-manager",
       "previous": {
-        "publishedAt": "2026-07-29T15:36:11Z",
-        "version": "v1.21.1"
+        "publishedAt": "2026-09-11T07:51:11Z",
+        "version": "v1.21.2"
       },
-      "releaseCount": 8,
+      "releaseCount": 9,
       "repository": "cert-manager/cert-manager",
       "tags": [
         "kubernetes",
@@ -101,19 +101,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 385535336,
-        "name": "v1.16.2",
+        "id": 390005903,
+        "name": "v1.16.3",
         "prerelease": false,
-        "publishedAt": "2026-09-09T13:22:31Z",
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.2",
-        "version": "v1.16.2"
+        "publishedAt": "2026-09-16T14:33:39Z",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.3",
+        "version": "v1.16.3"
       },
       "name": "Terraform",
       "previous": {
-        "publishedAt": "2026-09-02T14:49:32Z",
-        "version": "v1.16.1"
+        "publishedAt": "2026-09-09T13:22:31Z",
+        "version": "v1.16.2"
       },
-      "releaseCount": 6,
+      "releaseCount": 7,
       "repository": "hashicorp/terraform",
       "tags": [
         "iac"
@@ -370,19 +370,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 383968977,
-        "name": "v41.5.0",
+        "id": 389964321,
+        "name": "v41.6.0",
         "prerelease": false,
-        "publishedAt": "2026-09-07T09:26:27Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.5.0",
-        "version": "v41.5.0"
+        "publishedAt": "2026-09-16T13:42:31Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.6.0",
+        "version": "v41.6.0"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-08-27T13:52:41Z",
-        "version": "v41.4.0"
+        "publishedAt": "2026-09-07T09:26:27Z",
+        "version": "v41.5.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "traefik/traefik-helm-chart",
       "tags": [
         "helm-chart",
@@ -398,17 +398,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 388407199,
-        "name": "v0.94.2",
+        "id": 389810994,
+        "name": "v0.95.0",
         "prerelease": false,
-        "publishedAt": "2026-09-14T13:11:45Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.94.2",
-        "version": "v0.94.2"
+        "publishedAt": "2026-09-16T10:04:08Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.95.0",
+        "version": "v0.95.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-09-12T01:53:28Z",
-        "version": "v0.94.1"
+        "publishedAt": "2026-09-14T13:11:45Z",
+        "version": "v0.94.2"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
@@ -527,19 +527,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 370454117,
-        "name": "v0.11.0",
+        "id": 389763618,
+        "name": "v0.11.1",
         "prerelease": false,
-        "publishedAt": "2026-08-14T08:49:53Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.11.0",
-        "version": "v0.11.0"
+        "publishedAt": "2026-09-16T08:55:26Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.11.1",
+        "version": "v0.11.1"
       },
       "name": "VictoriaTraces",
       "previous": {
-        "publishedAt": "2026-07-22T07:59:08Z",
-        "version": "v0.10.0"
+        "publishedAt": "2026-08-14T08:49:53Z",
+        "version": "v0.11.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "VictoriaMetrics/VictoriaTraces",
       "tags": [
         "traces"
@@ -2152,19 +2152,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 379623625,
-        "name": "26.7.3",
+        "id": 389986222,
+        "name": "26.7.4",
         "prerelease": false,
-        "publishedAt": "2026-08-31T09:29:37Z",
-        "url": "https://github.com/keycloak/keycloak/releases/tag/26.7.3",
-        "version": "26.7.3"
+        "publishedAt": "2026-09-16T14:44:06Z",
+        "url": "https://github.com/keycloak/keycloak/releases/tag/26.7.4",
+        "version": "26.7.4"
       },
       "name": "Keycloak",
       "previous": {
-        "publishedAt": "2026-08-19T05:26:20Z",
-        "version": "26.7.2"
+        "publishedAt": "2026-08-31T09:29:37Z",
+        "version": "26.7.3"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "keycloak/keycloak",
       "tags": [
         "identity",

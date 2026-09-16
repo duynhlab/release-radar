@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-10T17:42:11.464Z",
+  "generatedAt": "2026-09-16T18:11:50.108Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 389763618,
+      "name": "v0.11.1",
+      "notes": "Released at 2026-09-16\r\n\r\n* SECURITY: upgrade Go builder from Go1.26.5 to Go1.26.6. See the list of issues addressed in [Go1.26.6](https://github.com/golang/go/issues?q=milestone%3AGo1.26.6+label%3ACherryPickApproved).\r\n\r\n* FEATURE: [logstorage](https://docs.victoriametrics.com/victorialogs/): upgrade VictoriaLogs dependency from [v1.51.0 to v1.52.0](https://github.com/VictoriaMetrics/VictoriaLogs/compare/v1.51.0...v1.52.0).\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): properly handle HTTP/2 handshake requests (`PRI *`) from clients such as the Grafana Tempo datasource to eliminate unnecessary warning logs.\r\n\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtstorage in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): create index correctly for different tenants when they receive trace with the same `trace_id` at the same flush period. Thank @MuNeNiCK for [the bug report #255](https://github.com/VictoriaMetrics/VictoriaTraces/issues/255).",
+      "prerelease": false,
+      "publishedAt": "2026-09-16T08:55:26Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.11.1",
+      "version": "v0.11.1"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-09T17:49:38.682Z",
+  "generatedAt": "2026-09-16T18:11:37.479Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 390005903,
+      "name": "v1.16.3",
+      "notes": "## 1.16.3 (September 16, 2026)\n\n\nBUG FIXES:\n\n* Fix handling of destroy=false around create_before_destroy instances ([#39169](https://github.com/hashicorp/terraform/issues/39169))\n\n* Fix function result comparison when there are multiple marks ([#39170](https://github.com/hashicorp/terraform/issues/39170))\n\n* Filter logic for marks could cause values with multiple marks to erroneously fail validations ([#39171](https://github.com/hashicorp/terraform/issues/39171))\n\n* Fix issue with import provider resolution ([#39185](https://github.com/hashicorp/terraform/issues/39185))",
+      "prerelease": false,
+      "publishedAt": "2026-09-16T14:33:39Z",
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.3",
+      "version": "v1.16.3"
+    },
     {
       "channel": "stable",
       "draft": false,

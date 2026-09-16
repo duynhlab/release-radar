@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-07T18:43:52.204Z",
+  "generatedAt": "2026-09-16T18:11:46.523Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 389964321,
+      "name": "v41.6.0",
+      "notes": "# [v41.6.0](https://github.com/traefik/traefik-helm-chart/compare/v41.5.0...v41.6.0) (2026-09-16)\n\n## :rocket: Features\n\n- feat(hub): support transparency logs #1999 by @darkweaver87\n\n## :bug: Bug fixes\n\n- fix: use kubeversion to determine PDB apiVersion #2001 by @Koronei\n\n## :package: Others\n\n- chore(deps): update github actions #2002 by @renovate-with-github-actions[bot]\n- chore(release): 🚀 publish 41.6.0 #2003 by @darkweaver87\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.13 (default)\n* Traefik Hub: v3.19.3 -> v3.20.13",
+      "prerelease": false,
+      "publishedAt": "2026-09-16T13:42:31Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.6.0",
+      "version": "v41.6.0"
+    },
     {
       "channel": "stable",
       "draft": false,
