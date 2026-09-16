@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-10T17:42:50.557Z",
+  "generatedAt": "2026-09-16T07:41:17.109Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 389471726,
+      "name": "Release v1.16.13",
+      "notes": "# bootc 1.16.13\r\n\r\n## What's Changed\r\n* docs: Document that systemd-confext and sysext are unsupported by @mohan-shash in https://github.com/bootc-dev/bootc/pull/2436\r\n* container: Preserve directory modes during export by @cgwalters in https://github.com/bootc-dev/bootc/pull/2447\r\n* Update Rust by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2374\r\n* Add ALT Atomic to list of adopters by @Rirusha in https://github.com/bootc-dev/bootc/pull/2452\r\n* export: Add --warn-unlabeled flag for SELinux label handling by @gursewak1997 in https://github.com/bootc-dev/bootc/pull/2446\r\n* docs: add guidance about resolv.conf by @jmarrero in https://github.com/bootc-dev/bootc/pull/2450\r\n* docs: Document reserved GID conflicts and altfiles group management by @jmarrero in https://github.com/bootc-dev/bootc/pull/2461\r\n* A few prep patches for https://github.com/bootc-dev/bootc/pull/2290 by @cgwalters in https://github.com/bootc-dev/bootc/pull/2454\r\n* docs: Add initramfs day two options and future by @jmarrero in https://github.com/bootc-dev/bootc/pull/2415\r\n* Release 1.16.13 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2460\r\n\r\n## New Contributors\r\n* @Rirusha made their first contribution in https://github.com/bootc-dev/bootc/pull/2452\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bootc/compare/v1.16.12...v1.16.13\r\n## Assets\r\n\r\n- `bootc-1.16.13-vendor.tar.zstd` - Vendored dependencies archive\r\n- `bootc-1.16.13.tar.zstd` - Source archive",
+      "prerelease": false,
+      "publishedAt": "2026-09-15T21:04:07Z",
+      "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.16.13",
+      "version": "v1.16.13"
+    },
     {
       "channel": "stable",
       "draft": false,

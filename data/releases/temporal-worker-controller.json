@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-03T07:10:42.111Z",
+  "generatedAt": "2026-09-16T07:41:18.768Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 389482983,
+      "name": "v1.11.0",
+      "notes": "## What's Changed\r\n* chore(deps): bump docker/setup-buildx-action from 4.2.0 to 4.3.0 by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/572\r\n* docs(changelog): update changelog for v1.10.0 by @worker-controller-auto-changelog[bot] in https://github.com/temporalio/temporal-worker-controller/pull/566\r\n* docs(changelog): update changelog for v1.10.1 by @worker-controller-auto-changelog[bot] in https://github.com/temporalio/temporal-worker-controller/pull/571\r\n* chore(deps): bump google.golang.org/grpc from 1.83.0 to 1.83.2 in /internal/demo by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/576\r\n* Auto-trigger test image build on release branch push by @niyomukiza-mechack in https://github.com/temporalio/temporal-worker-controller/pull/559\r\n* fix: make webhook cert Secret name configurable by @niyomukiza-mechack in https://github.com/temporalio/temporal-worker-controller/pull/574\r\n* chore(deps): bump google.golang.org/grpc from 1.83.0 to 1.83.2 by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/568\r\n* chore(deps): bump github.com/temporalio/temporal-worker-controller in /internal/tests by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/541\r\n* helm: fail CI when values.yaml changes without a schema update by @kriyanshii in https://github.com/temporalio/temporal-worker-controller/pull/561\r\n* fix(controller): scale draining versions back up from 0 replicas by @tomba7 in https://github.com/temporalio/temporal-worker-controller/pull/587\r\n* chore(deps): bump github.com/apache/thrift from 0.23.0 to 0.24.0 by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/570\r\n* chore(deps): bump github.com/apache/thrift from 0.23.0 to 0.24.0 in /internal/tests by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/569\r\n* docs(keda): document per-version backlog scaling with the Temporal trigger by @tomba7 in https://github.com/temporalio/temporal-worker-controller/pull/580\r\n* uplift OTEL deps in internal/demo by @jaypipes in https://github.com/temporalio/temporal-worker-controller/pull/592\r\n* Add flags to configure webhook TLS cert directory/filenames by @shivangi660 in https://github.com/temporalio/temporal-worker-controller/pull/590\r\n* Fix: remove cert-manager subchart dependency by @niyomukiza-mechack in https://github.com/temporalio/temporal-worker-controller/pull/575\r\n\r\n## New Contributors\r\n* @shivangi660 made their first contribution in https://github.com/temporalio/temporal-worker-controller/pull/590\r\n\r\n**Full Changelog**: https://github.com/temporalio/temporal-worker-controller/compare/v1.10.1...v1.11.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-15T21:10:26Z",
+      "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.11.0",
+      "version": "v1.11.0"
+    },
     {
       "channel": "stable",
       "draft": false,
