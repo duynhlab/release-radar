@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-14T19:22:06.319Z",
+  "generatedAt": "2026-09-17T18:12:55.729Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 390879080,
+      "name": "v1.5.1",
+      "notes": "### Fixed\n\n- `shorten_url` no longer doubles the Grafana sub-path prefix when generating short links on instances served under a sub-path ([#1205](https://github.com/grafana/mcp-grafana/pull/1205))\n- `get_annotation_tags` now accepts `limit` as a number instead of a string, fixing type-mismatch errors from LLM callers ([#1204](https://github.com/grafana/mcp-grafana/pull/1204))\n- Datasource TLS schema fields no longer include PEM placeholder strings that could confuse LLMs into sending literal placeholder text ([#1200](https://github.com/grafana/mcp-grafana/pull/1200))",
+      "prerelease": false,
+      "publishedAt": "2026-09-17T16:41:24Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.5.1",
+      "version": "v1.5.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 390665702,
+      "name": "v1.5.0",
+      "notes": "### Added\n\n- Anonymous usage statistics reporting with per-process event unit, configurable via `--usage-stats` / `GRAFANA_USAGE_STATS` (modes: `enabled`, `disabled`, `log`; default disabled). Supports `DO_NOT_TRACK=1`, reports tool call counts and server configuration with no PII, and flushes on a 4-hour interval and at shutdown ([#1188](https://github.com/grafana/mcp-grafana/pull/1188))\n- `UserAgent` field on `GrafanaConfig` for identifying API callers in outbound Grafana requests ([#1187](https://github.com/grafana/mcp-grafana/pull/1187))\n\n### Fixed\n\n- `query_loki_logs` now preserves structured metadata when using the compact output format ([#1196](https://github.com/grafana/mcp-grafana/pull/1196))\n\n### Changed\n\n- Tempo tools now use direct HTTP calls to the Tempo API instead of proxying through an MCP layer, improving reliability and reducing overhead ([#1194](https://github.com/grafana/mcp-grafana/pull/1194))",
+      "prerelease": false,
+      "publishedAt": "2026-09-17T11:44:28Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.5.0",
+      "version": "v1.5.0"
+    },
     {
       "channel": "stable",
       "draft": false,

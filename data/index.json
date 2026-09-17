@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T07:38:45.646Z",
+  "generatedAt": "2026-09-17T18:13:14.875Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1315,19 +1315,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 382078485,
-        "name": "openbao-0.29.4",
+        "id": 390752644,
+        "name": "openbao-0.29.5",
         "prerelease": false,
-        "publishedAt": "2026-09-03T14:12:51Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.4",
-        "version": "openbao-0.29.4"
+        "publishedAt": "2026-09-17T13:41:03Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.5",
+        "version": "openbao-0.29.5"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-08-27T15:28:10Z",
-        "version": "openbao-0.29.3"
+        "publishedAt": "2026-09-03T14:12:51Z",
+        "version": "openbao-0.29.4"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "openbao/openbao-helm",
       "tags": [
         "secrets",
@@ -1348,19 +1348,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 378143006,
-        "name": "v3.6.16",
+        "id": 390844924,
+        "name": "v3.7.8",
         "prerelease": false,
-        "publishedAt": "2026-08-27T21:54:42Z",
-        "url": "https://github.com/grafana/loki/releases/tag/v3.6.16",
-        "version": "v3.6.16"
+        "publishedAt": "2026-09-17T15:51:10Z",
+        "url": "https://github.com/grafana/loki/releases/tag/v3.7.8",
+        "version": "v3.7.8"
       },
       "name": "Loki",
       "previous": {
-        "publishedAt": "2026-08-27T20:20:03Z",
-        "version": "v3.7.7"
+        "publishedAt": "2026-09-17T11:41:38Z",
+        "version": "v3.6.17"
       },
-      "releaseCount": 14,
+      "releaseCount": 16,
       "repository": "grafana/loki",
       "tags": [
         "logs"
@@ -1473,19 +1473,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 388537923,
-        "name": "v1.4.2",
+        "id": 390879080,
+        "name": "v1.5.1",
         "prerelease": false,
-        "publishedAt": "2026-09-14T16:14:13Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.4.2",
-        "version": "v1.4.2"
+        "publishedAt": "2026-09-17T16:41:24Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.5.1",
+        "version": "v1.5.1"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-09-11T13:55:43Z",
-        "version": "v1.4.1"
+        "publishedAt": "2026-09-17T11:44:28Z",
+        "version": "v1.5.0"
       },
-      "releaseCount": 16,
+      "releaseCount": 18,
       "repository": "grafana/mcp-grafana",
       "tags": [
         "mcp",
@@ -2237,19 +2237,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 378093156,
-        "name": "v0.118.0",
+        "id": 390876889,
+        "name": "v0.119.0",
         "prerelease": false,
-        "publishedAt": "2026-08-27T20:04:42Z",
-        "url": "https://github.com/anchore/grype/releases/tag/v0.118.0",
-        "version": "v0.118.0"
+        "publishedAt": "2026-09-17T16:45:23Z",
+        "url": "https://github.com/anchore/grype/releases/tag/v0.119.0",
+        "version": "v0.119.0"
       },
       "name": "Grype",
       "previous": {
-        "publishedAt": "2026-08-10T16:54:43Z",
-        "version": "v0.117.0"
+        "publishedAt": "2026-08-27T20:04:42Z",
+        "version": "v0.118.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "anchore/grype",
       "tags": [
         "scanning",
@@ -2268,19 +2268,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377988884,
-        "name": "v1.51.1",
+        "id": 390800128,
+        "name": "v1.52.0",
         "prerelease": false,
-        "publishedAt": "2026-08-27T17:01:15Z",
-        "url": "https://github.com/anchore/syft/releases/tag/v1.51.1",
-        "version": "v1.51.1"
+        "publishedAt": "2026-09-17T14:38:17Z",
+        "url": "https://github.com/anchore/syft/releases/tag/v1.52.0",
+        "version": "v1.52.0"
       },
       "name": "Syft",
       "previous": {
-        "publishedAt": "2026-08-10T14:55:18Z",
-        "version": "v1.51.0"
+        "publishedAt": "2026-08-27T17:01:15Z",
+        "version": "v1.51.1"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "anchore/syft",
       "tags": [
         "sbom",
