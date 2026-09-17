@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-15T18:12:00.650Z",
+  "generatedAt": "2026-09-17T07:38:28.452Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 390231691,
+      "name": "loki-18.13.2",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Fix monolithic HPA/ScaledObject scaleTargetRef name by @andrefrco in https://github.com/grafana-community/helm-charts/pull/816\n\n## New Contributors\n* @andrefrco made their first contribution in https://github.com/grafana-community/helm-charts/pull/816\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.2.5...loki-18.13.2",
+      "prerelease": false,
+      "publishedAt": "2026-09-16T20:05:25Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.2",
+      "version": "loki-18.13.2"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-04T02:09:10Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.12.0",
       "version": "loki-18.12.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 382432597,
-      "name": "grafana-13.2.0",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Update quay.io/kiwigrid/k8s-sidecar Docker tag to v2.11.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/779\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.1.0...grafana-13.2.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-04T02:02:06Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.0",
-      "version": "grafana-13.2.0"
     }
   ],
   "schemaVersion": 1,
