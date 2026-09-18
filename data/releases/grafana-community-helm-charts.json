@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-17T07:38:28.452Z",
+  "generatedAt": "2026-09-18T07:24:25.936Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 391008007,
+      "name": "loki-18.13.3",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update loki dependency non-major updates to v3.7.8 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/817\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.24.0...loki-18.13.3",
+      "prerelease": false,
+      "publishedAt": "2026-09-17T19:38:59Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.3",
+      "version": "loki-18.13.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 391003166,
+      "name": "grafana-mcp-0.24.0",
+      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v1.5.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/818\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.13.2...grafana-mcp-0.24.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-17T19:31:16Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.24.0",
+      "version": "grafana-mcp-0.24.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-09-04T15:14:28Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.12.1",
       "version": "loki-18.12.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 382822739,
-      "name": "grafana-13.2.1",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Update quay.io/kiwigrid/k8s-sidecar Docker tag to v2.11.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/781\n* [loki] Update docker.io/kiwigrid/k8s-sidecar Docker tag to v2.11.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/782\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.12.0...grafana-13.2.1",
-      "prerelease": false,
-      "publishedAt": "2026-09-04T15:14:25Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.1",
-      "version": "grafana-13.2.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 382434775,
-      "name": "loki-18.12.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update loki dependency non-major updates by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/780\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.2.0...loki-18.12.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-04T02:09:10Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.12.0",
-      "version": "loki-18.12.0"
     }
   ],
   "schemaVersion": 1,

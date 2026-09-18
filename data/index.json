@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T18:13:14.875Z",
+  "generatedAt": "2026-09-18T07:24:44.553Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 390231691,
-        "name": "loki-18.13.2",
+        "id": 391008007,
+        "name": "loki-18.13.3",
         "prerelease": false,
-        "publishedAt": "2026-09-16T20:05:25Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.2",
-        "version": "loki-18.13.2"
+        "publishedAt": "2026-09-17T19:38:59Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.3",
+        "version": "loki-18.13.3"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-15T13:38:25Z",
-        "version": "grafana-13.2.5"
+        "publishedAt": "2026-09-17T19:31:16Z",
+        "version": "grafana-mcp-0.24.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2416,19 +2416,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 386667963,
-        "name": "v0.1.58",
+        "id": 391063909,
+        "name": "v0.1.59",
         "prerelease": false,
-        "publishedAt": "2026-09-10T22:35:48Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.58",
-        "version": "v0.1.58"
+        "publishedAt": "2026-09-17T21:11:48Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.59",
+        "version": "v0.1.59"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-09-03T15:44:14Z",
-        "version": "v0.1.57"
+        "publishedAt": "2026-09-10T22:35:48Z",
+        "version": "v0.1.58"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "pgdogdev/pgdog",
       "tags": [
         "postgresql",
