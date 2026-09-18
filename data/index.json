@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T07:24:44.553Z",
+  "generatedAt": "2026-09-18T17:42:12.568Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -703,19 +703,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 373719578,
-        "name": "v0.22.0",
+        "id": 391438344,
+        "name": "v0.23.0",
         "prerelease": false,
-        "publishedAt": "2026-08-20T12:32:17Z",
-        "url": "https://github.com/kubernetes-sigs/external-dns/releases/tag/v0.22.0",
-        "version": "v0.22.0"
+        "publishedAt": "2026-09-18T11:56:19Z",
+        "url": "https://github.com/kubernetes-sigs/external-dns/releases/tag/v0.23.0",
+        "version": "v0.23.0"
       },
       "name": "ExternalDNS",
       "previous": {
-        "publishedAt": "2026-04-06T12:19:06Z",
-        "version": "v0.21.0"
+        "publishedAt": "2026-08-20T12:32:17Z",
+        "version": "v0.22.0"
       },
-      "releaseCount": 6,
+      "releaseCount": 7,
       "repository": "kubernetes-sigs/external-dns",
       "tags": [
         "dns",
