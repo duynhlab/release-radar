@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-18T07:24:25.936Z",
+  "generatedAt": "2026-09-20T07:44:41.624Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 392237499,
+      "name": "loki-18.13.4",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Fix gateway duration metric units by @jkroepke in https://github.com/grafana-community/helm-charts/pull/820\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.13.3...loki-18.13.4",
+      "prerelease": false,
+      "publishedAt": "2026-09-19T22:22:27Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.4",
+      "version": "loki-18.13.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-06T20:56:33Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.2",
       "version": "grafana-13.2.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 382822764,
-      "name": "loki-18.12.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [grafana] Update quay.io/kiwigrid/k8s-sidecar Docker tag to v2.11.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/781\n* [loki] Update docker.io/kiwigrid/k8s-sidecar Docker tag to v2.11.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/782\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.12.0...loki-18.12.1",
-      "prerelease": false,
-      "publishedAt": "2026-09-04T15:14:28Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.12.1",
-      "version": "loki-18.12.1"
     }
   ],
   "schemaVersion": 1,

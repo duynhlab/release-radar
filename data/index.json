@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T17:42:12.568Z",
+  "generatedAt": "2026-09-20T07:44:58.506Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 391008007,
-        "name": "loki-18.13.3",
+        "id": 392237499,
+        "name": "loki-18.13.4",
         "prerelease": false,
-        "publishedAt": "2026-09-17T19:38:59Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.3",
-        "version": "loki-18.13.3"
+        "publishedAt": "2026-09-19T22:22:27Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.4",
+        "version": "loki-18.13.4"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-17T19:31:16Z",
-        "version": "grafana-mcp-0.24.0"
+        "publishedAt": "2026-09-17T19:38:59Z",
+        "version": "loki-18.13.3"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2323,19 +2323,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 356574598,
-        "name": "v2.3.5",
+        "id": 392314352,
+        "name": "v2.4.0",
         "prerelease": false,
-        "publishedAt": "2026-07-20T08:19:50Z",
-        "url": "https://github.com/containerd/nerdctl/releases/tag/v2.3.5",
-        "version": "v2.3.5"
+        "publishedAt": "2026-09-20T05:01:55Z",
+        "url": "https://github.com/containerd/nerdctl/releases/tag/v2.4.0",
+        "version": "v2.4.0"
       },
       "name": "nerdctl",
       "previous": {
-        "publishedAt": "2026-06-29T08:55:48Z",
-        "version": "v2.3.4"
+        "publishedAt": "2026-07-20T08:19:50Z",
+        "version": "v2.3.5"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "containerd/nerdctl",
       "tags": [
         "containers",
