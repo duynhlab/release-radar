@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T07:58:06.793Z",
+  "generatedAt": "2026-09-21T19:27:45.920Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -398,17 +398,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 389810994,
-        "name": "v0.95.0",
+        "id": 393113428,
+        "name": "v0.96.1",
         "prerelease": false,
-        "publishedAt": "2026-09-16T10:04:08Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.95.0",
-        "version": "v0.95.0"
+        "publishedAt": "2026-09-21T16:22:02Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.96.1",
+        "version": "v0.96.1"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-09-14T13:11:45Z",
-        "version": "v0.94.2"
+        "publishedAt": "2026-09-21T09:07:11Z",
+        "version": "v0.96.0"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
@@ -647,19 +647,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 379768864,
-        "name": "Istio 1.31.0",
+        "id": 393040073,
+        "name": "Istio 1.31.1",
         "prerelease": false,
-        "publishedAt": "2026-08-31T15:47:13Z",
-        "url": "https://github.com/istio/istio/releases/tag/1.31.0",
-        "version": "1.31.0"
+        "publishedAt": "2026-09-21T14:45:03Z",
+        "url": "https://github.com/istio/istio/releases/tag/1.31.1",
+        "version": "1.31.1"
       },
       "name": "Istio",
       "previous": {
-        "publishedAt": "2026-08-27T15:11:19Z",
-        "version": "1.29.7"
+        "publishedAt": "2026-08-31T15:47:13Z",
+        "version": "1.31.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "istio/istio",
       "tags": [
         "service-mesh",
