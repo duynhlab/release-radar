@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-17T18:12:52.621Z",
+  "generatedAt": "2026-09-23T18:24:28.087Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 394938958,
+      "name": "openbao-0.29.6",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* ci: Update GitHub Actions for Node.js 24 by @kangetsu121 in https://github.com/openbao/openbao-helm/pull/234\n* chore: bump OpenBao to v2.6.3 by @pree in https://github.com/openbao/openbao-helm/pull/236\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.29.5...openbao-0.29.6",
+      "prerelease": false,
+      "publishedAt": "2026-09-23T18:21:27Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.6",
+      "version": "openbao-0.29.6"
+    },
     {
       "channel": "stable",
       "draft": false,

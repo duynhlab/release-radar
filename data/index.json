@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T07:45:22.511Z",
+  "generatedAt": "2026-09-23T18:24:52.791Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -101,19 +101,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 390005903,
-        "name": "v1.16.3",
+        "id": 394651380,
+        "name": "v1.16.4",
         "prerelease": false,
-        "publishedAt": "2026-09-16T14:33:39Z",
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.3",
-        "version": "v1.16.3"
+        "publishedAt": "2026-09-23T12:44:16Z",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.4",
+        "version": "v1.16.4"
       },
       "name": "Terraform",
       "previous": {
-        "publishedAt": "2026-09-09T13:22:31Z",
-        "version": "v1.16.2"
+        "publishedAt": "2026-09-16T14:33:39Z",
+        "version": "v1.16.3"
       },
-      "releaseCount": 7,
+      "releaseCount": 8,
       "repository": "hashicorp/terraform",
       "tags": [
         "iac"
@@ -590,19 +590,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 346387279,
-        "name": "v1.30.0",
+        "id": 394697077,
+        "name": "v1.30.1",
         "prerelease": false,
-        "publishedAt": "2026-06-29T16:36:13Z",
-        "url": "https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.0",
-        "version": "v1.30.0"
+        "publishedAt": "2026-09-23T13:35:42Z",
+        "url": "https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.1",
+        "version": "v1.30.1"
       },
       "name": "CloudNativePG",
       "previous": {
-        "publishedAt": "2026-06-29T16:06:03Z",
-        "version": "v1.29.2"
+        "publishedAt": "2026-09-23T13:00:24Z",
+        "version": "v1.29.3"
       },
-      "releaseCount": 8,
+      "releaseCount": 10,
       "repository": "cloudnative-pg/cloudnative-pg",
       "tags": [
         "postgresql",
@@ -619,19 +619,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 362929465,
-        "name": "v2.20.2",
+        "id": 394826223,
+        "name": "v2.21.0",
         "prerelease": false,
-        "publishedAt": "2026-07-31T08:14:38Z",
-        "url": "https://github.com/kedacore/keda/releases/tag/v2.20.2",
-        "version": "v2.20.2"
+        "publishedAt": "2026-09-23T16:20:41Z",
+        "url": "https://github.com/kedacore/keda/releases/tag/v2.21.0",
+        "version": "v2.21.0"
       },
       "name": "KEDA",
       "previous": {
-        "publishedAt": "2026-06-08T17:55:31Z",
-        "version": "v2.20.1"
+        "publishedAt": "2026-07-31T08:14:38Z",
+        "version": "v2.20.2"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "kedacore/keda",
       "tags": [
         "kubernetes",
@@ -1167,19 +1167,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 385459003,
-        "name": "0.94.0 / 2026-09-09",
+        "id": 394677046,
+        "name": "0.94.1 / 2026-09-23",
         "prerelease": false,
-        "publishedAt": "2026-09-09T11:31:02Z",
-        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.94.0",
-        "version": "v0.94.0"
+        "publishedAt": "2026-09-23T13:14:37Z",
+        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.94.1",
+        "version": "v0.94.1"
       },
       "name": "Prometheus Operator",
       "previous": {
-        "publishedAt": "2026-08-10T14:41:12Z",
-        "version": "v0.93.1"
+        "publishedAt": "2026-09-09T11:31:02Z",
+        "version": "v0.94.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "prometheus-operator/prometheus-operator",
       "tags": [
         "metrics",
@@ -1315,19 +1315,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 390752644,
-        "name": "openbao-0.29.5",
+        "id": 394938958,
+        "name": "openbao-0.29.6",
         "prerelease": false,
-        "publishedAt": "2026-09-17T13:41:03Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.5",
-        "version": "openbao-0.29.5"
+        "publishedAt": "2026-09-23T18:21:27Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.6",
+        "version": "openbao-0.29.6"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-09-03T14:12:51Z",
-        "version": "openbao-0.29.4"
+        "publishedAt": "2026-09-17T13:41:03Z",
+        "version": "openbao-0.29.5"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "openbao/openbao-helm",
       "tags": [
         "secrets",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 394124861,
-        "name": "loki-18.13.5",
+        "id": 394810370,
+        "name": "synthetic-monitoring-agent-1.20.0",
         "prerelease": false,
-        "publishedAt": "2026-09-22T21:13:58Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.5",
-        "version": "loki-18.13.5"
+        "publishedAt": "2026-09-23T15:40:06Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.20.0",
+        "version": "synthetic-monitoring-agent-1.20.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-19T22:22:27Z",
-        "version": "loki-18.13.4"
+        "publishedAt": "2026-09-22T21:13:58Z",
+        "version": "loki-18.13.5"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1595,19 +1595,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 386393800,
-        "name": "tempo v13.2.1",
+        "id": 394939326,
+        "name": "tempo v13.2.2",
         "prerelease": false,
-        "publishedAt": "2026-09-10T15:12:54Z",
-        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.2.1",
-        "version": "v13.2.1"
+        "publishedAt": "2026-09-23T18:21:58Z",
+        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.2.2",
+        "version": "v13.2.2"
       },
       "name": "Tempo Datasource",
       "previous": {
-        "publishedAt": "2026-08-27T10:56:32Z",
-        "version": "v13.2.0"
+        "publishedAt": "2026-09-10T15:12:54Z",
+        "version": "v13.2.1"
       },
-      "releaseCount": 8,
+      "releaseCount": 9,
       "repository": "grafana/grafana-tempo-datasource",
       "tags": [
         "traces",
