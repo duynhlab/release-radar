@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T18:24:52.791Z",
+  "generatedAt": "2026-09-24T07:36:10.275Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -11,19 +11,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 377265881,
-        "name": "v1.37.0",
+        "id": 395011858,
+        "name": "v1.34.12",
         "prerelease": false,
-        "publishedAt": "2026-08-26T16:29:12Z",
-        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0",
-        "version": "v1.37.0"
+        "publishedAt": "2026-09-23T19:58:45Z",
+        "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.12",
+        "version": "v1.34.12"
       },
       "name": "Kubernetes",
       "previous": {
-        "publishedAt": "2026-08-20T18:59:55Z",
-        "version": "v1.35.8"
+        "publishedAt": "2026-09-23T19:35:01Z",
+        "version": "v1.35.9"
       },
-      "releaseCount": 11,
+      "releaseCount": 15,
       "repository": "kubernetes/kubernetes",
       "tags": [
         "containers",

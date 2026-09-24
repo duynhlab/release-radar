@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-08-27T12:46:27.781Z",
+  "generatedAt": "2026-09-24T07:35:20.891Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 395011858,
+      "name": "v1.34.12",
+      "notes": "See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md).\n\nSee the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md) for more details.",
+      "prerelease": false,
+      "publishedAt": "2026-09-23T19:58:45Z",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.12",
+      "version": "v1.34.12"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 394994596,
+      "name": "v1.35.9",
+      "notes": "See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md).\n\nSee the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md) for more details.",
+      "prerelease": false,
+      "publishedAt": "2026-09-23T19:35:01Z",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.9",
+      "version": "v1.35.9"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 394978655,
+      "name": "v1.37.1",
+      "notes": "See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md).\n\nSee the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md) for more details.",
+      "prerelease": false,
+      "publishedAt": "2026-09-23T19:13:17Z",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.1",
+      "version": "v1.37.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 394967058,
+      "name": "v1.36.5",
+      "notes": "See [kubernetes-announce@](https://groups.google.com/forum/#!forum/kubernetes-announce). Additional binary downloads are linked in the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md).\n\nSee the [CHANGELOG](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md) for more details.",
+      "prerelease": false,
+      "publishedAt": "2026-09-23T18:58:18Z",
+      "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.5",
+      "version": "v1.36.5"
+    },
     {
       "channel": "stable",
       "draft": false,
