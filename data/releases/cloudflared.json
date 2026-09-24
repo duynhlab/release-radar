@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-11T17:45:37.831Z",
+  "generatedAt": "2026-09-24T18:25:47.139Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 395860708,
+      "name": "2026.9.3",
+      "notes": "### SHA256 Checksums:\n```\ncloudflared-amd64.pkg: 48d0d3b28b3b5d142490f57316981b65ae46fbbe33408c22b0a4a11b5242de50\ncloudflared-arm64.pkg: 79f17181cda2bbcfe6ad36cd9ee1946faaf079e6a9d6c0bc4a32fbb644a4c29d\ncloudflared-darwin-amd64.tgz: ab588b3b4db9cdb4476c30a3db2a72635b1d8327d44741fee6799a0f37b0ec07\ncloudflared-darwin-arm64.tgz: 5472c1a01c84bc31b3021056a73b4e5774ddddefc572124ea8fdf6c340639f32\ncloudflared-fips-linux-amd64: 32a68f04c5816304ece7f5129ab81581c95eb26352848d2605cde42d63316e88\ncloudflared-fips-linux-amd64.deb: 4dd10ab302a672c34739d88305ad83bf847b37840ccbd1f17a2ab94bf3dc690c\ncloudflared-fips-linux-x86_64.rpm: eae2945bc1b947d225b25325eda961be1fa924097d9cfdd0ae70e154bd16dc3e\ncloudflared-linux-386: d6b2f917e2e78b3e3afba760af726e51751d10c2fcad4a2fb2a69feb4bd47421\ncloudflared-linux-386.deb: efd821ce6adeb899b419a26965f09ca4d64c7dca9b386b1be6ecb5b7e947cf34\ncloudflared-linux-386.rpm: e3c3d6bf81c14eec403a540328e66ef3304539fc5c00f0dada6d5b70a9205d59\ncloudflared-linux-aarch64.rpm: e37b746dd252ab51b8dbe90f07eaf50c0335d137009cc224a97203acf1c331ab\ncloudflared-linux-amd64: 77e26d8d900e0b8469f416239d14b5f296525fdf79fee6f511ef55609e3fbac2\ncloudflared-linux-amd64.deb: bc073ef293d504cf5ac533bd0aa1c824ef6b4f358765ccaa6628a8a95cacb4b7\ncloudflared-linux-arm: 967dc371a3fedbf09e881c13ee7ba317155ebc336cbd4afb756b46fc6785e5af\ncloudflared-linux-arm.deb: a9d12267d5991328c40c5071fcc82c3d6d1953800bd30d3530a5120b2dda9b4f\ncloudflared-linux-arm.rpm: 20b3b2ae15b744a04eb27b94300450eb9d280ffff4d196ff3e2509daaf0c7024\ncloudflared-linux-arm64: aaeb2d7d0da3614634c7e03ab13487a1522c2e79165ed2929cfe23d5e95b326d\ncloudflared-linux-arm64.deb: bcce0111878f13d26e66b1d2ea7f270c8bde4bd549e32ce74d32474521583ca3\ncloudflared-linux-armhf: a714b1bee87e71ce7260555b30722ce711d12aaa0fee5a8aadc767ee6b816a14\ncloudflared-linux-armhf.deb: 4815dd7fc7b4c3ff5d29a7bbe80bba9e253d29b2eb84079e853b158fdfd7e975\ncloudflared-linux-armhf.rpm: 4350c58a83ce4cd8717eb6352713e6d2d615c204a6e6161015cf0db4a2142c18\ncloudflared-linux-x86_64.rpm: b64f9131b5ea2772c4a8fb9fb67f95437190ad63e909871396adb92c2b6d99eb\ncloudflared-windows-386.exe: 9b95ddc2eba67b86ed3dc4cc2a15881960563031b52ce564376af41fb91ad402\ncloudflared-windows-386.msi: c26a212d4e04e3d0525aa131c02653801920cd88c706cb67c0eb8a09293f4591\ncloudflared-windows-amd64.exe: f096265ec2fcbe9bb6e2d64268db167ced3fcbb83d894bdb9e2fcdb26f2ea7e2\ncloudflared-windows-amd64.msi: 597c2f4daa5965f10a3893a56aefe27a5e5946bcbd333d984a32743c6df7a561\n```",
+      "prerelease": false,
+      "publishedAt": "2026-09-24T16:14:11Z",
+      "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.9.3",
+      "version": "2026.9.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 395836694,
+      "name": "2026.9.2",
+      "notes": "### SHA256 Checksums:\n```\ncloudflared-amd64.pkg: 86dd0f8fcb3060b6080f2c3233967887d6ceb0fbed180ccfd8999f4b82baa0fd\ncloudflared-arm64.pkg: 966fd7f038fc04286fc2a9883352b6342899927958b694d1d316a99cc4f58c9a\ncloudflared-darwin-amd64.tgz: 5353cd803c5ed275a23cf1185860776bf3917d93890588b021a7ff896136efb4\ncloudflared-darwin-arm64.tgz: 1e4cf155145f9a459e3cc5b1ca147c312fb7dca6be7faef75d8832ff6d673c7a\ncloudflared-fips-linux-amd64: 605ca757adedbb81b45a93584f87d23ebbe35d5b018a5475a6cc6858d664f682\ncloudflared-fips-linux-amd64.deb: 5fb596219cc8c37e400e06bca1ca3a0e23a477a56e4446229eb52919f6f42974\ncloudflared-fips-linux-x86_64.rpm: dcd12ba94fa9edb8c971d4e3d16f4bea71127207713d4ded905d6cdb38060a76\ncloudflared-linux-386: 4d813b9d5b35ef683f5614dc0811c69618bad1fc3350687e95ad4fc549e7342c\ncloudflared-linux-386.deb: 25c17dcc4c496abd34682e22d6a3f864f0c4797581a19ce3f3ae5e27963239c0\ncloudflared-linux-386.rpm: 1f2ff2662358a578f0735ec462e7d2654dc58e4c23725abf9ba6081c34601156\ncloudflared-linux-aarch64.rpm: cb7842ff6f959d3a77d43314be5b6015dc17a3a90d92630887396fab0797c31f\ncloudflared-linux-amd64: ea2c9bb2d5017a796b64bf36e605d727accf76a5500014bb12952ce11ae1f932\ncloudflared-linux-amd64.deb: aa2604c46d5b8848247c6d32ca8e6d7e62e97d7d7ecc4a62023d58d246f6dea4\ncloudflared-linux-arm: 871f8a4f48b841d91834b45157b169c601c29892da3629edc4b1d2088ab4767d\ncloudflared-linux-arm.deb: a55cada018840b7cbb07ce764e91f34d4797de1c0a0bc688bcdf86fee2a6aca3\ncloudflared-linux-arm.rpm: 53ce7747b64f16ef6e75eb77d4ecaca7df1abc6399054d7b62f5eea86722f93d\ncloudflared-linux-arm64: 39f23e7c55ce2c2e502a0b3e070b978bf69135b19246b5b7581dadb94cf2144d\ncloudflared-linux-arm64.deb: 8bbbffa69cedbf546dc224a9319e90626069b0c917c4070b43aaf81f87cf2821\ncloudflared-linux-armhf: dbab3ca93dc0bb7bff1b15486c3ca2b96c71b3ac0cda24e340517ceae20898cc\ncloudflared-linux-armhf.deb: 1f6a3a17a309f0ad2b25c85f7322a298b4938ad5e904b19bced157040ee07e55\ncloudflared-linux-armhf.rpm: f3709a03692906b8539c9bd27c1b38f3d183d71d20d6c0d991abb9566fcfe610\ncloudflared-linux-x86_64.rpm: e18befe6459389d8667d2b6496664009164c16f45aa660cfd0cfdfd8f748576a\ncloudflared-windows-386.exe: d2be3e66033b499634dc9a675051b70dd37fb2bd91d4f864073fd71cc69c1003\ncloudflared-windows-386.msi: 5321d7e658043beab5179d9f0b32b199b722d0c95bfad5085c89c6fa70b3f82a\ncloudflared-windows-amd64.exe: 214f5d74f66941d147d054f6cc9d821c60ff6a9b2d5355f6c854c6bee217c548\ncloudflared-windows-amd64.msi: 73a62ea87074d97a8fa98575f2100de826fb6d38ee52b70f569c113f8a824c99\n```",
+      "prerelease": false,
+      "publishedAt": "2026-09-24T15:44:43Z",
+      "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.9.2",
+      "version": "2026.9.2"
+    },
     {
       "channel": "stable",
       "draft": false,

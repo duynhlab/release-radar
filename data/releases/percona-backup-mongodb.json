@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-18T02:52:53.227Z",
+  "generatedAt": "2026-09-24T18:25:45.473Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 395808380,
+      "name": "v2.16.0",
+      "notes": "## Release highlights\r\n\r\n### Backup lifecycle management\r\nPBM now supports backup retention policies based on the grandfather-father-son (GFS) model. Configure retention periods in the `lifecycle` section, then apply the policy with `pbm cleanup --lifecycle`. For a deep dive into this feature, see the [documentation](https://docs.percona.com/percona-backup-mongodb/latest/usage/backup-lifecycle-management.html)\r\n\r\n### [Experimental feature] Parallel uploads to Google Cloud Storage\r\n- Parallel uploads rely on an experimental feature of the **Google Cloud Storage Go client**. The upstream project does not recommend this feature for production use, and its API can change in future releases.\r\n- For upstream limitations, see [Parallel uploads in the Google Cloud Storage Go client](https://pkg.go.dev/cloud.google.com/go/storage#hdr-Parallel_Uploads)\r\n\r\nPBM can upload parts of a backup to GCS concurrently and compose them into the final backup object. Parallel uploads may improve throughput for large objects, depending on the available bandwidth and host resources. For more insights into this feature, see the [documentation](https://docs.percona.com/percona-backup-mongodb/details/gcs.html#parallel-uploads-to-gcs).\r\n\r\n### Extended platform support\r\nPBM 2.16.0 adds support for these platforms:\r\n- Debian 13 (Trixie)\r\n- Red Hat Enterprise Linux 10\r\n\r\n## Upgrade considerations\r\n### S3 debug logging\r\nPBM now validates storage.s3.debugLogLevels for Amazon Simple Storage Service (Amazon S3) and S3-compatible storage. If the configuration contains an unsupported value, PBM cannot initialize the storage and reports an error. For detailed information about these options, refer to the [documentation](https://docs.percona.com/percona-backup-mongodb/latest/reference/configuration-options.html#storages3debugloglevels)\r\n\r\n### Service management on Red Hat platforms\r\nRed Hat packages no longer include `SysV init` scripts. If your automation uses these scripts to manage `pbm-agent`, update it to use `systemd` before upgrading.\r\n\r\n### Deprecated HMAC client for GCS\r\nRemoved the HMAC-based client for Google Cloud Storage. PBM no longer recognizes HMAC configuration options for GCS. Before upgrading to PBM 2.16.0, reconfigure GCS storage to use the native JSON client and service account credentials.\r\n\r\n\r\n## Changelog\r\nFor more details, please check out the full list of improvements\r\nhttps://docs.percona.com/percona-backup-mongodb/2.16.0/release-notes/2.16.0.html\r\n\r\n## Contact Us\r\n\r\non [Forums](https://forums.percona.com/) \r\nby [Email](mailto:mongodb-backup@percona.com)\r\nor [Professional Support](https://www.percona.com/services/support)",
+      "prerelease": false,
+      "publishedAt": "2026-09-24T15:09:36Z",
+      "url": "https://github.com/percona/percona-backup-mongodb/releases/tag/v2.16.0",
+      "version": "v2.16.0"
+    },
     {
       "channel": "stable",
       "draft": false,
