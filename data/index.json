@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T07:47:23.230Z",
+  "generatedAt": "2026-09-25T18:36:09.059Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -247,19 +247,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 384066667,
-        "name": "3.13.3 / 2026-09-07",
+        "id": 396421628,
+        "name": "3.15.0 / 2026-09-24",
         "prerelease": false,
-        "publishedAt": "2026-09-07T14:18:03Z",
-        "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.3",
-        "version": "v3.13.3"
+        "publishedAt": "2026-09-25T08:56:22Z",
+        "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.0",
+        "version": "v3.15.0"
       },
       "name": "Prometheus",
       "previous": {
-        "publishedAt": "2026-08-18T08:49:40Z",
-        "version": "v3.14.0"
+        "publishedAt": "2026-09-07T14:18:03Z",
+        "version": "v3.13.3"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "prometheus/prometheus",
       "tags": [
         "metrics",
@@ -463,19 +463,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 364756185,
-        "name": "v0.74.1",
+        "id": 396749819,
+        "name": "v0.75.0",
         "prerelease": false,
-        "publishedAt": "2026-08-04T09:40:08Z",
-        "url": "https://github.com/VictoriaMetrics/operator/releases/tag/v0.74.1",
-        "version": "v0.74.1"
+        "publishedAt": "2026-09-25T16:09:32Z",
+        "url": "https://github.com/VictoriaMetrics/operator/releases/tag/v0.75.0",
+        "version": "v0.75.0"
       },
       "name": "VictoriaMetrics Operator",
       "previous": {
-        "publishedAt": "2026-07-30T13:26:56Z",
-        "version": "v0.74.0"
+        "publishedAt": "2026-08-04T09:40:08Z",
+        "version": "v0.74.1"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "VictoriaMetrics/operator",
       "tags": [
         "kubernetes",
@@ -1068,19 +1068,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 356880931,
-        "name": "v0.0.7",
+        "id": 396781415,
+        "name": "v0.0.8",
         "prerelease": false,
-        "publishedAt": "2026-07-20T17:10:35Z",
-        "url": "https://github.com/ClickHouse/clickhouse-operator/releases/tag/v0.0.7",
-        "version": "v0.0.7"
+        "publishedAt": "2026-09-25T17:09:10Z",
+        "url": "https://github.com/ClickHouse/clickhouse-operator/releases/tag/v0.0.8",
+        "version": "v0.0.8"
       },
       "name": "ClickHouse Operator",
       "previous": {
-        "publishedAt": "2026-06-19T15:18:30Z",
-        "version": "v0.0.6"
+        "publishedAt": "2026-07-20T17:10:35Z",
+        "version": "v0.0.7"
       },
-      "releaseCount": 7,
+      "releaseCount": 8,
       "repository": "ClickHouse/clickhouse-operator",
       "tags": [
         "clickhouse",
@@ -1473,19 +1473,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 390879080,
-        "name": "v1.5.1",
+        "id": 396514316,
+        "name": "v1.6.0",
         "prerelease": false,
-        "publishedAt": "2026-09-17T16:41:24Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.5.1",
-        "version": "v1.5.1"
+        "publishedAt": "2026-09-25T10:31:44Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.6.0",
+        "version": "v1.6.0"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-09-17T11:44:28Z",
-        "version": "v1.5.0"
+        "publishedAt": "2026-09-17T16:41:24Z",
+        "version": "v1.5.1"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "grafana/mcp-grafana",
       "tags": [
         "mcp",
@@ -1504,17 +1504,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 387456408,
-        "name": "rollout-operator-0.52.0",
+        "id": 396771136,
+        "name": "alloy-1.13.0",
         "prerelease": false,
-        "publishedAt": "2026-09-12T04:42:03Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.52.0",
-        "version": "rollout-operator-0.52.0"
+        "publishedAt": "2026-09-25T16:43:28Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.13.0",
+        "version": "alloy-1.13.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-11T20:33:00Z",
-        "version": "k8s-monitoring-4.5.2"
+        "publishedAt": "2026-09-12T04:42:03Z",
+        "version": "rollout-operator-0.52.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
