@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-18T07:24:44.010Z",
+  "generatedAt": "2026-09-25T07:47:22.712Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 396102736,
+      "name": "v0.1.60",
+      "notes": "## Performance\r\n* 40% faster handling of `SELECT` in sharded queries by removing redundant AST walks @jkaczman \r\n\r\n## Bugs\r\n* 0.0 and -0.0 hashed to the same value, which broke `DISTINCT`, `count()` and other cross-shard functions @MaxFreedomPollard\r\n* `session_replication_role` should be set via `SET` command @levkk \r\n* `interval` type wasn't correctly parsed for some edge cases in cross-shard aggregates @dipeshbabu\r\n* `stddev` / `variance` failed on some `NULL` values in cross-shard aggregates @dipeshbabu \r\n* `count()` wouldn't preserve original input type / would cast everything to `bigint` @dipeshbabu \r\n* `NULL` was incorrectly handled in array elements in cross-shard queries @dipeshbabu \r\n* `timestamp`(tz) infinite values were not correctly parsed in cross-shard queries @dipeshbabu \r\n* `timestamp`(tz) fractional time wasn't correctly preserved in cross-shard queries @dipeshbabu\r\n* `jemalloc` would crash on ARM targets with page size >= 16k @dipeshbabu \r\n* client/server TLS wouldn't load the whole chain, so client keys signed by intermediates were rejected @dipeshbabu \r\n* don't run 2pc on direct-to-shard write transactions @rlittlefield \r\n* connection pool statistics are preserved on `RELOAD` @murex971 \r\n* handle `numeric` infinite values correctly in cross-shard queries @dipeshbabu \r\n* fully-qualified columns were skipped in `DISTINCT ON` @jkaczman \r\n* sequence names are quoted to make sure they work with all table names @dipeshbabu \r\n* don't drop `SET check_function_bodies` in schema sync @meskill \r\n* pg deparser wasn't handling timezone operations correctly @meskill \r\n* correctly route advisory lock calls in sharded deployments & handle the two parameter variant @jkaczman \r\n* correctly track `pg_catalog.pg_advisory_*` fully qualified advisory lock calls @dipeshbabu \r\n\r\n## Code quality\r\n* migrate replication/resharding to new tasks API @meskill \r\n* `unique_id` and `insert_splits` cleanup @sgrif \r\n* auto retries to some flaky spots in CI @jkaczman \r\n\r\n\r\n## New Contributors\r\n* @MaxFreedomPollard made their first contribution in https://github.com/pgdogdev/pgdog/pull/1507\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.59...v0.1.60",
+      "prerelease": false,
+      "publishedAt": "2026-09-24T21:43:32Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.60",
+      "version": "v0.1.60"
+    },
     {
       "channel": "stable",
       "draft": false,

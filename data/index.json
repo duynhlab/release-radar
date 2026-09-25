@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T18:25:54.850Z",
+  "generatedAt": "2026-09-25T07:47:23.230Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -2416,19 +2416,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 391063909,
-        "name": "v0.1.59",
+        "id": 396102736,
+        "name": "v0.1.60",
         "prerelease": false,
-        "publishedAt": "2026-09-17T21:11:48Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.59",
-        "version": "v0.1.59"
+        "publishedAt": "2026-09-24T21:43:32Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.60",
+        "version": "v0.1.60"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-09-10T22:35:48Z",
-        "version": "v0.1.58"
+        "publishedAt": "2026-09-17T21:11:48Z",
+        "version": "v0.1.59"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "pgdogdev/pgdog",
       "tags": [
         "postgresql",
