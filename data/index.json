@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T18:36:09.059Z",
+  "generatedAt": "2026-09-26T07:40:14.659Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 394810370,
-        "name": "synthetic-monitoring-agent-1.20.0",
+        "id": 396852918,
+        "name": "grafana-mcp-0.25.0",
         "prerelease": false,
-        "publishedAt": "2026-09-23T15:40:06Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.20.0",
-        "version": "synthetic-monitoring-agent-1.20.0"
+        "publishedAt": "2026-09-25T18:55:43Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.25.0",
+        "version": "grafana-mcp-0.25.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-22T21:13:58Z",
-        "version": "loki-18.13.5"
+        "publishedAt": "2026-09-23T15:40:06Z",
+        "version": "synthetic-monitoring-agent-1.20.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
