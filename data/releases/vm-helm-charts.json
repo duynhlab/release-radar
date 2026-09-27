@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-21T07:57:30.446Z",
+  "generatedAt": "2026-09-27T18:23:03.680Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 397683577,
+      "name": "victoria-metrics-operator-0.68.0",
+      "notes": "# Release notes for version 0.68.0\n\n**Release date:** 27 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.75.0](https://img.shields.io/badge/v0.75.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Foperator%2Fchangelog%2F%23v0750)\n\n**Update note 1**: This release contains new VTAgent CRD. It requires to perform CRD versions update.\n\n- updates operator to [v0.75.0](https://github.com/VictoriaMetrics/operator/releases/tag/v0.75.0) version",
+      "prerelease": false,
+      "publishedAt": "2026-09-27T14:34:41Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-0.68.0",
+      "version": "victoria-metrics-operator-0.68.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-31T10:48:19Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-common-0.4.2",
       "version": "victoria-metrics-common-0.4.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 379570564,
-      "name": "victoria-metrics-anomaly-1.12.17",
-      "notes": "# Release notes for version 1.12.17\n\n**Release date:** 31 Aug 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.30.4](https://img.shields.io/badge/v1.30.4-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fanomaly-detection%2Fchangelog%2F%23v1304)\n\n- add `dnsConfig` option to set a custom DNS config for the pod. See [#3174](https://github.com/VictoriaMetrics/helm-charts/issues/3174)\n- upgraded [`vmanomaly`](https://docs.victoriametrics.com/anomaly-detection/) to [1.30.4](https://docs.victoriametrics.com/anomaly-detection/changelog/#v1304)",
-      "prerelease": false,
-      "publishedAt": "2026-08-31T07:19:39Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-anomaly-1.12.17",
-      "version": "victoria-metrics-anomaly-1.12.17"
     }
   ],
   "schemaVersion": 1,

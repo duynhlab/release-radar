@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-18T02:52:52.148Z",
+  "generatedAt": "2026-09-27T18:23:29.748Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 397625662,
+      "name": "v2.59.2: PostgreSQL 19beta4 Support",
+      "notes": "**Bug Fixes**:\n\n- Fix empty block map when file is truncated to zero during backup. (Reviewed by Douglas J Hunley. Reported by JPCOSTA78.)\n- Disable read retry when filters are passed to the driver. (Reviewed by Douglas J Hunley. Reported by megamaced.)\n- Fix pagination of S3 version listing. (Reviewed by Douglas J Hunley, guruguruguru. Reported by guruguruguru.)\n- Set the Azure version header for SAS authentication. (Reviewed by Douglas J Hunley. Reported by Florian Helmberger.)\n- Fix async archive-push stalling on a zero-size backup history file. (Fixed by Andrew Kroh. Reviewed by David Steele, Douglas J Hunley.)\n- Fix annotate command on a remote encrypted repository. (Fixed by Douglas J Hunley. Reviewed by David Steele.)\n\n**Features**:\n\n- PostgreSQL 19beta4 support.",
+      "prerelease": false,
+      "publishedAt": "2026-09-27T11:42:46Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.59.2",
+      "version": "release/2.59.2"
+    },
     {
       "channel": "stable",
       "draft": false,
