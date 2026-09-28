@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-26T17:45:46.825Z",
+  "generatedAt": "2026-09-28T08:41:20.676Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 398022807,
+      "name": "v0.7.1",
+      "notes": "v0.7.1 restores support for Kubernetes 1.31.\r\n\r\n## Fixes\r\n\r\n### CRDs apply on Kubernetes 1.31 again (#473)\r\n\r\nIn v0.7.0 the `serverName` validation rule used the CEL `format` library, which a 1.31 API server does not have for CRD rules, so both CRDs failed to apply there. The rule now uses `self.matches()` with the same DNS-1123 subdomain regex. It accepts and rejects the same names, with the same error message. The minimum supported Kubernetes version is back to 1.31.\r\n\r\n## Upgrade notes\r\n\r\n### From v0.7.0\r\n\r\nOnly the CRDs change. Apply them:\r\n\r\n```console\r\nkubectl apply --server-side --force-conflicts -f https://raw.githubusercontent.com/valkey-io/valkey-operator/v0.7.1/config/crd/bases/valkey.io_valkeyclusters.yaml\r\nkubectl apply --server-side --force-conflicts -f https://raw.githubusercontent.com/valkey-io/valkey-operator/v0.7.1/config/crd/bases/valkey.io_valkeynodes.yaml\r\n```\r\n\r\nThen update the operator image. There is no operator code change, so Valkey pods are not rolled.\r\n\r\n### From v0.6.0\r\n\r\nFollow the [v0.7.0 upgrade notes](https://github.com/valkey-io/valkey-operator/releases/tag/v0.7.0), using the v0.7.1 CRDs. The Kubernetes 1.32 requirement no longer applies: 1.31 is supported.\r\n\r\n## What's Changed\r\n* fix: validate serverName without the CEL format library so the CRDs apply on Kubernetes 1.31 by @jdheyburn in https://github.com/valkey-io/valkey-operator/pull/473\r\n\r\n**Full Changelog**: https://github.com/valkey-io/valkey-operator/compare/v0.7.0...v0.7.1",
+      "prerelease": false,
+      "publishedAt": "2026-09-28T07:18:19Z",
+      "url": "https://github.com/valkey-io/valkey-operator/releases/tag/v0.7.1",
+      "version": "v0.7.1"
+    },
     {
       "channel": "stable",
       "draft": false,

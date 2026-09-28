@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-25T18:35:50.727Z",
+  "generatedAt": "2026-09-28T08:41:30.651Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 398048329,
+      "name": "v1.6.1",
+      "notes": "### Fixed\n\n- The stdio server no longer stops answering requests once a client opens a `subscriptions/listen` stream on protocol `2026-07-28`, which made `tools/list` time out in clients such as Claude Code and GitHub Copilot CLI ([#1236](https://github.com/grafana/mcp-grafana/pull/1236))\n- Blank optional fields in the Claude Desktop extension (MCPB) no longer pass literal `${user_config.*}` placeholders as credentials, so username/password auth works when the service account token field is left empty ([#1249](https://github.com/grafana/mcp-grafana/pull/1249))",
+      "prerelease": false,
+      "publishedAt": "2026-09-28T08:01:16Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.6.1",
+      "version": "v1.6.1"
+    },
     {
       "channel": "stable",
       "draft": false,

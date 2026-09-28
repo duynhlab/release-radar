@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T18:23:39.045Z",
+  "generatedAt": "2026-09-28T08:41:52.422Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 397683577,
-        "name": "victoria-metrics-operator-0.68.0",
+        "id": 398028920,
+        "name": "victoria-metrics-k8s-stack-0.94.0",
         "prerelease": false,
-        "publishedAt": "2026-09-27T14:34:41Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-0.68.0",
-        "version": "victoria-metrics-operator-0.68.0"
+        "publishedAt": "2026-09-28T07:28:37Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.94.0",
+        "version": "victoria-metrics-k8s-stack-0.94.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-20T19:23:25Z",
-        "version": "victoria-metrics-single-0.47.0"
+        "publishedAt": "2026-09-27T14:34:41Z",
+        "version": "victoria-metrics-operator-0.68.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -969,19 +969,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 397147453,
-        "name": "v0.7.0",
+        "id": 398022807,
+        "name": "v0.7.1",
         "prerelease": false,
-        "publishedAt": "2026-09-26T08:30:23Z",
-        "url": "https://github.com/valkey-io/valkey-operator/releases/tag/v0.7.0",
-        "version": "v0.7.0"
+        "publishedAt": "2026-09-28T07:18:19Z",
+        "url": "https://github.com/valkey-io/valkey-operator/releases/tag/v0.7.1",
+        "version": "v0.7.1"
       },
       "name": "Valkey Operator",
       "previous": {
-        "publishedAt": "2026-09-01T09:50:39Z",
-        "version": "v0.6.0"
+        "publishedAt": "2026-09-26T08:30:23Z",
+        "version": "v0.7.0"
       },
-      "releaseCount": 7,
+      "releaseCount": 8,
       "repository": "valkey-io/valkey-operator",
       "tags": [
         "valkey",
@@ -1473,19 +1473,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 396514316,
-        "name": "v1.6.0",
+        "id": 398048329,
+        "name": "v1.6.1",
         "prerelease": false,
-        "publishedAt": "2026-09-25T10:31:44Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.6.0",
-        "version": "v1.6.0"
+        "publishedAt": "2026-09-28T08:01:16Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.6.1",
+        "version": "v1.6.1"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-09-17T16:41:24Z",
-        "version": "v1.5.1"
+        "publishedAt": "2026-09-25T10:31:44Z",
+        "version": "v1.6.0"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "grafana/mcp-grafana",
       "tags": [
         "mcp",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 397539822,
-        "name": "grafana-13.2.6",
+        "id": 397812566,
+        "name": "loki-18.13.7",
         "prerelease": false,
-        "publishedAt": "2026-09-27T06:44:47Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.6",
-        "version": "grafana-13.2.6"
+        "publishedAt": "2026-09-27T21:06:19Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.7",
+        "version": "loki-18.13.7"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-25T18:55:43Z",
-        "version": "grafana-mcp-0.25.0"
+        "publishedAt": "2026-09-27T18:31:05Z",
+        "version": "loki-18.13.6"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

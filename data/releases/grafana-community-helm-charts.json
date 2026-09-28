@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-27T08:08:28.062Z",
+  "generatedAt": "2026-09-28T08:41:31.892Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 397812566,
+      "name": "loki-18.13.7",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v0.4.21 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/821\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.13.6...loki-18.13.7",
+      "prerelease": false,
+      "publishedAt": "2026-09-27T21:06:19Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.7",
+      "version": "loki-18.13.7"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 397762512,
+      "name": "loki-18.13.6",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [CI] Fix regex pattern for image matching in renovate.json by @jkroepke in https://github.com/grafana-community/helm-charts/pull/835\n* [CI] Refactor regex patterns in renovate.json by @jkroepke in https://github.com/grafana-community/helm-charts/pull/837\n* [CI] Fix formatting in renovate.json matchStrings by @jkroepke in https://github.com/grafana-community/helm-charts/pull/839\n* [CI] Fix Docker Hub image detection in Renovate by @jkroepke in https://github.com/grafana-community/helm-charts/pull/841\n* [loki] Replace MinIO with RustFS in CI values by @jkroepke in https://github.com/grafana-community/helm-charts/pull/840\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.2.6...loki-18.13.6",
+      "prerelease": false,
+      "publishedAt": "2026-09-27T18:31:05Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.6",
+      "version": "loki-18.13.6"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-09-11T17:51:20Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-3.0.0",
       "version": "tempo-3.0.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 387213401,
-      "name": "grafana-13.2.3",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Disable default plugin auto-update checks to prevent v13 bundled plugin upgrade failures by @jkroepke with @Copilot in https://github.com/grafana-community/helm-charts/pull/791\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-2.4.0...grafana-13.2.3",
-      "prerelease": false,
-      "publishedAt": "2026-09-11T17:16:06Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.3",
-      "version": "grafana-13.2.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 387211615,
-      "name": "tempo-2.4.0",
-      "notes": "Grafana Tempo Single Binary Mode\n\n## What's Changed\n* [tempo] Add the missing headless service by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/761\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.23.1...tempo-2.4.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-11T17:13:00Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-2.4.0",
-      "version": "tempo-2.4.0"
     }
   ],
   "schemaVersion": 1,
