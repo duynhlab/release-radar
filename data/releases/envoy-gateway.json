@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-28T14:20:27.667Z",
+  "generatedAt": "2026-09-28T20:33:22.108Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 398471021,
+      "name": "v1.8.5",
+      "notes": null,
+      "prerelease": false,
+      "publishedAt": "2026-09-28T17:28:21Z",
+      "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.8.5",
+      "version": "v1.8.5"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 398461158,
+      "name": "v1.9.2",
+      "notes": "# Release Announcement\r\n\r\nCheck out the [v1.9.2  release announcement](https://gateway.envoyproxy.io/news/releases/notes/v1.9.2) to learn more about the release.",
+      "prerelease": false,
+      "publishedAt": "2026-09-28T17:14:42Z",
+      "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.9.2",
+      "version": "v1.9.2"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T08:41:52.422Z",
+  "generatedAt": "2026-09-28T20:34:00.810Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -430,19 +430,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 387088407,
-        "name": "v1.152.0",
+        "id": 396722068,
+        "name": "v1.153.0",
         "prerelease": false,
-        "publishedAt": "2026-09-14T10:36:37Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.152.0",
-        "version": "v1.152.0"
+        "publishedAt": "2026-09-28T08:49:46Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.153.0",
+        "version": "v1.153.0"
       },
       "name": "VictoriaMetrics",
       "previous": {
-        "publishedAt": "2026-09-14T10:36:21Z",
-        "version": "v1.148.4"
+        "publishedAt": "2026-09-28T08:49:33Z",
+        "version": "v1.148.5"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "VictoriaMetrics/VictoriaMetrics",
       "tags": [
         "metrics",
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398028920,
-        "name": "victoria-metrics-k8s-stack-0.94.0",
+        "id": 398165200,
+        "name": "victoria-metrics-single-0.48.0",
         "prerelease": false,
-        "publishedAt": "2026-09-28T07:28:37Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.94.0",
-        "version": "victoria-metrics-k8s-stack-0.94.0"
+        "publishedAt": "2026-09-28T10:56:22Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.48.0",
+        "version": "victoria-metrics-single-0.48.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-27T14:34:41Z",
-        "version": "victoria-metrics-operator-0.68.0"
+        "publishedAt": "2026-09-28T10:56:20Z",
+        "version": "victoria-metrics-k8s-stack-0.95.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -675,19 +675,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 378442796,
-        "name": "v1.9.1",
+        "id": 398471021,
+        "name": "v1.8.5",
         "prerelease": false,
-        "publishedAt": "2026-08-28T11:34:36Z",
-        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.9.1",
-        "version": "v1.9.1"
+        "publishedAt": "2026-09-28T17:28:21Z",
+        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.8.5",
+        "version": "v1.8.5"
       },
       "name": "Envoy Gateway",
       "previous": {
-        "publishedAt": "2026-08-28T11:03:57Z",
-        "version": "v1.8.4"
+        "publishedAt": "2026-09-28T17:14:42Z",
+        "version": "v1.9.2"
       },
-      "releaseCount": 12,
+      "releaseCount": 14,
       "repository": "envoyproxy/gateway",
       "tags": [
         "gateway",
@@ -1315,19 +1315,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 394938958,
-        "name": "openbao-0.29.6",
+        "id": 398385916,
+        "name": "openbao-0.30.0",
         "prerelease": false,
-        "publishedAt": "2026-09-23T18:21:27Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.29.6",
-        "version": "openbao-0.29.6"
+        "publishedAt": "2026-09-28T15:33:37Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.0",
+        "version": "openbao-0.30.0"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-09-17T13:41:03Z",
-        "version": "openbao-0.29.5"
+        "publishedAt": "2026-09-23T18:21:27Z",
+        "version": "openbao-0.29.6"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "openbao/openbao-helm",
       "tags": [
         "secrets",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 397812566,
-        "name": "loki-18.13.7",
+        "id": 398122912,
+        "name": "tempo-distributed-3.7.1",
         "prerelease": false,
-        "publishedAt": "2026-09-27T21:06:19Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.7",
-        "version": "loki-18.13.7"
+        "publishedAt": "2026-09-28T09:52:23Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.7.1",
+        "version": "tempo-distributed-3.7.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-27T18:31:05Z",
-        "version": "loki-18.13.6"
+        "publishedAt": "2026-09-28T09:37:58Z",
+        "version": "grafana-mcp-0.25.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1565,19 +1565,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 386655840,
-        "name": "loki v13.2.0",
+        "id": 398384678,
+        "name": "loki v13.2.1",
         "prerelease": false,
-        "publishedAt": "2026-09-10T22:07:44Z",
-        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.0",
-        "version": "v13.2.0"
+        "publishedAt": "2026-09-28T15:32:05Z",
+        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.1",
+        "version": "v13.2.1"
       },
       "name": "Loki Datasource",
       "previous": {
-        "publishedAt": "2026-08-27T10:57:20Z",
-        "version": "v13.1.1"
+        "publishedAt": "2026-09-10T22:07:44Z",
+        "version": "v13.2.0"
       },
-      "releaseCount": 6,
+      "releaseCount": 7,
       "repository": "grafana/grafana-loki-datasource",
       "tags": [
         "logs",

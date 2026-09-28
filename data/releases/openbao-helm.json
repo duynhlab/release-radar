@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-23T18:24:28.087Z",
+  "generatedAt": "2026-09-28T20:33:35.215Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 398385916,
+      "name": "openbao-0.30.0",
+      "notes": "Official OpenBao Chart\r\n\r\n## BREAKING CHANGES\r\n\r\n* Standalone storage backend changed to PebbleDB, manual migration required. [Migration guide](https://openbao.org/docs/guides/migrations/k8s-pebbledb)\r\n\r\n## What's Changed\r\n* feat(snapshot-agent): support resource-specific labels and annotations by @kangetsu121 in https://github.com/openbao/openbao-helm/pull/233\r\n* Sign Helm Charts by @mweigel in https://github.com/openbao/openbao-helm/pull/229\r\n* chore: bump OpenBao to v2.7.0 by @pree in https://github.com/openbao/openbao-helm/pull/235\r\n\r\n## New Contributors\r\n* @mweigel made their first contribution in https://github.com/openbao/openbao-helm/pull/229\r\n\r\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.29.6...openbao-0.30.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-28T15:33:37Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.0",
+      "version": "openbao-0.30.0"
+    },
     {
       "channel": "stable",
       "draft": false,

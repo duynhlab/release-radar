@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-11T07:17:19.403Z",
+  "generatedAt": "2026-09-28T20:33:40.783Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 398384678,
+      "name": "loki v13.2.1",
+      "notes": "## 13.2.1\n\n- Upgrade lezer-logql ([#198](https://github.com/grafana/grafana-loki-datasource/pull/198))\n- Loki: Tag Explore queries with their source ([#196](https://github.com/grafana/grafana-loki-datasource/pull/196))\n- Fix security vulnerabilities (CVE-2026-84375) ([#200](https://github.com/grafana/grafana-loki-datasource/pull/200))",
+      "prerelease": false,
+      "publishedAt": "2026-09-28T15:32:05Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.1",
+      "version": "v13.2.1"
+    },
     {
       "channel": "stable",
       "draft": false,
