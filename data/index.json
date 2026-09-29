@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T20:34:00.810Z",
+  "generatedAt": "2026-09-29T08:29:15.026Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1200,19 +1200,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 388510956,
-        "name": "Release v0.159.0",
+        "id": 398492381,
+        "name": "Release v0.160.0",
         "prerelease": false,
-        "publishedAt": "2026-09-14T16:47:31Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.159.0",
-        "version": "v0.159.0"
+        "publishedAt": "2026-09-28T22:11:14Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.160.0",
+        "version": "v0.160.0"
       },
       "name": "OpenTelemetry Operator",
       "previous": {
-        "publishedAt": "2026-08-17T12:22:22Z",
-        "version": "v0.158.0"
+        "publishedAt": "2026-09-14T16:47:31Z",
+        "version": "v0.159.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "open-telemetry/opentelemetry-operator",
       "tags": [
         "metrics",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398122912,
-        "name": "tempo-distributed-3.7.1",
+        "id": 398796879,
+        "name": "grafana-mcp-0.25.2",
         "prerelease": false,
-        "publishedAt": "2026-09-28T09:52:23Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.7.1",
-        "version": "tempo-distributed-3.7.1"
+        "publishedAt": "2026-09-29T03:19:12Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.25.2",
+        "version": "grafana-mcp-0.25.2"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-28T09:37:58Z",
-        "version": "grafana-mcp-0.25.1"
+        "publishedAt": "2026-09-28T09:52:23Z",
+        "version": "tempo-distributed-3.7.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

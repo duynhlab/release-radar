@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-28T20:33:40.033Z",
+  "generatedAt": "2026-09-29T08:28:54.274Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 398796879,
+      "name": "grafana-mcp-0.25.2",
+      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Render --disable-write when disableWrite is the only args value by @m-wynn in https://github.com/grafana-community/helm-charts/pull/846\n\n## New Contributors\n* @m-wynn made their first contribution in https://github.com/grafana-community/helm-charts/pull/846\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.7.1...grafana-mcp-0.25.2",
+      "prerelease": false,
+      "publishedAt": "2026-09-29T03:19:12Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.25.2",
+      "version": "grafana-mcp-0.25.2"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-12T16:39:44Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.4",
       "version": "grafana-13.2.4"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 387460625,
-      "name": "loki-18.13.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update rollout-operator Docker tag to v0.52.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/798\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.12.2...loki-18.13.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-12T05:02:50Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.0",
-      "version": "loki-18.13.0"
     }
   ],
   "schemaVersion": 1,
