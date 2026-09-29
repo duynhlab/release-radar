@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-16T07:40:39.911Z",
+  "generatedAt": "2026-09-29T19:25:20.186Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 399129980,
+      "name": "v0.162.0",
+      "notes": "Check the [v0.162.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.162.0) and the [v0.162.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.162.0) for changelogs on specific components.\n\n\n## Changelog\n* f6159a775dad1e21433c49bd8450673dd13ed4d3 Update version to 0.162.0 (#1684)\n* 2cc152fe75ac4612eafa845150efb044b7487237 Update OpenTelemetry Collector Components (#1682)\n* 7cf842647b9f185790f448b2e2cd6309758b1499 Update open-telemetry/shared-workflows action to v0.17.0 (#1681)",
+      "prerelease": false,
+      "publishedAt": "2026-09-29T12:34:07Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.162.0",
+      "version": "v0.162.0"
+    },
     {
       "channel": "stable",
       "draft": false,

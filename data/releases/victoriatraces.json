@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-16T18:11:50.108Z",
+  "generatedAt": "2026-09-29T19:25:25.182Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 398973957,
+      "name": "v0.12.0",
+      "notes": "Released at 2026-09-29\r\n\r\n**Update note:** the `/internal/force_merge`, `/internal/force_flush`, `/internal/log_new_streams` and `/internal/partition/*` HTTP endpoints now require the `POST` method. Update any scripts or automation calling these endpoints via `GET` to use `POST`.\r\n\r\n* SECURITY: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): restrict the `/delete/run_task` endpoint to the `POST` method only in order to prevent some [SSRF](https://en.wikipedia.org/wiki/Server-side_request_forgery)-based log deletion attacks. See [this issue #225](https://github.com/VictoriaMetrics/VictoriaTraces/issues/225). Thank @Vandit1604 for [the pull request #236](https://github.com/VictoriaMetrics/VictoriaTraces/pull/236).\r\n* SECURITY: require the `POST` method for the `/internal/force_merge`, `/internal/force_flush`, `/internal/log_new_streams` and `/internal/partition/*` HTTP endpoints in order to prevent GET-based [SSRF](https://en.wikipedia.org/wiki/Server-side_request_forgery) attacks. See [this issue #225](https://github.com/VictoriaMetrics/VictoriaTraces/issues/225). Thank @Vandit1604 for [the pull request #236](https://github.com/VictoriaMetrics/VictoriaTraces/pull/236).\r\n\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): provide built-in trace explore UI (VTUI). The existing log-based UI (VLUI) is replaced. Raw spans/logs can be queried via [the LogSQL APIs](https://docs.victoriametrics.com/victoriatraces/querying/#http-api). Thank @AndrewChubatiuk for [the pull request #248](https://github.com/VictoriaMetrics/VictoriaTraces/pull/248).\r\n* FEATURE: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): apply the latency offset (`-search.latencyOffset`, default `30s`) to most of the LogsQL APIs except the live-tailing API. Previously, only the Jaeger and Tempo APIs had this latency offset. The latency offset for LogsQL APIs can be disabled via the `disable_latency_offset=true` query argument.\r\n\r\n* BUGFIX: [Single-node VictoriaTraces](https://docs.victoriametrics.com/victoriatraces/) and vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): return `startTimeUnixNano` as a JSON string in the Tempo `/api/search` response. Previously it was a JSON number, which broke clients that decode the field as a string. Thank @clain23 for [the pull request #256](https://github.com/VictoriaMetrics/VictoriaTraces/pull/256).\r\n* BUGFIX: vtselect in [VictoriaTraces cluster](https://docs.victoriametrics.com/victoriatraces/cluster/): apply `-search.allowPartialResponse` for Tempo and Jaeger query APIs. Previously the flag affected only LogsQL query handlers, so Tempo and Jaeger requests still failed when a queried `vtstorage` node was unavailable. See [this issue #157](https://github.com/VictoriaMetrics/VictoriaTraces/issues/157).",
+      "prerelease": false,
+      "publishedAt": "2026-09-29T09:02:00Z",
+      "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.12.0",
+      "version": "v0.12.0"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T08:29:15.026Z",
+  "generatedAt": "2026-09-29T19:26:08.543Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -279,17 +279,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 389136161,
-        "name": "13.0.9",
+        "id": 398975197,
+        "name": "13.2.3",
         "prerelease": false,
-        "publishedAt": "2026-09-15T12:43:46Z",
-        "url": "https://github.com/grafana/grafana/releases/tag/v13.0.9",
-        "version": "v13.0.9"
+        "publishedAt": "2026-09-29T09:02:18Z",
+        "url": "https://github.com/grafana/grafana/releases/tag/v13.2.3",
+        "version": "v13.2.3"
       },
       "name": "Grafana",
       "previous": {
-        "publishedAt": "2026-09-15T12:27:34Z",
-        "version": "v12.4.11"
+        "publishedAt": "2026-09-29T08:57:58Z",
+        "version": "v13.1.7"
       },
       "releaseCount": 20,
       "repository": "grafana/grafana",
@@ -312,19 +312,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 389602740,
-        "name": "v0.161.0",
+        "id": 399129980,
+        "name": "v0.162.0",
         "prerelease": false,
-        "publishedAt": "2026-09-16T02:42:37Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.161.0",
-        "version": "v0.161.0"
+        "publishedAt": "2026-09-29T12:34:07Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.162.0",
+        "version": "v0.162.0"
       },
       "name": "OpenTelemetry Collector",
       "previous": {
-        "publishedAt": "2026-09-02T22:47:58Z",
-        "version": "v0.160.0"
+        "publishedAt": "2026-09-16T02:42:37Z",
+        "version": "v0.161.0"
       },
-      "releaseCount": 8,
+      "releaseCount": 9,
       "repository": "open-telemetry/opentelemetry-collector-releases",
       "tags": [
         "metrics",
@@ -398,17 +398,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 393113428,
-        "name": "v0.96.1",
+        "id": 399101281,
+        "name": "v0.97.1",
         "prerelease": false,
-        "publishedAt": "2026-09-21T16:22:02Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.96.1",
-        "version": "v0.96.1"
+        "publishedAt": "2026-09-29T11:57:00Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.97.1",
+        "version": "v0.97.1"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-09-21T09:07:11Z",
-        "version": "v0.96.0"
+        "publishedAt": "2026-09-29T10:48:18Z",
+        "version": "v0.97.0"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
@@ -527,19 +527,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 389763618,
-        "name": "v0.11.1",
+        "id": 398973957,
+        "name": "v0.12.0",
         "prerelease": false,
-        "publishedAt": "2026-09-16T08:55:26Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.11.1",
-        "version": "v0.11.1"
+        "publishedAt": "2026-09-29T09:02:00Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.12.0",
+        "version": "v0.12.0"
       },
       "name": "VictoriaTraces",
       "previous": {
-        "publishedAt": "2026-08-14T08:49:53Z",
-        "version": "v0.11.0"
+        "publishedAt": "2026-09-16T08:55:26Z",
+        "version": "v0.11.1"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "VictoriaMetrics/VictoriaTraces",
       "tags": [
         "traces"
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398165200,
-        "name": "victoria-metrics-single-0.48.0",
+        "id": 399133021,
+        "name": "victoria-metrics-operator-crds-0.15.0",
         "prerelease": false,
-        "publishedAt": "2026-09-28T10:56:22Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.48.0",
-        "version": "victoria-metrics-single-0.48.0"
+        "publishedAt": "2026-09-29T12:37:37Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-crds-0.15.0",
+        "version": "victoria-metrics-operator-crds-0.15.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-28T10:56:20Z",
-        "version": "victoria-metrics-k8s-stack-0.95.0"
+        "publishedAt": "2026-09-28T10:56:22Z",
+        "version": "victoria-metrics-single-0.48.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -1379,19 +1379,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 370183428,
-        "name": "v3.0.3",
+        "id": 399349601,
+        "name": "v3.1.0",
         "prerelease": false,
-        "publishedAt": "2026-08-13T20:37:13Z",
-        "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
-        "version": "v3.0.3"
+        "publishedAt": "2026-09-29T17:06:39Z",
+        "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0",
+        "version": "v3.1.0"
       },
       "name": "Tempo",
       "previous": {
-        "publishedAt": "2026-08-13T20:37:12Z",
-        "version": "v2.10.8"
+        "publishedAt": "2026-08-13T20:37:13Z",
+        "version": "v3.0.3"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "grafana/tempo",
       "tags": [
         "traces"
@@ -1473,17 +1473,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398048329,
-        "name": "v1.6.1",
+        "id": 399222586,
+        "name": "v1.6.2",
         "prerelease": false,
-        "publishedAt": "2026-09-28T08:01:16Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.6.1",
-        "version": "v1.6.1"
+        "publishedAt": "2026-09-29T14:19:51Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.6.2",
+        "version": "v1.6.2"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-09-25T10:31:44Z",
-        "version": "v1.6.0"
+        "publishedAt": "2026-09-28T08:01:16Z",
+        "version": "v1.6.1"
       },
       "releaseCount": 20,
       "repository": "grafana/mcp-grafana",
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398796879,
-        "name": "grafana-mcp-0.25.2",
+        "id": 399456551,
+        "name": "tempo-distributed-3.8.0",
         "prerelease": false,
-        "publishedAt": "2026-09-29T03:19:12Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.25.2",
-        "version": "grafana-mcp-0.25.2"
+        "publishedAt": "2026-09-29T19:23:47Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.8.0",
+        "version": "tempo-distributed-3.8.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-28T09:52:23Z",
-        "version": "tempo-distributed-3.7.1"
+        "publishedAt": "2026-09-29T19:17:18Z",
+        "version": "grafana-mcp-0.25.3"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-28T08:41:30.651Z",
+  "generatedAt": "2026-09-29T19:25:45.774Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 399222586,
+      "name": "v1.6.2",
+      "notes": "This is the last 1.x release; the next release will be 2.0.\n\n### Fixed\n\n- Loki log queries now return lines in time order across streams and no longer drop a line at the limit boundary when results span multiple streams ([#1259](https://github.com/grafana/mcp-grafana/pull/1259))\n- Loki and VictoriaLogs query time bounds keep sub-second (up to nanosecond) precision, so narrow windows return results and callers can page by exact log timestamps ([#1260](https://github.com/grafana/mcp-grafana/pull/1260))\n- A configured Grafana URL with a trailing slash no longer produces double-slashed request paths when fetching frontend settings ([#1258](https://github.com/grafana/mcp-grafana/pull/1258))\n- PyPI wheels now compress the bundled binary, shrinking each wheel from about 55MB to about 17MB ([#1257](https://github.com/grafana/mcp-grafana/pull/1257))",
+      "prerelease": false,
+      "publishedAt": "2026-09-29T14:19:51Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.6.2",
+      "version": "v1.6.2"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-05-08T11:14:21Z",
       "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.14.0",
       "version": "v0.14.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 315809166,
-      "name": "v0.13.1",
-      "notes": "### Added\n\n- Support PromQL queries against VictoriaMetrics datasources ([#767](https://github.com/grafana/mcp-grafana/pull/767))\n\n### Fixed\n\n- Include recording rules in datasource ruler listings for complete alerting rule visibility ([#819](https://github.com/grafana/mcp-grafana/pull/819))\n- Propagate request context through OpenAPI convenience calls to ensure proper tracing and cancellation ([#822](https://github.com/grafana/mcp-grafana/pull/822))",
-      "prerelease": false,
-      "publishedAt": "2026-04-30T13:38:42Z",
-      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.13.1",
-      "version": "v0.13.1"
     }
   ],
   "schemaVersion": 1,
