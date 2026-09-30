@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-16T18:11:46.523Z",
+  "generatedAt": "2026-09-30T19:18:30.454Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400171331,
+      "name": "v41.6.1",
+      "notes": "# [v41.6.1](https://github.com/traefik/traefik-helm-chart/compare/v41.6.0...v41.6.1) (2026-09-30)\n\n## :rocket: Features\n\n- feat(hub): :rocket: support traefik hub v3.21.0 #2010 by @darkweaver87\n\n## :package: Others\n\n- chore(deps): update renovatebot/github-action action to v46.3.2 #2005 by @renovate-with-github-actions[bot]\n- chore(deps): update github actions (major) #2008 by @renovate-with-github-actions[bot]\n- chore(release): 🚀 publish 41.6.1 #2011 by @darkweaver87\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.13 (default)\n* Traefik Hub: v3.19.3 -> v3.21.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-30T15:12:57Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.6.1",
+      "version": "v41.6.1"
+    },
     {
       "channel": "stable",
       "draft": false,

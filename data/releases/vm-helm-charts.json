@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-09-29T19:25:25.895Z",
+  "generatedAt": "2026-09-30T19:18:35.689Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400207039,
+      "name": "victoria-metrics-mcp-0.4.0",
+      "notes": "# Release notes for version 0.4.0\n\n**Release date:** 30 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.120.1](https://img.shields.io/badge/v1.120.1-success?logo=VictoriaMetrics&labelColor=gray)\n\n- add ability to override container command.\n- add `nodePort` support for `Service` resources\n- added `global.extraLabels` and `global.extraAnnotations` to apply common labels and annotations to all workload resources and pod templates\n- fix `VMServiceScrape` to target the correct namespace\n- added network policy configuration support. See [#2977](https://github.com/VictoriaMetrics/helm-charts/issues/2977)\n- add `dnsConfig` option to set a custom DNS config for the pod. See [#3174](https://github.com/VictoriaMetrics/helm-charts/issues/3174)\n- add `horizontalPodAutoscaler` and `podDisruptionBudget` support. `replicas` is omitted from the `Deployment` when HPA is enabled. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- add `topologySpreadConstraints`, `strategy`, `terminationGracePeriodSeconds`, `priorityClassName`, `initContainers`, `extraContainers`, `envFrom`, `lifecycle`, `startupProbe` and `extraObjects` options. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- add `service.annotations`, `service.extraLabels`, `service.trafficDistribution`, `service.clusterIP`, `service.externalIPs`, `service.loadBalancerIP`, `service.loadBalancerSourceRanges`, `service.externalTrafficPolicy`, `service.healthCheckNodePort`, `service.ipFamilyPolicy` and `service.ipFamilies` options. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- make `VMServiceScrape` configurable: `scrape.interval`, `scrape.scrapeTimeout`, `scrape.scheme`, `scrape.path`, `scrape.tlsConfig`, `scrape.basicAuth`, `scrape.relabelConfigs`, `scrape.metricRelabelConfigs`, `scrape.extraLabels`, `scrape.annotations` and `scrape.namespace`. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- add `serviceAccount.extraLabels`. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- allow `vm.cloudAPIKey` to be a `valueFrom` map so the key can be sourced from a `Secret`, the same way `vm.bearerToken` already can. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- fail early on unsupported `vm.type` values, matching the existing `mcp.mode` check. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- fix `Ingress` missing `metadata.namespace`, so it is created in the release namespace like every other resource. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)",
+      "prerelease": false,
+      "publishedAt": "2026-09-30T15:52:54Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-mcp-0.4.0",
+      "version": "victoria-metrics-mcp-0.4.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400207023,
+      "name": "victoria-logs-mcp-0.2.0",
+      "notes": "# Release notes for version 0.2.0\n\n**Release date:** 30 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.9.0](https://img.shields.io/badge/v1.9.0-success?logo=VictoriaMetrics&labelColor=gray)\n\n**Update node 1**: due to change in label name pods will be restarted.\n\n- added `app.kubernetes.io/component` with value from custom `app` label. See [#2785](https://github.com/VictoriaMetrics/helm-charts/issues/2785).\n- add `nodePort` support for `Service` resources\n- added `global.extraLabels` and `global.extraAnnotations` to apply common labels and annotations to all workload resources and pod templates\n- added network policy configuration support. See [#2977](https://github.com/VictoriaMetrics/helm-charts/issues/2977)\n- add `dnsConfig` option to set a custom DNS config for the pod. See [#3174](https://github.com/VictoriaMetrics/helm-charts/issues/3174)\n- add `horizontalPodAutoscaler` and `podDisruptionBudget` support. `replicas` is omitted from the `Deployment` when HPA is enabled. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- add `topologySpreadConstraints`, `strategy`, `terminationGracePeriodSeconds`, `priorityClassName`, `initContainers`, `extraContainers`, `envFrom`, `lifecycle`, `startupProbe` and `extraObjects` options. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- add `service.annotations`, `service.extraLabels`, `service.trafficDistribution`, `service.clusterIP`, `service.externalIPs`, `service.loadBalancerIP`, `service.loadBalancerSourceRanges`, `service.externalTrafficPolicy`, `service.healthCheckNodePort`, `service.ipFamilyPolicy` and `service.ipFamilies` options. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- make `VMServiceScrape` configurable: `scrape.interval`, `scrape.scrapeTimeout`, `scrape.scheme`, `scrape.path`, `scrape.tlsConfig`, `scrape.basicAuth`, `scrape.relabelConfigs`, `scrape.metricRelabelConfigs`, `scrape.extraLabels`, `scrape.annotations` and `scrape.namespace`. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- add `serviceAccount.extraLabels`. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)\n- fix `Ingress` missing `metadata.namespace`, so it is created in the release namespace like every other resource. See [#3229](https://github.com/VictoriaMetrics/helm-charts/issues/3229)",
+      "prerelease": false,
+      "publishedAt": "2026-09-30T15:52:53Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-mcp-0.2.0",
+      "version": "victoria-logs-mcp-0.2.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400193019,
+      "name": "victoria-traces-mcp-0.1.0",
+      "notes": "# Release notes for version 0.1.0\n\n**Release date:** 30 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.5.0](https://img.shields.io/badge/v1.5.0-success?logo=VictoriaMetrics&labelColor=gray)",
+      "prerelease": false,
+      "publishedAt": "2026-09-30T15:36:59Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-traces-mcp-0.1.0",
+      "version": "victoria-traces-mcp-0.1.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400192991,
+      "name": "victoria-metrics-estimator-0.1.0",
+      "notes": "# Release notes for version 0.1.0\n\n**Release date:** 30 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.1.16](https://img.shields.io/badge/v0.1.16-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fvmestimator%2Fchangelog%2F%23v0116)\n\n- add the `victoria-metrics-estimator` chart with single-node and clustered deployment modes",
+      "prerelease": false,
+      "publishedAt": "2026-09-30T15:36:57Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-estimator-0.1.0",
+      "version": "victoria-metrics-estimator-0.1.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -176,50 +220,6 @@
       "publishedAt": "2026-09-20T19:23:20Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-cluster-0.51.0",
       "version": "victoria-metrics-cluster-0.51.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 392546173,
-      "name": "victoria-metrics-auth-0.42.0",
-      "notes": "# Release notes for version 0.42.0\n\n**Release date:** 20 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.152.0](https://img.shields.io/badge/v1.152.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11520)\n\n- bump version of VM components to [v1.152.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.152.0)",
-      "prerelease": false,
-      "publishedAt": "2026-09-20T19:23:19Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-auth-0.42.0",
-      "version": "victoria-metrics-auth-0.42.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 392546167,
-      "name": "victoria-metrics-anomaly-1.12.18",
-      "notes": "# Release notes for version 1.12.18\n\n**Release date:** 20 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.30.6](https://img.shields.io/badge/v1.30.6-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fanomaly-detection%2Fchangelog%2F%23v1306)\n\n- upgraded [`vmanomaly`](https://docs.victoriametrics.com/anomaly-detection/) to [1.30.6](https://docs.victoriametrics.com/anomaly-detection/changelog/#v1306)\n\n- experimental hardened image can be selected with `image.variant: dhi` when enterprise licensing is configured and `image.tag` is empty; the resulting tag is `v1.30.6-enterprise-dhi`. The default image retains its existing base.",
-      "prerelease": false,
-      "publishedAt": "2026-09-20T19:23:18Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-anomaly-1.12.18",
-      "version": "victoria-metrics-anomaly-1.12.18"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 392546159,
-      "name": "victoria-metrics-alert-0.49.0",
-      "notes": "# Release notes for version 0.49.0\n\n**Release date:** 20 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.152.0](https://img.shields.io/badge/v1.152.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11520)\n\n- bump version of VM components to [v1.152.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.152.0)",
-      "prerelease": false,
-      "publishedAt": "2026-09-20T19:23:16Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-alert-0.49.0",
-      "version": "victoria-metrics-alert-0.49.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 392546154,
-      "name": "victoria-metrics-agent-0.48.0",
-      "notes": "# Release notes for version 0.48.0\n\n**Release date:** 20 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.152.0](https://img.shields.io/badge/v1.152.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11520)\n\n- bump version of VM components to [v1.152.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.152.0)",
-      "prerelease": false,
-      "publishedAt": "2026-09-20T19:23:15Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-agent-0.48.0",
-      "version": "victoria-metrics-agent-0.48.0"
     }
   ],
   "schemaVersion": 1,

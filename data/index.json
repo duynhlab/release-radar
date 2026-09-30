@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T08:33:17.600Z",
+  "generatedAt": "2026-09-30T19:19:19.688Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -128,19 +128,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372998315,
-        "name": "v1.12.6",
+        "id": 400087123,
+        "name": "v1.13.0",
         "prerelease": false,
-        "publishedAt": "2026-08-19T11:40:07Z",
-        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.6",
-        "version": "v1.12.6"
+        "publishedAt": "2026-09-30T13:57:49Z",
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0",
+        "version": "v1.13.0"
       },
       "name": "OpenTofu",
       "previous": {
-        "publishedAt": "2026-08-19T11:39:12Z",
-        "version": "v1.11.14"
+        "publishedAt": "2026-08-19T11:40:07Z",
+        "version": "v1.12.6"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "opentofu/opentofu",
       "tags": [
         "iac"
@@ -370,19 +370,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 389964321,
-        "name": "v41.6.0",
+        "id": 400171331,
+        "name": "v41.6.1",
         "prerelease": false,
-        "publishedAt": "2026-09-16T13:42:31Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.6.0",
-        "version": "v41.6.0"
+        "publishedAt": "2026-09-30T15:12:57Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.6.1",
+        "version": "v41.6.1"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-09-07T09:26:27Z",
-        "version": "v41.5.0"
+        "publishedAt": "2026-09-16T13:42:31Z",
+        "version": "v41.6.0"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "traefik/traefik-helm-chart",
       "tags": [
         "helm-chart",
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 399133021,
-        "name": "victoria-metrics-operator-crds-0.15.0",
+        "id": 400207039,
+        "name": "victoria-metrics-mcp-0.4.0",
         "prerelease": false,
-        "publishedAt": "2026-09-29T12:37:37Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-crds-0.15.0",
-        "version": "victoria-metrics-operator-crds-0.15.0"
+        "publishedAt": "2026-09-30T15:52:54Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-mcp-0.4.0",
+        "version": "victoria-metrics-mcp-0.4.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-28T10:56:22Z",
-        "version": "victoria-metrics-single-0.48.0"
+        "publishedAt": "2026-09-30T15:52:53Z",
+        "version": "victoria-logs-mcp-0.2.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -1473,17 +1473,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 399222586,
-        "name": "v1.6.2",
+        "id": 400019884,
+        "name": "v1.6.3",
         "prerelease": false,
-        "publishedAt": "2026-09-29T14:19:51Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.6.2",
-        "version": "v1.6.2"
+        "publishedAt": "2026-09-30T12:25:22Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v1.6.3",
+        "version": "v1.6.3"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-09-28T08:01:16Z",
-        "version": "v1.6.1"
+        "publishedAt": "2026-09-29T14:19:51Z",
+        "version": "v1.6.2"
       },
       "releaseCount": 20,
       "repository": "grafana/mcp-grafana",
@@ -1912,19 +1912,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 382241573,
-        "name": "v0.15.0",
+        "id": 400079867,
+        "name": "v0.15.1",
         "prerelease": false,
-        "publishedAt": "2026-09-03T18:26:11Z",
-        "url": "https://github.com/cloudnative-pg/plugin-barman-cloud/releases/tag/v0.15.0",
-        "version": "v0.15.0"
+        "publishedAt": "2026-09-30T13:34:15Z",
+        "url": "https://github.com/cloudnative-pg/plugin-barman-cloud/releases/tag/v0.15.1",
+        "version": "v0.15.1"
       },
       "name": "Barman Cloud Plugin",
       "previous": {
-        "publishedAt": "2026-07-29T10:18:27Z",
-        "version": "v0.14.0"
+        "publishedAt": "2026-09-03T18:26:11Z",
+        "version": "v0.15.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "cloudnative-pg/plugin-barman-cloud",
       "tags": [
         "postgresql",
@@ -2152,19 +2152,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 389986222,
-        "name": "26.7.4",
+        "id": 400263044,
+        "name": "26.7.5",
         "prerelease": false,
-        "publishedAt": "2026-09-16T14:44:06Z",
-        "url": "https://github.com/keycloak/keycloak/releases/tag/26.7.4",
-        "version": "26.7.4"
+        "publishedAt": "2026-09-30T17:44:19Z",
+        "url": "https://github.com/keycloak/keycloak/releases/tag/26.7.5",
+        "version": "26.7.5"
       },
       "name": "Keycloak",
       "previous": {
-        "publishedAt": "2026-08-31T09:29:37Z",
-        "version": "26.7.3"
+        "publishedAt": "2026-09-16T14:44:06Z",
+        "version": "26.7.4"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "keycloak/keycloak",
       "tags": [
         "identity",

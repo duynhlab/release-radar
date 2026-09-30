@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-21T03:53:53.891Z",
+  "generatedAt": "2026-09-30T19:18:22.224Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400087123,
+      "name": "v1.13.0",
+      "notes": "# OpenTofu 1.13.0\r\n\r\nWe're proud to announce that OpenTofu 1.13.0 is now officially available! 🎉\r\n\r\n## Highlights\r\n\r\n### Windows on ARM64 is now a supported platform\r\n\r\nStarting with OpenTofu v1.13.0 we are now offering official packages targeting Windows on the ARM64 (also known as \"aarch64\") CPU architecture.\r\n\r\n### Reducing unknowns during planning\r\n\r\nOpenTofu v1.13 introduces a number of new functions that are all intended to allow module authors to give OpenTofu additional hints about what they know to be true even though OpenTofu cannot infer it automatically.\r\n\r\n### Linting Experiment\r\n\r\nOpenTofu v1.13 includes some very early work towards built-in \"linting\" features in OpenTofu, although we are hoping to eventually incorporate other similar needs such as policy enforcement into a single comprehensive feature.\r\n\r\n### Symbol Libraries Experiment\r\n\r\nWe're considering a new kind of artifact called a \"Symbol Library\", which is a reusable collection of values, functions, and type aliases that can be imported from all of the same source types that are already supported for modules.\r\n\r\n## Compatibility Notes\r\n\r\n- `base64gzip` produces results that are equivalent but _not_ byte-for-byte identical to previous versions, this is due to a required golang version upgrade\r\n- WinRM is no longer supported for provisioners\r\n- macOS: Requires macOS 13 Ventura or later\r\n- OpenTofu v1.13 will be the last series that includes official releases for 32 bit CPUs\r\n\r\n## Reference\r\n\r\n- [Full Changelog](https://github.com/opentofu/opentofu/blob/v1.13/CHANGELOG.md)\r\n- [Blog Post](https://opentofu.org/blog/opentofu-1-13-0)\r\n\r\nThank you for your continued support and testing of the OpenTofu project!",
+      "prerelease": false,
+      "publishedAt": "2026-09-30T13:57:49Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0",
+      "version": "v1.13.0"
+    },
     {
       "channel": "stable",
       "draft": false,
