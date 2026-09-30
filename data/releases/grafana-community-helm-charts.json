@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-29T19:25:47.027Z",
+  "generatedAt": "2026-09-30T08:32:57.481Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 399616549,
+      "name": "tempo-3.1.0",
+      "notes": "Grafana Tempo Single Binary Mode\n\n## What's Changed\n* [tempo] Update docker.io/grafana/tempo Docker tag to v3.1.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/851\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-vulture-0.14.0...tempo-3.1.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-30T00:13:19Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-3.1.0",
+      "version": "tempo-3.1.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 399614858,
+      "name": "tempo-vulture-0.14.0",
+      "notes": "Grafana Tempo Vulture - A tool to monitor Tempo performance.\n\n## What's Changed\n* [tempo-vulture] Update docker.io/grafana/tempo-vulture Docker tag to v3.1.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/850\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.8.0...tempo-vulture-0.14.0",
+      "prerelease": false,
+      "publishedAt": "2026-09-30T00:08:44Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-vulture-0.14.0",
+      "version": "tempo-vulture-0.14.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-09-15T13:38:25Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.5",
       "version": "grafana-13.2.5"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 388706093,
-      "name": "grafana-mcp-0.23.2",
-      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v1.4.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/810\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.13.1...grafana-mcp-0.23.2",
-      "prerelease": false,
-      "publishedAt": "2026-09-14T20:55:33Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.23.2",
-      "version": "grafana-mcp-0.23.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 388356776,
-      "name": "loki-18.13.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Fix helm test canary address after removed loki-canary.fullname helper by @zoispag in https://github.com/grafana-community/helm-charts/pull/808\n\n## New Contributors\n* @zoispag made their first contribution in https://github.com/grafana-community/helm-charts/pull/808\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.7.0...loki-18.13.1",
-      "prerelease": false,
-      "publishedAt": "2026-09-14T11:51:08Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.1",
-      "version": "loki-18.13.1"
     }
   ],
   "schemaVersion": 1,

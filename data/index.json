@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T19:26:08.543Z",
+  "generatedAt": "2026-09-30T08:33:17.600Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1535,17 +1535,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 399456551,
-        "name": "tempo-distributed-3.8.0",
+        "id": 399616549,
+        "name": "tempo-3.1.0",
         "prerelease": false,
-        "publishedAt": "2026-09-29T19:23:47Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.8.0",
-        "version": "tempo-distributed-3.8.0"
+        "publishedAt": "2026-09-30T00:13:19Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-3.1.0",
+        "version": "tempo-3.1.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-09-29T19:17:18Z",
-        "version": "grafana-mcp-0.25.3"
+        "publishedAt": "2026-09-30T00:08:44Z",
+        "version": "tempo-vulture-0.14.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1881,19 +1881,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 378115747,
-        "name": "Release 3.20.0",
+        "id": 399558465,
+        "name": "Release 3.20.1",
         "prerelease": false,
-        "publishedAt": "2026-08-27T20:49:24Z",
-        "url": "https://github.com/EnterpriseDB/barman/releases/tag/release/3.20.0",
-        "version": "release/3.20.0"
+        "publishedAt": "2026-09-29T21:58:29Z",
+        "url": "https://github.com/EnterpriseDB/barman/releases/tag/release/3.20.1",
+        "version": "release/3.20.1"
       },
       "name": "Barman",
       "previous": {
-        "publishedAt": "2026-05-27T12:27:23Z",
-        "version": "release/3.19.1"
+        "publishedAt": "2026-08-27T20:49:24Z",
+        "version": "release/3.20.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "EnterpriseDB/barman",
       "tags": [
         "postgresql",
