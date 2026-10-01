@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-30T19:18:35.689Z",
+  "generatedAt": "2026-10-01T08:54:47.560Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400732364,
+      "name": "victoria-metrics-operator-0.68.1",
+      "notes": "# Release notes for version 0.68.1\n\n**Release date:** 01 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.75.0](https://img.shields.io/badge/v0.75.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Foperator%2Fchangelog%2F%23v0750)\n\n- bump `victoria-metrics-common` dependency to `0.4.*`. Resource names are unchanged.",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T07:25:09Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-0.68.1",
+      "version": "victoria-metrics-operator-0.68.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-20T19:23:22Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-distributed-0.46.0",
       "version": "victoria-metrics-distributed-0.46.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 392546177,
-      "name": "victoria-metrics-cluster-0.51.0",
-      "notes": "# Release notes for version 0.51.0\n\n**Release date:** 20 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.152.0](https://img.shields.io/badge/v1.152.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11520)\n\n- bump version of VM components to [v1.152.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.152.0)",
-      "prerelease": false,
-      "publishedAt": "2026-09-20T19:23:20Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-cluster-0.51.0",
-      "version": "victoria-metrics-cluster-0.51.0"
     }
   ],
   "schemaVersion": 1,

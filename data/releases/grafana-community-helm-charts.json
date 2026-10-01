@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-09-30T08:32:57.481Z",
+  "generatedAt": "2026-10-01T08:55:05.256Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400755856,
+      "name": "tempo-distributed-3.10.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] add persistence support to live-store by @BhaRgav-MoRadiya in https://github.com/grafana-community/helm-charts/pull/825\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.25.4...tempo-distributed-3.10.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T08:01:57Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.10.0",
+      "version": "tempo-distributed-3.10.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400750388,
+      "name": "grafana-mcp-0.25.4",
+      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v1.6.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/852\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.9.0...grafana-mcp-0.25.4",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T07:53:02Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.25.4",
+      "version": "grafana-mcp-0.25.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400748290,
+      "name": "tempo-distributed-3.9.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] wire up inert backend-scheduler persistence values by @BhaRgav-MoRadiya in https://github.com/grafana-community/helm-charts/pull/824\n\n## New Contributors\n* @BhaRgav-MoRadiya made their first contribution in https://github.com/grafana-community/helm-charts/pull/824\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-3.1.0...tempo-distributed-3.9.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T07:49:53Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.9.0",
+      "version": "tempo-distributed-3.9.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-09-17T19:38:59Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.3",
       "version": "loki-18.13.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 391003166,
-      "name": "grafana-mcp-0.24.0",
-      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v1.5.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/818\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.13.2...grafana-mcp-0.24.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-17T19:31:16Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.24.0",
-      "version": "grafana-mcp-0.24.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 390231691,
-      "name": "loki-18.13.2",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Fix monolithic HPA/ScaledObject scaleTargetRef name by @andrefrco in https://github.com/grafana-community/helm-charts/pull/816\n\n## New Contributors\n* @andrefrco made their first contribution in https://github.com/grafana-community/helm-charts/pull/816\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.2.5...loki-18.13.2",
-      "prerelease": false,
-      "publishedAt": "2026-09-16T20:05:25Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.2",
-      "version": "loki-18.13.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 389176701,
-      "name": "grafana-13.2.5",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [CI] Use target values for baseline chart installation. by @jkroepke in https://github.com/grafana-community/helm-charts/pull/812\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.2.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/814\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.23.2...grafana-13.2.5",
-      "prerelease": false,
-      "publishedAt": "2026-09-15T13:38:25Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.5",
-      "version": "grafana-13.2.5"
     }
   ],
   "schemaVersion": 1,
