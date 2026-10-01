@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-11T17:45:14.530Z",
+  "generatedAt": "2026-10-01T19:31:52.205Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400912638,
+      "name": "v0.61.0",
+      "notes": "## What's Changed\n* mcp: make docs tests independent of index content by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1039\n* web: fix reusing http client when refreshing oidc provider by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1044\n* mcp: Add tool annotations by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1045\n* build(deps-dev): bump undici from 8.10.0 to 8.11.2 in /web by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1054\n* build(deps): bump js-yaml from 5.2.3 to 5.4.1 in /web by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1055\n* build(deps-dev): bump brace-expansion from 5.0.9 to 5.0.12 in /web by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1056\n* build(deps): bump the cli-tools group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1057\n* build(deps): bump the actions group across 1 directory with 4 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1052\n* Release v0.61.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1059\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.60.0...v0.61.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T11:42:49Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.61.0",
+      "version": "v0.61.0"
+    },
     {
       "channel": "stable",
       "draft": false,

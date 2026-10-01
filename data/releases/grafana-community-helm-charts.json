@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-01T08:55:05.256Z",
+  "generatedAt": "2026-10-01T19:32:03.428Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 401207944,
+      "name": "grafana-mcp-0.26.0",
+      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/854\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.10.0...grafana-mcp-0.26.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T17:44:51Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.26.0",
+      "version": "grafana-mcp-0.26.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-19T22:22:27Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.4",
       "version": "loki-18.13.4"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 391008007,
-      "name": "loki-18.13.3",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update loki dependency non-major updates to v3.7.8 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/817\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.24.0...loki-18.13.3",
-      "prerelease": false,
-      "publishedAt": "2026-09-17T19:38:59Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.3",
-      "version": "loki-18.13.3"
     }
   ],
   "schemaVersion": 1,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-31T20:03:52.794Z",
+  "generatedAt": "2026-10-01T19:31:33.222Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400836628,
+      "name": "v2.9.6",
+      "notes": "## Highlights\n\nFlux v2.9.6 is a patch release that stops helm-controller from reapplying chart CRDs on every upgrade when server-side apply is enabled, and recovers HelmReleases left with a drifted `Ready=Unknown` condition after a failed status patch. source-controller normalizes Azure Blob listing ETags so unchanged containers are no longer re-downloaded on every reconcile, and evicts stale Helm repository index entries from the cache so repositories with frequently changing indexes no longer fail with \"Cache is full\". kustomize-controller extends SOPS decryption error redaction to `spec.postBuild.substituteFrom` values, so substituted secrets echoed back in API validation errors are masked out of status conditions and events, and adds the opt-in `DisableCommitStatusEvent` feature gate. Users are encouraged to upgrade for the best experience.\n\nℹ️ Please follow the [Upgrade Procedure for Flux v2.7+](https://github.com/fluxcd/flux2/discussions/5572) for a smooth upgrade from Flux v2.6 to the latest version.\n\nFixes:\n- Stop reapplying chart CRDs on upgrades when using server-side apply with the default `Create` policy (helm-controller)\n- Recover HelmReleases stranded with a drifted `Ready=Unknown` condition after a failed status patch (helm-controller)\n- Ignore `NotFound` when deleting the HelmChart (helm-controller)\n- Normalize Azure Blob listing ETags so unchanged containers are not re-downloaded on every reconcile (source-controller)\n- Evict stale Helm repository index entries from the cache to avoid \"Cache is full\" errors (source-controller)\n- Extend SOPS decryption error redaction to `spec.postBuild.substituteFrom` values (kustomize-controller)\n\nImprovements:\n- Add the opt-in `DisableCommitStatusEvent` feature gate (kustomize-controller)\n\n## Components changelog\n\n- source-controller [v1.9.6](https://github.com/fluxcd/source-controller/blob/v1.9.6/CHANGELOG.md)\n- kustomize-controller [v1.9.6](https://github.com/fluxcd/kustomize-controller/blob/v1.9.6/CHANGELOG.md)\n- helm-controller [v1.6.5](https://github.com/fluxcd/helm-controller/blob/v1.6.5/CHANGELOG.md)\n\n## CLI changelog\n\n* [release/v2.9.x] Format reproducible created timestamp in UTC by @fluxcdbot in https://github.com/fluxcd/flux2/pull/6081\n* Update toolkit components by @fluxcdbot in https://github.com/fluxcd/flux2/pull/6097\n\n**Full Changelog**: https://github.com/fluxcd/flux2/compare/v2.9.5...v2.9.6",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T09:56:48Z",
+      "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.6",
+      "version": "v2.9.6"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-30T19:18:22.224Z",
+  "generatedAt": "2026-10-01T19:31:32.582Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 401245510,
+      "name": "v1.12.7",
+      "notes": "SECURITY ADVISORIES:\r\n\r\n- When using either a `remote-exec` or `file` provisioner to connect to an attacker-controlled SSH server, the server could previously deadlock the connection by sending certain unexpected packet types. ([#4551](https://github.com/opentofu/opentofu/pull/4551))\r\n\r\n    This addresses the upstream Go security advisories [CVE-2026-78662](https://www.cve.org/CVERecord?id=CVE-2026-78662) and [CVE-2026-56855](https://pkg.go.dev/vuln/GO-2026-6355).",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T18:40:21Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.7",
+      "version": "v1.12.7"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 401173032,
+      "name": "v1.13.1",
+      "notes": "BUG FIXES:\r\n\r\n- `tofu show -json <planfile>` now works again when ephemeral resources are present in the configuration. ([4623](https://github.com/opentofu/opentofu/pull/4623)).\r\n-  Ephemeral output values are now always re-evaluated during the apply phase, instead of sometimes using stale values from the planning phase. ([#4582](https://github.com/opentofu/opentofu/issues/4582))",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T17:15:15Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.1",
+      "version": "v1.13.1"
+    },
     {
       "channel": "stable",
       "draft": false,

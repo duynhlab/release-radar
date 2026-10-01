@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-09-28T20:33:35.215Z",
+  "generatedAt": "2026-10-01T19:31:58.484Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 401234925,
+      "name": "openbao-0.30.2",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* chore: update OpenBao to 2.7.1 by @eyenx in https://github.com/openbao/openbao-helm/pull/241\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.30.1...openbao-0.30.2",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T18:21:10Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.2",
+      "version": "openbao-0.30.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400929126,
+      "name": "openbao-0.30.1",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* fix(ocm): remove openbao-hsm-ubi-image reference by @pree in https://github.com/openbao/openbao-helm/pull/239\n* chore(acceptance tests): bump k8s to 1.37.0 and kind to 0.33.0 by @pree in https://github.com/openbao/openbao-helm/pull/238\n* chore: release 0.30.1 by @eyenx in https://github.com/openbao/openbao-helm/pull/240\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.30.0...openbao-0.30.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T12:06:00Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.1",
+      "version": "openbao-0.30.1"
+    },
     {
       "channel": "stable",
       "draft": false,
