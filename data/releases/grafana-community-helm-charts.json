@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-01T19:32:03.428Z",
+  "generatedAt": "2026-10-02T19:18:04.338Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 401684935,
+      "name": "tempo-distributed-3.10.1",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [CI] Update dependency helm-unittest/helm-unittest to v1.2.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/856\n* [tempo-distributed] remove unused backendWorker.persistence values by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/853\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.26.0...tempo-distributed-3.10.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-02T09:27:00Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.10.1",
+      "version": "tempo-distributed-3.10.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-22T21:13:58Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.5",
       "version": "loki-18.13.5"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 392237499,
-      "name": "loki-18.13.4",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Fix gateway duration metric units by @jkroepke in https://github.com/grafana-community/helm-charts/pull/820\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.13.3...loki-18.13.4",
-      "prerelease": false,
-      "publishedAt": "2026-09-19T22:22:27Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.4",
-      "version": "loki-18.13.4"
     }
   ],
   "schemaVersion": 1,
