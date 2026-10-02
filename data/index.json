@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T19:32:22.281Z",
+  "generatedAt": "2026-10-02T08:31:02.783Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -558,17 +558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 400969346,
-        "name": "victoria-traces-agent-0.1.0",
+        "id": 401645290,
+        "name": "victoria-traces-mcp-0.2.0",
         "prerelease": false,
-        "publishedAt": "2026-10-01T12:57:55Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-traces-agent-0.1.0",
-        "version": "victoria-traces-agent-0.1.0"
+        "publishedAt": "2026-10-02T08:21:52Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-traces-mcp-0.2.0",
+        "version": "victoria-traces-mcp-0.2.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-01T12:57:53Z",
-        "version": "victoria-logs-single-0.13.10"
+        "publishedAt": "2026-10-02T08:21:50Z",
+        "version": "victoria-traces-agent-0.2.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -2268,19 +2268,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 390800128,
-        "name": "v1.52.0",
+        "id": 401347535,
+        "name": "v1.54.0",
         "prerelease": false,
-        "publishedAt": "2026-09-17T14:38:17Z",
-        "url": "https://github.com/anchore/syft/releases/tag/v1.52.0",
-        "version": "v1.52.0"
+        "publishedAt": "2026-10-01T20:54:29Z",
+        "url": "https://github.com/anchore/syft/releases/tag/v1.54.0",
+        "version": "v1.54.0"
       },
       "name": "Syft",
       "previous": {
-        "publishedAt": "2026-08-27T17:01:15Z",
-        "version": "v1.51.1"
+        "publishedAt": "2026-09-17T14:38:17Z",
+        "version": "v1.52.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "anchore/syft",
       "tags": [
         "sbom",
