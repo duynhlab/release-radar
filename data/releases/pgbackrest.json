@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-27T18:23:29.748Z",
+  "generatedAt": "2026-10-04T18:10:11.080Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 402905511,
+      "name": "v2.59.3: Weak Encryption Subkey Bug",
+      "notes": "**IMPORTANT NOTE**: In prior versions it was possible for weak encryption subkeys and salts to be generated if there was an error accessing system random data. See [Weak Encryption Subkeys and Salts](https://pgbackrest.org/news.html#weak-encryption) for more information.\r\n\r\n**Bug Fixes**:\r\n\r\n- Fix possible checksum error loading encrypted info and manifest files. (Fixed by j0uinim. Reviewed by David Steele.)\r\n- Fix possible weak encryption subkeys/salts. (Fixed by j0uinim. Reviewed by David Steele, Stefan Fercot, Douglas J Hunley.)",
+      "prerelease": false,
+      "publishedAt": "2026-10-04T09:02:09Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.59.3",
+      "version": "release/2.59.3"
+    },
     {
       "channel": "stable",
       "draft": false,

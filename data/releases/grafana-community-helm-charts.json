@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-02T19:18:04.338Z",
+  "generatedAt": "2026-10-04T18:10:02.901Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 403007060,
+      "name": "grafana-mcp-0.27.0",
+      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [CI] Update dependency helm-unittest/helm-unittest to v1.2.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/859\n* [grafana-mcp] Add an optional PodDisruptionBudget by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/862\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.10.1...grafana-mcp-0.27.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-04T12:21:58Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.27.0",
+      "version": "grafana-mcp-0.27.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-23T15:40:06Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.20.0",
       "version": "synthetic-monitoring-agent-1.20.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 394124861,
-      "name": "loki-18.13.5",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] honor fullnameOverride for resource names by @tyler-dalton in https://github.com/grafana-community/helm-charts/pull/823\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.13.4...loki-18.13.5",
-      "prerelease": false,
-      "publishedAt": "2026-09-22T21:13:58Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.13.5",
-      "version": "loki-18.13.5"
     }
   ],
   "schemaVersion": 1,
