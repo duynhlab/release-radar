@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-01T08:55:07.018Z",
+  "generatedAt": "2026-10-05T21:29:51.983Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 403888785,
+      "name": "v4.22.1",
+      "notes": "## [4.22.1](https://github.com/grafana/clickhouse-datasource/compare/v4.22.0...v4.22.1) (2026-10-02)\n\n\n### 🐛 Bug Fixes\n\n* always apply the Grafana row limit to query results ([#2150](https://github.com/grafana/clickhouse-datasource/issues/2150)) ([0637465](https://github.com/grafana/clickhouse-datasource/commit/06374654e7eef755cadbe667eeaab0a1adb36d44))",
+      "prerelease": false,
+      "publishedAt": "2026-10-05T15:53:57Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.22.1",
+      "version": "v4.22.1"
+    },
     {
       "channel": "stable",
       "draft": false,

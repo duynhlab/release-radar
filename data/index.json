@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T09:02:23.154Z",
+  "generatedAt": "2026-10-05T21:30:09.193Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -758,19 +758,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 364516404,
-        "name": "v3.5.0",
+        "id": 400379581,
+        "name": "v3.6.0",
         "prerelease": false,
-        "publishedAt": "2026-08-03T22:55:57Z",
-        "url": "https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.5.0",
-        "version": "v3.5.0"
+        "publishedAt": "2026-10-05T20:21:13Z",
+        "url": "https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.6.0",
+        "version": "v3.6.0"
       },
       "name": "AWS Load Balancer Controller",
       "previous": {
-        "publishedAt": "2026-07-29T00:32:27Z",
-        "version": "v3.4.3"
+        "publishedAt": "2026-08-03T22:55:57Z",
+        "version": "v3.5.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "kubernetes-sigs/aws-load-balancer-controller",
       "tags": [
         "aws",
@@ -1626,19 +1626,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 400419718,
-        "name": "v4.22.0",
+        "id": 403888785,
+        "name": "v4.22.1",
         "prerelease": false,
-        "publishedAt": "2026-09-30T20:39:27Z",
-        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.22.0",
-        "version": "v4.22.0"
+        "publishedAt": "2026-10-05T15:53:57Z",
+        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.22.1",
+        "version": "v4.22.1"
       },
       "name": "ClickHouse Datasource",
       "previous": {
-        "publishedAt": "2026-09-15T14:43:02Z",
-        "version": "v4.21.3"
+        "publishedAt": "2026-09-30T20:39:27Z",
+        "version": "v4.22.0"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "grafana/clickhouse-datasource",
       "tags": [
         "clickhouse",
@@ -2066,19 +2066,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 395860708,
-        "name": "2026.9.3",
+        "id": 403974563,
+        "name": "2026.10.0",
         "prerelease": false,
-        "publishedAt": "2026-09-24T16:14:11Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.9.3",
-        "version": "2026.9.3"
+        "publishedAt": "2026-10-05T17:43:45Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.0",
+        "version": "2026.10.0"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-09-24T15:44:43Z",
-        "version": "2026.9.2"
+        "publishedAt": "2026-09-24T16:14:11Z",
+        "version": "2026.9.3"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "cloudflare/cloudflared",
       "tags": [
         "tunnel",
@@ -2384,19 +2384,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 375870232,
-        "name": "Release v0.19.0",
+        "id": 403964084,
+        "name": "Release v0.21.0",
         "prerelease": false,
-        "publishedAt": "2026-08-24T22:28:41Z",
-        "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.19.0",
-        "version": "v0.19.0"
+        "publishedAt": "2026-10-05T17:48:30Z",
+        "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.21.0",
+        "version": "v0.21.0"
       },
       "name": "bcvk",
       "previous": {
-        "publishedAt": "2026-07-02T21:08:01Z",
-        "version": "v0.18.0"
+        "publishedAt": "2026-08-24T22:28:41Z",
+        "version": "v0.19.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "bootc-dev/bcvk",
       "tags": [
         "containers",
