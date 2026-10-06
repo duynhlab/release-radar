@@ -246,19 +246,21 @@ resolution. Route and component code uses `@/…`.
 | | |
 |---|---|
 | Node / pnpm | 26 / 11.18.0 |
-| TanStack Start | 1.168.36 (Release Candidate) |
-| TanStack Router | 1.170.19 |
-| React | 19.2.8 |
+| TanStack Start | 1.168.60 (Release Candidate) |
+| TanStack Router | 1.170.41 |
+| React | 19.3.0 |
 | TypeScript | 6.0.3 |
-| Vite | 8.2.0 (native `resolve.tsconfigPaths`) |
+| Vite | 8.3.2 (native `resolve.tsconfigPaths`) |
 | Tailwind | 4.3.3 via `@tailwindcss/vite` |
-| Cloudflare | `@cloudflare/vite-plugin` 1.50.0, wrangler 4.118.0 |
-| Zod | 4.4.3 |
+| Cloudflare | `@cloudflare/vite-plugin` 1.62.5, wrangler 4.147.0 |
+| Zod | 4.6.5 |
 | Markdown | `@tanstack/markdown` 0.0.13 (**alpha**) |
-| vitest | 4.1.10 + `@cloudflare/vitest-pool-workers` 0.20.1 |
+| vitest | 4.1.10 + `@cloudflare/vitest-pool-workers` 0.22.0 |
 
 Framework and build-chain deps are pinned **exact**; they move only through a
-reviewed dependency PR.
+reviewed dependency PR — dependabot's `framework` group, kept apart from the
+`npm-minor-patch` catch-all so one breaking type can't stall every other bump.
+The table is a snapshot; `package.json` is the source of truth.
 
 ## Compact Technical UI conventions
 
