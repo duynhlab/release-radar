@@ -9,7 +9,7 @@ flowchart TD
     sync["GitHub Actions<br/>2×/day · 09:17 + 21:17 ICT"]
     api["GitHub Releases API"]
     data["data/*.json<br/>release history · max 20/tool"]
-    build["TanStack Start<br/>prerender · 93 pages"]
+    build["TanStack Start<br/>prerender · 96 pages"]
     cf["Cloudflare Workers"]
 
     catalog --> sync
@@ -28,7 +28,7 @@ data, look at `data/`, not the frontend.
 
 - **Data is committed to Git** — history and diffs for free, no rate limits at
   view time, trivially forkable. Modeled after fluxcd/flux-schema.
-- **Fully prerendered** — all 93 pages are generated at build time from the
+- **Fully prerendered** — all 96 pages are generated at build time from the
   validated catalog, so the prerendered set and the 404-free set are the same
   set by construction.
 - **The catalog index is code-generated, release notes are static assets.**
@@ -50,7 +50,7 @@ data, look at `data/`, not the frontend.
 | `pnpm sync` | Fetch releases from GitHub (needs `GITHUB_TOKEN`) |
 | `pnpm test` | Vitest: unit + dom + worker projects (313 tests) |
 | `pnpm lint` / `pnpm typecheck` | ESLint / tsc |
-| `pnpm build` | Production build + prerender (93 pages) |
+| `pnpm build` | Production build + prerender (96 pages) |
 | `pnpm audit:markdown` | Inventory the release-note corpus; `--check` gates the unsafe findings |
 | `pnpm check:bundle` | Prove release notes stay out of the worker |
 | `pnpm preview` | Build + serve on workerd (Cloudflare runtime) locally |

@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-10-06T08:18:24.550Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 369441904,
+      "name": "v0.4.0",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* refactor(exporter): remove dead MetricFixedString interface method + FixedStringCol class by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/114\n* refactor(exporter): rename Tag/Metric/Record column interface to StatLC/StatHC by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/115\n* update clickhouse-c by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/118\n* mallopt(M_ARENA_MAX, 4) by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/119\n* update dependencies, don't statically link openssl by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/120\n* feat(exporter): unified Arrow exporter with GUC + end-to-end TAP test by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/116\n* test: producer-to-collector routing on pg_stat_ch.block_format by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/117\n* chore(release): bump to 0.4.0 with no-op PG migration by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/123\n\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.3.11...v0.4.0",
+      "prerelease": false,
+      "publishedAt": "2026-08-12T18:16:55Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.4.0",
+      "version": "v0.4.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 338856375,
+      "name": "v0.3.11",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* feat(arrow): add read_replica_type resource attribute column by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/107\n* schema: unify pg_stat_ch events_raw with prod Arrow path, move into Goose layout by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/99\n* fix: prevent emit_log_hook OOM recursion from escalating to PANIC/SIGABRT by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/109\n* docs(readme): replace dashboard screenshot with query insights screenshots by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/110\n* ci(release): install libkrb5-dev for libpq-be.h gssapi dependency by @heavycrystal in https://github.com/ClickHouse/pg_stat_ch/pull/111\n* docs(readme): fix image rendering on PGXN and external sites by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/112\n* chore(release): bump META.json version to 0.3.11 by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/113\n\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.3.10...v0.3.11",
+      "prerelease": false,
+      "publishedAt": "2026-06-13T00:27:51Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.3.11",
+      "version": "v0.3.11"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 335204637,
+      "name": "v0.3.10",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* fix(ci): pin vcpkg checkout to tag 2026.04.27 so the binary cache actually hits by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/102\n* fix(vcpkg): update overlay to use correct cityhash on the wire by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/103\n* ci(tap): enable ClickHouse tests on TAP suite by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/101\n* ci: declare workflow-level `contents: read` on 3 workflows by @arpitjain099 in https://github.com/ClickHouse/pg_stat_ch/pull/98\n* Clear pid in shmem when process exits by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/100\n* Intern queued query text in shared HTAB to bound DSA usage by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/92\n* Replace clickhouse-cpp with clickhouse-c by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/104\n* interner: release on every valid ref; gitignore local dev clutter by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/105\n* chore: bump META.json to 0.3.10 by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/106\n\n## New Contributors\n* @arpitjain099 made their first contribution in https://github.com/ClickHouse/pg_stat_ch/pull/98\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.3.9...v0.3.10",
+      "prerelease": false,
+      "publishedAt": "2026-06-05T21:50:45Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.3.10",
+      "version": "v0.3.10"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 322868460,
+      "name": "v0.3.9",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* convert C++ files to C where simple by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/88\n* build: forbid C++ sources outside src/export/ by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/68\n* C++ exception barriers: remaining C-ABI getters by @JoshDreamland in https://github.com/ClickHouse/pg_stat_ch/pull/94\n* chore: bump META.json to 0.3.9 by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/97\n\n## New Contributors\n* @serprex made their first contribution in https://github.com/ClickHouse/pg_stat_ch/pull/88\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.3.8...v0.3.9",
+      "prerelease": false,
+      "publishedAt": "2026-05-14T21:54:09Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.3.9",
+      "version": "v0.3.9"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 319126705,
+      "name": "v0.3.8",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* Contain std::bad_alloc on OTel and OTel+Arrow export paths by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/86\n* chore: add pg_stat_ch.block_format as a resource level attribute too by @iamKunalGupta in https://github.com/ClickHouse/pg_stat_ch/pull/89\n* chore: prepare for release 0.3.8 by @iamKunalGupta in https://github.com/ClickHouse/pg_stat_ch/pull/90\n\n## New Contributors\n* @iamKunalGupta made their first contribution in https://github.com/ClickHouse/pg_stat_ch/pull/89\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.3.7...v0.3.8",
+      "prerelease": false,
+      "publishedAt": "2026-05-07T19:07:45Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.3.8",
+      "version": "v0.3.8"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 318010369,
+      "name": "v0.3.7",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* Migrate from git submodules to vcpkg manifest mode by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/75\n* Optimize gRPC channel: gzip compression + keepalive + arena tuning by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/76\n* Add Arrow IPC dependency, GUCs, and SendArrowBatch interface by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/77\n* Add Arrow IPC batch builder and export path by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/78\n* chore: reduce LOC by ~20% — drop dead benchmark/perf/unit-test infra by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/80\n* chore(meta): align extension version with distribution (0.3) by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/84\n\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.3.6...v0.3.7",
+      "prerelease": false,
+      "publishedAt": "2026-05-05T19:11:32Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.3.7",
+      "version": "v0.3.7"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 309604861,
+      "name": "v0.3.6",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* Replace normalize cache with queryId-keyed LRU by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/70\n* Replace OTel SDK with direct-proto exporter, add sampling by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/72\n* chore(meta): bump version to 0.3.6 by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/73\n\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.3.5...v0.3.6",
+      "prerelease": false,
+      "publishedAt": "2026-04-15T23:40:49Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.3.6",
+      "version": "v0.3.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 308540789,
+      "name": "v0.3.5",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* Docs: setup Mintlify docs for pg_stat_ch by @Blargian in https://github.com/ClickHouse/pg_stat_ch/pull/47\n* Docs: move docs out from under `pages` directory + add rewrites by @Blargian in https://github.com/ClickHouse/pg_stat_ch/pull/59\n* Docs: fix broken links by @Blargian in https://github.com/ClickHouse/pg_stat_ch/pull/60\n* Docs: comprehensive rewrite with new reference pages by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/63\n* Move query and error text to DSA for variable-length storage by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/62\n* Docs: lead install page with prebuilt binaries by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/64\n* ci: migrate all GitHub Actions runners to 16-core Depot by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/66\n* chore(meta): bump version to 0.3.5 by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/69\n\n## New Contributors\n* @Blargian made their first contribution in https://github.com/ClickHouse/pg_stat_ch/pull/47\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.3.4...v0.3.5",
+      "prerelease": false,
+      "publishedAt": "2026-04-13T20:28:08Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.3.5",
+      "version": "v0.3.5"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 306633341,
+      "name": "v0.3.4",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* feat: allow bgworker to start on standbys by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/56\n* chore: bump META.json version to 0.3.4 for release by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/58\n\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.3.3...v0.3.4",
+      "prerelease": false,
+      "publishedAt": "2026-04-08T14:45:39Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.3.4",
+      "version": "v0.3.4"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "pg-stat-ch",
+    "name": "pg_stat_ch",
+    "repository": "ClickHouse/pg_stat_ch"
+  }
+}

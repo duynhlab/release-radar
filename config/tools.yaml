@@ -603,6 +603,52 @@ tools:
       includePrerelease: false
       tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
 
+  - id: clickhousectl
+    name: clickhousectl
+    category: database
+    repository: ClickHouse/clickhousectl
+    description: The CLI for ClickHouse, local and cloud
+    homepage: https://clickhouse.com/cli
+    tags:
+      - clickhouse
+      - cli
+    group: clickhouse
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: pg-chdb
+    name: pg_chdb
+    category: database
+    repository: ClickHouse/pg_chdb
+    description: Execute chDB queries in Postgres
+    tags:
+      - postgresql
+      - extension
+      - clickhouse
+    group: clickhouse
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: pg-stat-ch
+    name: pg_stat_ch
+    category: observability
+    repository: ClickHouse/pg_stat_ch
+    description: PostgreSQL query telemetry exporter to ClickHouse
+    homepage: https://pg-stat-ch.clickhouse.com/
+    tags:
+      - postgresql
+      - extension
+      - clickhouse
+    group: clickhouse
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
   - id: tempo-operator
     name: Tempo Operator
     category: observability
