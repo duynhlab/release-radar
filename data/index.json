@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T08:19:17.331Z",
+  "generatedAt": "2026-10-06T08:25:23.098Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -57,6 +57,89 @@
         "kubernetes",
         "autoscaling",
         "aws"
+      ]
+    },
+    {
+      "category": "kubernetes",
+      "description": "Kubernetes-native job queueing and scheduling",
+      "documentation": "https://kueue.sigs.k8s.io/docs/",
+      "homepage": "https://kueue.sigs.k8s.io",
+      "id": "kueue",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 400327601,
+        "name": "v0.20.0",
+        "prerelease": false,
+        "publishedAt": "2026-09-30T19:09:29Z",
+        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.0",
+        "version": "v0.20.0"
+      },
+      "name": "Kueue",
+      "previous": {
+        "publishedAt": "2026-09-30T19:08:02Z",
+        "version": "v0.19.7"
+      },
+      "releaseCount": 10,
+      "repository": "kubernetes-sigs/kueue",
+      "tags": [
+        "kubernetes",
+        "scheduling",
+        "batch"
+      ]
+    },
+    {
+      "category": "kubernetes",
+      "description": "Evicts pods so they can be rescheduled onto better-fit nodes",
+      "homepage": "https://sigs.k8s.io/descheduler",
+      "id": "descheduler",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 403190599,
+        "name": "Descheduler v0.37.0",
+        "prerelease": false,
+        "publishedAt": "2026-10-04T20:15:02Z",
+        "url": "https://github.com/kubernetes-sigs/descheduler/releases/tag/v0.37.0",
+        "version": "v0.37.0"
+      },
+      "name": "Descheduler",
+      "previous": {
+        "publishedAt": "2026-05-20T12:35:48Z",
+        "version": "v0.36.0"
+      },
+      "releaseCount": 5,
+      "repository": "kubernetes-sigs/descheduler",
+      "tags": [
+        "kubernetes",
+        "scheduling"
+      ]
+    },
+    {
+      "category": "security",
+      "description": "Authenticate to Kubernetes clusters with AWS IAM credentials",
+      "id": "aws-iam-authenticator",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 377464657,
+        "name": "v0.7.20",
+        "prerelease": false,
+        "publishedAt": "2026-08-26T22:54:52Z",
+        "url": "https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/tag/v0.7.20",
+        "version": "v0.7.20"
+      },
+      "name": "AWS IAM Authenticator",
+      "previous": {
+        "publishedAt": "2026-08-22T00:00:19Z",
+        "version": "v0.7.19"
+      },
+      "releaseCount": 10,
+      "repository": "kubernetes-sigs/aws-iam-authenticator",
+      "tags": [
+        "kubernetes",
+        "aws",
+        "authentication"
       ]
     },
     {

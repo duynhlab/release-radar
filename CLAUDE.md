@@ -53,7 +53,7 @@ Fix pgaudit tag pattern          → fix(catalog): correct pgaudit tag pattern
 ## Project Overview
 
 Personal DevOps/SRE release tracker: a Git-backed catalog that follows new
-releases of infrastructure tools on GitHub. Currently **84 tools** across 11
+releases of infrastructure tools on GitHub. Currently **87 tools** across 11
 groups and 11 categories.
 
 A category says **what a tool is for**, and a tool has exactly one. How it ships
@@ -202,7 +202,7 @@ config/tools.yaml → Actions sync (2x/day, 09:17 + 21:17 ICT) → data/*.json
                   → TanStack Start prerender → Cloudflare Workers
 ```
 
-- **96 prerendered pages**: 1 home + 11 categories + 84 tools. `check:bundle`
+- **99 prerendered pages**: 1 home + 11 categories + 87 tools. `check:bundle`
   derives this from `CATEGORIES.length` — don't reintroduce a literal count.
 - `data/` is **generated**. Never edit by hand.
 - Scheduled runs are best-effort: observed 1.5–3.5h late.

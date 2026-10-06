@@ -67,6 +67,50 @@ tools:
       includePrerelease: false
       tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
 
+  - id: kueue
+    name: Kueue
+    category: kubernetes
+    repository: kubernetes-sigs/kueue
+    description: Kubernetes-native job queueing and scheduling
+    homepage: https://kueue.sigs.k8s.io
+    documentation: https://kueue.sigs.k8s.io/docs/
+    tags:
+      - kubernetes
+      - scheduling
+      - batch
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: descheduler
+    name: Descheduler
+    category: kubernetes
+    repository: kubernetes-sigs/descheduler
+    description: Evicts pods so they can be rescheduled onto better-fit nodes
+    homepage: https://sigs.k8s.io/descheduler
+    tags:
+      - kubernetes
+      - scheduling
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: aws-iam-authenticator
+    name: AWS IAM Authenticator
+    category: security
+    repository: kubernetes-sigs/aws-iam-authenticator
+    description: Authenticate to Kubernetes clusters with AWS IAM credentials
+    tags:
+      - kubernetes
+      - aws
+      - authentication
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
   - id: cert-manager
     name: cert-manager
     category: security
