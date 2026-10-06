@@ -12,10 +12,27 @@ updates:
     commit-message:
       prefix: "chore(deps)"
     groups:
-      # Minor/patch land as one PR to keep the noise down. Majors stay
-      # ungrouped on purpose — Next/React/OpenNext move together and each
-      # bump needs its own read; CI runs `pnpm build` through OpenNext, so
-      # an incompatible adapter fails the PR rather than main.
+      # Framework and build chain: pinned exact, and a type change here (e.g.
+      # TanStack Router's ErrorComponentProps.error → unknown) must not hold
+      # every other bump hostage. First matching group wins, so this one
+      # has to come before the catch-all.
+      framework:
+        patterns:
+          - "@tanstack/*"
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+          - "vite"
+          - "@vitejs/*"
+          - "@cloudflare/*"
+          - "wrangler"
+          - "typescript"
+          - "tailwindcss"
+          - "@tailwindcss/*"
+        update-types: ["minor", "patch"]
+      # Everything else: minor/patch as one PR. Majors stay ungrouped and
+      # arrive as individual PRs, each needing its own read.
       npm-minor-patch:
         patterns: ["*"]
         update-types: ["minor", "patch"]
