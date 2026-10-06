@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T21:30:09.193Z",
+  "generatedAt": "2026-10-06T08:19:17.331Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -341,19 +341,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 370531397,
-        "name": "v0.74.0",
+        "id": 400999946,
+        "name": "v0.75.0",
         "prerelease": false,
-        "publishedAt": "2026-08-14T11:29:11Z",
-        "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.74.0",
-        "version": "v0.74.0"
+        "publishedAt": "2026-10-01T13:34:13Z",
+        "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.75.0",
+        "version": "v0.75.0"
       },
       "name": "Trivy",
       "previous": {
-        "publishedAt": "2026-08-03T10:47:14Z",
-        "version": "v0.73.0"
+        "publishedAt": "2026-08-14T11:29:11Z",
+        "version": "v0.74.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "aquasecurity/trivy",
       "tags": [
         "scanning",
@@ -1089,6 +1089,100 @@
       ]
     },
     {
+      "category": "database",
+      "description": "The CLI for ClickHouse, local and cloud",
+      "group": {
+        "id": "clickhouse",
+        "name": "ClickHouse"
+      },
+      "homepage": "https://clickhouse.com/cli",
+      "id": "clickhousectl",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 382167058,
+        "name": "v0.4.2",
+        "prerelease": false,
+        "publishedAt": "2026-09-03T16:18:32Z",
+        "url": "https://github.com/ClickHouse/clickhousectl/releases/tag/v0.4.2",
+        "version": "v0.4.2"
+      },
+      "name": "clickhousectl",
+      "previous": {
+        "publishedAt": "2026-08-19T11:09:08Z",
+        "version": "v0.4.1"
+      },
+      "releaseCount": 10,
+      "repository": "ClickHouse/clickhousectl",
+      "tags": [
+        "clickhouse",
+        "cli"
+      ]
+    },
+    {
+      "category": "database",
+      "description": "Execute chDB queries in Postgres",
+      "group": {
+        "id": "clickhouse",
+        "name": "ClickHouse"
+      },
+      "id": "pg-chdb",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 400034627,
+        "name": "Release v0.1.2",
+        "prerelease": false,
+        "publishedAt": "2026-09-30T12:42:25Z",
+        "url": "https://github.com/ClickHouse/pg_chdb/releases/tag/v0.1.2",
+        "version": "v0.1.2"
+      },
+      "name": "pg_chdb",
+      "previous": {
+        "publishedAt": "2026-09-06T20:19:35Z",
+        "version": "v0.1.1"
+      },
+      "releaseCount": 3,
+      "repository": "ClickHouse/pg_chdb",
+      "tags": [
+        "postgresql",
+        "extension",
+        "clickhouse"
+      ]
+    },
+    {
+      "category": "observability",
+      "description": "PostgreSQL query telemetry exporter to ClickHouse",
+      "group": {
+        "id": "clickhouse",
+        "name": "ClickHouse"
+      },
+      "homepage": "https://pg-stat-ch.clickhouse.com/",
+      "id": "pg-stat-ch",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 369441904,
+        "name": "v0.4.0",
+        "prerelease": false,
+        "publishedAt": "2026-08-12T18:16:55Z",
+        "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.4.0",
+        "version": "v0.4.0"
+      },
+      "name": "pg_stat_ch",
+      "previous": {
+        "publishedAt": "2026-06-13T00:27:51Z",
+        "version": "v0.3.11"
+      },
+      "releaseCount": 9,
+      "repository": "ClickHouse/pg_stat_ch",
+      "tags": [
+        "postgresql",
+        "extension",
+        "clickhouse"
+      ]
+    },
+    {
       "category": "observability",
       "description": "Kubernetes operator for Grafana Tempo",
       "documentation": "https://grafana.com/docs/tempo/latest/setup/operator/",
@@ -1286,19 +1380,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 388876516,
-        "name": "2.1.0",
+        "id": 404346162,
+        "name": "2.2.0",
         "prerelease": false,
-        "publishedAt": "2026-09-15T04:56:15Z",
-        "url": "https://github.com/floci-io/floci/releases/tag/2.1.0",
-        "version": "2.1.0"
+        "publishedAt": "2026-10-06T05:23:38Z",
+        "url": "https://github.com/floci-io/floci/releases/tag/2.2.0",
+        "version": "2.2.0"
       },
       "name": "Floci",
       "previous": {
-        "publishedAt": "2026-09-01T12:43:50Z",
-        "version": "2.0.1"
+        "publishedAt": "2026-09-15T04:56:15Z",
+        "version": "2.1.0"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "floci-io/floci",
       "tags": [
         "aws",
@@ -2094,19 +2188,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 365493039,
-        "name": "v0.33.0",
+        "id": 403754193,
+        "name": "v0.35.0",
         "prerelease": false,
-        "publishedAt": "2026-08-05T11:57:35Z",
-        "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.33.0",
-        "version": "v0.33.0"
+        "publishedAt": "2026-10-05T13:40:41Z",
+        "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.35.0",
+        "version": "v0.35.0"
       },
       "name": "Trivy Operator",
       "previous": {
-        "publishedAt": "2026-07-08T10:20:29Z",
-        "version": "v0.32.0"
+        "publishedAt": "2026-08-24T11:51:32Z",
+        "version": "v0.34.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 12,
       "repository": "aquasecurity/trivy-operator",
       "tags": [
         "scanning",

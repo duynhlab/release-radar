@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-08-05T15:24:49.156Z",
+  "generatedAt": "2026-10-06T08:19:01.681Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 403754193,
+      "name": "v0.35.0",
+      "notes": "## Changelog\n### 🐛 Notable Fixes 🐛\n* 14263dd37b3780c7fab9d5d5f2eac8302c44b035: fix(configaudit): restore ConfigMap data for content-based… (#3054) (@LaibaBareera)\n### 🔧 Miscellaneous 🔧\n* dab9341af8a88be772c40d4bfa8fe76653d93f8b: chore: bump up Trivy version to 0.75.0 (#3091) (@afdesk)",
+      "prerelease": false,
+      "publishedAt": "2026-10-05T13:40:41Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.35.0",
+      "version": "v0.35.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 375657327,
+      "name": "v0.34.0",
+      "notes": "## Changelog\n### 🔧 Miscellaneous 🔧\n* 2eb8709f9b88f3d314769fb728b5768fdedac818: chore: bump up Trivy version to 0.74.0 (#3041) (@afdesk)\n### 👷 Other work 👷\n* 1b1c61bc1688cc097030530d36e1e8d949363409: build(deps): bump golang.org/x/text (#3046) (@dependabot[bot])\n* 5874a7d3fb70941fb4d609275ee265cb4b8ac39e: build(deps): bump the common group across 1 directory with 7 updates (#3048) (@dependabot[bot])",
+      "prerelease": false,
+      "publishedAt": "2026-08-24T11:51:32Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.34.0",
+      "version": "v0.34.0"
+    },
     {
       "channel": "stable",
       "draft": false,
