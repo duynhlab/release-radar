@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-25T18:35:51.233Z",
+  "generatedAt": "2026-10-06T19:32:21.909Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 404990815,
+      "name": "mimir-distributed-6.2.1",
+      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/7dbd664579bc04bb9b0333f546ee81ccf6c257ac\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.2.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-06T17:42:56Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.2.1",
+      "version": "mimir-distributed-6.2.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-11T19:22:54Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.4.0",
       "version": "k8s-monitoring-4.4.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 368168337,
-      "name": "helm-loki-7.3.0",
-      "notes": "Helm chart for Grafana Enterprise Logs supporting monolithic, simple scalable, and microservices modes.\n\nSource commit: https://github.com/grafana/loki/commit/50c738b4d5b28db6e26723c3828da13bb46f0f06\n\nTag on source: https://github.com/grafana/loki/releases/tag/helm-loki-7.3.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-10T20:06:21Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.3.0",
-      "version": "helm-loki-7.3.0"
     }
   ],
   "schemaVersion": 1,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-01T19:32:02.441Z",
+  "generatedAt": "2026-10-06T19:32:21.453Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 404586592,
+      "name": "v2.0.1",
+      "notes": "### Added\n\n- `update_dashboard` now steers models towards schema v2 for new dashboards, keeps existing dashboards in their stored schema, and includes minimal v2 examples (grid and tabs layouts) in its description ([#1294](https://github.com/grafana/mcp-grafana/pull/1294))\n\n### Fixed\n\n- `update_dashboard` no longer silently overwrites a v2 dashboard with a v1 `panels[]` body, which dropped its v2 structure such as tabs; it now returns an error suggesting patches or a v2 body. New v2 dashboards are created at the most stable v2 API version Grafana serves instead of a hardcoded `v2beta1` ([#1275](https://github.com/grafana/mcp-grafana/pull/1275))\n- `run_panel_query` works on schema v2 dashboards instead of failing with `dashboard has no panels` ([#1287](https://github.com/grafana/mcp-grafana/pull/1287))\n- Datasource requests no longer treat an HTML page returned by the fallback `/resources` route (such as Loki's web UI) as success, which caused `invalid character '<'` errors that persisted until restart ([#1295](https://github.com/grafana/mcp-grafana/pull/1295))\n- Tool descriptions no longer show a literal `\\,` in place of every comma ([#1296](https://github.com/grafana/mcp-grafana/pull/1296))\n- The trace and panel viewer MCP apps declare `data:` resources in their CSP, so hosts like MCP Inspector no longer block their embedded fonts and images ([#1284](https://github.com/grafana/mcp-grafana/pull/1284))",
+      "prerelease": false,
+      "publishedAt": "2026-10-06T10:34:12Z",
+      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v2.0.1",
+      "version": "v2.0.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-04T14:01:05Z",
       "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.15.2",
       "version": "v0.15.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 333865637,
-      "name": "v0.15.1",
-      "notes": "### Added\n\n- `shorten_url` tool for creating Grafana short links from long dashboard or explore URLs ([#899](https://github.com/grafana/mcp-grafana/pull/899))\n- Provisioning workflow tools: `list_provisioning_repositories` for discovering connected repositories, `validate_provisioning_file` for dry-run validation of provisioning files, and provisioning preview support in `get_panel_image` and `generate_deeplink` for rendering dashboards from PR branches before merge ([#900](https://github.com/grafana/mcp-grafana/pull/900))\n\n### Changed\n\n- Rendering tools now use a shared transport chain with `BaseTransport` support for consistent HTTP middleware ([#918](https://github.com/grafana/mcp-grafana/pull/918))\n\n### Security\n\n- Redact credentials from debug transport logs to prevent accidental exposure ([#920](https://github.com/grafana/mcp-grafana/pull/920))\n- Update Go to 1.26.3 to fix CVE-2026-33810 and bump litellm dependency ([#916](https://github.com/grafana/mcp-grafana/pull/916))",
-      "prerelease": false,
-      "publishedAt": "2026-06-03T16:57:12Z",
-      "url": "https://github.com/grafana/mcp-grafana/releases/tag/v0.15.1",
-      "version": "v0.15.1"
     }
   ],
   "schemaVersion": 1,
