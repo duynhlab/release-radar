@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-06T19:32:39.899Z",
+  "generatedAt": "2026-10-07T19:59:51.313Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 405994347,
+      "name": "Release v1.17.1",
+      "notes": "## bootc 1.17.1\r\n\r\nShort-cycle release to include #2552 which is blocking Fedora RPM builds.\r\n\r\n### Changes\r\n\r\n* composefs: Inject root SSH keys at install by @andrewdunndev in https://github.com/bootc-dev/bootc/pull/2536\r\n* composefs: Fix test that only fails with fs-verity by @jeckersb in https://github.com/bootc-dev/bootc/pull/2552\r\n* chore(deps): update github actions by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2478\r\n* Release 1.17.1 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2553\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bootc/compare/v1.17.0...v1.17.1\r\n\r\n### Assets\r\n\r\n- `bootc-1.17.1-vendor.tar.zstd` - Vendored dependencies archive\r\n- `bootc-1.17.1.tar.zstd` - Source archive",
+      "prerelease": false,
+      "publishedAt": "2026-10-07T17:34:37Z",
+      "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.17.1",
+      "version": "v1.17.1"
+    },
     {
       "channel": "stable",
       "draft": false,

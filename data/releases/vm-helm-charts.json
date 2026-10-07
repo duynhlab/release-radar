@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-10-02T08:30:27.135Z",
+  "generatedAt": "2026-10-07T19:59:08.752Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 405889110,
+      "name": "victoria-metrics-k8s-stack-0.95.2",
+      "notes": "# Release notes for version 0.95.2\n\n**Release date:** 07 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.153.0](https://img.shields.io/badge/v1.153.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11530) ![VM Operator: 0.68.1](https://img.shields.io/badge/VM_Operator-0.68.1-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230681)\n\n- BUGFIX: fix `templates/route.yaml` and `templates/ingress.yaml` failing with `vm.operator.kind: appKey \"alertmanager\" is not vm/vl/vt-prefixed` when `alertmanager.route.enabled: true` or `alertmanager.ingress.enabled: true` is set. Regression from the `victoria-metrics-common` 0.4.* bump in v0.95.1, since `alertmanager` is the only top-level component key that isn't itself vm/vl/vt-prefixed (see [#3270](https://github.com/VictoriaMetrics/helm-charts/issues/3270)).",
+      "prerelease": false,
+      "publishedAt": "2026-10-07T15:03:38Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.95.2",
+      "version": "victoria-metrics-k8s-stack-0.95.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 405765248,
+      "name": "victoria-metrics-k8s-stack-0.95.1",
+      "notes": "# Release notes for version 0.95.1\n\n**Release date:** 07 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.153.0](https://img.shields.io/badge/v1.153.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11530) ![VM Operator: 0.68.1](https://img.shields.io/badge/VM_Operator-0.68.1-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230681)\n\n- bump `victoria-metrics-common` dependency to `0.4.*`. Resource names are unchanged.\n- BUGFIX: preserve user-supplied `.Values.alertmanager.config.templates` entries instead of overwriting them with the default `/etc/vm/templates/**/*.tmpl` glob, so custom template paths are no longer silently dropped from the generated config `Secret` (see [#3266](https://github.com/VictoriaMetrics/helm-charts/issues/3266)).",
+      "prerelease": false,
+      "publishedAt": "2026-10-07T12:57:17Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.95.1",
+      "version": "victoria-metrics-k8s-stack-0.95.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 405755906,
+      "name": "victoria-metrics-operator-crds-0.15.1",
+      "notes": "# Release notes for version 0.15.1\n\n**Release date:** 07 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.75.0](https://img.shields.io/badge/v0.75.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Foperator%2Fchangelog%2F%23v0750)\n\n- BUGFIX: render CRD manifests with `toYaml` instead of `toJson` in `templates/crd.yaml`, so each field is split across multiple indented lines instead of being emitted as a single potentially huge line. This fixes compatibility with tools like ArgoCD that can silently truncate or drop fields on very long lines (see [#3267](https://github.com/VictoriaMetrics/helm-charts/issues/3267)).",
+      "prerelease": false,
+      "publishedAt": "2026-10-07T12:46:40Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-crds-0.15.1",
+      "version": "victoria-metrics-operator-crds-0.15.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-09-28T10:56:22Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.48.0",
       "version": "victoria-metrics-single-0.48.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 398165186,
-      "name": "victoria-metrics-k8s-stack-0.95.0",
-      "notes": "# Release notes for version 0.95.0\n\n**Release date:** 28 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.153.0](https://img.shields.io/badge/v1.153.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11530) ![VM Operator: 0.68.0](https://img.shields.io/badge/VM_Operator-0.68.0-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230680)\n\n- bump version of VM components to [v1.153.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.153.0)",
-      "prerelease": false,
-      "publishedAt": "2026-09-28T10:56:20Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.95.0",
-      "version": "victoria-metrics-k8s-stack-0.95.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 398165167,
-      "name": "victoria-metrics-gateway-0.40.0",
-      "notes": "# Release notes for version 0.40.0\n\n**Release date:** 28 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.153.0](https://img.shields.io/badge/v1.153.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11530)\n\n- bump version of VM components to [v1.153.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.153.0)",
-      "prerelease": false,
-      "publishedAt": "2026-09-28T10:56:19Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-gateway-0.40.0",
-      "version": "victoria-metrics-gateway-0.40.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 398165151,
-      "name": "victoria-metrics-distributed-0.47.0",
-      "notes": "# Release notes for version 0.47.0\n\n**Release date:** 28 Sep 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.153.0](https://img.shields.io/badge/v1.153.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11530) ![VM Operator: 0.59.3](https://img.shields.io/badge/VM_Operator-0.59.3-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230593)\n\n- bump version of VM components to [v1.153.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.153.0)",
-      "prerelease": false,
-      "publishedAt": "2026-09-28T10:56:18Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-distributed-0.47.0",
-      "version": "victoria-metrics-distributed-0.47.0"
     }
   ],
   "schemaVersion": 1,
