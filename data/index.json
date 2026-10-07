@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T19:32:41.591Z",
+  "generatedAt": "2026-10-07T08:39:07.000Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -270,19 +270,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 388226313,
-        "name": "v3.5.3",
+        "id": 405160451,
+        "name": "v3.3.15",
         "prerelease": false,
-        "publishedAt": "2026-09-14T07:58:59Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.3",
-        "version": "v3.5.3"
+        "publishedAt": "2026-10-06T21:35:42Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.15",
+        "version": "v3.3.15"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-09-14T06:41:58Z",
-        "version": "v3.4.9"
+        "publishedAt": "2026-10-06T20:58:18Z",
+        "version": "v3.4.10"
       },
-      "releaseCount": 17,
+      "releaseCount": 20,
       "repository": "argoproj/argo-cd",
       "tags": [
         "gitops",
@@ -814,19 +814,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 382255313,
-        "name": "v1.6.2",
+        "id": 405119601,
+        "name": "v1.6.3",
         "prerelease": false,
-        "publishedAt": "2026-09-03T18:49:15Z",
-        "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.2",
-        "version": "v1.6.2"
+        "publishedAt": "2026-10-06T20:35:29Z",
+        "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.3",
+        "version": "v1.6.3"
       },
       "name": "Gateway API",
       "previous": {
-        "publishedAt": "2026-07-16T16:30:35Z",
-        "version": "v1.6.1"
+        "publishedAt": "2026-09-03T18:49:15Z",
+        "version": "v1.6.2"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "kubernetes-sigs/gateway-api",
       "tags": [
         "kubernetes",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 404873834,
-        "name": "grafana-mcp-0.27.1",
+        "id": 405520270,
+        "name": "grafana-13.2.8",
         "prerelease": false,
-        "publishedAt": "2026-10-06T15:17:52Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.27.1",
-        "version": "grafana-mcp-0.27.1"
+        "publishedAt": "2026-10-07T08:00:13Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.8",
+        "version": "grafana-13.2.8"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-06T09:18:55Z",
-        "version": "tempo-distributed-3.11.0"
+        "publishedAt": "2026-10-06T15:17:52Z",
+        "version": "grafana-mcp-0.27.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2414,19 +2414,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 401884436,
-        "name": "v0.120.0",
+        "id": 405128117,
+        "name": "v0.120.1",
         "prerelease": false,
-        "publishedAt": "2026-10-02T14:23:18Z",
-        "url": "https://github.com/anchore/grype/releases/tag/v0.120.0",
-        "version": "v0.120.0"
+        "publishedAt": "2026-10-06T20:46:45Z",
+        "url": "https://github.com/anchore/grype/releases/tag/v0.120.1",
+        "version": "v0.120.1"
       },
       "name": "Grype",
       "previous": {
-        "publishedAt": "2026-09-17T16:45:23Z",
-        "version": "v0.119.0"
+        "publishedAt": "2026-10-02T14:23:18Z",
+        "version": "v0.120.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "anchore/grype",
       "tags": [
         "scanning",

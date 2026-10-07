@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-02T19:18:18.297Z",
+  "generatedAt": "2026-10-07T08:39:02.452Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 405128117,
+      "name": "v0.120.1",
+      "notes": "### Bug Fixes\n\n- run unit tests on windows and fix the handle leaks it surfaced [PR [#3766](https://github.com/anchore/grype/pull/3766) @wagoodman]\n- Table presenter appends a spurious \", ...\" to the FIX column when all fix versions are already shown [Issue [#3760](https://github.com/anchore/grype/issues/3760)] [PR [#3770](https://github.com/anchore/grype/pull/3770) @arpitjain099]\n\n### Dependencies\n\n9 dependency changes (9 updated).\n\n<details>\n<summary>Updated (9 packages)</summary>\n\n- github.com/anchore/go-rpmdb `v0.2.1` → `v0.2.2`\n- github.com/anchore/stereoscope `v0.3.3` → `v0.3.4`\n- github.com/anchore/syft `v1.54.0` → `v1.54.1`\n- github.com/docker/cli `v29.8.1+incompatible` → `v29.8.2+incompatible`\n- github.com/klauspost/compress `v1.20.0` → `v1.20.1`\n- github.com/secure-systems-lab/go-securesystemslib `v0.11.0` → `v0.11.1`\n- github.com/sigstore/protobuf-specs `v0.5.1` → `v0.5.2`\n- github.com/sigstore/sigstore `v1.10.8` → `v1.10.11`\n- github.com/sylabs/sif/v2 `v2.24.1` → `v2.24.2`\n</details>\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.120.0...v0.120.1)**",
+      "prerelease": false,
+      "publishedAt": "2026-10-06T20:46:45Z",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.120.1",
+      "version": "v0.120.1"
+    },
     {
       "channel": "stable",
       "draft": false,
