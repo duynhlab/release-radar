@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-07T19:59:31.642Z",
+  "generatedAt": "2026-10-08T08:57:06.036Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 406226556,
+      "name": "k8s-monitoring-4.5.3",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/bd4c0b766679d0e9d291a1df33d90d4434de25e5\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.5.3",
+      "prerelease": false,
+      "publishedAt": "2026-10-07T22:45:17Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.3",
+      "version": "k8s-monitoring-4.5.3"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-19T11:56:45Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.11",
       "version": "beyla-1.16.11"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 372237452,
-      "name": "helm-k6-operator-4.6.0",
-      "notes": "A Helm chart to install the k6-operator\n\nSource commit: https://github.com/grafana/k6-operator/commit/cf0ae21f4e26b0dd0f99d763ae72e063b4384f2a\n\nTag on source: https://github.com/grafana/k6-operator/releases/tag/helm-k6-operator-4.6.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-18T09:40:58Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/helm-k6-operator-4.6.0",
-      "version": "helm-k6-operator-4.6.0"
     }
   ],
   "schemaVersion": 1,

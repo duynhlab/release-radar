@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-07T19:59:32.294Z",
+  "generatedAt": "2026-10-08T08:57:06.692Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 406164641,
+      "name": "loki-18.14.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [ci] Preserve pod logs for failed integration tests by @jkroepke in https://github.com/grafana-community/helm-charts/pull/875\n* [loki] Use explicit S3 schemas in RustFS CI values by @jkroepke in https://github.com/grafana-community/helm-charts/pull/876\n* [loki] Update docker.io/kiwigrid/k8s-sidecar Docker tag to v2.13.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/872\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.11.1...loki-18.14.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-07T21:07:09Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.14.0",
+      "version": "loki-18.14.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-29T11:36:12Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.7.2",
       "version": "tempo-distributed-3.7.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 398988007,
-      "name": "grafana-13.2.7",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.2.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/847\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.25.2...grafana-13.2.7",
-      "prerelease": false,
-      "publishedAt": "2026-09-29T09:19:21Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.7",
-      "version": "grafana-13.2.7"
     }
   ],
   "schemaVersion": 1,

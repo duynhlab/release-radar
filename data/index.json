@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T19:59:53.074Z",
+  "generatedAt": "2026-10-08T08:57:27.461Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1587,19 +1587,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 384886955,
-        "name": "v2.3.1",
+        "id": 406184230,
+        "name": "v2.3.2",
         "prerelease": false,
-        "publishedAt": "2026-09-08T16:15:15Z",
-        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.3.1",
-        "version": "v2.3.1"
+        "publishedAt": "2026-10-07T21:37:03Z",
+        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.3.2",
+        "version": "v2.3.2"
       },
       "name": "Pyroscope",
       "previous": {
-        "publishedAt": "2026-09-08T16:14:15Z",
-        "version": "v2.2.2"
+        "publishedAt": "2026-10-07T20:53:46Z",
+        "version": "v2.2.3"
       },
-      "releaseCount": 15,
+      "releaseCount": 17,
       "repository": "grafana/pyroscope",
       "tags": [
         "profiling"
@@ -1650,17 +1650,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 404586592,
-        "name": "v2.0.1",
+        "id": 406129784,
+        "name": "v2.0.2",
         "prerelease": false,
-        "publishedAt": "2026-10-06T10:34:12Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v2.0.1",
-        "version": "v2.0.1"
+        "publishedAt": "2026-10-07T20:18:40Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v2.0.2",
+        "version": "v2.0.2"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-10-01T12:44:24Z",
-        "version": "v2.0.0"
+        "publishedAt": "2026-10-06T10:34:12Z",
+        "version": "v2.0.1"
       },
       "releaseCount": 20,
       "repository": "grafana/mcp-grafana",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 405917532,
-        "name": "alloy-operator-0.8.0",
+        "id": 406226556,
+        "name": "k8s-monitoring-4.5.3",
         "prerelease": false,
-        "publishedAt": "2026-10-07T15:44:20Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.8.0",
-        "version": "alloy-operator-0.8.0"
+        "publishedAt": "2026-10-07T22:45:17Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.3",
+        "version": "k8s-monitoring-4.5.3"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-06T17:42:56Z",
-        "version": "mimir-distributed-6.2.1"
+        "publishedAt": "2026-10-07T15:44:20Z",
+        "version": "alloy-operator-0.8.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 406082995,
-        "name": "tempo-distributed-3.11.1",
+        "id": 406164641,
+        "name": "loki-18.14.0",
         "prerelease": false,
-        "publishedAt": "2026-10-07T19:16:28Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.11.1",
-        "version": "tempo-distributed-3.11.1"
+        "publishedAt": "2026-10-07T21:07:09Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.14.0",
+        "version": "loki-18.14.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-07T13:40:27Z",
-        "version": "grafana-13.3.1"
+        "publishedAt": "2026-10-07T19:16:28Z",
+        "version": "tempo-distributed-3.11.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
