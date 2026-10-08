@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-10-08T08:57:06.036Z",
+  "generatedAt": "2026-10-08T19:57:16.855Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 407198678,
+      "name": "cloudcost-exporter-1.1.15",
+      "notes": "Cloud Cost Exporter exports cloud provider agnostic cost metrics to Prometheus.\n\nSource commit: https://github.com/grafana/cloudcost-exporter/commit/b3c5fa1195d57c1bf519ecbac29e104fe61e9f33\n\nTag on source: https://github.com/grafana/cloudcost-exporter/releases/tag/cloudcost-exporter-1.1.15",
+      "prerelease": false,
+      "publishedAt": "2026-10-08T19:39:19Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.15",
+      "version": "cloudcost-exporter-1.1.15"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 407129008,
+      "name": "pyroscope-2.3.2",
+      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/a784291206e6546e144692c1886d523ffdb101bf\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.3.2",
+      "prerelease": false,
+      "publishedAt": "2026-10-08T18:12:52Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.3.2",
+      "version": "pyroscope-2.3.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 407104122,
+      "name": "alloy-1.13.1",
+      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/a200974d1e1423ceaa95bbf66f1b94461415b744\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.13.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-08T17:41:50Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.13.1",
+      "version": "alloy-1.13.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-08-20T18:38:45Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.51.1",
       "version": "rollout-operator-0.51.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 373760233,
-      "name": "mimir-distributed-6.2.0",
-      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/f1819df99cfcc68edd6c0ec69aa834a4bb227cae\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.2.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-20T13:34:08Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.2.0",
-      "version": "mimir-distributed-6.2.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 373280973,
-      "name": "rollout-operator-0.51.0",
-      "notes": "Grafana rollout-operator\n\n## What's Changed\n* fix: correct shared workflow action tag comments by @zeitlinger in https://github.com/grafana/helm-charts/pull/4211\n* [rollout-operator] update for v0.39.0 by @andyasp in https://github.com/grafana/helm-charts/pull/4212\n\n## New Contributors\n* @zeitlinger made their first contribution in https://github.com/grafana/helm-charts/pull/4211\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/beyla-1.16.11...rollout-operator-0.51.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-19T18:58:13Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.51.0",
-      "version": "rollout-operator-0.51.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 373012798,
-      "name": "beyla-1.16.11",
-      "notes": "eBPF-based autoinstrumentation HTTP, HTTP2 and gRPC services, as well as network metrics.\n\nSource commit: https://github.com/grafana/beyla/commit/3565b386011ef8e43b328859bb54ae9c033bc55d\n\nTag on source: https://github.com/grafana/beyla/releases/tag/beyla-1.16.11",
-      "prerelease": false,
-      "publishedAt": "2026-08-19T11:56:45Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.11",
-      "version": "beyla-1.16.11"
     }
   ],
   "schemaVersion": 1,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-30T19:18:30.454Z",
+  "generatedAt": "2026-10-08T19:56:50.824Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 406842451,
+      "name": "v41.7.0",
+      "notes": "# [v41.7.0](https://github.com/traefik/traefik-helm-chart/compare/v41.6.1...v41.7.0) (2026-10-08)\n\n## :rocket: Features\n\n- feat(deps): update traefik to v3.7.14 and traefik-hub to v3.21.1 #2015 by @darkweaver87\n- feat(deps): update ghcr.io/traefik/hub-manager docker tag to v0.45.3 #2006 by @renovate-with-github-actions[bot]\n- feat(gateway): support scoping the provider to specific Gateways #2016 by @darkweaver87\n\n## :package: Others\n\n- chore(deps): update github actions #2013 by @renovate-with-github-actions[bot]\n- chore(deps): update dawidd6/action-download-artifact action to v27 #2014 by @renovate-with-github-actions[bot]\n- chore(release): 🚀 publish 41.7.0 and hub-manager 1.0.1 #2019 by @darkweaver87\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.14 (default)\n* Traefik Hub: v3.19.3 -> v3.21.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-08T13:10:15Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.7.0",
+      "version": "v41.7.0"
+    },
     {
       "channel": "stable",
       "draft": false,

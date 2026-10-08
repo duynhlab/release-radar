@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-08T08:57:06.692Z",
+  "generatedAt": "2026-10-08T19:57:17.446Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 407053368,
+      "name": "loki-18.15.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update docker.io/kiwigrid/k8s-sidecar Docker tag to v2.14.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/879\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.4.0...loki-18.15.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-08T16:39:09Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.15.0",
+      "version": "loki-18.15.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 407046718,
+      "name": "grafana-13.4.0",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana] Update quay.io/kiwigrid/k8s-sidecar Docker tag to v2.14.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/878\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.14.0...grafana-13.4.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-08T16:31:24Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.4.0",
+      "version": "grafana-13.4.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-09-29T19:23:47Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.8.0",
       "version": "tempo-distributed-3.8.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 399451881,
-      "name": "grafana-mcp-0.25.3",
-      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v1.6.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/848\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.7.2...grafana-mcp-0.25.3",
-      "prerelease": false,
-      "publishedAt": "2026-09-29T19:17:18Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.25.3",
-      "version": "grafana-mcp-0.25.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 399086039,
-      "name": "tempo-distributed-3.7.2",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Fix cache config when the shared memcached cluster is disabled by @edgarasg in https://github.com/grafana-community/helm-charts/pull/845\n\n## New Contributors\n* @edgarasg made their first contribution in https://github.com/grafana-community/helm-charts/pull/845\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.2.7...tempo-distributed-3.7.2",
-      "prerelease": false,
-      "publishedAt": "2026-09-29T11:36:12Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.7.2",
-      "version": "tempo-distributed-3.7.2"
     }
   ],
   "schemaVersion": 1,

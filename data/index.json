@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T08:57:27.461Z",
+  "generatedAt": "2026-10-08T19:57:37.040Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -68,19 +68,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 400327601,
-        "name": "v0.20.0",
+        "id": 406776201,
+        "name": "v0.20.1",
         "prerelease": false,
-        "publishedAt": "2026-09-30T19:09:29Z",
-        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.0",
-        "version": "v0.20.0"
+        "publishedAt": "2026-10-08T12:31:25Z",
+        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.1",
+        "version": "v0.20.1"
       },
       "name": "Kueue",
       "previous": {
-        "publishedAt": "2026-09-30T19:08:02Z",
-        "version": "v0.19.7"
+        "publishedAt": "2026-10-08T12:24:04Z",
+        "version": "v0.19.8"
       },
-      "releaseCount": 10,
+      "releaseCount": 12,
       "repository": "kubernetes-sigs/kueue",
       "tags": [
         "kubernetes",
@@ -453,19 +453,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 400171331,
-        "name": "v41.6.1",
+        "id": 406842451,
+        "name": "v41.7.0",
         "prerelease": false,
-        "publishedAt": "2026-09-30T15:12:57Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.6.1",
-        "version": "v41.6.1"
+        "publishedAt": "2026-10-08T13:10:15Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.7.0",
+        "version": "v41.7.0"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-09-16T13:42:31Z",
-        "version": "v41.6.0"
+        "publishedAt": "2026-09-30T15:12:57Z",
+        "version": "v41.6.1"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "traefik/traefik-helm-chart",
       "tags": [
         "helm-chart",
@@ -481,17 +481,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 399101281,
-        "name": "v0.97.1",
+        "id": 407139772,
+        "name": "v0.98.0",
         "prerelease": false,
-        "publishedAt": "2026-09-29T11:57:00Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.97.1",
-        "version": "v0.97.1"
+        "publishedAt": "2026-10-08T18:26:33Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.98.0",
+        "version": "v0.98.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-09-29T10:48:18Z",
-        "version": "v0.97.0"
+        "publishedAt": "2026-09-29T11:57:00Z",
+        "version": "v0.97.1"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 406226556,
-        "name": "k8s-monitoring-4.5.3",
+        "id": 407198678,
+        "name": "cloudcost-exporter-1.1.15",
         "prerelease": false,
-        "publishedAt": "2026-10-07T22:45:17Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.3",
-        "version": "k8s-monitoring-4.5.3"
+        "publishedAt": "2026-10-08T19:39:19Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.15",
+        "version": "cloudcost-exporter-1.1.15"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-07T15:44:20Z",
-        "version": "alloy-operator-0.8.0"
+        "publishedAt": "2026-10-08T18:12:52Z",
+        "version": "pyroscope-2.3.2"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 406164641,
-        "name": "loki-18.14.0",
+        "id": 407053368,
+        "name": "loki-18.15.0",
         "prerelease": false,
-        "publishedAt": "2026-10-07T21:07:09Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.14.0",
-        "version": "loki-18.14.0"
+        "publishedAt": "2026-10-08T16:39:09Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.15.0",
+        "version": "loki-18.15.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-07T19:16:28Z",
-        "version": "tempo-distributed-3.11.1"
+        "publishedAt": "2026-10-08T16:31:24Z",
+        "version": "grafana-13.4.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1742,19 +1742,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398384678,
-        "name": "loki v13.2.1",
+        "id": 407148507,
+        "name": "loki v13.2.2",
         "prerelease": false,
-        "publishedAt": "2026-09-28T15:32:05Z",
-        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.1",
-        "version": "v13.2.1"
+        "publishedAt": "2026-10-08T18:36:43Z",
+        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.2",
+        "version": "v13.2.2"
       },
       "name": "Loki Datasource",
       "previous": {
-        "publishedAt": "2026-09-10T22:07:44Z",
-        "version": "v13.2.0"
+        "publishedAt": "2026-09-28T15:32:05Z",
+        "version": "v13.2.1"
       },
-      "releaseCount": 7,
+      "releaseCount": 8,
       "repository": "grafana/grafana-loki-datasource",
       "tags": [
         "logs",

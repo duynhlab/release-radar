@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-28T20:33:40.783Z",
+  "generatedAt": "2026-10-08T19:57:18.210Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 407148507,
+      "name": "loki v13.2.2",
+      "notes": "## 13.2.2\n\n- Fix security vulnerabilities (CVE-2026-102278, CVE-2026-102276, CVE-2026-102990) in `brace-expansion` and `basic-ftp`",
+      "prerelease": false,
+      "publishedAt": "2026-10-08T18:36:43Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.2",
+      "version": "v13.2.2"
+    },
     {
       "channel": "stable",
       "draft": false,
