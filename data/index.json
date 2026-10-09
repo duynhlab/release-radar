@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T09:02:41.030Z",
+  "generatedAt": "2026-10-09T19:33:23.232Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -453,19 +453,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 406842451,
-        "name": "v41.7.0",
+        "id": 407944984,
+        "name": "v41.7.1",
         "prerelease": false,
-        "publishedAt": "2026-10-08T13:10:15Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.7.0",
-        "version": "v41.7.0"
+        "publishedAt": "2026-10-09T13:30:35Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.7.1",
+        "version": "v41.7.1"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-09-30T15:12:57Z",
-        "version": "v41.6.1"
+        "publishedAt": "2026-10-08T13:10:15Z",
+        "version": "v41.7.0"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "traefik/traefik-helm-chart",
       "tags": [
         "helm-chart",
@@ -481,17 +481,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 407139772,
-        "name": "v0.98.0",
+        "id": 407882570,
+        "name": "v0.98.1",
         "prerelease": false,
-        "publishedAt": "2026-10-08T18:26:33Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.98.0",
-        "version": "v0.98.0"
+        "publishedAt": "2026-10-09T12:16:09Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.98.1",
+        "version": "v0.98.1"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-09-29T11:57:00Z",
-        "version": "v0.97.1"
+        "publishedAt": "2026-10-08T18:26:33Z",
+        "version": "v0.98.0"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
