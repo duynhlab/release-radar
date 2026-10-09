@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-01T19:31:58.484Z",
+  "generatedAt": "2026-10-09T09:02:08.321Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 407224341,
+      "name": "openbao-0.30.3",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* Ensure name uniqueness for clusterrolebinding resources by @pvbiesen-vaph in https://github.com/openbao/openbao-helm/pull/244\n* fix(deps): update vault-k8s injector to 1.7.6 by @darshanmadesh in https://github.com/openbao/openbao-helm/pull/246\n* chore: release 0.30.3 by @eyenx in https://github.com/openbao/openbao-helm/pull/247\n\n## New Contributors\n* @darshanmadesh made their first contribution in https://github.com/openbao/openbao-helm/pull/246\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.30.2...openbao-0.30.3",
+      "prerelease": false,
+      "publishedAt": "2026-10-08T20:13:25Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.3",
+      "version": "openbao-0.30.3"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-04-15T06:33:04Z",
       "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.27.1",
       "version": "openbao-0.27.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 307395193,
-      "name": "openbao-0.27.0",
-      "notes": "Official OpenBao Chart\n\n## What's Changed\n* Make injector.external(Bao|Vault)Addr take precendence over global.external(Bao|Vault)Addr by @baurmatt in https://github.com/openbao/openbao-helm/pull/158\n\n## New Contributors\n* @baurmatt made their first contribution in https://github.com/openbao/openbao-helm/pull/158\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.26.3...openbao-0.27.0",
-      "prerelease": false,
-      "publishedAt": "2026-04-10T05:40:33Z",
-      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.27.0",
-      "version": "openbao-0.27.0"
     }
   ],
   "schemaVersion": 1,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-08T19:57:17.446Z",
+  "generatedAt": "2026-10-09T09:02:14.101Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 407391294,
+      "name": "loki-18.15.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v0.4.22 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/880\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.15.0...loki-18.15.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-09T01:02:19Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.15.1",
+      "version": "loki-18.15.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-30T00:08:44Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-vulture-0.14.0",
       "version": "tempo-vulture-0.14.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 399456551,
-      "name": "tempo-distributed-3.8.0",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Update docker.io/grafana/tempo Docker tag to v3.1.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/849\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.25.3...tempo-distributed-3.8.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-29T19:23:47Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.8.0",
-      "version": "tempo-distributed-3.8.0"
     }
   ],
   "schemaVersion": 1,
