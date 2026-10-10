@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-10T08:29:12.822Z",
+  "generatedAt": "2026-10-10T18:34:35.904Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 409101544,
+      "name": "grafana-mcp-0.27.2",
+      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v2.0.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/882\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.5.0...grafana-mcp-0.27.2",
+      "prerelease": false,
+      "publishedAt": "2026-10-10T17:38:36Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.27.2",
+      "version": "grafana-mcp-0.27.2"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-01T07:49:53Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.9.0",
       "version": "tempo-distributed-3.9.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 399616549,
-      "name": "tempo-3.1.0",
-      "notes": "Grafana Tempo Single Binary Mode\n\n## What's Changed\n* [tempo] Update docker.io/grafana/tempo Docker tag to v3.1.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/851\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-vulture-0.14.0...tempo-3.1.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-30T00:13:19Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-3.1.0",
-      "version": "tempo-3.1.0"
     }
   ],
   "schemaVersion": 1,
