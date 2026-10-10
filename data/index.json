@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T19:33:23.232Z",
+  "generatedAt": "2026-10-10T08:29:30.525Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -39,19 +39,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 374707429,
-        "name": "v1.14.1",
+        "id": 408693727,
+        "name": "v1.15.0",
         "prerelease": false,
-        "publishedAt": "2026-08-21T22:35:25Z",
-        "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.1",
-        "version": "v1.14.1"
+        "publishedAt": "2026-10-10T05:42:42Z",
+        "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.15.0",
+        "version": "v1.15.0"
       },
       "name": "Karpenter",
       "previous": {
-        "publishedAt": "2026-07-11T00:17:51Z",
-        "version": "v1.14.0"
+        "publishedAt": "2026-08-21T22:35:25Z",
+        "version": "v1.14.1"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "kubernetes-sigs/karpenter",
       "tags": [
         "kubernetes",
@@ -1587,19 +1587,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 406184230,
-        "name": "v2.3.2",
+        "id": 408284057,
+        "name": "v2.4.0",
         "prerelease": false,
-        "publishedAt": "2026-10-07T21:37:03Z",
-        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.3.2",
-        "version": "v2.3.2"
+        "publishedAt": "2026-10-09T19:46:50Z",
+        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.0",
+        "version": "v2.4.0"
       },
       "name": "Pyroscope",
       "previous": {
-        "publishedAt": "2026-10-07T20:53:46Z",
-        "version": "v2.2.3"
+        "publishedAt": "2026-10-07T21:37:03Z",
+        "version": "v2.3.2"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "grafana/pyroscope",
       "tags": [
         "profiling"
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 407198678,
-        "name": "cloudcost-exporter-1.1.15",
+        "id": 408348168,
+        "name": "pyroscope-2.4.0",
         "prerelease": false,
-        "publishedAt": "2026-10-08T19:39:19Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.15",
-        "version": "cloudcost-exporter-1.1.15"
+        "publishedAt": "2026-10-09T21:08:28Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.0",
+        "version": "pyroscope-2.4.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-08T18:12:52Z",
-        "version": "pyroscope-2.3.2"
+        "publishedAt": "2026-10-08T19:39:19Z",
+        "version": "cloudcost-exporter-1.1.15"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 407391294,
-        "name": "loki-18.15.1",
+        "id": 408317262,
+        "name": "grafana-13.5.0",
         "prerelease": false,
-        "publishedAt": "2026-10-09T01:02:19Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.15.1",
-        "version": "loki-18.15.1"
+        "publishedAt": "2026-10-09T20:26:23Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.5.0",
+        "version": "grafana-13.5.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-08T16:39:09Z",
-        "version": "loki-18.15.0"
+        "publishedAt": "2026-10-09T01:02:19Z",
+        "version": "loki-18.15.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2593,19 +2593,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 396102736,
-        "name": "v0.1.60",
+        "id": 408324574,
+        "name": "v0.1.61",
         "prerelease": false,
-        "publishedAt": "2026-09-24T21:43:32Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.60",
-        "version": "v0.1.60"
+        "publishedAt": "2026-10-09T20:35:41Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.61",
+        "version": "v0.1.61"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-09-17T21:11:48Z",
-        "version": "v0.1.59"
+        "publishedAt": "2026-09-24T21:43:32Z",
+        "version": "v0.1.60"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "pgdogdev/pgdog",
       "tags": [
         "postgresql",

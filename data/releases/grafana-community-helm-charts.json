@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-09T09:02:14.101Z",
+  "generatedAt": "2026-10-10T08:29:12.822Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 408317262,
+      "name": "grafana-13.5.0",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [CI] Update github-workflow dependency updates by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/865\n* [grafana] support configurable StatefulSet podManagementPolicy by @modogo2000 in https://github.com/grafana-community/helm-charts/pull/881\n\n## New Contributors\n* @modogo2000 made their first contribution in https://github.com/grafana-community/helm-charts/pull/881\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.15.1...grafana-13.5.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-09T20:26:23Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.5.0",
+      "version": "grafana-13.5.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-30T00:13:19Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-3.1.0",
       "version": "tempo-3.1.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 399614858,
-      "name": "tempo-vulture-0.14.0",
-      "notes": "Grafana Tempo Vulture - A tool to monitor Tempo performance.\n\n## What's Changed\n* [tempo-vulture] Update docker.io/grafana/tempo-vulture Docker tag to v3.1.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/850\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.8.0...tempo-vulture-0.14.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-30T00:08:44Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-vulture-0.14.0",
-      "version": "tempo-vulture-0.14.0"
     }
   ],
   "schemaVersion": 1,

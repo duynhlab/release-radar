@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-08T19:57:16.855Z",
+  "generatedAt": "2026-10-10T08:29:12.264Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 408348168,
+      "name": "pyroscope-2.4.0",
+      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/2988a37b8abb2b6a830c9e21ce0e1ceee191e213\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.4.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-09T21:08:28Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.0",
+      "version": "pyroscope-2.4.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-24T13:27:13Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/grafana-operator-5.25.0",
       "version": "grafana-operator-5.25.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 373951069,
-      "name": "rollout-operator-0.51.1",
-      "notes": "Grafana rollout-operator\n\n## What's Changed\n* Attempt to fix chart release by @andyasp in https://github.com/grafana/helm-charts/pull/4214\n* [rollout-operator] increment chart for re-release by @andyasp in https://github.com/grafana/helm-charts/pull/4215\n\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/mimir-distributed-6.2.0...rollout-operator-0.51.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-20T18:38:45Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.51.1",
-      "version": "rollout-operator-0.51.1"
     }
   ],
   "schemaVersion": 1,
