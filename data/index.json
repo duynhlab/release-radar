@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T22:09:08.279Z",
+  "generatedAt": "2026-10-13T09:25:10.469Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -2329,19 +2329,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 400674757,
-        "name": "26.8.0",
+        "id": 411437965,
+        "name": "26.8.1",
         "prerelease": false,
-        "publishedAt": "2026-10-01T05:57:20Z",
-        "url": "https://github.com/keycloak/keycloak/releases/tag/26.8.0",
-        "version": "26.8.0"
+        "publishedAt": "2026-10-13T08:58:15Z",
+        "url": "https://github.com/keycloak/keycloak/releases/tag/26.8.1",
+        "version": "26.8.1"
       },
       "name": "Keycloak",
       "previous": {
-        "publishedAt": "2026-09-30T17:44:19Z",
-        "version": "26.7.5"
+        "publishedAt": "2026-10-01T05:57:20Z",
+        "version": "26.8.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "keycloak/keycloak",
       "tags": [
         "identity",
