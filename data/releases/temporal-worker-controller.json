@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-01T08:55:22.639Z",
+  "generatedAt": "2026-10-13T20:17:28.928Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 412026852,
+      "name": "v1.13.0",
+      "notes": "## What's Changed\r\n* chore(deps): bump go.opentelemetry.io/otel/exporters/prometheus in / by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/602\r\n* chore(deps): bump docker/setup-buildx-action from 4.3.0 to 4.4.1 by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/627\r\n* chore(deps): bump github.com/onsi/ginkgo/v2 in / by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/628\r\n* helm: generate values.schema.json from values.yaml by @kriyanshii in https://github.com/temporalio/temporal-worker-controller/pull/565\r\n* refactor(controller): move TLS volume/mount helpers to internal/k8s, const-ify hard-coded strings by @wankhede04 in https://github.com/temporalio/temporal-worker-controller/pull/625\r\n* feat(wrt): auto-inject spec.targetRef for VerticalPodAutoscaler by @jingyu-blp in https://github.com/temporalio/temporal-worker-controller/pull/623\r\n* feat: support KEDA per-version substitutions for metrics by @otan in https://github.com/temporalio/temporal-worker-controller/pull/616\r\n* Add kstatus functionality to CRD statuses by @jaypipes in https://github.com/temporalio/temporal-worker-controller/pull/621\r\n* [Issue 246]: Refactor clientpool into a cache + pluggable client creation, and expose a `twc` facade by @eniko-dif in https://github.com/temporalio/temporal-worker-controller/pull/597\r\n* Update README.md by @karasowles in https://github.com/temporalio/temporal-worker-controller/pull/607\r\n* Test: add E2E configuration matrix workflow for TWC by @niyomukiza-mechack in https://github.com/temporalio/temporal-worker-controller/pull/582\r\n* chore(deps): bump github.com/onsi/gomega in / by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/638\r\n* chore(deps): bump github.com/onsi/ginkgo/v2 in / by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/637\r\n* Fix missing pkg/ COPY in Dockerfile by @jaypipes in https://github.com/temporalio/temporal-worker-controller/pull/642\r\n* docs: add VPA scaling recommendations and a wrt-vpa example by @Sanil2108 in https://github.com/temporalio/temporal-worker-controller/pull/634\r\n* docs: use spec.deployment.template in the VPA prerequisites by @Sanil2108 in https://github.com/temporalio/temporal-worker-controller/pull/645\r\n* docs: add ClusterConnection documentation by @niyomukiza-mechack in https://github.com/temporalio/temporal-worker-controller/pull/636\r\n\r\n## New Contributors\r\n* @jingyu-blp made their first contribution in https://github.com/temporalio/temporal-worker-controller/pull/623\r\n* @karasowles made their first contribution in https://github.com/temporalio/temporal-worker-controller/pull/607\r\n* @Sanil2108 made their first contribution in https://github.com/temporalio/temporal-worker-controller/pull/634\r\n\r\n**Full Changelog**: https://github.com/temporalio/temporal-worker-controller/compare/v1.12.0...v1.13.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-13T19:21:12Z",
+      "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.13.0",
+      "version": "v1.13.0"
+    },
     {
       "channel": "stable",
       "draft": false,

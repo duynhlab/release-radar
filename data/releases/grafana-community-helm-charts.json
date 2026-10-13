@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-10T18:34:35.904Z",
+  "generatedAt": "2026-10-13T20:17:05.394Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 411579661,
+      "name": "grafana-13.5.1",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [CI] Update actions/create-github-app-token action to v3.3.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/884\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.2.4 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/887\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.27.2...grafana-13.5.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-13T11:02:05Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.5.1",
+      "version": "grafana-13.5.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-01T07:53:02Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.25.4",
       "version": "grafana-mcp-0.25.4"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 400748290,
-      "name": "tempo-distributed-3.9.0",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] wire up inert backend-scheduler persistence values by @BhaRgav-MoRadiya in https://github.com/grafana-community/helm-charts/pull/824\n\n## New Contributors\n* @BhaRgav-MoRadiya made their first contribution in https://github.com/grafana-community/helm-charts/pull/824\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-3.1.0...tempo-distributed-3.9.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-01T07:49:53Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.9.0",
-      "version": "tempo-distributed-3.9.0"
     }
   ],
   "schemaVersion": 1,

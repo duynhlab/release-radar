@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T09:25:10.469Z",
+  "generatedAt": "2026-10-13T20:17:28.934Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -362,17 +362,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398975197,
-        "name": "13.2.3",
+        "id": 411687403,
+        "name": "12.4.13",
         "prerelease": false,
-        "publishedAt": "2026-09-29T09:02:18Z",
-        "url": "https://github.com/grafana/grafana/releases/tag/v13.2.3",
-        "version": "v13.2.3"
+        "publishedAt": "2026-10-13T13:09:03Z",
+        "url": "https://github.com/grafana/grafana/releases/tag/v12.4.13",
+        "version": "v12.4.13"
       },
       "name": "Grafana",
       "previous": {
-        "publishedAt": "2026-09-29T08:57:58Z",
-        "version": "v13.1.7"
+        "publishedAt": "2026-10-13T13:01:57Z",
+        "version": "v13.1.8"
       },
       "releaseCount": 20,
       "repository": "grafana/grafana",
@@ -1377,19 +1377,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398492381,
-        "name": "Release v0.160.0",
+        "id": 411825894,
+        "name": "Release v0.161.0",
         "prerelease": false,
-        "publishedAt": "2026-09-28T22:11:14Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.160.0",
-        "version": "v0.160.0"
+        "publishedAt": "2026-10-13T15:24:14Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-operator/releases/tag/v0.161.0",
+        "version": "v0.161.0"
       },
       "name": "OpenTelemetry Operator",
       "previous": {
-        "publishedAt": "2026-09-14T16:47:31Z",
-        "version": "v0.159.0"
+        "publishedAt": "2026-09-28T22:11:14Z",
+        "version": "v0.160.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "open-telemetry/opentelemetry-operator",
       "tags": [
         "metrics",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 408348168,
-        "name": "pyroscope-2.4.0",
+        "id": 411881928,
+        "name": "cloudcost-exporter-1.1.16",
         "prerelease": false,
-        "publishedAt": "2026-10-09T21:08:28Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.0",
-        "version": "pyroscope-2.4.0"
+        "publishedAt": "2026-10-13T16:24:10Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.16",
+        "version": "cloudcost-exporter-1.1.16"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-08T19:39:19Z",
-        "version": "cloudcost-exporter-1.1.15"
+        "publishedAt": "2026-10-09T21:08:28Z",
+        "version": "pyroscope-2.4.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 409101544,
-        "name": "grafana-mcp-0.27.2",
+        "id": 411579661,
+        "name": "grafana-13.5.1",
         "prerelease": false,
-        "publishedAt": "2026-10-10T17:38:36Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.27.2",
-        "version": "grafana-mcp-0.27.2"
+        "publishedAt": "2026-10-13T11:02:05Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.5.1",
+        "version": "grafana-13.5.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-09T20:26:23Z",
-        "version": "grafana-13.5.0"
+        "publishedAt": "2026-10-10T17:38:36Z",
+        "version": "grafana-mcp-0.27.2"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2626,19 +2626,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 400441528,
-        "name": "v1.12.0",
+        "id": 412026852,
+        "name": "v1.13.0",
         "prerelease": false,
-        "publishedAt": "2026-09-30T21:13:47Z",
-        "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.12.0",
-        "version": "v1.12.0"
+        "publishedAt": "2026-10-13T19:21:12Z",
+        "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.13.0",
+        "version": "v1.13.0"
       },
       "name": "Temporal Worker Controller",
       "previous": {
-        "publishedAt": "2026-09-15T21:10:26Z",
-        "version": "v1.11.0"
+        "publishedAt": "2026-09-30T21:13:47Z",
+        "version": "v1.12.0"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "temporalio/temporal-worker-controller",
       "tags": [
         "workflow",

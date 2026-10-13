@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-09-29T19:25:18.006Z",
+  "generatedAt": "2026-10-13T20:16:31.650Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 411687403,
+      "name": "12.4.13",
+      "notes": "[Download page](https://grafana.com/grafana/download/12.4.13)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-15577\n- Security: Fix CVE-2026-33374\n- Security: Fix CVE-2026-93294\n\n### Features and enhancements\n\n- **Alerting:** Strip sensitive headers from oauth2 cross-host redirects [#134424](https://github.com/grafana/grafana/pull/134424), [@JacobsonMT](https://github.com/JacobsonMT)\n- **Dashboard:** Fall back when collection deletion is unsupported (#128259) [#134229](https://github.com/grafana/grafana/pull/134229), [@bestend](https://github.com/bestend)\n\n### Bug fixes\n\n- **CVE-2026-92539:** IAM: Fix CVE-2026-92539: Scim endpoints (Enterprise)",
+      "prerelease": false,
+      "publishedAt": "2026-10-13T13:09:03Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v12.4.13",
+      "version": "v12.4.13"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 411680911,
+      "name": "13.1.8",
+      "notes": "[Download page](https://grafana.com/grafana/download/13.1.8)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-15577\n- Security: Fix CVE-2026-33374\n- Security: Fix CVE-2026-93294\n- Security: Fix CVE-2026-95502\n\n### Features and enhancements\n\n- **Alerting:** Strip sensitive headers from oauth2 cross-host redirects [#134428](https://github.com/grafana/grafana/pull/134428), [@JacobsonMT](https://github.com/JacobsonMT)\n- **Dashboard:** Fall back when collection deletion is unsupported [#134225](https://github.com/grafana/grafana/pull/134225), [@bestend](https://github.com/bestend)\n\n### Bug fixes\n\n- **CVE-2026-92539:** IAM: Fix: SCIM (Enterprise)",
+      "prerelease": false,
+      "publishedAt": "2026-10-13T13:01:57Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.1.8",
+      "version": "v13.1.8"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 411623565,
+      "name": "13.0.11",
+      "notes": "[Download page](https://grafana.com/grafana/download/13.0.11)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-15577\n- Security: Fix CVE-2026-33374\n- Security: Fix CVE-2026-93294\n- Security: Fix CVE-2026-95502\n\n### Features and enhancements\n\n- **Alerting:** Strip sensitive headers from oauth2 cross-host redirects [#134426](https://github.com/grafana/grafana/pull/134426), [@JacobsonMT](https://github.com/JacobsonMT)\n- **Dashboard:** Fall back when collection deletion is unsupported [#134228](https://github.com/grafana/grafana/pull/134228), [@bestend](https://github.com/bestend)\n\n### Bug fixes\n\n- **CVE-2026-92539:** IAM: Fix: Scim endpoints (Enterprise)",
+      "prerelease": false,
+      "publishedAt": "2026-10-13T11:56:40Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.0.11",
+      "version": "v13.0.11"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 411610692,
+      "name": "13.2.4",
+      "notes": "[Download page](https://grafana.com/grafana/download/13.2.4)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-15577\n- Security: Fix CVE-2026-33374\n- Security: Fix CVE-2026-93294\n- Security: Fix CVE-2026-95502\n\n### Features and enhancements\n\n- **Alerting:** Strip sensitive headers from oauth2 cross-host redirects [#134433](https://github.com/grafana/grafana/pull/134433), [@JacobsonMT](https://github.com/JacobsonMT)\n- **Dashboard:** Fall back when collection deletion is unsupported [#134224](https://github.com/grafana/grafana/pull/134224), [@bestend](https://github.com/bestend)\n- **Git Sync:** Clarify repository links for pure Git [#134253](https://github.com/grafana/grafana/pull/134253), [@ferruvich](https://github.com/ferruvich)\n- **Provisioning:** Allow resource previews in unsynced folders [#134391](https://github.com/grafana/grafana/pull/134391), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])\n- **Provisioning:** Reject invalid resource names before API calls [#133776](https://github.com/grafana/grafana/pull/133776), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])\n- **Provisioning:** Show last checked time in Pull status [#134483](https://github.com/grafana/grafana/pull/134483), [@ferruvich](https://github.com/ferruvich)\n- **Provisioning:** Skip previews for pull requests from forks [#133799](https://github.com/grafana/grafana/pull/133799), [@ferruvich](https://github.com/ferruvich)\n- **Provisioning:** Stop PR previews when refs disappear [#133855](https://github.com/grafana/grafana/pull/133855), [@ferruvich](https://github.com/ferruvich)\n- **Provisioning:** Support legacy paths and diagnose missing source annotations [#133779](https://github.com/grafana/grafana/pull/133779), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])\n- **Provisioning:** write terminal sync status back to repository on early sync-job failures and Respect Git Sync polling intervals after unchanged refs [#134478](https://github.com/grafana/grafana/pull/134478), [@mustafasencer](https://github.com/mustafasencer)\n\n### Bug fixes\n\n- **CVE-2026-92539:** IAM: Fix: SCIM (Enterprise)",
+      "prerelease": false,
+      "publishedAt": "2026-10-13T11:41:03Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.2.4",
+      "version": "v13.2.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -176,50 +220,6 @@
       "publishedAt": "2026-08-18T13:02:28Z",
       "url": "https://github.com/grafana/grafana/releases/tag/v13.1.4",
       "version": "v13.1.4"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 372341438,
-      "name": "13.2.0",
-      "notes": "[Download page](https://grafana.com/grafana/download/13.2.0)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- CVE-2026-17183\n\n### Features and enhancements\n\n- **Alerting:** Add Import tab in alerting settings page [#129051](https://github.com/grafana/grafana/pull/129051), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Add notification template import to the import-to-GMA wizard [#128329](https://github.com/grafana/grafana/pull/128329), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Add promote and auto sync to ImportToGMAWizard [#126907](https://github.com/grafana/grafana/pull/126907), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Add staged configuration summary in import settings page [#129204](https://github.com/grafana/grafana/pull/129204), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Compute staged config origin server-side [#130727](https://github.com/grafana/grafana/pull/130727), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Migrate notifications API to v1beta1 [#124702](https://github.com/grafana/grafana/pull/124702), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Recognize \"default\" and \"user-defined\" as the default routing tree (1/4) [#127880](https://github.com/grafana/grafana/pull/127880), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Recognize \"default\" and \"user-defined\" as the default routing tree (2/4) [#127881](https://github.com/grafana/grafana/pull/127881), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Recognize \"default\" and \"user-defined\" as the default routing tree (3/4) [#127883](https://github.com/grafana/grafana/pull/127883), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Recognize \"default\" and \"user-defined\" as the default routing tree (4/4) [#127884](https://github.com/grafana/grafana/pull/127884), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Return 403 instead of 500 on contact point provenance mismatch [#127699](https://github.com/grafana/grafana/pull/127699), [@rwwiv](https://github.com/rwwiv)\n- **Alerting:** Revert a staged import configuration [#129243](https://github.com/grafana/grafana/pull/129243), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Show unusable time intervals as disabled in the mute timings selector [#130323](https://github.com/grafana/grafana/pull/130323), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** Track import method analytics in import to gma [#128142](https://github.com/grafana/grafana/pull/128142), [@rodrigopk](https://github.com/rodrigopk)\n- **Alerting:** remove AlertingCentralHistory FT [#130164](https://github.com/grafana/grafana/pull/130164), [@konstantinmv](https://github.com/konstantinmv)\n- **Analytics:** Add public dashboard UID to loki usage insights events (Enterprise)\n- **Auditing:** Record the user name on user deletion audit logs (Enterprise)\n- **Azure Monitor:** Cache subscription lookups and collapse double Unmarshal in buildQuery [#123556](https://github.com/grafana/grafana/pull/123556), [@adamyeats](https://github.com/adamyeats)\n- **Azure monitor:** Azure Metrics Batch API Implementation backend [#123696](https://github.com/grafana/grafana/pull/123696), [@bossinc](https://github.com/bossinc)\n- **CloudWatch Logs:** Add frontend support for querying by data source [#123742](https://github.com/grafana/grafana/pull/123742), [@kevinwcyu](https://github.com/kevinwcyu)\n- **ColorScale:** Remove live hoverValue, remove from HeatMap tooltip [#128812](https://github.com/grafana/grafana/pull/128812), [@leeoniya](https://github.com/leeoniya)\n- **DashList:** Show dashboard description tooltip when it's available [#130006](https://github.com/grafana/grafana/pull/130006), [@DeeGeeGit](https://github.com/DeeGeeGit)\n- **Dashboard:** redirect from dashboard settings tabs to sidebar counterparts [#125966](https://github.com/grafana/grafana/pull/125966), [@bfmatei](https://github.com/bfmatei)\n- **Dashboards:** Allow threshold interpolation [#128451](https://github.com/grafana/grafana/pull/128451), [@mdvictor](https://github.com/mdvictor)\n- **Dashboards:** Deprecate scripted dashboards and disable them by default [#130207](https://github.com/grafana/grafana/pull/130207), [@kristinademeshchik](https://github.com/kristinademeshchik)\n- **Dashboards:** Enable new view panel controls by default [#129187](https://github.com/grafana/grafana/pull/129187), [@torkelo](https://github.com/torkelo)\n- **Dashboards:** Increase nesting depth to 4 and allow nested tabs [#129174](https://github.com/grafana/grafana/pull/129174), [@bfmatei](https://github.com/bfmatei)\n- **Dashboards:** Show panel query errors and notices in one UI [#127436](https://github.com/grafana/grafana/pull/127436), [@mdvictor](https://github.com/mdvictor)\n- **Developer Guide:** Add note about requiring signed commits [#127162](https://github.com/grafana/grafana/pull/127162), [@gelicia](https://github.com/gelicia)\n- **Docs:** document the tracing file exporter [#129339](https://github.com/grafana/grafana/pull/129339), [@leandro-deveikis](https://github.com/leandro-deveikis)\n- **Explore Logs:** log line highlight color lighten in dark, update deprecated pinned color [#130516](https://github.com/grafana/grafana/pull/130516), [@L2D2Grafana](https://github.com/L2D2Grafana)\n- **Folder API:** Replace legacy access control logic with app platform API call [#125642](https://github.com/grafana/grafana/pull/125642), [@aocenas](https://github.com/aocenas)\n- **Go:** Update version to 1.26.5 [#128011](https://github.com/grafana/grafana/pull/128011), [@macabu](https://github.com/macabu)\n- **GrafanaUI:** Add real magnification effect to GrotNotFound lens [#130118](https://github.com/grafana/grafana/pull/130118), [@xndcn](https://github.com/xndcn)\n- **Home:** Enable unified homepage for all users (remove flag) [#129054](https://github.com/grafana/grafana/pull/129054), [@MattIPv4](https://github.com/MattIPv4)\n- **Live:** Support redis:// and rediss:// (TLS) connection URLs in ha_engine_address [#129938](https://github.com/grafana/grafana/pull/129938), [@DeeGeeGit](https://github.com/DeeGeeGit)\n- **Logs:** Add more suggested fields and integrate with the new Logs Table [#128002](https://github.com/grafana/grafana/pull/128002), [@matyax](https://github.com/matyax)\n- **Logs:** use gray (dimgray) for debug level color [#129896](https://github.com/grafana/grafana/pull/129896), [@L2D2Grafana](https://github.com/L2D2Grafana)\n- **Plugins:** Force TLS 1.3 feature toggle [#130390](https://github.com/grafana/grafana/pull/130390), [@aangelisc](https://github.com/aangelisc)\n- **Provisioning (enterprise):** (4/8) Add OAuth app connections for GitLab and Bitbucket (Enterprise)\n- **Provisioning:** Add Dashboard Previews to GitHub Enterprise [#127614](https://github.com/grafana/grafana/pull/127614), [@floriecai](https://github.com/floriecai)\n- **Provisioning:** Add Github Enterprise frontend [#127209](https://github.com/grafana/grafana/pull/127209), [@floriecai](https://github.com/floriecai)\n- **Provisioning:** Add filter for out-of-sync resources in Resources tab [#128456](https://github.com/grafana/grafana/pull/128456), [@MissingRoberto](https://github.com/MissingRoberto)\n- **Provisioning:** Add option to author commits as the signer [#127970](https://github.com/grafana/grafana/pull/127970), [@amalavet](https://github.com/amalavet)\n- **Provisioning:** Add resource kind icons to job summary table [#127237](https://github.com/grafana/grafana/pull/127237), [@MissingRoberto](https://github.com/MissingRoberto)\n- **Provisioning:** Add webhook support for GithubEnterprise (Enterprise)\n- **Provisioning:** Allow overriding the Git Sync commit author [#130547](https://github.com/grafana/grafana/pull/130547), [@amalavet](https://github.com/amalavet)\n- **Provisioning:** Attribute jobs to their author and origin [#128819](https://github.com/grafana/grafana/pull/128819), [@amalavet](https://github.com/amalavet)\n- **Provisioning:** Attribute webhook-created jobs to the sending user (Enterprise)\n- **Provisioning:** Bitbucket webhook UI [#128649](https://github.com/grafana/grafana/pull/128649), [@amalavet](https://github.com/amalavet)\n- **Provisioning:** Bitbucket webhooks (Enterprise)\n- **Provisioning:** Change commit message template to multi-line textarea [#128529](https://github.com/grafana/grafana/pull/128529), [@cursoragent](https://github.com/cursoragent)\n- **Provisioning:** Diff Git Sync PR previews against the merge base [#128149](https://github.com/grafana/grafana/pull/128149), [@amalavet](https://github.com/amalavet)\n- **Provisioning:** Diff GitLab Git Sync PR previews against the merge base (Enterprise)\n- **Provisioning:** Enable Dashboard Previews for Github Enterprise in UI [#127906](https://github.com/grafana/grafana/pull/127906), [@floriecai](https://github.com/floriecai)\n- **Provisioning:** Enable Git Sync conventions by default in public preview [#130670](https://github.com/grafana/grafana/pull/130670), [@MissingRoberto](https://github.com/MissingRoberto)\n- **Provisioning:** Enable Git Sync user attribution by default [#130671](https://github.com/grafana/grafana/pull/130671), [@MissingRoberto](https://github.com/MissingRoberto)\n- **Provisioning:** Enable Github Enterprise provider by default [#128376](https://github.com/grafana/grafana/pull/128376), [@floriecai](https://github.com/floriecai)\n- **Provisioning:** Enable Github Enterprise provider by default for enterp… (Enterprise)\n- **Provisioning:** Exclude SLO-apps from UI in migrate gitops workflow [#128961](https://github.com/grafana/grafana/pull/128961), [@floriecai](https://github.com/floriecai)\n- **Provisioning:** Exclude SLO-managed dashboards from being exported [#128815](https://github.com/grafana/grafana/pull/128815), [@floriecai](https://github.com/floriecai)\n- **Provisioning:** GitLab webhooks (backend) [#127204](https://github.com/grafana/grafana/pull/127204), [@amalavet](https://\n\n…(truncated)",
-      "prerelease": false,
-      "publishedAt": "2026-08-18T12:48:13Z",
-      "url": "https://github.com/grafana/grafana/releases/tag/v13.2.0",
-      "version": "v13.2.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 366496110,
-      "name": "13.0.6",
-      "notes": "[Download page](https://grafana.com/grafana/download/13.0.6)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)",
-      "prerelease": false,
-      "publishedAt": "2026-08-07T03:06:00Z",
-      "url": "https://github.com/grafana/grafana/releases/tag/v13.0.6",
-      "version": "v13.0.6"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 366495257,
-      "name": "13.1.3",
-      "notes": "[Download page](https://grafana.com/grafana/download/13.1.3)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)",
-      "prerelease": false,
-      "publishedAt": "2026-08-07T03:03:34Z",
-      "url": "https://github.com/grafana/grafana/releases/tag/v13.1.3",
-      "version": "v13.1.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 366492846,
-      "name": "12.4.8",
-      "notes": "[Download page](https://grafana.com/grafana/download/12.4.8)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)",
-      "prerelease": false,
-      "publishedAt": "2026-08-07T02:55:02Z",
-      "url": "https://github.com/grafana/grafana/releases/tag/v12.4.8",
-      "version": "v12.4.8"
     }
   ],
   "schemaVersion": 1,
