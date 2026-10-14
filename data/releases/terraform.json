@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-02T19:17:31.266Z",
+  "generatedAt": "2026-10-14T18:37:27.932Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 412544484,
+      "name": "v1.16.6",
+      "notes": "## 1.16.6 (October 14, 2026)\n\n\nBUG FIXES:\n\n* cloud: `terraform init` can now find workspaces selected by key/value tags whose keys contain uppercase letters. ([#39306](https://github.com/hashicorp/terraform/issues/39306))\n\n* test: Allow module under test to use deprecated outputs. ([#39207](https://github.com/hashicorp/terraform/issues/39207))\n\n\nNOTES:\n\n* Prevent a HTTP/2 resource exhaustion via CVE-2026-78669. Exploitation would require a compromised (untrusted) provider/module registry. Such a threat is considered to be outside the perimeter of Terraform core security guarantees. ([#39375](https://github.com/hashicorp/terraform/issues/39375))",
+      "prerelease": false,
+      "publishedAt": "2026-10-14T09:31:54Z",
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.6",
+      "version": "v1.16.6"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-01T19:31:32.582Z",
+  "generatedAt": "2026-10-14T18:37:29.707Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 412926019,
+      "name": "v1.12.8",
+      "notes": "SECURITY ADVISORIES:\r\n\r\n- Previous versions of OpenTofu could potentially experience excessive CPU usage if connecting to an attacker-controlled HTTP2 server while installing dependencies in `tofu init`. ([#4700](https://github.com/opentofu/opentofu/pull/4700))\r\n\r\nBUG FIXES:\r\n\r\n- Lifecycle destroy will no longer crash when given an expression with references ([#4648](https://github.com/opentofu/opentofu/pull/4648))",
+      "prerelease": false,
+      "publishedAt": "2026-10-14T16:20:20Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.8",
+      "version": "v1.12.8"
+    },
     {
       "channel": "stable",
       "draft": false,
