@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-09T19:32:38.466Z",
+  "generatedAt": "2026-10-15T18:17:07.825Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 413986727,
+      "name": "v42.0.0",
+      "notes": "# [v42.0.0](https://github.com/traefik/traefik-helm-chart/compare/v41.7.1...v42.0.0) (2026-10-15)\r\n\r\nThere are 3 breaking changes in this release\r\n\r\n**Upgrade Notes**\r\n\r\n1. **Kubernetes v1.30+**: The chart now requires Kubernetes v1.30 or higher (https://github.com/traefik/traefik-helm-chart/pull/2030).\r\n2. **Traefik Hub Secret RBAC**: Write verbs on Secrets (`create`, `update`, `delete`) are no longer granted cluster-wide.\r\n   * A `Role` now grants them in the release namespace only, where Traefik Hub writes its Secrets (https://github.com/traefik/traefik-helm-chart/pull/2028)\r\n3. **Transparency logs witnesses**: (https://github.com/traefik/traefik-helm-chart/pull/2018):\r\n   * `hub.transparencyLogs.witnessGroup.witnesses` now defaults to `null` and `threshold` must be at least `1`.\r\n   * Setting `threshold`, `timeout` or `failOpen` without any witness now fails.\r\n\r\n> [!NOTE]\r\n> With `hub.token`, the chart now deploys a cluster-scoped `ValidatingAdmissionPolicy` that only allows Traefik Hub to write `Opaque` and `kubernetes.io/tls` Secrets.\r\n> Set `hub.restrictSecretTypes: false` if the installer cannot create cluster-scoped resources.\r\n\r\n## :boom: BREAKING CHANGES\r\n\r\n- fix(tlogs)!: empty witness config #2018 by @LBF38\r\n- feat(chart)!: require Kubernetes v1.30 or higher #2030 by @mloiseleur\r\n- fix(rbac)!: 🐛 scope Traefik Hub secret write permissions to release namespace #2028 by @mloiseleur\r\n\r\n## :rocket: Features\r\n\r\n- feat(hub): :rocket: support traefik hub v3.20.16 and v3.21.3 #2032 by @mloiseleur\r\n- feat(hub): restrict Secret types written by Traefik Hub #2031 by @mloiseleur\r\n\r\n## :bug: Bug fixes\r\n\r\n- fix(examples): fix outdated value schema used in `additionalServices` example #2023 by @jnoordsij\r\n\r\n## :package: Others\r\n\r\n- chore(deps): update github actions #2024 by @renovate-with-github-actions[bot]\r\n- chore(deps): update quay.io/helmpack/chart-testing docker tag to v3.15.0 #2025 by @renovate-with-github-actions[bot]\r\n- docs(agents): document Traefik Hub version bump #2033 by @mloiseleur\r\n- docs(examples): add Traefik Hub Gateway with the Traefik MCP server as a sidecar #2007 by @emilevauge\r\n- chore(release): 🚀 publish 42.0.0 #2034 by @mloiseleur\r\n\r\n## 👌 Traefik version support\r\n\r\n* Traefik Proxy: v3.6.0 -> v3.7.14 (default)\r\n* Traefik Hub: v3.19.3 -> v3.21.3",
+      "prerelease": false,
+      "publishedAt": "2026-10-15T15:42:21Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.0.0",
+      "version": "v42.0.0"
+    },
     {
       "channel": "stable",
       "draft": false,

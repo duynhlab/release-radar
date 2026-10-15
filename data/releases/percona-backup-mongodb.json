@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-24T18:25:45.473Z",
+  "generatedAt": "2026-10-15T18:17:47.708Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 412982905,
+      "name": "v2.17.0",
+      "notes": "## Release highlights\r\n\r\n### Physical point-in-time recovery restores index changes\r\n\r\nPhysical PITR now applies index creation, deletion, and modification operations from the oplog. Previously, PBM skipped them. The restored database now has the same indexes as the source at the restore target time.\r\n\r\nPhysical restores, with or without PITR, are also more stable. PBM now disables the time-to-live (TTL) monitor for the duration of the restore, so TTL deletions no longer interfere with oplog replay or cause duplicate key errors in collections with unique indexes. TTL monitoring resumes by default when you start MongoDB after the restore.\r\n\r\nThis release also fixes a storage download deadlock that could leave physical PITR waiting indefinitely. Oplog replay no longer blocks the reads PBM uses to track restore progress.\r\n\r\n### Time series collections restore without errors\r\n\r\nPBM fixes two issues that could interrupt restores of time series collections:\r\n\r\n- Index creation during PITR no longer fails with `IllegalOperation` errors.\r\n- Logical restores, including PITR, no longer fail with `DocumentValidationFailure` errors when the time series collections were backed up under high write throughput. PBM now bypasses document validation during oplog replay.\r\n\r\n### Improved error reporting for incremental backups\r\n\r\nWhen an incremental backup fails on a shard, PBM reports the underlying error instead of a generic convergence timeout. The message helps you identify the cause and decide what to do next.\r\n\r\nFor example, if the previous incremental backup was made on another node, PBM explains that the incremental backup history is unavailable and that you need to create a new base incremental backup.\r\n\r\n## Changelog\r\nFor more details, please check out the full list of improvements\r\nhttps://docs.percona.com/percona-backup-mongodb/2.17.0/release-notes/2.17.0.html\r\n\r\n## Contact Us\r\n\r\non [Forums](https://forums.percona.com/) \r\nby [Email](mailto:mongodb-backup@percona.com)\r\nor [Professional Support](https://www.percona.com/services/support)",
+      "prerelease": false,
+      "publishedAt": "2026-10-15T08:09:00Z",
+      "url": "https://github.com/percona/percona-backup-mongodb/releases/tag/v2.17.0",
+      "version": "v2.17.0"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-12T22:08:28.086Z",
+  "generatedAt": "2026-10-15T18:17:12.881Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 414063726,
+      "name": "victoria-metrics-anomaly-1.12.20",
+      "notes": "# Release notes for version 1.12.20\n\n**Release date:** 15 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.31.1](https://img.shields.io/badge/v1.31.1-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fanomaly-detection%2Fchangelog%2F%23v1311)\n\n- upgraded [`vmanomaly`](https://docs.victoriametrics.com/anomaly-detection/) to [1.31.1](https://docs.victoriametrics.com/anomaly-detection/changelog/#v1311), fixing data fetching for peer-group models in periodic deployments.",
+      "prerelease": false,
+      "publishedAt": "2026-10-15T17:05:07Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-anomaly-1.12.20",
+      "version": "victoria-metrics-anomaly-1.12.20"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-01T12:57:51Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-multilevel-0.2.9",
       "version": "victoria-logs-multilevel-0.2.9"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 400969260,
-      "name": "victoria-logs-collector-0.3.8",
-      "notes": "# Release notes for version 0.3.8\n\n**Release date:** 01 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.53.0](https://img.shields.io/badge/v1.53.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1530)\n\n- bump vlagent version to [v1.53.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.53.0).\n- added network policy configuration support. See [#2977](https://github.com/VictoriaMetrics/helm-charts/issues/2977)\n- add `dnsConfig` option to set a custom DNS config for the pod. See [#3174](https://github.com/VictoriaMetrics/helm-charts/issues/3174)\n- bump `victoria-metrics-common` dependency to `0.4.*`. Default resource names are unchanged; with `useLegacyNaming: false` all resources are now named `vlagent-collector-<release>` (previously the setting had no effect on this chart).\n- fix `image.pullPolicy` being ignored: the container `imagePullPolicy` was hardcoded to `IfNotPresent`.\n- fix pod label selector in the chart notes, so the suggested `kubectl get po` command matches the collector pods.",
-      "prerelease": false,
-      "publishedAt": "2026-10-01T12:57:50Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-collector-0.3.8",
-      "version": "victoria-logs-collector-0.3.8"
     }
   ],
   "schemaVersion": 1,
