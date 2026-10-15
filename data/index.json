@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T18:38:30.938Z",
+  "generatedAt": "2026-10-15T07:25:30.360Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -122,19 +122,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 412119294,
-        "name": "v0.7.21",
+        "id": 413279329,
+        "name": "v0.7.22",
         "prerelease": false,
-        "publishedAt": "2026-10-13T21:19:25Z",
-        "url": "https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/tag/v0.7.21",
-        "version": "v0.7.21"
+        "publishedAt": "2026-10-14T23:47:27Z",
+        "url": "https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/tag/v0.7.22",
+        "version": "v0.7.22"
       },
       "name": "AWS IAM Authenticator",
       "previous": {
-        "publishedAt": "2026-08-26T22:54:52Z",
-        "version": "v0.7.20"
+        "publishedAt": "2026-10-13T21:19:25Z",
+        "version": "v0.7.21"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "kubernetes-sigs/aws-iam-authenticator",
       "tags": [
         "kubernetes",
@@ -298,19 +298,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 385921221,
-        "name": "Helm v3.22.0",
+        "id": 413315619,
+        "name": "Helm v4.3.1",
         "prerelease": false,
-        "publishedAt": "2026-09-10T00:08:41Z",
-        "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
-        "version": "v3.22.0"
+        "publishedAt": "2026-10-15T01:08:37Z",
+        "url": "https://github.com/helm/helm/releases/tag/v4.3.1",
+        "version": "v4.3.1"
       },
       "name": "Helm",
       "previous": {
-        "publishedAt": "2026-09-09T23:51:48Z",
-        "version": "v4.3.0"
+        "publishedAt": "2026-09-10T00:08:41Z",
+        "version": "v3.22.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "helm/helm",
       "tags": [
         "kubernetes",
@@ -1463,19 +1463,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 404346162,
-        "name": "2.2.0",
+        "id": 413454473,
+        "name": "2.3.0",
         "prerelease": false,
-        "publishedAt": "2026-10-06T05:23:38Z",
-        "url": "https://github.com/floci-io/floci/releases/tag/2.2.0",
-        "version": "2.2.0"
+        "publishedAt": "2026-10-15T05:39:06Z",
+        "url": "https://github.com/floci-io/floci/releases/tag/2.3.0",
+        "version": "2.3.0"
       },
       "name": "Floci",
       "previous": {
-        "publishedAt": "2026-09-15T04:56:15Z",
-        "version": "2.1.0"
+        "publishedAt": "2026-10-06T05:23:38Z",
+        "version": "2.2.0"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "floci-io/floci",
       "tags": [
         "aws",
