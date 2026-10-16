@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T18:17:58.642Z",
+  "generatedAt": "2026-10-16T07:09:07.276Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -730,19 +730,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 393228140,
-        "name": "Istio 1.30.5",
+        "id": 414390300,
+        "name": "Istio 1.31.2",
         "prerelease": false,
-        "publishedAt": "2026-09-21T19:32:06Z",
-        "url": "https://github.com/istio/istio/releases/tag/1.30.5",
-        "version": "1.30.5"
+        "publishedAt": "2026-10-16T00:13:18Z",
+        "url": "https://github.com/istio/istio/releases/tag/1.31.2",
+        "version": "1.31.2"
       },
       "name": "Istio",
       "previous": {
-        "publishedAt": "2026-09-21T19:31:49Z",
-        "version": "1.29.8"
+        "publishedAt": "2026-10-15T23:59:30Z",
+        "version": "1.30.6"
       },
-      "releaseCount": 15,
+      "releaseCount": 18,
       "repository": "istio/istio",
       "tags": [
         "service-mesh",
@@ -1525,19 +1525,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 390844924,
-        "name": "v3.7.8",
+        "id": 414208707,
+        "name": "v3.6.18",
         "prerelease": false,
-        "publishedAt": "2026-09-17T15:51:10Z",
-        "url": "https://github.com/grafana/loki/releases/tag/v3.7.8",
-        "version": "v3.7.8"
+        "publishedAt": "2026-10-15T19:55:55Z",
+        "url": "https://github.com/grafana/loki/releases/tag/v3.6.18",
+        "version": "v3.6.18"
       },
       "name": "Loki",
       "previous": {
-        "publishedAt": "2026-09-17T11:41:38Z",
-        "version": "v3.6.17"
+        "publishedAt": "2026-09-17T15:51:10Z",
+        "version": "v3.7.8"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "grafana/loki",
       "tags": [
         "logs"
@@ -1618,19 +1618,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 372233516,
-        "name": "v1.6.0",
+        "id": 414185695,
+        "name": "v1.7.0",
         "prerelease": false,
-        "publishedAt": "2026-08-18T09:51:46Z",
-        "url": "https://github.com/grafana/k6-operator/releases/tag/v1.6.0",
-        "version": "v1.6.0"
+        "publishedAt": "2026-10-15T19:46:40Z",
+        "url": "https://github.com/grafana/k6-operator/releases/tag/v1.7.0",
+        "version": "v1.7.0"
       },
       "name": "k6 Operator",
       "previous": {
-        "publishedAt": "2026-06-23T14:27:31Z",
-        "version": "v1.5.0"
+        "publishedAt": "2026-08-18T09:51:46Z",
+        "version": "v1.6.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "grafana/k6-operator",
       "tags": [
         "testing",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 411881928,
-        "name": "cloudcost-exporter-1.1.16",
+        "id": 414207167,
+        "name": "helm-k6-operator-4.7.0",
         "prerelease": false,
-        "publishedAt": "2026-10-13T16:24:10Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.16",
-        "version": "cloudcost-exporter-1.1.16"
+        "publishedAt": "2026-10-15T19:45:54Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/helm-k6-operator-4.7.0",
+        "version": "helm-k6-operator-4.7.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-09T21:08:28Z",
-        "version": "pyroscope-2.4.0"
+        "publishedAt": "2026-10-13T16:24:10Z",
+        "version": "cloudcost-exporter-1.1.16"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 413667607,
-        "name": "grafana-14.0.0",
+        "id": 414608270,
+        "name": "loki-18.16.1",
         "prerelease": false,
-        "publishedAt": "2026-10-15T10:14:21Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.0.0",
-        "version": "grafana-14.0.0"
+        "publishedAt": "2026-10-16T06:04:00Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.16.1",
+        "version": "loki-18.16.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-15T08:18:38Z",
-        "version": "loki-18.16.0"
+        "publishedAt": "2026-10-15T21:13:15Z",
+        "version": "tempo-distributed-3.13.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2300,19 +2300,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 374045850,
-        "name": "0.45.0",
+        "id": 414164197,
+        "name": "0.46.0",
         "prerelease": false,
-        "publishedAt": "2026-08-20T23:55:46Z",
-        "url": "https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.45.0",
-        "version": "v0.45.0"
+        "publishedAt": "2026-10-15T23:14:36Z",
+        "url": "https://github.com/kubernetes-sigs/headlamp/releases/tag/v0.46.0",
+        "version": "v0.46.0"
       },
       "name": "Headlamp",
       "previous": {
-        "publishedAt": "2026-07-29T07:10:29Z",
-        "version": "v0.44.0"
+        "publishedAt": "2026-08-20T23:55:46Z",
+        "version": "v0.45.0"
       },
-      "releaseCount": 5,
+      "releaseCount": 6,
       "repository": "kubernetes-sigs/headlamp",
       "tags": [
         "kubernetes",

@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-15T18:17:37.187Z",
+  "generatedAt": "2026-10-16T07:08:48.514Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 414608270,
+      "name": "loki-18.16.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v0.5.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/895\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.13.0...loki-18.16.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-16T06:04:00Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.16.1",
+      "version": "loki-18.16.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 414281134,
+      "name": "tempo-distributed-3.13.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Add kafka authentication configuration for tempo by @heytrav in https://github.com/grafana-community/helm-charts/pull/683\n\n## New Contributors\n* @heytrav made their first contribution in https://github.com/grafana-community/helm-charts/pull/683\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-14.0.0...tempo-distributed-3.13.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-15T21:13:15Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.13.0",
+      "version": "tempo-distributed-3.13.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-10-07T08:00:13Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.2.8",
       "version": "grafana-13.2.8"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 404873834,
-      "name": "grafana-mcp-0.27.1",
-      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v2.0.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/867\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.11.0...grafana-mcp-0.27.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-06T15:17:52Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.27.1",
-      "version": "grafana-mcp-0.27.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 404524032,
-      "name": "tempo-distributed-3.11.0",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Add startupProbe support for Tempo components by @tomaszpapirzwierz in https://github.com/grafana-community/helm-charts/pull/864\n\n## New Contributors\n* @tomaszpapirzwierz made their first contribution in https://github.com/grafana-community/helm-charts/pull/864\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.13.8...tempo-distributed-3.11.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-06T09:18:55Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.11.0",
-      "version": "tempo-distributed-3.11.0"
     }
   ],
   "schemaVersion": 1,

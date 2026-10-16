@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-09-22T07:42:16.719Z",
+  "generatedAt": "2026-10-16T07:08:28.129Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 414390300,
+      "name": "Istio 1.31.2",
+      "notes": "[Artifacts](https://blob.istio.io/istio-release/releases/1.31.2/)\r\n[Release Notes](https://istio.io/news/releases/1.31.x/announcing-1.31.2/)",
+      "prerelease": false,
+      "publishedAt": "2026-10-16T00:13:18Z",
+      "url": "https://github.com/istio/istio/releases/tag/1.31.2",
+      "version": "1.31.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 414383930,
+      "name": "Istio 1.30.6",
+      "notes": "[Artifacts](http://gcsweb.istio.io/gcs/istio-release/releases/1.30.6/)\r\n[Release Notes](https://istio.io/news/releases/1.30.x/announcing-1.30.6/)",
+      "prerelease": false,
+      "publishedAt": "2026-10-15T23:59:30Z",
+      "url": "https://github.com/istio/istio/releases/tag/1.30.6",
+      "version": "1.30.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 414382320,
+      "name": "Istio 1.29.9",
+      "notes": "[Artifacts](http://gcsweb.istio.io/gcs/istio-release/releases/1.29.9/)\r\n[Release Notes](https://istio.io/news/releases/1.29.x/announcing-1.29.9/)",
+      "prerelease": false,
+      "publishedAt": "2026-10-15T23:58:58Z",
+      "url": "https://github.com/istio/istio/releases/tag/1.29.9",
+      "version": "1.29.9"
+    },
     {
       "channel": "stable",
       "draft": false,

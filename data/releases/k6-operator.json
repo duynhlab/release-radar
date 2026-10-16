@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-18T14:52:57.681Z",
+  "generatedAt": "2026-10-16T07:08:46.399Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 414185695,
+      "name": "v1.7.0",
+      "notes": "## ✨ New features\r\n\r\nEach `PrivateLoadZone` test now gets a short-lived test run token (`K6_CLOUD_TOKEN`) from the Cloud, which is then used by k6 and k6-operator for all `TestRun`-level operations. This effectively enables [two-level authentication scheme](https://github.com/grafana/k6-operator/issues/823), an approach with hardened level of security for the PLZ users.\r\n\r\nPLZ tests were switched to using Cloud API v6 `notify` endpoint. If k6 image of a PLZ test is of v2.3.0+ (contains [this change](https://github.com/grafana/k6/pull/6388)), then there is also some tracking of k6 exit codes for more granular feedback loop. For example, `teardown` failures should now get separate error codes in case of a script-level error VS an operator-level errors. Full description can be found [here](https://github.com/grafana/k6-operator/issues/796).\r\n\r\nNote: Cloud output mode continues to use the old Cloud APIs, so there's now a divergence between the two Cloud modes. It's currently tracked in the #668.\r\n\r\n\r\n## 🐛 Bug fixes\r\n\r\nA [bug](https://github.com/grafana/k6-operator/issues/871) with duplicate execution of `setup` function (on `PrivateLoadZone` tests), that could happen on some cases like with slower Kubernetes API updates, was fixed. Thanks, @jsk1004ha!\r\n\r\nA [fix](https://github.com/grafana/k6-operator/pull/923) to make CI jobs more ubiquitous was added. Thanks, @federicotdn! \r\n\r\nA [fix](https://github.com/grafana/k6-operator/pull/927) for regression with IPv6: Golang 1.26 (first enabled in v1.6.0) imposes stricter rules on IPv6 routes parsing, which could cause failures on IPv6 clusters.\r\n\r\nThe readiness checks to k6 runners now have [proper HTTP timeouts](https://github.com/grafana/k6-operator/pull/882), disabling the possibility of an unresponsive k6 runner blocking the k6-operator execution indefinitely. Thanks, @jsk1004ha!\r\n\r\n\r\n## 🛠️ Maintenance\r\n\r\n\r\nAn [improvement](https://github.com/grafana/k6-operator/pull/903) for Cloud development to allow custom `K6_LOG_OUTPUT` value. Thanks @fornfrey! \r\n\r\nThe `curl` commands used by the starter were made more resilient to [connectivity failures](https://github.com/grafana/k6-operator/issues/928), esp. when runner pod takes a while to get into a working state. Thanks, @multani!\r\n\r\nKey dependencies update:\r\n- k6 v2.3.0\r\n- controller-runtime v0.25.2\r\n- k8s.io/api v0.37.1\r\n\r\n\r\n<!--\r\n## Container images\r\n\r\ncontroller: ghcr.io/grafana/k6-operator:controller-v1.7.0\r\nstarter: ghcr.io/grafana/k6-operator:starter-v1.7.0\r\nrunner: ghcr.io/grafana/k6-operator:runner-v1.7.0\r\nrunner_k6_version: v2.3.0\r\nhelm_chart_version: 4.7.0\r\n-->\r\n\r\n**Full changelog**: https://github.com/grafana/k6-operator/compare/v1.6.0...v1.7.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-15T19:46:40Z",
+      "url": "https://github.com/grafana/k6-operator/releases/tag/v1.7.0",
+      "version": "v1.7.0"
+    },
     {
       "channel": "stable",
       "draft": false,
