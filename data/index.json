@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T07:09:07.276Z",
+  "generatedAt": "2026-10-16T18:03:31.837Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -395,19 +395,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 399129980,
-        "name": "v0.162.0",
+        "id": 415218686,
+        "name": "v0.163.0",
         "prerelease": false,
-        "publishedAt": "2026-09-29T12:34:07Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.162.0",
-        "version": "v0.162.0"
+        "publishedAt": "2026-10-16T17:40:58Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.0",
+        "version": "v0.163.0"
       },
       "name": "OpenTelemetry Collector",
       "previous": {
-        "publishedAt": "2026-09-16T02:42:37Z",
-        "version": "v0.161.0"
+        "publishedAt": "2026-09-29T12:34:07Z",
+        "version": "v0.162.0"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "open-telemetry/opentelemetry-collector-releases",
       "tags": [
         "metrics",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 414608270,
-        "name": "loki-18.16.1",
+        "id": 415158046,
+        "name": "loki-18.16.2",
         "prerelease": false,
-        "publishedAt": "2026-10-16T06:04:00Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.16.1",
-        "version": "loki-18.16.1"
+        "publishedAt": "2026-10-16T16:24:08Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.16.2",
+        "version": "loki-18.16.2"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-15T21:13:15Z",
-        "version": "tempo-distributed-3.13.0"
+        "publishedAt": "2026-10-16T16:16:40Z",
+        "version": "grafana-14.0.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

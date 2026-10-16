@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-29T19:25:20.186Z",
+  "generatedAt": "2026-10-16T18:02:42.764Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 415218686,
+      "name": "v0.163.0",
+      "notes": "Check the [v0.163.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.163.0) and the [v0.163.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.163.0) for changelogs on specific components.\n\n\n## Changelog\n* f2c76a881828be63f6159a7a483fd074171d9773 [chore] Prepare release 0.163.0 (#1714)\n* 47eef50c39257c39a44929d178f22b7c5a802ac4 Update OpenTelemetry Collector Components (#1705)\n* 906ff234a9c4efc1ee64a1b22e6977135d17dc8b [chore] add version to fossa workflow (#1710)",
+      "prerelease": false,
+      "publishedAt": "2026-10-16T17:40:58Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.0",
+      "version": "v0.163.0"
+    },
     {
       "channel": "stable",
       "draft": false,
