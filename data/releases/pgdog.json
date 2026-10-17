@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-10T08:29:29.021Z",
+  "generatedAt": "2026-10-17T06:56:33.296Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 415262577,
+      "name": "v0.1.62",
+      "notes": "## Features\r\n- Basic support for cross-shard subqueries @jkaczman \r\n- Add `auth_type` config to user entries in `users.toml` @levkk @BABTUNA\r\n- Use replication origin to track replication progress during resharding. This makes it durable and allows us to recover progress after a crash (still a TODO). @meskill \r\n- Add row-level metrics for DML/DDL queries @murex971 \r\n- Ensure non-deterministic functions like `now()` return consistent results in cross-shard DELETEs @jkaczman \r\n- Support parsing custom logical messages to handle DDL replication @jkaczman \r\n\r\n## Bug fixes\r\n- `pg_try_advisory_lock` handling was optimistic / did not account for lock not being actually available. PgDog will only pin the session now if the lock was actually acquired. @levkk \r\n- `DISCARD ALL` returned wrong command tag, breaking JDBC driver prepared statements handling @levkk \r\n- `SET` now correctly overrides `SET LOCAL` inside a transaction @levkk \r\n- `RESET` now correctly restores startup parameters @levkk \r\n- `ROLLBACK` no longer undo's a `RESET` from previous transaction @levkk \r\n- Invalid parameter settings would leave server connection in a partial/dirty state @levkk \r\n- Parameter names were incorrectly escaped @levkk \r\n- `SET LOCAL [...] TO DEFAULT` would be incorrectly treated as `SET` @anna-poutanen\r\n- PgDog now compiles under FreeBSD @mahlonsmith\r\n- `COPY` identifiers (table name and column names) are now correctly escaped during resharding @BABTUNA\r\n- Correctly handle `ABORT` and `END` when query parser is off. This was regression introduced in v0.1.60. @levkk @valanor-vaelmir\r\n- Correctly detect sharding key in join clause @levkk @PeterZaitsev\r\n- Correctly check that each shard committed the transaction before returning success during resharding @jkaczman \r\n- Unsupported agggregate functions now return an `ERROR` instead of `FATAL` @levkk @PeterZaitsev\r\n- Fix `avg()` scale for cross-shard numerics @murex971 @PeterZaitsev\r\n\r\n\r\n## Performance\r\n- Reduce memory usage of prepared statements cache after bursts of new statements are added and removed. This affects drivers like `tokio-postgres`, `go/pq`,  `Postgrex` and others that prepare one-off prepared statements to execute queries\r\n\r\n\r\n## Code quality\r\n- Improve replication benchmark @meskill \r\n- Microbenchmarks for our query engine @jkaczman \r\n\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.61...v0.1.62",
+      "prerelease": false,
+      "publishedAt": "2026-10-16T18:28:28Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.62",
+      "version": "v0.1.62"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-04T23:20:12Z",
       "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.43",
       "version": "v0.1.43"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 330964100,
-      "name": "v0.1.42",
-      "notes": "## What's Changed\r\n* feat(logging): identify the source of auth secret for new server connections\r\n* feat(tls): mTLS using client certificates and per-user `CN`/`dNSName` matching (this is still experimental and not final, use for testing / PoC only); can replace password auth for client -> PgDog connections\r\n* feat: maintenance mode can now be set on a per-database basis instead of just globally\r\n* feat(logging): log which auth error the user experienced to stderr; helps debug complex auth configurations\r\n* fix: HTTP health check returned false negative when passthrough auth was used @sunil-2000\r\n* fix(sharding): correct display for integers in cross-shard aggregates @sgrif\r\n* fix(sharding): false positive cross-shard check for `BEGIN` in session mode with cross-shard queries disabled\r\n* fix(sharding): multi-tuple INSERTs rewrites with `go/pq` (broke in the last release when we removed `prepared_statements = \"extended_anonymous\"`)\r\n* fix(metrics): false positive OpenMetrics error in logs (`hyper::Error(IncompleteMessage)`)\r\n* chore: update dependencies @sgrif\r\n* test(resharding): add benchmarks for copy_data & replication by @meskill\r\n* chore(test): fix some flaky tests\r\n\r\n## New Contributors\r\n* @sunil-2000 made their first contribution in https://github.com/pgdogdev/pgdog/pull/997\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.41...v0.1.42",
-      "prerelease": false,
-      "publishedAt": "2026-05-28T16:08:52Z",
-      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.42",
-      "version": "v0.1.42"
     }
   ],
   "schemaVersion": 1,

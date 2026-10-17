@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-16T18:02:42.764Z",
+  "generatedAt": "2026-10-17T06:55:45.496Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 415317327,
+      "name": "v0.163.1",
+      "notes": "This patch was to fix an issue with the release. See [v0.163.0](https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.0) to see whats new in v0.163.0.\r\n\r\n\r\n## Changelog\r\n* e3bd087aedd311e3b1a5cdbb4c4f82043f02f1f2 Update version to 0.163.1 (#1717)\r\n* 90ecd993388365a38e0d61128468c12194eea4c2 fix: give workflows permission to read actions (#1716)",
+      "prerelease": false,
+      "publishedAt": "2026-10-16T19:39:44Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.1",
+      "version": "v0.163.1"
+    },
     {
       "channel": "stable",
       "draft": false,

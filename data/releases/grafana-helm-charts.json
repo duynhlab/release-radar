@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-16T07:08:47.728Z",
+  "generatedAt": "2026-10-17T06:56:13.183Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 415237119,
+      "name": "rollout-operator-0.53.0",
+      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] update for v0.41.0 by @fionaliao in https://github.com/grafana/helm-charts/pull/4225\n\n## New Contributors\n* @fionaliao made their first contribution in https://github.com/grafana/helm-charts/pull/4225\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/alloy-1.13.0...rollout-operator-0.53.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-16T18:03:24Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.53.0",
+      "version": "rollout-operator-0.53.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-25T19:17:09Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.4.1",
       "version": "k8s-monitoring-4.4.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 375871907,
-      "name": "alloy-operator-0.7.0",
-      "notes": "Grafana Alloy Operator, providing innovative ways for creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/ac2f98f3667d81cd65ff737c13a515eb0b0001d7\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.7.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-24T17:25:01Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.7.0",
-      "version": "alloy-operator-0.7.0"
     }
   ],
   "schemaVersion": 1,

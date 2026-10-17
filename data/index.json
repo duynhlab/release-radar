@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:03:31.837Z",
+  "generatedAt": "2026-10-17T06:56:34.040Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -39,19 +39,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 408693727,
-        "name": "v1.15.0",
+        "id": 415410554,
+        "name": "v1.14.2",
         "prerelease": false,
-        "publishedAt": "2026-10-10T05:42:42Z",
-        "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.15.0",
-        "version": "v1.15.0"
+        "publishedAt": "2026-10-16T21:51:57Z",
+        "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.2",
+        "version": "v1.14.2"
       },
       "name": "Karpenter",
       "previous": {
-        "publishedAt": "2026-08-21T22:35:25Z",
-        "version": "v1.14.1"
+        "publishedAt": "2026-10-10T05:42:42Z",
+        "version": "v1.15.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "kubernetes-sigs/karpenter",
       "tags": [
         "kubernetes",
@@ -395,19 +395,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 415218686,
-        "name": "v0.163.0",
+        "id": 415317327,
+        "name": "v0.163.1",
         "prerelease": false,
-        "publishedAt": "2026-10-16T17:40:58Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.0",
-        "version": "v0.163.0"
+        "publishedAt": "2026-10-16T19:39:44Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.1",
+        "version": "v0.163.1"
       },
       "name": "OpenTelemetry Collector",
       "previous": {
-        "publishedAt": "2026-09-29T12:34:07Z",
-        "version": "v0.162.0"
+        "publishedAt": "2026-10-16T17:40:58Z",
+        "version": "v0.163.0"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "open-telemetry/opentelemetry-collector-releases",
       "tags": [
         "metrics",
@@ -1556,19 +1556,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 399349601,
-        "name": "v3.1.0",
+        "id": 415338463,
+        "name": "v3.0.4",
         "prerelease": false,
-        "publishedAt": "2026-09-29T17:06:39Z",
-        "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0",
-        "version": "v3.1.0"
+        "publishedAt": "2026-10-16T20:12:21Z",
+        "url": "https://github.com/grafana/tempo/releases/tag/v3.0.4",
+        "version": "v3.0.4"
       },
       "name": "Tempo",
       "previous": {
-        "publishedAt": "2026-08-13T20:37:13Z",
-        "version": "v3.0.3"
+        "publishedAt": "2026-09-29T17:06:39Z",
+        "version": "v3.1.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "grafana/tempo",
       "tags": [
         "traces"
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 414207167,
-        "name": "helm-k6-operator-4.7.0",
+        "id": 415237119,
+        "name": "rollout-operator-0.53.0",
         "prerelease": false,
-        "publishedAt": "2026-10-15T19:45:54Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/helm-k6-operator-4.7.0",
-        "version": "helm-k6-operator-4.7.0"
+        "publishedAt": "2026-10-16T18:03:24Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.53.0",
+        "version": "rollout-operator-0.53.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-13T16:24:10Z",
-        "version": "cloudcost-exporter-1.1.16"
+        "publishedAt": "2026-10-15T19:45:54Z",
+        "version": "helm-k6-operator-4.7.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 415158046,
-        "name": "loki-18.16.2",
+        "id": 415509424,
+        "name": "loki-18.17.0",
         "prerelease": false,
-        "publishedAt": "2026-10-16T16:24:08Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.16.2",
-        "version": "loki-18.16.2"
+        "publishedAt": "2026-10-17T01:18:09Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.17.0",
+        "version": "loki-18.17.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-16T16:16:40Z",
-        "version": "grafana-14.0.1"
+        "publishedAt": "2026-10-17T01:17:28Z",
+        "version": "tempo-distributed-3.14.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2593,17 +2593,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 408324574,
-        "name": "v0.1.61",
+        "id": 415262577,
+        "name": "v0.1.62",
         "prerelease": false,
-        "publishedAt": "2026-10-09T20:35:41Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.61",
-        "version": "v0.1.61"
+        "publishedAt": "2026-10-16T18:28:28Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.62",
+        "version": "v0.1.62"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-09-24T21:43:32Z",
-        "version": "v0.1.60"
+        "publishedAt": "2026-10-09T20:35:41Z",
+        "version": "v0.1.61"
       },
       "releaseCount": 20,
       "repository": "pgdogdev/pgdog",

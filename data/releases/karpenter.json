@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-10T08:28:39.199Z",
+  "generatedAt": "2026-10-17T06:55:35.300Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 415410554,
+      "name": "v1.14.2",
+      "notes": "## Bug Fixes\n- allow enqueue onto NodeRepair controller if label synced after create (#3366) [#3366](https://github.com/kubernetes-sigs/karpenter/pull/3366) ([Ryan Mistretta](https://github.com/kubernetes-sigs/karpenter/commit/86d52a57db343226760f35b792384292bc8ea5a8))\n- **capacity buffer**: watch scalableRef workloads so buffers resolve … (#3387) [#3387](https://github.com/kubernetes-sigs/karpenter/pull/3387) ([Ryan Mistretta](https://github.com/kubernetes-sigs/karpenter/commit/3251953d5cd4bc98ac828a25e7577ae80f38f2fc))",
+      "prerelease": false,
+      "publishedAt": "2026-10-16T21:51:57Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.2",
+      "version": "v1.14.2"
+    },
     {
       "channel": "stable",
       "draft": false,
