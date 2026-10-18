@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T06:56:34.040Z",
+  "generatedAt": "2026-10-18T07:13:53.150Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 415509424,
-        "name": "loki-18.17.0",
+        "id": 416043336,
+        "name": "loki-18.17.1",
         "prerelease": false,
-        "publishedAt": "2026-10-17T01:18:09Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.17.0",
-        "version": "loki-18.17.0"
+        "publishedAt": "2026-10-17T20:32:45Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.17.1",
+        "version": "loki-18.17.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-17T01:17:28Z",
-        "version": "tempo-distributed-3.14.0"
+        "publishedAt": "2026-10-17T01:18:09Z",
+        "version": "loki-18.17.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

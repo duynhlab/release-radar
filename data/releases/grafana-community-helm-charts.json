@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-17T06:56:13.767Z",
+  "generatedAt": "2026-10-18T07:13:36.258Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 416043336,
+      "name": "loki-18.17.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update docker.io/rustfs/rustfs Docker tag to v1.0.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/904\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.17.0...loki-18.17.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-17T20:32:45Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.17.1",
+      "version": "loki-18.17.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-07T21:07:09Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.14.0",
       "version": "loki-18.14.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 406082995,
-      "name": "tempo-distributed-3.11.1",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Update grafana/enterprise-traces Docker tag to v2.8.12 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/874\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-13.3.1...tempo-distributed-3.11.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-07T19:16:28Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.11.1",
-      "version": "tempo-distributed-3.11.1"
     }
   ],
   "schemaVersion": 1,
