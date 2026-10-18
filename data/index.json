@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T07:13:53.150Z",
+  "generatedAt": "2026-10-18T17:22:59.072Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -2150,19 +2150,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 402905511,
-        "name": "v2.59.3: Weak Encryption Subkey Bug",
+        "id": 416335707,
+        "name": "v2.60.0: Page Checksum Errors and Object Store Prefetch",
         "prerelease": false,
-        "publishedAt": "2026-10-04T09:02:09Z",
-        "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.59.3",
-        "version": "release/2.59.3"
+        "publishedAt": "2026-10-18T08:57:02Z",
+        "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.60.0",
+        "version": "release/2.60.0"
       },
       "name": "pgBackRest",
       "previous": {
-        "publishedAt": "2026-09-27T11:42:46Z",
-        "version": "release/2.59.2"
+        "publishedAt": "2026-10-04T09:02:09Z",
+        "version": "release/2.59.3"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "pgbackrest/pgbackrest",
       "tags": [
         "postgresql",

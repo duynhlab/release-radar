@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-04T18:10:11.080Z",
+  "generatedAt": "2026-10-18T17:22:48.510Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 416335707,
+      "name": "v2.60.0: Page Checksum Errors and Object Store Prefetch",
+      "notes": "**IMPORTANT NOTE**: The restore command will now error and stop if any restored file contains an invalid page checksum, which leaves the cluster incomplete and unable to start, so the restore must be rerun. The expire command will now refuse to expire if the oldest retained backup would contain checksum errors, which also prevents archive from being expired in that repository. Set checksum-page-error=n to warn instead of erroring.\n\n**Features**:\n\n- Add checksum-page-error option to error on invalid page checksums. (Contributed by Andrew Pogrebnoi. Reviewed by Douglas J Hunley, David Steele, Greg Sabino Mullane, Stefan Fercot. Suggested by Greg Sabino Mullane.)\n- Support for GCS Workload Identity Federation. (Contributed by Adol Rodriguez. Reviewed by Douglas J Hunley, David Steele.)\n- Prefetch multi-file/range reads from object stores. (Reviewed by Andrew Pogrebnoi, Douglas J Hunley.)\n\n**Improvements**:\n\n- Reduce keep-alive requests to remote processes. (Reviewed by Douglas J Hunley.)\n- Retry Azure batch sub-requests missing from the response. (Reviewed by Douglas J Hunley.)\n- Reduce the manifest checks made when reconstructing backup.info. (Reviewed by Douglas J Hunley. Suggested by todeb.)\n- Use original size to determine if a file should be bundled. (Reviewed by Douglas J Hunley.)\n- Add context to block map read errors during backup. (Reviewed by Stefan Fercot, Douglas J Hunley.)\n- Cast current_timestamp to text in the backup start label. (Contributed by Tiago Corcelli de Oliveira. Reviewed by David Steele.)\n- Support building on illumos. (Contributed by Kalevi Kolttonen. Reviewed by Douglas J Hunley, David Steele.)\n- Support OpenSSL 4. (Reviewed by Douglas J Hunley.)\n- Fix clang builds. (Reviewed by Douglas J Hunley.)\n- Migrate code generation from C to Python.\n\n**Documentation Improvements**:\n\n- Modernize the website. Special thanks to Jan for the insightful (and hilarious) logo. (Contributed by David Steele, Jan Wieremjewicz. Reviewed by Steve Atkins, Kai Wagner, Douglas J Hunley, Nikolaos Stamatopoulos, Matt Hudson, Stefan Fercot.)\n- Document the release schedule.\n- Migrate the documentation tools from C and Perl to Python.\n\n**Test Suite Improvements**:\n\n- Migrate the test harness from C and Perl to Python.\n- Add a Fil-C job to CI.\n- Add fuzz testing for the JSON, Ini, and Pack readers.\n- Allow test user names that adduser on Debian rejects. (Contributed by Stefan Fercot. Reviewed by David Steele.)",
+      "prerelease": false,
+      "publishedAt": "2026-10-18T08:57:02Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.60.0",
+      "version": "release/2.60.0"
+    },
     {
       "channel": "stable",
       "draft": false,
