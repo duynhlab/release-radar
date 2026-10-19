@@ -1397,3 +1397,18 @@ tools:
       strategy: github-releases
       includePrerelease: false
       tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: tenv
+    name: tenv
+    category: iac
+    repository: tofuutils/tenv
+    description: Version manager for OpenTofu, Terraform, Terragrunt, and others
+    homepage: https://tofuutils.github.io/tenv/
+    documentation: https://tofuutils.github.io/tenv/
+    tags:
+      - iac
+      - version-manager
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
