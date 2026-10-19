@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T14:35:42.748Z",
+  "generatedAt": "2026-10-19T19:55:32.842Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1436,19 +1436,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 404858822,
-        "name": "vector-0.59.0",
+        "id": 417602501,
+        "name": "vector-0.60.0",
         "prerelease": false,
-        "publishedAt": "2026-10-06T15:04:49Z",
-        "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.59.0",
-        "version": "vector-0.59.0"
+        "publishedAt": "2026-10-19T18:19:26Z",
+        "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.60.0",
+        "version": "vector-0.60.0"
       },
       "name": "Vector Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-26T16:53:07Z",
-        "version": "vector-0.58.0"
+        "publishedAt": "2026-10-06T15:04:49Z",
+        "version": "vector-0.59.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "vectordotdev/helm-charts",
       "tags": [
         "logs",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 416043336,
-        "name": "loki-18.17.1",
+        "id": 417400360,
+        "name": "tempo-distributed-3.14.1",
         "prerelease": false,
-        "publishedAt": "2026-10-17T20:32:45Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.17.1",
-        "version": "loki-18.17.1"
+        "publishedAt": "2026-10-19T14:37:20Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.14.1",
+        "version": "tempo-distributed-3.14.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-17T01:18:09Z",
-        "version": "loki-18.17.0"
+        "publishedAt": "2026-10-17T20:32:45Z",
+        "version": "loki-18.17.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1803,19 +1803,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 403888785,
-        "name": "v4.22.1",
+        "id": 417482717,
+        "name": "v4.23.0",
         "prerelease": false,
-        "publishedAt": "2026-10-05T15:53:57Z",
-        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.22.1",
-        "version": "v4.22.1"
+        "publishedAt": "2026-10-19T16:00:19Z",
+        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.0",
+        "version": "v4.23.0"
       },
       "name": "ClickHouse Datasource",
       "previous": {
-        "publishedAt": "2026-09-30T20:39:27Z",
-        "version": "v4.22.0"
+        "publishedAt": "2026-10-05T15:53:57Z",
+        "version": "v4.22.1"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "grafana/clickhouse-datasource",
       "tags": [
         "clickhouse",
@@ -2445,19 +2445,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 404889400,
-        "name": "v1.54.1",
+        "id": 417638733,
+        "name": "v1.55.0",
         "prerelease": false,
-        "publishedAt": "2026-10-06T15:35:10Z",
-        "url": "https://github.com/anchore/syft/releases/tag/v1.54.1",
-        "version": "v1.54.1"
+        "publishedAt": "2026-10-19T19:01:26Z",
+        "url": "https://github.com/anchore/syft/releases/tag/v1.55.0",
+        "version": "v1.55.0"
       },
       "name": "Syft",
       "previous": {
-        "publishedAt": "2026-10-01T20:54:29Z",
-        "version": "v1.54.0"
+        "publishedAt": "2026-10-06T15:35:10Z",
+        "version": "v1.54.1"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "anchore/syft",
       "tags": [
         "sbom",
