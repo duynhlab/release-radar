@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-10-19T14:35:42.742Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 359292249,
+      "name": "Release v4.15.1",
+      "notes": "## Changelog\n* ef36e9af50ac9ff1a41f30fc85e7c5aa7ecaa35c Merge pull request #620 from esmithaas/fix/trivy-detected-cves\n* 274cedb9763807fb43f21592b06507f55de45b79 fix: cves detected by trivy\n* a1a206c94f73a7fc7c6a1a1bd633f34e1a6df8ca Merge pull request #608 from tofuutils/dependabot/github_actions/actions/checkout-7.0.0\n* cbca3fb304c807b83f6bce11ba272a19e814cacb gh-actions: bump actions/checkout from 6.0.3 to 7.0.0\n* 5a50ce3d7db1d9d094b21728f8feedbab2b5bf38 Merge pull request #607 from tofuutils/dependabot/go_modules/github.com/bradleyfalzon/ghinstallation/v2-2.19.0\n* 799caeb6b7d43a9024af6c2d8becb17dc83e69c3 go: bump github.com/bradleyfalzon/ghinstallation/v2",
+      "prerelease": false,
+      "publishedAt": "2026-07-24T12:29:04Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.15.1",
+      "version": "v4.15.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 337548604,
+      "name": "Release v4.14.8",
+      "notes": "## Changelog\n* b2a26925fb77627c89f9fa1172a904231aff7cfa fix: goreleaser",
+      "prerelease": false,
+      "publishedAt": "2026-06-10T22:03:54Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.14.8",
+      "version": "v4.14.8"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 337543155,
+      "name": "Release v4.14.7",
+      "notes": "## Changelog\n* 400bdbf1519ced659f0357077a232d08e90353c7 fix: goreleaser",
+      "prerelease": false,
+      "publishedAt": "2026-06-10T21:51:03Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.14.7",
+      "version": "v4.14.7"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 319229937,
+      "name": "Release v4.12.2",
+      "notes": "## Changelog\n* 463097aef29972cc5b7fba68f2a00488ffb59a34 fix: publish-ppa job",
+      "prerelease": false,
+      "publishedAt": "2026-05-07T22:47:34Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.12.2",
+      "version": "v4.12.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 318937050,
+      "name": "Release v4.12.1",
+      "notes": "## Changelog\n* 5a846c67fe7c9a182595b4bdb66ff33345e5d26c charmbracelet/bubbles v1.0.0 and go mod tidy\n* 41050fbf7c9d41fb480ca980da9263286d0c5dde gh-actions: bump goreleaser/goreleaser-action from 6.2.1 to 7.2.1 (#584)\n* 3e988590f1cf34cd072759338aac4eed9aeba48b refactoring: decrease duplication (#552)",
+      "prerelease": false,
+      "publishedAt": "2026-05-07T13:01:16Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.12.1",
+      "version": "v4.12.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 315143579,
+      "name": "Release v4.12.0",
+      "notes": "## Changelog\n* b5612c89f10f7595ad6df3162a4a6e6ae301a8a3 Merge pull request #585 from jakubfronczyk/feat/shell-completion-installed-versions\n* ce392ce2d948d3a2983ff6da1377c08afb1df48c feat: add shell completion for installed versions in use and uninstall   commands\n* df297668d1f593a9a10fc7e1e6756af4decb3e78 update readme add winget installation variant (#583)\n* 78958d20de70a4727e773c91840d5297864bc462 Merge pull request #580 from tofuutils/dependabot/go_modules/tools/github.com/go-git/go-git/v5-5.18.0\n* eb5d72e5356785fc518d24579f15ab815edbb094 Merge pull request #581 from tofuutils/dependabot/go_modules/github.com/cloudflare/circl-1.6.3\n* 6d7c8b8e23a75e447bba429419cd318e703887d2 go: bump github.com/cloudflare/circl from 1.6.2 to 1.6.3\n* 735ab081c3bc19231eabc01ecae9da2e76931775 chore(deps): bump github.com/go-git/go-git/v5 in /tools",
+      "prerelease": false,
+      "publishedAt": "2026-04-29T11:27:30Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.12.0",
+      "version": "v4.12.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 311120584,
+      "name": "Release v4.11.1",
+      "notes": "## Changelog\n* a34f1a9dec9f536fea2ad49edc74578ddd8423fa fix: disable slack notifications\n* 9714580b5a07c36f66aff9b40a0e3885027ba2d4 Merge pull request #571 from tofuutils/dependabot/github_actions/docker/login-action-4.1.0\n* bea1248977c9cd9002edfe9e67fc94acf1f86f03 Merge pull request #572 from tofuutils/dependabot/github_actions/actions/setup-go-6.4.0\n* 6aa730880b46fc188bcb5b0e0109ed38697f96a4 Merge pull request #573 from tofuutils/dependabot/go_modules/github.com/zclconf/go-cty-1.18.1\n* 1b027728a8e761ba377745e1fb4667db0f8a53df go: bump github.com/zclconf/go-cty from 1.18.0 to 1.18.1\n* c8c6624ad7cd1a7ba639724a3350b3a1daa65477 gh-actions: bump actions/setup-go from 6.3.0 to 6.4.0\n* a3ecba925762638245e50aa679323e966579678c gh-actions: bump docker/login-action from 4.0.0 to 4.1.0",
+      "prerelease": false,
+      "publishedAt": "2026-04-20T10:41:28Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.11.1",
+      "version": "v4.11.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 311093556,
+      "name": "Release v4.11.0",
+      "notes": "## Changelog\n* 2cfc50b7495a8eb02198963867cd8f21e601af6c Merge pull request #576 from Nmishin/fix/issue-575\n* 22e45e9e49d807a65434b6b7711a3e4c5f54b559 Fix PGP signature check",
+      "prerelease": false,
+      "publishedAt": "2026-04-20T09:33:12Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.11.0",
+      "version": "v4.11.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 307887096,
+      "name": "Release v4.10.1",
+      "notes": "## Changelog\n* b561815487707a7f7bf315ed5a7c0451c5a8caa3 Merge pull request #563 from tofuutils/dependabot/github_actions/codecov/codecov-action-6.0.0\n* 222b8d3320156a6758eabc48a3e87d67bdf28e11 Merge pull request #554 from tofuutils/dependabot/github_actions/docker/setup-qemu-action-4.0.0\n* 64e06e01baa4ba61f045a25eb44acc3d048afe25 Merge pull request #549 from tofuutils/dependabot/go_modules/github.com/zclconf/go-cty-1.18.0\n* a038b59639fb84891fbb3dad0e7ae78eaf0898b7 fix\n* 3ae83ef606f699b76895f580cae4c5b1f406588a Merge branch 'main' into dependabot/go_modules/github.com/zclconf/go-cty-1.18.0\n* 7c50478fdd5358644ec106d3007d24398f9dcb1f Merge pull request #560 from tofuutils/dependabot/go_modules/github.com/ProtonMail/gopenpgp/v2-2.10.0\n* 111ec73f05e92688aa8587e67cc435f313169c55 Merge pull request #569 from tofuutils/dependabot/go_modules/github.com/hashicorp/go-version-1.9.0\n* e3053a8b846a49255fb6c3649c743d428b553a4a Merge pull request #561 from tofuutils/dependabot/go_modules/github.com/fatih/color-1.19.0\n* 9f5f4a9b15e0d564f3c8246baac0231154bd7d62 go: bump github.com/ProtonMail/gopenpgp/v2 from 2.9.0 to 2.10.0\n* 44bf886c23d27fa88f1317df10c5fea2981d237e go: bump github.com/hashicorp/go-version from 1.8.0 to 1.9.0\n* 79e12435bebeedb104bbe67e8bfae5273be9670b go: bump github.com/fatih/color from 1.18.0 to 1.19.0\n* 80b3d190aaaab244a7edcfc0ebbaa5a1caabefe9 Merge pull request #553 from tofuutils/dependabot/github_actions/docker/login-action-4.0.0\n* cba625e7049731cc145daa1bff646c62525a6058 Merge pull request #557 from tofuutils/dependabot/go_modules/github.com/PuerkitoBio/goquery-1.12.0\n* adfa1f8ae09c8c616db7f8a50f87edb978093556 Merge pull request #562 from tofuutils/dependabot/github_actions/sigstore/cosign-installer-4.1.1\n* e473e1e1e2671763291e328817a5eb37e18bf07c gh-actions: bump codecov/codecov-action from 5.5.3 to 6.0.0\n* 7477239d5f82caa35211ce052689ffb527d60879 gh-actions: bump sigstore/cosign-installer from 4.1.0 to 4.1.1\n* 3df29ceb9e2fc9390f76544717e4f85e392fad25 go: bump github.com/PuerkitoBio/goquery from 1.11.0 to 1.12.0\n* 531cb6ecbb1ec1aa60c055c162e33d3cd75e14e4 gh-actions: bump docker/setup-qemu-action from 3.7.0 to 4.0.0\n* a52480fa06c76e0bddfe930e72f666af668deb67 gh-actions: bump docker/login-action from 3.7.0 to 4.0.0\n* 108d8c8d56da220fd02e285eb7f7a749d9152ebb go: bump github.com/zclconf/go-cty from 1.17.0 to 1.18.0",
+      "prerelease": false,
+      "publishedAt": "2026-04-11T17:16:41Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.10.1",
+      "version": "v4.10.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 285438710,
+      "name": "Release v4.9.3",
+      "notes": "## Changelog\n* c35ca9b958338f39b8d2cd63172dc0fbe2eada05 Merge pull request #539 from railgun-0402/feat/no-fallback-detect\n* 88228d62271d3287ae56659c0cc02e7c46f6d5b4 chore: trigger CI\n* 8f6d8425ca0cf63b4bf0cb2b75a456a3ab1356c5 feat(detect): add --no-fallback option",
+      "prerelease": false,
+      "publishedAt": "2026-02-11T21:20:23Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.9.3",
+      "version": "v4.9.3"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "tenv",
+    "name": "tenv",
+    "repository": "tofuutils/tenv"
+  }
+}

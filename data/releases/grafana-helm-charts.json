@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-17T06:56:13.183Z",
+  "generatedAt": "2026-10-19T14:35:01.757Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 417226734,
+      "name": "alloy-1.14.0",
+      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/1fd0188b6795e47c1618176eb60a35bc196f10da\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.14.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-19T11:44:37Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.0",
+      "version": "alloy-1.14.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-25T23:22:31Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.0",
       "version": "k8s-monitoring-4.5.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 376648610,
-      "name": "k8s-monitoring-4.4.1",
-      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/230fd41ea44ee4d299feda2f20c955b49f55184f\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.4.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-25T19:17:09Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.4.1",
-      "version": "k8s-monitoring-4.4.1"
     }
   ],
   "schemaVersion": 1,

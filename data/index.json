@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:22:59.072Z",
+  "generatedAt": "2026-10-19T14:35:42.748Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -424,19 +424,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 400999946,
-        "name": "v0.75.0",
+        "id": 412653935,
+        "name": "v0.76.0",
         "prerelease": false,
-        "publishedAt": "2026-10-01T13:34:13Z",
-        "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.75.0",
-        "version": "v0.75.0"
+        "publishedAt": "2026-10-14T11:45:44Z",
+        "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.76.0",
+        "version": "v0.76.0"
       },
       "name": "Trivy",
       "previous": {
-        "publishedAt": "2026-08-14T11:29:11Z",
-        "version": "v0.74.0"
+        "publishedAt": "2026-10-01T13:34:13Z",
+        "version": "v0.75.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "aquasecurity/trivy",
       "tags": [
         "scanning",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 415237119,
-        "name": "rollout-operator-0.53.0",
+        "id": 417226734,
+        "name": "alloy-1.14.0",
         "prerelease": false,
-        "publishedAt": "2026-10-16T18:03:24Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.53.0",
-        "version": "rollout-operator-0.53.0"
+        "publishedAt": "2026-10-19T11:44:37Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.0",
+        "version": "alloy-1.14.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-15T19:45:54Z",
-        "version": "helm-k6-operator-4.7.0"
+        "publishedAt": "2026-10-16T18:03:24Z",
+        "version": "rollout-operator-0.53.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -2644,6 +2644,34 @@
         "workflow",
         "kubernetes",
         "operator"
+      ]
+    },
+    {
+      "category": "iac",
+      "description": "Version manager for OpenTofu, Terraform, Terragrunt, and others",
+      "documentation": "https://tofuutils.github.io/tenv/",
+      "homepage": "https://tofuutils.github.io/tenv/",
+      "id": "tenv",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 359292249,
+        "name": "Release v4.15.1",
+        "prerelease": false,
+        "publishedAt": "2026-07-24T12:29:04Z",
+        "url": "https://github.com/tofuutils/tenv/releases/tag/v4.15.1",
+        "version": "v4.15.1"
+      },
+      "name": "tenv",
+      "previous": {
+        "publishedAt": "2026-06-10T22:03:54Z",
+        "version": "v4.14.8"
+      },
+      "releaseCount": 10,
+      "repository": "tofuutils/tenv",
+      "tags": [
+        "iac",
+        "version-manager"
       ]
     }
   ]
