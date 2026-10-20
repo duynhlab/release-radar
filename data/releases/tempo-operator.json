@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-08-18T14:52:50.281Z",
+  "generatedAt": "2026-10-20T18:28:20.088Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 418529025,
+      "name": "Release v0.23.0",
+      "notes": "### 💡 Enhancements 💡\n\n- `tempostack, tempomonolithic`: Update the gateway image to main-2026-10-13-d17ce87 and the opa-openshift image to main-2026-09-22-cc6817a. (#1672)\n- `operator`: Update Kubernetes dependencies to 1.37 (#1675)\n- `tempostack, tempomonolithic`: Roll out pods when the storage secret changes (#1655)\n- `tempostack`: Support overriding the pod anti affinity of a TempoStack component via the new spec.template.<component>.podAntiAffinity field (#1662)\n  By default the pods of a component only *prefer* to be scheduled onto different nodes and failure\n  domains, which the scheduler may ignore. This is true of zone-aware stacks as well: topology\n  spread constraints balance the pods across zones, but inside a zone several replicas of a\n  component can still land on the same node.\n  \n  A stack that needs a hard guarantee now sets its own anti affinity, per component:\n  \n  ```yaml\n  spec:\n    template:\n      ingester:\n        podAntiAffinity:\n          requiredDuringSchedulingIgnoredDuringExecution:\n          - labelSelector:\n              matchLabels:\n                app.kubernetes.io/component: ingester\n                app.kubernetes.io/instance: sample\n            topologyKey: kubernetes.io/hostname\n  ```\n  \n  The field replaces the default anti affinity of that component rather than adding to it. Note\n  that a required term leaves the surplus pods `Pending` when a component has more replicas than\n  schedulable nodes.\n  \n  The behavior follows the Grafana Loki Operator, which exposes the same field per component.\n  \n\n### 🧰 Bug fixes 🧰\n\n- `tempostack`: Fix invalid `components.metricsGenerator` status field (#1642)\n  Fixes the \"The field components.metricsGenerator is invalid.\" error in the OpenShift console.\n- `tempostack, tempomonolithic`: Roll out pods when the Cloud Credential Operator rotates the managed credentials secret (#1650)\n- `gateway`: Bind opa-openshift endpoint to localhost (#1673)\n- `tempostack`: For S3 static credentials, derive the HTTP/HTTPS transport from the storage secret endpoint scheme instead of the storage TLS toggle (#1649)\n  An `https://` endpoint now connects over HTTPS even when `spec.storage.tls.enabled` is false.\n  \n- `tempostack`: Use the configured gateway ingress host in OpenShift tenant redirect URLs. (#1629)\n  When spec.template.gateway.ingress.host is set, the OpenShift Route already uses that\n  hostname. Tenant redirectURL values in tenants.yaml now use the same host instead of\n  the generated default Route hostname.\n  \n\n### Components\n- Tempo: [v2.10.8](https://github.com/grafana/tempo/releases/tag/v2.10.8)\n\n### Support\nThis release supports Kubernetes 1.25 to 1.36.",
+      "prerelease": false,
+      "publishedAt": "2026-10-20T14:59:50Z",
+      "url": "https://github.com/grafana/tempo-operator/releases/tag/v0.23.0",
+      "version": "v0.23.0"
+    },
     {
       "channel": "stable",
       "draft": false,

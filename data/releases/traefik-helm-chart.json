@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-15T18:17:07.825Z",
+  "generatedAt": "2026-10-20T18:28:00.921Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 418585722,
+      "name": "v42.1.0",
+      "notes": "# [v42.1.0](https://github.com/traefik/traefik-helm-chart/compare/v42.0.0...v42.1.0) (2026-10-20)\n\n## :rocket: Features\n\n- feat(deps): update traefik docker tag to v3.7.15 #2036 by @renovate-with-github-actions[bot]\n- feat(chart): support top-level and global imagePullSecrets #2044 by @thekoma\n- feat(hub): :rocket: support traefik hub v3.20.17 and v3.21.4 #2045 by @darkweaver87\n\n## :bug: Bug fixes\n\n- fix(gateway): remove unnecessary blank lines from generated Gateway #2035 by @pommetjehorlepiep\n\n## :package: Others\n\n- chore(deps): update github actions #2037 by @renovate-with-github-actions[bot]\n- chore(deps): update renovatebot/github-action action to v46.3.9 #2041 by @renovate-with-github-actions[bot]\n- docs(examples): bump the Traefik MCP server sidecar to v0.2.0 #2040 by @emilevauge\n- chore(release): 🚀 publish 42.1.0 #2047 by @darkweaver87\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.15 (default)\n* Traefik Hub: v3.19.3 -> v3.21.4",
+      "prerelease": false,
+      "publishedAt": "2026-10-20T15:52:52Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.1.0",
+      "version": "v42.1.0"
+    },
     {
       "channel": "stable",
       "draft": false,
