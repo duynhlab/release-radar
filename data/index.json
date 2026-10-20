@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T19:55:32.842Z",
+  "generatedAt": "2026-10-20T01:59:20.013Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -122,19 +122,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 413279329,
-        "name": "v0.7.22",
+        "id": 417871328,
+        "name": "v0.7.23",
         "prerelease": false,
-        "publishedAt": "2026-10-14T23:47:27Z",
-        "url": "https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/tag/v0.7.22",
-        "version": "v0.7.22"
+        "publishedAt": "2026-10-20T00:08:29Z",
+        "url": "https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/tag/v0.7.23",
+        "version": "v0.7.23"
       },
       "name": "AWS IAM Authenticator",
       "previous": {
-        "publishedAt": "2026-10-13T21:19:25Z",
-        "version": "v0.7.21"
+        "publishedAt": "2026-10-14T23:47:27Z",
+        "version": "v0.7.22"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "kubernetes-sigs/aws-iam-authenticator",
       "tags": [
         "kubernetes",
@@ -2414,19 +2414,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 405128117,
-        "name": "v0.120.1",
+        "id": 417720064,
+        "name": "v0.121.0",
         "prerelease": false,
-        "publishedAt": "2026-10-06T20:46:45Z",
-        "url": "https://github.com/anchore/grype/releases/tag/v0.120.1",
-        "version": "v0.120.1"
+        "publishedAt": "2026-10-19T20:32:56Z",
+        "url": "https://github.com/anchore/grype/releases/tag/v0.121.0",
+        "version": "v0.121.0"
       },
       "name": "Grype",
       "previous": {
-        "publishedAt": "2026-10-02T14:23:18Z",
-        "version": "v0.120.0"
+        "publishedAt": "2026-10-06T20:46:45Z",
+        "version": "v0.120.1"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "anchore/grype",
       "tags": [
         "scanning",
@@ -2672,6 +2672,35 @@
       "tags": [
         "iac",
         "version-manager"
+      ]
+    },
+    {
+      "category": "ai",
+      "description": "Browser automation CLI for AI agents",
+      "documentation": "https://github.com/vercel-labs/agent-browser#readme",
+      "homepage": "https://github.com/vercel-labs/agent-browser",
+      "id": "agent-browser",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 412052528,
+        "name": "v0.39.1",
+        "prerelease": false,
+        "publishedAt": "2026-10-13T19:52:20Z",
+        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.39.1",
+        "version": "v0.39.1"
+      },
+      "name": "agent-browser",
+      "previous": {
+        "publishedAt": "2026-10-09T18:57:59Z",
+        "version": "v0.39.0"
+      },
+      "releaseCount": 10,
+      "repository": "vercel-labs/agent-browser",
+      "tags": [
+        "ai",
+        "automation",
+        "browser"
       ]
     }
   ]
