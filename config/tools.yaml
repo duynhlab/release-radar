@@ -1412,3 +1412,19 @@ tools:
       strategy: github-releases
       includePrerelease: false
       tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: agent-browser
+    name: agent-browser
+    category: ai
+    repository: vercel-labs/agent-browser
+    description: Browser automation CLI for AI agents
+    homepage: https://github.com/vercel-labs/agent-browser
+    documentation: https://github.com/vercel-labs/agent-browser#readme
+    tags:
+      - ai
+      - automation
+      - browser
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
