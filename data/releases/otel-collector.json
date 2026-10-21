@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-17T06:55:45.496Z",
+  "generatedAt": "2026-10-21T18:37:21.229Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419785351,
+      "name": "v0.163.2",
+      "notes": "This release updates the binaries' Go version and CA bundle. It fixes #1722.\r\n\r\nTo see the collector changes in v0.163.x see [v0.163.0](https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.0)\r\n\r\n## Changelog\r\n* 6c65793ec707f673304e52dfcb642684fda1a048 [chore] Prepare release 0.163.2 (#1726)\r\n* fb0342cf6d12ea5b95697eb39564fe48b2f407df maint: ensure we use the latest Go and CA bundles (#1723)\r\n* 94fec53ca1bf43dd47f180067db5675328705fde Update golang:1.27-alpine3.23 Docker digest to 895e5fe (#1720)\r\n* 022f62959e0703f56ebe98df8e3801fafb60c17a Update github-actions deps (#1721)",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T16:22:34Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.2",
+      "version": "v0.163.2"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T07:38:07.186Z",
+  "generatedAt": "2026-10-21T18:38:13.970Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -184,19 +184,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 412544484,
-        "name": "v1.16.6",
+        "id": 419855710,
+        "name": "v1.17.0",
         "prerelease": false,
-        "publishedAt": "2026-10-14T09:31:54Z",
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.6",
-        "version": "v1.16.6"
+        "publishedAt": "2026-10-21T17:32:54Z",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
+        "version": "v1.17.0"
       },
       "name": "Terraform",
       "previous": {
-        "publishedAt": "2026-10-02T13:04:00Z",
-        "version": "v1.16.5"
+        "publishedAt": "2026-10-14T09:31:54Z",
+        "version": "v1.16.6"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "hashicorp/terraform",
       "tags": [
         "iac"
@@ -211,19 +211,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 412926019,
-        "name": "v1.12.8",
+        "id": 419647825,
+        "name": "v1.13.2",
         "prerelease": false,
-        "publishedAt": "2026-10-14T16:20:20Z",
-        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.8",
-        "version": "v1.12.8"
+        "publishedAt": "2026-10-21T14:36:09Z",
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.2",
+        "version": "v1.13.2"
       },
       "name": "OpenTofu",
       "previous": {
-        "publishedAt": "2026-10-01T18:40:21Z",
-        "version": "v1.12.7"
+        "publishedAt": "2026-10-21T13:25:22Z",
+        "version": "v1.12.9"
       },
-      "releaseCount": 16,
+      "releaseCount": 18,
       "repository": "opentofu/opentofu",
       "tags": [
         "iac"
@@ -330,19 +330,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 399203196,
-        "name": "3.13.4 / 2026-09-29",
+        "id": 419629501,
+        "name": "3.15.1 / 2026-10-21",
         "prerelease": false,
-        "publishedAt": "2026-10-02T14:46:21Z",
-        "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.4",
-        "version": "v3.13.4"
+        "publishedAt": "2026-10-21T16:15:57Z",
+        "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.1",
+        "version": "v3.15.1"
       },
       "name": "Prometheus",
       "previous": {
-        "publishedAt": "2026-09-25T08:56:22Z",
-        "version": "v3.15.0"
+        "publishedAt": "2026-10-21T12:06:36Z",
+        "version": "v3.13.5"
       },
-      "releaseCount": 12,
+      "releaseCount": 14,
       "repository": "prometheus/prometheus",
       "tags": [
         "metrics",
@@ -395,19 +395,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 415317327,
-        "name": "v0.163.1",
+        "id": 419785351,
+        "name": "v0.163.2",
         "prerelease": false,
-        "publishedAt": "2026-10-16T19:39:44Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.1",
-        "version": "v0.163.1"
+        "publishedAt": "2026-10-21T16:22:34Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.2",
+        "version": "v0.163.2"
       },
       "name": "OpenTelemetry Collector",
       "previous": {
-        "publishedAt": "2026-10-16T17:40:58Z",
-        "version": "v0.163.0"
+        "publishedAt": "2026-10-16T19:39:44Z",
+        "version": "v0.163.1"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "open-telemetry/opentelemetry-collector-releases",
       "tags": [
         "metrics",
@@ -453,17 +453,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 418585722,
-        "name": "v42.1.0",
+        "id": 419585473,
+        "name": "v42.1.2",
         "prerelease": false,
-        "publishedAt": "2026-10-20T15:52:52Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.1.0",
-        "version": "v42.1.0"
+        "publishedAt": "2026-10-21T13:21:00Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.1.2",
+        "version": "v42.1.2"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-10-15T15:42:21Z",
-        "version": "v42.0.0"
+        "publishedAt": "2026-10-21T08:36:36Z",
+        "version": "v42.1.1"
       },
       "releaseCount": 20,
       "repository": "traefik/traefik-helm-chart",
@@ -546,19 +546,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 396749819,
-        "name": "v0.75.0",
+        "id": 419283161,
+        "name": "v0.75.1",
         "prerelease": false,
-        "publishedAt": "2026-09-25T16:09:32Z",
-        "url": "https://github.com/VictoriaMetrics/operator/releases/tag/v0.75.0",
-        "version": "v0.75.0"
+        "publishedAt": "2026-10-21T07:46:53Z",
+        "url": "https://github.com/VictoriaMetrics/operator/releases/tag/v0.75.1",
+        "version": "v0.75.1"
       },
       "name": "VictoriaMetrics Operator",
       "previous": {
-        "publishedAt": "2026-08-04T09:40:08Z",
-        "version": "v0.74.1"
+        "publishedAt": "2026-09-25T16:09:32Z",
+        "version": "v0.75.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "VictoriaMetrics/operator",
       "tags": [
         "kubernetes",
@@ -841,19 +841,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 400379581,
-        "name": "v3.6.0",
+        "id": 418743304,
+        "name": "v3.6.1",
         "prerelease": false,
-        "publishedAt": "2026-10-05T20:21:13Z",
-        "url": "https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.6.0",
-        "version": "v3.6.0"
+        "publishedAt": "2026-10-21T18:10:39Z",
+        "url": "https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.6.1",
+        "version": "v3.6.1"
       },
       "name": "AWS Load Balancer Controller",
       "previous": {
-        "publishedAt": "2026-08-03T22:55:57Z",
-        "version": "v3.5.0"
+        "publishedAt": "2026-10-05T20:21:13Z",
+        "version": "v3.6.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "kubernetes-sigs/aws-load-balancer-controller",
       "tags": [
         "aws",
@@ -1556,19 +1556,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 418634159,
-        "name": "v2.10.9",
+        "id": 419789455,
+        "name": "v3.1.1",
         "prerelease": false,
-        "publishedAt": "2026-10-20T17:38:28Z",
-        "url": "https://github.com/grafana/tempo/releases/tag/v2.10.9",
-        "version": "v2.10.9"
+        "publishedAt": "2026-10-21T17:02:10Z",
+        "url": "https://github.com/grafana/tempo/releases/tag/v3.1.1",
+        "version": "v3.1.1"
       },
       "name": "Tempo",
       "previous": {
-        "publishedAt": "2026-10-16T20:12:21Z",
-        "version": "v3.0.4"
+        "publishedAt": "2026-10-21T15:53:57Z",
+        "version": "v3.0.5"
       },
-      "releaseCount": 15,
+      "releaseCount": 18,
       "repository": "grafana/tempo",
       "tags": [
         "traces"
@@ -1587,19 +1587,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 408284057,
-        "name": "v2.4.0",
+        "id": 419911170,
+        "name": "v2.4.1",
         "prerelease": false,
-        "publishedAt": "2026-10-09T19:46:50Z",
-        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.0",
-        "version": "v2.4.0"
+        "publishedAt": "2026-10-21T18:30:23Z",
+        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.1",
+        "version": "v2.4.1"
       },
       "name": "Pyroscope",
       "previous": {
-        "publishedAt": "2026-10-07T21:37:03Z",
-        "version": "v2.3.2"
+        "publishedAt": "2026-10-21T18:30:19Z",
+        "version": "v2.3.3"
       },
-      "releaseCount": 18,
+      "releaseCount": 20,
       "repository": "grafana/pyroscope",
       "tags": [
         "profiling"
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 417226734,
-        "name": "alloy-1.14.0",
+        "id": 419744196,
+        "name": "cloudcost-exporter-1.1.17",
         "prerelease": false,
-        "publishedAt": "2026-10-19T11:44:37Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.0",
-        "version": "alloy-1.14.0"
+        "publishedAt": "2026-10-21T15:42:02Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.17",
+        "version": "cloudcost-exporter-1.1.17"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-16T18:03:24Z",
-        "version": "rollout-operator-0.53.0"
+        "publishedAt": "2026-10-21T15:23:13Z",
+        "version": "rollout-operator-0.53.1"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 419053032,
-        "name": "loki-19.0.1",
+        "id": 419834032,
+        "name": "loki-19.0.3",
         "prerelease": false,
-        "publishedAt": "2026-10-21T01:40:47Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.0.1",
-        "version": "loki-19.0.1"
+        "publishedAt": "2026-10-21T17:10:52Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.0.3",
+        "version": "loki-19.0.3"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-20T19:53:25Z",
-        "version": "grafana-mcp-0.28.1"
+        "publishedAt": "2026-10-21T17:10:06Z",
+        "version": "tempo-distributed-3.14.3"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1742,19 +1742,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 407148507,
-        "name": "loki v13.2.2",
+        "id": 419571980,
+        "name": "loki v13.2.3",
         "prerelease": false,
-        "publishedAt": "2026-10-08T18:36:43Z",
-        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.2",
-        "version": "v13.2.2"
+        "publishedAt": "2026-10-21T13:08:58Z",
+        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.3",
+        "version": "v13.2.3"
       },
       "name": "Loki Datasource",
       "previous": {
-        "publishedAt": "2026-09-28T15:32:05Z",
-        "version": "v13.2.1"
+        "publishedAt": "2026-10-08T18:36:43Z",
+        "version": "v13.2.2"
       },
-      "releaseCount": 8,
+      "releaseCount": 9,
       "repository": "grafana/grafana-loki-datasource",
       "tags": [
         "logs",
@@ -1772,19 +1772,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 404944051,
-        "name": "tempo v13.2.4",
+        "id": 419783527,
+        "name": "tempo v13.3.0",
         "prerelease": false,
-        "publishedAt": "2026-10-06T16:41:21Z",
-        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.2.4",
-        "version": "v13.2.4"
+        "publishedAt": "2026-10-21T16:20:55Z",
+        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.3.0",
+        "version": "v13.3.0"
       },
       "name": "Tempo Datasource",
       "previous": {
-        "publishedAt": "2026-10-06T13:20:20Z",
-        "version": "v13.2.3"
+        "publishedAt": "2026-10-06T16:41:21Z",
+        "version": "v13.2.4"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "grafana/grafana-tempo-datasource",
       "tags": [
         "traces",
@@ -1803,19 +1803,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 417482717,
-        "name": "v4.23.0",
+        "id": 419695905,
+        "name": "v4.23.1",
         "prerelease": false,
-        "publishedAt": "2026-10-19T16:00:19Z",
-        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.0",
-        "version": "v4.23.0"
+        "publishedAt": "2026-10-21T15:02:56Z",
+        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.1",
+        "version": "v4.23.1"
       },
       "name": "ClickHouse Datasource",
       "previous": {
-        "publishedAt": "2026-10-05T15:53:57Z",
-        "version": "v4.22.1"
+        "publishedAt": "2026-10-19T16:00:19Z",
+        "version": "v4.23.0"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "grafana/clickhouse-datasource",
       "tags": [
         "clickhouse",
@@ -2243,17 +2243,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 418212613,
-        "name": "2026.10.2",
+        "id": 419581975,
+        "name": "2026.10.3",
         "prerelease": false,
-        "publishedAt": "2026-10-20T09:17:30Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.2",
-        "version": "2026.10.2"
+        "publishedAt": "2026-10-21T13:17:53Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.3",
+        "version": "2026.10.3"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-10-15T17:15:26Z",
-        "version": "2026.10.1"
+        "publishedAt": "2026-10-20T09:17:30Z",
+        "version": "2026.10.2"
       },
       "releaseCount": 20,
       "repository": "cloudflare/cloudflared",

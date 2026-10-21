@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-14T18:37:29.707Z",
+  "generatedAt": "2026-10-21T18:37:15.368Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419647825,
+      "name": "v1.13.2",
+      "notes": "### SECURITY ADVISORIES:\r\n\r\n- Previous versions of OpenTofu could potentially experience excessive CPU usage if connecting to an attacker-controlled HTTP2 server while installing dependencies in `tofu init`. ([#4681](https://github.com/opentofu/opentofu/pull/4681))\r\n- Filter out compromised intermediate certificates ([#4750](https://github.com/opentofu/opentofu/pull/4750))\r\n\r\n### BUG FIXES:\r\n\r\n- Lifecycle destroy will no longer crash when given an expression with references ([#4648](https://github.com/opentofu/opentofu/pull/4648))\r\n- `tofu workspace select` and `tofu workspace delete` autocompletion predicts from the existing workspaces. This restores the behavior pre-v1.13 ([#4706](https://github.com/opentofu/opentofu/pull/4706))\r\n- Combined usage of `-chdir` and `-version` flags does not show an error anymore but instead shows the version of the `tofu` binary ([#4707](https://github.com/opentofu/opentofu/pull/4707))\r\n- Symbol libraries are now saved in plan files and no-longer prevent applying of plan files ([#4734](https://github.com/opentofu/opentofu/pull/4734))",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T14:36:09Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.2",
+      "version": "v1.13.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419583482,
+      "name": "v1.12.9",
+      "notes": "### SECURITY ADVISORIES:\r\n\r\n- Filter out compromised intermediate certificates ([#4751](https://github.com/opentofu/opentofu/pull/4751))",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T13:25:22Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.9",
+      "version": "v1.12.9"
+    },
     {
       "channel": "stable",
       "draft": false,

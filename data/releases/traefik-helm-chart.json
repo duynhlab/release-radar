@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-20T18:28:00.921Z",
+  "generatedAt": "2026-10-21T18:37:22.232Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419585473,
+      "name": "v42.1.2",
+      "notes": "# [v42.1.2](https://github.com/traefik/traefik-helm-chart/compare/v42.1.1...v42.1.2) (2026-10-21)\n\n## :rocket: Features\n\n- feat(hub): :rocket: support traefik hub v3.20.18 and v3.21.5 #2050 by @darkweaver87\n\n## :package: Others\n\n- chore(release): 🚀 publish 42.1.2 #2051 by @darkweaver87\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.16 (default)\n* Traefik Hub: v3.19.3 -> v3.21.5",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T13:21:00Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.1.2",
+      "version": "v42.1.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419325218,
+      "name": "v42.1.1",
+      "notes": "# [v42.1.1](https://github.com/traefik/traefik-helm-chart/compare/v42.1.0...v42.1.1) (2026-10-21)\n\n## :rocket: Features\n\n- feat(deps): update traefik docker tag to v3.7.16 #2048 by @darkweaver87\n\n## :package: Others\n\n- chore(release): 🚀 publish 42.1.1 #2049 by @darkweaver87\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.16 (default)\n* Traefik Hub: v3.19.3 -> v3.21.4",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T08:36:36Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.1.1",
+      "version": "v42.1.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-05-12T07:58:28Z",
       "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v40.1.0",
       "version": "v40.1.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 320501733,
-      "name": "v40.0.1",
-      "notes": "# [v40.0.1](https://github.com/traefik/traefik-helm-chart/compare/v40.0.0...v40.0.1) (2026-05-11)\n\n## :rocket: Features\n\n- feat(hub): :rocket: support traefik hub v3.20.1 #1838 by @darkweaver87\n\n## :package: Others\n\n- chore(release): 🚀 publish 40.0.1 #1839 by @darkweaver87\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.0 (default)\n* Traefik Hub: v3.19.3 -> v3.20.1",
-      "prerelease": false,
-      "publishedAt": "2026-05-11T13:42:56Z",
-      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v40.0.1",
-      "version": "v40.0.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 318461174,
-      "name": "v40.0.0",
-      "notes": "# [v40.0.0](https://github.com/traefik/traefik-helm-chart/compare/v39.0.9...v40.0.0) (2026-05-06)\r\n\r\n**Upgrade Notes**\r\n\r\n> [!IMPORTANT]\r\n> Traefik v3.7.0 comes with CRDs update. See [UPGRADING](https://github.com/traefik/traefik-helm-chart?tab=readme-ov-file#upgrading) instructions and upstream [migration guide](https://doc.traefik.io/traefik/v3.7/migrate/v3/#v370).\r\n\r\n> [!NOTE]\r\n> Gateway API CRDs will no longer be shipped with this chart in a future minor version. See [#1669](https://github.com/traefik/traefik-helm-chart/issues/1669) for more details.\r\n\r\n* The `Service` spec syntax in _values.yaml_ is now aligned with Kubernetes syntax (cf. before / after example in the [PR](https://github.com/traefik/traefik-helm-chart/pull/1686) description)\r\n* `providers.kubernetesIngressNginx` has been renamed to `providers.kubernetesIngressNGINX` to align with Traefik proxy naming (cf. before / after example in the [PR](https://github.com/traefik/traefik-helm-chart/pull/1714) description)\r\n\r\n## 👌 Traefik version support\r\n\r\n* Traefik Proxy: v3.6.0 -> v3.7.0 (default)\r\n* Traefik Hub: v3.19.3 -> v3.20.0\r\n\r\n## :boom: BREAKING CHANGES\r\n\r\n- refactor(chart)!: support only Proxy v3.6+ & Kubernetes v25+ #1718 by @mloiseleur\r\n- fix(providers)!: kubernetesIngressNginx => kubernetesIngressNGINX #1714 by @mloiseleur\r\n- fix(service)!: align syntax with upstream #1686 by @parkerfath\r\n\r\n## :rocket: Features\r\n\r\n- feat: support templated values in service annotations #1696 by @DrFaust92\r\n- feat(ingress): add native ingressEndpoint hostname and ip support #1695 by @DrFaust92\r\n- feat(logs): add accesslog.dualOutput option #1725 by @darkweaver87\r\n- feat(CRDs): :rocket: update CRDs to v3.7 #1721 by @darkweaver87\r\n- feat(providers): :rocket: update NGINX with v3.7 options #1720 by @darkweaver87\r\n- feat(entrypoints): add forwardedHeaders.notAppendXForwardedFor option #1723 by @darkweaver87\r\n- feat(api): add dashboardName option #1726 by @darkweaver87\r\n- feat(deployment): add hostUsers support #1744 by @DrFaust92\r\n- feat(ports): add allowACMEByPass to web port values #1734 by @jnoordsij\r\n- feat(ingressroute): support templating in annotations and labels #1728 by @DrFaust92\r\n- feat(deps): update traefik docker tag to v3.6.12 (master) #1767 by @renovate-with-github-actions[bot]\r\n- feat(deps): update traefik docker tag to v3.6.13 (master) #1793 by @renovate-with-github-actions[bot]\r\n- feat(podtemplate): allow disabling automatic GOMEMLIMIT #1796 by @johnvanhienen\r\n- feat(deps): update traefik docker tag to v3.6.15 (master) #1818 by @renovate-with-github-actions[bot]\r\n- feat(proxy): add support of kubernetesIngressNGINX.ipAllowListStrategy #1828 by @mloiseleur\r\n- feat(image): add image.digest for digest-based pinning #1821 by @zalbiraw\r\n- feat(deps): support traefik v3.7.0 & hub v3.20.0 #1835 by @mloiseleur\r\n\r\n## :bug: Bug fixes\r\n\r\n- fix(traefik-hub): set token using a file #1679 by @komalsukhani\r\n- fix(providers.kubernetesIngressNGINX): :bug: clarify int defaults #1829 by @darkweaver87\r\n\r\n## :package: Others\r\n\r\n- refactor(providers): :art: kubernetes ingress nginx #1717 by @darkweaver87\r\n- chore(ci): upgrade helm unittest to 1.0.1 #1713 by @mloiseleur\r\n- docs(gateway): improve wording on namespaces #1716 by @mloiseleur\r\n- test(acme): add certificateTimeout option coverage #1724 by @darkweaver87\r\n- chore: :bento: merge back 39.1.0-ea.2 into master #1727 by @darkweaver87\r\n- chore(deps): update github actions (major) #1731 by @renovate-with-github-actions[bot]\r\n- chore(deps): update github actions #1730 by @renovate-with-github-actions[bot]\r\n- chore(deps): update github actions (major) #1756 by @renovate-with-github-actions[bot]\r\n- chore(deps): update github actions #1755 by @renovate-with-github-actions[bot]\r\n- docs(values): update reference links #1762 by @mloiseleur\r\n- docs(values): clarify that kubernetesIngressNGINX.watchNamespace only watches one namespace #1759 by @parkerfath\r\n- docs: clarify DaemonSet updateStrategy to prevent rollout deadlock #1761 by @Ahmed-Sameh-MM\r\n- ci: fix renovate config and extend to v40.0 branch #1765 by @mloiseleur\r\n- ci(renovate): add v40.0 baseBranch on traefik updates #1770 by @mloiseleur\r\n- ci(renovate): disable gha update on previous branches #1774 by @mloiseleur\r\n- ci(renovate): enable stable updates on v39.0 #1775 by @mloiseleur\r\n- chore(deps): update ghcr.io/traefik/helm-changelog docker tag to v1 (master) #1771 by @renovate-with-github-actions[bot]\r\n- chore(deps): update github actions (master) #1776 by @renovate-with-github-actions[bot]\r\n- chore(deps): update dawidd6/action-download-artifact action to v20 (master) #1786 by @renovate-with-github-actions[bot]\r\n- chore(deps): update github actions (master) #1785 by @renovate-with-github-actions[bot]\r\n- chore(deps): update github actions (master) #1794 by @renovate-with-github-actions[bot]\r\n- chore(deps): update renovatebot/github-action action to v46.1.10 (master) #1811 by @renovate-with-github-actions[bot]\r\n- docs(examples): :books: Azure Application Gateway and Load Balancer #1797 by @darkweaver87\r\n- docs(examples): :books: deployment with FluxCD OCI #1792 by @darkweaver87\r\n- docs: add example for binding to privileged ports #1783 by @tmchow\r\n- chore(deps): update renovatebot/github-action action to v46.1.13 (master) #1817 by @renovate-with-github-actions[bot]\r\n- chore(deps): update dawidd6/action-download-artifact action to v21 (master) #1822 by @renovate-with-github-actions[bot]\r\n- chore: 🍱 merge back v40.0 into master #1827 by @darkweaver87\r\n- docs(readme): fix latest patch versions for legacy #1830 by @jnoordsij\r\n- ci(renovate): switch to master branch #1833 by @mloiseleur\r\n- ci(renovate): disable renovate self rate limit #1834 by @mloiseleur\r\n- chore(release): 🚀 publish traefik 40.0.0 and crds 1.18.0 #1836 by @mloiseleur",
-      "prerelease": false,
-      "publishedAt": "2026-05-06T15:01:43Z",
-      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v40.0.0",
-      "version": "v40.0.0"
     }
   ],
   "schemaVersion": 1,

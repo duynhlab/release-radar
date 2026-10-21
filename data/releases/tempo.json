@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-10-20T18:28:25.933Z",
+  "generatedAt": "2026-10-21T18:37:47.239Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419789455,
+      "name": "v3.1.1",
+      "notes": "## Security\n\n- `deps`: Update Go to 1.27.3 (CVE-2026-56857, CVE-2026-56866, CVE-2026-78659, CVE-2026-78660, CVE-2026-78663, CVE-2026-78667, CVE-2026-78669, CVE-2026-94439, CVE-2026-94440, CVE-2026-94448, CVE-2026-97030, CVE-2026-97031, CVE-2026-97032, CVE-2026-111943) ([#8148](https://github.com/grafana/tempo/issues/8148)) (@mdisibio)",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T17:02:10Z",
+      "url": "https://github.com/grafana/tempo/releases/tag/v3.1.1",
+      "version": "v3.1.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419703446,
+      "name": "v3.0.5",
+      "notes": "## Security\n\n- `deps`: Update Go to 1.26.10 (CVE-2026-111943) ([#8147](https://github.com/grafana/tempo/issues/8147)) (@mdisibio)",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T15:53:57Z",
+      "url": "https://github.com/grafana/tempo/releases/tag/v3.0.5",
+      "version": "v3.0.5"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419666351,
+      "name": "v2.10.10",
+      "notes": "## Security\n\n- `deps`: Update Go to 1.26.10 (CVE-2026-111943) ([#8146](https://github.com/grafana/tempo/issues/8146)) (@mdisibio)",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T14:41:10Z",
+      "url": "https://github.com/grafana/tempo/releases/tag/v2.10.10",
+      "version": "v2.10.10"
+    },
     {
       "channel": "stable",
       "draft": false,

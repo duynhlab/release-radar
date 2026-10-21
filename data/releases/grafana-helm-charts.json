@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-10-19T14:35:01.757Z",
+  "generatedAt": "2026-10-21T18:37:49.919Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419744196,
+      "name": "cloudcost-exporter-1.1.17",
+      "notes": "Cloud Cost Exporter exports cloud provider agnostic cost metrics to Prometheus.\n\nSource commit: https://github.com/grafana/cloudcost-exporter/commit/749274f98eda948a8a58c46965473419238cb4fe\n\nTag on source: https://github.com/grafana/cloudcost-exporter/releases/tag/cloudcost-exporter-1.1.17",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T15:42:02Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.17",
+      "version": "cloudcost-exporter-1.1.17"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419717347,
+      "name": "rollout-operator-0.53.1",
+      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] Update to v0.41.1 by @julienduchesne in https://github.com/grafana/helm-charts/pull/4226\n\n## New Contributors\n* @julienduchesne made their first contribution in https://github.com/grafana/helm-charts/pull/4226\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/alloy-1.14.0...rollout-operator-0.53.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T15:23:13Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.53.1",
+      "version": "rollout-operator-0.53.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419354216,
+      "name": "beyla-1.16.15",
+      "notes": "eBPF-based autoinstrumentation HTTP, HTTP2 and gRPC services, as well as network metrics.\n\nSource commit: https://github.com/grafana/beyla/commit/62dae976afcbd13fe5c06a9473e995b82661b511\n\nTag on source: https://github.com/grafana/beyla/releases/tag/beyla-1.16.15",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T09:09:18Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.15",
+      "version": "beyla-1.16.15"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-09-08T16:50:30Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.3.1",
       "version": "pyroscope-2.3.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 377923280,
-      "name": "alloy-operator-0.7.1",
-      "notes": "Grafana Alloy Operator, providing innovative ways for creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/f9ebeecee82242d6bc7b72a201a250bf29404eff\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.7.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-27T15:14:32Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.7.1",
-      "version": "alloy-operator-0.7.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 377808956,
-      "name": "alloy-1.12.1",
-      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/5975f1be5e7e343ee3df4497942446ed23ae902a\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.12.1",
-      "prerelease": false,
-      "publishedAt": "2026-08-27T12:35:53Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.12.1",
-      "version": "alloy-1.12.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 376773883,
-      "name": "k8s-monitoring-4.5.0",
-      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/ee663e9f28cc1d7bea32bfabc2cc7a0382fb45b1\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.5.0",
-      "prerelease": false,
-      "publishedAt": "2026-08-25T23:22:31Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.0",
-      "version": "k8s-monitoring-4.5.0"
     }
   ],
   "schemaVersion": 1,

@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-02T19:17:35.216Z",
+  "generatedAt": "2026-10-21T18:37:18.505Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419629501,
+      "name": "3.15.1 / 2026-10-21",
+      "notes": "- [SECURITY] Container images: Update CA certificates to distrust \"emSign ECC Root CA - G3\" and \"Comodo AAA Services root\" following the compromise of eMudhra intermediate CA private keys.\r\n- [SECURITY] Build with Go 1.27.3 to fix vulnerabilities in `net/http`, `net/textproto`, `crypto/tls` and `html/template`.\r\n- [SECURITY] Bump golang.org/x/net to v0.60.0 to fix HTTP/2 vulnerabilities (GO-2026-6603, GO-2026-6610, GO-2026-6611, GO-2026-6612, GO-2026-6617).",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T16:15:57Z",
+      "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.1",
+      "version": "v3.15.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419452284,
+      "name": "3.13.5 / 2026-10-21",
+      "notes": "- [SECURITY] Container images: Update CA certificates to distrust \"emSign ECC Root CA - G3\" and \"Comodo AAA Services root\" following the compromise of eMudhra intermediate CA private keys.\r\n- [SECURITY] Build with Go 1.26.10 to fix vulnerabilities in `net/http`, `net/textproto`, `crypto/tls` and `html/template`.\r\n- [SECURITY] Bump golang.org/x/net to v0.60.0 to fix HTTP/2 vulnerabilities (GO-2026-6603, GO-2026-6610, GO-2026-6611, GO-2026-6612, GO-2026-6617).\r\n- [SECURITY] Bump OpenTelemetry to v1.45.0 to fix exporter endpoint URLs leaking into info logs (GO-2026-6505).\r\n- [CHANGE] Building Prometheus now requires Go 1.26 or later.",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T12:06:36Z",
+      "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.5",
+      "version": "v3.13.5"
+    },
     {
       "channel": "stable",
       "draft": false,

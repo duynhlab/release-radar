@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-10T08:29:10.704Z",
+  "generatedAt": "2026-10-21T18:37:47.925Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419911170,
+      "name": "v2.4.1",
+      "notes": "### Security fixes\n\n* Updated the Go build toolchain to 1.26.10 and distroless runtime images to include the compromised certificate authority mitigations ([#5891](https://github.com/grafana/pyroscope/pull/5891)).\n* Updated `github.com/getkin/kin-openapi` to v0.149.0 to address validation bypass and denial-of-service vulnerabilities ([#5832](https://github.com/grafana/pyroscope/pull/5832)).\n* Updated UI Vite to v8.3.4 to address dependency vulnerabilities ([#5802](https://github.com/grafana/pyroscope/pull/5802)).\n\n### Bug fixes\n\n* Fixed decoding of resource and scope attributes stored in the OpenTelemetry profiles dictionary ([#5894](https://github.com/grafana/pyroscope/pull/5894)).\n\n### Documentation\n\n* Documented Windows support for .NET Framework 4.7, 4.8, and IIS ([#5869](https://github.com/grafana/pyroscope/pull/5869)).\n\n## Changelog\n* 6b23c618ae0e541cab7f4fd0d4bcc82bb3dc7546 [release/v2.4] chore(deps): update Go to 1.26.10 and distroless runtime images (#5891)\n* 4d5ce674739971576030b900eff6e9ed84c5ab67 chore(deps): lock file maintenance (#5802)\n* 7aac40dca9cbb36f249b25a2c00bc172ca96be67 docs(dotnet): mark .NET Framework 4.7, 4.8 and IIS as supported on Windows (#5868) (#5869)\n* 36d558a4799e86ce9814a5348e6ecc300e4ed192 docs: prepare v2.4.1 security release notes (#5898)\n* 7c8fa46c667dfb930c817a65f3ec198bca624328 fix(security/high/): update module github.com/getkin/kin-openapi to v0.149.0 [security] (#5832)\n* 81eb9c5ad8e398bdcacc82cb17a9b3587ced566b fix: resource and scope attributes encoded through the profiles dictionary (#5857) (#5894)\n\nAs always, feedback is more than welcome, feel free to open issues/discussions.\nYou can reach out to the team using:\n\n- [Slack](https://grafana.slack.com/archives/C049PLMV8TB)\n- [Github Discussions](https://github.com/grafana/pyroscope/discussions)\n- [Github Issues](https://github.com/grafana/pyroscope/issues)\n- [Mailing List](https://groups.google.com/g/pyroscope-team)\n\n## Docker Images\n\n- [grafana/pyroscope](https://hub.docker.com/r/grafana/pyroscope/tags)\n\n```bash\n  docker pull grafana/pyroscope:2.4.1\n```",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T18:30:23Z",
+      "url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.1",
+      "version": "v2.4.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419911098,
+      "name": "v2.3.3",
+      "notes": "### Security fixes\n\n* Updated the Go build toolchain to 1.26.10 and distroless runtime images to include the compromised certificate authority mitigations ([#5890](https://github.com/grafana/pyroscope/pull/5890)).\n* Updated `golang.org/x/net` to v0.60.0 to address HTTP/2 vulnerabilities ([#5792](https://github.com/grafana/pyroscope/pull/5792)).\n* Updated `github.com/getkin/kin-openapi` to v0.149.0 to address validation bypass and denial-of-service vulnerabilities ([#5833](https://github.com/grafana/pyroscope/pull/5833)).\n* Updated UI Vite to v8.3.4 and `source-map-js` to v1.2.2 to address dependency vulnerabilities ([#5892](https://github.com/grafana/pyroscope/pull/5892)).\n\n### Bug fixes\n\n* Fixed decoding of resource and scope attributes stored in the OpenTelemetry profiles dictionary ([#5895](https://github.com/grafana/pyroscope/pull/5895)).\n\n## Changelog\n* 252dabb23acca949f9e25bffd9ccabf63335e747 Update golang version to 1.26.9 (#5788) (#5789)\n* 98f09c5c4ebb15cb6a26a00c9eda750a414b0472 [release/v2.3] chore(deps): update Go to 1.26.10 and distroless runtime images (#5890)\n* 2d1517eb3943f843d085259b3ece759c387ae3a2 [release/v2.3] fix(ui): backport source-map-js and Vite security fixes (#5892)\n* 14a6a2373d4fe0e0c767e7a804c0d49155b9c39f chore(deps): lock file maintenance (#5633)\n* aaa211b7fe384d10dc234335399051d5044e9ede chore: prepare v2.3 publishing for the v2.4 release (#5798)\n* ae3d4eaa66fb972aca6b562f7883550b97f35b18 docs: prepare v2.3.3 security release notes (#5897)\n* adf45a92e8f389cbd01a82229b8b86100b498a41 fix(deps): update golang.org/x/net to v0.60.0 [security] (#5792)\n* d0556da4c33e8edeed9778ed6a22e1a1c96e4598 fix(security/high/): update module github.com/getkin/kin-openapi to v0.149.0 [security] (#5833)\n* 063a43b817b7de4ade7c77727a5cb545c8fbf4be fix: resource and scope attributes encoded through the profiles dictionary (#5857) (#5895)\n\nAs always, feedback is more than welcome, feel free to open issues/discussions.\nYou can reach out to the team using:\n\n- [Slack](https://grafana.slack.com/archives/C049PLMV8TB)\n- [Github Discussions](https://github.com/grafana/pyroscope/discussions)\n- [Github Issues](https://github.com/grafana/pyroscope/issues)\n- [Mailing List](https://groups.google.com/g/pyroscope-team)\n\n## Docker Images\n\n- [grafana/pyroscope](https://hub.docker.com/r/grafana/pyroscope/tags)\n\n```bash\n  docker pull grafana/pyroscope:2.3.3\n```",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T18:30:19Z",
+      "url": "https://github.com/grafana/pyroscope/releases/tag/v2.3.3",
+      "version": "v2.3.3"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-06T19:32:23.597Z",
+  "generatedAt": "2026-10-21T18:37:52.051Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419783527,
+      "name": "tempo v13.3.0",
+      "notes": "## 13.3.0\n\n- Fix TraceQL query editor being cut off or collapsing at some browser zoom levels ([#274](https://github.com/grafana/grafana-tempo-datasource/pull/274))\n- Fix trace ID queries that use the `traceId` query type not running ([#275](https://github.com/grafana/grafana-tempo-datasource/pull/275))\n- Fix security vulnerabilities ([#276](https://github.com/grafana/grafana-tempo-datasource/pull/276))\n- Update Go to 1.27.3 ([#279](https://github.com/grafana/grafana-tempo-datasource/pull/279))",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T16:20:55Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.3.0",
+      "version": "v13.3.0"
+    },
     {
       "channel": "stable",
       "draft": false,

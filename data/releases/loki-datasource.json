@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-08T19:57:18.210Z",
+  "generatedAt": "2026-10-21T18:37:51.264Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419571980,
+      "name": "loki v13.2.3",
+      "notes": "## 13.2.3\n\n- Chore: Pin golangci-lint to 2.15.0 in development dependencies and CI/CD pipelines",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T13:08:58Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.3",
+      "version": "v13.2.3"
+    },
     {
       "channel": "stable",
       "draft": false,
