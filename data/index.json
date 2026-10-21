@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T18:28:50.071Z",
+  "generatedAt": "2026-10-21T07:38:07.186Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -270,17 +270,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 410508664,
-        "name": "v3.5.5",
+        "id": 419048026,
+        "name": "v3.3.17",
         "prerelease": false,
-        "publishedAt": "2026-10-12T10:59:41Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.5",
-        "version": "v3.5.5"
+        "publishedAt": "2026-10-21T01:30:56Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.17",
+        "version": "v3.3.17"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-10-12T10:59:23Z",
-        "version": "v3.3.16"
+        "publishedAt": "2026-10-20T21:59:31Z",
+        "version": "v3.4.12"
       },
       "releaseCount": 20,
       "repository": "argoproj/argo-cd",
@@ -930,19 +930,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 386047463,
-        "name": "v1.19.1",
+        "id": 418992427,
+        "name": "v1.19.2",
         "prerelease": false,
-        "publishedAt": "2026-09-10T06:24:30Z",
-        "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1",
-        "version": "v1.19.1"
+        "publishedAt": "2026-10-20T23:50:19Z",
+        "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
+        "version": "v1.19.2"
       },
       "name": "Kyverno",
       "previous": {
-        "publishedAt": "2026-08-20T09:34:27Z",
-        "version": "v1.19.0"
+        "publishedAt": "2026-09-10T06:24:30Z",
+        "version": "v1.19.1"
       },
-      "releaseCount": 7,
+      "releaseCount": 8,
       "repository": "kyverno/kyverno",
       "tags": [
         "kubernetes",
@@ -1525,19 +1525,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 414208707,
-        "name": "v3.6.18",
+        "id": 418953715,
+        "name": "v3.7.9",
         "prerelease": false,
-        "publishedAt": "2026-10-15T19:55:55Z",
-        "url": "https://github.com/grafana/loki/releases/tag/v3.6.18",
-        "version": "v3.6.18"
+        "publishedAt": "2026-10-20T22:53:57Z",
+        "url": "https://github.com/grafana/loki/releases/tag/v3.7.9",
+        "version": "v3.7.9"
       },
       "name": "Loki",
       "previous": {
-        "publishedAt": "2026-09-17T15:51:10Z",
-        "version": "v3.7.8"
+        "publishedAt": "2026-10-20T22:36:42Z",
+        "version": "v3.6.19"
       },
-      "releaseCount": 17,
+      "releaseCount": 19,
       "repository": "grafana/loki",
       "tags": [
         "logs"
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 418618943,
-        "name": "tempo-distributed-3.14.2",
+        "id": 419053032,
+        "name": "loki-19.0.1",
         "prerelease": false,
-        "publishedAt": "2026-10-20T16:25:07Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.14.2",
-        "version": "tempo-distributed-3.14.2"
+        "publishedAt": "2026-10-21T01:40:47Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.0.1",
+        "version": "loki-19.0.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-20T16:17:54Z",
-        "version": "grafana-mcp-0.28.0"
+        "publishedAt": "2026-10-20T19:53:25Z",
+        "version": "grafana-mcp-0.28.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
