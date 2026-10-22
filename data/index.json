@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T07:34:05.025Z",
+  "generatedAt": "2026-10-22T18:32:39.403Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -68,19 +68,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 413778138,
-        "name": "v0.20.2",
+        "id": 420677087,
+        "name": "v0.20.3",
         "prerelease": false,
-        "publishedAt": "2026-10-15T12:34:52Z",
-        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.2",
-        "version": "v0.20.2"
+        "publishedAt": "2026-10-22T12:58:39Z",
+        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.3",
+        "version": "v0.20.3"
       },
       "name": "Kueue",
       "previous": {
-        "publishedAt": "2026-10-15T12:07:23Z",
-        "version": "v0.19.9"
+        "publishedAt": "2026-10-22T11:44:39Z",
+        "version": "v0.19.10"
       },
-      "releaseCount": 14,
+      "releaseCount": 16,
       "repository": "kubernetes-sigs/kueue",
       "tags": [
         "kubernetes",
@@ -184,19 +184,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 419855710,
-        "name": "v1.17.0",
+        "id": 420530746,
+        "name": "v1.16.7",
         "prerelease": false,
-        "publishedAt": "2026-10-21T17:32:54Z",
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
-        "version": "v1.17.0"
+        "publishedAt": "2026-10-22T09:30:19Z",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.7",
+        "version": "v1.16.7"
       },
       "name": "Terraform",
       "previous": {
-        "publishedAt": "2026-10-14T09:31:54Z",
-        "version": "v1.16.6"
+        "publishedAt": "2026-10-21T17:32:54Z",
+        "version": "v1.17.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "hashicorp/terraform",
       "tags": [
         "iac"
@@ -270,17 +270,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 419048026,
-        "name": "v3.3.17",
+        "id": 420846442,
+        "name": "v3.3.18",
         "prerelease": false,
-        "publishedAt": "2026-10-21T01:30:56Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.17",
-        "version": "v3.3.17"
+        "publishedAt": "2026-10-22T14:50:13Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.18",
+        "version": "v3.3.18"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-10-20T21:59:31Z",
-        "version": "v3.4.12"
+        "publishedAt": "2026-10-21T01:30:56Z",
+        "version": "v3.3.17"
       },
       "releaseCount": 20,
       "repository": "argoproj/argo-cd",
@@ -453,17 +453,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 419585473,
-        "name": "v42.1.2",
+        "id": 420804182,
+        "name": "v42.1.3",
         "prerelease": false,
-        "publishedAt": "2026-10-21T13:21:00Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.1.2",
-        "version": "v42.1.2"
+        "publishedAt": "2026-10-22T14:08:46Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.1.3",
+        "version": "v42.1.3"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-10-21T08:36:36Z",
-        "version": "v42.1.1"
+        "publishedAt": "2026-10-21T13:21:00Z",
+        "version": "v42.1.2"
       },
       "releaseCount": 20,
       "repository": "traefik/traefik-helm-chart",
@@ -730,19 +730,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 414390300,
-        "name": "Istio 1.31.2",
+        "id": 420442298,
+        "name": "Istio 1.31.3",
         "prerelease": false,
-        "publishedAt": "2026-10-16T00:13:18Z",
-        "url": "https://github.com/istio/istio/releases/tag/1.31.2",
-        "version": "1.31.2"
+        "publishedAt": "2026-10-22T12:46:24Z",
+        "url": "https://github.com/istio/istio/releases/tag/1.31.3",
+        "version": "1.31.3"
       },
       "name": "Istio",
       "previous": {
-        "publishedAt": "2026-10-15T23:59:30Z",
-        "version": "1.30.6"
+        "publishedAt": "2026-10-22T12:46:06Z",
+        "version": "1.30.7"
       },
-      "releaseCount": 18,
+      "releaseCount": 20,
       "repository": "istio/istio",
       "tags": [
         "service-mesh",
@@ -1052,19 +1052,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398022807,
-        "name": "v0.7.1",
+        "id": 420924618,
+        "name": "v0.8.0",
         "prerelease": false,
-        "publishedAt": "2026-09-28T07:18:19Z",
-        "url": "https://github.com/valkey-io/valkey-operator/releases/tag/v0.7.1",
-        "version": "v0.7.1"
+        "publishedAt": "2026-10-22T16:05:15Z",
+        "url": "https://github.com/valkey-io/valkey-operator/releases/tag/v0.8.0",
+        "version": "v0.8.0"
       },
       "name": "Valkey Operator",
       "previous": {
-        "publishedAt": "2026-09-26T08:30:23Z",
-        "version": "v0.7.0"
+        "publishedAt": "2026-09-28T07:18:19Z",
+        "version": "v0.7.1"
       },
-      "releaseCount": 8,
+      "releaseCount": 9,
       "repository": "valkey-io/valkey-operator",
       "tags": [
         "valkey",
@@ -1183,19 +1183,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 382167058,
-        "name": "v0.4.2",
+        "id": 421009548,
+        "name": "v0.5.0",
         "prerelease": false,
-        "publishedAt": "2026-09-03T16:18:32Z",
-        "url": "https://github.com/ClickHouse/clickhousectl/releases/tag/v0.4.2",
-        "version": "v0.4.2"
+        "publishedAt": "2026-10-22T17:33:04Z",
+        "url": "https://github.com/ClickHouse/clickhousectl/releases/tag/v0.5.0",
+        "version": "v0.5.0"
       },
       "name": "clickhousectl",
       "previous": {
-        "publishedAt": "2026-08-19T11:09:08Z",
-        "version": "v0.4.1"
+        "publishedAt": "2026-09-03T16:18:32Z",
+        "version": "v0.4.2"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "ClickHouse/clickhousectl",
       "tags": [
         "clickhouse",
@@ -1278,19 +1278,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 418529025,
-        "name": "Release v0.23.0",
+        "id": 420571068,
+        "name": "Release v0.23.1",
         "prerelease": false,
-        "publishedAt": "2026-10-20T14:59:50Z",
-        "url": "https://github.com/grafana/tempo-operator/releases/tag/v0.23.0",
-        "version": "v0.23.0"
+        "publishedAt": "2026-10-22T10:14:00Z",
+        "url": "https://github.com/grafana/tempo-operator/releases/tag/v0.23.1",
+        "version": "v0.23.1"
       },
       "name": "Tempo Operator",
       "previous": {
-        "publishedAt": "2026-08-18T14:32:08Z",
-        "version": "v0.22.0"
+        "publishedAt": "2026-10-20T14:59:50Z",
+        "version": "v0.23.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "grafana/tempo-operator",
       "tags": [
         "traces",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420159416,
-        "name": "k8s-manifest-tail-0.1.6",
+        "id": 420987759,
+        "name": "alloy-operator-0.9.2",
         "prerelease": false,
-        "publishedAt": "2026-10-21T23:41:14Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-manifest-tail-0.1.6",
-        "version": "k8s-manifest-tail-0.1.6"
+        "publishedAt": "2026-10-22T17:09:35Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.9.2",
+        "version": "alloy-operator-0.9.2"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-21T21:25:30Z",
-        "version": "k8s-injection-controller-0.3.0"
+        "publishedAt": "2026-10-22T15:54:36Z",
+        "version": "alloy-1.14.2"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420122183,
-        "name": "tempo-3.2.1",
+        "id": 420900888,
+        "name": "grafana-mcp-0.29.0",
         "prerelease": false,
-        "publishedAt": "2026-10-21T22:36:10Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-3.2.1",
-        "version": "tempo-3.2.1"
+        "publishedAt": "2026-10-22T15:39:48Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.29.0",
+        "version": "grafana-mcp-0.29.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-21T17:10:52Z",
-        "version": "loki-19.0.3"
+        "publishedAt": "2026-10-22T11:56:44Z",
+        "version": "synthetic-monitoring-agent-1.21.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1803,19 +1803,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 419695905,
-        "name": "v4.23.1",
+        "id": 420956921,
+        "name": "v4.23.2",
         "prerelease": false,
-        "publishedAt": "2026-10-21T15:02:56Z",
-        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.1",
-        "version": "v4.23.1"
+        "publishedAt": "2026-10-22T16:35:08Z",
+        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.2",
+        "version": "v4.23.2"
       },
       "name": "ClickHouse Datasource",
       "previous": {
-        "publishedAt": "2026-10-19T16:00:19Z",
-        "version": "v4.23.0"
+        "publishedAt": "2026-10-21T15:02:56Z",
+        "version": "v4.23.1"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "grafana/clickhouse-datasource",
       "tags": [
         "clickhouse",
@@ -2117,19 +2117,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 375576729,
-        "name": "sentry: v33.8.0",
+        "id": 420673658,
+        "name": "sentry: v34.0.0",
         "prerelease": false,
-        "publishedAt": "2026-08-24T09:20:19Z",
-        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v33.8.0",
-        "version": "sentry-v33.8.0"
+        "publishedAt": "2026-10-22T12:07:10Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v34.0.0",
+        "version": "sentry-v34.0.0"
       },
       "name": "Sentry Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-21T14:57:27Z",
-        "version": "sentry-v33.7.0"
+        "publishedAt": "2026-08-24T09:20:19Z",
+        "version": "sentry-v33.8.0"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "sentry-kubernetes/charts",
       "tags": [
         "helm-chart",

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-20T18:28:20.088Z",
+  "generatedAt": "2026-10-22T18:32:04.995Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 420571068,
+      "name": "Release v0.23.1",
+      "notes": "### 💡 Enhancements 💡\n\n- `operator`: Upgrade Go to 1.26.10 (#1691)\n- `tempostack, tempomonolithic`: Update Tempo to 2.10.10 (#1689)\n\n### Components\n- Tempo: [v2.10.10](https://github.com/grafana/tempo/releases/tag/v2.10.10)\n\n### Support\nThis release supports Kubernetes 1.25 to 1.36.",
+      "prerelease": false,
+      "publishedAt": "2026-10-22T10:14:00Z",
+      "url": "https://github.com/grafana/tempo-operator/releases/tag/v0.23.1",
+      "version": "v0.23.1"
+    },
     {
       "channel": "stable",
       "draft": false,

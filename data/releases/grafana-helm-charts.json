@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-10-22T07:33:42.090Z",
+  "generatedAt": "2026-10-22T18:32:15.791Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 420987759,
+      "name": "alloy-operator-0.9.2",
+      "notes": "Grafana Alloy Operator, providing innovative ways for creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/fc5199537cf6306954555d3980d4f7d483c53969\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.9.2",
+      "prerelease": false,
+      "publishedAt": "2026-10-22T17:09:35Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.9.2",
+      "version": "alloy-operator-0.9.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 420916135,
+      "name": "alloy-1.14.2",
+      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/cbc7db633667e9f410cf18fba962d60e577db38d\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.14.2",
+      "prerelease": false,
+      "publishedAt": "2026-10-22T15:54:36Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.2",
+      "version": "alloy-1.14.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 420806391,
+      "name": "alloy-operator-0.9.1",
+      "notes": "Grafana Alloy Operator, providing innovative ways for creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/384a0662dea1ce3255288590bd952f6b72ebec3b\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.9.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-22T14:10:52Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.9.1",
+      "version": "alloy-operator-0.9.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 420702410,
+      "name": "helm-loki-7.5.0",
+      "notes": "Helm chart for Grafana Enterprise Logs supporting monolithic, simple scalable, and microservices modes.\n\nSource commit: https://github.com/grafana/loki/commit/14f73b26d0984988112c3e6085eee16ea7c226bd\n\nTag on source: https://github.com/grafana/loki/releases/tag/helm-loki-7.5.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-22T12:35:43Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.5.0",
+      "version": "helm-loki-7.5.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -176,50 +220,6 @@
       "publishedAt": "2026-10-07T22:45:17Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.3",
       "version": "k8s-monitoring-4.5.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 405917532,
-      "name": "alloy-operator-0.8.0",
-      "notes": "Grafana Alloy Operator, providing innovative ways for creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/1eddc863af98a2a68287eae93abd2d2cae3a0375\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.8.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-07T15:44:20Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.8.0",
-      "version": "alloy-operator-0.8.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 404990815,
-      "name": "mimir-distributed-6.2.1",
-      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/7dbd664579bc04bb9b0333f546ee81ccf6c257ac\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.2.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-06T17:42:56Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.2.1",
-      "version": "mimir-distributed-6.2.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 396771136,
-      "name": "alloy-1.13.0",
-      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/389e3d59e9c73ade9f91b72f35353267ded3dc29\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.13.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-25T16:43:28Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.13.0",
-      "version": "alloy-1.13.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 387456408,
-      "name": "rollout-operator-0.52.0",
-      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] update for v0.40.0 by @lamida in https://github.com/grafana/helm-charts/pull/4218\n\n## New Contributors\n* @lamida made their first contribution in https://github.com/grafana/helm-charts/pull/4218\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/alloy-1.12.0...rollout-operator-0.52.0",
-      "prerelease": false,
-      "publishedAt": "2026-09-12T04:42:03Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.52.0",
-      "version": "rollout-operator-0.52.0"
     }
   ],
   "schemaVersion": 1,
