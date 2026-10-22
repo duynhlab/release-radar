@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-10-21T18:37:49.919Z",
+  "generatedAt": "2026-10-22T07:33:42.090Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 420159416,
+      "name": "k8s-manifest-tail-0.1.6",
+      "notes": "Fetches and monitors Kubernetes manifests from a running cluster\n\nSource commit: https://github.com/grafana/k8s-manifest-tail/commit/db875d3caa3ffd070e080613a160406461dd7f12\n\nTag on source: https://github.com/grafana/k8s-manifest-tail/releases/tag/k8s-manifest-tail-0.1.6",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T23:41:14Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-manifest-tail-0.1.6",
+      "version": "k8s-manifest-tail-0.1.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 420071694,
+      "name": "k8s-injection-controller-0.3.0",
+      "notes": "Kubernetes admission controller for Grafana Beyla SDK auto-instrumentation.\n\nSource commit: https://github.com/grafana/k8s-injection-controller/commit/2bf73f48eac30ed0745f458d928b560173decff0\n\nTag on source: https://github.com/grafana/k8s-injection-controller/releases/tag/k8s-injection-controller-0.3.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T21:25:30Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-injection-controller-0.3.0",
+      "version": "k8s-injection-controller-0.3.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 420061166,
+      "name": "alloy-1.14.1",
+      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/b76089e32e2532d15e6f14859dcab3ae72670774\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.14.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T21:12:22Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.1",
+      "version": "alloy-1.14.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419957430,
+      "name": "pyroscope-2.4.1",
+      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/448bda4865330f8e57afba5520956ede66732c1f\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.4.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T19:15:48Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.1",
+      "version": "pyroscope-2.4.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -176,50 +220,6 @@
       "publishedAt": "2026-09-12T04:42:03Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.52.0",
       "version": "rollout-operator-0.52.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 387318549,
-      "name": "k8s-monitoring-4.5.2",
-      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/b4002ba056d92630af377f859a04ad999365fd34\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.5.2",
-      "prerelease": false,
-      "publishedAt": "2026-09-11T20:33:00Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.2",
-      "version": "k8s-monitoring-4.5.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 386685432,
-      "name": "k8s-monitoring-3.8.13",
-      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/f9de664719e1ea4e98e9e7cd5cb64dd9b59594bd\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-3.8.13",
-      "prerelease": false,
-      "publishedAt": "2026-09-10T23:21:41Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-3.8.13",
-      "version": "k8s-monitoring-3.8.13"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 385699394,
-      "name": "k8s-monitoring-4.5.1",
-      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/3226b4e9f71fbfb7e0b6891fc8894b37e6394c17\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.5.1",
-      "prerelease": false,
-      "publishedAt": "2026-09-09T16:59:41Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.1",
-      "version": "k8s-monitoring-4.5.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 384908198,
-      "name": "pyroscope-2.3.1",
-      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/f9616ac9ca3045e1ac65c35349085ae9dfd0f148\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.3.1",
-      "prerelease": false,
-      "publishedAt": "2026-09-08T16:50:30Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.3.1",
-      "version": "pyroscope-2.3.1"
     }
   ],
   "schemaVersion": 1,

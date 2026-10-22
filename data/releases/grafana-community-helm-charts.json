@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-21T18:37:50.499Z",
+  "generatedAt": "2026-10-22T07:33:42.680Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 420122183,
+      "name": "tempo-3.2.1",
+      "notes": "Grafana Tempo Single Binary Mode\n\n## What's Changed\n* [tempo] Update docker.io/grafana/tempo Docker tag to v3.1.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/914\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-19.0.3...tempo-3.2.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T22:36:10Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-3.2.1",
+      "version": "tempo-3.2.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-15T08:18:38Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.16.0",
       "version": "loki-18.16.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 413561282,
-      "name": "grafana-13.7.0",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [CI] Update github-workflow dependency updates to v4.3.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/889\n* [grafana] Add imageRenderer.readinessProbe by @yalattas in https://github.com/grafana-community/helm-charts/pull/890\n\n## New Contributors\n* @yalattas made their first contribution in https://github.com/grafana-community/helm-charts/pull/890\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-3.2.0...grafana-13.7.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-15T08:11:19Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-13.7.0",
-      "version": "grafana-13.7.0"
     }
   ],
   "schemaVersion": 1,
