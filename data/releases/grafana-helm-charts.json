@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-10-23T07:30:30.469Z",
+  "generatedAt": "2026-10-23T18:20:22.236Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 422094314,
+      "name": "beyla-1.16.16",
+      "notes": "eBPF-based autoinstrumentation HTTP, HTTP2 and gRPC services, as well as network metrics.\n\nSource commit: https://github.com/grafana/beyla/commit/70a071e88c2de5a1133fa4fcc6c584f2b55868c5\n\nTag on source: https://github.com/grafana/beyla/releases/tag/beyla-1.16.16",
+      "prerelease": false,
+      "publishedAt": "2026-10-23T16:52:56Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.16",
+      "version": "beyla-1.16.16"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 422026283,
+      "name": "alloy-operator-0.9.3",
+      "notes": "Grafana Alloy Operator, providing innovative ways for creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/16bc3488bb68935dda8fa135c1376ce7e72d55d0\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.9.3",
+      "prerelease": false,
+      "publishedAt": "2026-10-23T15:49:05Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.9.3",
+      "version": "alloy-operator-0.9.3"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 421936866,
+      "name": "alloy-1.14.3",
+      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/3b2a3565546bd36592dc49ca28604ad187f0fb85\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.14.3",
+      "prerelease": false,
+      "publishedAt": "2026-10-23T14:24:54Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.3",
+      "version": "alloy-1.14.3"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-10-09T21:08:28Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.0",
       "version": "pyroscope-2.4.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 407198678,
-      "name": "cloudcost-exporter-1.1.15",
-      "notes": "Cloud Cost Exporter exports cloud provider agnostic cost metrics to Prometheus.\n\nSource commit: https://github.com/grafana/cloudcost-exporter/commit/b3c5fa1195d57c1bf519ecbac29e104fe61e9f33\n\nTag on source: https://github.com/grafana/cloudcost-exporter/releases/tag/cloudcost-exporter-1.1.15",
-      "prerelease": false,
-      "publishedAt": "2026-10-08T19:39:19Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.15",
-      "version": "cloudcost-exporter-1.1.15"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 407129008,
-      "name": "pyroscope-2.3.2",
-      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/a784291206e6546e144692c1886d523ffdb101bf\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.3.2",
-      "prerelease": false,
-      "publishedAt": "2026-10-08T18:12:52Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.3.2",
-      "version": "pyroscope-2.3.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 407104122,
-      "name": "alloy-1.13.1",
-      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/a200974d1e1423ceaa95bbf66f1b94461415b744\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.13.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-08T17:41:50Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.13.1",
-      "version": "alloy-1.13.1"
     }
   ],
   "schemaVersion": 1,
