@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-17T06:55:35.300Z",
+  "generatedAt": "2026-10-23T07:29:53.309Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 421316169,
+      "name": "v1.14.3",
+      "notes": "## Chores\n- bump go to 1.26.10 and golang.org/x/net to v0.60.0 (release-v1.14.x) (#3454) [#3454](https://github.com/kubernetes-sigs/karpenter/pull/3454) ([Derek Frank](https://github.com/kubernetes-sigs/karpenter/commit/181e5d4ec0b35b2078365ea4a0a488162106bc1a))\n- cherrypicks for v1.14.3 (#3462) [#3462](https://github.com/kubernetes-sigs/karpenter/pull/3462) ([Derek Frank](https://github.com/kubernetes-sigs/karpenter/commit/197bc729e6f3f9209233343b5962e8645deff5aa))",
+      "prerelease": false,
+      "publishedAt": "2026-10-23T00:00:42Z",
+      "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.3",
+      "version": "v1.14.3"
+    },
     {
       "channel": "stable",
       "draft": false,

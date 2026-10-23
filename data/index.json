@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T18:32:39.403Z",
+  "generatedAt": "2026-10-23T07:30:51.909Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -39,19 +39,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 415410554,
-        "name": "v1.14.2",
+        "id": 421316169,
+        "name": "v1.14.3",
         "prerelease": false,
-        "publishedAt": "2026-10-16T21:51:57Z",
-        "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.2",
-        "version": "v1.14.2"
+        "publishedAt": "2026-10-23T00:00:42Z",
+        "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.3",
+        "version": "v1.14.3"
       },
       "name": "Karpenter",
       "previous": {
-        "publishedAt": "2026-10-10T05:42:42Z",
-        "version": "v1.15.0"
+        "publishedAt": "2026-10-16T21:51:57Z",
+        "version": "v1.14.2"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "kubernetes-sigs/karpenter",
       "tags": [
         "kubernetes",
@@ -610,19 +610,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398973957,
-        "name": "v0.12.0",
+        "id": 421549149,
+        "name": "v0.12.1",
         "prerelease": false,
-        "publishedAt": "2026-09-29T09:02:00Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.12.0",
-        "version": "v0.12.0"
+        "publishedAt": "2026-10-23T07:20:30Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.12.1",
+        "version": "v0.12.1"
       },
       "name": "VictoriaTraces",
       "previous": {
-        "publishedAt": "2026-09-16T08:55:26Z",
-        "version": "v0.11.1"
+        "publishedAt": "2026-09-29T09:02:00Z",
+        "version": "v0.12.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "VictoriaMetrics/VictoriaTraces",
       "tags": [
         "traces"
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420987759,
-        "name": "alloy-operator-0.9.2",
+        "id": 421250752,
+        "name": "k8s-monitoring-4.5.4",
         "prerelease": false,
-        "publishedAt": "2026-10-22T17:09:35Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.9.2",
-        "version": "alloy-operator-0.9.2"
+        "publishedAt": "2026-10-22T22:07:39Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.4",
+        "version": "k8s-monitoring-4.5.4"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-22T15:54:36Z",
-        "version": "alloy-1.14.2"
+        "publishedAt": "2026-10-22T17:09:35Z",
+        "version": "alloy-operator-0.9.2"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420900888,
-        "name": "grafana-mcp-0.29.0",
+        "id": 421485361,
+        "name": "grafana-mcp-0.31.0",
         "prerelease": false,
-        "publishedAt": "2026-10-22T15:39:48Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.29.0",
-        "version": "grafana-mcp-0.29.0"
+        "publishedAt": "2026-10-23T05:36:07Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.31.0",
+        "version": "grafana-mcp-0.31.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-22T11:56:44Z",
-        "version": "synthetic-monitoring-agent-1.21.0"
+        "publishedAt": "2026-10-23T04:29:23Z",
+        "version": "grafana-mcp-0.30.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2683,19 +2683,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 412052528,
-        "name": "v0.39.1",
+        "id": 421137125,
+        "name": "v0.39.2",
         "prerelease": false,
-        "publishedAt": "2026-10-13T19:52:20Z",
-        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.39.1",
-        "version": "v0.39.1"
+        "publishedAt": "2026-10-22T19:52:34Z",
+        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.39.2",
+        "version": "v0.39.2"
       },
       "name": "agent-browser",
       "previous": {
-        "publishedAt": "2026-10-09T18:57:59Z",
-        "version": "v0.39.0"
+        "publishedAt": "2026-10-13T19:52:20Z",
+        "version": "v0.39.1"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "vercel-labs/agent-browser",
       "tags": [
         "ai",

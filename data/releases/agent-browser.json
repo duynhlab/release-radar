@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-20T01:59:20.003Z",
+  "generatedAt": "2026-10-23T07:30:51.901Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 421137125,
+      "name": "v0.39.2",
+      "notes": "### Bug Fixes\n\n- Fixed **paused network requests** being lost when the CDP event receiver falls behind, preventing requests from remaining stalled (#2110)\n- Fixed **domain-filtered redirects** so `open` reports an error when the main document redirects to a blocked host (#2114)\n- Fixed **Eve compatibility** with the current tool contract and sandbox execution model (#2157)\n- Fixed **browser launch arguments** so commas and negative coordinates inside flag values are preserved in `--args` and `AGENT_BROWSER_ARGS` (#2141)\n- Fixed **MCP argument validation** so undeclared keys return an error instead of silently selecting default behavior (#2175)\n- Fixed **click and double-click targeting** so hidden, disabled, and off-viewport elements return an error instead of reporting success (#2173)\n- Fixed **CDP attachment persistence** so follow-up commands retain the attached browser (#2155)\n- Fixed **stale element references** so ambiguous recovery fails instead of selecting another element (#2145)\n- Fixed **target and session invalidation** when related CDP events arrive in the same batch (#2176)\n- Fixed **policy loading failures** so unreadable or invalid policy files deny actions instead of continuing without the policy (#2179)\n\n### Testing\n\n- Made **native E2E fixtures** independent of live websites and installed the required Obscura binary for engine verification (#2113)\n\n### Contributors\n\n- @Railly\n- @lahfir\n- @cmpadden\n- @holny\n- @KimHyeongRae0\n- @jin-2-kakaoent\n- @asif786ka\n- @tlq5l\n- @aniketsaurav18\n- @jerryfane",
+      "prerelease": false,
+      "publishedAt": "2026-10-22T19:52:34Z",
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.39.2",
+      "version": "v0.39.2"
+    },
     {
       "channel": "stable",
       "draft": false,
