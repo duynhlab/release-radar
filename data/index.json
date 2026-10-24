@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T18:20:46.507Z",
+  "generatedAt": "2026-10-24T07:17:31.683Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -122,19 +122,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 417871328,
-        "name": "v0.7.23",
+        "id": 422288468,
+        "name": "v0.7.24",
         "prerelease": false,
-        "publishedAt": "2026-10-20T00:08:29Z",
-        "url": "https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/tag/v0.7.23",
-        "version": "v0.7.23"
+        "publishedAt": "2026-10-23T20:38:06Z",
+        "url": "https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/tag/v0.7.24",
+        "version": "v0.7.24"
       },
       "name": "AWS IAM Authenticator",
       "previous": {
-        "publishedAt": "2026-10-14T23:47:27Z",
-        "version": "v0.7.22"
+        "publishedAt": "2026-10-20T00:08:29Z",
+        "version": "v0.7.23"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "kubernetes-sigs/aws-iam-authenticator",
       "tags": [
         "kubernetes",
@@ -155,19 +155,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 390076917,
-        "name": "v1.20.4",
+        "id": 422266966,
+        "name": "v1.21.3",
         "prerelease": false,
-        "publishedAt": "2026-09-16T16:48:51Z",
-        "url": "https://github.com/cert-manager/cert-manager/releases/tag/v1.20.4",
-        "version": "v1.20.4"
+        "publishedAt": "2026-10-23T20:47:13Z",
+        "url": "https://github.com/cert-manager/cert-manager/releases/tag/v1.21.3",
+        "version": "v1.21.3"
       },
       "name": "cert-manager",
       "previous": {
-        "publishedAt": "2026-09-11T07:51:11Z",
-        "version": "v1.21.2"
+        "publishedAt": "2026-09-16T16:48:51Z",
+        "version": "v1.20.4"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "cert-manager/cert-manager",
       "tags": [
         "kubernetes",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 422094314,
-        "name": "beyla-1.16.16",
+        "id": 422355757,
+        "name": "k8s-monitoring-4.5.5",
         "prerelease": false,
-        "publishedAt": "2026-10-23T16:52:56Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.16",
-        "version": "beyla-1.16.16"
+        "publishedAt": "2026-10-23T22:13:54Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.5",
+        "version": "k8s-monitoring-4.5.5"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-23T15:49:05Z",
-        "version": "alloy-operator-0.9.3"
+        "publishedAt": "2026-10-23T16:52:56Z",
+        "version": "beyla-1.16.16"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 421485361,
-        "name": "grafana-mcp-0.31.0",
+        "id": 422576325,
+        "name": "loki-19.2.0",
         "prerelease": false,
-        "publishedAt": "2026-10-23T05:36:07Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.31.0",
-        "version": "grafana-mcp-0.31.0"
+        "publishedAt": "2026-10-24T07:08:44Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.2.0",
+        "version": "loki-19.2.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-23T04:29:23Z",
-        "version": "grafana-mcp-0.30.0"
+        "publishedAt": "2026-10-23T05:36:07Z",
+        "version": "grafana-mcp-0.31.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

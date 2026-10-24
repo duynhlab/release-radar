@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-23T18:20:22.236Z",
+  "generatedAt": "2026-10-24T07:17:09.802Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 422355757,
+      "name": "k8s-monitoring-4.5.5",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/720b8cd183bb890c84a28632d08ff1c4bbd9d83d\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.5.5",
+      "prerelease": false,
+      "publishedAt": "2026-10-23T22:13:54Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.5",
+      "version": "k8s-monitoring-4.5.5"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-13T16:24:10Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.16",
       "version": "cloudcost-exporter-1.1.16"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 408348168,
-      "name": "pyroscope-2.4.0",
-      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/2988a37b8abb2b6a830c9e21ce0e1ceee191e213\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.4.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-09T21:08:28Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.0",
-      "version": "pyroscope-2.4.0"
     }
   ],
   "schemaVersion": 1,

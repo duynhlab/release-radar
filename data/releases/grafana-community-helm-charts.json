@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-23T07:30:31.065Z",
+  "generatedAt": "2026-10-24T07:17:10.450Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 422576325,
+      "name": "loki-19.2.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [CI] Update docker/login-action action to v4.7.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/926\n* [loki] Add configurable memcached exporter port by @Alja9 in https://github.com/grafana-community/helm-charts/pull/927\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.31.0...loki-19.2.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-24T07:08:44Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.2.0",
+      "version": "loki-19.2.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-19T14:37:20Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.14.1",
       "version": "tempo-distributed-3.14.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 416043336,
-      "name": "loki-18.17.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update docker.io/rustfs/rustfs Docker tag to v1.0.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/904\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-18.17.0...loki-18.17.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-17T20:32:45Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-18.17.1",
-      "version": "loki-18.17.1"
     }
   ],
   "schemaVersion": 1,
