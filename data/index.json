@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T07:35:22.052Z",
+  "generatedAt": "2026-10-25T17:39:36.471Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -641,17 +641,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 414063726,
-        "name": "victoria-metrics-anomaly-1.12.20",
+        "id": 423439154,
+        "name": "victoria-metrics-k8s-stack-0.96.1",
         "prerelease": false,
-        "publishedAt": "2026-10-15T17:05:07Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-anomaly-1.12.20",
-        "version": "victoria-metrics-anomaly-1.12.20"
+        "publishedAt": "2026-10-25T14:01:38Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.96.1",
+        "version": "victoria-metrics-k8s-stack-0.96.1"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-12T13:27:09Z",
-        "version": "victoria-metrics-single-0.49.0"
+        "publishedAt": "2026-10-25T14:01:37Z",
+        "version": "victoria-metrics-estimator-0.2.1"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 423161788,
-        "name": "grafana-mcp-0.32.0",
+        "id": 423485732,
+        "name": "loki-20.0.0",
         "prerelease": false,
-        "publishedAt": "2026-10-25T05:12:04Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.32.0",
-        "version": "grafana-mcp-0.32.0"
+        "publishedAt": "2026-10-25T15:27:03Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.0.0",
+        "version": "loki-20.0.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-24T21:35:49Z",
-        "version": "loki-19.3.0"
+        "publishedAt": "2026-10-25T10:49:03Z",
+        "version": "loki-19.4.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
