@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T17:27:20.538Z",
+  "generatedAt": "2026-10-25T07:35:22.052Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -841,19 +841,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 418743304,
-        "name": "v3.6.1",
+        "id": 423045656,
+        "name": "v3.6.2",
         "prerelease": false,
-        "publishedAt": "2026-10-21T18:10:39Z",
-        "url": "https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.6.1",
-        "version": "v3.6.1"
+        "publishedAt": "2026-10-25T00:54:43Z",
+        "url": "https://github.com/kubernetes-sigs/aws-load-balancer-controller/releases/tag/v3.6.2",
+        "version": "v3.6.2"
       },
       "name": "AWS Load Balancer Controller",
       "previous": {
-        "publishedAt": "2026-10-05T20:21:13Z",
-        "version": "v3.6.0"
+        "publishedAt": "2026-10-21T18:10:39Z",
+        "version": "v3.6.1"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "kubernetes-sigs/aws-load-balancer-controller",
       "tags": [
         "aws",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 422702704,
-        "name": "loki-19.2.1",
+        "id": 423161788,
+        "name": "grafana-mcp-0.32.0",
         "prerelease": false,
-        "publishedAt": "2026-10-24T11:54:36Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.2.1",
-        "version": "loki-19.2.1"
+        "publishedAt": "2026-10-25T05:12:04Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.32.0",
+        "version": "grafana-mcp-0.32.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-24T07:08:44Z",
-        "version": "loki-19.2.0"
+        "publishedAt": "2026-10-24T21:35:49Z",
+        "version": "loki-19.3.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
