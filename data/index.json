@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T17:39:36.471Z",
+  "generatedAt": "2026-10-26T07:47:26.586Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -641,17 +641,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 423439154,
-        "name": "victoria-metrics-k8s-stack-0.96.1",
+        "id": 423960673,
+        "name": "victoria-traces-single-0.1.12",
         "prerelease": false,
-        "publishedAt": "2026-10-25T14:01:38Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.96.1",
-        "version": "victoria-metrics-k8s-stack-0.96.1"
+        "publishedAt": "2026-10-26T07:35:10Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-traces-single-0.1.12",
+        "version": "victoria-traces-single-0.1.12"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-25T14:01:37Z",
-        "version": "victoria-metrics-estimator-0.2.1"
+        "publishedAt": "2026-10-26T07:35:08Z",
+        "version": "victoria-traces-cluster-0.2.11"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -758,19 +758,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 398471021,
-        "name": "v1.8.5",
+        "id": 423929744,
+        "name": "v1.8.6",
         "prerelease": false,
-        "publishedAt": "2026-09-28T17:28:21Z",
-        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.8.5",
-        "version": "v1.8.5"
+        "publishedAt": "2026-10-26T06:47:49Z",
+        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.8.6",
+        "version": "v1.8.6"
       },
       "name": "Envoy Gateway",
       "previous": {
-        "publishedAt": "2026-09-28T17:14:42Z",
-        "version": "v1.9.2"
+        "publishedAt": "2026-09-28T17:28:21Z",
+        "version": "v1.8.5"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "envoyproxy/gateway",
       "tags": [
         "gateway",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 423485732,
-        "name": "loki-20.0.0",
+        "id": 423678102,
+        "name": "loki-20.0.1",
         "prerelease": false,
-        "publishedAt": "2026-10-25T15:27:03Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.0.0",
-        "version": "loki-20.0.0"
+        "publishedAt": "2026-10-25T21:39:22Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.0.1",
+        "version": "loki-20.0.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-25T10:49:03Z",
-        "version": "loki-19.4.0"
+        "publishedAt": "2026-10-25T15:27:03Z",
+        "version": "loki-20.0.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2117,19 +2117,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420673658,
-        "name": "sentry: v34.0.0",
+        "id": 423629299,
+        "name": "sentry: v34.1.0",
         "prerelease": false,
-        "publishedAt": "2026-10-22T12:07:10Z",
-        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v34.0.0",
-        "version": "sentry-v34.0.0"
+        "publishedAt": "2026-10-25T19:59:59Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v34.1.0",
+        "version": "sentry-v34.1.0"
       },
       "name": "Sentry Helm Charts",
       "previous": {
-        "publishedAt": "2026-08-24T09:20:19Z",
-        "version": "sentry-v33.8.0"
+        "publishedAt": "2026-10-22T12:07:10Z",
+        "version": "sentry-v34.0.0"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "sentry-kubernetes/charts",
       "tags": [
         "helm-chart",
@@ -2683,19 +2683,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 421137125,
-        "name": "v0.39.2",
+        "id": 423897735,
+        "name": "v0.39.4",
         "prerelease": false,
-        "publishedAt": "2026-10-22T19:52:34Z",
-        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.39.2",
-        "version": "v0.39.2"
+        "publishedAt": "2026-10-26T05:50:52Z",
+        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.39.4",
+        "version": "v0.39.4"
       },
       "name": "agent-browser",
       "previous": {
-        "publishedAt": "2026-10-13T19:52:20Z",
-        "version": "v0.39.1"
+        "publishedAt": "2026-10-26T01:37:06Z",
+        "version": "v0.39.3"
       },
-      "releaseCount": 11,
+      "releaseCount": 13,
       "repository": "vercel-labs/agent-browser",
       "tags": [
         "ai",

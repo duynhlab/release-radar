@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-22T18:32:25.591Z",
+  "generatedAt": "2026-10-26T07:47:14.325Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 423629299,
+      "name": "sentry: v34.1.0",
+      "notes": "## [34.1.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v34.0.0...sentry-v34.1.0) (2026-10-25)\n\n\n### Features\n\n* **charts/sentry/relay:** allow overriding resources for the configRender init container ([#2312](https://github.com/sentry-kubernetes/charts/issues/2312)) ([bff2535](https://github.com/sentry-kubernetes/charts/commit/bff25356e526506c3ab921de57435db72f249219))\n* **sentry:** add support for customizing the init container image in the external Kafka provisioning job ([#2311](https://github.com/sentry-kubernetes/charts/issues/2311)) ([7d48b15](https://github.com/sentry-kubernetes/charts/commit/7d48b154d050eb461963c28b5c85ae802354643d))",
+      "prerelease": false,
+      "publishedAt": "2026-10-25T19:59:59Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v34.1.0",
+      "version": "sentry-v34.1.0"
+    },
     {
       "channel": "stable",
       "draft": false,

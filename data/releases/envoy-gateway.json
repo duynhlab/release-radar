@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-29T08:28:36.776Z",
+  "generatedAt": "2026-10-26T07:46:47.444Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 423929744,
+      "name": "v1.8.6",
+      "notes": "# Release Announcement\r\n\r\nCheck out the [release announcement](https://gateway.envoyproxy.io/news/releases/notes/v1.8.6) to learn more about the release.",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T06:47:49Z",
+      "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.8.6",
+      "version": "v1.8.6"
+    },
     {
       "channel": "stable",
       "draft": false,

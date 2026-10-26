@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-25T17:39:17.237Z",
+  "generatedAt": "2026-10-26T07:47:05.706Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 423678102,
+      "name": "loki-20.0.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update docker.io/rustfs/rustfs Docker tag to v1.0.4 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/933\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.0.0...loki-20.0.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-25T21:39:22Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.0.1",
+      "version": "loki-20.0.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-21T17:03:00Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-vulture-0.14.1",
       "version": "tempo-vulture-0.14.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 419421203,
-      "name": "loki-19.0.2",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Let the StatefulSet recreate job get, list and watch the StatefulSet by @cwrau in https://github.com/grafana-community/helm-charts/pull/910\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-19.0.1...loki-19.0.2",
-      "prerelease": false,
-      "publishedAt": "2026-10-21T10:24:30Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.0.2",
-      "version": "loki-19.0.2"
     }
   ],
   "schemaVersion": 1,
