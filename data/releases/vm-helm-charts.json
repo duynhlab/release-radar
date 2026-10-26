@@ -1,6 +1,72 @@
 {
-  "generatedAt": "2026-10-26T07:46:44.588Z",
+  "generatedAt": "2026-10-26T19:56:35.908Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424341932,
+      "name": "victoria-metrics-single-0.50.0",
+      "notes": "# Release notes for version 0.50.0\n\n**Release date:** 26 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.155.0](https://img.shields.io/badge/v1.155.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11550)\n\n- bump version of VM components to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0)",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T14:19:23Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.50.0",
+      "version": "victoria-metrics-single-0.50.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424341896,
+      "name": "victoria-metrics-k8s-stack-0.97.0",
+      "notes": "# Release notes for version 0.97.0\n\n**Release date:** 26 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.155.0](https://img.shields.io/badge/v1.155.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11550) ![VM Operator: 0.68.1](https://img.shields.io/badge/VM_Operator-0.68.1-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230681)\n\n- bump version of VM components to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0)\n- strip the `@sha256:...` digest from `vlsingle.spec.image.tag`, `vlagent.spec.image.tag` and `vtsingle.spec.image.tag` before using it as the `app.kubernetes.io/version` label, since the API server rejects label values containing `@` or longer than 63 characters. See [#3303](https://github.com/VictoriaMetrics/helm-charts/issues/3303).\n- `kubelet.vmScrapes.resources.enabled` now defaults to `false`. `/metrics/resource` exposes the same metric names and labels as `/metrics/cadvisor` (e.g. `container_cpu_usage_seconds_total`, `container_memory_working_set_bytes`), so scraping both by default created duplicate series; the bundled rules and dashboards only depend on `/metrics/cadvisor`. Set `kubelet.vmScrapes.resources.enabled: true` to restore the previous behavior. See [#2315](https://github.com/VictoriaMetrics/helm-charts/issues/2315).",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T14:19:21Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.97.0",
+      "version": "victoria-metrics-k8s-stack-0.97.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424341856,
+      "name": "victoria-metrics-gateway-0.42.0",
+      "notes": "# Release notes for version 0.42.0\n\n**Release date:** 26 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.155.0](https://img.shields.io/badge/v1.155.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11550)\n\n- bump version of VM components to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0)\n- add `service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T14:19:19Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-gateway-0.42.0",
+      "version": "victoria-metrics-gateway-0.42.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424341815,
+      "name": "victoria-metrics-distributed-0.49.0",
+      "notes": "# Release notes for version 0.49.0\n\n**Release date:** 26 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.155.0](https://img.shields.io/badge/v1.155.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11550) ![VM Operator: 0.68.1](https://img.shields.io/badge/VM_Operator-0.68.1-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230681)\n\n- bump version of VM components to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0)",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T14:19:17Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-distributed-0.49.0",
+      "version": "victoria-metrics-distributed-0.49.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424341779,
+      "name": "victoria-metrics-cluster-0.54.0",
+      "notes": "# Release notes for version 0.54.0\n\n**Release date:** 26 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.155.0](https://img.shields.io/badge/v1.155.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11550)\n\n- bump version of VM components to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0)",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T14:19:15Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-cluster-0.54.0",
+      "version": "victoria-metrics-cluster-0.54.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424341752,
+      "name": "victoria-metrics-auth-0.45.0",
+      "notes": "# Release notes for version 0.45.0\n\n**Release date:** 26 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.155.0](https://img.shields.io/badge/v1.155.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11550)\n\n- bump version of VM components to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0)",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T14:19:13Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-auth-0.45.0",
+      "version": "victoria-metrics-auth-0.45.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -154,72 +220,6 @@
       "publishedAt": "2026-10-12T13:27:09Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.49.0",
       "version": "victoria-metrics-single-0.49.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 410630147,
-      "name": "victoria-metrics-k8s-stack-0.96.0",
-      "notes": "# Release notes for version 0.96.0\n\n**Release date:** 12 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.154.0](https://img.shields.io/badge/v1.154.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11540) ![VM Operator: 0.68.1](https://img.shields.io/badge/VM_Operator-0.68.1-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230681)\n\n- bump version of VM components to [v1.154.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.0)\n- BUGFIX: disable `kube-prometheus-general.rules` group by default. Regression from `v0.85.0` with VMRules installed by `sync-job`.  See [#3274](https://github.com/VictoriaMetrics/helm-charts/issues/3274).",
-      "prerelease": false,
-      "publishedAt": "2026-10-12T13:27:07Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.96.0",
-      "version": "victoria-metrics-k8s-stack-0.96.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 410630121,
-      "name": "victoria-metrics-gateway-0.41.0",
-      "notes": "# Release notes for version 0.41.0\n\n**Release date:** 12 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.154.0](https://img.shields.io/badge/v1.154.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11540)\n\n- bump version of VM components to [v1.154.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.0)\n- bump `victoria-metrics-common` dependency to `0.4.*`. Resource names are unchanged.",
-      "prerelease": false,
-      "publishedAt": "2026-10-12T13:27:06Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-gateway-0.41.0",
-      "version": "victoria-metrics-gateway-0.41.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 410630093,
-      "name": "victoria-metrics-distributed-0.48.0",
-      "notes": "# Release notes for version 0.48.0\n\n**Release date:** 12 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.154.0](https://img.shields.io/badge/v1.154.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11540) ![VM Operator: 0.68.1](https://img.shields.io/badge/VM_Operator-0.68.1-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230681)\n\n- bump version of VM components to [v1.154.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.0)\n- bump `victoria-metrics-common` dependency to `0.4.*`. Resource names are unchanged.\n- bump `victoria-metrics-k8s-stack` dependency from `0.72.*` to `0.95.*`, which is compatible with `victoria-metrics-common` `0.4.*`. Dashboards and default alerting rules of the bundled stack are now provisioned by its sync job instead of static `ConfigMap` and `VMRule` objects.",
-      "prerelease": false,
-      "publishedAt": "2026-10-12T13:27:04Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-distributed-0.48.0",
-      "version": "victoria-metrics-distributed-0.48.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 410630061,
-      "name": "victoria-metrics-cluster-0.53.0",
-      "notes": "# Release notes for version 0.53.0\n\n**Release date:** 12 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.154.0](https://img.shields.io/badge/v1.154.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11540)\n\n- bump version of VM components to [v1.154.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.0)\n- fix `vmselect.persistentVolume.volumeAttributesClassName` and `vmstorage.persistentVolume.volumeAttributesClassName` being ignored because of a typo in the template.\n- fix pod label selector in the chart notes: repeated `-l` flags were replaced with a single comma-separated selector, since `kubectl` only honours the last `-l`.",
-      "prerelease": false,
-      "publishedAt": "2026-10-12T13:27:03Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-cluster-0.53.0",
-      "version": "victoria-metrics-cluster-0.53.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 410630038,
-      "name": "victoria-metrics-auth-0.44.0",
-      "notes": "# Release notes for version 0.44.0\n\n**Release date:** 12 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.154.0](https://img.shields.io/badge/v1.154.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11540)\n\n- bump version of VM components to [v1.154.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.0)\n- bump `victoria-metrics-common` dependency to `0.4.*`. Resource names are unchanged.\n- add missing `serviceAccount.automountToken` value (default `true`), so `automountServiceAccountToken` is no longer rendered empty.\n- rename the config volume from `config` to `config-out` to match the VictoriaMetrics operator. Pods are restarted once on upgrade.",
-      "prerelease": false,
-      "publishedAt": "2026-10-12T13:27:01Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-auth-0.44.0",
-      "version": "victoria-metrics-auth-0.44.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 410629996,
-      "name": "victoria-metrics-anomaly-1.12.19",
-      "notes": "# Release notes for version 1.12.19\n\n**Release date:** 12 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.31.0](https://img.shields.io/badge/v1.31.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fanomaly-detection%2Fchangelog%2F%23v1310)\n\n- upgraded [`vmanomaly`](https://docs.victoriametrics.com/anomaly-detection/) to [1.31.0](https://docs.victoriametrics.com/anomaly-detection/changelog/#v1310)\n- rename the container from `model` to `vmanomaly`, matching the VictoriaMetrics operator. Pods are restarted once on upgrade.\n- fix `persistentVolume.name` in StatefulSet mode: the container mounted the default volume name instead of the overridden claim template name, which produced an invalid pod spec.\n- add the `monitoring-http` container port when `config.monitoring.pull` is enabled, matching the VictoriaMetrics operator.\n- fix `PodMonitor` scraping a non-existent `metrics` port: it now targets `monitoring-http`.",
-      "prerelease": false,
-      "publishedAt": "2026-10-12T13:26:59Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-anomaly-1.12.19",
-      "version": "victoria-metrics-anomaly-1.12.19"
     }
   ],
   "schemaVersion": 1,

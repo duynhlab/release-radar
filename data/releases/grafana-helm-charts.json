@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-10-24T07:17:09.802Z",
+  "generatedAt": "2026-10-26T19:56:58.557Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424301801,
+      "name": "pyroscope-2.4.2",
+      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/4ba0467a9810bf5a5248e06ff8b7ef79fa8fb1da\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.4.2",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T13:44:14Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.2",
+      "version": "pyroscope-2.4.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424296364,
+      "name": "mimir-distributed-6.1.1",
+      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/4f55f5b0e7a6d9c3347945d8a9fc9027b5134b86\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.1.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T13:39:08Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.1.1",
+      "version": "mimir-distributed-6.1.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424071666,
+      "name": "mimir-distributed-6.2.2",
+      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/7966f863acabfaba112f257fcb5d6841fe712ad2\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.2.2",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T09:47:40Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.2.2",
+      "version": "mimir-distributed-6.2.2"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-10-19T11:44:37Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.0",
       "version": "alloy-1.14.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 415237119,
-      "name": "rollout-operator-0.53.0",
-      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] update for v0.41.0 by @fionaliao in https://github.com/grafana/helm-charts/pull/4225\n\n## New Contributors\n* @fionaliao made their first contribution in https://github.com/grafana/helm-charts/pull/4225\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/alloy-1.13.0...rollout-operator-0.53.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-16T18:03:24Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.53.0",
-      "version": "rollout-operator-0.53.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 414207167,
-      "name": "helm-k6-operator-4.7.0",
-      "notes": "A Helm chart to install the k6-operator\n\nSource commit: https://github.com/grafana/k6-operator/commit/657f605a6fd16cd65efbd599615869485b85ea0c\n\nTag on source: https://github.com/grafana/k6-operator/releases/tag/helm-k6-operator-4.7.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-15T19:45:54Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/helm-k6-operator-4.7.0",
-      "version": "helm-k6-operator-4.7.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 411881928,
-      "name": "cloudcost-exporter-1.1.16",
-      "notes": "Cloud Cost Exporter exports cloud provider agnostic cost metrics to Prometheus.\n\nSource commit: https://github.com/grafana/cloudcost-exporter/commit/4a4d3c8d060eb4d3d694e28c907376977aeffcd0\n\nTag on source: https://github.com/grafana/cloudcost-exporter/releases/tag/cloudcost-exporter-1.1.16",
-      "prerelease": false,
-      "publishedAt": "2026-10-13T16:24:10Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.16",
-      "version": "cloudcost-exporter-1.1.16"
     }
   ],
   "schemaVersion": 1,

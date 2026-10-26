@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-02T17:54:31.559Z",
+  "generatedAt": "2026-10-26T19:57:02.431Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424176009,
+      "name": "v1.23.0",
+      "notes": "## Docker Image\n\n```\ndocker.io/scylladb/scylla-operator:1.23.0\n```\n\n## Changelog\n\nhttps://github.com/scylladb/scylla-operator/blob/master/CHANGELOG.md#1230",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T11:38:25Z",
+      "url": "https://github.com/scylladb/scylla-operator/releases/tag/v1.23.0",
+      "version": "v1.23.0"
+    },
     {
       "channel": "stable",
       "draft": false,

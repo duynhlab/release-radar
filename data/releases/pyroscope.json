@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-21T18:37:47.925Z",
+  "generatedAt": "2026-10-26T19:56:56.547Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424238450,
+      "name": "v2.4.2",
+      "notes": "## Changelog\n* 10a78e5ef038f8b97d6966bc76f1cf21bb5616ac chore(deps): bump github.com/andybalholm/brotli from v1.1.1 to v1.2.7 (#5933)\n\nAs always, feedback is more than welcome, feel free to open issues/discussions.\nYou can reach out to the team using:\n\n- [Slack](https://grafana.slack.com/archives/C049PLMV8TB)\n- [Github Discussions](https://github.com/grafana/pyroscope/discussions)\n- [Github Issues](https://github.com/grafana/pyroscope/issues)\n- [Mailing List](https://groups.google.com/g/pyroscope-team)\n\n## Docker Images\n\n- [grafana/pyroscope](https://hub.docker.com/r/grafana/pyroscope/tags)\n\n```bash\n  docker pull grafana/pyroscope:2.4.2\n```",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T12:43:48Z",
+      "url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.2",
+      "version": "v2.4.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424237548,
+      "name": "v2.3.4",
+      "notes": "## Changelog\n* 493570c7208097293de203a975c87a599c80e338 chore(deps): bump github.com/andybalholm/brotli from v1.1.1 to v1.2.7 (#5932)\n\nAs always, feedback is more than welcome, feel free to open issues/discussions.\nYou can reach out to the team using:\n\n- [Slack](https://grafana.slack.com/archives/C049PLMV8TB)\n- [Github Discussions](https://github.com/grafana/pyroscope/discussions)\n- [Github Issues](https://github.com/grafana/pyroscope/issues)\n- [Mailing List](https://groups.google.com/g/pyroscope-team)\n\n## Docker Images\n\n- [grafana/pyroscope](https://hub.docker.com/r/grafana/pyroscope/tags)\n\n```bash\n  docker pull grafana/pyroscope:2.3.4\n```",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T12:43:00Z",
+      "url": "https://github.com/grafana/pyroscope/releases/tag/v2.3.4",
+      "version": "v2.3.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-05-07T12:59:45Z",
       "url": "https://github.com/grafana/pyroscope/releases/tag/v2.0.2",
       "version": "v2.0.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 318925205,
-      "name": "v1.21.1",
-      "notes": "## Changelog\n* d6cb8c3db58edf6c0ea26daa1dd40d84f11a4ef0 Bump security deps for v1.21 (#5124)\n* e1db60e72cd7c290128fb1763b66c942baece407 fix: clone label values to prevent buffer reuse-after-free (#5116) (#5122)\n\nAs always, feedback is more than welcome, feel free to open issues/discussions.\nYou can reach out to the team using:\n\n- [Slack](https://grafana.slack.com/archives/C049PLMV8TB)\n- [Github Discussions](https://github.com/grafana/pyroscope/discussions)\n- [Github Issues](https://github.com/grafana/pyroscope/issues)\n- [Mailing List](https://groups.google.com/g/pyroscope-team)\n\n## Docker Images\n\n- [grafana/pyroscope](https://hub.docker.com/r/grafana/pyroscope/tags)\n\n```bash\n  docker pull docker.io/grafana/pyroscope:1.21.1\n```",
-      "prerelease": false,
-      "publishedAt": "2026-05-07T12:38:46Z",
-      "url": "https://github.com/grafana/pyroscope/releases/tag/v1.21.1",
-      "version": "v1.21.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 311128410,
-      "name": "v2.0.1",
-      "notes": "## Fixes\r\n* **goreleaser**: stamp `github.com/grafana/pyroscope/v2/pkg/util/build` in build ldflags so `pyroscope -version` and the `pyroscope_build_info` metric report `Version`, `Branch`, `Revision`, and `BuildDate` correctly. Restores the v2.0.0 regression where those fields were empty ([#5084](https://github.com/grafana/pyroscope/pull/5084))\r\n\r\n## Documentation\r\n* Add v2.0 release notes page ([#5083](https://github.com/grafana/pyroscope/pull/5083))\r\n\r\n## Changelog\r\n* cd861ccc13e2266a0f68682bf0f384b3ca45e9fe docs: add v2.0 release notes (#5083) (#5085)\r\n* 025f2c7a7dcdf741330e92b9eb8390c230241fc8 fix(goreleaser): stamp v2 module path in build ldflags (#5084) (#5086)\r\n\r\nAs always, feedback is more than welcome, feel free to open issues/discussions.\r\nYou can reach out to the team using:\r\n\r\n- [Slack](https://grafana.slack.com/archives/C049PLMV8TB)\r\n- [Github Discussions](https://github.com/grafana/pyroscope/discussions)\r\n- [Github Issues](https://github.com/grafana/pyroscope/issues)\r\n- [Mailing List](https://groups.google.com/g/pyroscope-team)\r\n\r\n## Docker Images\r\n\r\n- [grafana/pyroscope](https://hub.docker.com/r/grafana/pyroscope/tags)\r\n\r\n```bash\r\n  docker pull docker.io/grafana/pyroscope:2.0.1\r\n```",
-      "prerelease": false,
-      "publishedAt": "2026-04-20T11:02:12Z",
-      "url": "https://github.com/grafana/pyroscope/releases/tag/v2.0.1",
-      "version": "v2.0.1"
     }
   ],
   "schemaVersion": 1,

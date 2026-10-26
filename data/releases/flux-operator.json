@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-01T19:31:52.205Z",
+  "generatedAt": "2026-10-26T19:56:44.711Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424553358,
+      "name": "v0.62.0",
+      "notes": "## What's Changed\n* Enable multitenant impersonation for source-watcher by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1058\n* Log OIDC issuer URL on refresh errors by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1043\n* web: fix OIDC connections being reused by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1063\n* operator: improve workload identity docs by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1068\n* operator: add controller-level wid chart knobs to RSIP docs by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1070\n* build(deps-dev): bump vite from 8.2.1 to 8.3.4 in /web by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1075\n* web: Add nodes dashboard by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1062\n* [RFC-0014] operator: retire `ObjectLevelWorkloadIdentity` feature gate by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1078\n* Update to Kubernetes 1.37 by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1079\n* build(deps): bump the actions group across 1 directory with 8 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1077\n* web: Update to Preact 11 and Tailwind CSS 4 by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1080\n* [RFC-0014] operator: rename obj-lvl wid to object identity by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1081\n* Add Flux 2.10 compatibility by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1082\n* build(deps): bump the cli-tools group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1083\n* [RFC-0014] add support for mTLS with SPIFFE to `FluxInstance` and Flux Web UI by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1084\n* Release v0.62.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1085\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.61.0...v0.62.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T17:25:57Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.62.0",
+      "version": "v0.62.0"
+    },
     {
       "channel": "stable",
       "draft": false,
