@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T07:51:13.453Z",
+  "generatedAt": "2026-10-27T19:26:49.291Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -362,17 +362,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 411687403,
-        "name": "12.4.13",
+        "id": 425374188,
+        "name": "13.2.5",
         "prerelease": false,
-        "publishedAt": "2026-10-13T13:09:03Z",
-        "url": "https://github.com/grafana/grafana/releases/tag/v12.4.13",
-        "version": "v12.4.13"
+        "publishedAt": "2026-10-27T11:34:35Z",
+        "url": "https://github.com/grafana/grafana/releases/tag/v13.2.5",
+        "version": "v13.2.5"
       },
       "name": "Grafana",
       "previous": {
-        "publishedAt": "2026-10-13T13:01:57Z",
-        "version": "v13.1.8"
+        "publishedAt": "2026-10-27T11:24:50Z",
+        "version": "v13.0.12"
       },
       "releaseCount": 20,
       "repository": "grafana/grafana",
@@ -874,19 +874,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 387168855,
-        "name": "v0.25.0",
+        "id": 425406481,
+        "name": "v0.26.0",
         "prerelease": false,
-        "publishedAt": "2026-09-11T16:42:03Z",
-        "url": "https://github.com/cert-manager/trust-manager/releases/tag/v0.25.0",
-        "version": "v0.25.0"
+        "publishedAt": "2026-10-27T12:09:44Z",
+        "url": "https://github.com/cert-manager/trust-manager/releases/tag/v0.26.0",
+        "version": "v0.26.0"
       },
       "name": "trust-manager",
       "previous": {
-        "publishedAt": "2026-06-27T14:35:14Z",
-        "version": "v0.24.0"
+        "publishedAt": "2026-09-11T16:42:03Z",
+        "version": "v0.25.0"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "cert-manager/trust-manager",
       "tags": [
         "kubernetes",
@@ -1019,19 +1019,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424553358,
-        "name": "v0.62.0",
+        "id": 425648953,
+        "name": "v0.62.1",
         "prerelease": false,
-        "publishedAt": "2026-10-26T17:25:57Z",
-        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.62.0",
-        "version": "v0.62.0"
+        "publishedAt": "2026-10-27T15:35:48Z",
+        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.62.1",
+        "version": "v0.62.1"
       },
       "name": "Flux Operator",
       "previous": {
-        "publishedAt": "2026-10-01T11:42:49Z",
-        "version": "v0.61.0"
+        "publishedAt": "2026-10-26T17:25:57Z",
+        "version": "v0.62.0"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "controlplaneio-fluxcd/flux-operator",
       "tags": [
         "gitops",
@@ -1492,17 +1492,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424778986,
-        "name": "openbao-0.30.5",
+        "id": 425311360,
+        "name": "openbao-0.30.6",
         "prerelease": false,
-        "publishedAt": "2026-10-26T21:17:09Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.5",
-        "version": "openbao-0.30.5"
+        "publishedAt": "2026-10-27T10:34:11Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.6",
+        "version": "openbao-0.30.6"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-10-15T13:45:51Z",
-        "version": "openbao-0.30.4"
+        "publishedAt": "2026-10-26T21:17:09Z",
+        "version": "openbao-0.30.5"
       },
       "releaseCount": 20,
       "repository": "openbao/openbao-helm",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 425021037,
-        "name": "tempo-distributed-3.17.1",
+        "id": 425666048,
+        "name": "grafana-14.2.0",
         "prerelease": false,
-        "publishedAt": "2026-10-27T04:00:51Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.17.1",
-        "version": "tempo-distributed-3.17.1"
+        "publishedAt": "2026-10-27T15:49:38Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.2.0",
+        "version": "grafana-14.2.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-27T03:55:09Z",
-        "version": "synthetic-monitoring-agent-1.22.0"
+        "publishedAt": "2026-10-27T08:37:36Z",
+        "version": "loki-20.0.2"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1742,19 +1742,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 419571980,
-        "name": "loki v13.2.3",
+        "id": 425713246,
+        "name": "loki v13.2.4",
         "prerelease": false,
-        "publishedAt": "2026-10-21T13:08:58Z",
-        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.3",
-        "version": "v13.2.3"
+        "publishedAt": "2026-10-27T16:27:34Z",
+        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.4",
+        "version": "v13.2.4"
       },
       "name": "Loki Datasource",
       "previous": {
-        "publishedAt": "2026-10-08T18:36:43Z",
-        "version": "v13.2.2"
+        "publishedAt": "2026-10-21T13:08:58Z",
+        "version": "v13.2.3"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "grafana/grafana-loki-datasource",
       "tags": [
         "logs",
@@ -2243,17 +2243,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424159256,
-        "name": "2026.10.4",
+        "id": 425502117,
+        "name": "2026.10.5",
         "prerelease": false,
-        "publishedAt": "2026-10-26T11:19:58Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.4",
-        "version": "2026.10.4"
+        "publishedAt": "2026-10-27T13:31:37Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.5",
+        "version": "2026.10.5"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-10-21T13:17:53Z",
-        "version": "2026.10.3"
+        "publishedAt": "2026-10-26T11:19:58Z",
+        "version": "2026.10.4"
       },
       "releaseCount": 20,
       "repository": "cloudflare/cloudflared",

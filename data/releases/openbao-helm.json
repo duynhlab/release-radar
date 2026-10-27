@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-27T07:50:48.511Z",
+  "generatedAt": "2026-10-27T19:26:22.838Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 425311360,
+      "name": "openbao-0.30.6",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* fix(chart): add description field by @pree in https://github.com/openbao/openbao-helm/pull/263\n* chore: Bump Helm chart to 0.30.6 by @pree in https://github.com/openbao/openbao-helm/pull/264\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.30.5...openbao-0.30.6",
+      "prerelease": false,
+      "publishedAt": "2026-10-27T10:34:11Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.6",
+      "version": "openbao-0.30.6"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-05-13T11:31:18Z",
       "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.1",
       "version": "openbao-0.28.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 321607666,
-      "name": "openbao-0.28.0",
-      "notes": "Official OpenBao Chart\n\n## What's Changed\n* feat(server): template `extraContainers` and `extraInitContainers` by @pree in https://github.com/openbao/openbao-helm/pull/179\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.27.2...openbao-0.28.0",
-      "prerelease": false,
-      "publishedAt": "2026-05-13T06:02:41Z",
-      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.0",
-      "version": "openbao-0.28.0"
     }
   ],
   "schemaVersion": 1,

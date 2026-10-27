@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-21T18:37:51.264Z",
+  "generatedAt": "2026-10-27T19:26:28.121Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 425713246,
+      "name": "loki v13.2.4",
+      "notes": "## 13.2.4\n\n- Logline: read and expose stats when available ([#210](https://github.com/grafana/grafana-loki-datasource/pull/210))\n- Chore: Update node.js to v24.22.1 ([#194](https://github.com/grafana/grafana-loki-datasource/pull/194))\n- Chore: Dependency bump ([#216](https://github.com/grafana/grafana-loki-datasource/pull/216))",
+      "prerelease": false,
+      "publishedAt": "2026-10-27T16:27:34Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.4",
+      "version": "v13.2.4"
+    },
     {
       "channel": "stable",
       "draft": false,

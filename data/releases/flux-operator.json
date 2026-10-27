@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-26T19:56:44.711Z",
+  "generatedAt": "2026-10-27T19:26:13.081Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 425648953,
+      "name": "v0.62.1",
+      "notes": "## What's Changed\n* [RFC-0014] operator: fix operator SPIFFE ID by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1086\n* Release v0.62.1 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1087\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.62.0...v0.62.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-27T15:35:48Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.62.1",
+      "version": "v0.62.1"
+    },
     {
       "channel": "stable",
       "draft": false,
