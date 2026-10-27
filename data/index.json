@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T19:57:20.099Z",
+  "generatedAt": "2026-10-27T07:51:13.453Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -395,19 +395,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 419785351,
-        "name": "v0.163.2",
+        "id": 424887319,
+        "name": "v0.164.0",
         "prerelease": false,
-        "publishedAt": "2026-10-21T16:22:34Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.2",
-        "version": "v0.163.2"
+        "publishedAt": "2026-10-26T23:46:44Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.164.0",
+        "version": "v0.164.0"
       },
       "name": "OpenTelemetry Collector",
       "previous": {
-        "publishedAt": "2026-10-16T19:39:44Z",
-        "version": "v0.163.1"
+        "publishedAt": "2026-10-21T16:22:34Z",
+        "version": "v0.163.2"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "open-telemetry/opentelemetry-collector-releases",
       "tags": [
         "metrics",
@@ -641,17 +641,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424341932,
-        "name": "victoria-metrics-single-0.50.0",
+        "id": 424703277,
+        "name": "victoria-metrics-common-0.4.5",
         "prerelease": false,
-        "publishedAt": "2026-10-26T14:19:23Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.50.0",
-        "version": "victoria-metrics-single-0.50.0"
+        "publishedAt": "2026-10-26T20:02:39Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-common-0.4.5",
+        "version": "victoria-metrics-common-0.4.5"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-26T14:19:21Z",
-        "version": "victoria-metrics-k8s-stack-0.97.0"
+        "publishedAt": "2026-10-26T14:19:23Z",
+        "version": "victoria-metrics-single-0.50.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -1492,17 +1492,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 413864085,
-        "name": "openbao-0.30.4",
+        "id": 424778986,
+        "name": "openbao-0.30.5",
         "prerelease": false,
-        "publishedAt": "2026-10-15T13:45:51Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.4",
-        "version": "openbao-0.30.4"
+        "publishedAt": "2026-10-26T21:17:09Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.5",
+        "version": "openbao-0.30.5"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-10-08T20:13:25Z",
-        "version": "openbao-0.30.3"
+        "publishedAt": "2026-10-15T13:45:51Z",
+        "version": "openbao-0.30.4"
       },
       "releaseCount": 20,
       "repository": "openbao/openbao-helm",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424268058,
-        "name": "tempo-distributed-3.17.0",
+        "id": 425021037,
+        "name": "tempo-distributed-3.17.1",
         "prerelease": false,
-        "publishedAt": "2026-10-26T13:12:37Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.17.0",
-        "version": "tempo-distributed-3.17.0"
+        "publishedAt": "2026-10-27T04:00:51Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.17.1",
+        "version": "tempo-distributed-3.17.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-26T09:49:00Z",
-        "version": "grafana-14.1.0"
+        "publishedAt": "2026-10-27T03:55:09Z",
+        "version": "synthetic-monitoring-agent-1.22.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2213,19 +2213,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 366293813,
-        "name": "v0.16.5",
+        "id": 424731344,
+        "name": "v0.16.6",
         "prerelease": false,
-        "publishedAt": "2026-08-06T14:44:07Z",
-        "url": "https://github.com/flux-iac/tofu-controller/releases/tag/v0.16.5",
-        "version": "v0.16.5"
+        "publishedAt": "2026-10-26T20:26:20Z",
+        "url": "https://github.com/flux-iac/tofu-controller/releases/tag/v0.16.6",
+        "version": "v0.16.6"
       },
       "name": "Tofu Controller",
       "previous": {
-        "publishedAt": "2026-06-08T11:41:33Z",
-        "version": "v0.16.4"
+        "publishedAt": "2026-08-06T14:44:07Z",
+        "version": "v0.16.5"
       },
-      "releaseCount": 6,
+      "releaseCount": 7,
       "repository": "flux-iac/tofu-controller",
       "tags": [
         "terraform",
@@ -2561,19 +2561,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 403964084,
-        "name": "Release v0.21.0",
+        "id": 424788659,
+        "name": "Release v0.22.0",
         "prerelease": false,
-        "publishedAt": "2026-10-05T17:48:30Z",
-        "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.21.0",
-        "version": "v0.21.0"
+        "publishedAt": "2026-10-26T22:51:17Z",
+        "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.22.0",
+        "version": "v0.22.0"
       },
       "name": "bcvk",
       "previous": {
-        "publishedAt": "2026-08-24T22:28:41Z",
-        "version": "v0.19.0"
+        "publishedAt": "2026-10-05T17:48:30Z",
+        "version": "v0.21.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "bootc-dev/bcvk",
       "tags": [
         "containers",

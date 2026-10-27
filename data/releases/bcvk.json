@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-05T21:30:08.026Z",
+  "generatedAt": "2026-10-27T07:51:10.390Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 424788659,
+      "name": "Release v0.22.0",
+      "notes": "Release v0.22.0\r\n\r\n## Installation\r\n\r\nDownload the appropriate binary for your platform from the assets below.\r\n\r\n### Linux x86_64 (glibc)\r\n```bash\r\ncurl -LO https://github.com/bootc-dev/bcvk/releases/download/v0.22.0/bcvk-x86_64-unknown-linux-gnu.tar.gz\r\ntar xzf bcvk-x86_64-unknown-linux-gnu.tar.gz\r\nsudo mv bcvk-x86_64-unknown-linux-gnu /usr/local/bin/bcvk\r\n```\r\n\r\n\r\n## Checksums\r\n\r\nVerify the integrity of your download with the provided SHA256 checksums.\r\n\r\n## What's Changed\r\n* chore(deps): update rust by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/404\r\n* chore(deps): update rust by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/405\r\n* chore(deps): update dependency github/gh-aw to v0.92.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/401\r\n* chore(deps): update dependency oras-project/oras to v1.3.6 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/407\r\n* chore(deps): update rust by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/408\r\n* Parse uki files using minimal composefs-boot dependency by @alexlarsson in https://github.com/bootc-dev/bcvk/pull/397\r\n* chore(deps): update dependency github/gh-aw to v0.93.5 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/409\r\n* Release 0.22.0 by @bootc-bot[bot] in https://github.com/bootc-dev/bcvk/pull/410\r\n\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bcvk/compare/v0.21.0...v0.22.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-26T22:51:17Z",
+      "url": "https://github.com/bootc-dev/bcvk/releases/tag/v0.22.0",
+      "version": "v0.22.0"
+    },
     {
       "channel": "stable",
       "draft": false,
