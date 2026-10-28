@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-26T07:47:26.578Z",
+  "generatedAt": "2026-10-28T02:41:55.389Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 426007691,
+      "name": "v0.40.0",
+      "notes": "### Breaking Changes\n\n- **`@agent-browser/eve` now requires eve 0.84.0 or later.** eve 0.84.0 rejects extensions built by earlier releases, so the extension is now built with it. Apps on older eve should stay on `@agent-browser/eve@0.39` (#2226)\n\n### New Features\n\n- Added **one MCP server per Vercel Sandbox** with `startAgentBrowserMcp` in `@agent-browser/sandbox/vercel`, which keeps a single `agent-browser mcp` running over Sandbox stdin, and `connectAgentBrowserMcp` for any runtime that exposes stdin and stdout streams (#2228)\n- Added **`--omit-command`** to `batch` and `omitCommand` to the MCP batch tool, replacing repeated raw command arrays in JSON output with zero-based indexes (#2216)\n\n### Bug Fixes\n\n- Fixed **`state load` and launch-time storage restores** exposing saved tokens to page scripts and writing one origin's storage into another after a redirect; storage is now written through DevTools only while the page is on the saved origin, and skipped origins are reported (#2212)\n- Fixed **`<session>.config` files** piling up in the socket directory after daemons exit (#2128)\n- Fixed **mocked cross-origin responses** failing CORS: `network route --body` now takes `--allow-origin <origin>` (also in the MCP `network_route` tool) to answer preflights and send CORS headers to that origin, and sends a JSON body as `application/json` when no content type is set (#2229)\n- Fixed **Windows sessions** where a dead daemon could keep holding a pinned tab, and where two sessions with the same name in different socket directories could connect to each other's daemon (#2223)\n\n### Contributors\n\n- @OwenKephart\n- @Railly\n- @lahfir\n- @hichipli\n- @jomatsu",
+      "prerelease": false,
+      "publishedAt": "2026-10-27T21:32:17Z",
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.40.0",
+      "version": "v0.40.0"
+    },
     {
       "channel": "stable",
       "draft": false,

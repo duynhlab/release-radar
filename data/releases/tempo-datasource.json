@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-21T18:37:52.051Z",
+  "generatedAt": "2026-10-28T02:41:36.370Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 425994614,
+      "name": "tempo v13.4.1",
+      "notes": "## 13.4.1\n\n- Update backend dependencies ([#271](https://github.com/grafana/grafana-tempo-datasource/pull/271), [#287](https://github.com/grafana/grafana-tempo-datasource/pull/287))\n- Update node.js to v24.22.1 ([#285](https://github.com/grafana/grafana-tempo-datasource/pull/285))",
+      "prerelease": false,
+      "publishedAt": "2026-10-27T21:17:19Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.4.1",
+      "version": "v13.4.1"
+    },
     {
       "channel": "stable",
       "draft": false,
