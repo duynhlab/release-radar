@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T08:28:24.314Z",
+  "generatedAt": "2026-10-28T19:33:51.162Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -155,19 +155,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 422266966,
-        "name": "v1.21.3",
+        "id": 426501290,
+        "name": "v1.20.5",
         "prerelease": false,
-        "publishedAt": "2026-10-23T20:47:13Z",
-        "url": "https://github.com/cert-manager/cert-manager/releases/tag/v1.21.3",
-        "version": "v1.21.3"
+        "publishedAt": "2026-10-28T11:01:11Z",
+        "url": "https://github.com/cert-manager/cert-manager/releases/tag/v1.20.5",
+        "version": "v1.20.5"
       },
       "name": "cert-manager",
       "previous": {
-        "publishedAt": "2026-09-16T16:48:51Z",
-        "version": "v1.20.4"
+        "publishedAt": "2026-10-23T20:47:13Z",
+        "version": "v1.21.3"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "cert-manager/cert-manager",
       "tags": [
         "kubernetes",
@@ -184,19 +184,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420530746,
-        "name": "v1.16.7",
+        "id": 427012920,
+        "name": "v1.17.1",
         "prerelease": false,
-        "publishedAt": "2026-10-22T09:30:19Z",
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.7",
-        "version": "v1.16.7"
+        "publishedAt": "2026-10-28T18:02:22Z",
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.1",
+        "version": "v1.17.1"
       },
       "name": "Terraform",
       "previous": {
-        "publishedAt": "2026-10-21T17:32:54Z",
-        "version": "v1.17.0"
+        "publishedAt": "2026-10-22T09:30:19Z",
+        "version": "v1.16.7"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "hashicorp/terraform",
       "tags": [
         "iac"
@@ -641,17 +641,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424703277,
-        "name": "victoria-metrics-common-0.4.5",
+        "id": 427013903,
+        "name": "victoria-metrics-operator-crds-0.15.2",
         "prerelease": false,
-        "publishedAt": "2026-10-26T20:02:39Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-common-0.4.5",
-        "version": "victoria-metrics-common-0.4.5"
+        "publishedAt": "2026-10-28T18:03:20Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-crds-0.15.2",
+        "version": "victoria-metrics-operator-crds-0.15.2"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-26T14:19:23Z",
-        "version": "victoria-metrics-single-0.50.0"
+        "publishedAt": "2026-10-28T18:03:18Z",
+        "version": "victoria-metrics-operator-0.68.2"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424301801,
-        "name": "pyroscope-2.4.2",
+        "id": 427068636,
+        "name": "alloy-1.14.4",
         "prerelease": false,
-        "publishedAt": "2026-10-26T13:44:14Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.2",
-        "version": "pyroscope-2.4.2"
+        "publishedAt": "2026-10-28T18:56:58Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.4",
+        "version": "alloy-1.14.4"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-26T13:39:08Z",
-        "version": "mimir-distributed-6.1.1"
+        "publishedAt": "2026-10-26T13:44:14Z",
+        "version": "pyroscope-2.4.2"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1803,19 +1803,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420956921,
-        "name": "v4.23.2",
+        "id": 426946723,
+        "name": "v4.23.3",
         "prerelease": false,
-        "publishedAt": "2026-10-22T16:35:08Z",
-        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.2",
-        "version": "v4.23.2"
+        "publishedAt": "2026-10-28T16:57:23Z",
+        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.3",
+        "version": "v4.23.3"
       },
       "name": "ClickHouse Datasource",
       "previous": {
-        "publishedAt": "2026-10-21T15:02:56Z",
-        "version": "v4.23.1"
+        "publishedAt": "2026-10-22T16:35:08Z",
+        "version": "v4.23.2"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "grafana/clickhouse-datasource",
       "tags": [
         "clickhouse",
@@ -2531,19 +2531,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 405994347,
-        "name": "Release v1.17.1",
+        "id": 426652429,
+        "name": "Release v1.17.3",
         "prerelease": false,
-        "publishedAt": "2026-10-07T17:34:37Z",
-        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.17.1",
-        "version": "v1.17.1"
+        "publishedAt": "2026-10-28T13:25:09Z",
+        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.17.3",
+        "version": "v1.17.3"
       },
       "name": "bootc",
       "previous": {
-        "publishedAt": "2026-10-06T18:15:02Z",
-        "version": "v1.17.0"
+        "publishedAt": "2026-10-07T17:34:37Z",
+        "version": "v1.17.1"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "bootc-dev/bootc",
       "tags": [
         "containers",

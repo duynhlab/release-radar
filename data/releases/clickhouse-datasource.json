@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-22T18:32:18.577Z",
+  "generatedAt": "2026-10-28T19:33:29.982Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 426946723,
+      "name": "v4.23.3",
+      "notes": "## [4.23.3](https://github.com/grafana/clickhouse-datasource/compare/v4.23.2...v4.23.3) (2026-10-28)\n\n\n### 🐛 Bug Fixes\n\n* **driver:** close the connection pool and keep the cause when connect fails ([#2234](https://github.com/grafana/clickhouse-datasource/issues/2234)) ([9ad3679](https://github.com/grafana/clickhouse-datasource/commit/9ad367949bc5c0c3850dcd338ca5f9e54d7aa62e))\n* **http:** name the FORMAT clause or HTML page behind \"block decode\" errors ([#2242](https://github.com/grafana/clickhouse-datasource/issues/2242)) ([1ac0318](https://github.com/grafana/clickhouse-datasource/commit/1ac0318eb0ad337ef92aba129f1983e8eddfc36f))\n* **logs:** count the same rows in the builder logs volume as in the logs query ([#2236](https://github.com/grafana/clickhouse-datasource/issues/2236)) ([bb8280a](https://github.com/grafana/clickhouse-datasource/commit/bb8280a0071115865075d9e36e561f4adbef7b41))\n* **logs:** show level and other fields in log details for Columns and labels maps ([#2232](https://github.com/grafana/clickhouse-datasource/issues/2232)) ([07bce6d](https://github.com/grafana/clickhouse-datasource/commit/07bce6d0edf9281770be693810dd52409b3655a0))\n* **query-builder:** keep the query when changing type, database or table ([#2200](https://github.com/grafana/clickhouse-datasource/issues/2200)) ([6f89eb3](https://github.com/grafana/clickhouse-datasource/commit/6f89eb367a593ed4a02f9739b7445b2082e7341d))\n\n\n### ✅ Tests\n\n* **e2e:** bump @grafana/plugin-e2e to 3.12.0 ([#2261](https://github.com/grafana/clickhouse-datasource/issues/2261)) ([3c20297](https://github.com/grafana/clickhouse-datasource/commit/3c202971c0e1618d5a2d80a27ef536f342751191))",
+      "prerelease": false,
+      "publishedAt": "2026-10-28T16:57:23Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.3",
+      "version": "v4.23.3"
+    },
     {
       "channel": "stable",
       "draft": false,

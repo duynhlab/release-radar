@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-22T18:31:35.753Z",
+  "generatedAt": "2026-10-28T19:32:49.874Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 427012920,
+      "name": "v1.17.1",
+      "notes": "## 1.17.1 (October 28, 2026)\n\n\nBUG FIXES:\n\n* fmt: The original content of a file is now preserved if Terraform experiences an error writing to the original file. ([#39303](https://github.com/hashicorp/terraform/issues/39303))\n\n* Always evaluate module policies during destroy plan ([#39455](https://github.com/hashicorp/terraform/issues/39455))\n\n* stacks: report every policy result for a replaced resource instead of only one of them ([#39453](https://github.com/hashicorp/terraform/issues/39453))",
+      "prerelease": false,
+      "publishedAt": "2026-10-28T18:02:22Z",
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.1",
+      "version": "v1.17.1"
+    },
     {
       "channel": "stable",
       "draft": false,

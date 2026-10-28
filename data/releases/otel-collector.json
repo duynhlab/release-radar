@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-27T07:50:26.024Z",
+  "generatedAt": "2026-10-28T19:32:57.386Z",
   "releases": [
     {
       "channel": "stable",
       "draft": false,
       "id": 424887319,
       "name": "v0.164.0",
-      "notes": "Check the [v0.164.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.164.0) and the [v0.164.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.164.0) for changelogs on specific components.\r\n\r\n\r\n## Changelog\r\n\r\n### 🚀 New components 🚀\r\n\r\n- `otelcol-contrib`: Add the partitioning processor to the Contrib distribution (#1727)\r\n\r\n### 💡 Enhancements 💡\r\n\r\n- `otelcol`: Add the `filelog` receiver, `resourcedetection` processor and `transform` processor to the core distribution. (#44130)\r\n  These Contrib components are priorities for stabilization.\r\n  See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/44130.\r\n  \r\n\r\n### 🧰 Bug fixes 🧰\r\n\r\n- `all`: Build release binaries with Go 1.26.10 and require Alpine `ca-certificates` 20261020-r0 or later in container images. (#1722)\r\n  Go 1.26.10 includes the `crypto/x509` security fixes released on 2026-10-19.\r\n  The updated CA bundle removes the distrusted eMudhra emSign roots, including `emSign ECC Root CA - G3`.",
+      "notes": "Check the [v0.164.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.164.0) and the [v0.164.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.164.0) for changelogs on specific components.\r\n\r\n\r\n## Changelog\r\n\r\n### 🚀 New components 🚀\r\n\r\n- `otelcol-contrib`: Add the partitioning processor to the Contrib distribution (#1727)\r\n\r\n### 💡 Enhancements 💡\r\n\r\n- `otelcol`: Add the `file_log` receiver, `resource_detection` processor and `transform` processor to the core distribution. (#44130)\r\n  These Contrib components are priorities for stabilization.\r\n  See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/44130.\r\n  \r\n\r\n### 🧰 Bug fixes 🧰\r\n\r\n- `all`: Build release binaries with Go 1.26.10 and require Alpine `ca-certificates` 20261020-r0 or later in container images. (#1722)\r\n  Go 1.26.10 includes the `crypto/x509` security fixes released on 2026-10-19.\r\n  The updated CA bundle removes the distrusted eMudhra emSign roots, including `emSign ECC Root CA - G3`.",
       "prerelease": false,
       "publishedAt": "2026-10-26T23:46:44Z",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.164.0",

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-26T19:56:58.557Z",
+  "generatedAt": "2026-10-28T19:33:27.389Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 427068636,
+      "name": "alloy-1.14.4",
+      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/192cd6e37327aecb51ec697f2c9dceeda3bfb953\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.14.4",
+      "prerelease": false,
+      "publishedAt": "2026-10-28T18:56:58Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.4",
+      "version": "alloy-1.14.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-21T09:09:18Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.15",
       "version": "beyla-1.16.15"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 417226734,
-      "name": "alloy-1.14.0",
-      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/1fd0188b6795e47c1618176eb60a35bc196f10da\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.14.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-19T11:44:37Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.0",
-      "version": "alloy-1.14.0"
     }
   ],
   "schemaVersion": 1,
