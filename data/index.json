@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T19:33:51.162Z",
+  "generatedAt": "2026-10-29T08:28:22.416Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -2117,17 +2117,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 423629299,
-        "name": "sentry: v34.1.0",
+        "id": 427548058,
+        "name": "sentry: v34.1.1",
         "prerelease": false,
-        "publishedAt": "2026-10-25T19:59:59Z",
-        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v34.1.0",
-        "version": "sentry-v34.1.0"
+        "publishedAt": "2026-10-29T06:56:37Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v34.1.1",
+        "version": "sentry-v34.1.1"
       },
       "name": "Sentry Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-22T12:07:10Z",
-        "version": "sentry-v34.0.0"
+        "publishedAt": "2026-10-25T19:59:59Z",
+        "version": "sentry-v34.1.0"
       },
       "releaseCount": 20,
       "repository": "sentry-kubernetes/charts",
@@ -2683,19 +2683,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 426007691,
-        "name": "v0.40.0",
+        "id": 427413976,
+        "name": "v0.41.0",
         "prerelease": false,
-        "publishedAt": "2026-10-27T21:32:17Z",
-        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.40.0",
-        "version": "v0.40.0"
+        "publishedAt": "2026-10-29T02:52:55Z",
+        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.41.0",
+        "version": "v0.41.0"
       },
       "name": "agent-browser",
       "previous": {
-        "publishedAt": "2026-10-26T05:50:52Z",
-        "version": "v0.39.4"
+        "publishedAt": "2026-10-27T21:32:17Z",
+        "version": "v0.40.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "vercel-labs/agent-browser",
       "tags": [
         "ai",
