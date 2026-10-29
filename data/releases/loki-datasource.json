@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-27T19:26:28.121Z",
+  "generatedAt": "2026-10-29T19:37:57.577Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 428283512,
+      "name": "loki v13.2.5",
+      "notes": "## 13.2.5\n\n- Fix security vulnerabilities (CVE-2026-78669, CVE-2026-78660, CVE-2026-78659) in `golang.org/x/net`",
+      "prerelease": false,
+      "publishedAt": "2026-10-29T19:04:34Z",
+      "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.5",
+      "version": "v13.2.5"
+    },
     {
       "channel": "stable",
       "draft": false,

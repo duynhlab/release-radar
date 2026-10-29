@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T08:28:22.416Z",
+  "generatedAt": "2026-10-29T19:38:18.805Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -68,19 +68,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420677087,
-        "name": "v0.20.3",
+        "id": 427821214,
+        "name": "v0.20.4",
         "prerelease": false,
-        "publishedAt": "2026-10-22T12:58:39Z",
-        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.3",
-        "version": "v0.20.3"
+        "publishedAt": "2026-10-29T13:20:20Z",
+        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.4",
+        "version": "v0.20.4"
       },
       "name": "Kueue",
       "previous": {
-        "publishedAt": "2026-10-22T11:44:39Z",
-        "version": "v0.19.10"
+        "publishedAt": "2026-10-29T12:15:43Z",
+        "version": "v0.19.11"
       },
-      "releaseCount": 16,
+      "releaseCount": 18,
       "repository": "kubernetes-sigs/kueue",
       "tags": [
         "kubernetes",
@@ -481,17 +481,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 422000348,
-        "name": "v0.98.2",
+        "id": 428115031,
+        "name": "v0.99.0",
         "prerelease": false,
-        "publishedAt": "2026-10-23T15:23:33Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.98.2",
-        "version": "v0.98.2"
+        "publishedAt": "2026-10-29T16:25:08Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.99.0",
+        "version": "v0.99.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-10-09T12:16:09Z",
-        "version": "v0.98.1"
+        "publishedAt": "2026-10-23T15:23:33Z",
+        "version": "v0.98.2"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
@@ -814,19 +814,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 405119601,
-        "name": "v1.6.3",
+        "id": 428217969,
+        "name": "v1.7.0",
         "prerelease": false,
-        "publishedAt": "2026-10-06T20:35:29Z",
-        "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.3",
-        "version": "v1.6.3"
+        "publishedAt": "2026-10-29T18:19:26Z",
+        "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0",
+        "version": "v1.7.0"
       },
       "name": "Gateway API",
       "previous": {
-        "publishedAt": "2026-09-03T18:49:15Z",
-        "version": "v1.6.2"
+        "publishedAt": "2026-10-06T20:35:29Z",
+        "version": "v1.6.3"
       },
-      "releaseCount": 6,
+      "releaseCount": 7,
       "repository": "kubernetes-sigs/gateway-api",
       "tags": [
         "kubernetes",
@@ -1436,19 +1436,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 417602501,
-        "name": "vector-0.60.0",
+        "id": 428167563,
+        "name": "vector-0.61.0",
         "prerelease": false,
-        "publishedAt": "2026-10-19T18:19:26Z",
-        "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.60.0",
-        "version": "vector-0.60.0"
+        "publishedAt": "2026-10-29T17:12:11Z",
+        "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.61.0",
+        "version": "vector-0.61.0"
       },
       "name": "Vector Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-06T15:04:49Z",
-        "version": "vector-0.59.0"
+        "publishedAt": "2026-10-19T18:19:26Z",
+        "version": "vector-0.60.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "vectordotdev/helm-charts",
       "tags": [
         "logs",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 427068636,
-        "name": "alloy-1.14.4",
+        "id": 428172838,
+        "name": "beyla-1.16.17",
         "prerelease": false,
-        "publishedAt": "2026-10-28T18:56:58Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.4",
-        "version": "alloy-1.14.4"
+        "publishedAt": "2026-10-29T17:17:26Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.17",
+        "version": "beyla-1.16.17"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-26T13:44:14Z",
-        "version": "pyroscope-2.4.2"
+        "publishedAt": "2026-10-29T17:12:19Z",
+        "version": "alloy-operator-0.9.4"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 425666048,
-        "name": "grafana-14.2.0",
+        "id": 427784605,
+        "name": "loki-20.0.3",
         "prerelease": false,
-        "publishedAt": "2026-10-27T15:49:38Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.2.0",
-        "version": "grafana-14.2.0"
+        "publishedAt": "2026-10-29T11:33:46Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.0.3",
+        "version": "loki-20.0.3"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-27T08:37:36Z",
-        "version": "loki-20.0.2"
+        "publishedAt": "2026-10-27T15:49:38Z",
+        "version": "grafana-14.2.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1742,19 +1742,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 425713246,
-        "name": "loki v13.2.4",
+        "id": 428283512,
+        "name": "loki v13.2.5",
         "prerelease": false,
-        "publishedAt": "2026-10-27T16:27:34Z",
-        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.4",
-        "version": "v13.2.4"
+        "publishedAt": "2026-10-29T19:04:34Z",
+        "url": "https://github.com/grafana/grafana-loki-datasource/releases/tag/v13.2.5",
+        "version": "v13.2.5"
       },
       "name": "Loki Datasource",
       "previous": {
-        "publishedAt": "2026-10-21T13:08:58Z",
-        "version": "v13.2.3"
+        "publishedAt": "2026-10-27T16:27:34Z",
+        "version": "v13.2.4"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "grafana/grafana-loki-datasource",
       "tags": [
         "logs",
@@ -2117,17 +2117,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 427548058,
-        "name": "sentry: v34.1.1",
+        "id": 427665676,
+        "name": "sentry: v35.0.0",
         "prerelease": false,
-        "publishedAt": "2026-10-29T06:56:37Z",
-        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v34.1.1",
-        "version": "sentry-v34.1.1"
+        "publishedAt": "2026-10-29T09:27:50Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v35.0.0",
+        "version": "sentry-v35.0.0"
       },
       "name": "Sentry Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-25T19:59:59Z",
-        "version": "sentry-v34.1.0"
+        "publishedAt": "2026-10-29T06:56:37Z",
+        "version": "sentry-v34.1.1"
       },
       "releaseCount": 20,
       "repository": "sentry-kubernetes/charts",
@@ -2243,17 +2243,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 425502117,
-        "name": "2026.10.5",
+        "id": 427827811,
+        "name": "2026.10.6",
         "prerelease": false,
-        "publishedAt": "2026-10-27T13:31:37Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.5",
-        "version": "2026.10.5"
+        "publishedAt": "2026-10-29T12:18:25Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.6",
+        "version": "2026.10.6"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-10-26T11:19:58Z",
-        "version": "2026.10.4"
+        "publishedAt": "2026-10-27T13:31:37Z",
+        "version": "2026.10.5"
       },
       "releaseCount": 20,
       "repository": "cloudflare/cloudflared",

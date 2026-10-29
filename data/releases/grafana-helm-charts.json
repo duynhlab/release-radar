@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-28T19:33:27.389Z",
+  "generatedAt": "2026-10-29T19:37:56.301Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 428172838,
+      "name": "beyla-1.16.17",
+      "notes": "eBPF-based autoinstrumentation HTTP, HTTP2 and gRPC services, as well as network metrics.\n\nSource commit: https://github.com/grafana/beyla/commit/cf11e42ac6b0db08bed98b54018d4e92e1bd7951\n\nTag on source: https://github.com/grafana/beyla/releases/tag/beyla-1.16.17",
+      "prerelease": false,
+      "publishedAt": "2026-10-29T17:17:26Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.17",
+      "version": "beyla-1.16.17"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 428167662,
+      "name": "alloy-operator-0.9.4",
+      "notes": "Grafana Alloy Operator, providing innovative ways for creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/1bfc7b0d54db71c82664ea44525e3889847b51f8\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.9.4",
+      "prerelease": false,
+      "publishedAt": "2026-10-29T17:12:19Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.9.4",
+      "version": "alloy-operator-0.9.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-10-21T15:42:02Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.17",
       "version": "cloudcost-exporter-1.1.17"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 419717347,
-      "name": "rollout-operator-0.53.1",
-      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] Update to v0.41.1 by @julienduchesne in https://github.com/grafana/helm-charts/pull/4226\n\n## New Contributors\n* @julienduchesne made their first contribution in https://github.com/grafana/helm-charts/pull/4226\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/alloy-1.14.0...rollout-operator-0.53.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-21T15:23:13Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.53.1",
-      "version": "rollout-operator-0.53.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 419354216,
-      "name": "beyla-1.16.15",
-      "notes": "eBPF-based autoinstrumentation HTTP, HTTP2 and gRPC services, as well as network metrics.\n\nSource commit: https://github.com/grafana/beyla/commit/62dae976afcbd13fe5c06a9473e995b82661b511\n\nTag on source: https://github.com/grafana/beyla/releases/tag/beyla-1.16.15",
-      "prerelease": false,
-      "publishedAt": "2026-10-21T09:09:18Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.15",
-      "version": "beyla-1.16.15"
     }
   ],
   "schemaVersion": 1,

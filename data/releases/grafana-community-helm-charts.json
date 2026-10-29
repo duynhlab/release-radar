@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-27T19:26:27.379Z",
+  "generatedAt": "2026-10-29T19:37:56.885Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 427784605,
+      "name": "loki-20.0.3",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [CI] Update helm/chart-releaser-action action to v1.8.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/938\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.3.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/939\n* [loki] Only advertise memberlist seed nodes in the memberlist Service by @jkroepke in https://github.com/grafana-community/helm-charts/pull/941\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.0.2...loki-20.0.3",
+      "prerelease": false,
+      "publishedAt": "2026-10-29T11:33:46Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.0.3",
+      "version": "loki-20.0.3"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-22T19:17:09Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.16.0",
       "version": "tempo-distributed-3.16.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 420900888,
-      "name": "grafana-mcp-0.29.0",
-      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana-mcp] Add serverAuth to set MCP_GRAFANA_SERVER_TOKEN by @seleznev in https://github.com/grafana-community/helm-charts/pull/900\n\n## New Contributors\n* @seleznev made their first contribution in https://github.com/grafana-community/helm-charts/pull/900\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/synthetic-monitoring-agent-1.21.0...grafana-mcp-0.29.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-22T15:39:48Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.29.0",
-      "version": "grafana-mcp-0.29.0"
     }
   ],
   "schemaVersion": 1,
