@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-30T08:38:30.777Z",
+  "generatedAt": "2026-10-30T19:20:42.118Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 428821514,
+      "name": "loki-20.2.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] add gateway API ListenerSet support for routes in Loki chart by @rgarcia89 in https://github.com/grafana-community/helm-charts/pull/946\n\n## New Contributors\n* @rgarcia89 made their first contribution in https://github.com/grafana-community/helm-charts/pull/946\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.1.0...loki-20.2.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-30T08:59:09Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.2.0",
+      "version": "loki-20.2.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-22T22:40:28Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.1.1",
       "version": "loki-19.1.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 421111027,
-      "name": "loki-19.1.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update docker.io/prom/memcached-exporter Docker tag to v0.18.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/920\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.16.0...loki-19.1.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-22T19:24:06Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.1.0",
-      "version": "loki-19.1.0"
     }
   ],
   "schemaVersion": 1,

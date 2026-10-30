@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-29T19:37:56.301Z",
+  "generatedAt": "2026-10-30T19:20:41.487Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 429188541,
+      "name": "k8s-monitoring-4.6.0",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/6c8d01e00b13542323d9ca01cb50ab149e0c2b0b\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.6.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-30T15:25:42Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.6.0",
+      "version": "k8s-monitoring-4.6.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-21T19:15:48Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.1",
       "version": "pyroscope-2.4.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 419744196,
-      "name": "cloudcost-exporter-1.1.17",
-      "notes": "Cloud Cost Exporter exports cloud provider agnostic cost metrics to Prometheus.\n\nSource commit: https://github.com/grafana/cloudcost-exporter/commit/749274f98eda948a8a58c46965473419238cb4fe\n\nTag on source: https://github.com/grafana/cloudcost-exporter/releases/tag/cloudcost-exporter-1.1.17",
-      "prerelease": false,
-      "publishedAt": "2026-10-21T15:42:02Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.17",
-      "version": "cloudcost-exporter-1.1.17"
     }
   ],
   "schemaVersion": 1,

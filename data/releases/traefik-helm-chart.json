@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-22T18:31:44.161Z",
+  "generatedAt": "2026-10-30T19:20:11.371Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 429054438,
+      "name": "v42.2.0",
+      "notes": "# [v42.2.0](https://github.com/traefik/traefik-helm-chart/compare/v42.1.3...v42.2.0) (2026-10-30)\n\n## :rocket: Features\n\n- feat(deps): update ghcr.io/traefik/hub-manager docker tag to v0.46.1 #2057 by @renovate-with-github-actions[bot]\n- feat(hub): :rocket: support traefik hub v3.20.20 and v3.21.7 #2061 by @darkweaver87\n- feat(hub): :sparkles: add ec2 sessionToken value #2062 by @darkweaver87\n- feat(ports): :sparkles: add http.maxHeaderValueCount value #2063 by @darkweaver87\n- feat(global): :sparkles: add aliasHeadersStrategy value #2064 by @darkweaver87\n\n## :package: Others\n\n- docs(examples): bump the Traefik MCP server sidecar to v0.3.1 #2055 by @emilevauge\n- chore(deps): update renovatebot/github-action action to v46.3.10 #2056 by @renovate-with-github-actions[bot]\n- chore(release): 🚀 publish v42.2.0 #2065 by @bpsoraggi\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.16 (default)\n* Traefik Hub: v3.19.3 -> v3.21.7",
+      "prerelease": false,
+      "publishedAt": "2026-10-30T13:16:34Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.2.0",
+      "version": "v42.2.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-09T07:20:34Z",
       "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v40.3.0",
       "version": "v40.3.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 321877304,
-      "name": "v40.2.0",
-      "notes": "# [v40.2.0](https://github.com/traefik/traefik-helm-chart/compare/v40.1.0...v40.2.0) (2026-05-13)\r\n\r\n**Upgrade guide**\r\n\r\n> [!IMPORTANT]\r\n> This release is the first release without Gateway API v1.5.1 CRDs. The reason why it has been removed is detailed in [#1169](https://github.com/traefik/traefik-helm-chart/issues/1669). \r\n> See [UPGRADING](https://github.com/traefik/traefik-helm-chart?tab=readme-ov-file#upgrading) instructions and upstream [migration guide](https://doc.traefik.io/traefik/v3.7/migrate/v3/#v371).\r\n\r\n## :rocket: Features\r\n\r\n- feat(provider): :sparkles: support crossProviderNamespaces on kubernetes providers #1851 by @darkweaver87\r\n- feat(hub): :rocket: support traefik hub v3.20.2 #1853 by @darkweaver87\r\n\r\n## :bug: Bug fixes\r\n\r\n- fix: remove Gateway API CRDs #1850 by @mloiseleur\r\n\r\n## :package: Others\r\n\r\n- docs: add CLAUDE.md #1849 by @mloiseleur\r\n- docs: switch CLAUDE.md to wider AGENTS.md #1852 by @mloiseleur\r\n- chore(release): 🚀 publish 40.2.0 #1854 by @darkweaver87\r\n\r\n## 👌 Traefik version support\r\n\r\n* Traefik Proxy: v3.6.0 -> v3.7.1 (default)\r\n* Traefik Hub: v3.19.3 -> v3.20.2",
-      "prerelease": false,
-      "publishedAt": "2026-05-13T13:30:35Z",
-      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v40.2.0",
-      "version": "v40.2.0"
     }
   ],
   "schemaVersion": 1,
