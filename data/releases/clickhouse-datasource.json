@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-28T19:33:29.982Z",
+  "generatedAt": "2026-10-30T08:38:32.560Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 428594219,
+      "name": "v4.23.4",
+      "notes": "## [4.23.4](https://github.com/grafana/clickhouse-datasource/compare/v4.23.3...v4.23.4) (2026-10-29)\n\n\n### 🐛 Bug Fixes\n\n* **adhoc:** declare multiValueFilterOperators support in plugin.json ([ca4855e](https://github.com/grafana/clickhouse-datasource/commit/ca4855ed18f00c63a8b132d5ef42d4cc058f999e))\n* **adhoc:** enable multiValueFilterOperators support in plugin.json ([#2218](https://github.com/grafana/clickhouse-datasource/issues/2218)) ([ca4855e](https://github.com/grafana/clickhouse-datasource/commit/ca4855ed18f00c63a8b132d5ef42d4cc058f999e))",
+      "prerelease": false,
+      "publishedAt": "2026-10-30T02:31:26Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.4",
+      "version": "v4.23.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-01-27T15:22:36Z",
       "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.13.0",
       "version": "v4.13.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 276520835,
-      "name": "grafana-clickhouse-datasource v4.12.0",
-      "notes": "## 4.12.0\n\n### Features\n\n- Support log volume queries for the SQL editor. Note that this will only work for Grafana versions >= 12.4.0 (#1475)\n- Support columns with `.` in ad-hoc filters (#1481)\n\n### Fixes\n\n- Dependency updates",
-      "prerelease": false,
-      "publishedAt": "2026-01-13T21:02:47Z",
-      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.12.0",
-      "version": "v4.12.0"
     }
   ],
   "schemaVersion": 1,

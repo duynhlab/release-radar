@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-29T19:37:56.885Z",
+  "generatedAt": "2026-10-30T08:38:30.777Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 428675468,
+      "name": "loki-20.1.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/947\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.0.3...loki-20.1.0",
+      "prerelease": false,
+      "publishedAt": "2026-10-30T05:12:08Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.1.0",
+      "version": "loki-20.1.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-22T19:24:06Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.1.0",
       "version": "loki-19.1.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 421104981,
-      "name": "tempo-distributed-3.16.0",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Update prom/memcached-exporter Docker tag to v0.18.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/921\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.29.0...tempo-distributed-3.16.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-22T19:17:09Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.16.0",
-      "version": "tempo-distributed-3.16.0"
     }
   ],
   "schemaVersion": 1,

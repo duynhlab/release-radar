@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T19:38:18.805Z",
+  "generatedAt": "2026-10-30T08:38:50.226Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -211,19 +211,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 419647825,
-        "name": "v1.13.2",
+        "id": 428302290,
+        "name": "v1.12.11",
         "prerelease": false,
-        "publishedAt": "2026-10-21T14:36:09Z",
-        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.2",
-        "version": "v1.13.2"
+        "publishedAt": "2026-10-29T19:37:42Z",
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.11",
+        "version": "v1.12.11"
       },
       "name": "OpenTofu",
       "previous": {
-        "publishedAt": "2026-10-21T13:25:22Z",
-        "version": "v1.12.9"
+        "publishedAt": "2026-10-21T14:36:09Z",
+        "version": "v1.13.2"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "opentofu/opentofu",
       "tags": [
         "iac"
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 427784605,
-        "name": "loki-20.0.3",
+        "id": 428675468,
+        "name": "loki-20.1.0",
         "prerelease": false,
-        "publishedAt": "2026-10-29T11:33:46Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.0.3",
-        "version": "loki-20.0.3"
+        "publishedAt": "2026-10-30T05:12:08Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.1.0",
+        "version": "loki-20.1.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-27T15:49:38Z",
-        "version": "grafana-14.2.0"
+        "publishedAt": "2026-10-29T11:33:46Z",
+        "version": "loki-20.0.3"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1803,17 +1803,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 426946723,
-        "name": "v4.23.3",
+        "id": 428594219,
+        "name": "v4.23.4",
         "prerelease": false,
-        "publishedAt": "2026-10-28T16:57:23Z",
-        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.3",
-        "version": "v4.23.3"
+        "publishedAt": "2026-10-30T02:31:26Z",
+        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.4",
+        "version": "v4.23.4"
       },
       "name": "ClickHouse Datasource",
       "previous": {
-        "publishedAt": "2026-10-22T16:35:08Z",
-        "version": "v4.23.2"
+        "publishedAt": "2026-10-28T16:57:23Z",
+        "version": "v4.23.3"
       },
       "releaseCount": 20,
       "repository": "grafana/clickhouse-datasource",
