@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-30T19:20:42.118Z",
+  "generatedAt": "2026-10-31T18:33:47.834Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 429978267,
+      "name": "loki-20.2.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Default the gateway Ingress pathType to Prefix by @sarankumar1325 in https://github.com/grafana-community/helm-charts/pull/956\n\n## New Contributors\n* @sarankumar1325 made their first contribution in https://github.com/grafana-community/helm-charts/pull/956\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.2.0...loki-20.2.1",
+      "prerelease": false,
+      "publishedAt": "2026-10-31T14:14:21Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.2.1",
+      "version": "loki-20.2.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-23T04:29:23Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.30.0",
       "version": "grafana-mcp-0.30.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 421271863,
-      "name": "loki-19.1.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v0.5.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/922\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-19.1.0...loki-19.1.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-22T22:40:28Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-19.1.1",
-      "version": "loki-19.1.1"
     }
   ],
   "schemaVersion": 1,
