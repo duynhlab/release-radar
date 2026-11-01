@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T18:34:08.823Z",
+  "generatedAt": "2026-11-01T09:15:05.855Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1463,19 +1463,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 413454473,
-        "name": "2.3.0",
+        "id": 430216100,
+        "name": "2.4.0",
         "prerelease": false,
-        "publishedAt": "2026-10-15T05:39:06Z",
-        "url": "https://github.com/floci-io/floci/releases/tag/2.3.0",
-        "version": "2.3.0"
+        "publishedAt": "2026-10-31T22:10:55Z",
+        "url": "https://github.com/floci-io/floci/releases/tag/2.4.0",
+        "version": "2.4.0"
       },
       "name": "Floci",
       "previous": {
-        "publishedAt": "2026-10-06T05:23:38Z",
-        "version": "2.2.0"
+        "publishedAt": "2026-10-15T05:39:06Z",
+        "version": "2.3.0"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "floci-io/floci",
       "tags": [
         "aws",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 429978267,
-        "name": "loki-20.2.1",
+        "id": 430339098,
+        "name": "synthetic-monitoring-agent-1.22.1",
         "prerelease": false,
-        "publishedAt": "2026-10-31T14:14:21Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.2.1",
-        "version": "loki-20.2.1"
+        "publishedAt": "2026-11-01T03:27:49Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.22.1",
+        "version": "synthetic-monitoring-agent-1.22.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-30T08:59:09Z",
-        "version": "loki-20.2.0"
+        "publishedAt": "2026-10-31T18:45:58Z",
+        "version": "grafana-14.3.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
