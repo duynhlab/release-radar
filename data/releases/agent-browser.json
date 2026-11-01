@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-29T08:28:22.403Z",
+  "generatedAt": "2026-11-01T18:55:50.267Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 430671919,
+      "name": "v0.41.1",
+      "notes": "### Bug Fixes\n\n- Fixed **cookie attributes** so `cookies set` honors `--http-only` and `--same-site`, preserves the existing aliases, and rejects unknown arguments (#2256)\n- Fixed **page error clearing** so `errors --clear` removes captured errors (#2253)\n- Fixed **MCP selector waits** so bare integer selectors return an error instead of becoming timed waits (#2254)\n- Fixed **plugin error redaction** so sensitive operations omit unsupported protocol values (#2255)\n- Fixed **invalid limit handling** so overflowing idle timeouts and invalid output limits produce warnings instead of overflowing or being silently ignored (#2250, #2258)\n- Removed **unpinned npx execution permission** from the installed agent skill (#2249)\n\n### Documentation\n\n- Documented **stdin MCP connections** that reuse one server process in Vercel Sandbox (#2248)\n- Configured **desktop documentation routes** and the desktop sitemap for the docs site (#2278)\n\n### Contributors\n\n- @Railly\n- @lahfir",
+      "prerelease": false,
+      "publishedAt": "2026-11-01T15:29:56Z",
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.41.1",
+      "version": "v0.41.1"
+    },
     {
       "channel": "stable",
       "draft": false,
