@@ -1,6 +1,83 @@
 {
-  "generatedAt": "2026-10-28T19:33:03.373Z",
+  "generatedAt": "2026-11-02T09:27:41.638Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 431214257,
+      "name": "victoria-traces-cluster-0.2.12",
+      "notes": "# Release notes for version 0.2.12\n\n**Release date:** 02 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.12.1](https://img.shields.io/badge/v0.12.1-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriatraces%2Fchangelog%2F%23v0121)\n\n- bump vmauth version to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0).\n- add `checksum/config` annotation on `vmauth` pods to trigger a rollout when the chart-managed vmauth Secret changes. Externally managed `vmauth.configSecretName` is not tracked.",
+      "prerelease": false,
+      "publishedAt": "2026-11-02T08:22:15Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-traces-cluster-0.2.12",
+      "version": "victoria-traces-cluster-0.2.12"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 431214238,
+      "name": "victoria-metrics-k8s-stack-0.97.1",
+      "notes": "# Release notes for version 0.97.1\n\n**Release date:** 02 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.155.0](https://img.shields.io/badge/v1.155.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11550) ![VM Operator: 0.68.2](https://img.shields.io/badge/VM_Operator-0.68.2-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230682)\n\n- bump operator dependency chart to version 0.68.2\n- apply `global.extraAnnotations` to every chart-managed resource (CRs, RBAC, Ingress, HTTPRoute, generated `VMServiceScrape`/`Service`/`VMRule`, the sync-job's Job/ConfigMap/RBAC, and alertmanager/vmalert template ConfigMaps/Secrets), matching how `global.extraLabels` already propagates everywhere. Previously, most of these resources never merged `global.extraAnnotations` in at all, even though the chart declared the value. Resources owned by bundled subcharts (`grafana`, `kube-state-metrics`, `prometheus-node-exporter`) are not covered, since this chart does not control their templates, nor are user-supplied `.Values.extraObjects`, which are rendered verbatim. See [#3202](https://github.com/VictoriaMetrics/helm-charts/issues/3202).\n- bump version of alertmanager to [v0.34.2](https://github.com/prometheus/alertmanager/releases/tag/v0.34.2)",
+      "prerelease": false,
+      "publishedAt": "2026-11-02T08:22:14Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.97.1",
+      "version": "victoria-metrics-k8s-stack-0.97.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 431214210,
+      "name": "victoria-metrics-estimator-0.2.2",
+      "notes": "# Release notes for version 0.2.2\n\n**Release date:** 02 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.1.18](https://img.shields.io/badge/v0.1.18-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fgithub.com%2FVictoriaMetrics%2Fvmestimator%2Freleases%23v0118)\n\n- bump version of VMEstimator to [v0.1.18](https://github.com/VictoriaMetrics/vmestimator/releases/tag/v0.1.18)",
+      "prerelease": false,
+      "publishedAt": "2026-11-02T08:22:12Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-estimator-0.2.2",
+      "version": "victoria-metrics-estimator-0.2.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 431214183,
+      "name": "victoria-metrics-alert-0.52.1",
+      "notes": "# Release notes for version 0.52.1\n\n**Release date:** 02 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.155.0](https://img.shields.io/badge/v1.155.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11550)\n\n- bump version of alertmanager to [v0.34.2](https://github.com/prometheus/alertmanager/releases/tag/v0.34.2)",
+      "prerelease": false,
+      "publishedAt": "2026-11-02T08:22:10Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-alert-0.52.1",
+      "version": "victoria-metrics-alert-0.52.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 431214151,
+      "name": "victoria-logs-single-0.13.11",
+      "notes": "# Release notes for version 0.13.11\n\n**Release date:** 02 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.53.0](https://img.shields.io/badge/v1.53.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1530)\n\n- bump `victoria-metrics-common` dependency to `0.4.*`. Resource names are unchanged.\n- add `server.service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. It applies to every rendered Service port, including `http[]`, `extraPorts[]` and `syslog-tcp`/`syslog-udp`. See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).\n- rename the container from `vlogs` to `vlsingle`, matching the VictoriaMetrics operator. Pods are restarted once on upgrade.\n- fix `server.persistentVolume.name` in StatefulSet mode: the container mounted the default volume name instead of the overridden claim template name, which produced an invalid pod spec.\n- updated vector dependency 0.60.0 -> 0.61.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-02T08:22:08Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-single-0.13.11",
+      "version": "victoria-logs-single-0.13.11"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 431214133,
+      "name": "victoria-logs-multilevel-0.2.10",
+      "notes": "# Release notes for version 0.2.10\n\n**Release date:** 02 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.53.0](https://img.shields.io/badge/v1.53.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1530)\n\n- fix rendering of a templated `serviceAccount.name` (e.g. `{{ .Release.Name }}-sa`), which failed with a nil pointer error.\n- bump vmauth version to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0).\n- add `vlselect`/`vmauth`'s `service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. It applies to every rendered Service port, including `http[]` and `extraPorts[]`. See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).",
+      "prerelease": false,
+      "publishedAt": "2026-11-02T08:22:07Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-multilevel-0.2.10",
+      "version": "victoria-logs-multilevel-0.2.10"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 431214112,
+      "name": "victoria-logs-cluster-0.2.11",
+      "notes": "# Release notes for version 0.2.11\n\n**Release date:** 02 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.53.0](https://img.shields.io/badge/v1.53.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1530)\n\n- bump vmauth version to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0).\n- add `vlselect`/`vlinsert`/`vlstorage`/`vmauth`'s `service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. It applies to every rendered Service port, including `http[]`, `extraPorts[]` and protocol-specific ports (e.g. `syslog-tcp`, `syslog-udp`). See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).\n- updated vector dependency 0.60.0 -> 0.61.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-02T08:22:05Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-cluster-0.2.11",
+      "version": "victoria-logs-cluster-0.2.11"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -143,83 +220,6 @@
       "publishedAt": "2026-10-26T07:35:05Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.49.1",
       "version": "victoria-metrics-single-0.49.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 423960585,
-      "name": "victoria-metrics-alert-0.51.1",
-      "notes": "# Release notes for version 0.51.1\n\n**Release date:** 26 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.154.1](https://img.shields.io/badge/v1.154.1-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11541)\n\n- bump version of VM components to [v1.154.1](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.1)\n- add `server.service.portOverrides` and `alertmanager.service.portOverrides`, maps keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).",
-      "prerelease": false,
-      "publishedAt": "2026-10-26T07:35:02Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-alert-0.51.1",
-      "version": "victoria-metrics-alert-0.51.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 423960567,
-      "name": "victoria-metrics-agent-0.50.1",
-      "notes": "# Release notes for version 0.50.1\n\n**Release date:** 26 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.154.1](https://img.shields.io/badge/v1.154.1-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11541)\n\n- bump version of VM components to [v1.154.1](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.1)\n- add `service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. It applies to every rendered Service port, including `http[]` and protocol-specific ports (e.g. `graphite-tcp`, `influx-tcp`, `opentsdbhttp`). See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).\n- fix `lifecycle` being ignored: the value was never rendered into the vmagent container spec.",
-      "prerelease": false,
-      "publishedAt": "2026-10-26T07:35:00Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-agent-0.50.1",
-      "version": "victoria-metrics-agent-0.50.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 423439154,
-      "name": "victoria-metrics-k8s-stack-0.96.1",
-      "notes": "# Release notes for version 0.96.1\n\n**Release date:** 25 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.154.1](https://img.shields.io/badge/v1.154.1-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11541) ![VM Operator: 0.68.1](https://img.shields.io/badge/VM_Operator-0.68.1-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230681)\n\n- bump version of VM components to [v1.154.1](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.1), which fixes delayed requests in vmauth when a request with an `Authorization` header is matched to `unauthorized_user`. See [VictoriaMetrics#11774](https://github.com/VictoriaMetrics/VictoriaMetrics/issues/11774).\n- BUGFIX: `vmauth.spec.unauthorizedUserAccessSpec` now routes to vmsingle/vmcluster using `targetRefs` with `crd` references, and `internal.vmauth.spec.unauthorizedUserAccessSpec` (the vmalert datasource proxy) routes to vmsingle/vmcluster/vlsingle/vlcluster the same way, instead of a hand-built `url_map`. The operator now derives backend routes automatically, including `/admin/tenants`, which the old `url_map` missed. This default applies only when `url_map`, `url_prefix` and `targetRefs` are all left unset; setting `url_prefix` or `targetRefs` explicitly now replaces the default read/write routes entirely instead of merging alongside them. See [#3153](https://github.com/VictoriaMetrics/helm-charts/issues/3153).",
-      "prerelease": false,
-      "publishedAt": "2026-10-25T14:01:38Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.96.1",
-      "version": "victoria-metrics-k8s-stack-0.96.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 423439136,
-      "name": "victoria-metrics-estimator-0.2.1",
-      "notes": "# Release notes for version 0.2.1\n\n**Release date:** 25 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.1.17](https://img.shields.io/badge/v0.1.17-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fvmestimator%2Fchangelog%2F%23v0117)\n\n- bump version of VMEstimator to [v0.1.17](https://github.com/VictoriaMetrics/vmestimator/releases/tag/v0.1.17)",
-      "prerelease": false,
-      "publishedAt": "2026-10-25T14:01:37Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-estimator-0.2.1",
-      "version": "victoria-metrics-estimator-0.2.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 423439129,
-      "name": "victoria-metrics-distributed-0.48.1",
-      "notes": "# Release notes for version 0.48.1\n\n**Release date:** 25 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.154.1](https://img.shields.io/badge/v1.154.1-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11541) ![VM Operator: 0.68.1](https://img.shields.io/badge/VM_Operator-0.68.1-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230681)\n\n- bump version of VM components to [v1.154.1](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.1), which fixes delayed requests in vmauth when a request with an `Authorization` header is matched to `unauthorized_user`. See [VictoriaMetrics#11774](https://github.com/VictoriaMetrics/VictoriaMetrics/issues/11774).",
-      "prerelease": false,
-      "publishedAt": "2026-10-25T14:01:35Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-distributed-0.48.1",
-      "version": "victoria-metrics-distributed-0.48.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 423439117,
-      "name": "victoria-metrics-common-0.4.4",
-      "notes": "# Release notes for version 0.4.4\n\n**Release date:** 25 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0)\n\n- add `vm.operator.*` helpers to render VictoriaMetrics operator custom resources from chart values: `vm.operator.enabled`, `vm.operator.cr.name`, `vm.operator.cr.labels`, `vm.operator.cr.spec`, `vm.operator.app.spec`, `vm.operator.service.spec`, `vm.operator.resource.spec`, `vm.operator.storage`, `vm.operator.license`, `vm.operator.relabel.configs`, `vm.operator.tls.config`, `vm.operator.scrape`, `vm.operator.scrape.spec` and `vm.operator.scrape.configs` (Prometheus-compatible scrape jobs to `VMScrapeConfig` resources), `vm.operator.remote.write`, `vm.operator.http.endpoint`, `vm.operator.syslog.spec`, `vm.operator.data.volume`, `vm.operator.self.scrape`, `vm.operator.cluster.component`, `vm.operator.backup` and `vm.operator.network.policy`. `.Values.operator.spec` is deep-merged over the generated spec.\n- with `operator.enabled: true`, `useLegacyNaming: true` now fails since the operator names the objects it creates; leaving `useLegacyNaming` unset or `false` resolves to operator naming.",
-      "prerelease": false,
-      "publishedAt": "2026-10-25T14:01:33Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-common-0.4.4",
-      "version": "victoria-metrics-common-0.4.4"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 423439100,
-      "name": "victoria-metrics-cluster-0.53.1",
-      "notes": "# Release notes for version 0.53.1\n\n**Release date:** 25 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.154.1](https://img.shields.io/badge/v1.154.1-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11541)\n\n- bump version of VM components to [v1.154.1](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.1), which fixes delayed requests in vmauth when a request with an `Authorization` header is matched to `unauthorized_user`. See [VictoriaMetrics#11774](https://github.com/VictoriaMetrics/VictoriaMetrics/issues/11774).\n- add `vmselect`/`vminsert`/`vmstorage`/`vmauth`'s `service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. It applies to every rendered Service port, including `http[]`, `extraPorts[]` and protocol-specific ports (e.g. `clusternative`, `graphite-tcp`, `influx-tcp`). See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).\n- fix the default `vmauth` route map: `src_paths` were rendered as `/select/*` and `/insert/*`, which vmauth anchors as regexes and therefore never matched request paths such as `/select/0/prometheus/api/v1/query`. They are now `/select/.*` and `/insert/.*`, and `/admin/tenants` is routed to vmselect so the vmui tenant selector works through vmauth.",
-      "prerelease": false,
-      "publishedAt": "2026-10-25T14:01:32Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-cluster-0.53.1",
-      "version": "victoria-metrics-cluster-0.53.1"
     }
   ],
   "schemaVersion": 1,
