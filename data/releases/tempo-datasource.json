@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-28T02:41:36.370Z",
+  "generatedAt": "2026-11-02T22:47:06.563Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 431624920,
+      "name": "tempo v13.4.2",
+      "notes": "## 13.4.2\n\n- Fix a connection freeze between Grafana and the plugin under heavy query load by updating google.golang.org/grpc to v1.85.0 ([grpc/grpc-go#9330](https://github.com/grpc/grpc-go/issues/9330))\n- Update frontend dependencies",
+      "prerelease": false,
+      "publishedAt": "2026-11-02T15:24:34Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.4.2",
+      "version": "v13.4.2"
+    },
     {
       "channel": "stable",
       "draft": false,

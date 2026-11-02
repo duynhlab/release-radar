@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-17T06:56:33.296Z",
+  "generatedAt": "2026-11-02T22:47:24.811Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 431718866,
+      "name": "v0.1.63",
+      "notes": "## Features\r\n- Add support for recursive cross-shard subqueries (i.e., subquery inside another subquery) @jkaczman \r\n- Add support for `INSERT INTO [...] SELECT [...] FROM` subqueries @jkaczman \r\n- Add support for handling subqueries in right side of boolean expression in a WHERE clause @jkaczman \r\n- **Breaking** `prepared_statements_limit` is now set to 5,000 by default. This is to prevent statement leaks when that setting is not set and the pg client driver does not use prepared statements optimally (e.g., tokio-postgres). @levkk \r\n- Add a bunch of CLI tools to the production Docker image to help with debugging (e.g., netstat, dig, etc.)\r\n- Add `min_connections` OTEL/OpenMetrics gauge which tracks `min_pool_size` for each connection pool @meskill \r\n- Make `SIGTERM` behave like `SIGINT`, preventing common misuse in cloud-native environments @meskill \r\n- Cross-shard `ORDER BY` now supports `CASE` expressions @jkaczman \r\n- Partial support for `HAVING` in cross-shard aggregates @murex971 \r\n- Support cumulative temporailty for OTEL metrics, allowing to export those metrics to servers that don't support incremental measurements, e.g., GCP @jkaczman \r\n- Parse `URI` on TLS certificates along with `dnsName` to be used as identity for client-to-PgDog mTLS @eidam @levkk \r\n\r\n## Performance\r\n- Query router performance improvements (5-12% improvement in microbenchmarks). @jkaczman\r\n- Replace query cache mutex with a rwlock, decreasing contention on the AST cache. The cache now uses CLOCK (second chance) eviction to enforce the LRU policy. @jkaczman\r\n- Improve cross-shard INSERT handling by grouping tuples that belong to the same shard into a single statement. @jkaczman\r\n- Skip query routing logic in non-sharded single primary/replicas-only clusters. CPU utilization reduced by 1.3%. @jkaczman  \r\n- Make PgDog production Docker images 35% smaller @meskill \r\n- Remove redundant clock reads in the hot path @jkaczman \r\n\r\n## Bug fixes\r\n- Make `SET` more Postgres-compliant: return errors on incorrect parameter values, return correct `ParameterStatus` messages, handle `RESET` correctly for `DateStyle` and other parameters that have connection defaults, correctly return multiple `CommandComplete` messages for multi-query `SET` statements.\r\n- `min_pool_size` was incorrectly rejected on `[[users]]` entries when `passthrough_auth` was enabled @meskill \r\n- Logical replication couldn't handle tables with primary keys that cover all table columns @levkk \r\n- Extended protocol error recovery had an edge case that could cause PgDog to stall @levkk @frangz \r\n- Sharding key updates were incorrectly blocked to omnisharded tables wherie they were safe @levkk \r\n- [Enterprise] Cancelled replication tasks were incorrectly tracked as completed @meskill \r\n- Some resharding tasks could hang on cancellation @meskill \r\n- Some extended protocol messages (e.g., Describe) were incorrectly routed in cross-shard transactions @meskill \r\n- PgDog would crash if it would run out of available open file descriptions. Correct behavior is to return an error and continue operations. @meskill \r\n- Reject unsupported cross-shard aggregates with `HAVING` clause instead of returning wrong results @murex971 \r\n- Correctly parse `-c` startup parameters in `Startup` message @meskill \r\n- Cross-shard `INSERT` transaction using `two_phase_commit_auto` would not automatically commit @meskill \r\n- Don't disconnect clients that attempt to use `LISTEN`/`NOTIFY` when `pub_sub_channel_size` is 0 @murex971 \r\n- Correctly stick pg catalog omnisharded queries to one shard, allowing tools like `pg_dump` to work correctly with sharded databases @meskill \r\n- `GROUP BY 0` and other invalid values would crash PgDog @murex971 \r\n\r\n## Security\r\n- Prevent clients directly executing PgDog-prepared statements by internal name. This only affected users that were able to authenticate to PgDog, so multi-tenant publicly accessible deployments should consider upgrading. @levkk @ewhauser\r\n\r\n## Code quality\r\n- Subquery test suite runs in parallel for all DML queries @jkaczman \r\n- Cleanup transaction handling to re-use the same simulated responses code @levkk \r\n- Use `pg_stat_monitor` extension in tests to validate correct statement routing @jkaczman \r\n- Move to self-hosted metal instances for performance regression testing @jkaczman \r\n- Updated to latest Tokio @meskill \r\n- Use instruction count instead of latency for microbenchmarks @jkaczman \r\n\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.62...v0.1.63",
+      "prerelease": false,
+      "publishedAt": "2026-11-02T16:52:00Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.63",
+      "version": "v0.1.63"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-11T18:55:40Z",
       "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.44",
       "version": "v0.1.44"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 334659522,
-      "name": "v0.1.43",
-      "notes": "## What's Changed\r\n* feat: allow disabling idle healthchecks @kitop\r\n* feat: add `query_log_stdout` config for pgcat-style query logging @marcomicera\r\n* feat: allow to bypass DNS TTL entirely with `dns_ttl = 0`\r\n* fix: use smaller data structure to map clients to servers, improving connection pool performance slightly @meskill\r\n* test: fix flaky prepared statements test @meskill\r\n* refactor: cleanup some awkward Rust patterns @sgrif \r\n\r\n## New Contributors\r\n* @marcomicera made their first contribution in https://github.com/pgdogdev/pgdog/pull/1015\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.42...v0.1.43",
-      "prerelease": false,
-      "publishedAt": "2026-06-04T23:20:12Z",
-      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.43",
-      "version": "v0.1.43"
     }
   ],
   "schemaVersion": 1,

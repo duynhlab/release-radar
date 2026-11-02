@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T09:28:24.063Z",
+  "generatedAt": "2026-11-02T22:47:27.069Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -270,17 +270,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420846442,
-        "name": "v3.3.18",
+        "id": 431925021,
+        "name": "v3.3.19",
         "prerelease": false,
-        "publishedAt": "2026-10-22T14:50:13Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.18",
-        "version": "v3.3.18"
+        "publishedAt": "2026-11-02T20:18:03Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.19",
+        "version": "v3.3.19"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-10-21T01:30:56Z",
-        "version": "v3.3.17"
+        "publishedAt": "2026-11-02T20:15:51Z",
+        "version": "v3.4.13"
       },
       "releaseCount": 20,
       "repository": "argoproj/argo-cd",
@@ -1650,17 +1650,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 418681950,
-        "name": "v2.1.1",
+        "id": 431467184,
+        "name": "v2.2.0",
         "prerelease": false,
-        "publishedAt": "2026-10-20T17:35:20Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v2.1.1",
-        "version": "v2.1.1"
+        "publishedAt": "2026-11-02T13:00:31Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v2.2.0",
+        "version": "v2.2.0"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-10-20T15:46:24Z",
-        "version": "v2.1.0"
+        "publishedAt": "2026-10-20T17:35:20Z",
+        "version": "v2.1.1"
       },
       "releaseCount": 20,
       "repository": "grafana/mcp-grafana",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 430339098,
-        "name": "synthetic-monitoring-agent-1.22.1",
+        "id": 432040072,
+        "name": "grafana-14.3.1",
         "prerelease": false,
-        "publishedAt": "2026-11-01T03:27:49Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.22.1",
-        "version": "synthetic-monitoring-agent-1.22.1"
+        "publishedAt": "2026-11-02T22:32:30Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.3.1",
+        "version": "grafana-14.3.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-31T18:45:58Z",
-        "version": "grafana-14.3.0"
+        "publishedAt": "2026-11-02T14:34:08Z",
+        "version": "tempo-distributed-3.21.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1772,19 +1772,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 425994614,
-        "name": "tempo v13.4.1",
+        "id": 431624920,
+        "name": "tempo v13.4.2",
         "prerelease": false,
-        "publishedAt": "2026-10-27T21:17:19Z",
-        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.4.1",
-        "version": "v13.4.1"
+        "publishedAt": "2026-11-02T15:24:34Z",
+        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.4.2",
+        "version": "v13.4.2"
       },
       "name": "Tempo Datasource",
       "previous": {
-        "publishedAt": "2026-10-21T16:20:55Z",
-        "version": "v13.3.0"
+        "publishedAt": "2026-10-27T21:17:19Z",
+        "version": "v13.4.1"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "grafana/grafana-tempo-datasource",
       "tags": [
         "traces",
@@ -2414,19 +2414,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 417720064,
-        "name": "v0.121.0",
+        "id": 431760585,
+        "name": "v0.121.1",
         "prerelease": false,
-        "publishedAt": "2026-10-19T20:32:56Z",
-        "url": "https://github.com/anchore/grype/releases/tag/v0.121.0",
-        "version": "v0.121.0"
+        "publishedAt": "2026-11-02T17:29:55Z",
+        "url": "https://github.com/anchore/grype/releases/tag/v0.121.1",
+        "version": "v0.121.1"
       },
       "name": "Grype",
       "previous": {
-        "publishedAt": "2026-10-06T20:46:45Z",
-        "version": "v0.120.1"
+        "publishedAt": "2026-10-19T20:32:56Z",
+        "version": "v0.121.0"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "anchore/grype",
       "tags": [
         "scanning",
@@ -2445,19 +2445,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 417638733,
-        "name": "v1.55.0",
+        "id": 431720418,
+        "name": "v1.56.0",
         "prerelease": false,
-        "publishedAt": "2026-10-19T19:01:26Z",
-        "url": "https://github.com/anchore/syft/releases/tag/v1.55.0",
-        "version": "v1.55.0"
+        "publishedAt": "2026-11-02T16:53:40Z",
+        "url": "https://github.com/anchore/syft/releases/tag/v1.56.0",
+        "version": "v1.56.0"
       },
       "name": "Syft",
       "previous": {
-        "publishedAt": "2026-10-06T15:35:10Z",
-        "version": "v1.54.1"
+        "publishedAt": "2026-10-19T19:01:26Z",
+        "version": "v1.55.0"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "anchore/syft",
       "tags": [
         "sbom",
@@ -2593,17 +2593,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 415262577,
-        "name": "v0.1.62",
+        "id": 431718866,
+        "name": "v0.1.63",
         "prerelease": false,
-        "publishedAt": "2026-10-16T18:28:28Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.62",
-        "version": "v0.1.62"
+        "publishedAt": "2026-11-02T16:52:00Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.63",
+        "version": "v0.1.63"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-10-09T20:35:41Z",
-        "version": "v0.1.61"
+        "publishedAt": "2026-10-16T18:28:28Z",
+        "version": "v0.1.62"
       },
       "releaseCount": 20,
       "repository": "pgdogdev/pgdog",
