@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T09:31:43.312Z",
+  "generatedAt": "2026-11-03T20:31:16.134Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1085,19 +1085,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 387414425,
-        "name": "temporal-1.7.0",
+        "id": 433044170,
+        "name": "temporal-1.8.0",
         "prerelease": false,
-        "publishedAt": "2026-09-12T01:21:05Z",
-        "url": "https://github.com/temporalio/helm-charts/releases/tag/temporal-1.7.0",
-        "version": "temporal-1.7.0"
+        "publishedAt": "2026-11-03T18:00:29Z",
+        "url": "https://github.com/temporalio/helm-charts/releases/tag/temporal-1.8.0",
+        "version": "temporal-1.8.0"
       },
       "name": "Temporal Helm Charts",
       "previous": {
-        "publishedAt": "2026-07-13T08:11:35Z",
-        "version": "temporal-1.6.0"
+        "publishedAt": "2026-09-12T01:21:05Z",
+        "version": "temporal-1.7.0"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "temporalio/helm-charts",
       "tags": [
         "workflow",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 432351509,
-        "name": "loki-20.2.2",
+        "id": 432526844,
+        "name": "tempo-distributed-3.22.0",
         "prerelease": false,
-        "publishedAt": "2026-11-03T06:36:20Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.2.2",
-        "version": "loki-20.2.2"
+        "publishedAt": "2026-11-03T10:04:43Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.22.0",
+        "version": "tempo-distributed-3.22.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-02T22:32:30Z",
-        "version": "grafana-14.3.1"
+        "publishedAt": "2026-11-03T06:36:20Z",
+        "version": "loki-20.2.2"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1869,19 +1869,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424176009,
-        "name": "v1.23.0",
+        "id": 432687368,
+        "name": "v1.22.1",
         "prerelease": false,
-        "publishedAt": "2026-10-26T11:38:25Z",
-        "url": "https://github.com/scylladb/scylla-operator/releases/tag/v1.23.0",
-        "version": "v1.23.0"
+        "publishedAt": "2026-11-03T12:46:56Z",
+        "url": "https://github.com/scylladb/scylla-operator/releases/tag/v1.22.1",
+        "version": "v1.22.1"
       },
       "name": "Scylla Operator",
       "previous": {
-        "publishedAt": "2026-09-02T15:05:09Z",
-        "version": "v1.22.0"
+        "publishedAt": "2026-10-26T11:38:25Z",
+        "version": "v1.23.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "scylladb/scylla-operator",
       "tags": [
         "scylladb",
