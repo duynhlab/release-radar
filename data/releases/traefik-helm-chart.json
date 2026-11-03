@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-30T19:20:11.371Z",
+  "generatedAt": "2026-11-03T09:30:52.846Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 432361617,
+      "name": "v42.3.0",
+      "notes": "# [v42.3.0](https://github.com/traefik/traefik-helm-chart/compare/v42.2.0...v42.3.0) (2026-11-03)\n\n## :rocket: Features\n\n- feat(deps): update traefik docker tag to v3.7.17 #2066 by @renovate-with-github-actions[bot]\n- feat(labels): add app.kubernetes.io/version to resource metadata #2042 by @pratikwayal01\n\n## :package: Others\n\n- chore(deps): update github actions #2067 by @renovate-with-github-actions[bot]\n- docs(examples/transparency-logs): :memo: set expected log format #2059 by @darkweaver87\n- chore(deps): update dawidd6/action-download-artifact action to v28 #2069 by @renovate-with-github-actions[bot]\n- docs(gateway): fix dead Gateway API spec links in values #2060 by @sarankumar1325\n- chore(release): 🚀 publish v42.3.0 #2070 by @darkweaver87\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.17 (default)\n* Traefik Hub: v3.19.3 -> v3.21.7",
+      "prerelease": false,
+      "publishedAt": "2026-11-03T06:52:27Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.3.0",
+      "version": "v42.3.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-16T11:52:37Z",
       "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.0.0",
       "version": "v41.0.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 336418914,
-      "name": "v40.3.0",
-      "notes": "# [v40.3.0](https://github.com/traefik/traefik-helm-chart/compare/v40.2.0...v40.3.0) (2026-06-09)\n\n## :rocket: Features\n\n- feat(provider): :sparkles: support qps and burst on kubernetesGateway #1869 by @darkweaver87\n- feat(logs): :sparkles: support accesslog query parameters defaultmode #1868 by @darkweaver87\n- feat(hub): :rocket: support traefik hub v3.20.4 #1876 by @jspdown\n- feat(proxy): :rocket: support traefik v3.7.4 #1880 by @darkweaver87\n- feat(CRDs): update Traefik Hub CRDs to v1.31.0 #1881 by @darkweaver87\n\n## :bug: Bug fixes\n\n- fix(hub): :bug: guard nil hub.token in hub-license template #1875 by @darkweaver87\n\n## :package: Others\n\n- chore(deps): update mikepenz/release-changelog-builder-action action to v6.2.2 #1857 by @renovate-with-github-actions[bot]\n- chore(deps): update actions/create-github-app-token action to v3.2.0 #1858 by @renovate-with-github-actions[bot]\n- chore(deps): support traefik v3.7.3 & hub v3.20.3 #1867 by @bpsoraggi\n- chore(deps): update actions/checkout action to v6.0.3 #1870 by @renovate-with-github-actions[bot]\n- chore(deps): update renovatebot/github-action action to v46.1.15 #1871 by @renovate-with-github-actions[bot]\n- chore(deps): update dependency helm to v3.21.0 #1873 by @renovate-with-github-actions[bot]\n- ci(test): fix helm-unittest invocation for helm v4 #1879 by @darkweaver87\n- chore(ci): track proxy & hub max-version annotations with renovate #1877 by @jspdown\n- chore(deps): update dependency helm to v4 #1874 by @renovate-with-github-actions[bot]\n- chore(release): 🚀 publish 40.3.0 #1882 by @darkweaver87\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.4 (default)\n* Traefik Hub: v3.19.3 -> v3.20.4",
-      "prerelease": false,
-      "publishedAt": "2026-06-09T07:20:34Z",
-      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v40.3.0",
-      "version": "v40.3.0"
     }
   ],
   "schemaVersion": 1,

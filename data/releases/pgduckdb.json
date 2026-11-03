@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-07-30T08:22:40.028Z",
+  "generatedAt": "2026-11-03T09:31:26.229Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 432081655,
+      "name": "pg_duckdb v1.2.0",
+      "notes": "## DuckDB version: v2.0.0\r\n\r\nNote: this release is \"Experimental\", it is not ready for production use because there is a number of user-reported serious issues that are still unresolved. We are planning to address these issues in upcoming updates.\r\n\r\n## What's Changed\r\n* Automatically set the module version based on git describe by @JelteF in https://github.com/duckdb/pg_duckdb/pull/994\r\n* Remove pgxman from install instructions by @JelteF in https://github.com/duckdb/pg_duckdb/pull/1003\r\n* fix: do not trigger on views in ContainsPostgresTable by @ggnmstr in https://github.com/duckdb/pg_duckdb/pull/1001\r\n* feat: allow installation in a non-public schema by @TylerHillery in https://github.com/duckdb/pg_duckdb/pull/1023\r\n* fix: use modifying word in error message by @ggnmstr in https://github.com/duckdb/pg_duckdb/pull/1029\r\n* fix: restore top_level_statement after loading secrets by @ggnmstr in https://github.com/duckdb/pg_duckdb/pull/1030\r\n* Add initial PG19 support by @JelteF in https://github.com/duckdb/pg_duckdb/pull/983\r\n* add postgres wrapper for `read_vortex` from vortex core extension by @a10y in https://github.com/duckdb/pg_duckdb/pull/1038\r\n* docs: remove doubled word “is is” in transactions.md by @Michael-WhiteCapData in https://github.com/duckdb/pg_duckdb/pull/1053\r\n* Add support for read_text and read_blob by @JelteF in https://github.com/duckdb/pg_duckdb/pull/1054\r\n* Support creating the pg_duckdb extension inside a transaction by @JelteF in https://github.com/duckdb/pg_duckdb/pull/1058\r\n* Support `INSERT ... INTO ... SELECT ...` for Postgres table by @YuweiXiao in https://github.com/duckdb/pg_duckdb/pull/688\r\n* Fix compatibility with Postgres 19 by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1106\r\n* Fix signals handling on macOS by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1105\r\n* Bump duckdb v2.0.0 by @qsliu2017 in https://github.com/duckdb/pg_duckdb/pull/1103\r\n* Support building with or w/o vcpkg dependencies by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1111\r\n* Use LZ4 bundled with DuckDB in static builds by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1112\r\n* Switch compiler to Clang in Docker builds by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1114\r\n* Add release CI workflow by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1113\r\n* Release v1.2.0 by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1115\r\n\r\n## New Contributors\r\n* @TylerHillery made their first contribution in https://github.com/duckdb/pg_duckdb/pull/1023\r\n* @a10y made their first contribution in https://github.com/duckdb/pg_duckdb/pull/1038\r\n* @Michael-WhiteCapData made their first contribution in https://github.com/duckdb/pg_duckdb/pull/1053\r\n* @staticlibs made their first contribution in https://github.com/duckdb/pg_duckdb/pull/1106\r\n* @qsliu2017 made their first contribution in https://github.com/duckdb/pg_duckdb/pull/1103\r\n\r\n**Full Changelog**: https://github.com/duckdb/pg_duckdb/compare/v1.1.1...v1.2.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-03T07:30:29Z",
+      "url": "https://github.com/duckdb/pg_duckdb/releases/tag/v1.2.0",
+      "version": "v1.2.0"
+    },
     {
       "channel": "stable",
       "draft": false,

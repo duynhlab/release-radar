@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-02T22:47:05.085Z",
+  "generatedAt": "2026-11-03T09:31:21.632Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 432351509,
+      "name": "loki-20.2.2",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [grafana] Render the plugins init container for sidecar.plugins.initPlugins by @sarankumar1325 in https://github.com/grafana-community/helm-charts/pull/950\n* [CI] Update helm/chart-releaser-action action to v1.9.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/958\n* [CI] Upgrade chart-releaser to v1.10.0 and use its built-in OCI push by @jkroepke in https://github.com/grafana-community/helm-charts/pull/955\n* [CI] Update github-workflow dependency updates to v1.10.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/959\n* [synthetic-monitoring-agent] Fix ServiceMonitor relabelings rendering by @sarankumar1325 in https://github.com/grafana-community/helm-charts/pull/957\n* [tempo-distributed] add annotations to the live-store ZoneAwarePodDisruptionBudget by @madaraszg-tulip in https://github.com/grafana-community/helm-charts/pull/954\n* [synthetic-monitoring-agent] Update docker.io/grafana/synthetic-monitoring-agent Docker tag to v0.69.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/960\n* [tempo-distributed] Allow mixing Kafka SASL username/password with existingSecret by @maxsxu in https://github.com/grafana-community/helm-charts/pull/952\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v2.2.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/961\n* [tempo-distributed] Fix recreateOnSizeChangeHook nil pointer and make hook image configurable by @maxsxu in https://github.com/grafana-community/helm-charts/pull/951\n* [tempo-distributed] Default querier and query-frontend to soft node anti-affinity by @piyush-shandilya-glean in https://github.com/grafana-community/helm-charts/pull/885\n* [grafana] Update quay.io/kiwigrid/k8s-sidecar Docker tag to v2.14.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/962\n* [loki] Update docker.io/kiwigrid/k8s-sidecar Docker tag to v2.14.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/963\n\n## New Contributors\n* @piyush-shandilya-glean made their first contribution in https://github.com/grafana-community/helm-charts/pull/885\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.2.1...loki-20.2.2",
+      "prerelease": false,
+      "publishedAt": "2026-11-03T06:36:20Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.2.2",
+      "version": "loki-20.2.2"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-26T09:49:00Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.1.0",
       "version": "grafana-14.1.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 423678102,
-      "name": "loki-20.0.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update docker.io/rustfs/rustfs Docker tag to v1.0.4 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/933\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.0.0...loki-20.0.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-25T21:39:22Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.0.1",
-      "version": "loki-20.0.1"
     }
   ],
   "schemaVersion": 1,
