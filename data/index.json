@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T20:31:16.134Z",
+  "generatedAt": "2026-11-04T09:09:40.311Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -270,17 +270,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 431925021,
-        "name": "v3.3.19",
+        "id": 433286617,
+        "name": "v3.6.0",
         "prerelease": false,
-        "publishedAt": "2026-11-02T20:18:03Z",
-        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.19",
-        "version": "v3.3.19"
+        "publishedAt": "2026-11-03T22:29:38Z",
+        "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0",
+        "version": "v3.6.0"
       },
       "name": "Argo CD",
       "previous": {
-        "publishedAt": "2026-11-02T20:15:51Z",
-        "version": "v3.4.13"
+        "publishedAt": "2026-11-02T20:18:03Z",
+        "version": "v3.3.19"
       },
       "releaseCount": 20,
       "repository": "argoproj/argo-cd",
@@ -1587,17 +1587,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424238450,
-        "name": "v2.4.2",
+        "id": 433220499,
+        "name": "v2.3.5",
         "prerelease": false,
-        "publishedAt": "2026-10-26T12:43:48Z",
-        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.2",
-        "version": "v2.4.2"
+        "publishedAt": "2026-11-03T21:09:57Z",
+        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.3.5",
+        "version": "v2.3.5"
       },
       "name": "Pyroscope",
       "previous": {
-        "publishedAt": "2026-10-26T12:43:00Z",
-        "version": "v2.3.4"
+        "publishedAt": "2026-11-03T21:09:45Z",
+        "version": "v2.4.3"
       },
       "releaseCount": 20,
       "repository": "grafana/pyroscope",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 429188541,
-        "name": "k8s-monitoring-4.6.0",
+        "id": 433239144,
+        "name": "pyroscope-2.4.3",
         "prerelease": false,
-        "publishedAt": "2026-10-30T15:25:42Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.6.0",
-        "version": "k8s-monitoring-4.6.0"
+        "publishedAt": "2026-11-03T21:30:56Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.3",
+        "version": "pyroscope-2.4.3"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-29T17:17:26Z",
-        "version": "beyla-1.16.17"
+        "publishedAt": "2026-10-30T15:25:42Z",
+        "version": "k8s-monitoring-4.6.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 432526844,
-        "name": "tempo-distributed-3.22.0",
+        "id": 433344331,
+        "name": "loki-20.4.1",
         "prerelease": false,
-        "publishedAt": "2026-11-03T10:04:43Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.22.0",
-        "version": "tempo-distributed-3.22.0"
+        "publishedAt": "2026-11-03T23:50:16Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.4.1",
+        "version": "loki-20.4.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-03T06:36:20Z",
-        "version": "loki-20.2.2"
+        "publishedAt": "2026-11-03T23:19:41Z",
+        "version": "loki-20.4.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2683,19 +2683,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 430671919,
-        "name": "v0.41.1",
+        "id": 433341916,
+        "name": "v0.41.2",
         "prerelease": false,
-        "publishedAt": "2026-11-01T15:29:56Z",
-        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.41.1",
-        "version": "v0.41.1"
+        "publishedAt": "2026-11-03T23:46:27Z",
+        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.41.2",
+        "version": "v0.41.2"
       },
       "name": "agent-browser",
       "previous": {
-        "publishedAt": "2026-10-29T02:52:55Z",
-        "version": "v0.41.0"
+        "publishedAt": "2026-11-01T15:29:56Z",
+        "version": "v0.41.1"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "vercel-labs/agent-browser",
       "tags": [
         "ai",

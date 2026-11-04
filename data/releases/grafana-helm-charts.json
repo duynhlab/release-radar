@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-30T19:20:41.487Z",
+  "generatedAt": "2026-11-04T09:09:16.871Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 433239144,
+      "name": "pyroscope-2.4.3",
+      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/3ab0bc0d101cfe4fd7ad64de520a8b5db1a8f70a\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.4.3",
+      "prerelease": false,
+      "publishedAt": "2026-11-03T21:30:56Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.3",
+      "version": "pyroscope-2.4.3"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-21T21:12:22Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.1",
       "version": "alloy-1.14.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 419957430,
-      "name": "pyroscope-2.4.1",
-      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/448bda4865330f8e57afba5520956ede66732c1f\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.4.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-21T19:15:48Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.1",
-      "version": "pyroscope-2.4.1"
     }
   ],
   "schemaVersion": 1,

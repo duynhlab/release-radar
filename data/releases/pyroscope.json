@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-26T19:56:56.547Z",
+  "generatedAt": "2026-11-04T09:09:14.892Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 433220499,
+      "name": "v2.3.5",
+      "notes": "## Changelog\n* 8ee15e04a5346cdf5485f71eceef3f2a1d465fd0 docs: backport v2.3.4 release notes (#5935) (#5938)\n* a26db7b2ccb175019dfc0b7f6728c43169f4730c docs: prepare v2.3.5 security release notes (#6038)\n* ffa18ed98f3204d26e141f12a3492aa823eab5f2 fix(deps): update undici to 8.12.3 (#6035) (#6036)\n* 4fcea10eccb94f978dcfd6c1d2de5af46b96980d fix(security): update golang.org/x/net to v0.62.0 in api module (#6016)\n* 829e10cf7e746edb6cf669f2e5cd3fe68e81a74e fix(security/high/): update module github.com/go-jose/go-jose/v4 to v4.1.6 [security] (#5967)\n* d927ca26058fe1154a633f96b62201e65714d437 fix(security/unknown/): update module golang.org/x/net to v0.62.0 [security] (#5975)\n\nAs always, feedback is more than welcome, feel free to open issues/discussions.\nYou can reach out to the team using:\n\n- [Slack](https://grafana.slack.com/archives/C049PLMV8TB)\n- [Github Discussions](https://github.com/grafana/pyroscope/discussions)\n- [Github Issues](https://github.com/grafana/pyroscope/issues)\n- [Mailing List](https://groups.google.com/g/pyroscope-team)\n\n## Docker Images\n\n- [grafana/pyroscope](https://hub.docker.com/r/grafana/pyroscope/tags)\n\n```bash\n  docker pull grafana/pyroscope:2.3.5\n```",
+      "prerelease": false,
+      "publishedAt": "2026-11-03T21:09:57Z",
+      "url": "https://github.com/grafana/pyroscope/releases/tag/v2.3.5",
+      "version": "v2.3.5"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 433220338,
+      "name": "v2.4.3",
+      "notes": "## Changelog\n* 054e1462455e11657c2315c25872479de237c69b docs: backport v2.4.2 release notes (#5935) (#5937)\n* 860ef8d7093f9b6c824a7528010b15d782645e4f docs: prepare v2.4.3 security release notes (#6039)\n* 450765820c3cec9c66821d0446667b355783c899 fix(deps): update undici to 8.12.3 (#6035) (#6037)\n* ab80c48f88036fbe9c4f1480e057e64b7a552336 fix(security/high/): update module github.com/go-jose/go-jose/v4 to v4.1.6 [security] (#5966)\n* 064da62c375b92cc02aed1fc484d6013bfd669a6 fix(security/unknown/): update module golang.org/x/net to v0.62.0 [security] (#5973)\n* 584f609c00160e517d8f7bf94e0c38dc0c28b990 fix(security/unknown/api): update module golang.org/x/net to v0.62.0 [security] (#5974)\n\nAs always, feedback is more than welcome, feel free to open issues/discussions.\nYou can reach out to the team using:\n\n- [Slack](https://grafana.slack.com/archives/C049PLMV8TB)\n- [Github Discussions](https://github.com/grafana/pyroscope/discussions)\n- [Github Issues](https://github.com/grafana/pyroscope/issues)\n- [Mailing List](https://groups.google.com/g/pyroscope-team)\n\n## Docker Images\n\n- [grafana/pyroscope](https://hub.docker.com/r/grafana/pyroscope/tags)\n\n```bash\n  docker pull grafana/pyroscope:2.4.3\n```",
+      "prerelease": false,
+      "publishedAt": "2026-11-03T21:09:45Z",
+      "url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.3",
+      "version": "v2.4.3"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-06-17T09:33:34Z",
       "url": "https://github.com/grafana/pyroscope/releases/tag/v2.1.0",
       "version": "v2.1.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 333993105,
-      "name": "v2.0.3",
-      "notes": "## Changelog\n* 3715b1a4d334c8e9f14623a2c8e839e3894ed9c8 Add release notes for v2.0.2 (#5127) (#5128)\n* 189eaceb765b525eda7925cbef4dbfdf29b58d7a Security bumps and fixes for v2.0.3 (#5231)\n* 4415924a04f816767b70136de6c666c99297af6d ci(release/v2.0): align CI pipeline to main (GATB + GAR) (#5234)\n* a62c208abb299ee91d5d16f99c0b7cc7e59c6cf1 docs: add v2.0.3 release notes (#5235) (#5236)\n* 3b2704f7043faa4f43fe6edd5c94eb685e8a8c6b docs: fix broken Grafana Cloud Profiles link in SDK guides (#5132) (#5133)\n\nAs always, feedback is more than welcome, feel free to open issues/discussions.\nYou can reach out to the team using:\n\n- [Slack](https://grafana.slack.com/archives/C049PLMV8TB)\n- [Github Discussions](https://github.com/grafana/pyroscope/discussions)\n- [Github Issues](https://github.com/grafana/pyroscope/issues)\n- [Mailing List](https://groups.google.com/g/pyroscope-team)\n\n## Docker Images\n\n- [grafana/pyroscope](https://hub.docker.com/r/grafana/pyroscope/tags)\n\n```bash\n  docker pull grafana/pyroscope:2.0.3\n```",
-      "prerelease": false,
-      "publishedAt": "2026-06-03T20:55:50Z",
-      "url": "https://github.com/grafana/pyroscope/releases/tag/v2.0.3",
-      "version": "v2.0.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 318936164,
-      "name": "v2.0.2",
-      "notes": "## Changelog\n* d969f943947df3a22525418ac3f9f1ae86b5c13f Bump security deps for v2.0 (#5125)\n* f33eeccd1f0fb0f28a3c3d4337a09736914ad54d docs: add v2.0.1 release notes (#5087) (#5088)\n* 0b2595808fec77477867076b155766f4a0db0b1e docs: remove outdated v2 note (#5109) (#5110)\n* fd8c466229308899255f64a0d10e329c58f3c98a fix: clone label values to prevent buffer reuse-after-free (#5116) (#5121)\n\nAs always, feedback is more than welcome, feel free to open issues/discussions.\nYou can reach out to the team using:\n\n- [Slack](https://grafana.slack.com/archives/C049PLMV8TB)\n- [Github Discussions](https://github.com/grafana/pyroscope/discussions)\n- [Github Issues](https://github.com/grafana/pyroscope/issues)\n- [Mailing List](https://groups.google.com/g/pyroscope-team)\n\n## Docker Images\n\n- [grafana/pyroscope](https://hub.docker.com/r/grafana/pyroscope/tags)\n\n```bash\n  docker pull docker.io/grafana/pyroscope:2.0.2\n```",
-      "prerelease": false,
-      "publishedAt": "2026-05-07T12:59:45Z",
-      "url": "https://github.com/grafana/pyroscope/releases/tag/v2.0.2",
-      "version": "v2.0.2"
     }
   ],
   "schemaVersion": 1,
