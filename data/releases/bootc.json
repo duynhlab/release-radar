@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-28T19:33:47.140Z",
+  "generatedAt": "2026-11-04T20:50:04.540Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 434415506,
+      "name": "Release v1.17.4",
+      "notes": "## bootc 1.17.4\r\n\r\n### Changes\r\n\r\n* install/aleph: skip serializing optional fields if None by @Rolv-Apneseth in https://github.com/bootc-dev/bootc/pull/2591\r\n* install: Reject a config stateroot on composefs-only images by @andrewdunndev in https://github.com/bootc-dev/bootc/pull/2567\r\n* tests: Pin ubi9/podman bound image to 9.8-1793032728 by @cgwalters-bot in https://github.com/bootc-dev/bootc/pull/2606\r\n* Update dependency python to v3.15.2 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2612\r\n* Update Rust by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2614\r\n* tests: Use lazy umount in tmt tests by @jeckersb in https://github.com/bootc-dev/bootc/pull/2616\r\n* hack: Don't install oci-delta on f43 by @jeckersb in https://github.com/bootc-dev/bootc/pull/2607\r\n* generator: skip fstab editor for read-only root by @AtharvaKulkarniIT in https://github.com/bootc-dev/bootc/pull/2615\r\n* container aboot/ukify: allow specifying --erofs-version=v1-only by @alexlarsson in https://github.com/bootc-dev/bootc/pull/2620\r\n* Docs growfs by @jmarrero in https://github.com/bootc-dev/bootc/pull/2610\r\n* Systemd-Boot minor fixes (split from https://github.com/bootc-dev/bootc/pull/2569) by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2597\r\n* rpmlint by @jeckersb in https://github.com/bootc-dev/bootc/pull/2608\r\n* Justfile fixups by @Rolv-Apneseth in https://github.com/bootc-dev/bootc/pull/2611\r\n* build: Speed up RPM builds by avoiding redundant cargo rebuilds by @jeckersb in https://github.com/bootc-dev/bootc/pull/2609\r\n* Uki addons followup by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2619\r\n* ostree-ext: document symlinking pull secret to /run with transient /etc by @yeetypete in https://github.com/bootc-dev/bootc/pull/2601\r\n* Release 1.17.4 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2618\r\n\r\n### New Contributors\r\n* @Rolv-Apneseth made their first contribution in https://github.com/bootc-dev/bootc/pull/2591\r\n* @AtharvaKulkarniIT made their first contribution in https://github.com/bootc-dev/bootc/pull/2615\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bootc/compare/v1.17.3...v1.17.4\r\n\r\n### Assets\r\n\r\n- `bootc-1.17.4-vendor.tar.zstd` - Vendored dependencies archive\r\n- `bootc-1.17.4.tar.zstd` - Source archive",
+      "prerelease": false,
+      "publishedAt": "2026-11-04T20:31:44Z",
+      "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.17.4",
+      "version": "v1.17.4"
+    },
     {
       "channel": "stable",
       "draft": false,

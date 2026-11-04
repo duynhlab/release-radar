@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-12T22:08:52.689Z",
+  "generatedAt": "2026-11-04T20:49:48.178Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 433640622,
+      "name": "1.3.1",
+      "notes": "⚠️  **Important: Strimzi 1.3.1 supports only Kubernetes 1.32 and newer. Kubernetes 1.30 and 1.31 are not supported anymore.**\r\n\r\n⚠️ ⚠️ ⚠️ **Important: From Strimzi 1.0.0, the only supported version of CRD API is `v1`. The older `v1beta2`, `v1beta1`, and `v1alpha1` APIs are no longer supported. Before upgrading to Strimzi 1.0.0 and above, make sure to [convert all custom resources and upgrade the CRDs](https://strimzi.io/docs/operators/1.0.0/deploying.html#assembly-api-conversion-str).**\r\n\r\n----\r\n\r\n## Main Changes Since 1.3.0\r\n\r\nThe most important new features are:\r\n\r\n* Added support for Kafka 4.3.2\r\n* Fix concurrency issues after Vert.x removal\r\n* Dependency updates (Cruise Control, Vert.x, Netty, Strimzi Kafka Bridge, Kafka Exporter, Strimzi OAuth, Jackson) \r\n\r\n### Major changes, deprecations, and removals\r\n\r\n* PKCS12 format certificates are deprecated.\r\n  The `STRIMZI_PKCS12_KEYSTORE_GENERATION` env var will be set to false by default in a future release.\r\n* Kaniko is removed and Buildah is the only tool used for building Connect images.\r\n\r\nAll changes can be found under the [1.3.1 milestone](https://github.com/strimzi/strimzi-kafka-operator/milestone/66).\r\n\r\n### Upgrading from Strimzi 1.3.0\r\n\r\nSee the [documentation for upgrade instructions](https://strimzi.io/docs/operators/in-development/deploying.html#assembly-upgrade-str).\r\n\r\n### Maven Artifacts\r\n\r\nTo test the Maven artifacts that are part of this release, use the `1.3.1` version in your `pom.xml`.\r\n\r\n### Container Images\r\n\r\nThe following container images are part of this release:\r\n\r\n| Name | Image |\r\n| ----------- | ----------- |\r\n| Operators | `quay.io/strimzi/operator@sha256:55f43849559a0d151be473c588c89e9d72649ecadf088c8b9d92d37654a5e5eb` |\r\n| Apache Kafka 4.2.0 | `quay.io/strimzi/kafka@sha256:c2b26f919ec8034e826b9862c5c07da774e8fe7f6827ac294dc09fb3d46caa64` |\r\n| Apache Kafka 4.2.1 | `quay.io/strimzi/kafka@sha256:dee931ec46564fab565d9f53cc99b1c7d3c9ddcc704d0b9f61e1dad0e8fe5979` |\r\n| Apache Kafka 4.2.2 | `quay.io/strimzi/kafka@sha256:e7ef32e74b35769e34b98d7daa24b100fe7d5506a206da6f8dd4eb84c79ca498` |\r\n| Apache Kafka 4.3.0 | `quay.io/strimzi/kafka@sha256:733ebf3c0bd77a3e79108baacafe4f098d08d04c173d5b1d04060d10865419d7` |\r\n| Apache Kafka 4.3.1 | `quay.io/strimzi/kafka@sha256:3d3bd43298d606299a2ede84ffe926606d8f1ef90f32982429e0a32a8e91d85a` |\r\n| Apache Kafka 4.3.2 | `quay.io/strimzi/kafka@sha256:9cea505e434a53cea40941d2c6e9aa5896792fe9c9380feb1d7adea3867a3a0b` |\r\n| Strimzi Bridge | `quay.io/strimzi/kafka-bridge@sha256:4597700f87ab33b7768863728730bc2eb68a0d7fa9633ab2a4cebb3a2730cfa9` |\r\n| Maven Builder | `quay.io/strimzi/maven-builder@sha256:ce67465a4df0fa0a684e64962d6d4fff0b767636ae18e2ee7834bba14f5e4813` |\r\n| Buildah Builder | `quay.io/strimzi/buildah@sha256:7a2f75ee2a66b5cd83ebadf9be5efdf452e31cf006714e8f46f8ce16b3806b98` |",
+      "prerelease": false,
+      "publishedAt": "2026-11-04T10:24:25Z",
+      "url": "https://github.com/strimzi/strimzi-kafka-operator/releases/tag/1.3.1",
+      "version": "1.3.1"
+    },
     {
       "channel": "stable",
       "draft": false,
