@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-02T22:47:21.374Z",
+  "generatedAt": "2026-11-05T21:05:48.374Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 435716774,
+      "name": "v1.57.0",
+      "notes": "### Added Features\r\n\r\n- capture GNU ELF build IDs [PR [#5426](https://github.com/anchore/syft/pull/5426) @adityasaky]\r\n- build lower layer squashes only when a scan reads them [PR [#5492](https://github.com/anchore/syft/pull/5492) @wagoodman]\r\n\r\n### Bug Fixes\r\n\r\n- do not generate CPEs for msrc-kb packages [PR [#5510](https://github.com/anchore/syft/pull/5510) @juanjsebgarcia]\r\n- Fix truncated pre-release versions in Go binaries' ldflags [PR [#5422](https://github.com/anchore/syft/pull/5422) @LemonCondor]\r\n- generate NVD-style terraform_provider CPEs for terraform lock packages [PR [#5261](https://github.com/anchore/syft/pull/5261) @timols]\r\n- OpenSSL-only SHA-256 fallback aborts installation [Issue [#5520](https://github.com/anchore/syft/issues/5520)] [PR [#5521](https://github.com/anchore/syft/pull/5521) @pujitha24]\r\n\r\n### Dependencies\r\n\r\n1 dependency change (1 updated).\r\n\r\n<details>\r\n<summary>Updated (1 package)</summary>\r\n\r\n- github.com/anchore/stereoscope `v0.4.0` → `v0.4.1`\r\n</details>\r\n\r\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.56.0...v1.57.0)**",
+      "prerelease": false,
+      "publishedAt": "2026-11-05T20:46:45Z",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.57.0",
+      "version": "v1.57.0"
+    },
     {
       "channel": "stable",
       "draft": false,

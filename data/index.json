@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T09:29:09.314Z",
+  "generatedAt": "2026-11-05T21:05:54.267Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -68,19 +68,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 427821214,
-        "name": "v0.20.4",
+        "id": 435342143,
+        "name": "v0.20.5",
         "prerelease": false,
-        "publishedAt": "2026-10-29T13:20:20Z",
-        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.4",
-        "version": "v0.20.4"
+        "publishedAt": "2026-11-05T15:25:26Z",
+        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.5",
+        "version": "v0.20.5"
       },
       "name": "Kueue",
       "previous": {
-        "publishedAt": "2026-10-29T12:15:43Z",
-        "version": "v0.19.11"
+        "publishedAt": "2026-11-05T13:58:56Z",
+        "version": "v0.19.12"
       },
-      "releaseCount": 18,
+      "releaseCount": 20,
       "repository": "kubernetes-sigs/kueue",
       "tags": [
         "kubernetes",
@@ -211,17 +211,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 434486639,
-        "name": "v1.13.8",
+        "id": 435549638,
+        "name": "v1.13.9",
         "prerelease": false,
-        "publishedAt": "2026-11-04T21:45:55Z",
-        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.8",
-        "version": "v1.13.8"
+        "publishedAt": "2026-11-05T19:09:38Z",
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.9",
+        "version": "v1.13.9"
       },
       "name": "OpenTofu",
       "previous": {
-        "publishedAt": "2026-10-29T19:37:42Z",
-        "version": "v1.12.11"
+        "publishedAt": "2026-11-05T19:09:15Z",
+        "version": "v1.12.12"
       },
       "releaseCount": 20,
       "repository": "opentofu/opentofu",
@@ -330,19 +330,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 419629501,
-        "name": "3.15.1 / 2026-10-21",
+        "id": 435394330,
+        "name": "3.16.0 / 2026-11-04",
         "prerelease": false,
-        "publishedAt": "2026-10-21T16:15:57Z",
-        "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.1",
-        "version": "v3.15.1"
+        "publishedAt": "2026-11-05T16:06:52Z",
+        "url": "https://github.com/prometheus/prometheus/releases/tag/v3.16.0",
+        "version": "v3.16.0"
       },
       "name": "Prometheus",
       "previous": {
-        "publishedAt": "2026-10-21T12:06:36Z",
-        "version": "v3.13.5"
+        "publishedAt": "2026-10-21T16:15:57Z",
+        "version": "v3.15.1"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "prometheus/prometheus",
       "tags": [
         "metrics",
@@ -481,17 +481,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 428115031,
-        "name": "v0.99.0",
+        "id": 435527758,
+        "name": "v0.100.0",
         "prerelease": false,
-        "publishedAt": "2026-10-29T16:25:08Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.99.0",
-        "version": "v0.99.0"
+        "publishedAt": "2026-11-05T17:47:22Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.100.0",
+        "version": "v0.100.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-10-23T15:23:33Z",
-        "version": "v0.98.2"
+        "publishedAt": "2026-10-29T16:25:08Z",
+        "version": "v0.99.0"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
@@ -2329,19 +2329,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 411437965,
-        "name": "26.8.1",
+        "id": 435379444,
+        "name": "26.8.2",
         "prerelease": false,
-        "publishedAt": "2026-10-13T08:58:15Z",
-        "url": "https://github.com/keycloak/keycloak/releases/tag/26.8.1",
-        "version": "26.8.1"
+        "publishedAt": "2026-11-05T16:00:19Z",
+        "url": "https://github.com/keycloak/keycloak/releases/tag/26.8.2",
+        "version": "26.8.2"
       },
       "name": "Keycloak",
       "previous": {
-        "publishedAt": "2026-10-01T05:57:20Z",
-        "version": "26.8.0"
+        "publishedAt": "2026-10-13T08:58:15Z",
+        "version": "26.8.1"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "keycloak/keycloak",
       "tags": [
         "identity",
@@ -2356,19 +2356,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 400800183,
-        "name": "v7.15.5",
+        "id": 435365450,
+        "name": "v7.15.6",
         "prerelease": false,
-        "publishedAt": "2026-10-01T09:05:48Z",
-        "url": "https://github.com/oauth2-proxy/oauth2-proxy/releases/tag/v7.15.5",
-        "version": "v7.15.5"
+        "publishedAt": "2026-11-05T15:16:01Z",
+        "url": "https://github.com/oauth2-proxy/oauth2-proxy/releases/tag/v7.15.6",
+        "version": "v7.15.6"
       },
       "name": "OAuth2 Proxy",
       "previous": {
-        "publishedAt": "2026-08-20T06:13:03Z",
-        "version": "v7.15.4"
+        "publishedAt": "2026-10-01T09:05:48Z",
+        "version": "v7.15.5"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "oauth2-proxy/oauth2-proxy",
       "tags": [
         "identity",
@@ -2445,19 +2445,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 431720418,
-        "name": "v1.56.0",
+        "id": 435716774,
+        "name": "v1.57.0",
         "prerelease": false,
-        "publishedAt": "2026-11-02T16:53:40Z",
-        "url": "https://github.com/anchore/syft/releases/tag/v1.56.0",
-        "version": "v1.56.0"
+        "publishedAt": "2026-11-05T20:46:45Z",
+        "url": "https://github.com/anchore/syft/releases/tag/v1.57.0",
+        "version": "v1.57.0"
       },
       "name": "Syft",
       "previous": {
-        "publishedAt": "2026-10-19T19:01:26Z",
-        "version": "v1.55.0"
+        "publishedAt": "2026-11-02T16:53:40Z",
+        "version": "v1.56.0"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "anchore/syft",
       "tags": [
         "sbom",

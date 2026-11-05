@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-05T09:28:14.199Z",
+  "generatedAt": "2026-11-05T21:04:57.308Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 435549638,
+      "name": "v1.13.9",
+      "notes": "BUG FIXES:\r\n\r\n- Fix local backend state persistence bug when the first apply crashes. ([#4811](https://github.com/opentofu/opentofu/pull/4811))\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.13.8...v1.13.9",
+      "prerelease": false,
+      "publishedAt": "2026-11-05T19:09:38Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.9",
+      "version": "v1.13.9"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 435517484,
+      "name": "v1.12.12",
+      "notes": "BUG FIXES:\r\n\r\n- Fix local backend state persistence bug when the first apply crashes. ([#4811](https://github.com/opentofu/opentofu/pull/4811))\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.12.11...v1.12.12",
+      "prerelease": false,
+      "publishedAt": "2026-11-05T19:09:15Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.12",
+      "version": "v1.12.12"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-06-12T16:11:30Z",
       "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.9",
       "version": "v1.11.9"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 338654738,
-      "name": "v1.12.2",
-      "notes": "## 1.12.2\r\n\r\nSECURITY ADVISORIES:\r\n\r\n* Previous releases in the v1.12 series could be affected by several vulnerabilities:\r\n  * If for state encryption, OpenBao key provider is used with wrapping algorithms, it could generate panics or hangs on compromised systems where the JWE is specifically crafted.\r\n\r\n  This is fixed now by ([#4177](https://github.com/opentofu/opentofu/pull/4177))\r\n\r\n* Previous releases in the v1.12 series could be affected by several vulnerabilities:\r\n  * When using SSH connections through OpenTofu, the errors that were returned from attempting a connection could include unescaped input bytes.\r\n  * If using an attacker-controlled server to run `tofu` against, it might end up in high CPU consumption.\r\n  \r\n  These are now fixed by ([#4247](https://github.com/opentofu/opentofu/pull/4247))\r\n\r\nBUG FIXES:\r\n\r\n- Properly handle EDEADLK during provider installation. On Unix systems, the kernel may erroneously detect a deadlock between tofu processes using the global plugin cache. ([#4166](https://github.com/opentofu/opentofu/pull/4166))\r\n- Fix race condition while handling closing signals during `tofu login`, both when the signal is sent by the user and when the browser fails to successfully connect. ([4016](https://github.com/opentofu/opentofu/pull/4016))\r\n- Prevent panic when using ephemeral resources during tofu test`. ([#4254](https://github.com/opentofu/opentofu/pull/4253))\r\n\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.12.1...v1.12.2",
-      "prerelease": false,
-      "publishedAt": "2026-06-12T15:26:49Z",
-      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.2",
-      "version": "v1.12.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 330073310,
-      "name": "v1.12.1",
-      "notes": "## SECURITY ADVISORIES:\r\n\r\n* Previous releases in the v1.12 series could be affected by several vulnerabilities:\r\n  * ssh usage through OpenTofu generate hangs or panics.\r\n  * Previously, a revoked 'SignatureKey' belonging to a CA was not correctly checked for revocation. Now, both the 'key' and 'key.SignatureKey' are checked for `@revoked`.\r\n\r\n  This is fixed now by ([#4145](https://github.com/opentofu/opentofu/pull/4145))\r\n\r\n## BUG FIXES:\r\n\r\n- Address a bug introduced in v1.12.0 causing excessive memory usage by providers. ([#4126](https://github.com/opentofu/opentofu/pull/4126))\r\n- Address a bug introduced in v1.12.0 where `replace_triggered_by` was validated incorrectly. ([#4133](https://github.com/opentofu/opentofu/pull/4133)\r\n- The Azure key provider will now accept the `tenant_id`, `subscription_id`, `environment`, and `metadata_host` variables; a bug previously only allowed these to be set through environment variables. ([#4091](https://github.com/opentofu/opentofu/issues/4091))\r\n\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/blob/v1.12/CHANGELOG.md",
-      "prerelease": false,
-      "publishedAt": "2026-05-27T10:44:28Z",
-      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.1",
-      "version": "v1.12.1"
     }
   ],
   "schemaVersion": 1,
