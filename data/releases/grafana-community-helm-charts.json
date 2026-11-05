@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-11-04T09:09:17.579Z",
+  "generatedAt": "2026-11-05T09:28:47.399Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 434987805,
+      "name": "grafana-14.4.0",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [loki] Update docker.io/kiwigrid/k8s-sidecar Docker tag to v2.14.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/963\n* [tempo-distributed] Add appProtocol for the query-frontend HTTP port by @avestuk in https://github.com/grafana-community/helm-charts/pull/886\n* [loki] Add Service for pattern-ingester by @z0rc in https://github.com/grafana-community/helm-charts/pull/965\n* [loki] ruler query frontend by @mac133k in https://github.com/grafana-community/helm-charts/pull/949\n* [loki] List the ruler in NOTES only when it is enabled by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/966\n* [CI] Update helm/kind-action action to v1.15.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/969\n* [loki] Add rollout-operator downscale options to ingester zones by @robertdyr in https://github.com/grafana-community/helm-charts/pull/970\n* [tempo-distributed] keep the chart version out of the pod labels by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/944\n* [grafana] keep the chart version out of the pod labels by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/945\n\n## New Contributors\n* @avestuk made their first contribution in https://github.com/grafana-community/helm-charts/pull/886\n* @mac133k made their first contribution in https://github.com/grafana-community/helm-charts/pull/949\n* @robertdyr made their first contribution in https://github.com/grafana-community/helm-charts/pull/970\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-14.3.1...grafana-14.4.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-05T09:20:32Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.4.0",
+      "version": "grafana-14.4.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 434937443,
+      "name": "tempo-distributed-3.23.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [loki] Add Service for pattern-ingester by @z0rc in https://github.com/grafana-community/helm-charts/pull/965\n* [loki] ruler query frontend by @mac133k in https://github.com/grafana-community/helm-charts/pull/949\n* [loki] List the ruler in NOTES only when it is enabled by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/966\n* [CI] Update helm/kind-action action to v1.15.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/969\n* [loki] Add rollout-operator downscale options to ingester zones by @robertdyr in https://github.com/grafana-community/helm-charts/pull/970\n* [tempo-distributed] keep the chart version out of the pod labels by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/944\n\n## New Contributors\n* @mac133k made their first contribution in https://github.com/grafana-community/helm-charts/pull/949\n* @robertdyr made their first contribution in https://github.com/grafana-community/helm-charts/pull/970\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.22.0...tempo-distributed-3.23.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-05T08:23:24Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.23.0",
+      "version": "tempo-distributed-3.23.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 434516051,
+      "name": "loki-21.0.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [CI] Update helm/kind-action action to v1.15.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/969\n* [loki] Add rollout-operator downscale options to ingester zones by @robertdyr in https://github.com/grafana-community/helm-charts/pull/970\n\n## New Contributors\n* @robertdyr made their first contribution in https://github.com/grafana-community/helm-charts/pull/970\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.4.1...loki-21.0.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-04T22:15:08Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.0.0",
+      "version": "loki-21.0.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-10-30T05:12:08Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.1.0",
       "version": "loki-20.1.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 427784605,
-      "name": "loki-20.0.3",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [CI] Update helm/chart-releaser-action action to v1.8.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/938\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.3.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/939\n* [loki] Only advertise memberlist seed nodes in the memberlist Service by @jkroepke in https://github.com/grafana-community/helm-charts/pull/941\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.0.2...loki-20.0.3",
-      "prerelease": false,
-      "publishedAt": "2026-10-29T11:33:46Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.0.3",
-      "version": "loki-20.0.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 425666048,
-      "name": "grafana-14.2.0",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [tempo-distributed] add gateway.lifecycle and gateway.strategy by @madaraszg-tulip in https://github.com/grafana-community/helm-charts/pull/858\n* [synthetic-monitoring-agent] Update docker.io/grafana/synthetic-monitoring-agent Docker tag to v0.68.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/937\n* [tempo-distributed] Update grafana/enterprise-traces Docker tag to v2.8.13 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/936\n* [loki] Allow a top-level `enabled` key for parent chart conditions by @hervenicol in https://github.com/grafana-community/helm-charts/pull/934\n* [CI] Update helm/chart-releaser-action action to v1.8.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/938\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.3.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/939\n\n## New Contributors\n* @madaraszg-tulip made their first contribution in https://github.com/grafana-community/helm-charts/pull/858\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-14.1.0...grafana-14.2.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-27T15:49:38Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.2.0",
-      "version": "grafana-14.2.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 425200170,
-      "name": "loki-20.0.2",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Allow a top-level `enabled` key for parent chart conditions by @hervenicol in https://github.com/grafana-community/helm-charts/pull/934\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.17.1...loki-20.0.2",
-      "prerelease": false,
-      "publishedAt": "2026-10-27T08:37:36Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.0.2",
-      "version": "loki-20.0.2"
     }
   ],
   "schemaVersion": 1,

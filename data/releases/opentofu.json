@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-30T08:37:58.082Z",
+  "generatedAt": "2026-11-05T09:28:14.199Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 434486639,
+      "name": "v1.13.8",
+      "notes": "## BUG FIXES:\r\n\r\n- The `-v` short option now again works as an alias for the `version` command and `--version` option, fixing an unintended regression in v1.13.0. ([#4769](https://github.com/opentofu/opentofu/pull/4769))\r\n- Fixed panic when provided invalid state encryption configuration. ([#4783](https://github.com/opentofu/opentofu/pull/4783))\r\n\r\n**Full Changelog**: https://github.com/opentofu/opentofu/compare/v1.13.2...v1.13.8",
+      "prerelease": false,
+      "publishedAt": "2026-11-04T21:45:55Z",
+      "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.8",
+      "version": "v1.13.8"
+    },
     {
       "channel": "stable",
       "draft": false,
