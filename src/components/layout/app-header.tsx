@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { Radar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GithubIcon } from "@/components/ui/github-icon";
 import { TimeAgo } from "@/components/ui/time-ago";
@@ -13,7 +14,7 @@ export function AppHeader({ generatedAt }: { generatedAt: string }) {
     <header className="sticky top-0 z-30 border-b border-border bg-bg/85 backdrop-blur">
       <div className={`${HEADER_CONTAINER} flex h-14 items-center gap-3 px-4 sm:px-6`}>
         <Link to="/" className="flex items-center gap-2 text-body font-semibold text-fg">
-          <span aria-hidden="true">📡</span>
+          <Radar className="size-4" aria-hidden="true" />
           Release Radar
         </Link>
         {/* Stays mounted at every width: `hidden` is display:none, so the
