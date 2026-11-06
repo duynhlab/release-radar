@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-11-05T09:28:47.399Z",
+  "generatedAt": "2026-11-06T09:22:01.136Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 436266056,
+      "name": "tempo-distributed-3.27.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] add memcachedParquetPage, a dedicated cache for parquet pages by @madaraszg-tulip in https://github.com/grafana-community/helm-charts/pull/973\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.26.0...tempo-distributed-3.27.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-06T08:36:25Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.27.0",
+      "version": "tempo-distributed-3.27.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 435941948,
+      "name": "tempo-distributed-3.26.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] render the shared memcached through the per-role helpers by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/971\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.25.0...tempo-distributed-3.26.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-06T00:44:48Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.26.0",
+      "version": "tempo-distributed-3.26.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 435784968,
+      "name": "tempo-distributed-3.25.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] Optionally derive memcached resources from allocatedMemory by @juraj-michalek-deel in https://github.com/grafana-community/helm-charts/pull/975\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.24.0...tempo-distributed-3.25.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-05T21:51:24Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.25.0",
+      "version": "tempo-distributed-3.25.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 435774971,
+      "name": "tempo-distributed-3.24.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [grafana] keep the chart version out of the pod labels by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/945\n* [tempo-distributed] Size memcached with -m, -I and -c by default by @juraj-michalek-deel in https://github.com/grafana-community/helm-charts/pull/967\n\n## New Contributors\n* @juraj-michalek-deel made their first contribution in https://github.com/grafana-community/helm-charts/pull/967\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.23.0...tempo-distributed-3.24.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-05T21:40:02Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.24.0",
+      "version": "tempo-distributed-3.24.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -176,50 +220,6 @@
       "publishedAt": "2026-11-01T03:27:49Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.22.1",
       "version": "synthetic-monitoring-agent-1.22.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 430119409,
-      "name": "grafana-14.3.0",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [loki] Only advertise memberlist seed nodes in the memberlist Service by @jkroepke in https://github.com/grafana-community/helm-charts/pull/941\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/947\n* [loki] add gateway API ListenerSet support for routes in Loki chart by @rgarcia89 in https://github.com/grafana-community/helm-charts/pull/946\n* [loki] Default the gateway Ingress pathType to Prefix by @sarankumar1325 in https://github.com/grafana-community/helm-charts/pull/956\n* [grafana] Render the plugins init container for sidecar.plugins.initPlugins by @sarankumar1325 in https://github.com/grafana-community/helm-charts/pull/950\n\n## New Contributors\n* @rgarcia89 made their first contribution in https://github.com/grafana-community/helm-charts/pull/946\n* @sarankumar1325 made their first contribution in https://github.com/grafana-community/helm-charts/pull/956\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-14.2.0...grafana-14.3.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-31T18:45:58Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.3.0",
-      "version": "grafana-14.3.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 429978267,
-      "name": "loki-20.2.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Default the gateway Ingress pathType to Prefix by @sarankumar1325 in https://github.com/grafana-community/helm-charts/pull/956\n\n## New Contributors\n* @sarankumar1325 made their first contribution in https://github.com/grafana-community/helm-charts/pull/956\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.2.0...loki-20.2.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-31T14:14:21Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.2.1",
-      "version": "loki-20.2.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 428821514,
-      "name": "loki-20.2.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] add gateway API ListenerSet support for routes in Loki chart by @rgarcia89 in https://github.com/grafana-community/helm-charts/pull/946\n\n## New Contributors\n* @rgarcia89 made their first contribution in https://github.com/grafana-community/helm-charts/pull/946\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.1.0...loki-20.2.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-30T08:59:09Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.2.0",
-      "version": "loki-20.2.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 428675468,
-      "name": "loki-20.1.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/947\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.0.3...loki-20.1.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-30T05:12:08Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.1.0",
-      "version": "loki-20.1.0"
     }
   ],
   "schemaVersion": 1,

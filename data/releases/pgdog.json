@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-02T22:47:24.811Z",
+  "generatedAt": "2026-11-06T09:22:21.607Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 435775580,
+      "name": "v0.1.64",
+      "notes": "## Performance\r\n- Use PGO for release builds improving x86 performance by 5% and ARM64 by 30%\r\n\r\n## Bug fixes\r\n- Two-phase commit in auto mode would not commit correctly with multi-tuple INSERT statements\r\n- Empty query (`;`) used by Rails for health checking a connection would be blocked inside a failed transaction\r\n- Query cancellation would leak between connections if the query finished on its own before the cancellation request was processed by Postgres\r\n- Primary key discovery wouldn't work for read-only users which would cause automatic primary key injection to break in sharded deployments if the read user was used to fetch the database schema (race condition)\r\n- UNLISTEN * wouldn't do anything, it now correctly unsubscribes the client from all channel notifications\r\n- Fast, consecutive RELOADs could propagate \"pool is offline\" to connected clients\r\n- Replica lag formula would break if user changed the `timezone` session parameter; this is because the replica lag monitor re-uses connections from the user pool & and we don't (intentionally) reset parameters on connection checkin. All time functions in the replica lag query now use `AS TIME ZONE 'UTC'`\r\n- `read_write_split = \"exclude_primary\"` was allowing reads on primary if no replicas were available\r\n- Inject `Describe` into extended protocol used in cross-shard queries and use the returned `RowDescription` to decode rows when performing cross-shard aggregation; this avoids data type mismatches during resharding when we automatically upgrade `integer` columns to `bigint`\r\n\r\n## Features\r\n- Correctly handle `count(*)::numeric` type cast in cross-shard SELECT\r\n- Filter replicas from the load balancer using their last known LSN by providing the LSN as part of a query comment, e.g., `/* pgdog_lsn: 0/0 */ SELECT [...]`\r\n- Add `read_write_split` setting to users in `users.toml`\r\n- Partial support for `HAVING` clause in aggregates\r\n- Support sorting/aggregating on `inet`, `money` and `cidr` data types\r\n\r\n## Security\r\n- Added snakeoil certs back into the Docker image. Don't use them in prod, but they are useful for testing. Security scanners flag those; just ignore it.\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.63...v0.1.64",
+      "prerelease": false,
+      "publishedAt": "2026-11-05T21:40:40Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.64",
+      "version": "v0.1.64"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-18T19:12:32Z",
       "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.45",
       "version": "v0.1.45"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 338172668,
-      "name": "v0.1.44",
-      "notes": "## What's Changed\r\n\r\n* fix(security): use `constant_eq` for password checks @meskill\r\n* fix(security): admin password not checked when using passthrough auth\r\n* fix(resharding): fix issues with copy data @meskill\r\n* feat(resharding): use binary protocol for replication (slightly faster than text) @meskill \r\n* fix(sharding): don't track columns independently, allowing duplicate expression rewrites in cross-shard queries @sgrif\r\n* feat(sharding): error when encountering an unsupported aggregate function in cross-shard queries @sgrif\r\n* feat(sharding): give a more meaningful error message when a helper column is missing in cross-shard queries @sgrif\r\n* chore: update to Rust 2024 @sgrif\r\n* fix: refactor and improve the functionality of `avg()` @sgrif \r\n* refactor: aggregate functions cleanup @sgrif \r\n* fix: clippy fixes @imor\r\n* fix: more clippy errors and CI enforcement @meskill \r\n* fix: handle comments in `SET` in regex detector \r\n\r\nAlso introducing our company mascot, Von Count.\r\n\r\n<img width=\"225\" height=\"225\" alt=\"image\" src=\"https://github.com/user-attachments/assets/43c6fe1c-6620-4e64-9863-c567e5838cca\" />\r\n\r\n\r\n## New Contributors\r\n* @imor made their first contribution in https://github.com/pgdogdev/pgdog/pull/1056\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.43...v0.1.44",
-      "prerelease": false,
-      "publishedAt": "2026-06-11T18:55:40Z",
-      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.44",
-      "version": "v0.1.44"
     }
   ],
   "schemaVersion": 1,

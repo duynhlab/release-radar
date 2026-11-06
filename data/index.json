@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T21:05:54.267Z",
+  "generatedAt": "2026-11-06T09:22:23.791Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1344,19 +1344,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 421626581,
-        "name": "0.94.2 / 2026-10-22",
+        "id": 436293402,
+        "name": "0.95.1 / 2026-11-05",
         "prerelease": false,
-        "publishedAt": "2026-10-23T08:50:26Z",
-        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.94.2",
-        "version": "v0.94.2"
+        "publishedAt": "2026-11-06T09:07:55Z",
+        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.95.1",
+        "version": "v0.95.1"
       },
       "name": "Prometheus Operator",
       "previous": {
-        "publishedAt": "2026-09-23T13:14:37Z",
-        "version": "v0.94.1"
+        "publishedAt": "2026-11-06T09:07:25Z",
+        "version": "v0.95.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 16,
       "repository": "prometheus-operator/prometheus-operator",
       "tags": [
         "metrics",
@@ -1492,17 +1492,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 425311360,
-        "name": "openbao-0.30.6",
+        "id": 436180258,
+        "name": "openbao-0.30.7",
         "prerelease": false,
-        "publishedAt": "2026-10-27T10:34:11Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.6",
-        "version": "openbao-0.30.6"
+        "publishedAt": "2026-11-06T06:36:48Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.7",
+        "version": "openbao-0.30.7"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-10-26T21:17:09Z",
-        "version": "openbao-0.30.5"
+        "publishedAt": "2026-10-27T10:34:11Z",
+        "version": "openbao-0.30.6"
       },
       "releaseCount": 20,
       "repository": "openbao/openbao-helm",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 434987805,
-        "name": "grafana-14.4.0",
+        "id": 436266056,
+        "name": "tempo-distributed-3.27.0",
         "prerelease": false,
-        "publishedAt": "2026-11-05T09:20:32Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.4.0",
-        "version": "grafana-14.4.0"
+        "publishedAt": "2026-11-06T08:36:25Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.27.0",
+        "version": "tempo-distributed-3.27.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-05T08:23:24Z",
-        "version": "tempo-distributed-3.23.0"
+        "publishedAt": "2026-11-06T00:44:48Z",
+        "version": "tempo-distributed-3.26.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2414,19 +2414,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 431760585,
-        "name": "v0.121.1",
+        "id": 435758840,
+        "name": "v0.121.2",
         "prerelease": false,
-        "publishedAt": "2026-11-02T17:29:55Z",
-        "url": "https://github.com/anchore/grype/releases/tag/v0.121.1",
-        "version": "v0.121.1"
+        "publishedAt": "2026-11-05T21:22:53Z",
+        "url": "https://github.com/anchore/grype/releases/tag/v0.121.2",
+        "version": "v0.121.2"
       },
       "name": "Grype",
       "previous": {
-        "publishedAt": "2026-10-19T20:32:56Z",
-        "version": "v0.121.0"
+        "publishedAt": "2026-11-02T17:29:55Z",
+        "version": "v0.121.1"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "anchore/grype",
       "tags": [
         "scanning",
@@ -2593,17 +2593,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 431718866,
-        "name": "v0.1.63",
+        "id": 435775580,
+        "name": "v0.1.64",
         "prerelease": false,
-        "publishedAt": "2026-11-02T16:52:00Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.63",
-        "version": "v0.1.63"
+        "publishedAt": "2026-11-05T21:40:40Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.64",
+        "version": "v0.1.64"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-10-16T18:28:28Z",
-        "version": "v0.1.62"
+        "publishedAt": "2026-11-02T16:52:00Z",
+        "version": "v0.1.63"
       },
       "releaseCount": 20,
       "repository": "pgdogdev/pgdog",

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-27T19:26:22.838Z",
+  "generatedAt": "2026-11-06T09:21:56.795Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 436180258,
+      "name": "openbao-0.30.7",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* Remove legacy GKE test infrastructure and fix Helm 4 CI compatibility by @kangetsu121 in https://github.com/openbao/openbao-helm/pull/265\n* ci: update runtimes to address the eMudhra CA compromise by @kangetsu121 in https://github.com/openbao/openbao-helm/pull/266\n* feat(trafficDistribution): addition to all services by @eyenx in https://github.com/openbao/openbao-helm/pull/261\n* chore: release 0.30.7 by @eyenx in https://github.com/openbao/openbao-helm/pull/270\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.30.6...openbao-0.30.7",
+      "prerelease": false,
+      "publishedAt": "2026-11-06T06:36:48Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.7",
+      "version": "openbao-0.30.7"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-05-13T14:33:31Z",
       "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.2",
       "version": "openbao-0.28.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 321814252,
-      "name": "openbao-0.28.1",
-      "notes": "Official OpenBao Chart\n\n## What's Changed\n* chore: bump openbao-ubi to 2.5.3 and vault-k8s to 1.7.2-ubi for oscp by @karras in https://github.com/openbao/openbao-helm/pull/177\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.28.0...openbao-0.28.1",
-      "prerelease": false,
-      "publishedAt": "2026-05-13T11:31:18Z",
-      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.1",
-      "version": "openbao-0.28.1"
     }
   ],
   "schemaVersion": 1,

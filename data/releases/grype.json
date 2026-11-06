@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-02T22:47:20.710Z",
+  "generatedAt": "2026-11-06T09:22:17.746Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 435758840,
+      "name": "v0.121.2",
+      "notes": "### Bug Fixes\n\n- deterministic ordering of db search match results [PR [#3883](https://github.com/anchore/grype/pull/3883) @wagoodman]\n\n### Dependencies\n\n2 dependency changes (2 updated).\n\n<details>\n<summary>Updated (2 packages)</summary>\n\n- github.com/anchore/stereoscope `v0.4.0` → `v0.4.1`\n- github.com/anchore/syft `v1.56.0` → `v1.57.0`\n</details>\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.121.1...v0.121.2)**",
+      "prerelease": false,
+      "publishedAt": "2026-11-05T21:22:53Z",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.121.2",
+      "version": "v0.121.2"
+    },
     {
       "channel": "stable",
       "draft": false,
