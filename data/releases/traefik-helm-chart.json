@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-03T09:30:52.846Z",
+  "generatedAt": "2026-11-06T20:26:53.854Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 436749881,
+      "name": "v42.3.1",
+      "notes": "# [v42.3.1](https://github.com/traefik/traefik-helm-chart/compare/v42.3.0...v42.3.1) (2026-11-06)\n\n## :rocket: Features\n\n- feat: support traefik v3.8-rc1 #2073 by @bpsoraggi\n- feat(hub): :rocket: support traefik hub v3.21.8 #2079 by @bpsoraggi\n\n## :bug: Bug fixes\n\n- fix(service): reject removed service.type value #2046 by @sean0407\n- fix(providers): update CRD safeNaming to reflect warning language #2039 by @davepgreene\n\n## :package: Others\n\n- docs(examples): bump the Traefik MCP server sidecar to v0.6.0 #2074 by @emilevauge\n- chore(release): publish 42.3.1 #2078 by @bpsoraggi\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.17 (default)\n* Traefik Hub: v3.19.3 -> v3.21.8",
+      "prerelease": false,
+      "publishedAt": "2026-11-06T16:44:37Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.3.1",
+      "version": "v42.3.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-29T12:24:28Z",
       "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.0.1",
       "version": "v41.0.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 340113980,
-      "name": "v41.0.0",
-      "notes": "# [v41.0.0](https://github.com/traefik/traefik-helm-chart/compare/v40.3.0...v41.0.0) (2026-06-16)\r\n\r\n**Upgrade Notes**\r\n\r\n1. **Logs & access logs syntax**: The chart now aligns its logging keys with the upstream Traefik syntax with PR https://github.com/traefik/traefik-helm-chart/pull/1887.\r\n   * `logs.general` is renamed to `log` (e.g. `logs.general.level` → `log.level`).\r\n   * `logs.access` is renamed to `accessLog` (e.g. `logs.access.format` → `accessLog.format`).\r\n   * Filter and field keys are now camelCased: `filters.statuscodes` → `filters.statusCodes`, `filters.retryattempts` → `filters.retryAttempts`, `filters.minduration` → `filters.minDuration`, and `fields.*.defaultmode` → `fields.*.defaultMode`.\r\n   * The `accessLog.fields.general` nesting level is removed: `fields.general.defaultmode` → `fields.defaultMode`.Expand commentComment on line R27Resolved\r\n2. **File provider content**: `providers.file.content` is now an object (`{}`) instead of a string (`\"\"`).\r\n\r\n> [!TIP]\r\n> Image `registry` and `repository` now default to `null`.\r\n> The chart now automatically resolves the full official image URI for both Traefik Proxy and Traefik Hub.\r\n\r\n## :boom: BREAKING CHANGES\r\n\r\n- feat(providers.file)!: switch content to an object #1861 by @minrk\r\n- fix(logs)!: align syntax with upstream #1887 by @mloiseleur\r\n\r\n## :rocket: Features\r\n\r\n- feat(version): :sparkles: relax max-version guard to warn on minor/patch, fail only on major mismatch #1884 by @darkweaver87\r\n- feat(hub): :sparkles: install out-of-box with only hub.token set #1885 by @darkweaver87\r\n- feat(deps): update traefik docker tag to v3.7.5 #1888 by @renovate-with-github-actions[bot]\r\n\r\n## :bug: Bug fixes\r\n\r\n- fix(notes): :memo: use traefik.image-name so NOTES match deployed image #1886 by @mloiseleur\r\n- fix(deployment): omit spec.replicas when replicas is null #1891 by @mloiseleur\r\n- fix(provider): :bug: emit kubernetesIngressNGINX publishService for external service #1897 by @mloiseleur\r\n\r\n## :package: Others\r\n\r\n- ci: track max-version assertions with relaxed guard wording #1889 by @mloiseleur\r\n- ci(renovate): restore update on appVersion #1892 by @mloiseleur\r\n- chore(deps): update dependency helm to v4.2.1 #1893 by @renovate-with-github-actions[bot]\r\n- chore(deps): update losisin/helm-values-schema-json-action action to v3.0.1 #1894 by @renovate-with-github-actions[bot]\r\n- ci(security): declare contents:write on release workflow #1855 by @arpitjain099\r\n- chore(release): publish 41.0.0 #1895 by @mloiseleur\r\n\r\n## 👌 Traefik version support\r\n\r\n* Traefik Proxy: v3.6.0 -> v3.7.5 (default)\r\n* Traefik Hub: v3.19.3 -> v3.20.4",
-      "prerelease": false,
-      "publishedAt": "2026-06-16T11:52:37Z",
-      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.0.0",
-      "version": "v41.0.0"
     }
   ],
   "schemaVersion": 1,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T09:22:23.791Z",
+  "generatedAt": "2026-11-06T20:27:36.882Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -453,17 +453,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 432361617,
-        "name": "v42.3.0",
+        "id": 436749881,
+        "name": "v42.3.1",
         "prerelease": false,
-        "publishedAt": "2026-11-03T06:52:27Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.3.0",
-        "version": "v42.3.0"
+        "publishedAt": "2026-11-06T16:44:37Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.3.1",
+        "version": "v42.3.1"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-10-30T13:16:34Z",
-        "version": "v42.2.0"
+        "publishedAt": "2026-11-03T06:52:27Z",
+        "version": "v42.3.0"
       },
       "releaseCount": 20,
       "repository": "traefik/traefik-helm-chart",
@@ -730,17 +730,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420442298,
-        "name": "Istio 1.31.3",
+        "id": 436764343,
+        "name": "Istio 1.31.4",
         "prerelease": false,
-        "publishedAt": "2026-10-22T12:46:24Z",
-        "url": "https://github.com/istio/istio/releases/tag/1.31.3",
-        "version": "1.31.3"
+        "publishedAt": "2026-11-06T19:01:19Z",
+        "url": "https://github.com/istio/istio/releases/tag/1.31.4",
+        "version": "1.31.4"
       },
       "name": "Istio",
       "previous": {
-        "publishedAt": "2026-10-22T12:46:06Z",
-        "version": "1.30.7"
+        "publishedAt": "2026-11-06T19:00:51Z",
+        "version": "1.30.8"
       },
       "releaseCount": 20,
       "repository": "istio/istio",
@@ -758,19 +758,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424081741,
-        "name": "v1.9.3",
+        "id": 436438553,
+        "name": "v1.10.0",
         "prerelease": false,
-        "publishedAt": "2026-10-26T09:58:38Z",
-        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.9.3",
-        "version": "v1.9.3"
+        "publishedAt": "2026-11-06T11:48:01Z",
+        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.10.0",
+        "version": "v1.10.0"
       },
       "name": "Envoy Gateway",
       "previous": {
-        "publishedAt": "2026-10-26T06:47:49Z",
-        "version": "v1.8.6"
+        "publishedAt": "2026-10-26T09:58:38Z",
+        "version": "v1.9.3"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "envoyproxy/gateway",
       "tags": [
         "gateway",
@@ -1183,19 +1183,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 421009548,
-        "name": "v0.5.0",
+        "id": 436865237,
+        "name": "v0.5.1",
         "prerelease": false,
-        "publishedAt": "2026-10-22T17:33:04Z",
-        "url": "https://github.com/ClickHouse/clickhousectl/releases/tag/v0.5.0",
-        "version": "v0.5.0"
+        "publishedAt": "2026-11-06T18:48:45Z",
+        "url": "https://github.com/ClickHouse/clickhousectl/releases/tag/v0.5.1",
+        "version": "v0.5.1"
       },
       "name": "clickhousectl",
       "previous": {
-        "publishedAt": "2026-09-03T16:18:32Z",
-        "version": "v0.4.2"
+        "publishedAt": "2026-10-22T17:33:04Z",
+        "version": "v0.5.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "ClickHouse/clickhousectl",
       "tags": [
         "clickhouse",
@@ -1525,19 +1525,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 418953715,
-        "name": "v3.7.9",
+        "id": 436707052,
+        "name": "v3.6.20",
         "prerelease": false,
-        "publishedAt": "2026-10-20T22:53:57Z",
-        "url": "https://github.com/grafana/loki/releases/tag/v3.7.9",
-        "version": "v3.7.9"
+        "publishedAt": "2026-11-06T16:11:18Z",
+        "url": "https://github.com/grafana/loki/releases/tag/v3.6.20",
+        "version": "v3.6.20"
       },
       "name": "Loki",
       "previous": {
-        "publishedAt": "2026-10-20T22:36:42Z",
-        "version": "v3.6.19"
+        "publishedAt": "2026-10-20T22:53:57Z",
+        "version": "v3.7.9"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "grafana/loki",
       "tags": [
         "logs"

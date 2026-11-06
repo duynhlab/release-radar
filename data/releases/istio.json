@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-22T18:31:51.656Z",
+  "generatedAt": "2026-11-06T20:27:00.030Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 436764343,
+      "name": "Istio 1.31.4",
+      "notes": "[Release Notes](https://istio.io/news/releases/1.31.x/announcing-1.31.4/)",
+      "prerelease": false,
+      "publishedAt": "2026-11-06T19:01:19Z",
+      "url": "https://github.com/istio/istio/releases/tag/1.31.4",
+      "version": "1.31.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 436802968,
+      "name": "Istio 1.30.8",
+      "notes": "[Release Notes](https://istio.io/news/releases/1.30.x/announcing-1.30.8/)",
+      "prerelease": false,
+      "publishedAt": "2026-11-06T19:00:51Z",
+      "url": "https://github.com/istio/istio/releases/tag/1.30.8",
+      "version": "1.30.8"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-06-24T18:25:13Z",
       "url": "https://github.com/istio/istio/releases/tag/1.30.2",
       "version": "1.30.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 334599092,
-      "name": "Istio 1.29.4",
-      "notes": "[Artifacts](http://gcsweb.istio.io/gcs/istio-release/releases/1.29.4/)\r\n[Release Notes](https://istio.io/news/releases/1.29.x/announcing-1.29.4/)",
-      "prerelease": false,
-      "publishedAt": "2026-06-04T21:51:28Z",
-      "url": "https://github.com/istio/istio/releases/tag/1.29.4",
-      "version": "1.29.4"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 334602395,
-      "name": "Istio 1.28.8",
-      "notes": "[Artifacts](http://gcsweb.istio.io/gcs/istio-release/releases/1.28.8/)\r\n[Release Notes](https://istio.io/news/releases/1.28.x/announcing-1.28.8/)",
-      "prerelease": false,
-      "publishedAt": "2026-06-04T21:50:17Z",
-      "url": "https://github.com/istio/istio/releases/tag/1.28.8",
-      "version": "1.28.8"
     }
   ],
   "schemaVersion": 1,
