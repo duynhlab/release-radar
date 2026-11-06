@@ -75,7 +75,7 @@
   --color-pre-bg: var(--rr-pre-bg);
   --color-pre-fg: var(--rr-pre-fg);
 
-  /* Category hues: badge-only, low chroma. */
+  /* Category badges share a neutral monochrome treatment. */
   --color-cat-kubernetes-bg: var(--rr-cat-kubernetes-bg);
   --color-cat-kubernetes-fg: var(--rr-cat-kubernetes-fg);
   --color-cat-gitops-bg: var(--rr-cat-gitops-bg);
@@ -104,106 +104,105 @@
 :root,
 .dark {
   color-scheme: dark;
-  --rr-bg: oklch(0.165 0.01 264);
-  --rr-surface: oklch(0.213 0.012 264);
-  --rr-surface-hover: oklch(0.248 0.014 264);
-  --rr-border: oklch(0.29 0.014 264);
-  --rr-border-strong: oklch(0.38 0.016 264);
+  --rr-bg: oklch(0.165 0 0);
+  --rr-surface: oklch(0.213 0 0);
+  --rr-surface-hover: oklch(0.248 0 0);
+  --rr-border: oklch(0.29 0 0);
+  --rr-border-strong: oklch(0.38 0 0);
   /* 0.965 measured 17.4:1 on --rr-bg — far past the point where contrast
      helps. Near-white text on a dark ground haloes (halation), and paragraphs
      sat at half that luminance, so every markdown block read as gray body
      with glaring bold. 0.90 is ~14.3:1: still comfortably past the 7:1 AAA
      floor, no glare. tests/unit/contrast.test.ts pins a ceiling so this does
      not creep back up. */
-  --rr-fg: oklch(0.9 0.006 264);
+  --rr-fg: oklch(0.9 0 0);
   /* 10.3:1 on --rr-bg. Raised with fg lowered so the body/emphasis gap inside
      one paragraph is a step, not a jump (was 8.97 vs 17.41). */
-  --rr-fg-muted: oklch(0.8 0.012 264);
+  --rr-fg-muted: oklch(0.8 0 0);
   /* 6.7:1 on --rr-bg, 6.1:1 on --rr-surface — this tier carries 12px metadata,
      same reasoning as the light-theme note below. */
-  --rr-fg-subtle: oklch(0.68 0.014 264);
-  --rr-accent: oklch(0.74 0.14 235);
-  --rr-accent-hover: oklch(0.8 0.13 235);
-  --rr-accent-fg: oklch(0.18 0.02 235);
-  --rr-accent-soft: oklch(0.3 0.055 235);
-  --rr-focus: oklch(0.82 0.15 225);
-  --rr-star: oklch(0.82 0.15 85);
+  --rr-fg-subtle: oklch(0.68 0 0);
+  --rr-accent: oklch(0.88 0 0);
+  --rr-accent-hover: oklch(0.96 0 0);
+  --rr-accent-fg: oklch(0.18 0 0);
+  --rr-accent-soft: oklch(0.3 0 0);
+  --rr-focus: oklch(0.82 0 0);
+  --rr-star: oklch(0.82 0 0);
 
-  --rr-pre-bg: oklch(0.29 0.05 60);
-  --rr-pre-fg: oklch(0.87 0.095 60);
+  --rr-pre-bg: oklch(0.29 0 0);
+  --rr-pre-fg: oklch(0.87 0 0);
 
-  /* 11 hues ≥25 apart so adjacent badges stay distinguishable, and clear of
-     the prerelease badge (hue 60), which can share a card with them. */
-  --rr-cat-kubernetes-bg: oklch(0.28 0.045 240);
-  --rr-cat-kubernetes-fg: oklch(0.865 0.085 240);
-  --rr-cat-gitops-bg: oklch(0.28 0.045 140);
-  --rr-cat-gitops-fg: oklch(0.865 0.085 140);
-  --rr-cat-iac-bg: oklch(0.28 0.045 300);
-  --rr-cat-iac-fg: oklch(0.865 0.085 300);
-  --rr-cat-observability-bg: oklch(0.28 0.045 45);
-  --rr-cat-observability-fg: oklch(0.865 0.085 45);
-  --rr-cat-database-bg: oklch(0.28 0.045 270);
-  --rr-cat-database-fg: oklch(0.865 0.085 270);
-  --rr-cat-backup-bg: oklch(0.28 0.045 330);
-  --rr-cat-backup-fg: oklch(0.865 0.085 330);
-  --rr-cat-messaging-bg: oklch(0.28 0.045 355);
-  --rr-cat-messaging-fg: oklch(0.865 0.085 355);
-  --rr-cat-networking-bg: oklch(0.28 0.045 205);
-  --rr-cat-networking-fg: oklch(0.865 0.085 205);
-  --rr-cat-security-bg: oklch(0.28 0.045 15);
-  --rr-cat-security-fg: oklch(0.865 0.085 15);
-  --rr-cat-testing-bg: oklch(0.28 0.045 110);
-  --rr-cat-testing-fg: oklch(0.865 0.085 110);
-  --rr-cat-ai-bg: oklch(0.28 0.045 175);
-  --rr-cat-ai-fg: oklch(0.865 0.085 175);
+  /* Neutral badge surfaces retain text labels for identification. */
+  --rr-cat-kubernetes-bg: oklch(0.28 0 0);
+  --rr-cat-kubernetes-fg: oklch(0.865 0 0);
+  --rr-cat-gitops-bg: oklch(0.28 0 0);
+  --rr-cat-gitops-fg: oklch(0.865 0 0);
+  --rr-cat-iac-bg: oklch(0.28 0 0);
+  --rr-cat-iac-fg: oklch(0.865 0 0);
+  --rr-cat-observability-bg: oklch(0.28 0 0);
+  --rr-cat-observability-fg: oklch(0.865 0 0);
+  --rr-cat-database-bg: oklch(0.28 0 0);
+  --rr-cat-database-fg: oklch(0.865 0 0);
+  --rr-cat-backup-bg: oklch(0.28 0 0);
+  --rr-cat-backup-fg: oklch(0.865 0 0);
+  --rr-cat-messaging-bg: oklch(0.28 0 0);
+  --rr-cat-messaging-fg: oklch(0.865 0 0);
+  --rr-cat-networking-bg: oklch(0.28 0 0);
+  --rr-cat-networking-fg: oklch(0.865 0 0);
+  --rr-cat-security-bg: oklch(0.28 0 0);
+  --rr-cat-security-fg: oklch(0.865 0 0);
+  --rr-cat-testing-bg: oklch(0.28 0 0);
+  --rr-cat-testing-fg: oklch(0.865 0 0);
+  --rr-cat-ai-bg: oklch(0.28 0 0);
+  --rr-cat-ai-fg: oklch(0.865 0 0);
 }
 
 .light {
   color-scheme: light;
-  --rr-bg: oklch(0.985 0.002 264);
+  --rr-bg: oklch(0.975 0 0);
   --rr-surface: oklch(1 0 0);
-  --rr-surface-hover: oklch(0.972 0.003 264);
-  --rr-border: oklch(0.912 0.006 264);
-  --rr-border-strong: oklch(0.84 0.008 264);
-  --rr-fg: oklch(0.235 0.012 264);
-  --rr-fg-muted: oklch(0.47 0.014 264);
+  --rr-surface-hover: oklch(0.972 0 0);
+  --rr-border: oklch(0.912 0 0);
+  --rr-border-strong: oklch(0.84 0 0);
+  --rr-fg: oklch(0.235 0 0);
+  --rr-fg-muted: oklch(0.47 0 0);
   /* 0.57 measured 4.29:1 on --rr-bg, under the 4.5 WCAG AA floor for normal
      text — and this tier carries 12px metadata (relative times, release gap
      lines). axe reported no violation, because it cannot resolve oklch()
      colours; the number came from sampling rendered pixels on a canvas. */
-  --rr-fg-subtle: oklch(0.53 0.014 264);
-  --rr-accent: oklch(0.52 0.17 250);
-  --rr-accent-hover: oklch(0.455 0.175 250);
+  --rr-fg-subtle: oklch(0.53 0 0);
+  --rr-accent: oklch(0.28 0 0);
+  --rr-accent-hover: oklch(0.18 0 0);
   --rr-accent-fg: oklch(1 0 0);
-  --rr-accent-soft: oklch(0.955 0.03 250);
-  --rr-focus: oklch(0.56 0.18 250);
-  --rr-star: oklch(0.7 0.16 75);
+  --rr-accent-soft: oklch(0.955 0 0);
+  --rr-focus: oklch(0.56 0 0);
+  --rr-star: oklch(0.35 0 0);
 
-  --rr-pre-bg: oklch(0.96 0.028 60);
-  --rr-pre-fg: oklch(0.45 0.11 60);
+  --rr-pre-bg: oklch(0.96 0 0);
+  --rr-pre-fg: oklch(0.45 0 0);
 
-  --rr-cat-kubernetes-bg: oklch(0.96 0.028 240);
-  --rr-cat-kubernetes-fg: oklch(0.45 0.11 240);
-  --rr-cat-gitops-bg: oklch(0.96 0.028 140);
-  --rr-cat-gitops-fg: oklch(0.45 0.11 140);
-  --rr-cat-iac-bg: oklch(0.96 0.028 300);
-  --rr-cat-iac-fg: oklch(0.45 0.11 300);
-  --rr-cat-observability-bg: oklch(0.96 0.028 45);
-  --rr-cat-observability-fg: oklch(0.45 0.11 45);
-  --rr-cat-database-bg: oklch(0.96 0.028 270);
-  --rr-cat-database-fg: oklch(0.45 0.11 270);
-  --rr-cat-backup-bg: oklch(0.96 0.028 330);
-  --rr-cat-backup-fg: oklch(0.45 0.11 330);
-  --rr-cat-messaging-bg: oklch(0.96 0.028 355);
-  --rr-cat-messaging-fg: oklch(0.45 0.11 355);
-  --rr-cat-networking-bg: oklch(0.96 0.028 205);
-  --rr-cat-networking-fg: oklch(0.45 0.11 205);
-  --rr-cat-security-bg: oklch(0.96 0.028 15);
-  --rr-cat-security-fg: oklch(0.45 0.11 15);
-  --rr-cat-testing-bg: oklch(0.96 0.028 110);
-  --rr-cat-testing-fg: oklch(0.45 0.11 110);
-  --rr-cat-ai-bg: oklch(0.96 0.028 175);
-  --rr-cat-ai-fg: oklch(0.45 0.11 175);
+  --rr-cat-kubernetes-bg: oklch(0.96 0 0);
+  --rr-cat-kubernetes-fg: oklch(0.45 0 0);
+  --rr-cat-gitops-bg: oklch(0.96 0 0);
+  --rr-cat-gitops-fg: oklch(0.45 0 0);
+  --rr-cat-iac-bg: oklch(0.96 0 0);
+  --rr-cat-iac-fg: oklch(0.45 0 0);
+  --rr-cat-observability-bg: oklch(0.96 0 0);
+  --rr-cat-observability-fg: oklch(0.45 0 0);
+  --rr-cat-database-bg: oklch(0.96 0 0);
+  --rr-cat-database-fg: oklch(0.45 0 0);
+  --rr-cat-backup-bg: oklch(0.96 0 0);
+  --rr-cat-backup-fg: oklch(0.45 0 0);
+  --rr-cat-messaging-bg: oklch(0.96 0 0);
+  --rr-cat-messaging-fg: oklch(0.45 0 0);
+  --rr-cat-networking-bg: oklch(0.96 0 0);
+  --rr-cat-networking-fg: oklch(0.45 0 0);
+  --rr-cat-security-bg: oklch(0.96 0 0);
+  --rr-cat-security-fg: oklch(0.45 0 0);
+  --rr-cat-testing-bg: oklch(0.96 0 0);
+  --rr-cat-testing-fg: oklch(0.45 0 0);
+  --rr-cat-ai-bg: oklch(0.96 0 0);
+  --rr-cat-ai-fg: oklch(0.45 0 0);
 }
 
 /* Expands an icon button's pointer target to 40px while it stays 32px visually,

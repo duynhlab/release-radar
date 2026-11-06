@@ -11,8 +11,8 @@ export type ResolvedTheme = "light" | "dark";
  * mapping).
  */
 export const THEME_COLORS: Record<ResolvedTheme, string> = {
-  dark: "#0c0e13", // oklch(0.165 0.01 264)
-  light: "#f9fafb", // oklch(0.985 0.002 264)
+  dark: "#0e0e0e", // oklch(0.165 0 0)
+  light: "#f7f7f7", // oklch(0.975 0 0)
 };
 
 /**

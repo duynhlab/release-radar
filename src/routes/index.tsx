@@ -17,6 +17,7 @@ import { PageContainer } from "@/components/layout/page-container";
 import { PageTitle } from "@/components/ui/page-title";
 import { CatalogSkeleton } from "@/components/ui/skeleton";
 import { formatDate } from "@/lib/dates";
+import { bucketByRecency } from "@/features/catalog/filters";
 import { buildMeta, canonicalLink } from "@/lib/seo";
 import { SITE_DESCRIPTION, SITE_NAME, absoluteUrl } from "@/lib/site";
 
@@ -60,9 +61,25 @@ function HomePage() {
   return (
     <PageContainer className="space-y-6">
       <PageTitle
-        title="DevOps release tracker"
-        meta={`${tools.length} tools tracked · updated ${formatDate(generatedAt)}`}
+        title="Know what’s new"
+        meta={`Track releases across your infrastructure stack · updated ${formatDate(generatedAt)}`}
       />
+      <section aria-label="Overview" className="grid grid-cols-3 overflow-hidden rounded-card border border-border bg-surface sm:grid-cols-4">
+        <div className="col-span-3 border-b border-border p-4 sm:col-span-1 sm:border-b-0 sm:border-r">
+          <h2 className="text-body font-semibold">Overview</h2>
+          <p className="mt-1 text-meta text-fg-muted">A snapshot of your tracked ecosystem.</p>
+        </div>
+        {[
+          ["Tools tracked", tools.length],
+          ["Categories", categories.length],
+          ["Updated in 7 days", bucketByRecency(tools, Date.parse(generatedAt)).today.length + bucketByRecency(tools, Date.parse(generatedAt)).week.length],
+        ].map(([label, count]) => (
+          <div key={label} className="border-r border-border p-4 last:border-r-0">
+            <p className="text-meta text-fg-muted">{label}</p>
+            <p className="mt-1 text-page-title font-semibold tabular-nums">{count}</p>
+          </div>
+        ))}
+      </section>
       <HomeExplorer
         tools={tools}
         generatedAt={generatedAt}
