@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-28T19:32:57.386Z",
+  "generatedAt": "2026-11-07T08:45:44.089Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 437348854,
+      "name": "v0.165.0",
+      "notes": "Check the [v0.165.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.165.0) and the [v0.165.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.165.0) for changelogs on specific components.\r\n\n\n## Changelog\n* b9425f263115f328bc3bd4e65b825101b499f144 Update version to 0.165.0 (#1760)\n* 05ba854be2c25767a5c908723db6e438b264dbde Update OpenTelemetry Collector Components (#1759)",
+      "prerelease": false,
+      "publishedAt": "2026-11-07T05:02:43Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.165.0",
+      "version": "v0.165.0"
+    },
     {
       "channel": "stable",
       "draft": false,

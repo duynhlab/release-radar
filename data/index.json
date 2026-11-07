@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T20:27:36.882Z",
+  "generatedAt": "2026-11-07T08:46:23.559Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -395,19 +395,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424887319,
-        "name": "v0.164.0",
+        "id": 437348854,
+        "name": "v0.165.0",
         "prerelease": false,
-        "publishedAt": "2026-10-26T23:46:44Z",
-        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.164.0",
-        "version": "v0.164.0"
+        "publishedAt": "2026-11-07T05:02:43Z",
+        "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.165.0",
+        "version": "v0.165.0"
       },
       "name": "OpenTelemetry Collector",
       "previous": {
-        "publishedAt": "2026-10-21T16:22:34Z",
-        "version": "v0.163.2"
+        "publishedAt": "2026-10-26T23:46:44Z",
+        "version": "v0.164.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "open-telemetry/opentelemetry-collector-releases",
       "tags": [
         "metrics",
