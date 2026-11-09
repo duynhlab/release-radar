@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T09:47:39.240Z",
+  "generatedAt": "2026-11-09T23:27:29.623Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -513,17 +513,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 422094225,
-        "name": "v1.155.0",
+        "id": 436901484,
+        "name": "v1.156.0",
         "prerelease": false,
-        "publishedAt": "2026-10-26T13:40:31Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0",
-        "version": "v1.155.0"
+        "publishedAt": "2026-11-09T10:02:46Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.156.0",
+        "version": "v1.156.0"
       },
       "name": "VictoriaMetrics",
       "previous": {
-        "publishedAt": "2026-10-20T07:49:10Z",
-        "version": "v1.154.1"
+        "publishedAt": "2026-10-26T13:40:31Z",
+        "version": "v1.155.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/VictoriaMetrics",
@@ -641,17 +641,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 431214257,
-        "name": "victoria-traces-cluster-0.2.12",
+        "id": 439058549,
+        "name": "victoria-metrics-k8s-stack-0.98.1",
         "prerelease": false,
-        "publishedAt": "2026-11-02T08:22:15Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-traces-cluster-0.2.12",
-        "version": "victoria-traces-cluster-0.2.12"
+        "publishedAt": "2026-11-09T11:38:33Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.98.1",
+        "version": "victoria-metrics-k8s-stack-0.98.1"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-02T08:22:14Z",
-        "version": "victoria-metrics-k8s-stack-0.97.1"
+        "publishedAt": "2026-11-09T11:24:54Z",
+        "version": "victoria-traces-single-0.1.13"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -730,17 +730,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 436764343,
-        "name": "Istio 1.31.4",
+        "id": 439514312,
+        "name": "Istio 1.32.0",
         "prerelease": false,
-        "publishedAt": "2026-11-06T19:01:19Z",
-        "url": "https://github.com/istio/istio/releases/tag/1.31.4",
-        "version": "1.31.4"
+        "publishedAt": "2026-11-09T19:07:47Z",
+        "url": "https://github.com/istio/istio/releases/tag/1.32.0",
+        "version": "1.32.0"
       },
       "name": "Istio",
       "previous": {
-        "publishedAt": "2026-11-06T19:00:51Z",
-        "version": "1.30.8"
+        "publishedAt": "2026-11-06T19:01:19Z",
+        "version": "1.31.4"
       },
       "releaseCount": 20,
       "repository": "istio/istio",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 436266056,
-        "name": "tempo-distributed-3.27.0",
+        "id": 439735172,
+        "name": "synthetic-monitoring-agent-1.24.0",
         "prerelease": false,
-        "publishedAt": "2026-11-06T08:36:25Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.27.0",
-        "version": "tempo-distributed-3.27.0"
+        "publishedAt": "2026-11-09T22:46:52Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.24.0",
+        "version": "synthetic-monitoring-agent-1.24.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-06T00:44:48Z",
-        "version": "tempo-distributed-3.26.0"
+        "publishedAt": "2026-11-09T22:43:59Z",
+        "version": "loki-21.1.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2089,19 +2089,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 400079867,
-        "name": "v0.15.1",
+        "id": 439489893,
+        "name": "v0.16.0",
         "prerelease": false,
-        "publishedAt": "2026-09-30T13:34:15Z",
-        "url": "https://github.com/cloudnative-pg/plugin-barman-cloud/releases/tag/v0.15.1",
-        "version": "v0.15.1"
+        "publishedAt": "2026-11-09T18:31:48Z",
+        "url": "https://github.com/cloudnative-pg/plugin-barman-cloud/releases/tag/v0.16.0",
+        "version": "v0.16.0"
       },
       "name": "Barman Cloud Plugin",
       "previous": {
-        "publishedAt": "2026-09-03T18:26:11Z",
-        "version": "v0.15.0"
+        "publishedAt": "2026-09-30T13:34:15Z",
+        "version": "v0.15.1"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "cloudnative-pg/plugin-barman-cloud",
       "tags": [
         "postgresql",
@@ -2117,17 +2117,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 427665676,
-        "name": "sentry: v35.0.0",
+        "id": 439211600,
+        "name": "sentry: v36.0.0",
         "prerelease": false,
-        "publishedAt": "2026-10-29T09:27:50Z",
-        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v35.0.0",
-        "version": "sentry-v35.0.0"
+        "publishedAt": "2026-11-09T14:09:10Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v36.0.0",
+        "version": "sentry-v36.0.0"
       },
       "name": "Sentry Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-29T06:56:37Z",
-        "version": "sentry-v34.1.1"
+        "publishedAt": "2026-10-29T09:27:50Z",
+        "version": "sentry-v35.0.0"
       },
       "releaseCount": 20,
       "repository": "sentry-kubernetes/charts",
@@ -2414,19 +2414,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 435758840,
-        "name": "v0.121.2",
+        "id": 439289992,
+        "name": "v0.121.3",
         "prerelease": false,
-        "publishedAt": "2026-11-05T21:22:53Z",
-        "url": "https://github.com/anchore/grype/releases/tag/v0.121.2",
-        "version": "v0.121.2"
+        "publishedAt": "2026-11-09T15:17:25Z",
+        "url": "https://github.com/anchore/grype/releases/tag/v0.121.3",
+        "version": "v0.121.3"
       },
       "name": "Grype",
       "previous": {
-        "publishedAt": "2026-11-02T17:29:55Z",
-        "version": "v0.121.1"
+        "publishedAt": "2026-11-05T21:22:53Z",
+        "version": "v0.121.2"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "anchore/grype",
       "tags": [
         "scanning",
@@ -2445,19 +2445,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 435716774,
-        "name": "v1.57.0",
+        "id": 439245901,
+        "name": "v1.57.1",
         "prerelease": false,
-        "publishedAt": "2026-11-05T20:46:45Z",
-        "url": "https://github.com/anchore/syft/releases/tag/v1.57.0",
-        "version": "v1.57.0"
+        "publishedAt": "2026-11-09T14:39:42Z",
+        "url": "https://github.com/anchore/syft/releases/tag/v1.57.1",
+        "version": "v1.57.1"
       },
       "name": "Syft",
       "previous": {
-        "publishedAt": "2026-11-02T16:53:40Z",
-        "version": "v1.56.0"
+        "publishedAt": "2026-11-05T20:46:45Z",
+        "version": "v1.57.0"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "anchore/syft",
       "tags": [
         "sbom",

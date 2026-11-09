@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-05T21:05:48.374Z",
+  "generatedAt": "2026-11-09T23:27:23.198Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 439245901,
+      "name": "v1.57.1",
+      "notes": "### Dependencies\n\n7 dependency changes (7 updated). 3 vulnerabilities remediated.\n\n**🟢 Remediated (3)**\n\n- [GO-2026-6860](https://go.dev/cl/849365) (High) — golang.org/x/net\n- [GO-2026-6866](https://go.dev/cl/855121) (Medium) — golang.org/x/net\n- [GO-2026-6888](https://github.com/andybalholm/brotli/security/advisories/GHSA-c9gr-gmg4-2vqv) (Critical) — github.com/andybalholm/brotli\n\n<details>\n<summary>Updated (7 packages)</summary>\n\n- github.com/andybalholm/brotli `v1.2.0` → `v1.2.8` **(🟢 remediated [GO-2026-6888](https://github.com/andybalholm/brotli/security/advisories/GHSA-c9gr-gmg4-2vqv))**\n- github.com/bmatcuk/doublestar/v4 `v4.10.3` → `v4.10.4`\n- github.com/gkampitakis/go-snaps `v0.5.24` → `v0.5.25`\n- github.com/gpustack/gguf-parser-go `v0.27.0` → `v0.28.1`\n- github.com/moby/sys/mountinfo `v0.7.2` → `v0.7.3`\n- go.yaml.in/yaml/v3 `v3.0.5` → `v3.0.6`\n- golang.org/x/net `v0.61.0` → `v0.62.0` **(🟢 remediated [GO-2026-6860](https://go.dev/cl/849365), [GO-2026-6866](https://go.dev/cl/855121))**\n</details>\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.57.0...v1.57.1)**",
+      "prerelease": false,
+      "publishedAt": "2026-11-09T14:39:42Z",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.57.1",
+      "version": "v1.57.1"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-06T20:27:00.030Z",
+  "generatedAt": "2026-11-09T23:26:39.853Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 439514312,
+      "name": "Istio 1.32.0",
+      "notes": "[Release Notes](https://istio.io/latest/news/releases/1.32.x/announcing-1.32/)",
+      "prerelease": false,
+      "publishedAt": "2026-11-09T19:07:47Z",
+      "url": "https://github.com/istio/istio/releases/tag/1.32.0",
+      "version": "1.32.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-24T18:25:57Z",
       "url": "https://github.com/istio/istio/releases/tag/1.29.5",
       "version": "1.29.5"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 344248101,
-      "name": "Istio 1.30.2",
-      "notes": "[Artifacts](http://gcsweb.istio.io/gcs/istio-release/releases/1.30.2/)\r\n[Release Notes](https://istio.io/news/releases/1.30.x/announcing-1.30.2/)",
-      "prerelease": false,
-      "publishedAt": "2026-06-24T18:25:13Z",
-      "url": "https://github.com/istio/istio/releases/tag/1.30.2",
-      "version": "1.30.2"
     }
   ],
   "schemaVersion": 1,

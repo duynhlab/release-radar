@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-06T09:22:17.746Z",
+  "generatedAt": "2026-11-09T23:27:22.457Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 439289992,
+      "name": "v0.121.3",
+      "notes": "### Additional Changes\n\n- further CPE to more precise package identifier mappings [PR [#3886](https://github.com/anchore/grype/pull/3886) @westonsteimel]\n\n### Dependencies\n\n18 dependency changes (8 updated, 10 removed). 8 vulnerabilities remediated.\n\n**🟢 Remediated (8)**\n\n- [GHSA-pxq6-2prw-chj9](https://github.com/advisories/GHSA-pxq6-2prw-chj9) (Medium) — github.com/docker/docker\n- [GHSA-rg2x-37c3-w2rh](https://github.com/advisories/GHSA-rg2x-37c3-w2rh) (High) — github.com/docker/docker\n- [GHSA-vp62-88p7-qqf5](https://github.com/advisories/GHSA-vp62-88p7-qqf5) (Medium) — github.com/docker/docker\n- [GHSA-x86f-5xw2-fm2r](https://github.com/advisories/GHSA-x86f-5xw2-fm2r) (High) — github.com/docker/docker\n- [GO-2026-4887](https://github.com/moby/moby/security/advisories/GHSA-x744-4wpc-v9h2) (High) — github.com/docker/docker\n- [GO-2026-6860](https://go.dev/cl/849365) (High) — golang.org/x/net\n- [GO-2026-6866](https://go.dev/cl/855121) (Medium) — golang.org/x/net\n- [GO-2026-6888](https://github.com/andybalholm/brotli/security/advisories/GHSA-c9gr-gmg4-2vqv) (Critical) — github.com/andybalholm/brotli\n\n<details>\n<summary>Updated (8 packages)</summary>\n\n- github.com/anchore/syft `v1.57.0` → `v1.57.1`\n- github.com/andybalholm/brotli `v1.2.0` → `v1.2.8` **(🟢 remediated [GO-2026-6888](https://github.com/andybalholm/brotli/security/advisories/GHSA-c9gr-gmg4-2vqv))**\n- github.com/bmatcuk/doublestar/v4 `v4.10.3` → `v4.10.4`\n- github.com/gkampitakis/go-snaps `v0.5.24` → `v0.5.25`\n- github.com/gpustack/gguf-parser-go `v0.27.0` → `v0.28.1`\n- github.com/moby/sys/mountinfo `v0.7.2` → `v0.7.3`\n- go.yaml.in/yaml/v3 `v3.0.5` → `v3.0.6`\n- golang.org/x/net `v0.61.0` → `v0.62.0` **(🟢 remediated [GO-2026-6860](https://go.dev/cl/849365), [GO-2026-6866](https://go.dev/cl/855121))**\n</details>\n\n<details>\n<summary>Removed (10 packages)</summary>\n\n- github.com/cenkalti/backoff/v5 `v5.0.3`\n- github.com/docker/docker `v28.5.2+incompatible` **(🟢 remediated [GHSA-pxq6-2prw-chj9](https://github.com/advisories/GHSA-pxq6-2prw-chj9), [GHSA-rg2x-37c3-w2rh](https://github.com/advisories/GHSA-rg2x-37c3-w2rh), [GHSA-vp62-88p7-qqf5](https://github.com/advisories/GHSA-vp62-88p7-qqf5), [GHSA-x86f-5xw2-fm2r](https://github.com/advisories/GHSA-x86f-5xw2-fm2r), [GO-2026-4887](https://github.com/moby/moby/security/advisories/GHSA-x744-4wpc-v9h2))**\n- github.com/grpc-ecosystem/grpc-gateway/v2 `v2.30.0`\n- github.com/moby/sys/atomicwriter `v0.1.0`\n- github.com/moby/sys/sequential `v0.6.0`\n- github.com/moby/term `v0.5.2`\n- github.com/morikuni/aec `v1.1.0`\n- go.opentelemetry.io/otel/exporters/otlp/otlptrace `v1.46.0`\n- go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp `v1.46.0`\n- go.opentelemetry.io/proto/otlp `v1.11.0`\n</details>\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.121.2...v0.121.3)**",
+      "prerelease": false,
+      "publishedAt": "2026-11-09T15:17:25Z",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.121.3",
+      "version": "v0.121.3"
+    },
     {
       "channel": "stable",
       "draft": false,
