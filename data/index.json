@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T08:46:23.559Z",
+  "generatedAt": "2026-11-09T09:47:39.240Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 433239144,
-        "name": "pyroscope-2.4.3",
+        "id": 438920802,
+        "name": "mimir-distributed-5.8.1",
         "prerelease": false,
-        "publishedAt": "2026-11-03T21:30:56Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.3",
-        "version": "pyroscope-2.4.3"
+        "publishedAt": "2026-11-09T09:10:46Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-5.8.1",
+        "version": "mimir-distributed-5.8.1"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-30T15:25:42Z",
-        "version": "k8s-monitoring-4.6.0"
+        "publishedAt": "2026-11-03T21:30:56Z",
+        "version": "pyroscope-2.4.3"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",

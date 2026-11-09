@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-04T09:09:16.871Z",
+  "generatedAt": "2026-11-09T09:47:18.138Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 438920802,
+      "name": "mimir-distributed-5.8.1",
+      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/2ed640fd469fcde16358e84401205434347cfbfd\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-5.8.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-09T09:10:46Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-5.8.1",
+      "version": "mimir-distributed-5.8.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-21T21:25:30Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-injection-controller-0.3.0",
       "version": "k8s-injection-controller-0.3.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 420061166,
-      "name": "alloy-1.14.1",
-      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/b76089e32e2532d15e6f14859dcab3ae72670774\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.14.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-21T21:12:22Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.1",
-      "version": "alloy-1.14.1"
     }
   ],
   "schemaVersion": 1,
