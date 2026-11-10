@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T23:27:29.623Z",
+  "generatedAt": "2026-11-10T05:40:40.472Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1245,19 +1245,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 369441904,
-        "name": "v0.4.0",
+        "id": 439822221,
+        "name": "v0.4.1",
         "prerelease": false,
-        "publishedAt": "2026-08-12T18:16:55Z",
-        "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.4.0",
-        "version": "v0.4.0"
+        "publishedAt": "2026-11-10T00:58:14Z",
+        "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.4.1",
+        "version": "v0.4.1"
       },
       "name": "pg_stat_ch",
       "previous": {
-        "publishedAt": "2026-06-13T00:27:51Z",
-        "version": "v0.3.11"
+        "publishedAt": "2026-08-12T18:16:55Z",
+        "version": "v0.4.0"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "ClickHouse/pg_stat_ch",
       "tags": [
         "postgresql",
@@ -2683,19 +2683,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 433341916,
-        "name": "v0.41.2",
+        "id": 439809776,
+        "name": "v0.42.0",
         "prerelease": false,
-        "publishedAt": "2026-11-03T23:46:27Z",
-        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.41.2",
-        "version": "v0.41.2"
+        "publishedAt": "2026-11-10T00:37:19Z",
+        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.42.0",
+        "version": "v0.42.0"
       },
       "name": "agent-browser",
       "previous": {
-        "publishedAt": "2026-11-01T15:29:56Z",
-        "version": "v0.41.1"
+        "publishedAt": "2026-11-03T23:46:27Z",
+        "version": "v0.41.2"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "vercel-labs/agent-browser",
       "tags": [
         "ai",

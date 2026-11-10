@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-06T08:18:24.550Z",
+  "generatedAt": "2026-11-10T05:40:11.016Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 439822221,
+      "name": "v0.4.1",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* Limit batch_max to queue_capacity by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/124\n* fix ci flake by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/127\n* also format *.c files, address warnings by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/128\n* fix: skip bgworker registration during pg_upgrade binary-upgrade mode by @AliakseiAndryiashau2026 in https://github.com/ClickHouse/pg_stat_ch/pull/131\n* Support PG19, add PG19 to CI by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/132\n* Update clickhouse-c by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/133\n* Prevent double frees when retrying interrupted dequeues by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/126\n* Decode ZSTD-compressed responses from ClickHouse by @heavycrystal in https://github.com/ClickHouse/pg_stat_ch/pull/137\n* use fasthash64 on PG17+, doubles hashing throughput by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/142\n* Avoid copy by appending std::string_view by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/144\n* Speed up vcpkg dependency builds by @heavycrystal in https://github.com/ClickHouse/pg_stat_ch/pull/136\n* Apply goose migrations in the ClickHouse Docker image by @heavycrystal in https://github.com/ClickHouse/pg_stat_ch/pull/138\n* Add query labels via sqlcommenter comment parsing by @iskakaushik in https://github.com/ClickHouse/pg_stat_ch/pull/67\n* chore(release): bump META.json version to 0.4.1 by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/146\n\n## New Contributors\n* @AliakseiAndryiashau2026 made their first contribution in https://github.com/ClickHouse/pg_stat_ch/pull/131\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.4.0...v0.4.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-10T00:58:14Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.4.1",
+      "version": "v0.4.1"
+    },
     {
       "channel": "stable",
       "draft": false,
