@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-09T09:47:18.138Z",
+  "generatedAt": "2026-11-10T20:49:39.206Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 440858420,
+      "name": "helm-loki-7.6.0",
+      "notes": "Helm chart for Grafana Enterprise Logs supporting monolithic, simple scalable, and microservices modes.\n\nSource commit: https://github.com/grafana/loki/commit/48edacb0c877128127227e220437b8bc48b75060\n\nTag on source: https://github.com/grafana/loki/releases/tag/helm-loki-7.6.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-10T20:12:59Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.6.0",
+      "version": "helm-loki-7.6.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 440760862,
+      "name": "rollout-operator-0.54.0",
+      "notes": "Grafana rollout-operator\n\n## What's Changed\n* chore(deps): update grafana/shared-workflows/create-github-app-token action to v1.0 by @renovate-sh-app[bot] in https://github.com/grafana/helm-charts/pull/4239\n* [rollout-operator] Update to v0.42.0 by @julienduchesne in https://github.com/grafana/helm-charts/pull/4244\n\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/mimir-distributed-5.8.1...rollout-operator-0.54.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-10T18:40:39Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.54.0",
+      "version": "rollout-operator-0.54.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-10-22T12:35:43Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.5.0",
       "version": "helm-loki-7.5.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 420159416,
-      "name": "k8s-manifest-tail-0.1.6",
-      "notes": "Fetches and monitors Kubernetes manifests from a running cluster\n\nSource commit: https://github.com/grafana/k8s-manifest-tail/commit/db875d3caa3ffd070e080613a160406461dd7f12\n\nTag on source: https://github.com/grafana/k8s-manifest-tail/releases/tag/k8s-manifest-tail-0.1.6",
-      "prerelease": false,
-      "publishedAt": "2026-10-21T23:41:14Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-manifest-tail-0.1.6",
-      "version": "k8s-manifest-tail-0.1.6"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 420071694,
-      "name": "k8s-injection-controller-0.3.0",
-      "notes": "Kubernetes admission controller for Grafana Beyla SDK auto-instrumentation.\n\nSource commit: https://github.com/grafana/k8s-injection-controller/commit/2bf73f48eac30ed0745f458d928b560173decff0\n\nTag on source: https://github.com/grafana/k8s-injection-controller/releases/tag/k8s-injection-controller-0.3.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-21T21:25:30Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-injection-controller-0.3.0",
-      "version": "k8s-injection-controller-0.3.0"
     }
   ],
   "schemaVersion": 1,

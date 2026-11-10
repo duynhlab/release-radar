@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-27T19:25:56.353Z",
+  "generatedAt": "2026-11-10T20:49:06.595Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 440891832,
+      "name": "12.4.15",
+      "notes": "[Download page](https://grafana.com/grafana/download/12.4.15)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-102589\n- Security: Fix CVE-2026-106472\n- Security: Fix CVE-2026-106475\n- Security: Fix CVE-2026-107365\n- Security: Fix CVE-2026-107509\n- Security: Fix CVE-2026-111000\n- Security: Fix CVE-2026-81843\n- Security: Fix CVE-2026-82014\n\n### Features and enhancements\n\n- **DateTime:** Bump moment-timezone to 0.6.6 for 2026 time zone changes [#136947](https://github.com/grafana/grafana/pull/136947), [@joshhunt](https://github.com/joshhunt)",
+      "prerelease": false,
+      "publishedAt": "2026-11-10T20:47:14Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v12.4.15",
+      "version": "v12.4.15"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-09-02T08:23:04Z",
       "url": "https://github.com/grafana/grafana/releases/tag/v13.0.8",
       "version": "v13.0.8"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 381077747,
-      "name": "13.1.5",
-      "notes": "[Download page](https://grafana.com/grafana/download/13.1.5)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-12704\n- Security: Fix CVE-2026-14199\n- Security: Fix CVE-2026-19475",
-      "prerelease": false,
-      "publishedAt": "2026-09-02T08:12:48Z",
-      "url": "https://github.com/grafana/grafana/releases/tag/v13.1.5",
-      "version": "v13.1.5"
     }
   ],
   "schemaVersion": 1,

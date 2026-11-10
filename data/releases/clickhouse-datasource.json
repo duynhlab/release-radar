@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-30T08:38:32.560Z",
+  "generatedAt": "2026-11-10T20:49:42.156Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 440255612,
+      "name": "v4.23.5",
+      "notes": "## [4.23.5](https://github.com/grafana/clickhouse-datasource/compare/v4.23.4...v4.23.5) (2026-11-10)\n\n\n### 🐛 Bug Fixes\n\n* **deps:** update backend dependencies ([#2252](https://github.com/grafana/clickhouse-datasource/issues/2252)) ([c34f59d](https://github.com/grafana/clickhouse-datasource/commit/c34f59db1929aacacdc9e9dd44605a428360b203))\n* **deps:** update golang.org/x/crypto to fix GO-2026-5932 ([#2274](https://github.com/grafana/clickhouse-datasource/issues/2274)) ([2cbde29](https://github.com/grafana/clickhouse-datasource/commit/2cbde2993673a3548878e82f003fd6330bb7cee6))\n* **error type:** 'failed to query server hello' as downstream error ([#2269](https://github.com/grafana/clickhouse-datasource/issues/2269)) ([753c0e9](https://github.com/grafana/clickhouse-datasource/commit/753c0e93d3ee1509737a92621c72ac92dea78de0))\n* gRPC deadlock that freezes the plugin connection under load ([#2265](https://github.com/grafana/clickhouse-datasource/issues/2265)) ([7bea76e](https://github.com/grafana/clickhouse-datasource/commit/7bea76e5e04daab3d6af29fcb3ac4c6cfe854eb0))\n* **security/medium/:** update dependency glob to v14 [security] ([2b137ed](https://github.com/grafana/clickhouse-datasource/commit/2b137eda59a15fba46834409114d89d9a74251c1))\n* **security/medium/:** update dependency glob to v14 [security] - abandoned ([#2268](https://github.com/grafana/clickhouse-datasource/issues/2268)) ([2b137ed](https://github.com/grafana/clickhouse-datasource/commit/2b137eda59a15fba46834409114d89d9a74251c1))",
+      "prerelease": false,
+      "publishedAt": "2026-11-10T11:07:01Z",
+      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.5",
+      "version": "v4.23.5"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-02-25T15:43:05Z",
       "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.14.0",
       "version": "v4.14.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 280347270,
-      "name": "grafana-clickhouse-datasource v4.13.0",
-      "notes": "## 4.13.0\n\n### Features\n\n- Support for hiding table names in ad-hoc filters (#1493)\n- Allow manual placement of ad-hoc filters (#1488)\n- Add support for Nullable(Enum8/16) column types (#1523)\n- Add dashboard variable to control AdHoc filter syntax (#1464)\n\n### Fixes\n\n- Fix generating query with column names containing colons (#1538)\n- Update config HTTPS language (#1537)\n- Dependency updates",
-      "prerelease": false,
-      "publishedAt": "2026-01-27T15:22:36Z",
-      "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.13.0",
-      "version": "v4.13.0"
     }
   ],
   "schemaVersion": 1,

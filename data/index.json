@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T09:47:29.070Z",
+  "generatedAt": "2026-11-10T20:50:03.265Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -362,17 +362,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 425374188,
-        "name": "13.2.5",
+        "id": 440891832,
+        "name": "12.4.15",
         "prerelease": false,
-        "publishedAt": "2026-10-27T11:34:35Z",
-        "url": "https://github.com/grafana/grafana/releases/tag/v13.2.5",
-        "version": "v13.2.5"
+        "publishedAt": "2026-11-10T20:47:14Z",
+        "url": "https://github.com/grafana/grafana/releases/tag/v12.4.15",
+        "version": "v12.4.15"
       },
       "name": "Grafana",
       "previous": {
-        "publishedAt": "2026-10-27T11:24:50Z",
-        "version": "v13.0.12"
+        "publishedAt": "2026-10-27T11:34:35Z",
+        "version": "v13.2.5"
       },
       "releaseCount": 20,
       "repository": "grafana/grafana",
@@ -958,19 +958,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 383001319,
-        "name": "v0.9.4",
+        "id": 440233151,
+        "name": "v0.10.0",
         "prerelease": false,
-        "publishedAt": "2026-09-04T20:36:14Z",
-        "url": "https://github.com/kubernetes-sigs/kro/releases/tag/v0.9.4",
-        "version": "v0.9.4"
+        "publishedAt": "2026-11-10T10:43:27Z",
+        "url": "https://github.com/kubernetes-sigs/kro/releases/tag/v0.10.0",
+        "version": "v0.10.0"
       },
       "name": "kro",
       "previous": {
-        "publishedAt": "2026-07-27T20:19:45Z",
-        "version": "v0.9.3"
+        "publishedAt": "2026-09-04T20:36:14Z",
+        "version": "v0.9.4"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "kubernetes-sigs/kro",
       "tags": [
         "kubernetes",
@@ -1650,17 +1650,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 431467184,
-        "name": "v2.2.0",
+        "id": 440700255,
+        "name": "v2.3.0",
         "prerelease": false,
-        "publishedAt": "2026-11-02T13:00:31Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v2.2.0",
-        "version": "v2.2.0"
+        "publishedAt": "2026-11-10T17:45:47Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v2.3.0",
+        "version": "v2.3.0"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-10-20T17:35:20Z",
-        "version": "v2.1.1"
+        "publishedAt": "2026-11-02T13:00:31Z",
+        "version": "v2.2.0"
       },
       "releaseCount": 20,
       "repository": "grafana/mcp-grafana",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 438920802,
-        "name": "mimir-distributed-5.8.1",
+        "id": 440858420,
+        "name": "helm-loki-7.6.0",
         "prerelease": false,
-        "publishedAt": "2026-11-09T09:10:46Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-5.8.1",
-        "version": "mimir-distributed-5.8.1"
+        "publishedAt": "2026-11-10T20:12:59Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.6.0",
+        "version": "helm-loki-7.6.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-03T21:30:56Z",
-        "version": "pyroscope-2.4.3"
+        "publishedAt": "2026-11-10T18:40:39Z",
+        "version": "rollout-operator-0.54.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 440063947,
-        "name": "loki-21.1.1",
+        "id": 440699866,
+        "name": "grafana-14.4.1",
         "prerelease": false,
-        "publishedAt": "2026-11-10T07:37:14Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.1.1",
-        "version": "loki-21.1.1"
+        "publishedAt": "2026-11-10T17:45:20Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.4.1",
+        "version": "grafana-14.4.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-09T22:46:52Z",
-        "version": "synthetic-monitoring-agent-1.24.0"
+        "publishedAt": "2026-11-10T17:40:11Z",
+        "version": "tempo-distributed-3.27.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1803,17 +1803,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 428594219,
-        "name": "v4.23.4",
+        "id": 440255612,
+        "name": "v4.23.5",
         "prerelease": false,
-        "publishedAt": "2026-10-30T02:31:26Z",
-        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.4",
-        "version": "v4.23.4"
+        "publishedAt": "2026-11-10T11:07:01Z",
+        "url": "https://github.com/grafana/clickhouse-datasource/releases/tag/v4.23.5",
+        "version": "v4.23.5"
       },
       "name": "ClickHouse Datasource",
       "previous": {
-        "publishedAt": "2026-10-28T16:57:23Z",
-        "version": "v4.23.3"
+        "publishedAt": "2026-10-30T02:31:26Z",
+        "version": "v4.23.4"
       },
       "releaseCount": 20,
       "repository": "grafana/clickhouse-datasource",
