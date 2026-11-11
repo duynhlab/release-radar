@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T20:50:03.265Z",
+  "generatedAt": "2026-11-11T09:22:34.248Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -362,17 +362,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 440891832,
-        "name": "12.4.15",
+        "id": 440936629,
+        "name": "13.3.1",
         "prerelease": false,
-        "publishedAt": "2026-11-10T20:47:14Z",
-        "url": "https://github.com/grafana/grafana/releases/tag/v12.4.15",
-        "version": "v12.4.15"
+        "publishedAt": "2026-11-10T21:31:44Z",
+        "url": "https://github.com/grafana/grafana/releases/tag/v13.3.1",
+        "version": "v13.3.1"
       },
       "name": "Grafana",
       "previous": {
-        "publishedAt": "2026-10-27T11:34:35Z",
-        "version": "v13.2.5"
+        "publishedAt": "2026-11-10T21:29:41Z",
+        "version": "v13.2.6"
       },
       "releaseCount": 20,
       "repository": "grafana/grafana",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 440699866,
-        "name": "grafana-14.4.1",
+        "id": 441349274,
+        "name": "loki-21.2.1",
         "prerelease": false,
-        "publishedAt": "2026-11-10T17:45:20Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.4.1",
-        "version": "grafana-14.4.1"
+        "publishedAt": "2026-11-11T07:25:19Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.2.1",
+        "version": "loki-21.2.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-10T17:40:11Z",
-        "version": "tempo-distributed-3.27.1"
+        "publishedAt": "2026-11-10T21:49:34Z",
+        "version": "loki-21.2.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

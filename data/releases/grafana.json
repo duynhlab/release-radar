@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-11-10T20:49:06.595Z",
+  "generatedAt": "2026-11-11T09:21:34.977Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 440936629,
+      "name": "13.3.1",
+      "notes": "[Download page](https://grafana.com/grafana/download/13.3.1)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-102589\n- Security: Fix CVE-2026-107509\n- Security: Fix CVE-2026-110992\n- Security: Fix CVE-2026-111024\n- Security: Fix CVE-2026-13721\n- Security: Fix CVE-2026-14242\n\n### Features and enhancements\n\n- **DateTime:** Update moment-timezone and easy-tz for 2026 time zone changes [#136951](https://github.com/grafana/grafana/pull/136951), [@joshhunt](https://github.com/joshhunt)\n- **Provisioning:** allow same-host URL change on connection-backed repositories [#137083](https://github.com/grafana/grafana/pull/137083), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])",
+      "prerelease": false,
+      "publishedAt": "2026-11-10T21:31:44Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.3.1",
+      "version": "v13.3.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 440934660,
+      "name": "13.2.6",
+      "notes": "[Download page](https://grafana.com/grafana/download/13.2.6)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-102589\n- Security: Fix CVE-2026-107509\n- Security: Fix CVE-2026-110992\n- Security: Fix CVE-2026-111024\n- Security: Fix CVE-2026-13721\n- Security: Fix CVE-2026-14242\n\n### Features and enhancements\n\n- **DateTime:** Update moment-timezone and easy-tz for 2026 time zone changes [#136950](https://github.com/grafana/grafana/pull/136950), [@joshhunt](https://github.com/joshhunt)\n- **Provisioning:** Handle repository build timeouts and branch outages [#135723](https://github.com/grafana/grafana/pull/135723), [@ferruvich](https://github.com/ferruvich)\n- **Provisioning:** allow same-host URL change on connection-backed repositories [#137091](https://github.com/grafana/grafana/pull/137091), [@MissingRoberto](https://github.com/MissingRoberto)\n\n### Bug fixes\n\n- **Unified search:** Fix empty results when all query words are under 3 chars [#137309](https://github.com/grafana/grafana/pull/137309), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])",
+      "prerelease": false,
+      "publishedAt": "2026-11-10T21:29:41Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.2.6",
+      "version": "v13.2.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 440931750,
+      "name": "13.1.10",
+      "notes": "[Download page](https://grafana.com/grafana/download/13.1.10)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-102589\n- Security: Fix CVE-2026-107365\n- Security: Fix CVE-2026-107509\n- Security: Fix CVE-2026-110992\n- Security: Fix CVE-2026-111024\n- Security: Fix CVE-2026-13721\n- Security: Fix CVE-2026-14242\n\n### Features and enhancements\n\n- **Provisioning:** allow same-host URL change on connection-backed repositories [#137090](https://github.com/grafana/grafana/pull/137090), [@MissingRoberto](https://github.com/MissingRoberto)",
+      "prerelease": false,
+      "publishedAt": "2026-11-10T21:26:38Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.1.10",
+      "version": "v13.1.10"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 440927209,
+      "name": "13.0.13",
+      "notes": "[Download page](https://grafana.com/grafana/download/13.0.13)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-102589\n- Security: Fix CVE-2026-107365\n- Security: Fix CVE-2026-107509\n- Security: Fix CVE-2026-110992\n- Security: Fix CVE-2026-111024\n- Security: Fix CVE-2026-13721\n- Security: Fix CVE-2026-14242\n- Security: Fix CVE-2026-82014\n\n### Features and enhancements\n\n- **DateTime:** Bump moment-timezone to 0.6.6 for 2026 time zone changes [#136948](https://github.com/grafana/grafana/pull/136948), [@joshhunt](https://github.com/joshhunt)\n- **Provisioning:** allow same-host URL change on connection-backed repositories [#137092](https://github.com/grafana/grafana/pull/137092), [@MissingRoberto](https://github.com/MissingRoberto)",
+      "prerelease": false,
+      "publishedAt": "2026-11-10T21:22:14Z",
+      "url": "https://github.com/grafana/grafana/releases/tag/v13.0.13",
+      "version": "v13.0.13"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -176,50 +220,6 @@
       "publishedAt": "2026-09-15T12:27:34Z",
       "url": "https://github.com/grafana/grafana/releases/tag/v12.4.11",
       "version": "v12.4.11"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 389122884,
-      "name": "13.1.6",
-      "notes": "[Download page](https://grafana.com/grafana/download/13.1.6)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-15815\n- Security: Fix CVE-2026-76154\n- Security: Fix CVE-2026-79656\n\n### Bug fixes\n\n- **Dashboards:** Preserve query variable refresh setting on v2 dashboard import [#132090](https://github.com/grafana/grafana/pull/132090), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])\n- **Provisioning:** Fix folder rename UID collision during full sync [#132164](https://github.com/grafana/grafana/pull/132164), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])",
-      "prerelease": false,
-      "publishedAt": "2026-09-15T12:25:01Z",
-      "url": "https://github.com/grafana/grafana/releases/tag/v13.1.6",
-      "version": "v13.1.6"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 389120530,
-      "name": "13.2.2",
-      "notes": "[Download page](https://grafana.com/grafana/download/13.2.2)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-15815\n- Security: Fix CVE-2026-76154\n- Security: Fix CVE-2026-79656\n\n### Bug fixes\n\n- **Dashboards:** Preserve query variable refresh setting on v2 dashboard import [#132089](https://github.com/grafana/grafana/pull/132089), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])\n- **Provisioning:** Fix folder rename UID collision during full sync [#132157](https://github.com/grafana/grafana/pull/132157), [@grafana-writer[bot]](https://github.com/grafana-writer[bot])",
-      "prerelease": false,
-      "publishedAt": "2026-09-15T12:21:32Z",
-      "url": "https://github.com/grafana/grafana/releases/tag/v13.2.2",
-      "version": "v13.2.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 381105823,
-      "name": "12.4.10",
-      "notes": "[Download page](https://grafana.com/grafana/download/12.4.10)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-14199\n- Security: Fix CVE-2026-19475\n\n### Bug fixes\n\n- **Dashboards:** Fix adhoc and groupby variable datasource on UI import [#131821](https://github.com/grafana/grafana/pull/131821), [@ivanortegaalba](https://github.com/ivanortegaalba)\n- **Dashboards:** Fix version dates and user display names in the legacy version history page [#131808](https://github.com/grafana/grafana/pull/131808), [@ivanortegaalba](https://github.com/ivanortegaalba)",
-      "prerelease": false,
-      "publishedAt": "2026-09-02T08:58:25Z",
-      "url": "https://github.com/grafana/grafana/releases/tag/v12.4.10",
-      "version": "v12.4.10"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 381083859,
-      "name": "13.0.8",
-      "notes": "[Download page](https://grafana.com/grafana/download/13.0.8)\n[What's new highlights](https://grafana.com/docs/grafana/latest/whatsnew/)\n\n### Security\n\n- Security: Fix CVE-2026-12704\n- Security: Fix CVE-2026-14199\n- Security: Fix CVE-2026-19475\n\n### Bug fixes\n\n- **Dashboards:** Fix version dates and user display names in the legacy version history page [#131809](https://github.com/grafana/grafana/pull/131809), [@ivanortegaalba](https://github.com/ivanortegaalba)",
-      "prerelease": false,
-      "publishedAt": "2026-09-02T08:23:04Z",
-      "url": "https://github.com/grafana/grafana/releases/tag/v13.0.8",
-      "version": "v13.0.8"
     }
   ],
   "schemaVersion": 1,
