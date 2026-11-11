@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-28T19:32:49.874Z",
+  "generatedAt": "2026-11-11T21:24:42.175Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 441631396,
+      "name": "v1.17.2",
+      "notes": "## 1.17.2 (November 11, 2026)\n\n\nENHANCEMENTS:\n\n* query: Improve performance and reduce allocations when generating configuration from large HCP Terraform queries. ([#39470](https://github.com/hashicorp/terraform/issues/39470))\n\n\nBUG FIXES:\n\n* Providers referencing a managed resource with detroy=false can cause a cycle ([#39507](https://github.com/hashicorp/terraform/issues/39507))\n\n* init: Fix repeated unavailable-provider schema warnings in log output ([#39517](https://github.com/hashicorp/terraform/issues/39517))",
+      "prerelease": false,
+      "publishedAt": "2026-11-11T11:56:51Z",
+      "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.2",
+      "version": "v1.17.2"
+    },
     {
       "channel": "stable",
       "draft": false,
