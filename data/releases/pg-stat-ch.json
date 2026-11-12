@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-10T05:40:11.016Z",
+  "generatedAt": "2026-11-12T09:48:59.313Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 442243337,
+      "name": "v0.4.2",
+      "notes": "## Installation\n\nDownload the tarball for your PostgreSQL version and architecture, then:\n\n```bash\ntar -xzf pg_stat_ch-*.tar.gz\ncd pg_stat_ch-*/\nsudo cp pg_stat_ch.so $(pg_config --pkglibdir)/\nsudo cp pg_stat_ch.control pg_stat_ch--*.sql $(pg_config --sharedir)/extension/\n```\n\nSee INSTALL.md in the tarball for full instructions.\n\n## Debug Symbols\n\nDebug symbol packages (`*-debuginfo.tar.gz`) are provided for crash analysis.\nTo use them with a core dump:\n\n```bash\ntar -xzf pg_stat_ch-*-debuginfo.tar.gz\ngdb -ex \"set debug-file-directory $(pwd)\" -ex \"bt\" pg_stat_ch.so core\n```\n\n\n## What's Changed\n* don't use gzip compression over grpc, we already zstd compress payload by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/147\n* Remove DequeueEvents, append directly to sink by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/143\n* Remove headers from DSA strings by @serprex in https://github.com/ClickHouse/pg_stat_ch/pull/141\n* chore(release): bump META.json version to 0.4.2 by @amogiska in https://github.com/ClickHouse/pg_stat_ch/pull/148\n\n\n**Full Changelog**: https://github.com/ClickHouse/pg_stat_ch/compare/v0.4.1...v0.4.2",
+      "prerelease": false,
+      "publishedAt": "2026-11-11T22:10:03Z",
+      "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.4.2",
+      "version": "v0.4.2"
+    },
     {
       "channel": "stable",
       "draft": false,

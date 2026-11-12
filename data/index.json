@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T21:25:44.119Z",
+  "generatedAt": "2026-11-12T09:49:33.764Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -930,19 +930,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 418992427,
-        "name": "v1.19.2",
+        "id": 441904596,
+        "name": "v1.20.0",
         "prerelease": false,
-        "publishedAt": "2026-10-20T23:50:19Z",
-        "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
-        "version": "v1.19.2"
+        "publishedAt": "2026-11-12T09:32:42Z",
+        "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0",
+        "version": "v1.20.0"
       },
       "name": "Kyverno",
       "previous": {
-        "publishedAt": "2026-09-10T06:24:30Z",
-        "version": "v1.19.1"
+        "publishedAt": "2026-10-20T23:50:19Z",
+        "version": "v1.19.2"
       },
-      "releaseCount": 8,
+      "releaseCount": 9,
       "repository": "kyverno/kyverno",
       "tags": [
         "kubernetes",
@@ -1245,19 +1245,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 439822221,
-        "name": "v0.4.1",
+        "id": 442243337,
+        "name": "v0.4.2",
         "prerelease": false,
-        "publishedAt": "2026-11-10T00:58:14Z",
-        "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.4.1",
-        "version": "v0.4.1"
+        "publishedAt": "2026-11-11T22:10:03Z",
+        "url": "https://github.com/ClickHouse/pg_stat_ch/releases/tag/v0.4.2",
+        "version": "v0.4.2"
       },
       "name": "pg_stat_ch",
       "previous": {
-        "publishedAt": "2026-08-12T18:16:55Z",
-        "version": "v0.4.0"
+        "publishedAt": "2026-11-10T00:58:14Z",
+        "version": "v0.4.1"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "ClickHouse/pg_stat_ch",
       "tags": [
         "postgresql",
