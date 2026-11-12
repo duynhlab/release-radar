@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T09:49:33.764Z",
+  "generatedAt": "2026-11-12T21:29:12.409Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -68,17 +68,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 435342143,
-        "name": "v0.20.5",
+        "id": 443276473,
+        "name": "v0.20.6",
         "prerelease": false,
-        "publishedAt": "2026-11-05T15:25:26Z",
-        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.5",
-        "version": "v0.20.5"
+        "publishedAt": "2026-11-12T17:27:56Z",
+        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.6",
+        "version": "v0.20.6"
       },
       "name": "Kueue",
       "previous": {
-        "publishedAt": "2026-11-05T13:58:56Z",
-        "version": "v0.19.12"
+        "publishedAt": "2026-11-12T17:21:56Z",
+        "version": "v0.19.13"
       },
       "releaseCount": 20,
       "repository": "kubernetes-sigs/kueue",
@@ -453,17 +453,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 436749881,
-        "name": "v42.3.1",
+        "id": 443184321,
+        "name": "v42.4.0",
         "prerelease": false,
-        "publishedAt": "2026-11-06T16:44:37Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.3.1",
-        "version": "v42.3.1"
+        "publishedAt": "2026-11-12T16:04:38Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.4.0",
+        "version": "v42.4.0"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-11-03T06:52:27Z",
-        "version": "v42.3.0"
+        "publishedAt": "2026-11-06T16:44:37Z",
+        "version": "v42.3.1"
       },
       "releaseCount": 20,
       "repository": "traefik/traefik-helm-chart",
@@ -481,17 +481,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 435527758,
-        "name": "v0.100.0",
+        "id": 443181173,
+        "name": "v0.101.0",
         "prerelease": false,
-        "publishedAt": "2026-11-05T17:47:22Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.100.0",
-        "version": "v0.100.0"
+        "publishedAt": "2026-11-12T16:02:35Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.101.0",
+        "version": "v0.101.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-10-29T16:25:08Z",
-        "version": "v0.99.0"
+        "publishedAt": "2026-11-05T17:47:22Z",
+        "version": "v0.100.0"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
@@ -1052,19 +1052,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420924618,
-        "name": "v0.8.0",
+        "id": 442769762,
+        "name": "v0.9.0",
         "prerelease": false,
-        "publishedAt": "2026-10-22T16:05:15Z",
-        "url": "https://github.com/valkey-io/valkey-operator/releases/tag/v0.8.0",
-        "version": "v0.8.0"
+        "publishedAt": "2026-11-12T10:10:07Z",
+        "url": "https://github.com/valkey-io/valkey-operator/releases/tag/v0.9.0",
+        "version": "v0.9.0"
       },
       "name": "Valkey Operator",
       "previous": {
-        "publishedAt": "2026-09-28T07:18:19Z",
-        "version": "v0.7.1"
+        "publishedAt": "2026-10-22T16:05:15Z",
+        "version": "v0.8.0"
       },
-      "releaseCount": 9,
+      "releaseCount": 10,
       "repository": "valkey-io/valkey-operator",
       "tags": [
         "valkey",
@@ -1344,19 +1344,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 436293402,
-        "name": "0.95.1 / 2026-11-05",
+        "id": 442962264,
+        "name": "0.95.2 / 2026-11-10",
         "prerelease": false,
-        "publishedAt": "2026-11-06T09:07:55Z",
-        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.95.1",
-        "version": "v0.95.1"
+        "publishedAt": "2026-11-12T13:08:13Z",
+        "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.95.2",
+        "version": "v0.95.2"
       },
       "name": "Prometheus Operator",
       "previous": {
-        "publishedAt": "2026-11-06T09:07:25Z",
-        "version": "v0.95.0"
+        "publishedAt": "2026-11-06T09:07:55Z",
+        "version": "v0.95.1"
       },
-      "releaseCount": 16,
+      "releaseCount": 17,
       "repository": "prometheus-operator/prometheus-operator",
       "tags": [
         "metrics",
@@ -2243,17 +2243,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 429293203,
-        "name": "2026.10.7",
+        "id": 442912110,
+        "name": "2026.11.0",
         "prerelease": false,
-        "publishedAt": "2026-10-30T17:11:03Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.7",
-        "version": "2026.10.7"
+        "publishedAt": "2026-11-12T12:23:45Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.11.0",
+        "version": "2026.11.0"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-10-29T12:18:25Z",
-        "version": "2026.10.6"
+        "publishedAt": "2026-10-30T17:11:03Z",
+        "version": "2026.10.7"
       },
       "releaseCount": 20,
       "repository": "cloudflare/cloudflared",
@@ -2593,17 +2593,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 435775580,
-        "name": "v0.1.64",
+        "id": 443519760,
+        "name": "v0.1.65",
         "prerelease": false,
-        "publishedAt": "2026-11-05T21:40:40Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.64",
-        "version": "v0.1.64"
+        "publishedAt": "2026-11-12T21:17:11Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.65",
+        "version": "v0.1.65"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-11-02T16:52:00Z",
-        "version": "v0.1.63"
+        "publishedAt": "2026-11-05T21:40:40Z",
+        "version": "v0.1.64"
       },
       "releaseCount": 20,
       "repository": "pgdogdev/pgdog",

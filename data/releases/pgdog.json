@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-06T09:22:21.607Z",
+  "generatedAt": "2026-11-12T21:29:09.721Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 443519760,
+      "name": "v0.1.65",
+      "notes": "## Peformance\r\n- More performance improvements in the hot path, reducing memory allocations, CPU instructions, and mutex contention required to serve a query @jkaczman \r\n- Use `unnest()` in cross-shard subqueries instead of injecting raw values, producing a massive improvement in performance @jkaczman \r\n\r\n## Features\r\n- Cross-shard `GROUP BY` now supports aggregation on columns not specified in the `SELECT` clause @murex971 \r\n- Add support for cross-shard CTEs @jkaczman \r\n- Add support for derived tables in subqueries @jkaczman \r\n- Add support for cross-shard `GROUP BY` with `HAVING` clause @murex971 \r\n- Add support for moving individual tables with logical replication. This is useful for using it for other purposes than resharding. @murex971 \r\n- Add support for `NULLS FIRST` and `NULLS LAST` in cross-shard `ORDER BY` @murex971 \r\n\r\n## Bugs\r\n- Cross-shard `GROUP BY` without an aggregate function would return incorrect results @murex971 \r\n-  Passthrough auth token cache would keep expired entries blocking their re-use if their expiration time wasn't correctly calculated @daryllimyt\r\n- `read_write_split = \"prefer_primary\"` would route reads to a missing primary on read-only clusters @eidam\r\n- `RESET` statements & `DateStyle` parameter were incorrectly handled in some edge cases @meskill \r\n- Replica lag ban was using uninitialized stats, causing a race condition during pool initialization\r\n- `INSERT [...] SELECT` would route rows incorrectly if the configuration didn't have matching shards for all rows in the `SELECT` statement @jkaczman \r\n- Empty query would not be accepted in a failed transaction if the query parser was disabled\r\n- Return an error when aggregate functions would overflow; this would cause a panic before @murex971 \r\n- Query cancellation wouldn't wait for Postgres to ack the request, causing it to occasionally fail @andersondario\r\n- Aurora detection query in the LSN monitor would cause unnecessary error noise in community PG @eidam \r\n- Cross-shard `GROUP BY` would incorrectly apply `LIMIT` and `OFFSET` prior to aggregation in the proxy @murex971 \r\n- Cross-shard `ORDER BY` wouldn't \r\n\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.64...v0.1.65",
+      "prerelease": false,
+      "publishedAt": "2026-11-12T21:17:11Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.65",
+      "version": "v0.1.65"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-25T22:23:00Z",
       "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.46",
       "version": "v0.1.46"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 341595985,
-      "name": "v0.1.45",
-      "notes": "## What's Changed\r\n\r\n### Distribution\r\n\r\nPre-compiled binaries now ship with every release in GitHub:\r\n\r\n- Linux x86/ARM\r\n- Mac (Apple Silicon)\r\n- Debian package (amd64/arm64).\r\n\r\n### Breaking change\r\n\r\n`SET LOCAL pgdog.shard` and `SET LOCAL pgdog.sharding_key` now assume the entire transaction will be sent to that one shard only. Any query that attempts to talk to a different shard, incl. omnisharded writes, will be blocked. This is not really a breaking change, but more of a bug fix, but still worth calling this out since this changes the behavior of the sharding logic a bit.\r\n\r\nIf using sharding, please double check this release before deploying to prod just to make sure the new shard checker doesn't accidentally (and incorrectly) block your query from execution.\r\n\r\n### Changelog\r\n\r\n* feat: check that tuples in multi-tuple `INSERT` statement belong to the same shard before rewriting @murex971\r\n* feat: handle the special case of `SELECT set_config(...)`, which we didn't track previously; this fixes the  \"`pg_dump` broke my pooler\" issue @sgrif\r\n* feat: enable parser for LISTEN/NOTIFY/UNLISTEN in pooler-only mode (`query_parser = \"on\" not required, makes PgDog much faster)\r\n* feat: add LISTEN/NOTIFY stats\r\n* fix(sharding): `COPY` with rows exceeding one `CopyData` message size were incorrectly routed to all shards @LnL7\r\n* fix: Elixir driver sends `Close` for one-off statements, which we incorrectly rejected with an error\r\n* fix: major performance improvements in `pg_query`, affecting long queries @sgrif\r\n* fix: Windows build by @imor\r\n* fix: race condition in `LISTEN` when registering for a channel for the first time\r\n* fix: `UnexpectedEof` error log when passthrough auth is enabled\r\n* fix: use interval instead of sleep in stats loop which may have caused our stats to stop working after 12 days of uptime (potential Tokio bug, not confirmed)\r\n\r\n## New Contributors\r\n* @LnL7 made their first contribution in https://github.com/pgdogdev/pgdog/pull/1062\r\n* @murex971 made their first contribution in https://github.com/pgdogdev/pgdog/pull/1065\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.44...v0.1.45",
-      "prerelease": false,
-      "publishedAt": "2026-06-18T19:12:32Z",
-      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.45",
-      "version": "v0.1.45"
     }
   ],
   "schemaVersion": 1,

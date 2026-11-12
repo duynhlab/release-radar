@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-06T20:26:53.854Z",
+  "generatedAt": "2026-11-12T21:28:07.932Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 443184321,
+      "name": "v42.4.0",
+      "notes": "# [v42.4.0](https://github.com/traefik/traefik-helm-chart/compare/v42.3.2...v42.4.0) (2026-11-12)\r\n\r\n> [!IMPORTANT]\r\n> Upgrade notes:\r\n> 1. **Graceful shutdown**: `ports.web` and `ports.websecure` now keep accepting requests for 5s after SIGTERM (`transport.lifeCycle.requestAcceptGraceTimeout: 5s`), so Kubernetes can remove the pod from Service endpoints before new requests stop. Pod termination takes 5s longer. Set it to `0` to restore the previous behavior, with PR https://github.com/traefik/traefik-helm-chart/pull/2083.\r\n> 2. **Traefik Hub v3.22 CRDs**: Helm does not upgrade CRDs. Apply them before using Hub v3.22.0-ea.2.\r\n> 3. **Gateway API**: Proxy v3.8.0-rc.1 and Hub v3.22.0-ea.2 need Gateway API v1.7.0 CRDs. Proxy v3.7.18 and Hub v3.21.11 stay on v1.6.3.\r\n\r\n## :rocket: Features\r\n\r\n- feat(hub): :sparkles: add nutanixPrismCentral tenantName value #2081 by @youkoulayley\r\n- feat(global): add imageRegistry value #2071 by @fculpo\r\n- feat(deployment): allow templating the additionalVolumes configuration #2072 by @fculpo\r\n- feat(ports): keep accepting requests for 5s on shutdown by default #2083 by @emilevauge\r\n- feat(gateway): :sparkles: add retryMaxRequestBodyBytes value #2086 by @darkweaver87\r\n- feat(entrypoints): :sparkles: add forwardedHeaders.addXForwardedSchemeHeaders value #2089 by @darkweaver87\r\n- feat(deps): update traefik docker tag to v3.7.18 #2098 by @renovate-with-github-actions[bot]\r\n- feat(ingress): :sparkles: add reportNodeInternalIPs value #2087 by @darkweaver87\r\n- feat(hub): :sparkles: support VMware vCenter provider #2082 by @youkoulayley\r\n- feat(ingress-nginx): :sparkles: add disableNonTLSRouters value #2088 by @darkweaver87\r\n- feat(CRDs): update for Traefik Hub v3.22 #2054 by @traefiker\r\n- feat(serverstransport): :sparkles: add forwardingTimeouts readTimeout and writeTimeout values #2090 by @darkweaver87\r\n- feat(hub): :rocket: support traefik hub v3.22.0-ea.1 #2085 by @darkweaver87\r\n- feat(hub): :rocket: support traefik hub v3.21.11 and v3.22.0-ea.2 #2105 by @darkweaver87\r\n\r\n## :bug: Bug fixes\r\n\r\n- fix(hub): :bug: stop rendering default insecureSkipVerify on hub providers #2093 by @darkweaver87\r\n- fix(hub): :bug: stop rendering hard-coded hub provider defaults #2094 by @darkweaver87\r\n\r\n## :package: Others\r\n\r\n- chore(deps): update github actions #2080 by @renovate-with-github-actions[bot]\r\n- ci(renovate): 👷 track traefik/mcp-server image in EXAMPLES.md #2077 by @mloiseleur\r\n- test(unittest): replace vacuous notMatchRegexRaw asserts on deployment templates #2091 by @darkweaver87\r\n- style(values): use empty values for nil defaults #2092 by @darkweaver87\r\n- docs(examples): update traefik/mcp-server docker tag to v0.7.1 #2100 by @renovate-with-github-actions[bot]\r\n- chore(deps): update azure/setup-helm action to v5.1.0 #2099 by @renovate-with-github-actions[bot]\r\n- docs(readme): fix Gateway API CRD version in upgrade instructions #2102 by @mloiseleur\r\n- test(hub): 🚨 drop Proxy version gate tests duplicated for Hub #2104 by @mloiseleur\r\n- chore(release): publish 42.4.0 #2103 by @darkweaver87\r\n\r\n## 👌 Traefik version support\r\n\r\n* Traefik Proxy: v3.6.0 -> v3.7.18 (default)\r\n* Traefik Hub: v3.19.3 -> v3.21.11",
+      "prerelease": false,
+      "publishedAt": "2026-11-12T16:04:38Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.4.0",
+      "version": "v42.4.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-07-06T16:30:32Z",
       "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.0.2",
       "version": "v41.0.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 346249730,
-      "name": "v41.0.1",
-      "notes": "# [v41.0.1](https://github.com/traefik/traefik-helm-chart/compare/v41.0.0...v41.0.1) (2026-06-29)\n\n## :rocket: Features\n\n- feat(hub): support traefik hub v3.20.5 #1908 by @mloiseleur\n\n## :bug: Bug fixes\n\n- fix(ingressroute): fail fast on uppercase ingressRoute keys (RFC 1123) #1862 by @filip2mac\n\n## :package: Others\n\n- chore(deps): update actions/checkout action to v7 #1905 by @renovate-with-github-actions[bot]\n- chore(deps): update dependency helm to v4.2.2 #1902 by @renovate-with-github-actions[bot]\n- chore(deps): update mikepenz/release-changelog-builder-action action to v6.2.3 #1903 by @renovate-with-github-actions[bot]\n- chore(deps): update renovatebot/github-action action to v46.1.16 #1904 by @renovate-with-github-actions[bot]\n- docs(hub): deprecate inline literal token in values #1907 by @mloiseleur\n- chore(release): publish 41.0.1 #1909 by @mloiseleur\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.5 (default)\n* Traefik Hub: v3.19.3 -> v3.20.5",
-      "prerelease": false,
-      "publishedAt": "2026-06-29T12:24:28Z",
-      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.0.1",
-      "version": "v41.0.1"
     }
   ],
   "schemaVersion": 1,

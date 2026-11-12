@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-06T09:21:54.127Z",
+  "generatedAt": "2026-11-12T21:28:33.344Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 442962264,
+      "name": "0.95.2 / 2026-11-10",
+      "notes": "* [BUGFIX] Fix container images for all platforms/architectures other than `linux/amd64`. #8971",
+      "prerelease": false,
+      "publishedAt": "2026-11-12T13:08:13Z",
+      "url": "https://github.com/prometheus-operator/prometheus-operator/releases/tag/v0.95.2",
+      "version": "v0.95.2"
+    },
     {
       "channel": "stable",
       "draft": false,
