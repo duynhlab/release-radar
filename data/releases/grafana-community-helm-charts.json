@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-11T09:22:08.336Z",
+  "generatedAt": "2026-11-13T09:30:03.637Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 443926153,
+      "name": "loki-21.2.2",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [tempo-distributed] Switch gateway image to nginx/nginx-unprivileged by @matphilippe in https://github.com/grafana-community/helm-charts/pull/978\n* [ci] Restore MinIO repositories and support new chart imports by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/994\n* [CI] Update github-workflow dependency updates to v4.3.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/995\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v1.0.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/996\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.2.1...loki-21.2.2",
+      "prerelease": false,
+      "publishedAt": "2026-11-13T07:16:24Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.2.2",
+      "version": "loki-21.2.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 443621845,
+      "name": "tempo-distributed-3.29.0",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [loki] Update loki dependency non-major updates by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/985\n* [loki] Add opt-in dataobj-builder component for Loki 4.0 by @LukoJy3D in https://github.com/grafana-community/helm-charts/pull/981\n* [loki] Allow goMemLimitFactor and gogc of 0 to disable injection by @jlenos in https://github.com/grafana-community/helm-charts/pull/988\n* [tempo-distributed] Switch gateway image to nginx/nginx-unprivileged by @matphilippe in https://github.com/grafana-community/helm-charts/pull/978\n\n## New Contributors\n* @LukoJy3D made their first contribution in https://github.com/grafana-community/helm-charts/pull/981\n* @jlenos made their first contribution in https://github.com/grafana-community/helm-charts/pull/988\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.28.0...tempo-distributed-3.29.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-12T23:17:04Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.29.0",
+      "version": "tempo-distributed-3.29.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-11-04T22:15:08Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.0.0",
       "version": "loki-21.0.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 433344331,
-      "name": "loki-20.4.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] List the ruler in NOTES only when it is enabled by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/966\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.4.0...loki-20.4.1",
-      "prerelease": false,
-      "publishedAt": "2026-11-03T23:50:16Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.4.1",
-      "version": "loki-20.4.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 433324941,
-      "name": "loki-20.4.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] ruler query frontend by @mac133k in https://github.com/grafana-community/helm-charts/pull/949\n\n## New Contributors\n* @mac133k made their first contribution in https://github.com/grafana-community/helm-charts/pull/949\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.3.0...loki-20.4.0",
-      "prerelease": false,
-      "publishedAt": "2026-11-03T23:19:41Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-20.4.0",
-      "version": "loki-20.4.0"
     }
   ],
   "schemaVersion": 1,

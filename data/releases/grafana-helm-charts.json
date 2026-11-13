@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-10T20:49:39.206Z",
+  "generatedAt": "2026-11-13T09:30:03.153Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 443948657,
+      "name": "synthetic-monitoring-agent-2.0.0",
+      "notes": "Grafana Synthetic Monitoring agent, to run private probes on Kubernetes.\n\nSource commit: https://github.com/grafana/synthetic-monitoring-agent/commit/aec519c6a75c46047e9321fa9801de5b3ddd5df5\n\nTag on source: https://github.com/grafana/synthetic-monitoring-agent/releases/tag/synthetic-monitoring-agent-2.0.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-13T07:46:16Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/synthetic-monitoring-agent-2.0.0",
+      "version": "synthetic-monitoring-agent-2.0.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-22T14:10:52Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.9.1",
       "version": "alloy-operator-0.9.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 420702410,
-      "name": "helm-loki-7.5.0",
-      "notes": "Helm chart for Grafana Enterprise Logs supporting monolithic, simple scalable, and microservices modes.\n\nSource commit: https://github.com/grafana/loki/commit/14f73b26d0984988112c3e6085eee16ea7c226bd\n\nTag on source: https://github.com/grafana/loki/releases/tag/helm-loki-7.5.0",
-      "prerelease": false,
-      "publishedAt": "2026-10-22T12:35:43Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.5.0",
-      "version": "helm-loki-7.5.0"
     }
   ],
   "schemaVersion": 1,
