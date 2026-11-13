@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-13T09:30:03.637Z",
+  "generatedAt": "2026-11-13T20:55:01.803Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 444064911,
+      "name": "loki-21.2.3",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update loki dependency non-major updates to v3.7.10 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/997\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.2.2...loki-21.2.3",
+      "prerelease": false,
+      "publishedAt": "2026-11-13T09:55:04Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.2.3",
+      "version": "loki-21.2.3"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-11-05T08:23:24Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.23.0",
       "version": "tempo-distributed-3.23.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 434516051,
-      "name": "loki-21.0.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [CI] Update helm/kind-action action to v1.15.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/969\n* [loki] Add rollout-operator downscale options to ingester zones by @robertdyr in https://github.com/grafana-community/helm-charts/pull/970\n\n## New Contributors\n* @robertdyr made their first contribution in https://github.com/grafana-community/helm-charts/pull/970\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-20.4.1...loki-21.0.0",
-      "prerelease": false,
-      "publishedAt": "2026-11-04T22:15:08Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.0.0",
-      "version": "loki-21.0.0"
     }
   ],
   "schemaVersion": 1,

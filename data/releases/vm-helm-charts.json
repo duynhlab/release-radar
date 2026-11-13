@@ -1,6 +1,72 @@
 {
-  "generatedAt": "2026-11-09T23:26:37.076Z",
+  "generatedAt": "2026-11-13T20:54:36.558Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 444307886,
+      "name": "victoria-logs-single-0.13.13",
+      "notes": "# Release notes for version 0.13.13\n\n**Release date:** 13 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.54.0](https://img.shields.io/badge/v1.54.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1540)\n\n- bump VictoriaLogs version to [v1.54.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.54.0).",
+      "prerelease": false,
+      "publishedAt": "2026-11-13T14:10:23Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-single-0.13.13",
+      "version": "victoria-logs-single-0.13.13"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 444307850,
+      "name": "victoria-logs-multilevel-0.2.11",
+      "notes": "# Release notes for version 0.2.11\n\n**Release date:** 13 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.54.0](https://img.shields.io/badge/v1.54.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1540)\n\n- bump VictoriaLogs version to [v1.54.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.54.0).\n- bump vmauth version to [v1.156.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.156.0).",
+      "prerelease": false,
+      "publishedAt": "2026-11-13T14:10:21Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-multilevel-0.2.11",
+      "version": "victoria-logs-multilevel-0.2.11"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 444307811,
+      "name": "victoria-logs-collector-0.3.9",
+      "notes": "# Release notes for version 0.3.9\n\n**Release date:** 13 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.54.0](https://img.shields.io/badge/v1.54.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1540)\n\n- bump vlagent version to [v1.54.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.54.0).",
+      "prerelease": false,
+      "publishedAt": "2026-11-13T14:10:18Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-collector-0.3.9",
+      "version": "victoria-logs-collector-0.3.9"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 444307781,
+      "name": "victoria-logs-cluster-0.2.12",
+      "notes": "# Release notes for version 0.2.12\n\n**Release date:** 13 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.54.0](https://img.shields.io/badge/v1.54.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1540)\n\n- bump VictoriaLogs version to [v1.54.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.54.0).\n- fix the `vector` subchart values being treated as a chart component: `vector.service.enabled: true` failed the render, and `vector.ingress.enabled` or `vector.podDisruptionBudget.enabled` created a second, unused resource next to the one from the subchart.\n- bump vmauth version to [v1.156.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.156.0).",
+      "prerelease": false,
+      "publishedAt": "2026-11-13T14:10:16Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-cluster-0.2.12",
+      "version": "victoria-logs-cluster-0.2.12"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 444307748,
+      "name": "victoria-logs-agent-0.2.11",
+      "notes": "# Release notes for version 0.2.11\n\n**Release date:** 13 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.54.0](https://img.shields.io/badge/v1.54.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1540)\n\n- bump vlagent version to [v1.54.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.54.0).\n- add `serviceAccount` options. A dedicated ServiceAccount is created by default and the API token isn't mounted (`serviceAccount.automountToken: false`), as vlagent doesn't access the Kubernetes API. Pods are restarted once on upgrade.\n- add `service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. It applies to every rendered Service port, including `http[]`, `extraPorts[]` and `syslog-tcp`/`syslog-udp`. See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).\n- add `podManagementPolicy` option for the StatefulSet. Set it to `Parallel` to match the StatefulSet created by the VictoriaMetrics operator, so that it can be adopted in place when migrating from a VLAgent custom resource.",
+      "prerelease": false,
+      "publishedAt": "2026-11-13T14:10:14Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-agent-0.2.11",
+      "version": "victoria-logs-agent-0.2.11"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 444276498,
+      "name": "victoria-metrics-mcp-0.4.1",
+      "notes": "# Release notes for version 0.4.1\n\n**Release date:** 13 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.21.0](https://img.shields.io/badge/v1.21.0-success?logo=VictoriaMetrics&labelColor=gray)\n\n- bump version of VictoriaMetrics MCP to [v1.21.0](https://github.com/victoriametrics/mcp-victoriametrics/releases/tag/v1.21.0)",
+      "prerelease": false,
+      "publishedAt": "2026-11-13T13:41:27Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-mcp-0.4.1",
+      "version": "victoria-metrics-mcp-0.4.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -154,72 +220,6 @@
       "publishedAt": "2026-11-02T08:22:10Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-alert-0.52.1",
       "version": "victoria-metrics-alert-0.52.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 431214151,
-      "name": "victoria-logs-single-0.13.11",
-      "notes": "# Release notes for version 0.13.11\n\n**Release date:** 02 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.53.0](https://img.shields.io/badge/v1.53.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1530)\n\n- bump `victoria-metrics-common` dependency to `0.4.*`. Resource names are unchanged.\n- add `server.service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. It applies to every rendered Service port, including `http[]`, `extraPorts[]` and `syslog-tcp`/`syslog-udp`. See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).\n- rename the container from `vlogs` to `vlsingle`, matching the VictoriaMetrics operator. Pods are restarted once on upgrade.\n- fix `server.persistentVolume.name` in StatefulSet mode: the container mounted the default volume name instead of the overridden claim template name, which produced an invalid pod spec.\n- updated vector dependency 0.60.0 -> 0.61.0",
-      "prerelease": false,
-      "publishedAt": "2026-11-02T08:22:08Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-single-0.13.11",
-      "version": "victoria-logs-single-0.13.11"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 431214133,
-      "name": "victoria-logs-multilevel-0.2.10",
-      "notes": "# Release notes for version 0.2.10\n\n**Release date:** 02 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.53.0](https://img.shields.io/badge/v1.53.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1530)\n\n- fix rendering of a templated `serviceAccount.name` (e.g. `{{ .Release.Name }}-sa`), which failed with a nil pointer error.\n- bump vmauth version to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0).\n- add `vlselect`/`vmauth`'s `service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. It applies to every rendered Service port, including `http[]` and `extraPorts[]`. See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).",
-      "prerelease": false,
-      "publishedAt": "2026-11-02T08:22:07Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-multilevel-0.2.10",
-      "version": "victoria-logs-multilevel-0.2.10"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 431214112,
-      "name": "victoria-logs-cluster-0.2.11",
-      "notes": "# Release notes for version 0.2.11\n\n**Release date:** 02 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.53.0](https://img.shields.io/badge/v1.53.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1530)\n\n- bump vmauth version to [v1.155.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0).\n- add `vlselect`/`vlinsert`/`vlstorage`/`vmauth`'s `service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. It applies to every rendered Service port, including `http[]`, `extraPorts[]` and protocol-specific ports (e.g. `syslog-tcp`, `syslog-udp`). See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).\n- updated vector dependency 0.60.0 -> 0.61.0",
-      "prerelease": false,
-      "publishedAt": "2026-11-02T08:22:05Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-cluster-0.2.11",
-      "version": "victoria-logs-cluster-0.2.11"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 427013903,
-      "name": "victoria-metrics-operator-crds-0.15.2",
-      "notes": "# Release notes for version 0.15.2\n\n**Release date:** 28 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.75.2](https://img.shields.io/badge/v0.75.2-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Foperator%2Fchangelog%2F%23v0752)\n\n- Release CRDs for operator [v0.75.2](https://github.com/VictoriaMetrics/operator/releases/tag/v0.75.2)",
-      "prerelease": false,
-      "publishedAt": "2026-10-28T18:03:20Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-crds-0.15.2",
-      "version": "victoria-metrics-operator-crds-0.15.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 427013857,
-      "name": "victoria-metrics-operator-0.68.2",
-      "notes": "# Release notes for version 0.68.2\n\n**Release date:** 28 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.75.2](https://img.shields.io/badge/v0.75.2-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Foperator%2Fchangelog%2F%23v0752)\n\n- fix pod label selector in the chart notes: repeated `-l` flags were replaced with a single comma-separated selector, since `kubectl` only honours the last `-l`.\n- apply `global.extraLabels` and `global.extraAnnotations` to every resource this chart renders directly. See [#3202](https://github.com/VictoriaMetrics/helm-charts/issues/3202).\n- updates operator to [v0.75.2](https://github.com/VictoriaMetrics/operator/releases/tag/v0.75.2) version",
-      "prerelease": false,
-      "publishedAt": "2026-10-28T18:03:18Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-0.68.2",
-      "version": "victoria-metrics-operator-0.68.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 424703277,
-      "name": "victoria-metrics-common-0.4.5",
-      "notes": "# Release notes for version 0.4.5\n\n**Release date:** 26 Oct 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0)\n\n- with `useLegacyNaming: false` and a known component kind, `vm.selectorLabels` (and therefore `vm.commonLabels` and `vm.podLabels`) now also set `managed-by: vm-operator`, matching the label the VictoriaMetrics operator unconditionally adds to its own selectors. Selector, `serviceName` and `volumeClaimTemplates` are immutable on Deployments/StatefulSets, so without this a chart release could never adopt operator-created workloads in place - only delete and recreate them.",
-      "prerelease": false,
-      "publishedAt": "2026-10-26T20:02:39Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-common-0.4.5",
-      "version": "victoria-metrics-common-0.4.5"
     }
   ],
   "schemaVersion": 1,

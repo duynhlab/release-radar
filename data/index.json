@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T09:30:25.911Z",
+  "generatedAt": "2026-11-13T20:55:25.104Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -579,19 +579,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 401225197,
-        "name": "v1.52.1",
+        "id": 444217890,
+        "name": "v1.52.2",
         "prerelease": false,
-        "publishedAt": "2026-10-01T18:15:53Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.52.1",
-        "version": "v1.52.1"
+        "publishedAt": "2026-11-13T12:49:52Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.52.2",
+        "version": "v1.52.2"
       },
       "name": "VictoriaLogs",
       "previous": {
-        "publishedAt": "2026-10-01T11:20:01Z",
-        "version": "v1.53.0"
+        "publishedAt": "2026-11-13T11:28:59Z",
+        "version": "v1.54.0"
       },
-      "releaseCount": 13,
+      "releaseCount": 15,
       "repository": "VictoriaMetrics/VictoriaLogs",
       "tags": [
         "logs"
@@ -641,17 +641,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 439058549,
-        "name": "victoria-metrics-k8s-stack-0.98.1",
+        "id": 444307886,
+        "name": "victoria-logs-single-0.13.13",
         "prerelease": false,
-        "publishedAt": "2026-11-09T11:38:33Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.98.1",
-        "version": "victoria-metrics-k8s-stack-0.98.1"
+        "publishedAt": "2026-11-13T14:10:23Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-single-0.13.13",
+        "version": "victoria-logs-single-0.13.13"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-09T11:24:54Z",
-        "version": "victoria-traces-single-0.1.13"
+        "publishedAt": "2026-11-13T14:10:21Z",
+        "version": "victoria-logs-multilevel-0.2.11"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 443948657,
-        "name": "synthetic-monitoring-agent-2.0.0",
+        "id": 444376040,
+        "name": "alloy-1.16.0",
         "prerelease": false,
-        "publishedAt": "2026-11-13T07:46:16Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/synthetic-monitoring-agent-2.0.0",
-        "version": "synthetic-monitoring-agent-2.0.0"
+        "publishedAt": "2026-11-13T15:10:47Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.16.0",
+        "version": "alloy-1.16.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-10T20:12:59Z",
-        "version": "helm-loki-7.6.0"
+        "publishedAt": "2026-11-13T07:46:16Z",
+        "version": "synthetic-monitoring-agent-2.0.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 443926153,
-        "name": "loki-21.2.2",
+        "id": 444064911,
+        "name": "loki-21.2.3",
         "prerelease": false,
-        "publishedAt": "2026-11-13T07:16:24Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.2.2",
-        "version": "loki-21.2.2"
+        "publishedAt": "2026-11-13T09:55:04Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.2.3",
+        "version": "loki-21.2.3"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-12T23:17:04Z",
-        "version": "tempo-distributed-3.29.0"
+        "publishedAt": "2026-11-13T07:16:24Z",
+        "version": "loki-21.2.2"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
