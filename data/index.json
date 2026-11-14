@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T20:55:25.104Z",
+  "generatedAt": "2026-11-14T08:58:14.613Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 444376040,
-        "name": "alloy-1.16.0",
+        "id": 444799281,
+        "name": "k8s-monitoring-4.6.1",
         "prerelease": false,
-        "publishedAt": "2026-11-13T15:10:47Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.16.0",
-        "version": "alloy-1.16.0"
+        "publishedAt": "2026-11-13T22:22:46Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.6.1",
+        "version": "k8s-monitoring-4.6.1"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-13T07:46:16Z",
-        "version": "synthetic-monitoring-agent-2.0.0"
+        "publishedAt": "2026-11-13T15:10:47Z",
+        "version": "alloy-1.16.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
