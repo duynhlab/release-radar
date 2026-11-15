@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T08:58:14.613Z",
+  "generatedAt": "2026-11-15T09:22:50.944Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1463,19 +1463,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 430216100,
-        "name": "2.4.0",
+        "id": 445861537,
+        "name": "2.5.0",
         "prerelease": false,
-        "publishedAt": "2026-10-31T22:10:55Z",
-        "url": "https://github.com/floci-io/floci/releases/tag/2.4.0",
-        "version": "2.4.0"
+        "publishedAt": "2026-11-15T06:36:31Z",
+        "url": "https://github.com/floci-io/floci/releases/tag/2.5.0",
+        "version": "2.5.0"
       },
       "name": "Floci",
       "previous": {
-        "publishedAt": "2026-10-15T05:39:06Z",
-        "version": "2.3.0"
+        "publishedAt": "2026-10-31T22:10:55Z",
+        "version": "2.4.0"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "floci-io/floci",
       "tags": [
         "aws",
