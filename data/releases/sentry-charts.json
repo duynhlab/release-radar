@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-09T23:27:14.446Z",
+  "generatedAt": "2026-11-15T19:47:06.881Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 446286576,
+      "name": "sentry: v36.0.1",
+      "notes": "## [36.0.1](https://github.com/sentry-kubernetes/charts/compare/sentry-v36.0.0...sentry-v36.0.1) (2026-11-14)\n\n\n### Bug Fixes\n\n* **sentry:** render symbolicator StatefulSet accessModes as a list ([#2327](https://github.com/sentry-kubernetes/charts/issues/2327)) ([91d5d58](https://github.com/sentry-kubernetes/charts/commit/91d5d584203b46e1be3c39bda49ecfa7a8bb5e36))",
+      "prerelease": false,
+      "publishedAt": "2026-11-15T18:54:44Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v36.0.1",
+      "version": "sentry-v36.0.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-04T15:39:03Z",
       "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v32.0.0",
       "version": "sentry-v32.0.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 331919475,
-      "name": "sentry: v31.7.1",
-      "notes": "## [31.7.1](https://github.com/sentry-kubernetes/charts/compare/sentry-v31.7.0...sentry-v31.7.1) (2026-05-30)\n\n\n### Bug Fixes\n\n* add hook-weight 3 to taskbroker and taskworker to prevent CrashLoopBackOff ([#2225](https://github.com/sentry-kubernetes/charts/issues/2225)) ([36afab2](https://github.com/sentry-kubernetes/charts/commit/36afab27227efc1b38cba85e22f97fd836e79605))\n* auto-generate launchpad RPC shared secret on install and upgrade ([#2224](https://github.com/sentry-kubernetes/charts/issues/2224)) ([ef7a2e4](https://github.com/sentry-kubernetes/charts/commit/ef7a2e42b2d030aba0fbb1a040f23a2fa0e5544b))\n* remove invalid annotations from hook jobs ([#2220](https://github.com/sentry-kubernetes/charts/issues/2220)) ([f128e76](https://github.com/sentry-kubernetes/charts/commit/f128e762126bc9597944beffce523fad5911d9b6))",
-      "prerelease": false,
-      "publishedAt": "2026-05-30T10:57:51Z",
-      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v31.7.1",
-      "version": "sentry-v31.7.1"
     }
   ],
   "schemaVersion": 1,

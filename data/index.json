@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T09:22:50.944Z",
+  "generatedAt": "2026-11-15T19:47:17.836Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -2117,17 +2117,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 439211600,
-        "name": "sentry: v36.0.0",
+        "id": 446286576,
+        "name": "sentry: v36.0.1",
         "prerelease": false,
-        "publishedAt": "2026-11-09T14:09:10Z",
-        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v36.0.0",
-        "version": "sentry-v36.0.0"
+        "publishedAt": "2026-11-15T18:54:44Z",
+        "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v36.0.1",
+        "version": "sentry-v36.0.1"
       },
       "name": "Sentry Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-29T09:27:50Z",
-        "version": "sentry-v35.0.0"
+        "publishedAt": "2026-11-09T14:09:10Z",
+        "version": "sentry-v36.0.0"
       },
       "releaseCount": 20,
       "repository": "sentry-kubernetes/charts",
