@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-09T23:27:22.457Z",
+  "generatedAt": "2026-11-16T23:24:17.498Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 447587761,
+      "name": "v0.122.0",
+      "notes": "### Added Features\n\n- add DHI OSV support [PR [#3613](https://github.com/anchore/grype/pull/3613) @aubm]\n\n### Bug Fixes\n\n- remove incorrect python lightning mapping [PR [#3922](https://github.com/anchore/grype/pull/3922) @westonsteimel]\n- sort rpm caret versions above their base version [PR [#3812](https://github.com/anchore/grype/pull/3812) @spicysharkco]\n- support shorthand java versions with #u# [PR [#3726](https://github.com/anchore/grype/pull/3726) @kzantow]\n- parse bare CVSS v2 and prefer the newest CVSS version [PR [#3910](https://github.com/anchore/grype/pull/3910) @spiffcs]\n- `--scope all-layers` does not reach Syft: packages removed in a later layer are not reported [Issue [#3897](https://github.com/anchore/grype/issues/3897)] [PR [#3904](https://github.com/anchore/grype/pull/3904) @wils0ns]\n\n### Dependencies\n\n14 dependency changes (13 updated, 1 added). 1 vulnerability remediated.\n\n**🟢 Remediated (1)**\n\n- [GHSA-q7gw-24fr-5p69](https://github.com/advisories/GHSA-q7gw-24fr-5p69) (Medium) — go.opentelemetry.io/otel/sdk, go.opentelemetry.io/otel/trace\n\n**Toolchains (1)**\n\n- Go minimum version: `1.26.8` → `1.26.10`\n\n<details>\n<summary>Updated (13 packages)</summary>\n\n- github.com/anchore/stereoscope `v0.4.1` → `v0.4.2`\n- github.com/anchore/syft `v1.57.1` → `v1.57.2`\n- github.com/cloudflare/circl `v1.6.3` → `v1.6.5`\n- github.com/docker/cli `v29.9.2+incompatible` → `v29.9.3+incompatible`\n- github.com/gocsaf/csaf/v3 `v3.5.1` → `v3.7.1`\n- github.com/shopspring/decimal `v1.4.0` → `v1.6.0`\n- go.opentelemetry.io/otel `v1.46.0` → `v1.47.0`\n- go.opentelemetry.io/otel/metric `v1.46.0` → `v1.47.0`\n- go.opentelemetry.io/otel/metric/x `v0.68.0` → `v0.69.0`\n- go.opentelemetry.io/otel/sdk `v1.46.0` → `v1.47.0` **(🟢 remediated [GHSA-q7gw-24fr-5p69](https://github.com/advisories/GHSA-q7gw-24fr-5p69))**\n- go.opentelemetry.io/otel/sdk/metric `v1.46.0` → `v1.47.0`\n- go.opentelemetry.io/otel/trace `v1.46.0` → `v1.47.0` **(🟢 remediated [GHSA-q7gw-24fr-5p69](https://github.com/advisories/GHSA-q7gw-24fr-5p69))**\n- modernc.org/sqlite `v1.61.0` → `v1.61.1`\n</details>\n\n<details>\n<summary>Added (1 package)</summary>\n\n- go.opentelemetry.io/otel/log `v1.47.0`\n</details>\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.121.3...v0.122.0)**",
+      "prerelease": false,
+      "publishedAt": "2026-11-16T20:41:59Z",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.122.0",
+      "version": "v0.122.0"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,12 +1,23 @@
 {
-  "generatedAt": "2026-10-27T07:51:02.611Z",
+  "generatedAt": "2026-11-16T23:24:11.396Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 446859321,
+      "name": "v0.17.0",
+      "notes": "## Changelog\r\n\r\n[v0.17.0 changelog](https://github.com/flux-iac/tofu-controller/blob/v0.17.0/CHANGELOG.md)\r\n\r\n## Container images\r\n\r\n- `ghcr.io/flux-iac/tofu-controller:v0.17.0`\r\n- `ghcr.io/flux-iac/tf-runner:v0.17.0`\r\n- `ghcr.io/flux-iac/tf-runner:v0.17.0-base`\r\n\r\nSupported architectures: `linux/amd64`, `linux/arm64` and `linux/arm/v7`.",
+      "prerelease": false,
+      "publishedAt": "2026-11-16T10:00:12Z",
+      "url": "https://github.com/flux-iac/tofu-controller/releases/tag/v0.17.0",
+      "version": "v0.17.0"
+    },
     {
       "channel": "stable",
       "draft": false,
       "id": 424731344,
       "name": "v0.16.6",
-      "notes": "## Changelog\n\n[v0.16.6 changelog](https://github.com/flux-iac/tofu-controller/blob/v0.16.6/CHANGELOG.md)\n\n[CHANGELOG](https://github.com/flux-iac/tofu-controller/blob/main/CHANGELOG.md)\n\n## Container images\n\n- `ghcr.io/flux-iac/tofu-controller:v0.16.6`\n- `ghcr.io/flux-iac/tf-runner:v0.16.6`\n- `ghcr.io/flux-iac/tf-runner:v0.16.6-base`\n\nSupported architectures: `linux/amd64`, `linux/arm64` and `linux/arm/v7`.",
+      "notes": "## Changelog\r\n\r\n[v0.16.6 changelog](https://github.com/flux-iac/tofu-controller/blob/v0.16.6/CHANGELOG.md)\r\n\r\n## Container images\r\n\r\n- `ghcr.io/flux-iac/tofu-controller:v0.16.6`\r\n- `ghcr.io/flux-iac/tf-runner:v0.16.6`\r\n- `ghcr.io/flux-iac/tf-runner:v0.16.6-base`\r\n\r\nSupported architectures: `linux/amd64`, `linux/arm64` and `linux/arm/v7`.",
       "prerelease": false,
       "publishedAt": "2026-10-26T20:26:20Z",
       "url": "https://github.com/flux-iac/tofu-controller/releases/tag/v0.16.6",

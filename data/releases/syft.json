@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-09T23:27:23.198Z",
+  "generatedAt": "2026-11-16T23:24:18.419Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 447546201,
+      "name": "v1.57.2",
+      "notes": "### Bug Fixes\n\n- skip Linux release identification if there is nothing to parse [PR [#5482](https://github.com/anchore/syft/pull/5482) @caleballen]\n- use pointer receiver for FileResolver to enable reuse [PR [#5483](https://github.com/anchore/syft/pull/5483) @caleballen]\n- report dpkg packages listed in both status and status.d once [PR [#5565](https://github.com/anchore/syft/pull/5565) @spiffcs]\n- find license files under .dist-info/licenses (PEP 639) [PR [#5496](https://github.com/anchore/syft/pull/5496) @ToreMerkely]\n- sort uv.lock extras by name so the SBOM output is stable [PR [#5468](https://github.com/anchore/syft/pull/5468) @wleeaf]\n- keep single-character names in requirements.txt [PR [#5469](https://github.com/anchore/syft/pull/5469) @protonnegativo]\n- do not use libavcodec ABI versions as FFmpeg release versions [Issue [#5548](https://github.com/anchore/syft/issues/5548)] [PR [#5552](https://github.com/anchore/syft/pull/5552) @Rudra184]\n- Support julia binary various versions [Issue [#5061](https://github.com/anchore/syft/issues/5061)] [PR [#5494](https://github.com/anchore/syft/pull/5494) @26wv]\n- Bun classifier reports historical version text before the runtime banner [Issue [#5553](https://github.com/anchore/syft/issues/5553)] [PR [#5558](https://github.com/anchore/syft/pull/5558) @sarankumar1325]\n- License normalization drops Classpath-exception-2.0 and uses AND instead of OR for Eclipse/GlassFish JARs [Issue [#5009](https://github.com/anchore/syft/issues/5009)] [PR [#5080](https://github.com/anchore/syft/pull/5080) @Eljees]\n\n### Dependencies\n\n10 dependency changes (9 updated, 1 added). 1 vulnerability remediated.\n\n**🟢 Remediated (1)**\n\n- [GHSA-q7gw-24fr-5p69](https://github.com/advisories/GHSA-q7gw-24fr-5p69) (Medium) — go.opentelemetry.io/otel/sdk, go.opentelemetry.io/otel/trace\n\n<details>\n<summary>Updated (9 packages)</summary>\n\n- github.com/anchore/stereoscope `v0.4.1` → `v0.4.2`\n- github.com/docker/cli `v29.9.2+incompatible` → `v29.9.3+incompatible`\n- go.opentelemetry.io/otel `v1.46.0` → `v1.47.0`\n- go.opentelemetry.io/otel/metric `v1.46.0` → `v1.47.0`\n- go.opentelemetry.io/otel/metric/x `v0.68.0` → `v0.69.0`\n- go.opentelemetry.io/otel/sdk `v1.46.0` → `v1.47.0` **(🟢 remediated [GHSA-q7gw-24fr-5p69](https://github.com/advisories/GHSA-q7gw-24fr-5p69))**\n- go.opentelemetry.io/otel/sdk/metric `v1.46.0` → `v1.47.0`\n- go.opentelemetry.io/otel/trace `v1.46.0` → `v1.47.0` **(🟢 remediated [GHSA-q7gw-24fr-5p69](https://github.com/advisories/GHSA-q7gw-24fr-5p69))**\n- modernc.org/sqlite `v1.61.0` → `v1.61.1`\n</details>\n\n<details>\n<summary>Added (1 package)</summary>\n\n- go.opentelemetry.io/otel/log `v1.47.0`\n</details>\n\n**[(Full Changelog)](https://github.com/anchore/syft/compare/v1.57.1...v1.57.2)**",
+      "prerelease": false,
+      "publishedAt": "2026-11-16T20:05:41Z",
+      "url": "https://github.com/anchore/syft/releases/tag/v1.57.2",
+      "version": "v1.57.2"
+    },
     {
       "channel": "stable",
       "draft": false,

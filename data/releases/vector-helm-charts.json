@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-29T19:37:51.157Z",
+  "generatedAt": "2026-11-16T23:23:51.875Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 447712775,
+      "name": "vector-0.62.1",
+      "notes": "Helm chart for Vector, a lightweight, ultra-fast tool for building observability pipelines",
+      "prerelease": false,
+      "publishedAt": "2026-11-16T22:50:00Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.62.1",
+      "version": "vector-0.62.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 447363120,
+      "name": "vector-0.62.0",
+      "notes": "> [!WARNING]\r\n> **Upgrade regression in chart `0.62.0`. Upgrade to [`0.62.1`](https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.62.1) instead**\r\n\r\nAvoid upgrading existing releases to this version. It unintentionally lowercases the `app.kubernetes.io/component` selector label, causing Kubernetes to reject updates to existing workloads. A failed upgrade can also leave `Service` and `PodDisruptionBudget` selectors mismatched with running pods, disrupting traffic.",
+      "prerelease": false,
+      "publishedAt": "2026-11-16T17:28:12Z",
+      "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.62.0",
+      "version": "vector-0.62.0"
+    },
     {
       "channel": "stable",
       "draft": false,

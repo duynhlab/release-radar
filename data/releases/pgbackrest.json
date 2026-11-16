@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-18T17:22:48.510Z",
+  "generatedAt": "2026-11-16T23:24:09.986Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 447017981,
+      "name": "v2.60.1: Annotate and SFTP Fixes",
+      "notes": "**Bug Fixes**:\n\n- Fix annotate saving backup.info to the default repository. (Reviewed by Stefan Fercot, Douglas J Hunley.)\n- Fix possible block incremental restore failure on SFTP storage. (Reviewed by Douglas J Hunley. Reported by Fineline19.)\n- Fix use of SFTP file handles after a reconnect. (Reviewed by Douglas J Hunley.)\n- Fix excessive memory use by the memory context free list. (Fixed by Vasiliy Koshkin. Reviewed by David Steele, Douglas J Hunley.)\n- Do not lower a minimum TLS version set by the OpenSSL config. (Reviewed by Douglas J Hunley, Stefan Fercot.)\n- Fix reporting of OpenSSL errors. (Reviewed by Douglas J Hunley, Stefan Fercot.)\n\n**Documentation Improvements**:\n\n- Document TLS settings skipped when repo-storage-verify-tls=n.",
+      "prerelease": false,
+      "publishedAt": "2026-11-16T12:46:11Z",
+      "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.60.1",
+      "version": "release/2.60.1"
+    },
     {
       "channel": "stable",
       "draft": false,

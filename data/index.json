@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T09:39:51.407Z",
+  "generatedAt": "2026-11-16T23:24:25.048Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1436,19 +1436,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 428167563,
-        "name": "vector-0.61.0",
+        "id": 447712775,
+        "name": "vector-0.62.1",
         "prerelease": false,
-        "publishedAt": "2026-10-29T17:12:11Z",
-        "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.61.0",
-        "version": "vector-0.61.0"
+        "publishedAt": "2026-11-16T22:50:00Z",
+        "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.62.1",
+        "version": "vector-0.62.1"
       },
       "name": "Vector Helm Charts",
       "previous": {
-        "publishedAt": "2026-10-19T18:19:26Z",
-        "version": "vector-0.60.0"
+        "publishedAt": "2026-11-16T17:28:12Z",
+        "version": "vector-0.62.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 16,
       "repository": "vectordotdev/helm-charts",
       "tags": [
         "logs",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 444064911,
-        "name": "loki-21.2.3",
+        "id": 447703364,
+        "name": "loki-21.3.1",
         "prerelease": false,
-        "publishedAt": "2026-11-13T09:55:04Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.2.3",
-        "version": "loki-21.2.3"
+        "publishedAt": "2026-11-16T22:38:09Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.3.1",
+        "version": "loki-21.3.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-13T07:16:24Z",
-        "version": "loki-21.2.2"
+        "publishedAt": "2026-11-16T21:35:01Z",
+        "version": "loki-21.3.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -2150,19 +2150,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 416335707,
-        "name": "v2.60.0: Page Checksum Errors and Object Store Prefetch",
+        "id": 447017981,
+        "name": "v2.60.1: Annotate and SFTP Fixes",
         "prerelease": false,
-        "publishedAt": "2026-10-18T08:57:02Z",
-        "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.60.0",
-        "version": "release/2.60.0"
+        "publishedAt": "2026-11-16T12:46:11Z",
+        "url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.60.1",
+        "version": "release/2.60.1"
       },
       "name": "pgBackRest",
       "previous": {
-        "publishedAt": "2026-10-04T09:02:09Z",
-        "version": "release/2.59.3"
+        "publishedAt": "2026-10-18T08:57:02Z",
+        "version": "release/2.60.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "pgbackrest/pgbackrest",
       "tags": [
         "postgresql",
@@ -2213,19 +2213,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424731344,
-        "name": "v0.16.6",
+        "id": 446859321,
+        "name": "v0.17.0",
         "prerelease": false,
-        "publishedAt": "2026-10-26T20:26:20Z",
-        "url": "https://github.com/flux-iac/tofu-controller/releases/tag/v0.16.6",
-        "version": "v0.16.6"
+        "publishedAt": "2026-11-16T10:00:12Z",
+        "url": "https://github.com/flux-iac/tofu-controller/releases/tag/v0.17.0",
+        "version": "v0.17.0"
       },
       "name": "Tofu Controller",
       "previous": {
-        "publishedAt": "2026-08-06T14:44:07Z",
-        "version": "v0.16.5"
+        "publishedAt": "2026-10-26T20:26:20Z",
+        "version": "v0.16.6"
       },
-      "releaseCount": 7,
+      "releaseCount": 8,
       "repository": "flux-iac/tofu-controller",
       "tags": [
         "terraform",
@@ -2414,19 +2414,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 439289992,
-        "name": "v0.121.3",
+        "id": 447587761,
+        "name": "v0.122.0",
         "prerelease": false,
-        "publishedAt": "2026-11-09T15:17:25Z",
-        "url": "https://github.com/anchore/grype/releases/tag/v0.121.3",
-        "version": "v0.121.3"
+        "publishedAt": "2026-11-16T20:41:59Z",
+        "url": "https://github.com/anchore/grype/releases/tag/v0.122.0",
+        "version": "v0.122.0"
       },
       "name": "Grype",
       "previous": {
-        "publishedAt": "2026-11-05T21:22:53Z",
-        "version": "v0.121.2"
+        "publishedAt": "2026-11-09T15:17:25Z",
+        "version": "v0.121.3"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "anchore/grype",
       "tags": [
         "scanning",
@@ -2445,19 +2445,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 439245901,
-        "name": "v1.57.1",
+        "id": 447546201,
+        "name": "v1.57.2",
         "prerelease": false,
-        "publishedAt": "2026-11-09T14:39:42Z",
-        "url": "https://github.com/anchore/syft/releases/tag/v1.57.1",
-        "version": "v1.57.1"
+        "publishedAt": "2026-11-16T20:05:41Z",
+        "url": "https://github.com/anchore/syft/releases/tag/v1.57.2",
+        "version": "v1.57.2"
       },
       "name": "Syft",
       "previous": {
-        "publishedAt": "2026-11-05T20:46:45Z",
-        "version": "v1.57.0"
+        "publishedAt": "2026-11-09T14:39:42Z",
+        "version": "v1.57.1"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "anchore/syft",
       "tags": [
         "sbom",
