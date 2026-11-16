@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T19:47:17.836Z",
+  "generatedAt": "2026-11-16T09:39:51.407Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -702,19 +702,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 394826223,
-        "name": "v2.21.0",
+        "id": 446458070,
+        "name": "v2.21.1",
         "prerelease": false,
-        "publishedAt": "2026-09-23T16:20:41Z",
-        "url": "https://github.com/kedacore/keda/releases/tag/v2.21.0",
-        "version": "v2.21.0"
+        "publishedAt": "2026-11-15T23:50:50Z",
+        "url": "https://github.com/kedacore/keda/releases/tag/v2.21.1",
+        "version": "v2.21.1"
       },
       "name": "KEDA",
       "previous": {
-        "publishedAt": "2026-07-31T08:14:38Z",
-        "version": "v2.20.2"
+        "publishedAt": "2026-09-23T16:20:41Z",
+        "version": "v2.21.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "kedacore/keda",
       "tags": [
         "kubernetes",
@@ -1311,19 +1311,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 375717365,
-        "name": "v5.25.0",
+        "id": 446681693,
+        "name": "v5.26.0",
         "prerelease": false,
-        "publishedAt": "2026-08-24T13:26:43Z",
-        "url": "https://github.com/grafana/grafana-operator/releases/tag/v5.25.0",
-        "version": "v5.25.0"
+        "publishedAt": "2026-11-16T06:31:53Z",
+        "url": "https://github.com/grafana/grafana-operator/releases/tag/v5.26.0",
+        "version": "v5.26.0"
       },
       "name": "Grafana Operator",
       "previous": {
-        "publishedAt": "2026-06-09T11:36:47Z",
-        "version": "v5.24.0"
+        "publishedAt": "2026-08-24T13:26:43Z",
+        "version": "v5.25.0"
       },
-      "releaseCount": 11,
+      "releaseCount": 12,
       "repository": "grafana/grafana-operator",
       "tags": [
         "dashboards",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 444799281,
-        "name": "k8s-monitoring-4.6.1",
+        "id": 446682012,
+        "name": "grafana-operator-5.26.0",
         "prerelease": false,
-        "publishedAt": "2026-11-13T22:22:46Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.6.1",
-        "version": "k8s-monitoring-4.6.1"
+        "publishedAt": "2026-11-16T06:32:24Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/grafana-operator-5.26.0",
+        "version": "grafana-operator-5.26.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-13T15:10:47Z",
-        "version": "alloy-1.16.0"
+        "publishedAt": "2026-11-13T22:22:46Z",
+        "version": "k8s-monitoring-4.6.1"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",

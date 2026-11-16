@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-09-23T18:24:13.571Z",
+  "generatedAt": "2026-11-16T09:39:05.573Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 446458070,
+      "name": "v2.21.1",
+      "notes": "We are happy to release KEDA 2.21.1 🎉\r\n\r\n## Improvements\r\n- [`e5db8ac`](https://github.com/kedacore/keda/commit/e5db8acefbbc1ad554ee895ee0d18b212cb7379e) : **General**: Skip unchanged streamed metric specs ([#8306](https://github.com/kedacore/keda/pull/8306)) (@keda-cherry-pick-bot[bot])\r\n- [`3b98b80`](https://github.com/kedacore/keda/commit/3b98b806ff8754873ca9f655a75c2c61eb31cfc5) : **Dependencies**: Update Go toolchain to v1.27.3 (release/v2.21) ([#8316](https://github.com/kedacore/keda/pull/8316)) (@JorTurFer)\r\n\r\n## Fixes\r\n- [`43b5dfc`](https://github.com/kedacore/keda/commit/43b5dfcd7a0a8a08e328b65667464986f60ee12c) : **General**: Only manage HPAs owned by the ScaledObject ([#8374](https://github.com/kedacore/keda/pull/8374)) (@keda-cherry-pick-bot[bot])\r\n- [`cd6f868`](https://github.com/kedacore/keda/commit/cd6f868230952792a5a4eb6f1800039b22a48f93) : **ArangoDB Scaler**: Limit connections to connectionLimit ([#8343](https://github.com/kedacore/keda/pull/8343)) (@keda-cherry-pick-bot[bot])\r\n- [`b338b60`](https://github.com/kedacore/keda/commit/b338b6056d291b95441976f56267e780513dfa04) : **Splunk Observability Scaler**: Honour trigger metricType ([#8366](https://github.com/kedacore/keda/pull/8366)) (@keda-cherry-pick-bot[bot])\r\n- [`dd8d47d`](https://github.com/kedacore/keda/commit/dd8d47de655a105bbe8375d41c470f5386e89ba7) : **InfluxDB Scaler**: Surface query result errors instead of masking them as an empty result ([#8305](https://github.com/kedacore/keda/pull/8305)) (@keda-cherry-pick-bot[bot])\r\n- [`177da25`](https://github.com/kedacore/keda/commit/177da2554c74cb0400defc3cc760a1e387cd557d) : **MySQL Scaler**: close sql.DB when the initial ping fails ([#8369](https://github.com/kedacore/keda/pull/8369)) (@keda-cherry-pick-bot[bot])\r\n\r\n## Dependencies\r\n<details>\r\n<summary>Show</summary>\r\n\r\n- [`47f6e4b`](https://github.com/kedacore/keda/commit/47f6e4bc573fb63796c1b1ab4e953b6fa5d12186) : **Dependencies**: Update all dependencies retaining Kubernetes 1.36 (#8361) ([#8365](https://github.com/kedacore/keda/pull/8365)) (@JorTurFer)\r\n- [`7ea8aa0`](https://github.com/kedacore/keda/commit/7ea8aa0e73088d1d0b1466654b813158f7e79dc4) : **Dependencies**: Update gcr.io/distroless/static:nonroot Docker digest to 18f4cc2 ([#8315](https://github.com/kedacore/keda/pull/8315)) (@keda-cherry-pick-bot[bot])\r\n\r\n</details>",
+      "prerelease": false,
+      "publishedAt": "2026-11-15T23:50:50Z",
+      "url": "https://github.com/kedacore/keda/releases/tag/v2.21.1",
+      "version": "v2.21.1"
+    },
     {
       "channel": "stable",
       "draft": false,
