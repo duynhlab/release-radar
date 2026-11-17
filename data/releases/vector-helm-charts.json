@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-16T23:23:51.875Z",
+  "generatedAt": "2026-11-17T22:20:54.703Z",
   "releases": [
     {
       "channel": "stable",
       "draft": false,
       "id": 447712775,
       "name": "vector-0.62.1",
-      "notes": "Helm chart for Vector, a lightweight, ultra-fast tool for building observability pipelines",
+      "notes": "Helm chart for Vector, a lightweight, ultra-fast tool for building observability pipelines.\r\n\r\n> [!IMPORTANT]  \r\n> helm-charts v0.62.0 had a bug. We recommend updating to this patch release. You are only affected if you installed 0.62.0, in which case please take a look at the [changelog](https://github.com/vectordotdev/helm-charts/blob/develop/CHANGELOG.md#vector-0621---2026-11-16) for update instructions.",
       "prerelease": false,
       "publishedAt": "2026-11-16T22:50:00Z",
       "url": "https://github.com/vectordotdev/helm-charts/releases/tag/vector-0.62.1",

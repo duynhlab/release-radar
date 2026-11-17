@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T23:24:25.048Z",
+  "generatedAt": "2026-11-17T22:21:23.165Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -453,17 +453,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 443184321,
-        "name": "v42.4.0",
+        "id": 448694326,
+        "name": "v42.4.1",
         "prerelease": false,
-        "publishedAt": "2026-11-12T16:04:38Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.4.0",
-        "version": "v42.4.0"
+        "publishedAt": "2026-11-17T13:48:40Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.4.1",
+        "version": "v42.4.1"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-11-06T16:44:37Z",
-        "version": "v42.3.1"
+        "publishedAt": "2026-11-12T16:04:38Z",
+        "version": "v42.4.0"
       },
       "releaseCount": 20,
       "repository": "traefik/traefik-helm-chart",
@@ -673,19 +673,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 394697077,
-        "name": "v1.30.1",
+        "id": 448539974,
+        "name": "v1.30.2",
         "prerelease": false,
-        "publishedAt": "2026-09-23T13:35:42Z",
-        "url": "https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.1",
-        "version": "v1.30.1"
+        "publishedAt": "2026-11-17T11:31:47Z",
+        "url": "https://github.com/cloudnative-pg/cloudnative-pg/releases/tag/v1.30.2",
+        "version": "v1.30.2"
       },
       "name": "CloudNativePG",
       "previous": {
-        "publishedAt": "2026-09-23T13:00:24Z",
-        "version": "v1.29.3"
+        "publishedAt": "2026-09-23T13:35:42Z",
+        "version": "v1.30.1"
       },
-      "releaseCount": 10,
+      "releaseCount": 11,
       "repository": "cloudnative-pg/cloudnative-pg",
       "tags": [
         "postgresql",
@@ -758,19 +758,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 436438553,
-        "name": "v1.10.0",
+        "id": 448523251,
+        "name": "v1.9.4",
         "prerelease": false,
-        "publishedAt": "2026-11-06T11:48:01Z",
-        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.10.0",
-        "version": "v1.10.0"
+        "publishedAt": "2026-11-17T11:15:53Z",
+        "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.9.4",
+        "version": "v1.9.4"
       },
       "name": "Envoy Gateway",
       "previous": {
-        "publishedAt": "2026-10-26T09:58:38Z",
-        "version": "v1.9.3"
+        "publishedAt": "2026-11-06T11:48:01Z",
+        "version": "v1.10.0"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "envoyproxy/gateway",
       "tags": [
         "gateway",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 446682012,
-        "name": "grafana-operator-5.26.0",
+        "id": 448903465,
+        "name": "beyla-1.16.19",
         "prerelease": false,
-        "publishedAt": "2026-11-16T06:32:24Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/grafana-operator-5.26.0",
-        "version": "grafana-operator-5.26.0"
+        "publishedAt": "2026-11-17T16:30:15Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.19",
+        "version": "beyla-1.16.19"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-13T22:22:46Z",
-        "version": "k8s-monitoring-4.6.1"
+        "publishedAt": "2026-11-16T06:32:24Z",
+        "version": "grafana-operator-5.26.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 447703364,
-        "name": "loki-21.3.1",
+        "id": 448580420,
+        "name": "grafana-14.5.0",
         "prerelease": false,
-        "publishedAt": "2026-11-16T22:38:09Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.3.1",
-        "version": "loki-21.3.1"
+        "publishedAt": "2026-11-17T12:10:38Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.5.0",
+        "version": "grafana-14.5.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-16T21:35:01Z",
-        "version": "loki-21.3.0"
+        "publishedAt": "2026-11-16T22:38:09Z",
+        "version": "loki-21.3.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1932,19 +1932,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 249699655,
-        "name": "pgAudit 18.0 (PostgreSQL 18)",
+        "id": 448658848,
+        "name": "pgAudit 1.6.4 (PostgreSQL 14)",
         "prerelease": false,
-        "publishedAt": "2025-09-24T14:41:31Z",
-        "url": "https://github.com/pgaudit/pgaudit/releases/tag/18.0",
-        "version": "18.0"
+        "publishedAt": "2026-11-17T13:18:41Z",
+        "url": "https://github.com/pgaudit/pgaudit/releases/tag/1.6.4",
+        "version": "1.6.4"
       },
       "name": "pgaudit",
       "previous": {
-        "publishedAt": "2025-02-28T22:38:24Z",
-        "version": "1.5.3"
+        "publishedAt": "2026-11-17T13:14:47Z",
+        "version": "1.7.2"
       },
-      "releaseCount": 9,
+      "releaseCount": 15,
       "repository": "pgaudit/pgaudit",
       "tags": [
         "postgresql",
@@ -1995,19 +1995,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 373798825,
-        "name": "v3.0.9",
+        "id": 449174512,
+        "name": "v3.0.10",
         "prerelease": false,
-        "publishedAt": "2026-08-20T14:26:20Z",
-        "url": "https://github.com/wal-g/wal-g/releases/tag/v3.0.9",
-        "version": "v3.0.9"
+        "publishedAt": "2026-11-17T20:43:07Z",
+        "url": "https://github.com/wal-g/wal-g/releases/tag/v3.0.10",
+        "version": "v3.0.10"
       },
       "name": "WAL-G",
       "previous": {
-        "publishedAt": "2026-01-21T14:19:22Z",
-        "version": "v3.0.8"
+        "publishedAt": "2026-08-20T14:26:20Z",
+        "version": "v3.0.9"
       },
-      "releaseCount": 6,
+      "releaseCount": 7,
       "repository": "wal-g/wal-g",
       "tags": [
         "postgresql",
@@ -2243,17 +2243,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 442912110,
-        "name": "2026.11.0",
+        "id": 448800337,
+        "name": "2026.11.1",
         "prerelease": false,
-        "publishedAt": "2026-11-12T12:23:45Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.11.0",
-        "version": "2026.11.0"
+        "publishedAt": "2026-11-17T15:11:01Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.11.1",
+        "version": "2026.11.1"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-10-30T17:11:03Z",
-        "version": "2026.10.7"
+        "publishedAt": "2026-11-12T12:23:45Z",
+        "version": "2026.11.0"
       },
       "releaseCount": 20,
       "repository": "cloudflare/cloudflared",
@@ -2655,19 +2655,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 359292249,
-        "name": "Release v4.15.1",
+        "id": 449215589,
+        "name": "Release v4.16.9",
         "prerelease": false,
-        "publishedAt": "2026-07-24T12:29:04Z",
-        "url": "https://github.com/tofuutils/tenv/releases/tag/v4.15.1",
-        "version": "v4.15.1"
+        "publishedAt": "2026-11-17T21:25:20Z",
+        "url": "https://github.com/tofuutils/tenv/releases/tag/v4.16.9",
+        "version": "v4.16.9"
       },
       "name": "tenv",
       "previous": {
-        "publishedAt": "2026-06-10T22:03:54Z",
-        "version": "v4.14.8"
+        "publishedAt": "2026-11-17T20:59:57Z",
+        "version": "v4.16.8"
       },
-      "releaseCount": 10,
+      "releaseCount": 17,
       "repository": "tofuutils/tenv",
       "tags": [
         "iac",

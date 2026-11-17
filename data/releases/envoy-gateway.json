@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-06T20:27:00.607Z",
+  "generatedAt": "2026-11-17T22:20:39.966Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 448523251,
+      "name": "v1.9.4",
+      "notes": "# Release Announcement\r\n\r\nCheck out the [v1.9.4  release announcement](https://gateway.envoyproxy.io/news/releases/notes/v1.9.4) to learn more about the release.",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T11:15:53Z",
+      "url": "https://github.com/envoyproxy/gateway/releases/tag/v1.9.4",
+      "version": "v1.9.4"
+    },
     {
       "channel": "stable",
       "draft": false,

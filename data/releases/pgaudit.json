@@ -1,6 +1,72 @@
 {
-  "generatedAt": "2026-07-30T08:35:51.488Z",
+  "generatedAt": "2026-11-17T22:21:04.935Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 448658848,
+      "name": "pgAudit 1.6.4 (PostgreSQL 14)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Copy the lists saved for a deferred audit entry into the stack item's context.\r\n- Only audit a statement's own permission check.\r\n- Do not audit permission checks that are not enforcing.\r\n- Report rows affected by COPY when pgaudit.log_rows is enabled.\r\n- Locate pgaudit.control relative to the Makefile.\r\n- Fix use-after-free reading object name/type after event trigger.\r\n- Do not log inserted or updated columns against the SELECT grant.\r\n- Add exception for fetch statement to stack check.\r\n- Fix memory leak when logging functions and query parameters.\r\n- Error when required hooks are skipped.\r\n\r\n**Improvements**:\r\n\r\n- Document that audit logging is best-effort and not transactional.\r\n- Disable logging in parallel workers.",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T13:18:41Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/1.6.4",
+      "version": "1.6.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 448654456,
+      "name": "pgAudit 1.7.2 (PostgreSQL 15)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Copy the lists saved for a deferred audit entry into the stack item's context.\r\n- Only audit a statement's own permission check.\r\n- Do not audit permission checks that are not enforcing.\r\n- Report rows affected by COPY when pgaudit.log_rows is enabled.\r\n- Locate pgaudit.control relative to the Makefile.\r\n- Fix use-after-free reading object name/type after event trigger.\r\n- Do not log inserted or updated columns against the SELECT grant.\r\n- Add exception for fetch statement to stack check.\r\n- Fix memory leak when logging functions and query parameters.\r\n- Error when required hooks are skipped.\r\n\r\n**Improvements**:\r\n\r\n- Document that audit logging is best-effort and not transactional.\r\n- Disable logging in parallel workers.",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T13:14:47Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/1.7.2",
+      "version": "1.7.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 448651072,
+      "name": "pgAudit 16.2 (PostgreSQL 16)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Copy the lists saved for a deferred audit entry into the stack item's context.\r\n- Only audit a statement's own permission check.\r\n- Do not audit permission checks that are not enforcing.\r\n- Report rows affected by COPY when pgaudit.log_rows is enabled.\r\n- Locate pgaudit.control relative to the Makefile.\r\n- Fix use-after-free reading object name/type after event trigger.\r\n- Do not log inserted or updated columns against the SELECT grant.\r\n- Add exception for fetch statement to stack check.\r\n- Fix memory leak when logging functions and query parameters.\r\n- Error when required hooks are skipped.\r\n\r\n**Improvements**:\r\n\r\n- Document that audit logging is best-effort and not transactional.\r\n- Disable logging in parallel workers.",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T13:12:04Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/16.2",
+      "version": "16.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 448648392,
+      "name": "pgAudit 17.2 (PostgreSQL 17)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Copy the lists saved for a deferred audit entry into the stack item's context.\r\n- Only audit a statement's own permission check.\r\n- Do not audit permission checks that are not enforcing.\r\n- Report rows affected by COPY when pgaudit.log_rows is enabled.\r\n- Locate pgaudit.control relative to the Makefile.\r\n- Fix use-after-free reading object name/type after event trigger.\r\n- Do not log inserted or updated columns against the SELECT grant.\r\n- Add exception for fetch statement to stack check.\r\n- Fix memory leak when logging functions and query parameters.\r\n- Error when required hooks are skipped.\r\n\r\n**Improvements**:\r\n\r\n- Document that audit logging is best-effort and not transactional.\r\n- Disable logging in parallel workers.",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T13:09:52Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/17.2",
+      "version": "17.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 448643834,
+      "name": "pgAudit 18.1 (PostgreSQL 18)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Copy the lists saved for a deferred audit entry into the stack item's context.\r\n- Only audit a statement's own permission check.\r\n- Do not audit permission checks that are not enforcing.\r\n- Report rows affected by COPY when pgaudit.log_rows is enabled.\r\n- Locate pgaudit.control relative to the Makefile.\r\n- Fix use-after-free reading object name/type after event trigger.\r\n- Do not log inserted or updated columns against the SELECT grant.\r\n- Add exception for fetch statement to stack check.\r\n- Fix memory leak when logging functions and query parameters.\r\n\r\n**Improvements**:\r\n\r\n- Document that audit logging is best-effort and not transactional.",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T13:06:38Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/18.1",
+      "version": "18.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 448539708,
+      "name": "pgAudit 19.0 (PostgreSQL 19)",
+      "notes": "**Bug Fixes**:\r\n\r\n- Copy the lists saved for a deferred audit entry into the stack item's context.\r\n- Only audit a statement's own permission check.\r\n- Do not audit permission checks that are not enforcing.\r\n- Report rows affected by COPY when pgaudit.log_rows is enabled.\r\n- Locate pgaudit.control relative to the Makefile.\r\n- Fix use-after-free reading object name/type after event trigger.\r\n- Do not log inserted or updated columns against the SELECT grant.\r\n- Add exception for fetch statement to stack check.\r\n- Fix memory leak when logging functions and query parameters.\r\n\r\n**Features**:\r\n\r\n- PostgreSQL 19 support.\r\n\r\n**Improvements**:\r\n\r\n- Skip executor hooks when SELECT/DML auditing is not enabled.\r\n- Document that audit logging is best-effort and not transactional.\r\n- Count statement rows with es_total_processed instead of the ExecutorRun() hook.",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T11:31:24Z",
+      "url": "https://github.com/pgaudit/pgaudit/releases/tag/19.0",
+      "version": "19.0"
+    },
     {
       "channel": "stable",
       "draft": false,

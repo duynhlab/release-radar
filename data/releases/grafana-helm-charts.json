@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-16T09:39:28.573Z",
+  "generatedAt": "2026-11-17T22:20:59.880Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 448903465,
+      "name": "beyla-1.16.19",
+      "notes": "eBPF-based autoinstrumentation HTTP, HTTP2 and gRPC services, as well as network metrics.\n\nSource commit: https://github.com/grafana/beyla/commit/120c689fb40ffed238975afd5a510d5a1073d854\n\nTag on source: https://github.com/grafana/beyla/releases/tag/beyla-1.16.19",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T16:30:15Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.19",
+      "version": "beyla-1.16.19"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-23T14:24:54Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.3",
       "version": "alloy-1.14.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 421250752,
-      "name": "k8s-monitoring-4.5.4",
-      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/d0bf21656c9e30edae99ffaddc5fdf40b72cff92\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.5.4",
-      "prerelease": false,
-      "publishedAt": "2026-10-22T22:07:39Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.4",
-      "version": "k8s-monitoring-4.5.4"
     }
   ],
   "schemaVersion": 1,

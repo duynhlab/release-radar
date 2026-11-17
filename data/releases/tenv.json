@@ -1,6 +1,83 @@
 {
-  "generatedAt": "2026-10-19T14:35:42.742Z",
+  "generatedAt": "2026-11-17T22:21:22.557Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 449215589,
+      "name": "Release v4.16.9",
+      "notes": "## Changelog\n* 9c635bc0f79376c89ed98d5299a688470550014c feat: tune PPA build\n* 3e039aa6221c66959869dffecd782498ba583a8c fix: ppa build",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T21:25:20Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.16.9",
+      "version": "v4.16.9"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 449190826,
+      "name": "Release v4.16.8",
+      "notes": "## Changelog\n* 0b9f0d0a57f4c0573dcaabeb322b99f345b5e8d8 fix: ppa build",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T20:59:57Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.16.8",
+      "version": "v4.16.8"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 449148913,
+      "name": "Release v4.16.7",
+      "notes": "## Changelog\n* 076b85f4d7297d2381a08bfd02a2d65022a6b5df fix: ppa build",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T20:18:36Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.16.7",
+      "version": "v4.16.7"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 449128938,
+      "name": "Release v4.16.6",
+      "notes": "## Changelog\n* 4d19d8319d70a567c64d94442205a1a327d65a11 fix: ppa build",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T19:59:20Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.16.6",
+      "version": "v4.16.6"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 449101943,
+      "name": "Release v4.16.5",
+      "notes": "## Changelog\n* 0dfe98324e9af0a5263cefc5f5f8d7cf5c24fc7f fix: post-release steps",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T19:33:18Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.16.5",
+      "version": "v4.16.5"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 448890041,
+      "name": "Release v4.16.4",
+      "notes": "## Changelog\n* 7470d994dd1eb6199ae23dca5f0b92a6246ad1ea gh-actions: bump sigstore/cosign-installer from 4.1.2 to 4.1.3 (#670)\n* 1fc8bd257be71278e68a9695a5e4bb3c95fc56ff gh-actions: bump docker/setup-buildx-action from 4.1.0 to 4.4.1 (#659)\n* 87921cdb89ddc2c17625a948f0483915ed37ad06 gh-actions: bump goreleaser/goreleaser-action from 7.2.3 to 7.3.0 (#660)\n* 9d490a0c9c80295dc1ec28de0aa2912a911cb203 gh-actions: bump docker/login-action from 4.7.0 to 4.8.0 (#661)\n* b6bcfaa0b9186f91a33239274db6d36390745e53 feat: Update SECURITY.md links (#669)\n* 13d64c1f9666d71a633d293ad389c0400ae86d22 fix: Workflow permissions to publish-chocolatey (#667)\n* 33b8d2f9f98a3b4196ef5959ffbf2d905176ee36 Potential fix for code scanning alert no. 11: Workflow does not contain permissions (#665)\n* 0a195afd5cb1dfe69a58c6caa4ee07c28e9637b2 Potential fix for code scanning alert no. 4: Workflow does not contain permissions (#666)\n* 4ba03cbf199b5d3d8153a9354b42b59aa628adb0 Potential fix for code scanning alert no. 12: Workflow does not contain permissions (#663)\n* ccbf01173f7ba03ff453d11a2b85fa22fb7e191f ci: add build provenance attestation to release workflow (#657)\n* 3fa9ac9d366683da03b9bff9f684abbe060c30e0 feat: Pin action to the full-length commit SHA (#655)\n* 874a835ed3925d879cfe6403dd6697752b1342d5 fix: Fix golangci-lint warnings (#656)",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T16:20:22Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.16.4",
+      "version": "v4.16.4"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 448704916,
+      "name": "Release v4.16.3",
+      "notes": "## Changelog\n* 7470d994dd1eb6199ae23dca5f0b92a6246ad1ea gh-actions: bump sigstore/cosign-installer from 4.1.2 to 4.1.3 (#670)\n* 1fc8bd257be71278e68a9695a5e4bb3c95fc56ff gh-actions: bump docker/setup-buildx-action from 4.1.0 to 4.4.1 (#659)\n* 87921cdb89ddc2c17625a948f0483915ed37ad06 gh-actions: bump goreleaser/goreleaser-action from 7.2.3 to 7.3.0 (#660)\n* 9d490a0c9c80295dc1ec28de0aa2912a911cb203 gh-actions: bump docker/login-action from 4.7.0 to 4.8.0 (#661)\n* b6bcfaa0b9186f91a33239274db6d36390745e53 feat: Update SECURITY.md links (#669)\n* 13d64c1f9666d71a633d293ad389c0400ae86d22 fix: Workflow permissions to publish-chocolatey (#667)\n* 33b8d2f9f98a3b4196ef5959ffbf2d905176ee36 Potential fix for code scanning alert no. 11: Workflow does not contain permissions (#665)\n* 0a195afd5cb1dfe69a58c6caa4ee07c28e9637b2 Potential fix for code scanning alert no. 4: Workflow does not contain permissions (#666)\n* 4ba03cbf199b5d3d8153a9354b42b59aa628adb0 Potential fix for code scanning alert no. 12: Workflow does not contain permissions (#663)\n* ccbf01173f7ba03ff453d11a2b85fa22fb7e191f ci: add build provenance attestation to release workflow (#657)\n* 3fa9ac9d366683da03b9bff9f684abbe060c30e0 feat: Pin action to the full-length commit SHA (#655)\n* 874a835ed3925d879cfe6403dd6697752b1342d5 fix: Fix golangci-lint warnings (#656)",
+      "prerelease": false,
+      "publishedAt": "2026-11-17T13:57:55Z",
+      "url": "https://github.com/tofuutils/tenv/releases/tag/v4.16.3",
+      "version": "v4.16.3"
+    },
     {
       "channel": "stable",
       "draft": false,
