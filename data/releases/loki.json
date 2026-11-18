@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-13T09:30:00.252Z",
+  "generatedAt": "2026-11-18T21:55:16.153Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 450152207,
+      "name": "v3.6.22",
+      "notes": "## [3.6.22](https://github.com/grafana/loki/compare/v3.6.21...v3.6.22) (2026-11-17)\n\n\n### Bug Fixes\n\n* Prevent goroutine leak in downstreamer on context cancellation (backport release-3.6.x) ([#26549](https://github.com/grafana/loki/issues/26549)) ([38e4020](https://github.com/grafana/loki/commit/38e4020516b25119f795a8a5f55e06ccd9c9d1fc))\n* **security/MEDIUM/:** Update module go.opentelemetry.io/otel/sdk/log to v1 [SECURITY] (release-3.6.x) ([#26487](https://github.com/grafana/loki/issues/26487)) ([3d2b1a6](https://github.com/grafana/loki/commit/3d2b1a63ff96577da50a6058278c326df6c455b3))",
+      "prerelease": false,
+      "publishedAt": "2026-11-18T15:15:27Z",
+      "url": "https://github.com/grafana/loki/releases/tag/v3.6.22",
+      "version": "v3.6.22"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-05-13T12:22:43Z",
       "url": "https://github.com/grafana/loki/releases/tag/v3.7.2",
       "version": "v3.7.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 321825713,
-      "name": "v3.6.11",
-      "notes": "## [3.6.11](https://github.com/grafana/loki/compare/v3.6.10...v3.6.11) (2026-05-13)\n\n\n### Bug Fixes\n\n* CVEs in release 3.6.x ([#21773](https://github.com/grafana/loki/issues/21773)) ([1fe3b6d](https://github.com/grafana/loki/commit/1fe3b6dde0c74db743489363b42c5e1f8ed605f2))\n* **deps:** update module github.com/aws/aws-sdk-go-v2/service/s3 to v1.97.3 [security] (release-3.6.x) ([#21459](https://github.com/grafana/loki/issues/21459)) ([11c1d07](https://github.com/grafana/loki/commit/11c1d07f0b6c512aee0367dec7b5d6ad954fd1fc))\n* **deps:** update module go.opentelemetry.io/otel/sdk to v1.43.0 [security] (release-3.6.x) ([#21480](https://github.com/grafana/loki/issues/21480)) ([47fb29e](https://github.com/grafana/loki/commit/47fb29ec07fd0c1a3c4ee50e73b84d17f7bc322f))\n* **storage:** attach SHA-256 checksum on PutObject for Object Lock buckets ([#21848](https://github.com/grafana/loki/issues/21848)) ([2a7c34c](https://github.com/grafana/loki/commit/2a7c34c689291c074bb349c7ab9ba74bf6cf2b00))",
-      "prerelease": false,
-      "publishedAt": "2026-05-13T12:06:16Z",
-      "url": "https://github.com/grafana/loki/releases/tag/v3.6.11",
-      "version": "v3.6.11"
     }
   ],
   "schemaVersion": 1,

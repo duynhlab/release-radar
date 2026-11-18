@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-15T19:47:06.881Z",
+  "generatedAt": "2026-11-18T21:55:28.075Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 449923360,
+      "name": "sentry: v36.1.0",
+      "notes": "## [36.1.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v36.0.1...sentry-v36.1.0) (2026-11-18)\n\n\n### Features\n\n* upgrade to sentry v26.11.0 ([#2330](https://github.com/sentry-kubernetes/charts/issues/2330)) ([7c80a9b](https://github.com/sentry-kubernetes/charts/commit/7c80a9b5943cc3f81144e831ff4e2d212d8fb3e9))",
+      "prerelease": false,
+      "publishedAt": "2026-11-18T12:00:34Z",
+      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v36.1.0",
+      "version": "sentry-v36.1.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-06-09T15:53:05Z",
       "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v32.1.0",
       "version": "sentry-v32.1.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 334430796,
-      "name": "sentry: v32.0.0",
-      "notes": "## [32.0.0](https://github.com/sentry-kubernetes/charts/compare/sentry-v31.7.1...sentry-v32.0.0) (2026-06-04)\n\n\n### ⚠ BREAKING CHANGES\n\n* replace deprecated distutils.strtobool and enable rustConsumer ([#2227](https://github.com/sentry-kubernetes/charts/issues/2227))\n\n### Features\n\n* make setup-hook Job restartPolicy configurable ([#2232](https://github.com/sentry-kubernetes/charts/issues/2232)) ([bbb167e](https://github.com/sentry-kubernetes/charts/commit/bbb167e274376a7ad81a29df090d2a2eccbbde48))\n* per taskbroker & taskworker topologySpreadConstraints ([#2228](https://github.com/sentry-kubernetes/charts/issues/2228)) ([546c7b7](https://github.com/sentry-kubernetes/charts/commit/546c7b76735f5c608371f3488f6d38fe4ebc3106))\n* replace deprecated distutils.strtobool and enable rustConsumer ([#2227](https://github.com/sentry-kubernetes/charts/issues/2227)) ([21fa745](https://github.com/sentry-kubernetes/charts/commit/21fa745ca800dc2fd9e91fdcc46447fcf2d361ee))\n\n\n### Bug Fixes\n\n* mtime livenessprobe ([#2230](https://github.com/sentry-kubernetes/charts/issues/2230)) ([d7de9de](https://github.com/sentry-kubernetes/charts/commit/d7de9de267caa0977e5a45c96162d978b8eab825))",
-      "prerelease": false,
-      "publishedAt": "2026-06-04T15:39:03Z",
-      "url": "https://github.com/sentry-kubernetes/charts/releases/tag/sentry-v32.0.0",
-      "version": "sentry-v32.0.0"
     }
   ],
   "schemaVersion": 1,

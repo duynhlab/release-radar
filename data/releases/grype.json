@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-16T23:24:17.498Z",
+  "generatedAt": "2026-11-18T21:55:34.328Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 450082002,
+      "name": "v0.122.1",
+      "notes": "### Bug Fixes\n\n- Address gaps in grype's jvm version comparison logic [PR [#3928](https://github.com/anchore/grype/pull/3928) @westonsteimel]\n- Apache Airflow CVEs matched to pkg:pypi/lightning (nvd:language:python) [Issue [#3920](https://github.com/anchore/grype/issues/3920)]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.122.0...v0.122.1)**",
+      "prerelease": false,
+      "publishedAt": "2026-11-18T14:14:20Z",
+      "url": "https://github.com/anchore/grype/releases/tag/v0.122.1",
+      "version": "v0.122.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-03-19T18:16:47Z",
       "url": "https://github.com/anchore/grype/releases/tag/v0.110.0",
       "version": "v0.110.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 294867445,
-      "name": "v0.109.1",
-      "notes": "### Bug Fixes\n\n- CVE-2025-12183 is not detected even if vulnerable jar is present [[#3205](https://github.com/anchore/grype/issues/3205)]\n\n### Additional Changes\n\n- migrate fixtures to testdata [[#3263](https://github.com/anchore/grype/pull/3263) @wagoodman]\n\n**[(Full Changelog)](https://github.com/anchore/grype/compare/v0.109.0...v0.109.1)**",
-      "prerelease": false,
-      "publishedAt": "2026-03-09T19:50:07Z",
-      "url": "https://github.com/anchore/grype/releases/tag/v0.109.1",
-      "version": "v0.109.1"
     }
   ],
   "schemaVersion": 1,

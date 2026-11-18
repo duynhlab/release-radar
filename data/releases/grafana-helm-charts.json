@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-17T22:20:59.880Z",
+  "generatedAt": "2026-11-18T21:55:19.364Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 450466121,
+      "name": "cloudcost-exporter-1.1.18",
+      "notes": "Cloud Cost Exporter exports cloud provider agnostic cost metrics to Prometheus.\n\nSource commit: https://github.com/grafana/cloudcost-exporter/commit/9faa3f034c4a986f4a28a98386378fd63b1503c0\n\nTag on source: https://github.com/grafana/cloudcost-exporter/releases/tag/cloudcost-exporter-1.1.18",
+      "prerelease": false,
+      "publishedAt": "2026-11-18T19:38:43Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.18",
+      "version": "cloudcost-exporter-1.1.18"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-23T15:49:05Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.9.3",
       "version": "alloy-operator-0.9.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 421936866,
-      "name": "alloy-1.14.3",
-      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/3b2a3565546bd36592dc49ca28604ad187f0fb85\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.14.3",
-      "prerelease": false,
-      "publishedAt": "2026-10-23T14:24:54Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.3",
-      "version": "alloy-1.14.3"
     }
   ],
   "schemaVersion": 1,

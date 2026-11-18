@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-11-17T22:21:00.524Z",
+  "generatedAt": "2026-11-18T21:55:19.943Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 450532579,
+      "name": "tempo-distributed-3.29.1",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [ci] Restore MinIO repositories and support new chart imports by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/994\n* [CI] Update github-workflow dependency updates to v4.3.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/995\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v1.0.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/996\n* [loki] Update loki dependency non-major updates to v3.7.10 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/997\n* [CI] Update github-workflow dependency updates by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1000\n* [grafana] Fix VPA update mode documentation by @Artem-TSYH in https://github.com/grafana-community/helm-charts/pull/1002\n* [synthetic-monitoring-agent] Update docker.io/grafana/synthetic-monitoring-agent Docker tag to v0.71.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1004\n* [loki] Add opt-in dataobj compaction planner and worker for Loki 4.0 by @mhulscher in https://github.com/grafana-community/helm-charts/pull/1003\n* [loki] Update docker.io/rustfs/rustfs Docker tag to v1.0.6 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1001\n* [grafana] Allow the embedded NATS cluster port between Grafana pods in the NetworkPolicy by @RafaelPaulovic in https://github.com/grafana-community/helm-charts/pull/974\n* [loki] Add opt-in logline index components for Loki 4.0 by @mhulscher in https://github.com/grafana-community/helm-charts/pull/1007\n* [CI] Update actions/create-github-app-token action to v3.4.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1010\n* [loki] Pin gateway nginx image to 1.31.9-alpine3.24 by @jkroepke in https://github.com/grafana-community/helm-charts/pull/1012\n* [tempo-distributed] Pin gateway nginx image to 1.31.9-alpine3.24 by @jkroepke in https://github.com/grafana-community/helm-charts/pull/1013\n\n## New Contributors\n* @Artem-TSYH made their first contribution in https://github.com/grafana-community/helm-charts/pull/1002\n* @mhulscher made their first contribution in https://github.com/grafana-community/helm-charts/pull/1003\n* @RafaelPaulovic made their first contribution in https://github.com/grafana-community/helm-charts/pull/974\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.29.0...tempo-distributed-3.29.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-18T20:41:54Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.29.1",
+      "version": "tempo-distributed-3.29.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 450531942,
+      "name": "loki-21.4.1",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [CI] Update actions/create-github-app-token action to v3.4.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1010\n* [loki] Pin gateway nginx image to 1.31.9-alpine3.24 by @jkroepke in https://github.com/grafana-community/helm-charts/pull/1012\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.4.0...loki-21.4.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-18T20:41:12Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.4.1",
+      "version": "loki-21.4.1"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 450236935,
+      "name": "loki-21.4.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [grafana] Allow the embedded NATS cluster port between Grafana pods in the NetworkPolicy by @RafaelPaulovic in https://github.com/grafana-community/helm-charts/pull/974\n* [loki] Add opt-in logline index components for Loki 4.0 by @mhulscher in https://github.com/grafana-community/helm-charts/pull/1007\n\n## New Contributors\n* @RafaelPaulovic made their first contribution in https://github.com/grafana-community/helm-charts/pull/974\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.3.1...loki-21.4.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-18T16:14:06Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.4.0",
+      "version": "loki-21.4.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-11-10T07:37:14Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.1.1",
       "version": "loki-21.1.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 439735172,
-      "name": "synthetic-monitoring-agent-1.24.0",
-      "notes": "Grafana's Synthetic Monitoring application. The agent provides probe functionality and executes network checks for monitoring remote targets.  > [!NOTE] > Grafana Cloud Synthetic Monitoring does not officially support this chart. > If you are a Grafana Cloud customer and require support, please follow the [recommended installation methods](https://grafana.com/docs/grafana-cloud/testing/synthetic-monitoring/set-up/set-up-private-probes/#deployment-with-kubernetes) listed in the public docs. \n\n## What's Changed\n* [tempo-distributed] Allow mixing Kafka SASL username/password with existingSecret by @maxsxu in https://github.com/grafana-community/helm-charts/pull/952\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v2.2.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/961\n* [tempo-distributed] Fix recreateOnSizeChangeHook nil pointer and make hook image configurable by @maxsxu in https://github.com/grafana-community/helm-charts/pull/951\n* [tempo-distributed] Default querier and query-frontend to soft node anti-affinity by @piyush-shandilya-glean in https://github.com/grafana-community/helm-charts/pull/885\n* [grafana] Update quay.io/kiwigrid/k8s-sidecar Docker tag to v2.14.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/962\n* [loki] Update docker.io/kiwigrid/k8s-sidecar Docker tag to v2.14.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/963\n* [tempo-distributed] Add appProtocol for the query-frontend HTTP port by @avestuk in https://github.com/grafana-community/helm-charts/pull/886\n* [loki] Add Service for pattern-ingester by @z0rc in https://github.com/grafana-community/helm-charts/pull/965\n* [loki] ruler query frontend by @mac133k in https://github.com/grafana-community/helm-charts/pull/949\n* [loki] List the ruler in NOTES only when it is enabled by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/966\n* [CI] Update helm/kind-action action to v1.15.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/969\n* [loki] Add rollout-operator downscale options to ingester zones by @robertdyr in https://github.com/grafana-community/helm-charts/pull/970\n* [tempo-distributed] keep the chart version out of the pod labels by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/944\n* [grafana] keep the chart version out of the pod labels by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/945\n* [tempo-distributed] Size memcached with -m, -I and -c by default by @juraj-michalek-deel in https://github.com/grafana-community/helm-charts/pull/967\n* [tempo-distributed] Optionally derive memcached resources from allocatedMemory by @juraj-michalek-deel in https://github.com/grafana-community/helm-charts/pull/975\n* [tempo-distributed] render the shared memcached through the per-role helpers by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/971\n* [tempo-distributed] add memcachedParquetPage, a dedicated cache for parquet pages by @madaraszg-tulip in https://github.com/grafana-community/helm-charts/pull/973\n* [loki] Switch gateway image to nginx/nginx-unprivileged by @matphilippe in https://github.com/grafana-community/helm-charts/pull/977\n* [synthetic-monitoring-agent] Update docker.io/grafana/synthetic-monitoring-agent Docker tag to v0.70.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/979\n\n## New Contributors\n* @piyush-shandilya-glean made their first contribution in https://github.com/grafana-community/helm-charts/pull/885\n* @avestuk made their first contribution in https://github.com/grafana-community/helm-charts/pull/886\n* @mac133k made their first contribution in https://github.com/grafana-community/helm-charts/pull/949\n* @robertdyr made their first contribution in https://github.com/grafana-community/helm-charts/pull/970\n* @juraj-michalek-deel made their first contribution in https://github.com/grafana-community/helm-charts/pull/967\n* @matphilippe made their first contribution in https://github.com/grafana-community/helm-charts/pull/977\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/synthetic-monitoring-agent-1.23.0...synthetic-monitoring-agent-1.24.0",
-      "prerelease": false,
-      "publishedAt": "2026-11-09T22:46:52Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.24.0",
-      "version": "synthetic-monitoring-agent-1.24.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 439733050,
-      "name": "loki-21.1.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [tempo-distributed] keep the chart version out of the pod labels by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/944\n* [grafana] keep the chart version out of the pod labels by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/945\n* [tempo-distributed] Size memcached with -m, -I and -c by default by @juraj-michalek-deel in https://github.com/grafana-community/helm-charts/pull/967\n* [tempo-distributed] Optionally derive memcached resources from allocatedMemory by @juraj-michalek-deel in https://github.com/grafana-community/helm-charts/pull/975\n* [tempo-distributed] render the shared memcached through the per-role helpers by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/971\n* [tempo-distributed] add memcachedParquetPage, a dedicated cache for parquet pages by @madaraszg-tulip in https://github.com/grafana-community/helm-charts/pull/973\n* [loki] Switch gateway image to nginx/nginx-unprivileged by @matphilippe in https://github.com/grafana-community/helm-charts/pull/977\n\n## New Contributors\n* @juraj-michalek-deel made their first contribution in https://github.com/grafana-community/helm-charts/pull/967\n* @matphilippe made their first contribution in https://github.com/grafana-community/helm-charts/pull/977\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.0.0...loki-21.1.0",
-      "prerelease": false,
-      "publishedAt": "2026-11-09T22:43:59Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.1.0",
-      "version": "loki-21.1.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 436266056,
-      "name": "tempo-distributed-3.27.0",
-      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [tempo-distributed] add memcachedParquetPage, a dedicated cache for parquet pages by @madaraszg-tulip in https://github.com/grafana-community/helm-charts/pull/973\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.26.0...tempo-distributed-3.27.0",
-      "prerelease": false,
-      "publishedAt": "2026-11-06T08:36:25Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.27.0",
-      "version": "tempo-distributed-3.27.0"
     }
   ],
   "schemaVersion": 1,
