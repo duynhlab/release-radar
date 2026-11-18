@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T22:21:23.165Z",
+  "generatedAt": "2026-11-18T10:08:16.680Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -2058,19 +2058,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 399558465,
-        "name": "Release 3.20.1",
+        "id": 449389938,
+        "name": "Release 3.21.0",
         "prerelease": false,
-        "publishedAt": "2026-09-29T21:58:29Z",
-        "url": "https://github.com/EnterpriseDB/barman/releases/tag/release/3.20.1",
-        "version": "release/3.20.1"
+        "publishedAt": "2026-11-18T01:05:32Z",
+        "url": "https://github.com/EnterpriseDB/barman/releases/tag/release/3.21.0",
+        "version": "release/3.21.0"
       },
       "name": "Barman",
       "previous": {
-        "publishedAt": "2026-08-27T20:49:24Z",
-        "version": "release/3.20.0"
+        "publishedAt": "2026-09-29T21:58:29Z",
+        "version": "release/3.20.1"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "EnterpriseDB/barman",
       "tags": [
         "postgresql",
