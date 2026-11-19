@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-13T09:30:23.567Z",
+  "generatedAt": "2026-11-19T22:09:46.535Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 451935882,
+      "name": "v0.1.66",
+      "notes": "## Performance\r\n- Cross-shard CTEs and subqueries use `unnest` now for passing data between shards @jkaczman \r\n- More consistent microbenchmarks by using fixed random number generation @jkaczman \r\n- Faster parsing of `CommandComplete` messages @jkaczman \r\n- Session parameters are checked faster per request @jkaczman \r\n- More allocator and CPU instructions optimizations @jkaczman \r\n- Skip running regex on queries that don't start with comments and which are not needed for session control when query parse is off @jkaczman \r\n- Use binary encoding for passing data in cross-shard queries @jkaczman \r\n- Remove unused dependencies from build @meskill \r\n\r\n## Bug fixes\r\n- Resharding cutover would ignore errors if connected to the control plane @meskill \r\n- Multiple cross-shard subqueries located in the `WHERE` clause would mix results @jkaczman \r\n- Passthrough auth had a race condition which could return wrong password error to a small percentage of clients on pooler startup @levkk\r\n- Schema sharding would incorrectly parse `search_path` session variable if it contained only one schema, e.g., `customer_b`. @tahsintunan\r\n- LSN monitor used very expensive `pg_control_checkpoint` on Aurora and ignored its return value anyway @levkk \r\n- Cross-shard key update would return an extra `ReadyForQuery` message if the transaction failed @scottjacobsen\r\n- Alias columns in CTEs should not be used for shard routing @jkaczman \r\n- Correctly handle subqueries that return only constants @jkaczman \r\n- Load balancer would unfairly distribute load in round robin mode if a host was banned @meskill \r\n\r\n\r\n## Features\r\n- Add support for `bool_and`, `bool_or`, `every`, `bit_and`, and `bit_or` cross-shard aggregate functions @murex971 \r\n- Correctly handle `SET ROLE` and `SET SESSION AUTHORIZATION` in transaction mode @murex971 \r\n- Make more schema objects creation idempotent by using `CREATE IF NOT EXISTS` during schema sync @meskill \r\n- Support all Postgres built-in data types in cross-shard subqueries @jkaczman  \r\n- Support `ARRAY` data type in subqueries @jkaczman \r\n- Support integer arithmetic in cross-shard `LIMIT` and `OFFSET` clauses @murex971 \r\n- Handle column aliases in cross-shard `SELECT` statements combined with aggregates and `HAVING` clause @murex971 \r\n\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.65...v0.1.66",
+      "prerelease": false,
+      "publishedAt": "2026-11-19T21:13:03Z",
+      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.66",
+      "version": "v0.1.66"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-07-02T22:16:54Z",
       "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.47",
       "version": "v0.1.47"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 345016680,
-      "name": "v0.1.46",
-      "notes": "## Breaking change\r\n\r\nPgDog now blocks `UPDATE` queries that **mutate a sharding key** in a table that has **foreign key references** to other tables which automatically mutate the referenced tables using:\r\n\r\n- `CASCADE`\r\n- `SET NULL`\r\n\r\nBoth of these were previously breaking referential integrity, since we were not moving the referenced rows. `RESTRICT` (which is typically default) is not affected because Postgres is able to validate ref integrity before we move the row.\r\n\r\n## Changelog\r\n\r\n* feat(sharding): rewrite `[[sharded_mappings]]` config to make it easier to use @meskill (not documented yet, old config format still works)\r\n* feat: add `query_size_limit` setting to block/warn on very large queries @meskill\r\n* feat: `RELOAD` keeps connections and paused state if adding or removing connection databases or users  @murex971\r\n* feat(load balancer): add `prefer_primary`  read/write separation mode to allow manual opt into load balancing @stewart-glabs\r\n* feat: log warning when `lsn_check_delay` is misconfigured\r\n* refactor: start porting the codebase to use the new, much faster SQL parser @sgrif \r\n* feat(sharding): block cross-shard sharding key updates on tables that have foreign key constraints  @murex971\r\n* feat(auth): Hashicorp Vault server authentication integration  @larrywax\r\n\r\n## New Contributors\r\n* @stewart-glabs made their first contribution in https://github.com/pgdogdev/pgdog/pull/1090\r\n* @larrywax made their first contribution in https://github.com/pgdogdev/pgdog/pull/958\r\n\r\n**Full Changelog**: https://github.com/pgdogdev/pgdog/compare/v0.1.45...v0.1.46",
-      "prerelease": false,
-      "publishedAt": "2026-06-25T22:23:00Z",
-      "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.46",
-      "version": "v0.1.46"
     }
   ],
   "schemaVersion": 1,

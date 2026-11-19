@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-06T09:21:56.795Z",
+  "generatedAt": "2026-11-19T22:09:23.875Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 451859860,
+      "name": "openbao-0.30.8",
+      "notes": "Official OpenBao Chart\n\n## What's Changed\n* chore: bump OpenBao to 2.7.3 by @pree in https://github.com/openbao/openbao-helm/pull/276\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.30.7...openbao-0.30.8",
+      "prerelease": false,
+      "publishedAt": "2026-11-19T19:57:39Z",
+      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.8",
+      "version": "openbao-0.30.8"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-05-21T11:10:02Z",
       "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.3",
       "version": "openbao-0.28.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 321919608,
-      "name": "openbao-0.28.2",
-      "notes": "Official OpenBao Chart\n\n## What's Changed\n* fix: switch to certified red hat registry images for openshift by @karras in https://github.com/openbao/openbao-helm/pull/181\n\n\n**Full Changelog**: https://github.com/openbao/openbao-helm/compare/openbao-0.28.1...openbao-0.28.2",
-      "prerelease": false,
-      "publishedAt": "2026-05-13T14:33:31Z",
-      "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.28.2",
-      "version": "openbao-0.28.2"
     }
   ],
   "schemaVersion": 1,

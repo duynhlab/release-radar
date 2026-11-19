@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T10:18:42.605Z",
+  "generatedAt": "2026-11-19T22:09:48.897Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -68,17 +68,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 443276473,
-        "name": "v0.20.6",
+        "id": 451261331,
+        "name": "v0.19.14",
         "prerelease": false,
-        "publishedAt": "2026-11-12T17:27:56Z",
-        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.6",
-        "version": "v0.20.6"
+        "publishedAt": "2026-11-19T11:54:01Z",
+        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.19.14",
+        "version": "v0.19.14"
       },
       "name": "Kueue",
       "previous": {
-        "publishedAt": "2026-11-12T17:21:56Z",
-        "version": "v0.19.13"
+        "publishedAt": "2026-11-19T11:49:30Z",
+        "version": "v0.20.7"
       },
       "releaseCount": 20,
       "repository": "kubernetes-sigs/kueue",
@@ -481,17 +481,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 443181173,
-        "name": "v0.101.0",
+        "id": 451686031,
+        "name": "v0.102.0",
         "prerelease": false,
-        "publishedAt": "2026-11-12T16:02:35Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.101.0",
-        "version": "v0.101.0"
+        "publishedAt": "2026-11-19T17:30:03Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.102.0",
+        "version": "v0.102.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-11-05T17:47:22Z",
-        "version": "v0.100.0"
+        "publishedAt": "2026-11-12T16:02:35Z",
+        "version": "v0.101.0"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
@@ -1183,19 +1183,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 436865237,
-        "name": "v0.5.1",
+        "id": 451706509,
+        "name": "v0.6.0",
         "prerelease": false,
-        "publishedAt": "2026-11-06T18:48:45Z",
-        "url": "https://github.com/ClickHouse/clickhousectl/releases/tag/v0.5.1",
-        "version": "v0.5.1"
+        "publishedAt": "2026-11-19T17:47:14Z",
+        "url": "https://github.com/ClickHouse/clickhousectl/releases/tag/v0.6.0",
+        "version": "v0.6.0"
       },
       "name": "clickhousectl",
       "previous": {
-        "publishedAt": "2026-10-22T17:33:04Z",
-        "version": "v0.5.0"
+        "publishedAt": "2026-11-06T18:48:45Z",
+        "version": "v0.5.1"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "ClickHouse/clickhousectl",
       "tags": [
         "clickhouse",
@@ -1492,17 +1492,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 436180258,
-        "name": "openbao-0.30.7",
+        "id": 451859860,
+        "name": "openbao-0.30.8",
         "prerelease": false,
-        "publishedAt": "2026-11-06T06:36:48Z",
-        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.7",
-        "version": "openbao-0.30.7"
+        "publishedAt": "2026-11-19T19:57:39Z",
+        "url": "https://github.com/openbao/openbao-helm/releases/tag/openbao-0.30.8",
+        "version": "openbao-0.30.8"
       },
       "name": "OpenBao Helm Chart",
       "previous": {
-        "publishedAt": "2026-10-27T10:34:11Z",
-        "version": "openbao-0.30.6"
+        "publishedAt": "2026-11-06T06:36:48Z",
+        "version": "openbao-0.30.7"
       },
       "releaseCount": 20,
       "repository": "openbao/openbao-helm",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 450743534,
-        "name": "helm-loki-7.7.0",
+        "id": 451414866,
+        "name": "cloudcost-exporter-1.1.19",
         "prerelease": false,
-        "publishedAt": "2026-11-19T00:56:24Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.7.0",
-        "version": "helm-loki-7.7.0"
+        "publishedAt": "2026-11-19T13:54:04Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.19",
+        "version": "cloudcost-exporter-1.1.19"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-18T19:38:43Z",
-        "version": "cloudcost-exporter-1.1.18"
+        "publishedAt": "2026-11-19T00:56:24Z",
+        "version": "helm-loki-7.7.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -2620,17 +2620,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 443519760,
-        "name": "v0.1.65",
+        "id": 451935882,
+        "name": "v0.1.66",
         "prerelease": false,
-        "publishedAt": "2026-11-12T21:17:11Z",
-        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.65",
-        "version": "v0.1.65"
+        "publishedAt": "2026-11-19T21:13:03Z",
+        "url": "https://github.com/pgdogdev/pgdog/releases/tag/v0.1.66",
+        "version": "v0.1.66"
       },
       "name": "PgDog",
       "previous": {
-        "publishedAt": "2026-11-05T21:40:40Z",
-        "version": "v0.1.64"
+        "publishedAt": "2026-11-12T21:17:11Z",
+        "version": "v0.1.65"
       },
       "releaseCount": 20,
       "repository": "pgdogdev/pgdog",
