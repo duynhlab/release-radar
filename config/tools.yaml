@@ -1040,6 +1040,20 @@ tools:
       includePrerelease: false
       tagPattern: "^\\d+\\.\\d+(\\.\\d+)?$"
 
+  - id: pgcli
+    name: pgcli
+    category: database
+    repository: dbcli/pgcli
+    description: Postgres CLI with autocompletion and syntax highlighting
+    homepage: http://pgcli.com
+    tags:
+      - postgresql
+      - cli
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
   - id: pgduckdb
     name: pg_duckdb
     category: database

@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-11-19T04:36:18.923Z",
+  "readme": null,
+  "schemaVersion": 1,
+  "tool": {
+    "id": "pgcli",
+    "name": "pgcli",
+    "repository": "dbcli/pgcli"
+  }
+}

@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-10-19T14:34:08.591Z",
+  "generatedAt": "2026-11-19T04:35:13.448Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 435196879,
+      "name": "v0.76.2",
+      "notes": "## 🔐 Security update 🛡️\n\nTrivy v0.76.2 bundles several security fixes:\n\n- Official container images are rebuilt on Alpine 3.24.3, which fixes `musl`/`musl-utils` (CVE-2026-107891), and the build picks up fixed `libcurl` (24 CVEs, including HIGH CVE-2026-92392) and `brotli-libs` (CVE-2026-111497) from the `v3.24` package repository.\n- `golang.org/x/net` is bumped to v0.62.0, fixing two vulnerabilities in `golang.org/x/net/html`: CVE-2026-78661 (quadratic complexity when coalescing text nodes) and CVE-2026-97045 (missing ancestor namespace check when rendering raw text).\n- `github.com/go-jose/go-jose/v4` is bumped to v4.1.6, fixing [GHSA-mgcc-cww5-fp2q](https://github.com/go-jose/go-jose/security/advisories/GHSA-mgcc-cww5-fp2q).\n\nWe recommend upgrading to v0.76.2 and redeploying container images to apply these updates.\n\n## Changelog\n* 3f6334d223b52188324af3b9923b4249cd206652 release: v0.76.2 [release/v0.76] (#11552)\n* 1cabe83c11ffed6e984ab46be8886e1e01516ead fix(deps): bump golang.org/x/net from 0.61.0 to 0.62.0 [backport: release/v0.76] (#11554)\n* be08de47d0d76fca7e992c0f47fbcf7853f8a713 chore(deps): bump the common group across 1 directory with 14 updates [backport: release/v0.76] (#11555)\n* a8537d389cbd0fa215eddfddc27150fc7bc82a6c fix(deps): bump github.com/go-jose/go-jose/v4 from 4.1.5 to 4.1.6 [backport: release/v0.76] (#11553)\n* ae26b88c3b3c380808e767dfb63f9b8dcd5f64fd fix(deps): bump alpine to 3.24.3 in container images [backport: release/v0.76] (#11551)",
+      "prerelease": false,
+      "publishedAt": "2026-11-05T12:50:25Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.76.2",
+      "version": "v0.76.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 419466896,
+      "name": "v0.76.1",
+      "notes": "## 🔐 Security update: eMudhra CA incident 🛡️\n\nTrivy v0.76.1 includes mitigations for the [eMudhra intermediate CA key compromise](https://blog.cloudflare.com/emudhra-certificate-compromise/).\n\n- Official binaries are built with Go 1.27.3, which includes the certificate distrust mitigation tracked as [CVE-2026-111943](https://go.dev/issue/82345).\n- Official container images include an updated Alpine CA trust store that rejects the affected certificate chains.\n\nWe recommend upgrading to v0.76.1 and redeploying container images to apply these updates. If you build Trivy from source, use Go 1.27.3 or later and keep your runtime CA trust store up to date.\n\n## Changelog\n* e713f67f7d54decdcd9b3132c9751833dcced698 release: v0.76.1 [release/v0.76] (#11445)\n* 6647bd6ec5924087956285b773b8cae10508736e fix(deps): bump the aws group across 1 directory with 6 updates [backport: release/v0.76] (#11446)\n* e0964c97819b1d6a45b7e0426803745f173fc550 fix(deps): bump the docker group with 3 updates [backport: release/v0.76] (#11443)\n* 992c360c33d9f9627bb24c1fe3f20815110c88e5 fix(deps): bump the common group with 3 updates [backport: release/v0.76] (#11442)",
+      "prerelease": false,
+      "publishedAt": "2026-10-21T11:18:34Z",
+      "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.76.1",
+      "version": "v0.76.1"
+    },
     {
       "channel": "stable",
       "draft": false,
