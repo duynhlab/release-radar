@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T21:55:40.430Z",
+  "generatedAt": "2026-11-19T04:36:48.427Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -424,19 +424,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 412653935,
-        "name": "v0.76.0",
+        "id": 435196879,
+        "name": "v0.76.2",
         "prerelease": false,
-        "publishedAt": "2026-10-14T11:45:44Z",
-        "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.76.0",
-        "version": "v0.76.0"
+        "publishedAt": "2026-11-05T12:50:25Z",
+        "url": "https://github.com/aquasecurity/trivy/releases/tag/v0.76.2",
+        "version": "v0.76.2"
       },
       "name": "Trivy",
       "previous": {
-        "publishedAt": "2026-10-01T13:34:13Z",
-        "version": "v0.75.0"
+        "publishedAt": "2026-10-21T11:18:34Z",
+        "version": "v0.76.1"
       },
-      "releaseCount": 14,
+      "releaseCount": 16,
       "repository": "aquasecurity/trivy",
       "tags": [
         "scanning",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 450466121,
-        "name": "cloudcost-exporter-1.1.18",
+        "id": 450743534,
+        "name": "helm-loki-7.7.0",
         "prerelease": false,
-        "publishedAt": "2026-11-18T19:38:43Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/cloudcost-exporter-1.1.18",
-        "version": "cloudcost-exporter-1.1.18"
+        "publishedAt": "2026-11-19T00:56:24Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/helm-loki-7.7.0",
+        "version": "helm-loki-7.7.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-17T16:30:15Z",
-        "version": "beyla-1.16.19"
+        "publishedAt": "2026-11-18T19:38:43Z",
+        "version": "cloudcost-exporter-1.1.18"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1950,6 +1950,33 @@
         "postgresql",
         "extension",
         "pgaudit"
+      ]
+    },
+    {
+      "category": "database",
+      "description": "Postgres CLI with autocompletion and syntax highlighting",
+      "homepage": "http://pgcli.com",
+      "id": "pgcli",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 392340646,
+        "name": "4.7.1",
+        "prerelease": false,
+        "publishedAt": "2026-09-20T06:51:49Z",
+        "url": "https://github.com/dbcli/pgcli/releases/tag/v4.7.1",
+        "version": "v4.7.1"
+      },
+      "name": "pgcli",
+      "previous": {
+        "publishedAt": "2026-09-19T07:51:12Z",
+        "version": "v4.7.0"
+      },
+      "releaseCount": 2,
+      "repository": "dbcli/pgcli",
+      "tags": [
+        "postgresql",
+        "cli"
       ]
     },
     {
@@ -2271,19 +2298,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 403754193,
-        "name": "v0.35.0",
+        "id": 427574008,
+        "name": "v0.36.1",
         "prerelease": false,
-        "publishedAt": "2026-10-05T13:40:41Z",
-        "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.35.0",
-        "version": "v0.35.0"
+        "publishedAt": "2026-10-29T07:35:21Z",
+        "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.36.1",
+        "version": "v0.36.1"
       },
       "name": "Trivy Operator",
       "previous": {
-        "publishedAt": "2026-08-24T11:51:32Z",
-        "version": "v0.34.0"
+        "publishedAt": "2026-10-05T13:40:41Z",
+        "version": "v0.35.0"
       },
-      "releaseCount": 12,
+      "releaseCount": 13,
       "repository": "aquasecurity/trivy-operator",
       "tags": [
         "scanning",

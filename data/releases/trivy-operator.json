@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-06T08:19:01.681Z",
+  "generatedAt": "2026-11-19T04:36:31.651Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 427574008,
+      "name": "v0.36.1",
+      "notes": "## Changelog\n### 🔧 Miscellaneous 🔧\n* 54371544bbaa1e52505954ef6b81baefa2965817: chore: bump up Trivy version to 0.76.1 (#3112) (@afdesk)\n* b40091af2bfba4c90b109fc0817d6c3f49bfc9a4: chore: fix vulnerabilities inside deps (#3123) (@afdesk)\n### 👷 Other work 👷\n* 3a4ff0479331528205aaf5aca164a01962d7ac52: build(deps): bump ubi9/ubi-minimal in /build/trivy-operator (#3120) (@dependabot[bot])\n* b5186bc6ac0f6d801cfe8b46e6fad8ca288fbdcb: ci: pin a version of ubuntu runner to 24.04 (#3125) (@afdesk)",
+      "prerelease": false,
+      "publishedAt": "2026-10-29T07:35:21Z",
+      "url": "https://github.com/aquasecurity/trivy-operator/releases/tag/v0.36.1",
+      "version": "v0.36.1"
+    },
     {
       "channel": "stable",
       "draft": false,
