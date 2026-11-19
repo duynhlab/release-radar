@@ -27,8 +27,23 @@ export interface RawGitHubRelease {
   html_url: string;
 }
 
+function normalizeSextetHeadings(text: string): string {
+  // Convert Setext headings (underlined with = or -) to ATX headings (# prefix)
+  // Match a line followed by a line of = or - characters of similar length
+  return text.replace(
+    /^(.+)\r?\n(=+|-+)\s*$/gm,
+    (_match, heading, underline) => {
+      const level = underline[0] === "=" ? 1 : 2;
+      return `${"#".repeat(level)} ${heading}`;
+    },
+  );
+}
+
 export function normalizeRelease(raw: RawGitHubRelease): Release {
-  const notes = raw.body?.trim() || null;
+  let notes = raw.body?.trim() || null;
+  if (notes) {
+    notes = normalizeSextetHeadings(notes);
+  }
   return {
     id: raw.id,
     version: raw.tag_name,

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-19T04:36:19.637Z",
+  "generatedAt": "2026-11-19T04:42:31.245Z",
   "releases": [
     {
       "channel": "stable",
       "draft": false,
       "id": 392340646,
       "name": "4.7.1",
-      "notes": "Bug fixes:\r\n----------\r\n* Fix wrong version number that was shown in `pgcli --version` for version 4.7.0.",
+      "notes": "## Bug fixes:\n* Fix wrong version number that was shown in `pgcli --version` for version 4.7.0.",
       "prerelease": false,
       "publishedAt": "2026-09-20T06:51:49Z",
       "url": "https://github.com/dbcli/pgcli/releases/tag/v4.7.1",
