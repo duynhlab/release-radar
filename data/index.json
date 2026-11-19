@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T04:36:48.427Z",
+  "generatedAt": "2026-11-19T10:18:42.605Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 450532579,
-        "name": "tempo-distributed-3.29.1",
+        "id": 451111239,
+        "name": "synthetic-monitoring-agent-1.25.1",
         "prerelease": false,
-        "publishedAt": "2026-11-18T20:41:54Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.29.1",
-        "version": "tempo-distributed-3.29.1"
+        "publishedAt": "2026-11-19T09:18:06Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/synthetic-monitoring-agent-1.25.1",
+        "version": "synthetic-monitoring-agent-1.25.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-18T20:41:12Z",
-        "version": "loki-21.4.1"
+        "publishedAt": "2026-11-18T20:41:54Z",
+        "version": "tempo-distributed-3.29.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
