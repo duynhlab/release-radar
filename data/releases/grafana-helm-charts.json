@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-19T22:09:27.596Z",
+  "generatedAt": "2026-11-20T10:00:17.778Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 452444097,
+      "name": "synthetic-monitoring-agent-2.0.1",
+      "notes": "Grafana Synthetic Monitoring agent, to run private probes on Kubernetes.\n\nSource commit: https://github.com/grafana/synthetic-monitoring-agent/commit/0160ba54b92d3e9c439b9baae2abd4409b8be003\n\nTag on source: https://github.com/grafana/synthetic-monitoring-agent/releases/tag/synthetic-monitoring-agent-2.0.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-20T08:38:40Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/synthetic-monitoring-agent-2.0.1",
+      "version": "synthetic-monitoring-agent-2.0.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-26T09:47:40Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.2.2",
       "version": "mimir-distributed-6.2.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 422355757,
-      "name": "k8s-monitoring-4.5.5",
-      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/720b8cd183bb890c84a28632d08ff1c4bbd9d83d\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.5.5",
-      "prerelease": false,
-      "publishedAt": "2026-10-23T22:13:54Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.5.5",
-      "version": "k8s-monitoring-4.5.5"
     }
   ],
   "schemaVersion": 1,
