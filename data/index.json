@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T10:00:43.170Z",
+  "generatedAt": "2026-11-20T12:15:42.510Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1954,6 +1954,35 @@
     },
     {
       "category": "database",
+      "description": "Query performance monitoring and statistics collection for PostgreSQL",
+      "documentation": "https://docs.percona.com/pg-stat-monitor/",
+      "homepage": "https://docs.percona.com/pg-stat-monitor/",
+      "id": "pg-stat-monitor",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 452538037,
+        "name": "2.4.1",
+        "prerelease": false,
+        "publishedAt": "2026-11-20T10:13:48Z",
+        "url": "https://github.com/percona/pg_stat_monitor/releases/tag/2.4.1",
+        "version": "2.4.1"
+      },
+      "name": "pg_stat_monitor",
+      "previous": {
+        "publishedAt": "2026-09-08T14:23:31Z",
+        "version": "2.4.0"
+      },
+      "releaseCount": 10,
+      "repository": "percona/pg_stat_monitor",
+      "tags": [
+        "postgresql",
+        "monitoring",
+        "performance"
+      ]
+    },
+    {
+      "category": "database",
       "description": "Postgres CLI with autocompletion and syntax highlighting",
       "homepage": "http://pgcli.com",
       "id": "pgcli",
@@ -2544,6 +2573,34 @@
       "tags": [
         "containers",
         "cli"
+      ]
+    },
+    {
+      "category": "iac",
+      "description": "Builds operating system images for physical machines, virtual machines, and clouds",
+      "homepage": "https://osbuild.org",
+      "id": "image-builder",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 446631225,
+        "name": "91.0.0",
+        "prerelease": false,
+        "publishedAt": "2026-11-16T05:11:12Z",
+        "url": "https://github.com/osbuild/image-builder/releases/tag/v91.0.0",
+        "version": "v91.0.0"
+      },
+      "name": "Image Builder",
+      "previous": {
+        "publishedAt": "2026-11-09T05:10:53Z",
+        "version": "v90.0.0"
+      },
+      "releaseCount": 10,
+      "repository": "osbuild/image-builder",
+      "tags": [
+        "os",
+        "images",
+        "virtualization"
       ]
     },
     {
