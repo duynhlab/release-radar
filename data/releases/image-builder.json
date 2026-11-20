@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-11-20T12:15:35.188Z",
+  "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 446631225,
+      "name": "91.0.0",
+      "notes": "## Changes with 91.0.0\n  - Multi-step builds using single top-level command (HMS-11466, HMS-11467) (#2803)\n    - Author: Achilleas Koutsou, Reviewers: Lucas Garfield, Simon de Vlieger\n  - boot-aws: drop the redundant --arch flag (#2811)\n    - Author: Medha Mummigatti, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - boot-azure: use NewDefaultAzureCredential (#2822)\n    - Author: Lars Karlitski, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - defs: allow templating kernel arguments (#2818)\n    - Author: Simon de Vlieger, Reviewers: Sanne Raymaekers\n  - deps: update `yamlplus` (#2814)\n    - Author: Simon de Vlieger, Reviewers: Brian C. Lane\n  - manifest: fix missing GRUB console.cfg in bootc disk images (#2829)\n    - Author: Roshan R Chandar, Reviewers: Brian C. Lane, Simon de Vlieger\n  - pkg/depsolvednf: set basic auth secret when needed (#2830)\n    - Author: Sanne Raymaekers, Reviewers: Brian C. Lane\n  - pkg/depsolvednf: support basic auth (#2819)\n    - Author: Sanne Raymaekers, Reviewers: Achilleas Koutsou\n  - pkg/distroidparser: cache parsed distro IDs (#2810)\n    - Author: Loris Fauster, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - rpmrepo: Add action checking for rpmrepo snapshots (HMS-11430) (#2807)\n    - Author: Tomáš Koscielniak, Reviewers: Achilleas Koutsou\n\n— Somewhere on the Internet, 2026-11-16",
+      "prerelease": false,
+      "publishedAt": "2026-11-16T05:11:12Z",
+      "url": "https://github.com/osbuild/image-builder/releases/tag/v91.0.0",
+      "version": "v91.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 438763691,
+      "name": "90.0.0",
+      "notes": "## Changes with 90.0.0\n  - Add default target boot test (HMS-11516) (#2813)\n    - Author: matej-lohnicky, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - Add new ostree-iso image type (HMS-10627) (#2799)\n    - Author: Brian C. Lane, Reviewers: Achilleas Koutsou, Anna Vítová\n  - add support for boot-oci cmd (HMS-11559)  (#2756)\n    - Author: src-up, Reviewers: Achilleas Koutsou\n  - distro/rhel-8: configure time sync and Oracle datasource for OCI (#2812)\n    - Author: Aditya Nair, Reviewers: Achilleas Koutsou\n\n— Somewhere on the Internet, 2026-11-09",
+      "prerelease": false,
+      "publishedAt": "2026-11-09T05:10:53Z",
+      "url": "https://github.com/osbuild/image-builder/releases/tag/v90.0.0",
+      "version": "v90.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 431092188,
+      "name": "89.0.0",
+      "notes": "## Changes with 89.0.0\n  - Add support for the native bootc composefs aboot support (#2797)\n    - Author: Alexander Larsson, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - New subcommand: image-builder prefetch [HMS-11467] (#2792)\n    - Author: Achilleas Koutsou, Reviewers: Brian C. Lane, Simon de Vlieger\n  - distro/rhel-8: make default OCI partitioning LVM-based (#2793)\n    - Author: Aditya Nair, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - distro/rhel9: Azure 9: add loglevel kernel option (HMS-11475) (#2795)\n    - Author: Anna Vítová, Reviewers: Brian C. Lane, Simon de Vlieger\n  - doc/bootc: fix URL to bootc-foundry (#2806)\n    - Author: Florian Schüller, Reviewers: Simon de Vlieger, swadeley\n  - doc: add guide for generating Fedora 45 LiveISO with bootc containers and Anaconda (#2717)\n    - Author: Fernando Fedora, Reviewers: Simon de Vlieger\n  - image-builder/bib_legacy: switch to embedded repositories (HMS-11482) (#2782)\n    - Author: Sanne Raymaekers, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - image-builder: hide the prefetch command (#2801)\n    - Author: Achilleas Koutsou, Reviewers: Brian C. Lane, Simon de Vlieger\n  - image-installer: propagate hostname to kickstart (HMS-11121) (#2804)\n    - Author: Sanne Raymaekers, Reviewers: Achilleas Koutsou\n  - imgtestlib: followup for adding disk images to bootc tests (#2772)\n    - Author: Anna Vítová, Reviewers: Achilleas Koutsou\n  - manifest-checksums: Add the bootc pxe-tar-xz image (#2800)\n    - Author: Brian C. Lane, Reviewers: Sanne Raymaekers\n  - osbuild-upload-gcp: print log output & support newer rhel versions (#2794)\n    - Author: Loris Fauster, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - sysext: additional repositories (#2790)\n    - Author: Simon de Vlieger, Reviewers: Brian C. Lane\n\n— Somewhere on the Internet, 2026-11-02",
+      "prerelease": false,
+      "publishedAt": "2026-11-02T05:10:44Z",
+      "url": "https://github.com/osbuild/image-builder/releases/tag/v89.0.0",
+      "version": "v89.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 425275108,
+      "name": "88.0.0",
+      "notes": "## Changes with 88.0.0\n  - AGENTS/CONTRIBUTING: bit more guidance (#2762)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Anna Vítová, Sanne Raymaekers\n  - Add ISCSI packages to support bare metal shapes in OCI (#2670)\n    - Author: Pranav Kesavarapu, Reviewers: Achilleas Koutsou\n  - Add two new distributions: RHIVOS-2.0 and RHIVOS-Core-2.0 [HMS-11293] (#2678)\n    - Author: Achilleas Koutsou, Reviewers: Sanne Raymaekers, Simon de Vlieger\n  - CONTRIBUTING: drop \"HACKING.md\" reference (#2769)\n    - Author: Simon de Vlieger, Reviewers: Anna Vítová\n  - Install osbuild-luks2 package in the container (#2785)\n    - Author: onesaladleaf, Reviewers: Brian C. Lane, Simon de Vlieger\n  - Repos: Add/update AlmaLinux repository definitions (#2777)\n    - Author: Eduard Abdullin, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - Schutzfile: write Fedora Updates repo config to fedora-updates.repo (#2770)\n    - Author: Achilleas Koutsou, Reviewers: Brian C. Lane\n  - Update osbuild dependency commit ID (#2775)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou, Anna Vítová, Simon de Vlieger\n  - Update osbuild dependency commit ID (#2788)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - Update snapshots to 20261013 (#2758)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - Use ISOBootloader and rename to generic-iso (#2779)\n    - Author: Brian C. Lane, Reviewers: Achilleas Koutsou\n  - [RHEL-290047] distro/eln-11: exclude podman from AMI/EC2 images (#2786)\n    - Author: Swapnil Thakur, Reviewers: Brian C. Lane, Simon de Vlieger\n  - boot-aws: Keep resources file consistent (#2761)\n    - Author: Lars Karlitski, Reviewers: Brian C. Lane, Simon de Vlieger\n  - chore: drop `HACKING.image-builder.md` (#2789)\n    - Author: Simon de Vlieger, Reviewers: Sanne Raymaekers\n  - cmd: block alias for `anaconda-iso` (#2757)\n    - Author: Simon de Vlieger, Reviewers: Brian C. Lane\n  - distro/rhel-10: ami-nvidia: use production branch of nvidia drivers (#2776)\n    - Author: Loris Fauster, Reviewers: Achilleas Koutsou\n  - distro: add default sytemd target customization (HMS-9704) (#2780)\n    - Author: matej-lohnicky, Reviewers: Achilleas Koutsou, Sanne Raymaekers\n  - extra/sysext: control over extension-release (#2763)\n    - Author: Simon de Vlieger, Reviewers: Sanne Raymaekers\n  - extra/sysext: cut install tree (#2773)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - imgtestlib: add disk images to bootc testing matrix (#2742)\n    - Author: Anna Vítová, Reviewers: Achilleas Koutsou\n  - manifest: allow templating `boot_files` (#2781)\n    - Author: Simon de Vlieger, Reviewers: Sanne Raymaekers\n  - many: customizations for `installer.packages` (#2765)\n    - Author: Simon de Vlieger, Reviewers: Brian C. Lane, Sanne Raymaekers\n  - osbuild: support LUKS devices in bootupd stage (#2708)\n    - Author: ArtiomDivak, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - pxe-tar-xz: Document adding containers to the image (#2767)\n    - Author: Brian C. Lane, Reviewers: Simon de Vlieger\n  - test: start testing RHEL 9.10 and 10.4 (#2759)\n    - Author: Achilleas Koutsou, Reviewers: Anna Vítová\n  - test: use_ovmf parameter only for supported arch (#2771)\n    - Author: Anna Vítová, Reviewers: Simon de Vlieger\n\n— Somewhere on the Internet, 2026-10-27",
+      "prerelease": false,
+      "publishedAt": "2026-10-27T09:56:14Z",
+      "url": "https://github.com/osbuild/image-builder/releases/tag/v88.0.0",
+      "version": "v88.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 412336643,
+      "name": "87.0.0",
+      "notes": "## Changes with 87.0.0\n  - Update osbuild dependency commit ID (#2755)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou\n  - add support for CLI credentials when uploading to Azure (#2745)\n    - Author: Ondřej Budai, Reviewers: Simon de Vlieger\n  - bootc: supported customizations for composefs (#2730)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - distro/rhel: set default_kernel to kernel-core on Oracle Linux 9 (#2753)\n    - Author: Achilleas Koutsou, Reviewers: Simon de Vlieger\n  - fedora: bump disk size for atomics (#2750)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Anna Vítová\n  - fedora: include rpi firmware for atomic desktops (#2734)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Sanne Raymaekers\n  - github: fetch whole history when building containers (#2751)\n    - Author: Achilleas Koutsou, Reviewers: Brian C. Lane, Simon de Vlieger\n  - osinfo: read blueprints from variants (#2754)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Sanne Raymaekers\n  - tests: Add check-snapshots test (#2746)\n    - Author: Brian C. Lane, Reviewers: Sanne Raymaekers, Simon de Vlieger\n\n— Somewhere on the Internet, 2026-10-14",
+      "prerelease": false,
+      "publishedAt": "2026-10-14T04:26:08Z",
+      "url": "https://github.com/osbuild/image-builder/releases/tag/v87.0.0",
+      "version": "v87.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 405940608,
+      "name": "86.0.0",
+      "notes": "## Changes with 86.0.0\n  - Add fstab=no to PXE testing and documentation (HMS-11074) (#2732)\n    - Author: Brian C. Lane, Reviewers: Achilleas Koutsou, Sanne Raymaekers\n  - Update osbuild dependency commit ID (#2739)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou, Sanne Raymaekers\n  - agents: introduction (#2729)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - bib: update readme (HMS-10586) (#2741)\n    - Author: Lucas Garfield, Reviewers: Brian C. Lane, Simon de Vlieger\n  - boot-aws: add --instance-type (#2726)\n    - Author: Tomáš Koscielniak, Reviewers: Brian C. Lane, Simon de Vlieger\n  - cloud/azure: create v2 storage accounts (HMS-11442) (#2744)\n    - Author: Ondřej Budai, Reviewers: Ondřej Ezr, Sanne Raymaekers\n  - cmd/image-builder: enable olog on --verbose (#2728)\n    - Author: Andrew G. Dunn, Reviewers: Anna Vítová, Simon de Vlieger\n  - contributing: mention `./tools/prepare-source.sh` (#2748)\n    - Author: Simon de Vlieger, Reviewers: Loris Fauster\n  - contributing: minor update (#2736)\n    - Author: Simon de Vlieger, Reviewers: Sanne Raymaekers\n  - defs: simple templates for iso customizations (HMS-11426) (#2743)\n    - Author: Simon de Vlieger, Reviewers: Loris Fauster, Lucas Garfield\n  - distro: rhel10: add AMI with Nvidia software stack (#2715)\n    - Author: Loris Fauster, Reviewers: Sanne Raymaekers, Simon de Vlieger\n  - doc: add bib migration guide (HMS-10586) (#2731)\n    - Author: Lucas Garfield, Reviewers: Ondřej Budai, Simon de Vlieger\n  - fedora: allow `customizations.iso` (#2735)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Anna Vítová, Brian C. Lane\n  - manifest: world-readable `/images/pxetree` (#2747)\n    - Author: Simon de Vlieger, Reviewers: Loris Fauster, Sanne Raymaekers\n  - osinfo: default LUKS pbkdf memory and parallelism, log the disk.yaml found (#2727)\n    - Author: Andrew G. Dunn, Reviewers: Anna Vítová, Simon de Vlieger\n  - sysext: relabel in prep pipeline (#2740)\n    - Author: Simon de Vlieger, Reviewers: Sanne Raymaekers\n\n— Somewhere on the Internet, 2026-10-07",
+      "prerelease": false,
+      "publishedAt": "2026-10-07T16:09:23Z",
+      "url": "https://github.com/osbuild/image-builder/releases/tag/v86.0.0",
+      "version": "v86.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 400675206,
+      "name": "85.0.0",
+      "notes": "## Changes with 85.0.0\n  - Extend boot-aws to allow passing repo files and VPC (#2721)\n    - Author: Lars Karlitski, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - Fix get_ci_runner_distro_for() (#2718)\n    - Author: Achilleas Koutsou, Reviewers: Anna Vítová\n  - Update osbuild dependency commit ID (#2725)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou\n  - bootc: Don't create /boot dir if there is no /boot or /boot/efi mount (HMS-11348) (#2716)\n    - Author: Alexander Larsson, Reviewers: Achilleas Koutsou\n  - bootc: extras (partitions) (HMS-11288, HMS-11287) (#2702)\n    - Author: Simon de Vlieger, Reviewers: Brian C. Lane\n  - bootc: use the DPS root partition type, drop XBOOTLDR for UKI images (#2719)\n    - Author: Colin Walters (automation), Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - cmd/image-builder: support extra globbing (#2712)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Loris Fauster\n  - defs/fedora: 45 is no longer preview (#2709)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - extras: files (#2711)\n    - Author: Simon de Vlieger, Reviewers: Brian C. Lane\n  - extras: improve `file` to not export too much (#2722)\n    - Author: Simon de Vlieger, Reviewers: Nobody\n\n— Somewhere on the Internet, 2026-10-01",
+      "prerelease": false,
+      "publishedAt": "2026-10-01T05:31:51Z",
+      "url": "https://github.com/osbuild/image-builder/releases/tag/v85.0.0",
+      "version": "v85.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 395569807,
+      "name": "84.0.0",
+      "notes": "## Changes with 84.0.0\n  - Build cache based on export pipeline (HMS-11233) (#2671)\n    - Author: Anna Vítová, Reviewers: Achilleas Koutsou\n  - Enable CUI OpenSCAP profile for RHEL 10 (HMS-11244) (#2701)\n    - Author: Gianluca Zuccarelli, Reviewers: Achilleas Koutsou, Lucas Garfield, Simon de Vlieger\n  - Extras: User-selectable multiple explicit exports: sysexts and partitions (HMS-11288, HMS-11287) (#2700)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - Fix readme syntax and URLs (#2698)\n    - Author: Florian Schüller, Reviewers: Simon de Vlieger\n  - Update osbuild dependency commit ID (#2703)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou, Anna Vítová, Simon de Vlieger\n  - Update snapshots to 20260915 (#2690)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - bootc: drop `grub2.legacy` on aarch64 (#2693)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Lucas Garfield\n  - doc: many many bits (#2691)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - fedora: decrease pcluster size for atomic ISO (#2713)\n    - Author: Simon de Vlieger, Reviewers: Brian C. Lane\n  - fedora: fix uefi vendor type for riscv64 platform (#2696)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - fix: enable bootupd gen-metadata for edge-container (#2705)\n    - Author: Vaibhav Bhope, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - gen-manifest-diffs: Adjust for images move to image-builder (#2710)\n    - Author: Brian C. Lane, Reviewers: Simon de Vlieger\n  - many: `bootc` deployment variants (#2636)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Lucas Garfield\n  - rhsm: support cross major version builds (#2688)\n    - Author: Lucas Garfield, Reviewers: Simon de Vlieger\n  - rpmmd: Honor ignore_ssl when loading repositories (#2674)\n    - Author: Ondřej Budai, Reviewers: Achilleas Koutsou, Simon de Vlieger\n\n— Somewhere on the Internet, 2026-09-24",
+      "prerelease": false,
+      "publishedAt": "2026-09-24T10:35:39Z",
+      "url": "https://github.com/osbuild/image-builder/releases/tag/v84.0.0",
+      "version": "v84.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 389661604,
+      "name": "83.0.0",
+      "notes": "## Changes with 83.0.0\n  - Add rhel10 & fedora image-installer for s390x & ppc64 architectures (HMS-10747) (#2679)\n    - Author: Loris Fauster, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - Change s3_touch() to tag objects and re-enable the function on cache hits [HMS-11071] (#2660)\n    - Author: Achilleas Koutsou, Reviewers: Brian C. Lane, Simon de Vlieger\n  - Drop common runner and add architecture name to runner names in Schutzfile (#2672)\n    - Author: Achilleas Koutsou, Reviewers: Simon de Vlieger\n  - README: swap image-builder - images READMEs [HMS-10586] (#2684)\n    - Author: Achilleas Koutsou, Reviewers: Anna Vítová, Simon de Vlieger\n  - Schutzfile: replace RHOS runners with AWS KVM (#2689)\n    - Author: Achilleas Koutsou, Reviewers: Simon de Vlieger\n  - Update osbuild dependency commit ID (#2668)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou, Anna Vítová\n  - bootc-image-builder: boot AMI in AWS after cross-arch building [HMS-11073] (#2644)\n    - Author: Achilleas Koutsou, Reviewers: Brian C. Lane, Ondřej Budai\n  - bootc: aarch64 bootc-generic-iso (#2687)\n    - Author: Simon de Vlieger, Reviewers: Brian C. Lane\n  - cmd/image-builder: support templating output directory and artifact names (HMS-11286) (#2677)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - defs: allow templating filesystem partition labels (#2683)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - distro/defs: drop the ImageTypeYAML property from defs.imageType (#2685)\n    - Author: Achilleas Koutsou, Reviewers: Simon de Vlieger\n  - experimental: `image-version`, `image-id` (#2663)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - fedora: use LVM GPT UUID for server (#2686)\n    - Author: Simon de Vlieger, Reviewers: Anna Vítová\n  - manifest/raw_bootc: Label / and /boot before running bootc install (#2525)\n    - Author: Jean-Baptiste Trystram, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - many: `riscv64` support for installer(s) (HMS-11278, HMS-11279, HSM-11280) (#2614)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - many: cross-arch bootstrapping from packages (HMS-11277) (#2676)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - many: support `kernel.version` customization (#2618)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - pkg/manifest: erofs pipeline generator (#2667)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - pkg/osbuild: import `tree-delta`, `dd`, `os-release` stages (#2665)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Anna Vítová\n  - spec: %gocheck2 macro (HMS-11020) (#2653)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n  - test: enable fedora boot.iso (HMS-11283) (#2673)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou\n\n— Somewhere on the Internet, 2026-09-16",
+      "prerelease": false,
+      "publishedAt": "2026-09-16T05:37:46Z",
+      "url": "https://github.com/osbuild/image-builder/releases/tag/v83.0.0",
+      "version": "v83.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 382969981,
+      "name": "82.0.0",
+      "notes": "## Changes with 82.0.0\n  - Enable bootc-image-builder ISO tests on aarch64 [HMS-11073] (#2637)\n    - Author: Achilleas Koutsou, Reviewers: Anna Vítová, Lucas Garfield\n  - Implement rootless container introspection (#2617)\n    - Author: Alexander Larsson, Reviewers: Achilleas Koutsou, Anna Vítová, Simon de Vlieger\n  - Rewrite container handling internals to drop graphdriver and gpgme dependencies [RHEL-56367] (#2607)\n    - Author: Achilleas Koutsou, Reviewers: Lucas Garfield, Simon de Vlieger\n  - Update osbuild dependency commit ID (#2631)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou, Anna Vítová\n  - Update snapshots to 20260830 (#2630)\n    - Author: SchutzBot, Reviewers: Achilleas Koutsou, Anna Vítová\n  - client: Respect CONTAINERS_GRAPHROOT and CONTAINERS_RUNROOT (#2645)\n    - Author: Alexander Larsson, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - cmd/image-builder: only run findDistro once (#2651)\n    - Author: Sanne Raymaekers, Reviewers: Achilleas Koutsou, Simon de Vlieger\n  - cmd/image-builder: upload messages progress bar (#2654)\n    - Author: Simon de Vlieger, Reviewers: Florian Schüller, Sanne Raymaekers\n  - el9/10: parity bits (#2659)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - gce: ensure disk images are GiB-aligned (#2655)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Anna Vítová\n  - osbuild: compare Go against JSON (#2529)\n    - Author: Simon de Vlieger, Reviewers: Anna Vítová, Brian C. Lane\n  - osinfo: never fall back if new prefix exists (#2649)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Brian C. Lane\n  - osinfo: warn on old-prefix usage (#2648)\n    - Author: Simon de Vlieger, Reviewers: Achilleas Koutsou, Gianluca Zuccarelli, Sanne Raymaekers\n  - pkg/crypt: add support for yescrypt hashed passwords (#2650)\n    - Author: Loris Fauster, Reviewers: Lucas Garfield, Simon de Vlieger\n  - pkg/rhsm: use Katello CA as default on Satellite hosts (#2613)\n    - Author: Lukáš Zapletal, Reviewers: Lucas Garfield, Simon de Vlieger\n  - rm SECURITY.md: fall back to org-wide policy (#2633)\n    - Author: Achilleas Koutsou, Reviewers: Anna Vítová, Simon de Vlieger\n  - rootless: Don't disallow --in-vm in rootless non-container (#2626)\n    - Author: Alexander Larsson, Reviewers: Achilleas Koutsou, Simon de Vlieger\n\n— Somewhere on the Internet, 2026-09-04",
+      "prerelease": false,
+      "publishedAt": "2026-09-04T19:30:25Z",
+      "url": "https://github.com/osbuild/image-builder/releases/tag/v82.0.0",
+      "version": "v82.0.0"
+    }
+  ],
+  "schemaVersion": 1,
+  "tool": {
+    "id": "image-builder",
+    "name": "Image Builder",
+    "repository": "osbuild/image-builder"
+  }
+}
