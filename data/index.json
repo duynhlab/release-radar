@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T10:00:43.170Z",
+  "generatedAt": "2026-11-20T21:49:36.417Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -242,19 +242,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 424434841,
-        "name": "v2.10.0",
+        "id": 452707487,
+        "name": "v2.10.1",
         "prerelease": false,
-        "publishedAt": "2026-10-26T15:37:42Z",
-        "url": "https://github.com/fluxcd/flux2/releases/tag/v2.10.0",
-        "version": "v2.10.0"
+        "publishedAt": "2026-11-20T13:08:41Z",
+        "url": "https://github.com/fluxcd/flux2/releases/tag/v2.10.1",
+        "version": "v2.10.1"
       },
       "name": "Flux",
       "previous": {
-        "publishedAt": "2026-10-01T09:56:48Z",
-        "version": "v2.9.6"
+        "publishedAt": "2026-10-26T15:37:42Z",
+        "version": "v2.10.0"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "fluxcd/flux2",
       "tags": [
         "gitops",
@@ -1019,19 +1019,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 425648953,
-        "name": "v0.62.1",
+        "id": 452772299,
+        "name": "v0.63.0",
         "prerelease": false,
-        "publishedAt": "2026-10-27T15:35:48Z",
-        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.62.1",
-        "version": "v0.62.1"
+        "publishedAt": "2026-11-20T14:11:28Z",
+        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.63.0",
+        "version": "v0.63.0"
       },
       "name": "Flux Operator",
       "previous": {
-        "publishedAt": "2026-10-26T17:25:57Z",
-        "version": "v0.62.0"
+        "publishedAt": "2026-10-27T15:35:48Z",
+        "version": "v0.62.1"
       },
-      "releaseCount": 17,
+      "releaseCount": 18,
       "repository": "controlplaneio-fluxcd/flux-operator",
       "tags": [
         "gitops",
@@ -1587,17 +1587,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 433220499,
-        "name": "v2.3.5",
+        "id": 453196591,
+        "name": "v2.4.4",
         "prerelease": false,
-        "publishedAt": "2026-11-03T21:09:57Z",
-        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.3.5",
-        "version": "v2.3.5"
+        "publishedAt": "2026-11-20T21:29:21Z",
+        "url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.4",
+        "version": "v2.4.4"
       },
       "name": "Pyroscope",
       "previous": {
-        "publishedAt": "2026-11-03T21:09:45Z",
-        "version": "v2.4.3"
+        "publishedAt": "2026-11-20T21:28:48Z",
+        "version": "v2.3.6"
       },
       "releaseCount": 20,
       "repository": "grafana/pyroscope",
@@ -1990,19 +1990,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 432081655,
-        "name": "pg_duckdb v1.2.0",
+        "id": 452839695,
+        "name": "pg_duckdb v1.2.1",
         "prerelease": false,
-        "publishedAt": "2026-11-03T07:30:29Z",
-        "url": "https://github.com/duckdb/pg_duckdb/releases/tag/v1.2.0",
-        "version": "v1.2.0"
+        "publishedAt": "2026-11-20T15:14:32Z",
+        "url": "https://github.com/duckdb/pg_duckdb/releases/tag/v1.2.1",
+        "version": "v1.2.1"
       },
       "name": "pg_duckdb",
       "previous": {
-        "publishedAt": "2025-12-18T00:30:15Z",
-        "version": "v1.1.1"
+        "publishedAt": "2026-11-03T07:30:29Z",
+        "version": "v1.2.0"
       },
-      "releaseCount": 7,
+      "releaseCount": 8,
       "repository": "duckdb/pg_duckdb",
       "tags": [
         "postgresql",
@@ -2558,17 +2558,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 434415506,
-        "name": "Release v1.17.4",
+        "id": 453132643,
+        "name": "Release v1.17.5",
         "prerelease": false,
-        "publishedAt": "2026-11-04T20:31:44Z",
-        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.17.4",
-        "version": "v1.17.4"
+        "publishedAt": "2026-11-20T20:25:04Z",
+        "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.17.5",
+        "version": "v1.17.5"
       },
       "name": "bootc",
       "previous": {
-        "publishedAt": "2026-10-28T13:25:09Z",
-        "version": "v1.17.3"
+        "publishedAt": "2026-11-04T20:31:44Z",
+        "version": "v1.17.4"
       },
       "releaseCount": 20,
       "repository": "bootc-dev/bootc",

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-27T19:26:13.081Z",
+  "generatedAt": "2026-11-20T21:49:01.538Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 452772299,
+      "name": "v0.63.0",
+      "notes": "## What's Changed\n* Update fluxcd/pkg dependencies by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1094\n* operator: allow configuring watch configs selector via env var by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1095\n* lkm: fix comment about subject anonymization algorithm by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1098\n* build(deps): bump the actions group across 1 directory with 5 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1100\n* build(deps): bump minimatch and eslint in /web by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1104\n* operator: introduce ArtifactGenerator namespace management by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1101\n* operator: propagate `ExternalArtifact.status.exportedInputs` to RSIP by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1102\n* api: escape CEL reserved keyword in RSIP selectors validation by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1105\n* operator: change to pagination when listing all Flux CRs by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1106\n* build(deps): bump the cli-tools group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1096\n* Update dependencies by @stefanprodan in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1107\n* Release v0.63.0 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1108\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.62.1...v0.63.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-20T14:11:28Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.63.0",
+      "version": "v0.63.0"
+    },
     {
       "channel": "stable",
       "draft": false,
