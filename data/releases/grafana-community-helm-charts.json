@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-20T10:00:18.520Z",
+  "generatedAt": "2026-11-21T09:47:20.584Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 453370871,
+      "name": "loki-21.4.3",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update dependency PyYAML to v6.0.4 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1017\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.4.2...loki-21.4.3",
+      "prerelease": false,
+      "publishedAt": "2026-11-21T02:01:46Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.4.3",
+      "version": "loki-21.4.3"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-11-10T20:56:57Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.1.2",
       "version": "loki-21.1.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 440699866,
-      "name": "grafana-14.4.1",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [tempo-distributed] Size memcached with -m, -I and -c by default by @juraj-michalek-deel in https://github.com/grafana-community/helm-charts/pull/967\n* [tempo-distributed] Optionally derive memcached resources from allocatedMemory by @juraj-michalek-deel in https://github.com/grafana-community/helm-charts/pull/975\n* [tempo-distributed] render the shared memcached through the per-role helpers by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/971\n* [tempo-distributed] add memcachedParquetPage, a dedicated cache for parquet pages by @madaraszg-tulip in https://github.com/grafana-community/helm-charts/pull/973\n* [loki] Switch gateway image to nginx/nginx-unprivileged by @matphilippe in https://github.com/grafana-community/helm-charts/pull/977\n* [synthetic-monitoring-agent] Update docker.io/grafana/synthetic-monitoring-agent Docker tag to v0.70.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/979\n* [CI] Update azure/setup-helm action to v5.1.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/980\n* [loki] Enable ingester zone awareness on the ruler by @hendrikkiedrowski in https://github.com/grafana-community/helm-charts/pull/976\n* [tempo-distributed] Apply tempo.revisionHistoryLimit to the metrics-generator StatefulSet by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/983\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.3.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/984\n\n## New Contributors\n* @juraj-michalek-deel made their first contribution in https://github.com/grafana-community/helm-charts/pull/967\n* @matphilippe made their first contribution in https://github.com/grafana-community/helm-charts/pull/977\n* @hendrikkiedrowski made their first contribution in https://github.com/grafana-community/helm-charts/pull/976\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-14.4.0...grafana-14.4.1",
-      "prerelease": false,
-      "publishedAt": "2026-11-10T17:45:20Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.4.1",
-      "version": "grafana-14.4.1"
     }
   ],
   "schemaVersion": 1,

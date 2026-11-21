@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-20T10:00:17.778Z",
+  "generatedAt": "2026-11-21T09:47:20.000Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 453211818,
+      "name": "pyroscope-2.4.4",
+      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/8f3e69acc5465f2ac9f8365a46df69c2e9fdb36d\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.4.4",
+      "prerelease": false,
+      "publishedAt": "2026-11-20T21:49:33Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.4",
+      "version": "pyroscope-2.4.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-26T13:39:08Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.1.1",
       "version": "mimir-distributed-6.1.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 424071666,
-      "name": "mimir-distributed-6.2.2",
-      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/7966f863acabfaba112f257fcb5d6841fe712ad2\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.2.2",
-      "prerelease": false,
-      "publishedAt": "2026-10-26T09:47:40Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.2.2",
-      "version": "mimir-distributed-6.2.2"
     }
   ],
   "schemaVersion": 1,
