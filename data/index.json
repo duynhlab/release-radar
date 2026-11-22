@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T09:47:40.555Z",
+  "generatedAt": "2026-11-22T20:44:12.018Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1019,19 +1019,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 452772299,
-        "name": "v0.63.0",
+        "id": 454412533,
+        "name": "v0.63.1",
         "prerelease": false,
-        "publishedAt": "2026-11-20T14:11:28Z",
-        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.63.0",
-        "version": "v0.63.0"
+        "publishedAt": "2026-11-22T11:53:14Z",
+        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.63.1",
+        "version": "v0.63.1"
       },
       "name": "Flux Operator",
       "previous": {
-        "publishedAt": "2026-10-27T15:35:48Z",
-        "version": "v0.62.1"
+        "publishedAt": "2026-11-20T14:11:28Z",
+        "version": "v0.63.0"
       },
-      "releaseCount": 18,
+      "releaseCount": 19,
       "repository": "controlplaneio-fluxcd/flux-operator",
       "tags": [
         "gitops",

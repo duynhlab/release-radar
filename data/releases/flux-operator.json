@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-20T21:49:01.538Z",
+  "generatedAt": "2026-11-22T20:43:37.140Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 454412533,
+      "name": "v0.63.1",
+      "notes": "## What's Changed\n* Release v0.63.1 by @matheuscscp in https://github.com/controlplaneio-fluxcd/flux-operator/pull/1109\n\n\n**Full Changelog**: https://github.com/controlplaneio-fluxcd/flux-operator/compare/v0.63.0...v0.63.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-22T11:53:14Z",
+      "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.63.1",
+      "version": "v0.63.1"
+    },
     {
       "channel": "stable",
       "draft": false,
