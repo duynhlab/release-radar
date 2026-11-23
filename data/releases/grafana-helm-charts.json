@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-21T09:47:20.000Z",
+  "generatedAt": "2026-11-23T10:44:40.795Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 455108842,
+      "name": "rollout-operator-0.55.0",
+      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] put the common labels on the pod template by @DrFaust92 in https://github.com/grafana/helm-charts/pull/4235\n\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/beyla-1.16.19...rollout-operator-0.55.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-23T07:34:05Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.55.0",
+      "version": "rollout-operator-0.55.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-26T13:44:14Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.2",
       "version": "pyroscope-2.4.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 424296364,
-      "name": "mimir-distributed-6.1.1",
-      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/4f55f5b0e7a6d9c3347945d8a9fc9027b5134b86\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.1.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-26T13:39:08Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.1.1",
-      "version": "mimir-distributed-6.1.1"
     }
   ],
   "schemaVersion": 1,
