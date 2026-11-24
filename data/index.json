@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T10:45:11.385Z",
+  "generatedAt": "2026-11-24T01:40:59.886Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -211,17 +211,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 435549638,
-        "name": "v1.13.9",
+        "id": 455865490,
+        "name": "v1.13.10",
         "prerelease": false,
-        "publishedAt": "2026-11-05T19:09:38Z",
-        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.9",
-        "version": "v1.13.9"
+        "publishedAt": "2026-11-23T19:10:12Z",
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.10",
+        "version": "v1.13.10"
       },
       "name": "OpenTofu",
       "previous": {
-        "publishedAt": "2026-11-05T19:09:15Z",
-        "version": "v1.12.12"
+        "publishedAt": "2026-11-05T19:09:38Z",
+        "version": "v1.13.9"
       },
       "releaseCount": 20,
       "repository": "opentofu/opentofu",
@@ -453,17 +453,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 448694326,
-        "name": "v42.4.1",
+        "id": 455647006,
+        "name": "v42.4.2",
         "prerelease": false,
-        "publishedAt": "2026-11-17T13:48:40Z",
-        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.4.1",
-        "version": "v42.4.1"
+        "publishedAt": "2026-11-23T15:56:29Z",
+        "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.4.2",
+        "version": "v42.4.2"
       },
       "name": "Traefik Helm Chart",
       "previous": {
-        "publishedAt": "2026-11-12T16:04:38Z",
-        "version": "v42.4.0"
+        "publishedAt": "2026-11-17T13:48:40Z",
+        "version": "v42.4.1"
       },
       "releaseCount": 20,
       "repository": "traefik/traefik-helm-chart",
@@ -513,17 +513,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 436901484,
-        "name": "v1.156.0",
+        "id": 453152297,
+        "name": "v1.157.0",
         "prerelease": false,
-        "publishedAt": "2026-11-09T10:02:46Z",
-        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.156.0",
-        "version": "v1.156.0"
+        "publishedAt": "2026-11-23T12:36:45Z",
+        "url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.157.0",
+        "version": "v1.157.0"
       },
       "name": "VictoriaMetrics",
       "previous": {
-        "publishedAt": "2026-10-26T13:40:31Z",
-        "version": "v1.155.0"
+        "publishedAt": "2026-11-09T10:02:46Z",
+        "version": "v1.156.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/VictoriaMetrics",
@@ -641,17 +641,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 444307886,
-        "name": "victoria-logs-single-0.13.13",
+        "id": 455460644,
+        "name": "victoria-metrics-single-0.52.0",
         "prerelease": false,
-        "publishedAt": "2026-11-13T14:10:23Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-single-0.13.13",
-        "version": "victoria-logs-single-0.13.13"
+        "publishedAt": "2026-11-23T13:24:27Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.52.0",
+        "version": "victoria-metrics-single-0.52.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-13T14:10:21Z",
-        "version": "victoria-logs-multilevel-0.2.11"
+        "publishedAt": "2026-11-23T13:24:25Z",
+        "version": "victoria-metrics-k8s-stack-0.99.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 455108842,
-        "name": "rollout-operator-0.55.0",
+        "id": 456185106,
+        "name": "rollout-operator-0.56.0",
         "prerelease": false,
-        "publishedAt": "2026-11-23T07:34:05Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.55.0",
-        "version": "rollout-operator-0.55.0"
+        "publishedAt": "2026-11-24T01:06:36Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.56.0",
+        "version": "rollout-operator-0.56.0"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-20T21:49:33Z",
-        "version": "pyroscope-2.4.4"
+        "publishedAt": "2026-11-23T19:46:21Z",
+        "version": "k8s-injection-controller-0.4.0"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 455178090,
-        "name": "loki-21.5.0",
+        "id": 456001399,
+        "name": "loki-21.5.1",
         "prerelease": false,
-        "publishedAt": "2026-11-23T08:55:50Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.5.0",
-        "version": "loki-21.5.0"
+        "publishedAt": "2026-11-23T21:09:45Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.5.1",
+        "version": "loki-21.5.1"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-23T08:55:12Z",
-        "version": "tempo-distributed-3.30.0"
+        "publishedAt": "2026-11-23T21:03:32Z",
+        "version": "synthetic-monitoring-agent-1.25.2"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1772,19 +1772,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 431624920,
-        "name": "tempo v13.4.2",
+        "id": 455566664,
+        "name": "tempo v13.5.0",
         "prerelease": false,
-        "publishedAt": "2026-11-02T15:24:34Z",
-        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.4.2",
-        "version": "v13.4.2"
+        "publishedAt": "2026-11-23T14:51:24Z",
+        "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.5.0",
+        "version": "v13.5.0"
       },
       "name": "Tempo Datasource",
       "previous": {
-        "publishedAt": "2026-10-27T21:17:19Z",
-        "version": "v13.4.1"
+        "publishedAt": "2026-11-02T15:24:34Z",
+        "version": "v13.4.2"
       },
-      "releaseCount": 14,
+      "releaseCount": 15,
       "repository": "grafana/grafana-tempo-datasource",
       "tags": [
         "traces",
@@ -1990,19 +1990,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 452839695,
-        "name": "pg_duckdb v1.2.1",
+        "id": 455477683,
+        "name": "pg_duckdb v1.2.2",
         "prerelease": false,
-        "publishedAt": "2026-11-20T15:14:32Z",
-        "url": "https://github.com/duckdb/pg_duckdb/releases/tag/v1.2.1",
-        "version": "v1.2.1"
+        "publishedAt": "2026-11-23T14:09:36Z",
+        "url": "https://github.com/duckdb/pg_duckdb/releases/tag/v1.2.2",
+        "version": "v1.2.2"
       },
       "name": "pg_duckdb",
       "previous": {
-        "publishedAt": "2026-11-03T07:30:29Z",
-        "version": "v1.2.0"
+        "publishedAt": "2026-11-20T15:14:32Z",
+        "version": "v1.2.1"
       },
-      "releaseCount": 8,
+      "releaseCount": 9,
       "repository": "duckdb/pg_duckdb",
       "tags": [
         "postgresql",
@@ -2270,17 +2270,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 448800337,
-        "name": "2026.11.1",
+        "id": 455444054,
+        "name": "2026.11.2",
         "prerelease": false,
-        "publishedAt": "2026-11-17T15:11:01Z",
-        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.11.1",
-        "version": "2026.11.1"
+        "publishedAt": "2026-11-23T13:10:20Z",
+        "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.11.2",
+        "version": "2026.11.2"
       },
       "name": "cloudflared",
       "previous": {
-        "publishedAt": "2026-11-12T12:23:45Z",
-        "version": "2026.11.0"
+        "publishedAt": "2026-11-17T15:11:01Z",
+        "version": "2026.11.1"
       },
       "releaseCount": 20,
       "repository": "cloudflare/cloudflared",
@@ -2710,19 +2710,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 443615923,
-        "name": "v0.43.0",
+        "id": 456085642,
+        "name": "v0.44.0",
         "prerelease": false,
-        "publishedAt": "2026-11-12T23:09:31Z",
-        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.43.0",
-        "version": "v0.43.0"
+        "publishedAt": "2026-11-23T22:44:34Z",
+        "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.44.0",
+        "version": "v0.44.0"
       },
       "name": "agent-browser",
       "previous": {
-        "publishedAt": "2026-11-10T00:37:19Z",
-        "version": "v0.42.0"
+        "publishedAt": "2026-11-12T23:09:31Z",
+        "version": "v0.43.0"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "vercel-labs/agent-browser",
       "tags": [
         "ai",

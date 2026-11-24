@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-02T22:47:06.563Z",
+  "generatedAt": "2026-11-24T01:40:41.134Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 455566664,
+      "name": "tempo v13.5.0",
+      "notes": "## 13.5.0\n\n- Allow multiple TraceQL queries ([#272](https://github.com/grafana/grafana-tempo-datasource/pull/272))\n- Fix streaming on Grafana 12.3 ([#310](https://github.com/grafana/grafana-tempo-datasource/pull/310))\n- Add routes to plugin.json ([#316](https://github.com/grafana/grafana-tempo-datasource/pull/316))\n- Harden header forwarding for streaming queries so they match non-streaming queries, including Team LBAC headers ([#277](https://github.com/grafana/grafana-tempo-datasource/pull/277))\n- Compile the backend with the FIPS 140-3 crypto module ([#303](https://github.com/grafana/grafana-tempo-datasource/pull/303))\n- Fix security vulnerability in `glob` by updating to v14 ([#293](https://github.com/grafana/grafana-tempo-datasource/pull/293))\n- Update backend dependencies ([#289](https://github.com/grafana/grafana-tempo-datasource/pull/289), [#304](https://github.com/grafana/grafana-tempo-datasource/pull/304))\n- Update node.js to v24.22.2 ([#295](https://github.com/grafana/grafana-tempo-datasource/pull/295))",
+      "prerelease": false,
+      "publishedAt": "2026-11-23T14:51:24Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.5.0",
+      "version": "v13.5.0"
+    },
     {
       "channel": "stable",
       "draft": false,

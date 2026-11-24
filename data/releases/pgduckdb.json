@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-20T21:49:20.120Z",
+  "generatedAt": "2026-11-24T01:40:44.802Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 455477683,
+      "name": "pg_duckdb v1.2.2",
+      "notes": "## DuckDB version: v2.0.1\r\n\r\n## What's Changed\r\n* Add FS impl for CA bundle loading by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1147\r\n* Add Postgres 19 Docker and Release builds by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1148\r\n* Release v1.2.2 by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1149\r\n\r\n\r\n**Full Changelog**: https://github.com/duckdb/pg_duckdb/compare/v1.2.1...v1.2.2",
+      "prerelease": false,
+      "publishedAt": "2026-11-23T14:09:36Z",
+      "url": "https://github.com/duckdb/pg_duckdb/releases/tag/v1.2.2",
+      "version": "v1.2.2"
+    },
     {
       "channel": "stable",
       "draft": false,
