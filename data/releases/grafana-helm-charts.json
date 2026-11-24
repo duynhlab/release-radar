@@ -1,6 +1,50 @@
 {
-  "generatedAt": "2026-11-20T10:00:17.778Z",
+  "generatedAt": "2026-11-24T01:40:39.158Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 456185106,
+      "name": "rollout-operator-0.56.0",
+      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] default to a restricted security context by @DrFaust92 in https://github.com/grafana/helm-charts/pull/4236\n\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/k8s-injection-controller-0.4.0...rollout-operator-0.56.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T01:06:36Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.56.0",
+      "version": "rollout-operator-0.56.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 455910884,
+      "name": "k8s-injection-controller-0.4.0",
+      "notes": "Kubernetes admission controller for Grafana Beyla SDK auto-instrumentation.\n\nSource commit: https://github.com/grafana/k8s-injection-controller/commit/9ff8ae6ec81c6b6333d3e8793e5181fcf39eebcb\n\nTag on source: https://github.com/grafana/k8s-injection-controller/releases/tag/k8s-injection-controller-0.4.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-23T19:46:21Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-injection-controller-0.4.0",
+      "version": "k8s-injection-controller-0.4.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 455108842,
+      "name": "rollout-operator-0.55.0",
+      "notes": "Grafana rollout-operator\n\n## What's Changed\n* [rollout-operator] put the common labels on the pod template by @DrFaust92 in https://github.com/grafana/helm-charts/pull/4235\n\n\n**Full Changelog**: https://github.com/grafana/helm-charts/compare/beyla-1.16.19...rollout-operator-0.55.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-23T07:34:05Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/rollout-operator-0.55.0",
+      "version": "rollout-operator-0.55.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 453211818,
+      "name": "pyroscope-2.4.4",
+      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/8f3e69acc5465f2ac9f8365a46df69c2e9fdb36d\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.4.4",
+      "prerelease": false,
+      "publishedAt": "2026-11-20T21:49:33Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.4",
+      "version": "pyroscope-2.4.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -176,50 +220,6 @@
       "publishedAt": "2026-10-29T17:12:19Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.9.4",
       "version": "alloy-operator-0.9.4"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 427068636,
-      "name": "alloy-1.14.4",
-      "notes": "Grafana Alloy\n\nSource commit: https://github.com/grafana/alloy/commit/192cd6e37327aecb51ec697f2c9dceeda3bfb953\n\nTag on source: https://github.com/grafana/alloy/releases/tag/helm-chart/1.14.4",
-      "prerelease": false,
-      "publishedAt": "2026-10-28T18:56:58Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-1.14.4",
-      "version": "alloy-1.14.4"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 424301801,
-      "name": "pyroscope-2.4.2",
-      "notes": "A horizontally scalable, highly available, multi-tenant continuous profiling database.\n\nSource commit: https://github.com/grafana/pyroscope/commit/4ba0467a9810bf5a5248e06ff8b7ef79fa8fb1da\n\nTag on source: https://github.com/grafana/pyroscope/releases/tag/pyroscope-2.4.2",
-      "prerelease": false,
-      "publishedAt": "2026-10-26T13:44:14Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/pyroscope-2.4.2",
-      "version": "pyroscope-2.4.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 424296364,
-      "name": "mimir-distributed-6.1.1",
-      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/4f55f5b0e7a6d9c3347945d8a9fc9027b5134b86\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.1.1",
-      "prerelease": false,
-      "publishedAt": "2026-10-26T13:39:08Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.1.1",
-      "version": "mimir-distributed-6.1.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 424071666,
-      "name": "mimir-distributed-6.2.2",
-      "notes": "Grafana Mimir\n\nSource commit: https://github.com/grafana/mimir/commit/7966f863acabfaba112f257fcb5d6841fe712ad2\n\nTag on source: https://github.com/grafana/mimir/releases/tag/mimir-distributed-6.2.2",
-      "prerelease": false,
-      "publishedAt": "2026-10-26T09:47:40Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/mimir-distributed-6.2.2",
-      "version": "mimir-distributed-6.2.2"
     }
   ],
   "schemaVersion": 1,

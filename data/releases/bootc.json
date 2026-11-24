@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-04T20:50:04.540Z",
+  "generatedAt": "2026-11-20T21:49:33.184Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 453132643,
+      "name": "Release v1.17.5",
+      "notes": "## bootc 1.17.5\r\n\r\nThis release fixes a security issue with sealed composefs where `meta.json` on disk state could incorrectly override UKI-defined verity enforcement; additionally we hardened to ensure that even systemd's emergency shell would still not mount root as a fallback on failure to verify. This builds on top of https://github.com/composefs/composefs-rs/security/advisories/GHSA-8j99-gv74-3j76\r\n\r\n- https://github.com/bootc-dev/bootc/security/advisories/GHSA-9889-q45r-84v7\r\n- https://github.com/bootc-dev/bootc/security/advisories/GHSA-g77m-w5pv-gphg\r\n\r\n### Changes\r\n* repart: Let systemd-repart size the generated root partition by @LorbusChris in https://github.com/bootc-dev/bootc/pull/2532\r\n* aboot support followup by @alexlarsson in https://github.com/bootc-dev/bootc/pull/2593\r\n* generator: Create /var/lib/systemd early instead of reordering tmpfiles by @jmarrero-bot in https://github.com/bootc-dev/bootc/pull/2628\r\n* initramfs: Enforce fs-verity for strict composefs boots by @jmarrero in https://github.com/bootc-dev/bootc/pull/2629\r\n* ci: Cover btrfs on Fedora 44 by @jmarrero-bot in https://github.com/bootc-dev/bootc/pull/2644\r\n* chore(deps): update rust by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2639\r\n* aboot: Discover correct ukiboot EFI vendor directory by @alexlarsson in https://github.com/bootc-dev/bootc/pull/2623\r\n* composefs: Keep the boot entries' os_id on rollback by @krissedout in https://github.com/bootc-dev/bootc/pull/2631\r\n* composefs: Replace a staged UKI's boot entries by @krissedout in https://github.com/bootc-dev/bootc/pull/2630\r\n* initramfs: Explain how to recover a strict boot without fs-verity by @jmarrero-bot in https://github.com/bootc-dev/bootc/pull/2636\r\n* composefs: Use an XBOOTLDR partition with systemd-boot by @krissedout in https://github.com/bootc-dev/bootc/pull/2573\r\n* packaging: Conflict with older bootc in system-reinstall-bootc by @jeckersb in https://github.com/bootc-dev/bootc/pull/2648\r\n* docs: Describe systemd-sysext and confext as distribution-dependent by @jmarrero-bot in https://github.com/bootc-dev/bootc/pull/2649\r\n* composefs: Write Type 1 boot entries in one place by @krissedout in https://github.com/bootc-dev/bootc/pull/2645\r\n* tests: Cap oci-delta's bsdiff size in the switch-from-delta test by @jmarrero-bot in https://github.com/bootc-dev/bootc/pull/2635\r\n* etc-merge: Fix fs-verity only diff on files by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2650\r\n* etc-merge: Minor refactor by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2656\r\n* chore(deps): update rust by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2654\r\n* ci: Stop testing grub-cc by @ckyrouac in https://github.com/bootc-dev/bootc/pull/2665\r\n* initramfs: Require bootc-root-setup for initrd-root-fs.target by @jmarrero in https://github.com/bootc-dev/bootc/pull/2667\r\n* Changed the moved repo link to the current one by @Theerej-C in https://github.com/bootc-dev/bootc/pull/2666\r\n* ostree-ext: override root dir metadata on merge commit by @Rolv-Apneseth in https://github.com/bootc-dev/bootc/pull/2571\r\n* Release 1.17.5 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2641\r\n\r\n### Assets\r\n\r\n- `bootc-1.17.5-vendor.tar.zstd` - Vendored dependencies archive\r\n- `bootc-1.17.5.tar.zstd` - Source archive\r\n\r\n### New Contributors\r\n* @LorbusChris made their first contribution in https://github.com/bootc-dev/bootc/pull/2532\r\n* @jmarrero-bot made their first contribution in https://github.com/bootc-dev/bootc/pull/2628\r\n* @Theerej-C made their first contribution in https://github.com/bootc-dev/bootc/pull/2666\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bootc/compare/v1.17.4...v1.17.5",
+      "prerelease": false,
+      "publishedAt": "2026-11-20T20:25:04Z",
+      "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.17.5",
+      "version": "v1.17.5"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-05-01T01:07:52Z",
       "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.15.2",
       "version": "v1.15.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 308602288,
-      "name": "Release v1.15.1",
-      "notes": "## bootc 1.15.1\r\n\r\n### Changes\r\n\r\nThe primary goal of this bugfix release is to support installing on Intel VROC systems. We otherwise have a variety of smaller bugfixes, and one effective feature in `--karg-delete`.\r\n\r\nThanks to all contributors!\r\n\r\n* fix(install): set DM_DISABLE_UDEV=1 to prevent dm semaphore deadlock in container IPC namespace by @andrewdunndev in https://github.com/bootc-dev/bootc/pull/2090\r\n* BLS shared entries GC fix by @Johan-Liebert1 in https://github.com/bootc-dev/bootc/pull/2108\r\n* test: skip OSCI gating AVC test by @henrywang in https://github.com/bootc-dev/bootc/pull/2106\r\n* system-reinstall-bootc: add progress indication during install steps by @judavi in https://github.com/bootc-dev/bootc/pull/2091\r\n* cli: Gate IPC namespace entrance on CAP_SYS_ADMIN by @cgwalters in https://github.com/bootc-dev/bootc/pull/2117\r\n* install: Add `--karg-delete` by @hone in https://github.com/bootc-dev/bootc/pull/2105\r\n* cli: Initialize bootc storage before upgrade --check by @cgwalters in https://github.com/bootc-dev/bootc/pull/2118\r\n* composefs: add a systemd.mount-extra kernel argument to the BLS boot entry by @henrywang in https://github.com/bootc-dev/bootc/pull/2121\r\n* fix(deps): update rust by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2126\r\n* install: Enable installing to multi device parents by @ckyrouac in https://github.com/bootc-dev/bootc/pull/1911\r\n* sysext: Add fast path dev flow by @cgwalters in https://github.com/bootc-dev/bootc/pull/2127\r\n* blockdev: Handle ESP discovery on Intel VROC RAID devices by @ckyrouac in https://github.com/bootc-dev/bootc/pull/2129\r\n* Release 1.15.1 by @bootc-bot[bot] in https://github.com/bootc-dev/bootc/pull/2140\r\n\r\n## New Contributors\r\n* @judavi made their first contribution in https://github.com/bootc-dev/bootc/pull/2091\r\n* @hone made their first contribution in https://github.com/bootc-dev/bootc/pull/2105\r\n\r\n**Full Changelog**: https://github.com/bootc-dev/bootc/compare/v1.15.0...v1.15.1\r\n\r\n### Assets\r\n\r\n- `bootc-1.15.1-vendor.tar.zstd` - Vendored dependencies archive\r\n- `bootc-1.15.1.tar.zstd` - Source archive",
-      "prerelease": false,
-      "publishedAt": "2026-04-14T00:33:20Z",
-      "url": "https://github.com/bootc-dev/bootc/releases/tag/v1.15.1",
-      "version": "v1.15.1"
     }
   ],
   "schemaVersion": 1,

@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-03T09:31:26.229Z",
+  "generatedAt": "2026-11-24T01:40:44.802Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 455477683,
+      "name": "pg_duckdb v1.2.2",
+      "notes": "## DuckDB version: v2.0.1\r\n\r\n## What's Changed\r\n* Add FS impl for CA bundle loading by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1147\r\n* Add Postgres 19 Docker and Release builds by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1148\r\n* Release v1.2.2 by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1149\r\n\r\n\r\n**Full Changelog**: https://github.com/duckdb/pg_duckdb/compare/v1.2.1...v1.2.2",
+      "prerelease": false,
+      "publishedAt": "2026-11-23T14:09:36Z",
+      "url": "https://github.com/duckdb/pg_duckdb/releases/tag/v1.2.2",
+      "version": "v1.2.2"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 452839695,
+      "name": "pg_duckdb v1.2.1",
+      "notes": "## DuckDB version: v2.0.1\r\n\r\n## What's Changed\r\n* Add sqlsmith fuzzy test by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1117\r\n* Add a test with materialized view and a numeric by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1118\r\n* Fix buffer over-read with parallel workers by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1119\r\n* docs: note the C++17 compiler requirement for building (#896) by @wsourabh in https://github.com/duckdb/pg_duckdb/pull/1092\r\n* Support nested fixed-length arrays (#602) by @wsourabh in https://github.com/duckdb/pg_duckdb/pull/1091\r\n* Allow lightweight git tags in Docker workflow by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1122\r\n* Redact suspected secrets in server log by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1121\r\n* Do not track sensitive DDL in pg_stat_statements by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1123\r\n* Add schedulecheck run to CI by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1124\r\n* Prevent exception in destructor on COPY cancel by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1125\r\n* Do not print warnings for function fallbacks by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1126\r\n* Fix use-after-free in MakeDirName by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1127\r\n* Support converting NUMERIC params to DuckDB values by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1128\r\n* Improve float4 and float8 conversion by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1129\r\n* Add a check for unsupported PREPARE-EXECUTE by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1130\r\n* Add UTF-8 check for input strings by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1131\r\n* Hold the lock when creating DuckdbScanContext by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1132\r\n* Correctly set pending flags on worker errors by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1133\r\n* fix: set different node IDs for INSERT INTO SELECT plans by @ggnmstr in https://github.com/duckdb/pg_duckdb/pull/1108\r\n* Convert TRUNCATE exceptions into errors by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1134\r\n* Add a check for CREATE TABLE AS EXECUTE by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1135\r\n* Add a check for unsupported INSERTs by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1136\r\n* Allow Postgres to process interrupts for parent nodes by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1137\r\n* Release extension lock after the load by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1139\r\n* Add CI test runs under sanitizers by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1138\r\n* Fix transactions for ON COMMIT DELETE ROWS by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1140\r\n* Release DuckDB results on transaction abort by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1141\r\n* Add CI tests with Citus, Timescale and pgvector by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1142\r\n* Update DuckDB to 2.0.1 by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1144\r\n* Release v1.2.1 by @staticlibs in https://github.com/duckdb/pg_duckdb/pull/1145\r\n\r\n## New Contributors\r\n* @wsourabh made their first contribution in https://github.com/duckdb/pg_duckdb/pull/1092\r\n\r\n**Full Changelog**: https://github.com/duckdb/pg_duckdb/compare/v1.2.0...v1.2.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-20T15:14:32Z",
+      "url": "https://github.com/duckdb/pg_duckdb/releases/tag/v1.2.1",
+      "version": "v1.2.1"
+    },
     {
       "channel": "stable",
       "draft": false,
