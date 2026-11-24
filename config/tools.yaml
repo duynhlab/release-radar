@@ -1380,6 +1380,20 @@ tools:
       includePrerelease: false
       tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
 
+  - id: kube-image-keeper
+    name: kube-image-keeper
+    category: kubernetes
+    repository: enix/kube-image-keeper
+    description: Container image routing, mirroring and replication for Kubernetes
+    tags:
+      - kubernetes
+      - containers
+      - registry
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
   - id: bootc
     name: bootc
     category: iac
