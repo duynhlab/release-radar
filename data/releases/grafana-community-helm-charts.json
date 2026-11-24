@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-24T01:40:39.811Z",
+  "generatedAt": "2026-11-24T10:19:31.815Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 456224377,
+      "name": "loki-21.6.0",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [tempo-distributed] Update tempo-distributed dependency non-major updates by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1022\n* [loki] Update rollout-operator Docker tag to v0.56.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1023\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.5.1...loki-21.6.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T02:11:48Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.6.0",
+      "version": "loki-21.6.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 456220306,
+      "name": "tempo-distributed-3.30.1",
+      "notes": "Grafana Tempo in MicroService mode\n\n## What's Changed\n* [loki] Update rollout-operator Docker tag to v0.55.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1018\n* [synthetic-monitoring-agent] Update docker.io/grafana/synthetic-monitoring-agent Docker tag to v0.71.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1021\n* [loki] Update docker.io/nginx/nginx-unprivileged Docker tag to v1.31.10-alpine3.24 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1020\n* [tempo-distributed] Update tempo-distributed dependency non-major updates by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1022\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-distributed-3.30.0...tempo-distributed-3.30.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T02:05:22Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.30.1",
+      "version": "tempo-distributed-3.30.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-11-12T23:17:04Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-distributed-3.29.0",
       "version": "tempo-distributed-3.29.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 441349274,
-      "name": "loki-21.2.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Allow goMemLimitFactor and gogc of 0 to disable injection by @jlenos in https://github.com/grafana-community/helm-charts/pull/988\n\n## New Contributors\n* @jlenos made their first contribution in https://github.com/grafana-community/helm-charts/pull/988\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.2.0...loki-21.2.1",
-      "prerelease": false,
-      "publishedAt": "2026-11-11T07:25:19Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.2.1",
-      "version": "loki-21.2.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 440953618,
-      "name": "loki-21.2.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Add opt-in dataobj-builder component for Loki 4.0 by @LukoJy3D in https://github.com/grafana-community/helm-charts/pull/981\n\n## New Contributors\n* @LukoJy3D made their first contribution in https://github.com/grafana-community/helm-charts/pull/981\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.1.3...loki-21.2.0",
-      "prerelease": false,
-      "publishedAt": "2026-11-10T21:49:34Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.2.0",
-      "version": "loki-21.2.0"
     }
   ],
   "schemaVersion": 1,

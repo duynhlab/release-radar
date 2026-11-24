@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T01:40:59.886Z",
+  "generatedAt": "2026-11-24T10:20:18.825Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1278,19 +1278,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 420571068,
-        "name": "Release v0.23.1",
+        "id": 456342027,
+        "name": "Release v0.24.0",
         "prerelease": false,
-        "publishedAt": "2026-10-22T10:14:00Z",
-        "url": "https://github.com/grafana/tempo-operator/releases/tag/v0.23.1",
-        "version": "v0.23.1"
+        "publishedAt": "2026-11-24T05:26:50Z",
+        "url": "https://github.com/grafana/tempo-operator/releases/tag/v0.24.0",
+        "version": "v0.24.0"
       },
       "name": "Tempo Operator",
       "previous": {
-        "publishedAt": "2026-10-20T14:59:50Z",
-        "version": "v0.23.0"
+        "publishedAt": "2026-10-22T10:14:00Z",
+        "version": "v0.23.1"
       },
-      "releaseCount": 13,
+      "releaseCount": 14,
       "repository": "grafana/tempo-operator",
       "tags": [
         "traces",
@@ -1650,17 +1650,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 440700255,
-        "name": "v2.3.0",
+        "id": 456575867,
+        "name": "v2.4.0",
         "prerelease": false,
-        "publishedAt": "2026-11-10T17:45:47Z",
-        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v2.3.0",
-        "version": "v2.3.0"
+        "publishedAt": "2026-11-24T10:01:47Z",
+        "url": "https://github.com/grafana/mcp-grafana/releases/tag/v2.4.0",
+        "version": "v2.4.0"
       },
       "name": "Grafana MCP Server",
       "previous": {
-        "publishedAt": "2026-11-02T13:00:31Z",
-        "version": "v2.2.0"
+        "publishedAt": "2026-11-10T17:45:47Z",
+        "version": "v2.3.0"
       },
       "releaseCount": 20,
       "repository": "grafana/mcp-grafana",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 456001399,
-        "name": "loki-21.5.1",
+        "id": 456224377,
+        "name": "loki-21.6.0",
         "prerelease": false,
-        "publishedAt": "2026-11-23T21:09:45Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.5.1",
-        "version": "loki-21.5.1"
+        "publishedAt": "2026-11-24T02:11:48Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.6.0",
+        "version": "loki-21.6.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-23T21:03:32Z",
-        "version": "synthetic-monitoring-agent-1.25.2"
+        "publishedAt": "2026-11-24T02:05:22Z",
+        "version": "tempo-distributed-3.30.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
@@ -1950,6 +1950,35 @@
         "postgresql",
         "extension",
         "pgaudit"
+      ]
+    },
+    {
+      "category": "database",
+      "description": "Query performance monitoring and statistics collection for PostgreSQL",
+      "documentation": "https://docs.percona.com/pg-stat-monitor/",
+      "homepage": "https://docs.percona.com/pg-stat-monitor/",
+      "id": "pg-stat-monitor",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 452538037,
+        "name": "2.4.1",
+        "prerelease": false,
+        "publishedAt": "2026-11-20T10:13:48Z",
+        "url": "https://github.com/percona/pg_stat_monitor/releases/tag/2.4.1",
+        "version": "2.4.1"
+      },
+      "name": "pg_stat_monitor",
+      "previous": {
+        "publishedAt": "2026-09-08T14:23:31Z",
+        "version": "2.4.0"
+      },
+      "releaseCount": 10,
+      "repository": "percona/pg_stat_monitor",
+      "tags": [
+        "postgresql",
+        "monitoring",
+        "performance"
       ]
     },
     {
@@ -2544,6 +2573,34 @@
       "tags": [
         "containers",
         "cli"
+      ]
+    },
+    {
+      "category": "iac",
+      "description": "Builds operating system images for physical machines, virtual machines, and clouds",
+      "homepage": "https://osbuild.org",
+      "id": "image-builder",
+      "latest": {
+        "channel": "stable",
+        "draft": false,
+        "id": 446631225,
+        "name": "91.0.0",
+        "prerelease": false,
+        "publishedAt": "2026-11-16T05:11:12Z",
+        "url": "https://github.com/osbuild/image-builder/releases/tag/v91.0.0",
+        "version": "v91.0.0"
+      },
+      "name": "Image Builder",
+      "previous": {
+        "publishedAt": "2026-11-09T05:10:53Z",
+        "version": "v90.0.0"
+      },
+      "releaseCount": 10,
+      "repository": "osbuild/image-builder",
+      "tags": [
+        "os",
+        "images",
+        "virtualization"
       ]
     },
     {

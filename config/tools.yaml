@@ -1040,6 +1040,22 @@ tools:
       includePrerelease: false
       tagPattern: "^\\d+\\.\\d+(\\.\\d+)?$"
 
+  - id: pg-stat-monitor
+    name: pg_stat_monitor
+    category: database
+    repository: percona/pg_stat_monitor
+    description: Query performance monitoring and statistics collection for PostgreSQL
+    homepage: https://docs.percona.com/pg-stat-monitor/
+    documentation: https://docs.percona.com/pg-stat-monitor/
+    tags:
+      - postgresql
+      - monitoring
+      - performance
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^\\d+\\.\\d+\\.\\d+$"
+
   - id: pgcli
     name: pgcli
     category: database
@@ -1344,6 +1360,21 @@ tools:
     tags:
       - containers
       - cli
+    release:
+      strategy: github-releases
+      includePrerelease: false
+      tagPattern: "^v\\d+\\.\\d+\\.\\d+$"
+
+  - id: image-builder
+    name: Image Builder
+    category: iac
+    repository: osbuild/image-builder
+    description: Builds operating system images for physical machines, virtual machines, and clouds
+    homepage: https://osbuild.org
+    tags:
+      - os
+      - images
+      - virtualization
     release:
       strategy: github-releases
       includePrerelease: false
