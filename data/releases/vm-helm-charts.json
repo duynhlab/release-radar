@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-24T01:40:18.211Z",
+  "generatedAt": "2026-11-24T23:28:57.022Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 457274088,
+      "name": "victoria-metrics-mcp-0.5.0",
+      "notes": "# Release notes for version 0.5.0\n\n**Release date:** 24 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.22.0](https://img.shields.io/badge/v1.22.0-success?logo=VictoriaMetrics&labelColor=gray)\n\n- bump version of VictoriaMetrics MCP to [v1.22.0](https://github.com/victoriametrics/mcp-victoriametrics/releases/tag/v1.22.0)",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T20:06:36Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-mcp-0.5.0",
+      "version": "victoria-metrics-mcp-0.5.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-11-09T11:24:49Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-single-0.51.0",
       "version": "victoria-metrics-single-0.51.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 439046026,
-      "name": "victoria-metrics-k8s-stack-0.98.0",
-      "notes": "# Release notes for version 0.98.0\n\n**Release date:** 09 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.156.0](https://img.shields.io/badge/v1.156.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictoriametrics%2Fchangelog%2F%23v11560) ![VM Operator: 0.68.2](https://img.shields.io/badge/VM_Operator-0.68.2-success?logo=kubernetes&logoColor=7B3FE4&labelColor=white&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fhelm%2Fvictoria-metrics-operator%2Fchangelog%2F%230682)\n\n- bump version of VM components to [v1.156.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.156.0)\n- bump version of VT components to [v0.13.0](https://github.com/VictoriaMetrics/VictoriaTraces/releases/tag/v0.13.0)\n- sync-job: add `defaultDashboards.dashboards.<name>.variables.<variable>` with `query` to replace a dashboard variable query or add a missing variable, and `regex` to replace the variable regex (empty string removes it). The cluster picker is now the variable whose `label_values()` query lists the cluster label, instead of any variable named `cluster`, so the etcd and VictoriaLogs cluster dashboards, which use a `cluster` variable for job names, keep it and get a separate `k8s_cluster` picker. `defaultDashboards.dashboards.<name>.clusterMetric` is deprecated in favor of `variables.<variable>.query: label_values(<metric>, cluster)` and ignored when `variables` is set for the same dashboard; defaults are migrated. See [#3331](https://github.com/VictoriaMetrics/helm-charts/issues/3331).",
-      "prerelease": false,
-      "publishedAt": "2026-11-09T11:24:47Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.98.0",
-      "version": "victoria-metrics-k8s-stack-0.98.0"
     }
   ],
   "schemaVersion": 1,

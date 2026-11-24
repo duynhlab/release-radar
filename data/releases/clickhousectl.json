@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-19T22:09:18.177Z",
+  "generatedAt": "2026-11-24T23:29:08.824Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 456938241,
+      "name": "v0.6.1",
+      "notes": "## What's Changed\n* feat(cli): internal debug-log build that appends each invocation to a JSONL file (#1496) by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1497\n* feat(cloud): pin the organization per project with `cloud use` (#1509) by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1511\n* chore: add divyenduz and balanza as code owners by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1512\n* chore: bump version to 0.6.1 by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1513\n* feat(api): add Postgres blocking queries and refresh the OpenAPI snapshot by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1515\n* feat(api): add BYOC enrollment tokens, inference usage cost and organization AI settings by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1518\n* feat(api): add ClickStack alert silencing, dashboard filter types and source fields by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1521\n* feat(api): add Kafka schema registry OAuth credentials and type BigQuery parallelism as integers by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1524\n* feat(analyzer): check request oneOf union arms against their $ref branches by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1527\n* feat(cloud): list Postgres blocking queries by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1517\n* feat(cloud): add org inference usage, BYOC enrollment tokens and restricted access by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1520\n* feat(cloud): silence and unsilence ClickStack alerts by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1523\n* feat(cloud): add OAuth client credentials for Kafka schema registries by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1526\n* chore: 0.6.1 release readiness: changelog and url 2.5.9 by @sdairs in https://github.com/ClickHouse/clickhousectl/pull/1530\n\n\n**Full Changelog**: https://github.com/ClickHouse/clickhousectl/compare/v0.6.0...v0.6.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T15:14:19Z",
+      "url": "https://github.com/ClickHouse/clickhousectl/releases/tag/v0.6.1",
+      "version": "v0.6.1"
+    },
     {
       "channel": "stable",
       "draft": false,

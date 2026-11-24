@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-24T01:40:41.134Z",
+  "generatedAt": "2026-11-24T23:29:21.211Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 457039970,
+      "name": "tempo v13.5.1",
+      "notes": "## 13.5.1\n\n- Update frontend dependencies ([#296](https://github.com/grafana/grafana-tempo-datasource/pull/296))",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T16:33:32Z",
+      "url": "https://github.com/grafana/grafana-tempo-datasource/releases/tag/v13.5.1",
+      "version": "v13.5.1"
+    },
     {
       "channel": "stable",
       "draft": false,

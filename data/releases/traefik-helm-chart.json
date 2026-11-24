@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-24T01:40:13.783Z",
+  "generatedAt": "2026-11-24T23:28:52.246Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 457129455,
+      "name": "v43.0.0",
+      "notes": "# [v43.0.0](https://github.com/traefik/traefik-helm-chart/compare/v42.4.3...v43.0.0) (2026-11-24)\r\n\r\n> [!IMPORTANT]\r\n> **Upgrade Notes**\r\n> 1. This release includes a CRD update. See chart [UPGRADING](https://github.com/traefik/traefik-helm-chart?tab=readme-ov-file#upgrading) instructions and upstream [migration guide](https://doc.traefik.io/traefik/migrate/v3/#v380).\r\n> 2. **Traefik versions.** This release supports **only** Traefik Proxy v3.7.0+ and Traefik Hub v3.21.0+. ([#2114](https://github.com/traefik/traefik-helm-chart/pull/2114))\r\n> 3. **Gateway API.** Before upgrading to Proxy v3.8, install the [Gateway API v1.7.0 CRDs](https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0) and update `TCPRoute` manifests to `gateway.networking.k8s.io/v1`. \r\n\r\n## :boom: BREAKING CHANGES\r\n\r\n- refactor(chart)!: support only Proxy v3.7+ & Hub v3.21+ #2114 by @mloiseleur\r\n\r\n## :rocket: Features\r\n\r\n- feat(deps): update traefik docker tag to v3.8.0 #2122 by @renovate-with-github-actions[bot]\r\n- feat(gateway-api): add support for ListenerSets #1923 by @pepordev\r\n- feat(pdb): support unhealthyPodEvictionPolicy #2116 by @RedaMG1\r\n\r\n## :package: Others\r\n\r\n- chore: merge current v42.4.3 into master #2127 by @bpsoraggi\r\n- docs(gateway): update Gateway API references to v1.7 #2101 by @mloiseleur\r\n- chore(release): publish 43.0.0 #2128 by @bpsoraggi\r\n\r\n## 👌 Traefik version support\r\n\r\n* Traefik Proxy: v3.7.0 -> v3.8.0 (default)\r\n* Traefik Hub: v3.21.0 -> v3.21.13",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T17:50:33Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v43.0.0",
+      "version": "v43.0.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 456843373,
+      "name": "v42.4.3",
+      "notes": "# [v42.4.3](https://github.com/traefik/traefik-helm-chart/compare/v42.4.2...v42.4.3) (2026-11-24)\n\n## :rocket: Features\n\n- feat(deps): update traefik docker tag to v3.7.20 #2123 by @jnoordsij\n\n## :package: Others\n\n- docs(agents): 📚️ document the chart release process #2121 by @mloiseleur\n- chore(release): publish 42.4.3 #2124 by @bpsoraggi\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.20 (default)\n* Traefik Hub: v3.19.3 -> v3.21.13",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T14:00:56Z",
+      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v42.4.3",
+      "version": "v42.4.3"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-08-21T07:21:36Z",
       "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.3.0",
       "version": "v41.3.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 366771550,
-      "name": "v41.2.0",
-      "notes": "# [v41.2.0](https://github.com/traefik/traefik-helm-chart/compare/v41.1.1...v41.2.0) (2026-08-07)\r\n\r\n\r\n> [!IMPORTANT]\r\n> This release includes a CRD update. See chart [UPGRADING](https://github.com/traefik/traefik-helm-chart?tab=readme-ov-file#upgrading) instructions and upstream [migration guide](https://doc.traefik.io/traefik/v3.7/migrate/v3/#v3710).\r\n\r\n## :rocket: Features\r\n\r\n- feat(hub): :sparkles: support AWS EC2 provider #1946 by @zalbiraw\r\n- feat: allow setting emptyDir options for data and tmp volumes #1958 by @dmaes\r\n- feat(deps): update traefik docker tag to v3.7.10 #1954 by @renovate-with-github-actions[bot]\r\n- feat(deps): update ghcr.io/traefik/traefik-hub docker tag to v3.20.8 #1953 by @renovate-with-github-actions[bot]\r\n\r\n## :bug: Bug fixes\r\n\r\n- fix(hub): 🐛 enable providers with default config #1956 by @mloiseleur\r\n- fix(rbac): allow namespaced rbac with only the knative provider #1955 by @karpovantonme\r\n- fix(crds/middleware): add missing ErrorRequestHeaders field #1960 by @mloiseleur\r\n- fix(changelog): only update the chart being released #1963 by @mloiseleur\r\n\r\n## :package: Others\r\n\r\n- chore(deps): update github actions #1952 by @renovate-with-github-actions[bot]\r\n- ci(artifacthub): structured changelog with link on major #1925 by @mloiseleur\r\n- test(service): LoadBalancer node port opt-out #1959 by @tomatotomata\r\n- ci(renovate): scope updates per chart on VALUES.md & AppVersion #1961 by @mloiseleur\r\n- chore(release): 🚀 publish 41.2.0 #1964 by @mloiseleur\r\n\r\n## 👌 Traefik version support\r\n\r\n* Traefik Proxy: v3.6.0 -> v3.7.10 (default)\r\n* Traefik Hub: v3.19.3 -> v3.20.8",
-      "prerelease": false,
-      "publishedAt": "2026-08-07T13:36:40Z",
-      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.2.0",
-      "version": "v41.2.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 364089546,
-      "name": "v41.1.1",
-      "notes": "# [v41.1.1](https://github.com/traefik/traefik-helm-chart/compare/v41.1.0...v41.1.1) (2026-08-03)\n\n## :bug: Bug fixes\n\n- fix: update hardened image registry #1950 by @youkoulayley\n\n## :package: Others\n\n- chore(release): 🚀 publish 41.1.1 #1951 by @youkoulayley\n\n## 👌 Traefik version support\n\n* Traefik Proxy: v3.6.0 -> v3.7.9 (default)\n* Traefik Hub: v3.19.3 -> v3.20.7",
-      "prerelease": false,
-      "publishedAt": "2026-08-03T09:05:14Z",
-      "url": "https://github.com/traefik/traefik-helm-chart/releases/tag/v41.1.1",
-      "version": "v41.1.1"
     }
   ],
   "schemaVersion": 1,

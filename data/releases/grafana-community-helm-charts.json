@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-24T12:27:33.342Z",
+  "generatedAt": "2026-11-24T23:29:19.635Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 457433644,
+      "name": "grafana-14.5.1",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [loki] Add opt-in logline index components for Loki 4.0 by @mhulscher in https://github.com/grafana-community/helm-charts/pull/1007\n* [CI] Update actions/create-github-app-token action to v3.4.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1010\n* [loki] Pin gateway nginx image to 1.31.9-alpine3.24 by @jkroepke in https://github.com/grafana-community/helm-charts/pull/1012\n* [tempo-distributed] Pin gateway nginx image to 1.31.9-alpine3.24 by @jkroepke in https://github.com/grafana-community/helm-charts/pull/1013\n* [synthetic-monitoring-agent] Point users to the official chart by @ka3de in https://github.com/grafana-community/helm-charts/pull/1014\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v1.0.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1016\n* [loki] Update dependency PyYAML to v6.0.4 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1017\n* [tempo-distributed] Update rollout-operator Docker tag to v0.55.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1019\n* [loki] Update rollout-operator Docker tag to v0.55.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1018\n* [synthetic-monitoring-agent] Update docker.io/grafana/synthetic-monitoring-agent Docker tag to v0.71.1 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1021\n* [loki] Update docker.io/nginx/nginx-unprivileged Docker tag to v1.31.10-alpine3.24 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1020\n* [tempo-distributed] Update tempo-distributed dependency non-major updates by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1022\n* [loki] Update rollout-operator Docker tag to v0.56.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1023\n* [grafana-mcp] Update docker.io/grafana/mcp-grafana Docker tag to v2.4.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1025\n* [grafana] Update docker.io/grafana/grafana Docker tag to v13.3.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1029\n\n## New Contributors\n* @ka3de made their first contribution in https://github.com/grafana-community/helm-charts/pull/1014\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-14.5.0...grafana-14.5.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T22:58:11Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.5.1",
+      "version": "grafana-14.5.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-11-13T09:55:04Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.2.3",
       "version": "loki-21.2.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 443926153,
-      "name": "loki-21.2.2",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [tempo-distributed] Switch gateway image to nginx/nginx-unprivileged by @matphilippe in https://github.com/grafana-community/helm-charts/pull/978\n* [ci] Restore MinIO repositories and support new chart imports by @QuentinBisson in https://github.com/grafana-community/helm-charts/pull/994\n* [CI] Update github-workflow dependency updates to v4.3.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/995\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v1.0.2 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/996\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.2.1...loki-21.2.2",
-      "prerelease": false,
-      "publishedAt": "2026-11-13T07:16:24Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.2.2",
-      "version": "loki-21.2.2"
     }
   ],
   "schemaVersion": 1,

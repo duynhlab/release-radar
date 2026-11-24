@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-28T02:41:53.782Z",
+  "generatedAt": "2026-11-24T23:29:40.742Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 457442942,
+      "name": "v1.15.0",
+      "notes": "## What's Changed\r\n* VLN-1873: remediate go-jose-below-4.1.6 by @milescrabill in https://github.com/temporalio/temporal-worker-controller/pull/683\r\n* relax regex path on OTEL deps in dependabot by @jaypipes in https://github.com/temporalio/temporal-worker-controller/pull/685\r\n* docs(changelog): update changelog for v1.14.0 by @worker-controller-auto-changelog[bot] in https://github.com/temporalio/temporal-worker-controller/pull/682\r\n* fix(webhook): make WRT template kind immutable by @D-Joey-G in https://github.com/temporalio/temporal-worker-controller/pull/686\r\n* feature: support Prometheus metrics in Helm Chart by @cujarrett in https://github.com/temporalio/temporal-worker-controller/pull/690\r\n* feat(wrt): select versions by status with spec.versionStatuses by @jingyu-blp in https://github.com/temporalio/temporal-worker-controller/pull/687\r\n* docs: fix broken links in Markdown docs and add a link check workflow by @mliemm in https://github.com/temporalio/temporal-worker-controller/pull/694\r\n* feat(helm): support topologySpreadConstraints on the manager Deployment by @akolacz in https://github.com/temporalio/temporal-worker-controller/pull/659\r\n* chore(deps): bump google.golang.org/grpc in / by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/695\r\n* chore(deps): bump docker/login-action from 4.6.0 to 4.7.0 by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/696\r\n* chore(deps): bump github.com/onsi/ginkgo/v2 in / by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/704\r\n* chore(deps): bump docker/login-action from 4.7.0 to 4.8.0 by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/703\r\n* chore(deps): bump helm/kind-action from 1.15.1 to 1.15.2 by @dependabot[bot] in https://github.com/temporalio/temporal-worker-controller/pull/702\r\n\r\n## New Contributors\r\n* @milescrabill made their first contribution in https://github.com/temporalio/temporal-worker-controller/pull/683\r\n* @cujarrett made their first contribution in https://github.com/temporalio/temporal-worker-controller/pull/690\r\n* @mliemm made their first contribution in https://github.com/temporalio/temporal-worker-controller/pull/694\r\n* @akolacz made their first contribution in https://github.com/temporalio/temporal-worker-controller/pull/659\r\n\r\n**Full Changelog**: https://github.com/temporalio/temporal-worker-controller/compare/v1.14.0...v1.15.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T23:09:08Z",
+      "url": "https://github.com/temporalio/temporal-worker-controller/releases/tag/v1.15.0",
+      "version": "v1.15.0"
+    },
     {
       "channel": "stable",
       "draft": false,

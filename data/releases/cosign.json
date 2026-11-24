@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-20T18:28:43.061Z",
+  "generatedAt": "2026-11-24T23:29:34.395Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 456966842,
+      "name": "v3.1.5",
+      "notes": "## Changelog\r\n* e5a0818ca5729481095773409e9c1b60cc278e8d [release-3.1] bump sigstore/sigstore to v1.11.4 (#5242)\r\n\r\n### Thanks to all contributors!",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T15:47:22Z",
+      "url": "https://github.com/sigstore/cosign/releases/tag/v3.1.5",
+      "version": "v3.1.5"
+    },
     {
       "channel": "stable",
       "draft": false,
