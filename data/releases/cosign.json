@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-24T23:29:34.395Z",
+  "generatedAt": "2026-11-25T23:06:11.888Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 458690002,
+      "name": "v3.1.6",
+      "notes": "## Changelog\r\n* 252f10a80ba871152a12e5ee324ad1e02c85d079 Have cosign verify require https://sigstore.dev/cosign/sign/v1 predic… (#5253)\r\n* 44238b7d2f0aa2c98b28498b430e05f2ee36dd78 Ensure that when we read local manifests, they match their claimed digest (#5249)\r\n* 80408c26b036313146f241e8b2df515423a86bfb Get timestamp bytes from payload for attestations (#5250)\r\n* 73b95f67cd77ffd12329d0273949289f48fa5285 Move old verifier to encoding/json/v2 for case sensitivity (#5252)\r\n* 75e6e4cbaa4834d64a3e573100508bcc009055e8 Update sigstore-go to v1.4.1 (#5246)\r\n\r\n### Thanks to all contributors!",
+      "prerelease": false,
+      "publishedAt": "2026-11-25T22:06:06Z",
+      "url": "https://github.com/sigstore/cosign/releases/tag/v3.1.6",
+      "version": "v3.1.6"
+    },
     {
       "channel": "stable",
       "draft": false,

@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-10-09T09:02:01.745Z",
+  "generatedAt": "2026-11-25T23:05:42.769Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 458447498,
+      "name": "Release v0.1.4",
+      "notes": "### ⚡ 2026-11-25\n\n*   Added a control file and installation script to support `CREATE EXTENSION chdb_hook`. This allows chd_hook to be listed in `pg_available_extensions` alongside `chdb`. Add `chdb_hook_version()` as the sole function created by the extension. It's output is identical to that of `pgchdb_version()` ([#106])\n*   Changed the default `max_memory` GUCs values to 4 GB. Previously chDB had no default memory limit ([#107]).\n*   Added the `chdb.host_credentials_roles` and `chdb_hook.host_credentials_roles` settings, each of which may be set to a list of Postgres role names. Members of those roles may use the cloud credentials of the PostgreSQL host, currently AWS credentials for S3, rather than pass keys. Empty by default, so requests without keys remain anonymous ([#109]).\n*   Added the `role_arn` option to chdb_hook's `COPY` and `CREATE TABLE` commands. It names an AWS IAM role for chDB to assume with the host credentials. Allowed only for members of the roles named by `chdb_hook.host_credentials_roles` ([#111]).\n\n### ⚠️ Breaking Changes\n\n*   `chdb_query()` no longer lets every caller use the AWS credentials of the PostgreSQL host. chDB now starts without them suppressed unless the caller is a member of a role named by `chdb.host_credentials_roles` ([#109]).\n\n### ⬆️ Dependencies\n\n*   Added testing for chDB v26.11.1 ([#113])\n\n### 📚 Documentation\n\n*   Documented the maximum values for the [settings](doc/chdb.md#settings) ([#108]).\n\n  [#106]: https://github.com/ClickHouse/pg_chdb/pull/106\n    \"ClickHouse/pg_chdb#106 Add `chdb_hook.control` and `chdb_hook_version()`\"\n  [#107]: https://github.com/ClickHouse/pg_chdb/pull/107\n    \"ClickHouse/pg_chdb#107 Change the `max_memory` GUC defaults to 4 GB\"\n  [#108]: https://github.com/ClickHouse/pg_chdb/pull/108\n    \"ClickHouse/pg_chdb#108 Document max values for GUCs\"\n  [#109]: https://github.com/ClickHouse/pg_chdb/pull/109\n    \"ClickHouse/pg_chdb#109 Let members of chosen roles use the host's cloud credentials\"\n  [#111]: https://github.com/ClickHouse/pg_chdb/pull/111\n    \"ClickHouse/pg_chdb#111 Let members name an AWS role to assume with host credentials\"\n  [#113]: https://github.com/ClickHouse/pg_chdb/pull/113\n    \"ClickHouse/pg_chdb#113 Add testing for chdb v26.11.1\"\n\n---\n\n🆚 For more detail compare [changes since v0.1.3](https://github.com/ClickHouse/pg_chdb/compare/v0.1.3...v0.1.4).",
+      "prerelease": false,
+      "publishedAt": "2026-11-25T17:48:33Z",
+      "url": "https://github.com/ClickHouse/pg_chdb/releases/tag/v0.1.4",
+      "version": "v0.1.4"
+    },
     {
       "channel": "stable",
       "draft": false,

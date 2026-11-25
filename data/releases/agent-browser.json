@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-24T01:40:59.877Z",
+  "generatedAt": "2026-11-25T23:06:21.491Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 458629224,
+      "name": "v0.45.0",
+      "notes": "### New Features\n\n- Added a **Firefox engine** driven over WebDriver BiDi: pass `--engine firefox` (or set `AGENT_BROWSER_ENGINE=firefox`) with Firefox 150 or newer to drive a local Firefox install with snapshots and `@eN` refs across open and closed shadow roots and iframes, `find` locators, shared form preconditions and error codes (`fill`, `type`, `check`, `uncheck`, `select --by`), right-click, middle-click, and modifier keys (`--button`, `--modifiers`), network routes and HAR capture, `--allowed-domains`, downloads, viewport, media, geolocation, header, and offline emulation, isolated windows, `--pin-tab`, screenshots, PDF export, and dashboard live view (#2205, #2206, #2207, #2208, #2595, #2633)\n- Added **Firefox attach mode**: connect to an existing Firefox instance over WebDriver BiDi with `--cdp` or `connect` (including `ws://.../session?devtools=<port>` endpoints), apply live settings in place, and detach on `close` without closing the running browser (#2227)\n\n### Bug Fixes\n\n- Fixed **keyboard `keydown`, `keyup`, and `press` modifier handling**: `keydown` and `keyup` now send `code`, `keyCode`, `location`, and printable text and carry held modifiers across subsequent keyboard, mouse, and flow-recorder commands. `press` applies US-layout Shift mapping, suppresses printable text for Alt, Control, and Meta chords, and dispatches modifier key events for chords not already held (#2734)\n- Fixed **saved flow host rules, write consent, deadlines, and result shaping**: saved host rules now match hostnames regardless of case or a trailing DNS root dot, non-`POST` requests carrying GraphQL queries require write declarations and consent, HTTP preflight cookie and route lookups and in-page fetches stop at the run deadline, empty result lists no longer fail `--fields` or `--where`, and `--limit` shapes only retained rows (#2735)\n- Fixed **saved flow replay** finishing before late-reported first-party Chrome requests settle (#2711)\n- Fixed **iframe targeting**: `frame` resolves cross-origin, unnamed, and nested iframes by CSS selector or `@ref`, and selector commands, `find` locators, `wait`, `check`, and `uncheck` act inside the selected frame, including same-site cross-origin iframes, without reaching tabs pinned by other sessions (#2737)\n- Fixed **`eval` and `console` in iframes**: `eval` runs in the frame selected with `frame` and reports that frame's origin, and `console` and `errors` capture messages from cross-origin iframes on the active tab (#2738)\n- Fixed **iframe snapshots and annotated screenshots**: snapshots label iframes by their `title` or `name`, and `screenshot --annotate` places boxes for elements inside iframes in page coordinates, including cross-origin, scrolled, and scaled frames (#2739)\n- Fixed **dashboard live view pointer and tabs**: clicks map to the real page size, drags send held buttons, touchpad two-finger taps open the context menu, and a tab that closes itself resyncs the tab bar (#2744)\n- Fixed **dashboard live view keyboard and clipboard**: editing shortcuts such as select all, undo, and line navigation reach the page, Option and AltGr characters type, and copy, cut, and paste work through the live view without granting the browser clipboard permissions (#2745)\n- Fixed **`state save` collection**: it no longer stalls under `--allowed-domains`, sends requests to previously visited origins, runs their service workers, or brings a temporary tab to the front. It includes origins from attached sessions but not tabs pinned by other sessions, and keeps the previous autosave when collection fails (#2746)\n- Fixed **`state list`, `state show`, and bulk storage reads**: `state list` shows modified dates, `state show` reports cookie and origin counts (`cookieCount` and `originCount` in JSON, with `summary` unchanged), and `storage local` and `storage session` keep keys such as `__proto__` (#2747)\n\n### Documentation\n\n- Added the **Firefox engine guide** (`/engines/firefox`) and updated CLI help, MCP tool schemas, command references, and core skills for Firefox support and form command behavior (#2208, #2227, #2595, #2633)\n\n### Contributors\n\n- @Afloat16\n- @Bella-rab\n- @Ehsan-hash\n- @MrCoder\n- @OBOneProtocol\n- @Railly\n- @adity982\n- @cavalcanticampos\n- @ctate\n- @devxoul\n- @fitchmultz\n- @funnyjacy\n- @hanneslipusch\n- @hyunjinee\n- @kevingatera\n- @lahfir\n- @leejaew\n- @lurenjia534\n- @osrjv\n- @patrickballard\n- @pei711\n- @pqminh27\n- @shtefcs\n- @sx4im\n- @thecodeartificerX\n- @yusufgngor",
+      "prerelease": false,
+      "publishedAt": "2026-11-25T20:44:03Z",
+      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.45.0",
+      "version": "v0.45.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-08-31T13:39:23Z",
       "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.35.2",
       "version": "v0.35.2"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 377483217,
-      "name": "v0.35.1",
-      "notes": "### Bug Fixes\n\n- Fixed **Windows ARM64 launcher selection** to prefer a native ARM64 executable when present and fall back to the published x64 executable through Windows emulation when it is not (#1725)\n- Fixed **stream URL tracking** to emit active main-frame URL updates for full-document, History API, and fragment navigation, while rebinding correctly after active-tab changes and ignoring child-frame or background-tab navigation (#1682)\n- Fixed **snapshot diff element references** by resetting ref numbering for each diff, invalidating refs across URL navigations, and preserving the previous refs when a diff fails (#1719)\n\n### Improvements\n\n- Updated **Rust dependencies** to `rustls-webpki` 0.103.13 and `quinn-proto` 0.11.17 (#1723, #1720)\n\n### Contributors\n\n- @ctate\n- @Railly\n- @Angelmmiguel\n- @anupamme\n- @nexxusbruno-ship-it",
-      "prerelease": false,
-      "publishedAt": "2026-08-26T23:52:16Z",
-      "url": "https://github.com/vercel-labs/agent-browser/releases/tag/v0.35.1",
-      "version": "v0.35.1"
     }
   ],
   "schemaVersion": 1,
