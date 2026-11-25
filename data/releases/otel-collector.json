@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-07T08:45:44.089Z",
+  "generatedAt": "2026-11-25T11:15:51.008Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 457473018,
+      "name": "v0.166.0",
+      "notes": "Check the [v0.166.0 contrib changelog](https://github.com/open-telemetry/opentelemetry-collector-contrib/releases/tag/v0.166.0) and the [v0.166.0 core changelog](https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.166.0) for changelogs on specific components.\r\n\r\n## v0.166.0\r\n\r\n### 💡 Enhancements 💡\r\n\r\n- `all`: Generate config schema for each distribution (#1757)\r\n- `otelcol-k8s`: Add Windows binaries for 386 and arm64. Windows container images stay amd64 only. (#412)\r\n\r\n\r\n## Changelog\r\n* d104c3ca0d4086782b1fc6a23c34df1fe6cc2497 Update version to 0.166.0 (#1782)\r\n* 7760e344a9c9806f6fa5bfb32bdcac143447f6c0 Update OpenTelemetry Collector Components (#1778)\r\n* d3b1a09f79e2f2f2dce4cb7324a34bcde32ca69e Update GoReleaser Pro to v2.20.3 (#1776)\r\n* 581b642309a4c065afb96b8407b75b699db5cb2c Update github-actions deps (#1777)",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T23:51:22Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0",
+      "version": "v0.166.0"
+    },
     {
       "channel": "stable",
       "draft": false,

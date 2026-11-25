@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-24T01:40:39.158Z",
+  "generatedAt": "2026-11-25T11:16:21.456Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 457460065,
+      "name": "k8s-monitoring-4.6.2",
+      "notes": "Capture all telemetry data from your Kubernetes cluster.\n\nSource commit: https://github.com/grafana/k8s-monitoring-helm/commit/7afb58758f3031dd8c9069128b109d55217cf2fb\n\nTag on source: https://github.com/grafana/k8s-monitoring-helm/releases/tag/k8s-monitoring-4.6.2",
+      "prerelease": false,
+      "publishedAt": "2026-11-24T23:31:59Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.6.2",
+      "version": "k8s-monitoring-4.6.2"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-29T17:17:26Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.17",
       "version": "beyla-1.16.17"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 428167662,
-      "name": "alloy-operator-0.9.4",
-      "notes": "Grafana Alloy Operator, providing innovative ways for creating instances of Grafana Alloy.\n\nSource commit: https://github.com/grafana/alloy-operator/commit/1bfc7b0d54db71c82664ea44525e3889847b51f8\n\nTag on source: https://github.com/grafana/alloy-operator/releases/tag/alloy-operator-0.9.4",
-      "prerelease": false,
-      "publishedAt": "2026-10-29T17:12:19Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/alloy-operator-0.9.4",
-      "version": "alloy-operator-0.9.4"
     }
   ],
   "schemaVersion": 1,
