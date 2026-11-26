@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T23:06:21.498Z",
+  "generatedAt": "2026-11-26T10:52:36.061Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 457941395,
-        "name": "grafana-mcp-0.37.0",
+        "id": 459142309,
+        "name": "grafana-mcp-0.38.0",
         "prerelease": false,
-        "publishedAt": "2026-11-25T10:14:58Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.37.0",
-        "version": "grafana-mcp-0.37.0"
+        "publishedAt": "2026-11-26T08:39:27Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.38.0",
+        "version": "grafana-mcp-0.38.0"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-25T08:33:58Z",
-        "version": "grafana-14.6.0"
+        "publishedAt": "2026-11-26T06:57:05Z",
+        "version": "tempo-vulture-0.16.0"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",

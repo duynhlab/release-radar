@@ -1,6 +1,39 @@
 {
-  "generatedAt": "2026-11-25T11:16:22.106Z",
+  "generatedAt": "2026-11-26T10:52:10.137Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 459142309,
+      "name": "grafana-mcp-0.38.0",
+      "notes": "MCP server for Grafana.\n\n## What's Changed\n* [grafana] Fix the repositories sidecar never syncing at startup by @CalculusEnjoyer in https://github.com/grafana-community/helm-charts/pull/1036\n* [tempo-vulture] List the scheduling values and add topologySpreadConstraints by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/1037\n* [grafana-mcp] Add toolsConfig for the mcp-grafana tool selection file by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/1035\n\n## New Contributors\n* @CalculusEnjoyer made their first contribution in https://github.com/grafana-community/helm-charts/pull/1036\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-mcp-0.37.0...grafana-mcp-0.38.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-26T08:39:27Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.38.0",
+      "version": "grafana-mcp-0.38.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 459057175,
+      "name": "tempo-vulture-0.16.0",
+      "notes": "Grafana Tempo Vulture - A tool to monitor Tempo performance.\n\n## What's Changed\n* [grafana] Use /healthz for the default liveness probe by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/1031\n* [grafana-mcp] Allow in-cluster Host headers and add default probes by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/1034\n* [grafana] Fix the repositories sidecar never syncing at startup by @CalculusEnjoyer in https://github.com/grafana-community/helm-charts/pull/1036\n* [tempo-vulture] List the scheduling values and add topologySpreadConstraints by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/1037\n\n## New Contributors\n* @CalculusEnjoyer made their first contribution in https://github.com/grafana-community/helm-charts/pull/1036\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/tempo-vulture-0.15.0...tempo-vulture-0.16.0",
+      "prerelease": false,
+      "publishedAt": "2026-11-26T06:57:05Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/tempo-vulture-0.16.0",
+      "version": "tempo-vulture-0.16.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 459057123,
+      "name": "grafana-14.6.1",
+      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [grafana-mcp] Allow in-cluster Host headers and add default probes by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/1034\n* [grafana] Fix the repositories sidecar never syncing at startup by @CalculusEnjoyer in https://github.com/grafana-community/helm-charts/pull/1036\n* [tempo-vulture] List the scheduling values and add topologySpreadConstraints by @DrFaust92 in https://github.com/grafana-community/helm-charts/pull/1037\n\n## New Contributors\n* @CalculusEnjoyer made their first contribution in https://github.com/grafana-community/helm-charts/pull/1036\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-14.6.0...grafana-14.6.1",
+      "prerelease": false,
+      "publishedAt": "2026-11-26T06:57:01Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.6.1",
+      "version": "grafana-14.6.1"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -187,39 +220,6 @@
       "publishedAt": "2026-11-18T20:41:12Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.4.1",
       "version": "loki-21.4.1"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 450236935,
-      "name": "loki-21.4.0",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [grafana] Allow the embedded NATS cluster port between Grafana pods in the NetworkPolicy by @RafaelPaulovic in https://github.com/grafana-community/helm-charts/pull/974\n* [loki] Add opt-in logline index components for Loki 4.0 by @mhulscher in https://github.com/grafana-community/helm-charts/pull/1007\n\n## New Contributors\n* @RafaelPaulovic made their first contribution in https://github.com/grafana-community/helm-charts/pull/974\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.3.1...loki-21.4.0",
-      "prerelease": false,
-      "publishedAt": "2026-11-18T16:14:06Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.4.0",
-      "version": "loki-21.4.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 448580420,
-      "name": "grafana-14.5.0",
-      "notes": "The leading tool for querying and visualizing time series and metrics.\n\n## What's Changed\n* [synthetic-monitoring-agent] Update docker.io/grafana/synthetic-monitoring-agent Docker tag to v0.71.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1004\n* [loki] Add opt-in dataobj compaction planner and worker for Loki 4.0 by @mhulscher in https://github.com/grafana-community/helm-charts/pull/1003\n* [loki] Update docker.io/rustfs/rustfs Docker tag to v1.0.6 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1001\n* [grafana] Allow the embedded NATS cluster port between Grafana pods in the NetworkPolicy by @RafaelPaulovic in https://github.com/grafana-community/helm-charts/pull/974\n\n## New Contributors\n* @mhulscher made their first contribution in https://github.com/grafana-community/helm-charts/pull/1003\n* @RafaelPaulovic made their first contribution in https://github.com/grafana-community/helm-charts/pull/974\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/grafana-14.4.2...grafana-14.5.0",
-      "prerelease": false,
-      "publishedAt": "2026-11-17T12:10:38Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-14.5.0",
-      "version": "grafana-14.5.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 447703364,
-      "name": "loki-21.3.1",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [loki] Update docker.io/rustfs/rustfs Docker tag to v1.0.6 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1001\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.3.0...loki-21.3.1",
-      "prerelease": false,
-      "publishedAt": "2026-11-16T22:38:09Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.3.1",
-      "version": "loki-21.3.1"
     }
   ],
   "schemaVersion": 1,
