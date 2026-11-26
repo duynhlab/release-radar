@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T10:52:36.061Z",
+  "generatedAt": "2026-11-26T22:59:42.084Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -68,17 +68,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 451261331,
-        "name": "v0.19.14",
+        "id": 459409036,
+        "name": "v0.20.8",
         "prerelease": false,
-        "publishedAt": "2026-11-19T11:54:01Z",
-        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.19.14",
-        "version": "v0.19.14"
+        "publishedAt": "2026-11-26T13:12:50Z",
+        "url": "https://github.com/kubernetes-sigs/kueue/releases/tag/v0.20.8",
+        "version": "v0.20.8"
       },
       "name": "Kueue",
       "previous": {
-        "publishedAt": "2026-11-19T11:49:30Z",
-        "version": "v0.20.7"
+        "publishedAt": "2026-11-26T12:16:38Z",
+        "version": "v0.19.15"
       },
       "releaseCount": 20,
       "repository": "kubernetes-sigs/kueue",
@@ -481,17 +481,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 451686031,
-        "name": "v0.102.0",
+        "id": 459624678,
+        "name": "v0.103.0",
         "prerelease": false,
-        "publishedAt": "2026-11-19T17:30:03Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.102.0",
-        "version": "v0.102.0"
+        "publishedAt": "2026-11-26T15:56:38Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.103.0",
+        "version": "v0.103.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-11-12T16:02:35Z",
-        "version": "v0.101.0"
+        "publishedAt": "2026-11-19T17:30:03Z",
+        "version": "v0.102.0"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
@@ -1019,19 +1019,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 454412533,
-        "name": "v0.63.1",
+        "id": 459406532,
+        "name": "v0.64.0",
         "prerelease": false,
-        "publishedAt": "2026-11-22T11:53:14Z",
-        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.63.1",
-        "version": "v0.63.1"
+        "publishedAt": "2026-11-26T12:49:06Z",
+        "url": "https://github.com/controlplaneio-fluxcd/flux-operator/releases/tag/v0.64.0",
+        "version": "v0.64.0"
       },
       "name": "Flux Operator",
       "previous": {
-        "publishedAt": "2026-11-20T14:11:28Z",
-        "version": "v0.63.0"
+        "publishedAt": "2026-11-22T11:53:14Z",
+        "version": "v0.63.1"
       },
-      "releaseCount": 19,
+      "releaseCount": 20,
       "repository": "controlplaneio-fluxcd/flux-operator",
       "tags": [
         "gitops",
@@ -1712,17 +1712,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 459142309,
-        "name": "grafana-mcp-0.38.0",
+        "id": 459770565,
+        "name": "loki-21.6.2",
         "prerelease": false,
-        "publishedAt": "2026-11-26T08:39:27Z",
-        "url": "https://github.com/grafana-community/helm-charts/releases/tag/grafana-mcp-0.38.0",
-        "version": "grafana-mcp-0.38.0"
+        "publishedAt": "2026-11-26T18:23:47Z",
+        "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.6.2",
+        "version": "loki-21.6.2"
       },
       "name": "Grafana Community Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-26T06:57:05Z",
-        "version": "tempo-vulture-0.16.0"
+        "publishedAt": "2026-11-26T18:08:11Z",
+        "version": "loki-21.6.1"
       },
       "releaseCount": 20,
       "repository": "grafana-community/helm-charts",
