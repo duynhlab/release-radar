@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T10:50:51.126Z",
+  "generatedAt": "2026-11-27T22:42:23.051Z",
   "schemaVersion": 1,
   "tools": [
     {
@@ -481,17 +481,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 459624678,
-        "name": "v0.103.0",
+        "id": 460647645,
+        "name": "v0.104.0",
         "prerelease": false,
-        "publishedAt": "2026-11-26T15:56:38Z",
-        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.103.0",
-        "version": "v0.103.0"
+        "publishedAt": "2026-11-27T13:39:18Z",
+        "url": "https://github.com/charmbracelet/crush/releases/tag/v0.104.0",
+        "version": "v0.104.0"
       },
       "name": "Crush",
       "previous": {
-        "publishedAt": "2026-11-19T17:30:03Z",
-        "version": "v0.102.0"
+        "publishedAt": "2026-11-26T15:56:38Z",
+        "version": "v0.103.0"
       },
       "releaseCount": 20,
       "repository": "charmbracelet/crush",
@@ -546,19 +546,19 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 426329555,
-        "name": "v0.75.2",
+        "id": 460816083,
+        "name": "v0.76.0",
         "prerelease": false,
-        "publishedAt": "2026-10-28T06:31:25Z",
-        "url": "https://github.com/VictoriaMetrics/operator/releases/tag/v0.75.2",
-        "version": "v0.75.2"
+        "publishedAt": "2026-11-27T16:06:19Z",
+        "url": "https://github.com/VictoriaMetrics/operator/releases/tag/v0.76.0",
+        "version": "v0.76.0"
       },
       "name": "VictoriaMetrics Operator",
       "previous": {
-        "publishedAt": "2026-10-21T07:46:53Z",
-        "version": "v0.75.1"
+        "publishedAt": "2026-10-28T06:31:25Z",
+        "version": "v0.75.2"
       },
-      "releaseCount": 15,
+      "releaseCount": 16,
       "repository": "VictoriaMetrics/operator",
       "tags": [
         "kubernetes",
@@ -641,17 +641,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 460199418,
-        "name": "victoria-metrics-k8s-stack-0.99.1",
+        "id": 460967119,
+        "name": "victoria-metrics-operator-crds-0.16.0",
         "prerelease": false,
-        "publishedAt": "2026-11-27T05:24:07Z",
-        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-k8s-stack-0.99.1",
-        "version": "victoria-metrics-k8s-stack-0.99.1"
+        "publishedAt": "2026-11-27T18:58:36Z",
+        "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-crds-0.16.0",
+        "version": "victoria-metrics-operator-crds-0.16.0"
       },
       "name": "VictoriaMetrics Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-27T05:24:05Z",
-        "version": "victoria-logs-single-0.13.14"
+        "publishedAt": "2026-11-27T18:58:34Z",
+        "version": "victoria-metrics-operator-0.69.0"
       },
       "releaseCount": 20,
       "repository": "VictoriaMetrics/helm-charts",
@@ -1525,17 +1525,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 450152207,
-        "name": "v3.6.22",
+        "id": 460731924,
+        "name": "v3.7.11",
         "prerelease": false,
-        "publishedAt": "2026-11-18T15:15:27Z",
-        "url": "https://github.com/grafana/loki/releases/tag/v3.6.22",
-        "version": "v3.6.22"
+        "publishedAt": "2026-11-27T15:03:37Z",
+        "url": "https://github.com/grafana/loki/releases/tag/v3.7.11",
+        "version": "v3.7.11"
       },
       "name": "Loki",
       "previous": {
-        "publishedAt": "2026-11-13T07:51:25Z",
-        "version": "v3.7.10"
+        "publishedAt": "2026-11-27T15:01:21Z",
+        "version": "v3.6.23"
       },
       "releaseCount": 20,
       "repository": "grafana/loki",
@@ -1681,17 +1681,17 @@
       "latest": {
         "channel": "stable",
         "draft": false,
-        "id": 457460065,
-        "name": "k8s-monitoring-4.6.2",
+        "id": 460609982,
+        "name": "beyla-1.16.21",
         "prerelease": false,
-        "publishedAt": "2026-11-24T23:31:59Z",
-        "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.6.2",
-        "version": "k8s-monitoring-4.6.2"
+        "publishedAt": "2026-11-27T13:03:52Z",
+        "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.21",
+        "version": "beyla-1.16.21"
       },
       "name": "Grafana Helm Charts",
       "previous": {
-        "publishedAt": "2026-11-24T01:06:36Z",
-        "version": "rollout-operator-0.56.0"
+        "publishedAt": "2026-11-24T23:31:59Z",
+        "version": "k8s-monitoring-4.6.2"
       },
       "releaseCount": 20,
       "repository": "grafana/helm-charts",

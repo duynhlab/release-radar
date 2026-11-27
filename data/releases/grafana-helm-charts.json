@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-25T11:16:21.456Z",
+  "generatedAt": "2026-11-27T22:42:00.883Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 460609982,
+      "name": "beyla-1.16.21",
+      "notes": "eBPF-based autoinstrumentation HTTP, HTTP2 and gRPC services, as well as network metrics.\n\nSource commit: https://github.com/grafana/beyla/commit/f657a5e42a1caaa93fb3faca30e82ff6d3ae0dde\n\nTag on source: https://github.com/grafana/beyla/releases/tag/beyla-1.16.21",
+      "prerelease": false,
+      "publishedAt": "2026-11-27T13:03:52Z",
+      "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.21",
+      "version": "beyla-1.16.21"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-10-30T15:25:42Z",
       "url": "https://github.com/grafana/helm-charts/releases/tag/k8s-monitoring-4.6.0",
       "version": "k8s-monitoring-4.6.0"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 428172838,
-      "name": "beyla-1.16.17",
-      "notes": "eBPF-based autoinstrumentation HTTP, HTTP2 and gRPC services, as well as network metrics.\n\nSource commit: https://github.com/grafana/beyla/commit/cf11e42ac6b0db08bed98b54018d4e92e1bd7951\n\nTag on source: https://github.com/grafana/beyla/releases/tag/beyla-1.16.17",
-      "prerelease": false,
-      "publishedAt": "2026-10-29T17:17:26Z",
-      "url": "https://github.com/grafana/helm-charts/releases/tag/beyla-1.16.17",
-      "version": "beyla-1.16.17"
     }
   ],
   "schemaVersion": 1,

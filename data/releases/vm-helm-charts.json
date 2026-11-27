@@ -1,6 +1,28 @@
 {
-  "generatedAt": "2026-11-27T10:50:03.737Z",
+  "generatedAt": "2026-11-27T22:41:41.416Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 460967119,
+      "name": "victoria-metrics-operator-crds-0.16.0",
+      "notes": "# Release notes for version 0.16.0\n\n**Release date:** 27 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.76.0](https://img.shields.io/badge/v0.76.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Foperator%2Fchangelog%2F%23v0760)\n\n- Release CRDs for operator [v0.76.0](https://github.com/VictoriaMetrics/operator/releases/tag/v0.76.0)",
+      "prerelease": false,
+      "publishedAt": "2026-11-27T18:58:36Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-crds-0.16.0",
+      "version": "victoria-metrics-operator-crds-0.16.0"
+    },
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 460967084,
+      "name": "victoria-metrics-operator-0.69.0",
+      "notes": "# Release notes for version 0.69.0\n\n**Release date:** 27 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v0.76.0](https://img.shields.io/badge/v0.76.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Foperator%2Fchangelog%2F%23v0760)\n\n- updates operator to [v0.76.0](https://github.com/VictoriaMetrics/operator/releases/tag/v0.76.0) version\n- render `extraHostPathMounts` in the operator pod. It was documented in `values.yaml` but never used by the templates.\n- set `seccompProfile.type` to `RuntimeDefault` for victoria-metrics-operator",
+      "prerelease": false,
+      "publishedAt": "2026-11-27T18:58:34Z",
+      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-metrics-operator-0.69.0",
+      "version": "victoria-metrics-operator-0.69.0"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -198,28 +220,6 @@
       "publishedAt": "2026-11-13T14:10:18Z",
       "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-collector-0.3.9",
       "version": "victoria-logs-collector-0.3.9"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 444307781,
-      "name": "victoria-logs-cluster-0.2.12",
-      "notes": "# Release notes for version 0.2.12\n\n**Release date:** 13 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.54.0](https://img.shields.io/badge/v1.54.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1540)\n\n- bump VictoriaLogs version to [v1.54.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.54.0).\n- fix the `vector` subchart values being treated as a chart component: `vector.service.enabled: true` failed the render, and `vector.ingress.enabled` or `vector.podDisruptionBudget.enabled` created a second, unused resource next to the one from the subchart.\n- bump vmauth version to [v1.156.0](https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.156.0).",
-      "prerelease": false,
-      "publishedAt": "2026-11-13T14:10:16Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-cluster-0.2.12",
-      "version": "victoria-logs-cluster-0.2.12"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 444307748,
-      "name": "victoria-logs-agent-0.2.11",
-      "notes": "# Release notes for version 0.2.11\n\n**Release date:** 13 Nov 2026\n\n![Helm: v3](https://img.shields.io/badge/Helm-v3.14%2B-informational?color=informational&logo=helm&link=https%3A%2F%2Fgithub.com%2Fhelm%2Fhelm%2Freleases%2Ftag%2Fv3.14.0) ![AppVersion: v1.54.0](https://img.shields.io/badge/v1.54.0-success?logo=VictoriaMetrics&labelColor=gray&link=https%3A%2F%2Fdocs.victoriametrics.com%2Fvictorialogs%2Fchangelog%2F%23v1540)\n\n- bump vlagent version to [v1.54.0](https://github.com/VictoriaMetrics/VictoriaLogs/releases/tag/v1.54.0).\n- add `serviceAccount` options. A dedicated ServiceAccount is created by default and the API token isn't mounted (`serviceAccount.automountToken: false`), as vlagent doesn't access the Kubernetes API. Pods are restarted once on upgrade.\n- add `service.portOverrides`, a map keyed by Service port name to override `port`, `protocol`, `targetPort`, `nodePort` and/or `appProtocol`. It applies to every rendered Service port, including `http[]`, `extraPorts[]` and `syslog-tcp`/`syslog-udp`. See [#3223](https://github.com/VictoriaMetrics/helm-charts/issues/3223).\n- add `podManagementPolicy` option for the StatefulSet. Set it to `Parallel` to match the StatefulSet created by the VictoriaMetrics operator, so that it can be adopted in place when migrating from a VLAgent custom resource.",
-      "prerelease": false,
-      "publishedAt": "2026-11-13T14:10:14Z",
-      "url": "https://github.com/VictoriaMetrics/helm-charts/releases/tag/victoria-logs-agent-0.2.11",
-      "version": "victoria-logs-agent-0.2.11"
     }
   ],
   "schemaVersion": 1,
