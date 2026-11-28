@@ -1,6 +1,17 @@
 {
-  "generatedAt": "2026-11-27T10:50:27.425Z",
+  "generatedAt": "2026-11-28T10:23:31.923Z",
   "releases": [
+    {
+      "channel": "stable",
+      "draft": false,
+      "id": 461267160,
+      "name": "loki-21.6.4",
+      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [CI] Update dependency helm-unittest/helm-unittest to v1.3.0 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1051\n* [loki] Update loki dependency non-major updates to v3.7.11 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1050\n\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.6.3...loki-21.6.4",
+      "prerelease": false,
+      "publishedAt": "2026-11-28T03:18:33Z",
+      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.6.4",
+      "version": "loki-21.6.4"
+    },
     {
       "channel": "stable",
       "draft": false,
@@ -209,17 +220,6 @@
       "publishedAt": "2026-11-21T02:01:46Z",
       "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.4.3",
       "version": "loki-21.4.3"
-    },
-    {
-      "channel": "stable",
-      "draft": false,
-      "id": 452478327,
-      "name": "loki-21.4.2",
-      "notes": "Helm chart for Grafana Loki supporting monolithic, simple scalable, and microservices modes.\n\n## What's Changed\n* [tempo-distributed] Pin gateway nginx image to 1.31.9-alpine3.24 by @jkroepke in https://github.com/grafana-community/helm-charts/pull/1013\n* [synthetic-monitoring-agent] Point users to the official chart by @ka3de in https://github.com/grafana-community/helm-charts/pull/1014\n* [loki] Update ghcr.io/jkroepke/access-log-exporter Docker tag to v1.0.3 by @renovate[bot] in https://github.com/grafana-community/helm-charts/pull/1016\n\n## New Contributors\n* @ka3de made their first contribution in https://github.com/grafana-community/helm-charts/pull/1014\n\n**Full Changelog**: https://github.com/grafana-community/helm-charts/compare/loki-21.4.1...loki-21.4.2",
-      "prerelease": false,
-      "publishedAt": "2026-11-20T09:13:54Z",
-      "url": "https://github.com/grafana-community/helm-charts/releases/tag/loki-21.4.2",
-      "version": "loki-21.4.2"
     }
   ],
   "schemaVersion": 1,
